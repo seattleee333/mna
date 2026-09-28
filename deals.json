@@ -6,7 +6,9 @@
   "stock_code": "083790",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00407814",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900939",
@@ -15,7 +17,9 @@
   "stock_code": "402030",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00601988",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900923",
@@ -24,7 +28,9 @@
   "stock_code": "206400",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01043853",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900901",
@@ -33,7 +39,9 @@
   "stock_code": "059270",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00453442",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900382",
@@ -42,7 +50,9 @@
   "stock_code": "095340",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00572905",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900330",
@@ -51,7 +61,9 @@
   "stock_code": "109670",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00492706",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900297",
@@ -60,7 +72,9 @@
   "stock_code": "092600",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00537337",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900257",
@@ -69,7 +83,9 @@
   "stock_code": "065510",
   "market": "K",
   "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과보고)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00398668",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928900118",
@@ -78,7 +94,9 @@
   "stock_code": "179290",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00531829",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928800899",
@@ -87,7 +105,9 @@
   "stock_code": "005090",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00125150",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928800390",
@@ -96,7 +116,9 @@
   "stock_code": "011790",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00139889",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928600824",
@@ -105,7 +127,9 @@
   "stock_code": "180060",
   "market": "N",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00874937",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928600712",
@@ -114,7 +138,9 @@
   "stock_code": "180060",
   "market": "N",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00874937",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000389",
@@ -123,7 +149,9 @@
   "stock_code": "250030",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01158632",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000378",
@@ -132,7 +160,14 @@
   "stock_code": "355390",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01514005",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1924887972,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000317",
@@ -141,7 +176,9 @@
   "stock_code": "122450",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00657987",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000299",
@@ -150,7 +187,9 @@
   "stock_code": "142760",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00587925",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000288",
@@ -159,7 +198,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000245",
@@ -168,7 +209,9 @@
   "stock_code": "241710",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00763473",
+  "detail_done": true
  },
  {
   "rcept_no": "20260928000226",
@@ -177,7 +220,14 @@
   "stock_code": "043360",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00295547",
+  "direction": "양수",
+  "target": "(주)그린팩",
+  "counterparty": "천효만, 이명주, 천아름\n(거래상대방에 관한 사항은 \n'15. 기타 투자판단과 관련한 중요사항' 등 참조)",
+  "amount": 16500000000,
+  "note": "취득 후 지분율 100.00%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900730",
@@ -186,7 +236,9 @@
   "stock_code": "109670",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00492706",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900724",
@@ -195,7 +247,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약해제ㆍ취소등",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900554",
@@ -204,7 +258,9 @@
   "stock_code": "336680",
   "market": "K",
   "report_nm": "[기재정정]영업양수결정(종속회사의주요경영사항)              (철회)",
-  "category": "영업양수도"
+  "category": "영업양수도",
+  "corp_code": "00814582",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900518",
@@ -213,7 +269,9 @@
   "stock_code": "431190",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01689266",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900362",
@@ -222,7 +280,9 @@
   "stock_code": "086520",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00536541",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923900215",
@@ -231,7 +291,9 @@
   "stock_code": "033160",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00121686",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923800497",
@@ -240,7 +302,9 @@
   "stock_code": "034220",
   "market": "Y",
   "report_nm": "[기재정정]영업양도결정(종속회사의주요경영사항)",
-  "category": "영업양수도"
+  "category": "영업양수도",
+  "corp_code": "00105873",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923800439",
@@ -249,7 +313,9 @@
   "stock_code": "007460",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00152385",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000638",
@@ -258,7 +324,14 @@
   "stock_code": "431190",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01689266",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2998993060,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000636",
@@ -267,7 +340,9 @@
   "stock_code": "230360",
   "market": "E",
   "report_nm": "주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "01029394",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000576",
@@ -276,7 +351,14 @@
   "stock_code": "090710",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00540429",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2000008360,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000543",
@@ -285,7 +367,9 @@
   "stock_code": "050090",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00369569",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000531",
@@ -294,7 +378,9 @@
   "stock_code": "050090",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00369569",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000500",
@@ -303,7 +389,9 @@
   "stock_code": "009730",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00116426",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000418",
@@ -312,7 +400,9 @@
   "stock_code": "003060",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00101044",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000410",
@@ -321,7 +411,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000390",
@@ -330,7 +422,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000362",
@@ -339,7 +433,9 @@
   "stock_code": "019570",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110750",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000258",
@@ -348,7 +444,9 @@
   "stock_code": "002810",
   "market": "Y",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00127167",
+  "detail_done": true
  },
  {
   "rcept_no": "20260923000238",
@@ -357,7 +455,9 @@
   "stock_code": "038060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00406329",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000545",
@@ -366,7 +466,9 @@
   "stock_code": "229000",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01051472",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900647",
@@ -375,7 +477,9 @@
   "stock_code": "457600",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01453944",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900617",
@@ -384,7 +488,9 @@
   "stock_code": "038620",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00264228",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900598",
@@ -393,7 +499,9 @@
   "stock_code": "119610",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00604426",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900580",
@@ -402,7 +510,9 @@
   "stock_code": "282720",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00872656",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900510",
@@ -411,7 +521,9 @@
   "stock_code": "033310",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00143226",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900426",
@@ -420,7 +532,9 @@
   "stock_code": "163730",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01142075",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900420",
@@ -429,7 +543,9 @@
   "stock_code": "163730",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01142075",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900323",
@@ -438,7 +554,9 @@
   "stock_code": "178320",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00838005",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900253",
@@ -447,7 +565,9 @@
   "stock_code": "119610",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00604426",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900236",
@@ -456,7 +576,9 @@
   "stock_code": "457600",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01453944",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922900169",
@@ -465,7 +587,9 @@
   "stock_code": "107640",
   "market": "K",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00474588",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922800633",
@@ -474,7 +598,9 @@
   "stock_code": "001570",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00106119",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922800521",
@@ -483,7 +609,9 @@
   "stock_code": "010130",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00102858",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922800518",
@@ -492,7 +620,9 @@
   "stock_code": "011790",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00139889",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922800474",
@@ -501,7 +631,9 @@
   "stock_code": "081660",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00195229",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000533",
@@ -510,7 +642,14 @@
   "stock_code": "299660",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01235296",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999997000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000497",
@@ -519,7 +658,9 @@
   "stock_code": "023410",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00184667",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000492",
@@ -528,7 +669,9 @@
   "stock_code": "023410",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00184667",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000425",
@@ -537,7 +680,9 @@
   "stock_code": "290690",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00605522",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000418",
@@ -546,7 +691,9 @@
   "stock_code": "210120",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00550082",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000404",
@@ -555,7 +702,9 @@
   "stock_code": "022220",
   "market": "K",
   "report_nm": "공개매수결과보고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00140061",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000386",
@@ -564,7 +713,9 @@
   "stock_code": "006490",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00122825",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000378",
@@ -573,7 +724,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000245",
@@ -582,7 +735,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000240",
@@ -591,7 +746,9 @@
   "stock_code": "101000",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00618410",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000164",
@@ -600,7 +757,9 @@
   "stock_code": "078130",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00104573",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000158",
@@ -609,7 +768,9 @@
   "stock_code": "299660",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01235296",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000105",
@@ -618,7 +779,9 @@
   "stock_code": "354200",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01397903",
+  "detail_done": true
  },
  {
   "rcept_no": "20260922000045",
@@ -627,7 +790,9 @@
   "stock_code": "215380",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01065013",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000434",
@@ -636,7 +801,9 @@
   "stock_code": "299660",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01235296",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000430",
@@ -645,7 +812,9 @@
   "stock_code": "122450",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00657987",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900606",
@@ -654,7 +823,9 @@
   "stock_code": "122450",
   "market": "K",
   "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00657987",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900571",
@@ -663,7 +834,9 @@
   "stock_code": "127710",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00665676",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900526",
@@ -672,7 +845,9 @@
   "stock_code": "348370",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01011526",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900498",
@@ -681,7 +856,9 @@
   "stock_code": "166090",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00660750",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900420",
@@ -690,7 +867,9 @@
   "stock_code": "066590",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00301422",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900283",
@@ -699,7 +878,9 @@
   "stock_code": "059090",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00366942",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900261",
@@ -708,7 +889,9 @@
   "stock_code": "038540",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00306162",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900215",
@@ -717,7 +900,9 @@
   "stock_code": "307180",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01326279",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921900193",
@@ -726,7 +911,9 @@
   "stock_code": "038500",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00239639",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921800460",
@@ -735,7 +922,9 @@
   "stock_code": "011810",
   "market": "Y",
   "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00138297",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921800442",
@@ -744,7 +933,9 @@
   "stock_code": "011810",
   "market": "Y",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00138297",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000369",
@@ -753,7 +944,9 @@
   "stock_code": "900270",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01160512",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000327",
@@ -762,7 +955,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000303",
@@ -771,7 +966,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000298",
@@ -780,7 +977,14 @@
   "stock_code": "023410",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00184667",
+  "direction": null,
+  "target": "천안기업(주)\n(지구레미콘(주) 에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 유진기업(주) : 천안기업(주)    = 1.0000000 : 0.0000000\n유진기업(주) : (주)지구레미콘 = 1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000240",
@@ -789,7 +993,9 @@
   "stock_code": "012170",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00145437",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000184",
@@ -798,7 +1004,9 @@
   "stock_code": "042940",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00232007",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000097",
@@ -807,7 +1015,9 @@
   "stock_code": "142760",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00587925",
+  "detail_done": true
  },
  {
   "rcept_no": "20260921000086",
@@ -816,7 +1026,9 @@
   "stock_code": "448730",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01688896",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900765",
@@ -825,7 +1037,9 @@
   "stock_code": "073190",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00407771",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900757",
@@ -834,7 +1048,9 @@
   "stock_code": "051980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00347716",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900739",
@@ -843,7 +1059,9 @@
   "stock_code": "457600",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01453944",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900686",
@@ -852,7 +1070,9 @@
   "stock_code": "322780",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01364297",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900674",
@@ -861,7 +1081,9 @@
   "stock_code": "142210",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00879020",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900632",
@@ -870,7 +1092,9 @@
   "stock_code": "377450",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01210066",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900581",
@@ -879,7 +1103,9 @@
   "stock_code": "482520",
   "market": "K",
   "report_nm": "주권매매거래정지              (SPAC 합병(예비심사청구대상))",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01845701",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900458",
@@ -888,7 +1114,9 @@
   "stock_code": "270520",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01228515",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900451",
@@ -897,7 +1125,9 @@
   "stock_code": "048470",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00109268",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900386",
@@ -906,7 +1136,9 @@
   "stock_code": "083790",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00407814",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918900148",
@@ -915,7 +1147,9 @@
   "stock_code": "307180",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01326279",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918800703",
@@ -924,7 +1158,9 @@
   "stock_code": "272210",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00339391",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918800605",
@@ -933,7 +1169,9 @@
   "stock_code": "007460",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00152385",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000457",
@@ -942,7 +1180,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000455",
@@ -951,7 +1191,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000453",
@@ -960,7 +1202,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000443",
@@ -969,7 +1213,14 @@
   "stock_code": "317530",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01267222",
+  "direction": "양도",
+  "target": "주식회사 에피소드미디어",
+  "counterparty": "주식회사 코퍼스코리아",
+  "amount": 4000000000,
+  "note": null,
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000407",
@@ -978,7 +1229,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000391",
@@ -987,7 +1240,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000373",
@@ -996,7 +1251,14 @@
   "stock_code": "482520",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01845701",
+  "direction": null,
+  "target": "주식회사 큐로드",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)큐로드 : 교보16호기업인수목적(주) = 1 : 0.0481927",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000371",
@@ -1005,7 +1267,14 @@
   "stock_code": "078130",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00104573",
+  "direction": null,
+  "target": "한덕철광산업 주식회사",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 에스엠국일 주식회사 : 한덕철광산업 주식회사 =  1.0000000 : 15.5536068",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000349",
@@ -1014,7 +1283,9 @@
   "stock_code": "053950",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00307028",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000288",
@@ -1023,7 +1294,9 @@
   "stock_code": "241710",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00763473",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000282",
@@ -1032,7 +1305,9 @@
   "stock_code": "092600",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00537337",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000257",
@@ -1041,7 +1316,9 @@
   "stock_code": "079190",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00479705",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000210",
@@ -1050,7 +1327,9 @@
   "stock_code": "223310",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01075126",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000112",
@@ -1059,7 +1338,9 @@
   "stock_code": "123010",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00615723",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000031",
@@ -1068,7 +1349,9 @@
   "stock_code": "001570",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00106119",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000018",
@@ -1077,7 +1360,9 @@
   "stock_code": "377450",
   "market": "K",
   "report_nm": "공개매수결과보고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "01210066",
+  "detail_done": true
  },
  {
   "rcept_no": "20260918000001",
@@ -1086,7 +1371,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "공개매수결과보고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000375",
@@ -1095,7 +1382,9 @@
   "stock_code": "277410",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01243161",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000373",
@@ -1104,7 +1393,9 @@
   "stock_code": "009620",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00125822",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908100001",
@@ -1113,7 +1404,9 @@
   "stock_code": "033290",
   "market": "K",
   "report_nm": "효력발생안내( 2026.9.8. 제출 증권신고서(합병) )",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00155948",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900633",
@@ -1122,7 +1415,9 @@
   "stock_code": "305090",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01267967",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900593",
@@ -1131,7 +1426,9 @@
   "stock_code": "463480",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00367400",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900571",
@@ -1140,7 +1437,9 @@
   "stock_code": "463480",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00367400",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900489",
@@ -1149,7 +1448,9 @@
   "stock_code": "040350",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00346407",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900374",
@@ -1158,7 +1459,9 @@
   "stock_code": "340360",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01416642",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900175",
@@ -1167,7 +1470,9 @@
   "stock_code": "051160",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00389110",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917900147",
@@ -1176,7 +1481,9 @@
   "stock_code": "107640",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00474588",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917800659",
@@ -1185,7 +1492,9 @@
   "stock_code": "004990",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00120562",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917800656",
@@ -1194,7 +1503,9 @@
   "stock_code": "011170",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00165413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000371",
@@ -1203,7 +1514,9 @@
   "stock_code": "027040",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00130587",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000346",
@@ -1212,7 +1525,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000340",
@@ -1221,7 +1536,9 @@
   "stock_code": "073640",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00373021",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000278",
@@ -1230,7 +1547,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000274",
@@ -1239,7 +1558,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000271",
@@ -1248,7 +1569,9 @@
   "stock_code": "019570",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110750",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000264",
@@ -1257,7 +1580,9 @@
   "stock_code": "159910",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00896753",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000233",
@@ -1266,7 +1591,9 @@
   "stock_code": "226340",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01098792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000227",
@@ -1275,7 +1602,9 @@
   "stock_code": "277410",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01243161",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000174",
@@ -1284,7 +1613,9 @@
   "stock_code": "291810",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01524507",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000168",
@@ -1293,7 +1624,9 @@
   "stock_code": "026910",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00104120",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000150",
@@ -1302,7 +1635,9 @@
   "stock_code": "109070",
   "market": "Y",
   "report_nm": "합병등종료보고서(영업양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00753643",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000132",
@@ -1311,7 +1646,9 @@
   "stock_code": "109070",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00753643",
+  "detail_done": true
  },
  {
   "rcept_no": "20260917000124",
@@ -1320,7 +1657,9 @@
   "stock_code": "038060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00406329",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900664",
@@ -1329,7 +1668,9 @@
   "stock_code": "443250",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01468061",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900639",
@@ -1338,7 +1679,9 @@
   "stock_code": "307870",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01326792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900624",
@@ -1347,7 +1690,9 @@
   "stock_code": "033310",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00143226",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900604",
@@ -1356,7 +1701,9 @@
   "stock_code": "083470",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00475718",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900592",
@@ -1365,7 +1712,9 @@
   "stock_code": "006730",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00130383",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900540",
@@ -1374,7 +1723,9 @@
   "stock_code": "261200",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01187494",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900518",
@@ -1383,7 +1734,9 @@
   "stock_code": "228670",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00828761",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900347",
@@ -1392,7 +1745,9 @@
   "stock_code": "124560",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00562245",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900255",
@@ -1401,7 +1756,9 @@
   "stock_code": "336570",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01407909",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916900193",
@@ -1410,7 +1767,9 @@
   "stock_code": "107640",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00474588",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916800377",
@@ -1419,7 +1778,9 @@
   "stock_code": "009830",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00162461",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916800218",
@@ -1428,7 +1789,9 @@
   "stock_code": "006840",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00125080",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916800210",
@@ -1437,7 +1800,9 @@
   "stock_code": "161000",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00936787",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916800191",
@@ -1446,7 +1811,9 @@
   "stock_code": "006840",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00125080",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916800188",
@@ -1455,7 +1822,9 @@
   "stock_code": "161000",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00936787",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916600398",
@@ -1464,7 +1833,9 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01060735",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000548",
@@ -1473,7 +1844,14 @@
   "stock_code": "092600",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00537337",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 10000000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000546",
@@ -1482,7 +1860,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000543",
@@ -1491,7 +1871,14 @@
   "stock_code": "011810",
   "market": "Y",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00138297",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 68000000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000537",
@@ -1500,7 +1887,14 @@
   "stock_code": "011810",
   "market": "Y",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00138297",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": null,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000527",
@@ -1509,7 +1903,9 @@
   "stock_code": "321820",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(영업양도결정)",
-  "category": "영업양수도"
+  "category": "영업양수도",
+  "corp_code": "01116502",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000520",
@@ -1518,7 +1914,9 @@
   "stock_code": "083470",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00475718",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000511",
@@ -1527,7 +1925,9 @@
   "stock_code": "261780",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01141599",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000509",
@@ -1536,7 +1936,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000498",
@@ -1545,7 +1947,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000491",
@@ -1554,7 +1958,9 @@
   "stock_code": "026910",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00104120",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000465",
@@ -1563,7 +1969,14 @@
   "stock_code": "019570",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110750",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 490000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000451",
@@ -1572,7 +1985,9 @@
   "stock_code": "278470",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01190568",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000438",
@@ -1581,7 +1996,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000398",
@@ -1590,7 +2007,9 @@
   "stock_code": "003850",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00123143",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000351",
@@ -1599,7 +2018,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000344",
@@ -1608,7 +2029,14 @@
   "stock_code": "261780",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01141599",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 17999997056,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260916000279",
@@ -1617,7 +2045,14 @@
   "stock_code": "142760",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00587925",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2000000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900823",
@@ -1626,7 +2061,9 @@
   "stock_code": "228670",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00828761",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900815",
@@ -1635,7 +2072,9 @@
   "stock_code": "294090",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01274310",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900712",
@@ -1644,7 +2083,9 @@
   "stock_code": "061250",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00188973",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900705",
@@ -1653,7 +2094,9 @@
   "stock_code": "096690",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00608839",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900649",
@@ -1662,7 +2105,9 @@
   "stock_code": "351320",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01440153",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900552",
@@ -1671,7 +2116,9 @@
   "stock_code": "201490",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00965813",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900525",
@@ -1680,7 +2127,9 @@
   "stock_code": "035620",
   "market": "K",
   "report_nm": "기타주요경영사항              (제3자 배정 유상증자 결정 철회)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00259590",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900505",
@@ -1689,7 +2138,9 @@
   "stock_code": "293490",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01137383",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900482",
@@ -1698,7 +2149,9 @@
   "stock_code": "336570",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01407909",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900330",
@@ -1707,7 +2160,9 @@
   "stock_code": "077360",
   "market": "K",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00471068",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900306",
@@ -1716,7 +2171,9 @@
   "stock_code": "059090",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00366942",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900278",
@@ -1725,7 +2182,9 @@
   "stock_code": "258790",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01182408",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915900012",
@@ -1734,7 +2193,9 @@
   "stock_code": "418620",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01516890",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915800788",
@@ -1743,7 +2204,9 @@
   "stock_code": "006840",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00125080",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915800786",
@@ -1752,7 +2215,9 @@
   "stock_code": "089590",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00555874",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915800672",
@@ -1761,7 +2226,9 @@
   "stock_code": "214330",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00105606",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000428",
@@ -1770,7 +2237,14 @@
   "stock_code": "050090",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00369569",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 4734000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000392",
@@ -1779,7 +2253,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "공개매수에관한의견표명서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000380",
@@ -1788,7 +2264,14 @@
   "stock_code": "061250",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00188973",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 9999993120,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000373",
@@ -1797,7 +2280,9 @@
   "stock_code": "022220",
   "market": "K",
   "report_nm": "공개매수에관한의견표명서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00140061",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000331",
@@ -1806,7 +2291,14 @@
   "stock_code": "026910",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00104120",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1999995110,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000300",
@@ -1815,7 +2307,9 @@
   "stock_code": "009730",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00116426",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000295",
@@ -1824,7 +2318,14 @@
   "stock_code": "201490",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00965813",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 27900249356,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000284",
@@ -1833,7 +2334,9 @@
   "stock_code": "357880",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01381984",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000281",
@@ -1842,7 +2345,9 @@
   "stock_code": "035620",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00259590",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000276",
@@ -1851,7 +2356,14 @@
   "stock_code": "052420",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00350048",
+  "direction": "양도",
+  "target": "화일약품 주식회사",
+  "counterparty": "파마앤바이오 신기술조합",
+  "amount": 52928640000,
+  "note": "양도 후 지분율 6.55%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000242",
@@ -1860,7 +2372,9 @@
   "stock_code": "024950",
   "market": "K",
   "report_nm": "공개매수결과보고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00128607",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000230",
@@ -1869,7 +2383,9 @@
   "stock_code": "199730",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01110058",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000070",
@@ -1878,7 +2394,9 @@
   "stock_code": "003850",
   "market": "Y",
   "report_nm": "주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00123143",
+  "detail_done": true
  },
  {
   "rcept_no": "20260915000001",
@@ -1887,7 +2405,14 @@
   "stock_code": "418620",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01516890",
+  "direction": "양수",
+  "target": "주식회사 다컴시스템",
+  "counterparty": "주식회사 다컴",
+  "amount": 4442550000,
+  "note": "취득 후 지분율 35%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000432",
@@ -1896,7 +2421,9 @@
   "stock_code": "418620",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01516890",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914900709",
@@ -1905,7 +2432,9 @@
   "stock_code": "079190",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00479705",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914900393",
@@ -1914,7 +2443,9 @@
   "stock_code": "206400",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01043853",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914900343",
@@ -1923,7 +2454,9 @@
   "stock_code": "307870",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01326792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914900338",
@@ -1932,7 +2465,9 @@
   "stock_code": "178320",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00838005",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914900136",
@@ -1941,7 +2476,9 @@
   "stock_code": "123860",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00761952",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914800417",
@@ -1950,7 +2487,9 @@
   "stock_code": "047050",
   "market": "Y",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00124504",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914800415",
@@ -1959,7 +2498,9 @@
   "stock_code": "047050",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00124504",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000421",
@@ -1968,7 +2509,9 @@
   "stock_code": "331920",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01114586",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000397",
@@ -1977,7 +2520,14 @@
   "stock_code": "058110",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00270113",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 990000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000342",
@@ -1986,7 +2536,9 @@
   "stock_code": "024810",
   "market": "E",
   "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00145738",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000303",
@@ -1995,7 +2547,9 @@
   "stock_code": "006490",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00122825",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000266",
@@ -2004,7 +2558,14 @@
   "stock_code": "166090",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00660750",
+  "direction": "양도",
+  "target": "하나마이크론 주식회사",
+  "counterparty": "파이프솔루션5호 유한회사",
+  "amount": 100000000000,
+  "note": "양도 후 지분율 5.38%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000246",
@@ -2013,7 +2574,14 @@
   "stock_code": "131400",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00533924",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999994240,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000244",
@@ -2022,7 +2590,14 @@
   "stock_code": "131400",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00533924",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 5499996600,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000241",
@@ -2031,7 +2606,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000235",
@@ -2040,7 +2617,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000232",
@@ -2049,7 +2628,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000210",
@@ -2058,7 +2639,9 @@
   "stock_code": "223310",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01075126",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000184",
@@ -2067,7 +2650,9 @@
   "stock_code": "079190",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00479705",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000174",
@@ -2076,7 +2661,9 @@
   "stock_code": "199800",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00547510",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000153",
@@ -2085,7 +2672,9 @@
   "stock_code": "080420",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00480048",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000081",
@@ -2094,7 +2683,9 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000039",
@@ -2103,7 +2694,9 @@
   "stock_code": "038060",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00406329",
+  "detail_done": true
  },
  {
   "rcept_no": "20260914000036",
@@ -2112,7 +2705,9 @@
   "stock_code": "038880",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00252269",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900703",
@@ -2121,7 +2716,9 @@
   "stock_code": "119830",
   "market": "K",
   "report_nm": "기타주요경영사항              (제3자배정 유상증자 결정 철회)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00626011",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900612",
@@ -2130,7 +2727,9 @@
   "stock_code": "290660",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01246034",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900487",
@@ -2139,7 +2738,9 @@
   "stock_code": "039560",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00268251",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900472",
@@ -2148,7 +2749,9 @@
   "stock_code": "026910",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00104120",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900455",
@@ -2157,7 +2760,9 @@
   "stock_code": "062970",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00403766",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900424",
@@ -2166,7 +2771,9 @@
   "stock_code": "025770",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00159342",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900405",
@@ -2175,7 +2782,9 @@
   "stock_code": "307870",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01326792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911900290",
@@ -2184,7 +2793,9 @@
   "stock_code": "463480",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00367400",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911800779",
@@ -2193,7 +2804,9 @@
   "stock_code": "002420",
   "market": "Y",
   "report_nm": "영업양수결정(종속회사의주요경영사항)",
-  "category": "영업양수도"
+  "category": "영업양수도",
+  "corp_code": "00133618",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911800676",
@@ -2202,7 +2815,9 @@
   "stock_code": "007460",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00152385",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911800199",
@@ -2211,7 +2826,9 @@
   "stock_code": "005090",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00125150",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911800150",
@@ -2220,7 +2837,9 @@
   "stock_code": "014910",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00132628",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000600",
@@ -2229,7 +2848,14 @@
   "stock_code": "101000",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00618410",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 5999999404,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000570",
@@ -2238,7 +2864,14 @@
   "stock_code": "192410",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00623184",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 999998100,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000566",
@@ -2247,7 +2880,9 @@
   "stock_code": "119830",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00626011",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000555",
@@ -2256,7 +2891,9 @@
   "stock_code": "003060",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00101044",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000526",
@@ -2265,7 +2902,14 @@
   "stock_code": "038060",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00406329",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2499999600,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000504",
@@ -2274,7 +2918,9 @@
   "stock_code": "011090",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00139764",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000503",
@@ -2283,7 +2929,9 @@
   "stock_code": "049470",
   "market": "K",
   "report_nm": "[기재정정]합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00351579",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000380",
@@ -2292,7 +2940,14 @@
   "stock_code": "241710",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00763473",
+  "direction": null,
+  "target": "(주)에스피뷰티글로벌",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)코스메카코리아 : (주)에스피뷰티글로벌 = 1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000372",
@@ -2301,7 +2956,9 @@
   "stock_code": "351320",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01440153",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000341",
@@ -2310,7 +2967,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000271",
@@ -2319,7 +2978,14 @@
   "stock_code": "200350",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00990819",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 3999999160,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000215",
@@ -2328,7 +2994,9 @@
   "stock_code": "079190",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00479705",
+  "detail_done": true
  },
  {
   "rcept_no": "20260911000113",
@@ -2337,7 +3005,9 @@
   "stock_code": "001570",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00106119",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910900547",
@@ -2346,7 +3016,9 @@
   "stock_code": "204270",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00447575",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910900540",
@@ -2355,7 +3027,9 @@
   "stock_code": "204270",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00447575",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910900405",
@@ -2364,7 +3038,9 @@
   "stock_code": "489480",
   "market": "K",
   "report_nm": "주권매매거래정지              (SPAC 합병(예비심사청구대상))",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01873272",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910900265",
@@ -2373,7 +3049,9 @@
   "stock_code": "065170",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00384717",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910900252",
@@ -2382,7 +3060,9 @@
   "stock_code": "307180",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01326279",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910800627",
@@ -2391,7 +3071,9 @@
   "stock_code": "267250",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01205709",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910800520",
@@ -2400,7 +3082,9 @@
   "stock_code": "361610",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01386916",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910800416",
@@ -2409,7 +3093,9 @@
   "stock_code": "011790",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00139889",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910600267",
@@ -2418,7 +3104,9 @@
   "stock_code": "122830",
   "market": "N",
   "report_nm": "기타주요경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00337296",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000580",
@@ -2427,7 +3115,14 @@
   "stock_code": "011300",
   "market": "Y",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00132868",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1999998380,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000536",
@@ -2436,7 +3131,9 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01060735",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000465",
@@ -2445,7 +3142,14 @@
   "stock_code": "355390",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01514005",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 999999781,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000445",
@@ -2454,7 +3158,9 @@
   "stock_code": "032790",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110884",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000423",
@@ -2463,7 +3169,14 @@
   "stock_code": "900270",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01160512",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 60000000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000395",
@@ -2472,7 +3185,9 @@
   "stock_code": "105550",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00766106",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000357",
@@ -2481,7 +3196,14 @@
   "stock_code": "205500",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01042429",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 3797296895,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000331",
@@ -2490,7 +3212,14 @@
   "stock_code": "489480",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01873272",
+  "direction": null,
+  "target": "주식회사 엑티브온 (ActivON Co., Ltd.)",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)엑티브온 : 키움제11호기업인수목적(주) = 1: 0.3267974",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000322",
@@ -2499,7 +3228,14 @@
   "stock_code": "418620",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01516890",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999999560,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000314",
@@ -2508,7 +3244,14 @@
   "stock_code": "019570",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110750",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2499995646,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000268",
@@ -2517,7 +3260,9 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01060735",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000232",
@@ -2526,7 +3271,9 @@
   "stock_code": "122830",
   "market": "N",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00337296",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000108",
@@ -2535,7 +3282,9 @@
   "stock_code": "206950",
   "market": "N",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00756163",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000105",
@@ -2544,7 +3293,9 @@
   "stock_code": "109070",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00753643",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000002",
@@ -2553,7 +3304,9 @@
   "stock_code": "289010",
   "market": "K",
   "report_nm": "공개매수설명서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00983934",
+  "detail_done": true
  },
  {
   "rcept_no": "20260910000001",
@@ -2562,7 +3315,9 @@
   "stock_code": "289010",
   "market": "K",
   "report_nm": "공개매수신고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00983934",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000544",
@@ -2571,7 +3326,9 @@
   "stock_code": "032790",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110884",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000543",
@@ -2580,7 +3337,14 @@
   "stock_code": "032790",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00110884",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 4999999297,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000542",
@@ -2589,7 +3353,9 @@
   "stock_code": "226340",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01098792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909900657",
@@ -2598,7 +3364,9 @@
   "stock_code": "109740",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00530121",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909900655",
@@ -2607,7 +3375,9 @@
   "stock_code": "083660",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00406037",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909900603",
@@ -2616,7 +3386,9 @@
   "stock_code": "033310",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00143226",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909900299",
@@ -2625,7 +3397,9 @@
   "stock_code": "261780",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01141599",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909900297",
@@ -2634,7 +3408,9 @@
   "stock_code": "228670",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00828761",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909800257",
@@ -2643,7 +3419,9 @@
   "stock_code": "004830",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00114093",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909800251",
@@ -2652,7 +3430,9 @@
   "stock_code": "004830",
   "market": "Y",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00114093",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909800113",
@@ -2661,7 +3441,14 @@
   "stock_code": "278470",
   "market": "Y",
   "report_nm": "회사합병결정(종속회사의주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01190568",
+  "direction": null,
+  "target": "(주)에이피알팩토리",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)에이피알 : (주)에이피알팩토리\n= 1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000532",
@@ -2670,7 +3457,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000531",
@@ -2679,7 +3468,14 @@
   "stock_code": "035620",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00259590",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": null,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000530",
@@ -2688,7 +3484,9 @@
   "stock_code": "006980",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00142661",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000528",
@@ -2697,7 +3495,9 @@
   "stock_code": "226340",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01098792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000507",
@@ -2706,7 +3506,14 @@
   "stock_code": "357880",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01381984",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1999999848,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000500",
@@ -2715,7 +3522,9 @@
   "stock_code": "048870",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00475985",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000475",
@@ -2724,7 +3533,9 @@
   "stock_code": "049470",
   "market": "K",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00351579",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000470",
@@ -2733,7 +3544,9 @@
   "stock_code": "001570",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00106119",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000431",
@@ -2742,7 +3555,9 @@
   "stock_code": "009730",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00116426",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000329",
@@ -2751,7 +3566,9 @@
   "stock_code": "210120",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00550082",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000291",
@@ -2760,7 +3577,9 @@
   "stock_code": "001570",
   "market": "Y",
   "report_nm": "주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00106119",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000290",
@@ -2769,7 +3588,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000286",
@@ -2778,7 +3599,14 @@
   "stock_code": "029480",
   "market": "K",
   "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00186452",
+  "direction": "양수",
+  "target": "(주)유비즈솔루션",
+  "counterparty": "지미숙 외 9인",
+  "amount": 30700020000,
+  "note": "취득 후 지분율 100%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000220",
@@ -2787,7 +3615,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000045",
@@ -2796,7 +3626,14 @@
   "stock_code": "278470",
   "market": "Y",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01190568",
+  "direction": null,
+  "target": "(주)에이피알팩토리",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)에이피알 : (주)에이피알팩토리\n= 1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260909000002",
@@ -2805,7 +3642,14 @@
   "stock_code": "351320",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01440153",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 29999998875,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000434",
@@ -2814,7 +3658,9 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01060735",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908900479",
@@ -2823,7 +3669,9 @@
   "stock_code": "019210",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00139719",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908900149",
@@ -2832,7 +3680,9 @@
   "stock_code": "009620",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00125822",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908800584",
@@ -2841,7 +3691,9 @@
   "stock_code": "027410",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)(자회사의 주요경영사항)              (소규모합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00219097",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908800378",
@@ -2850,7 +3702,9 @@
   "stock_code": "009830",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00162461",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908800274",
@@ -2859,7 +3713,9 @@
   "stock_code": "002420",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00133618",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000404",
@@ -2868,7 +3724,14 @@
   "stock_code": "199730",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01110058",
+  "direction": null,
+  "target": "(주)유앤인프라",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)바이오인프라 : (주)유앤인프라 = 1.00000000 : 0.00000000(무증자 합병)",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000381",
@@ -2877,7 +3740,9 @@
   "stock_code": "027040",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00130587",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000361",
@@ -2886,7 +3751,9 @@
   "stock_code": "126600",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00599595",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000348",
@@ -2895,7 +3762,9 @@
   "stock_code": "206950",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00756163",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000315",
@@ -2904,7 +3773,9 @@
   "stock_code": "247660",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00660459",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000307",
@@ -2913,7 +3784,9 @@
   "stock_code": "001470",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00125974",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000180",
@@ -2922,7 +3795,9 @@
   "stock_code": "047920",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00336817",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000120",
@@ -2931,7 +3806,9 @@
   "stock_code": "033290",
   "market": "K",
   "report_nm": "[첨부정정]증권신고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00155948",
+  "detail_done": true
  },
  {
   "rcept_no": "20260908000118",
@@ -2940,7 +3817,9 @@
   "stock_code": "033290",
   "market": "K",
   "report_nm": "[기재정정]증권신고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00155948",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000332",
@@ -2949,7 +3828,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900631",
@@ -2958,7 +3839,9 @@
   "stock_code": "320000",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01359815",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900538",
@@ -2967,7 +3850,9 @@
   "stock_code": "023440",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00148531",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900516",
@@ -2976,7 +3861,9 @@
   "stock_code": "223310",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01075126",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900507",
@@ -2985,7 +3872,9 @@
   "stock_code": "023410",
   "market": "K",
   "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00184667",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900494",
@@ -2994,7 +3883,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900456",
@@ -3003,7 +3894,9 @@
   "stock_code": "033310",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00143226",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900414",
@@ -3012,7 +3905,9 @@
   "stock_code": "261200",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01187494",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907900199",
@@ -3021,7 +3916,9 @@
   "stock_code": "226340",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01098792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000272",
@@ -3030,7 +3927,9 @@
   "stock_code": "027040",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00130587",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000217",
@@ -3039,7 +3938,9 @@
   "stock_code": "053950",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00307028",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000199",
@@ -3048,7 +3949,9 @@
   "stock_code": "354200",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01397903",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000195",
@@ -3057,7 +3960,9 @@
   "stock_code": "078590",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00230814",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000107",
@@ -3066,7 +3971,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260907000075",
@@ -3075,7 +3982,14 @@
   "stock_code": "049120",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00350020",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 6000001375,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900725",
@@ -3084,7 +3998,9 @@
   "stock_code": "119850",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00626464",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900600",
@@ -3093,7 +4009,9 @@
   "stock_code": "270520",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01228515",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900588",
@@ -3102,7 +4020,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900515",
@@ -3111,7 +4031,9 @@
   "stock_code": "040350",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00346407",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900372",
@@ -3120,7 +4042,9 @@
   "stock_code": "062970",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00403766",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900307",
@@ -3129,7 +4053,9 @@
   "stock_code": "290720",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01259311",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900280",
@@ -3138,7 +4064,9 @@
   "stock_code": "175250",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00554352",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904900128",
@@ -3147,7 +4075,9 @@
   "stock_code": "096690",
   "market": "K",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00608839",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904800462",
@@ -3156,7 +4086,9 @@
   "stock_code": "011790",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00139889",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904800327",
@@ -3165,7 +4097,9 @@
   "stock_code": "036530",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)(자회사의 주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00225159",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904100017",
@@ -3174,7 +4108,9 @@
   "stock_code": "361610",
   "market": "Y",
   "report_nm": "정정명령부과( 2026.08.26. 제출 주요사항보고서(회사합병 결정) )",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01386916",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904100016",
@@ -3183,7 +4119,9 @@
   "stock_code": "096770",
   "market": "Y",
   "report_nm": "정정신고서제출요구( 2026.08.26. 제출 증권신고서(합병) )",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00631518",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000518",
@@ -3192,7 +4130,9 @@
   "stock_code": "011090",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00139764",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000509",
@@ -3201,7 +4141,9 @@
   "stock_code": "212560",
   "market": "K",
   "report_nm": "주요사항보고서(주식교환ㆍ이전결정)",
-  "category": "주식교환·이전"
+  "category": "주식교환·이전",
+  "corp_code": "00876865",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000484",
@@ -3210,7 +4152,14 @@
   "stock_code": "429270",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01284751",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999998540,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000450",
@@ -3219,7 +4168,14 @@
   "stock_code": "247660",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00660459",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999994200,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000384",
@@ -3228,7 +4184,9 @@
   "stock_code": "276730",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01230255",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000376",
@@ -3237,7 +4195,9 @@
   "stock_code": "223310",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01075126",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000355",
@@ -3246,7 +4206,14 @@
   "stock_code": "006980",
   "market": "Y",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00142661",
+  "direction": null,
+  "target": "주식회사 우성유통(Woosung Distribution Co., Ltd.)",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)우성 보통주 : (주)우성유통 보통주 = 1 : 1.8702948",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000334",
@@ -3255,7 +4222,9 @@
   "stock_code": "338220",
   "market": "K",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01344202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000328",
@@ -3264,7 +4233,9 @@
   "stock_code": "024850",
   "market": "K",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00155586",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000294",
@@ -3273,7 +4244,14 @@
   "stock_code": "223310",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01075126",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 14699999660,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000285",
@@ -3282,7 +4260,9 @@
   "stock_code": "082270",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00492894",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000281",
@@ -3291,7 +4271,14 @@
   "stock_code": "340360",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01416642",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2199834000,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000246",
@@ -3300,7 +4287,9 @@
   "stock_code": "026910",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00104120",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000222",
@@ -3309,7 +4298,9 @@
   "stock_code": "064960",
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00398792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000221",
@@ -3318,7 +4309,9 @@
   "stock_code": "226330",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01344336",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000218",
@@ -3327,7 +4320,9 @@
   "stock_code": "085670",
   "market": "K",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00493510",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000214",
@@ -3336,7 +4331,9 @@
   "stock_code": "012160",
   "market": "Y",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00141477",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000209",
@@ -3345,7 +4342,14 @@
   "stock_code": "004970",
   "market": "Y",
   "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00135962",
+  "direction": "양수",
+  "target": "선민수산(주)",
+  "counterparty": "\"15. 기타 투자판단과 관련한 중요사항\"  참조",
+  "amount": 82300000000,
+  "note": "취득 후 지분율 100.00%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000208",
@@ -3354,7 +4358,9 @@
   "stock_code": "079550",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00503668",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000074",
@@ -3363,7 +4369,9 @@
   "stock_code": "121440",
   "market": "K",
   "report_nm": "공개매수결과보고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00674498",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000072",
@@ -3372,7 +4380,14 @@
   "stock_code": "115180",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01042650",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 101601000000,
+  "note": "증자방식: 주주배정후 실권주 일반공모",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000065",
@@ -3381,7 +4396,9 @@
   "stock_code": "042940",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00232007",
+  "detail_done": true
  },
  {
   "rcept_no": "20260904000063",
@@ -3390,7 +4407,9 @@
   "stock_code": "418620",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01516890",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900635",
@@ -3399,7 +4418,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900607",
@@ -3408,7 +4429,9 @@
   "stock_code": "101400",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00641393",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900584",
@@ -3417,7 +4440,9 @@
   "stock_code": "305090",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01267967",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900492",
@@ -3426,7 +4451,9 @@
   "stock_code": "148250",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00915508",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900447",
@@ -3435,7 +4462,9 @@
   "stock_code": "096240",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00525882",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900350",
@@ -3444,7 +4473,9 @@
   "stock_code": "175250",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00554352",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903900237",
@@ -3453,7 +4484,9 @@
   "stock_code": "340360",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식담보제공계약해제ㆍ취소등",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01416642",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903800579",
@@ -3462,7 +4495,9 @@
   "stock_code": "007460",
   "market": "Y",
   "report_nm": "주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00152385",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903800469",
@@ -3471,7 +4506,9 @@
   "stock_code": "214420",
   "market": "Y",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00816544",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903800415",
@@ -3480,7 +4517,9 @@
   "stock_code": "214420",
   "market": "Y",
   "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00816544",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903800363",
@@ -3489,7 +4528,9 @@
   "stock_code": "020150",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00113997",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000395",
@@ -3498,7 +4539,14 @@
   "stock_code": "050090",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00369569",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 4270000000,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000384",
@@ -3507,7 +4555,9 @@
   "stock_code": "011090",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00139764",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000374",
@@ -3516,7 +4566,9 @@
   "stock_code": "226330",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01344336",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000343",
@@ -3525,7 +4577,9 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01060735",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000333",
@@ -3534,7 +4588,9 @@
   "stock_code": "027040",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00130587",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000316",
@@ -3543,7 +4599,14 @@
   "stock_code": "003060",
   "market": "Y",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00101044",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 20000001094,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000291",
@@ -3552,7 +4615,9 @@
   "stock_code": "069920",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00426068",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000271",
@@ -3561,7 +4626,14 @@
   "stock_code": "009440",
   "market": "Y",
   "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00159971",
+  "direction": "양도",
+  "target": "케이씨안전기술(주)",
+  "counterparty": "오퍼스제4호기업재무안정기관전용사모투자 합자회사",
+  "amount": 22330000000,
+  "note": "양도 후 지분율 0%",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000225",
@@ -3570,7 +4642,9 @@
   "stock_code": "291810",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01524507",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000196",
@@ -3579,7 +4653,9 @@
   "stock_code": "175250",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00554352",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000184",
@@ -3588,7 +4664,9 @@
   "stock_code": "900290",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01170962",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000148",
@@ -3597,7 +4675,14 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1999999456,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000143",
@@ -3606,7 +4691,9 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000104",
@@ -3615,7 +4702,9 @@
   "stock_code": "046070",
   "market": "E",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00295857",
+  "detail_done": true
  },
  {
   "rcept_no": "20260903000009",
@@ -3624,7 +4713,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "[첨부정정]공개매수신고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900577",
@@ -3633,7 +4724,9 @@
   "stock_code": "213420",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01061558",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900536",
@@ -3642,7 +4735,9 @@
   "stock_code": "213420",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01061558",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900456",
@@ -3651,7 +4746,9 @@
   "stock_code": "038060",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00406329",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900445",
@@ -3660,7 +4757,9 @@
   "stock_code": "073640",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00373021",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900441",
@@ -3669,7 +4768,9 @@
   "stock_code": "073640",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정              (철회)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00373021",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900264",
@@ -3678,7 +4779,9 @@
   "stock_code": "086520",
   "market": "K",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00536541",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900243",
@@ -3687,7 +4790,9 @@
   "stock_code": "389260",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01150515",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900241",
@@ -3696,7 +4801,9 @@
   "stock_code": "200130",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01032404",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900240",
@@ -3705,7 +4812,9 @@
   "stock_code": "389260",
   "market": "K",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01150515",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902900003",
@@ -3714,7 +4823,9 @@
   "stock_code": "303030",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01318933",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902800525",
@@ -3723,7 +4834,9 @@
   "stock_code": "011280",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00153524",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902800277",
@@ -3732,7 +4845,9 @@
   "stock_code": "004770",
   "market": "Y",
   "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00138057",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000336",
@@ -3741,7 +4856,9 @@
   "stock_code": "027040",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00130587",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000329",
@@ -3750,7 +4867,9 @@
   "stock_code": "069920",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00426068",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000317",
@@ -3759,7 +4878,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "[기재정정]공개매수설명서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000313",
@@ -3768,7 +4889,9 @@
   "stock_code": "079940",
   "market": "K",
   "report_nm": "[기재정정]공개매수신고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00506294",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000269",
@@ -3777,7 +4900,9 @@
   "stock_code": "073640",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00373021",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000253",
@@ -3786,7 +4911,14 @@
   "stock_code": "206950",
   "market": "N",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00756163",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 9999994215,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000167",
@@ -3795,7 +4927,9 @@
   "stock_code": "226330",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01344336",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000156",
@@ -3804,7 +4938,9 @@
   "stock_code": "247540",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01160363",
+  "detail_done": true
  },
  {
   "rcept_no": "20260902000121",
@@ -3813,7 +4949,9 @@
   "stock_code": "234300",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01014055",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900738",
@@ -3822,7 +4960,9 @@
   "stock_code": "127710",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00665676",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900688",
@@ -3831,7 +4971,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900644",
@@ -3840,7 +4982,9 @@
   "stock_code": "049480",
   "market": "K",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00335076",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900533",
@@ -3849,7 +4993,9 @@
   "stock_code": "043260",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00317210",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900389",
@@ -3858,7 +5004,9 @@
   "stock_code": "083470",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00475718",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900366",
@@ -3867,7 +5015,9 @@
   "stock_code": "177830",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00429694",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901900199",
@@ -3876,7 +5026,9 @@
   "stock_code": "175250",
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식담보제공계약해제ㆍ취소등",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00554352",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800725",
@@ -3885,7 +5037,9 @@
   "stock_code": "027410",
   "market": "Y",
   "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)              (소규모합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00219097",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800709",
@@ -3894,7 +5048,9 @@
   "stock_code": "404990",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01436558",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800654",
@@ -3903,7 +5059,9 @@
   "stock_code": "004770",
   "market": "Y",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00138057",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800624",
@@ -3912,7 +5070,9 @@
   "stock_code": "051900",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00356370",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800508",
@@ -3921,7 +5081,9 @@
   "stock_code": "051900",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00356370",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800452",
@@ -3930,7 +5092,9 @@
   "stock_code": "051900",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00356370",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800132",
@@ -3939,7 +5103,9 @@
   "stock_code": "010400",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00143262",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800102",
@@ -3948,7 +5114,9 @@
   "stock_code": "381970",
   "market": "Y",
   "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01323032",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800085",
@@ -3957,7 +5125,9 @@
   "stock_code": "381970",
   "market": "Y",
   "report_nm": "최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01323032",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901800078",
@@ -3966,7 +5136,9 @@
   "stock_code": "036530",
   "market": "Y",
   "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00225159",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901600559",
@@ -3975,7 +5147,9 @@
   "stock_code": "122830",
   "market": "N",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00337296",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000339",
@@ -3984,7 +5158,14 @@
   "stock_code": "223220",
   "market": "N",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01060735",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 427718900,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000333",
@@ -3993,7 +5174,9 @@
   "stock_code": "229000",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01051472",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000318",
@@ -4002,7 +5185,14 @@
   "stock_code": "126600",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00599595",
+  "direction": null,
+  "target": "(주)비지에프에코솔루션",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 (주)비지에프에코머티리얼즈 : (주)비지에프에코솔루션 = \n1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000301",
@@ -4011,7 +5201,9 @@
   "stock_code": "320000",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01359815",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000293",
@@ -4020,7 +5212,14 @@
   "stock_code": "291810",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01524507",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2999999122,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000283",
@@ -4029,7 +5228,9 @@
   "stock_code": "073640",
   "market": "K",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00373021",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000241",
@@ -4038,7 +5239,14 @@
   "stock_code": "069920",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00426068",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 2079330736,
+  "note": "증자방식: 일반공모증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000196",
@@ -4047,7 +5255,9 @@
   "stock_code": "294090",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01274310",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000174",
@@ -4056,7 +5266,9 @@
   "stock_code": "191410",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00843900",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000170",
@@ -4065,7 +5277,9 @@
   "stock_code": "191410",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00843900",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000157",
@@ -4074,7 +5288,9 @@
   "stock_code": "226340",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01098792",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000146",
@@ -4083,7 +5299,9 @@
   "stock_code": "024810",
   "market": "E",
   "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
-  "category": "분할"
+  "category": "분할",
+  "corp_code": "00145738",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000140",
@@ -4092,7 +5310,9 @@
   "stock_code": "012200",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00102618",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000120",
@@ -4101,7 +5321,9 @@
   "stock_code": "255220",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00963976",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000066",
@@ -4110,7 +5332,9 @@
   "stock_code": "175140",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00861997",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000065",
@@ -4119,7 +5343,9 @@
   "stock_code": "352700",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00875237",
+  "detail_done": true
  },
  {
   "rcept_no": "20260901000005",
@@ -4128,7 +5354,14 @@
   "stock_code": "064960",
   "market": "Y",
   "report_nm": "주요사항보고서(회사합병결정)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00398792",
+  "direction": null,
+  "target": "주식회사 SNT로보틱스",
+  "counterparty": null,
+  "amount": null,
+  "note": "합병비율 SNT모티브 주식회사 : 주식회사 SNT로보틱스\n= 1.0000000 : 0.0000000",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900947",
@@ -4137,7 +5370,9 @@
   "stock_code": "052400",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00349732",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900855",
@@ -4146,7 +5381,9 @@
   "stock_code": "288980",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "01423837",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900844",
@@ -4155,7 +5392,9 @@
   "stock_code": "062970",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00403766",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900790",
@@ -4164,7 +5403,9 @@
   "stock_code": "038540",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00306162",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900758",
@@ -4173,7 +5414,9 @@
   "stock_code": "178320",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00838005",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900647",
@@ -4182,7 +5425,9 @@
   "stock_code": "163730",
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01142075",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900551",
@@ -4191,7 +5436,9 @@
   "stock_code": "217330",
   "market": "K",
   "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "01046391",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900545",
@@ -4200,7 +5447,9 @@
   "stock_code": "175250",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00554352",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900520",
@@ -4209,7 +5458,9 @@
   "stock_code": "138080",
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
-  "category": "최대주주 변경"
+  "category": "최대주주 변경",
+  "corp_code": "00571483",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900485",
@@ -4218,7 +5469,9 @@
   "stock_code": "036710",
   "market": "K",
   "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00152127",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900382",
@@ -4227,7 +5480,9 @@
   "stock_code": "060900",
   "market": "K",
   "report_nm": "기타주요경영사항              (유상증자 결정(주주배정후 실권주 일반공모) 철회)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00367695",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831900361",
@@ -4236,7 +5491,9 @@
   "stock_code": "127120",
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00642541",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800878",
@@ -4245,7 +5502,9 @@
   "stock_code": "487570",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01854763",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800838",
@@ -4254,7 +5513,9 @@
   "stock_code": "298050",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01316254",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800730",
@@ -4263,7 +5524,9 @@
   "stock_code": "006840",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00125080",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800704",
@@ -4272,7 +5535,9 @@
   "stock_code": "161000",
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00936787",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800675",
@@ -4281,7 +5546,9 @@
   "stock_code": "267270",
   "market": "Y",
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01205842",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800639",
@@ -4290,7 +5557,9 @@
   "stock_code": "006840",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00125080",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800625",
@@ -4299,7 +5568,9 @@
   "stock_code": "161000",
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00936787",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800556",
@@ -4308,7 +5579,9 @@
   "stock_code": "207940",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "00877059",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831800369",
@@ -4317,7 +5590,9 @@
   "stock_code": "075180",
   "market": "Y",
   "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00305668",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001532",
@@ -4326,7 +5601,14 @@
   "stock_code": "226330",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01344336",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 1999998918,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001526",
@@ -4335,7 +5617,9 @@
   "stock_code": "340360",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "01416642",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001512",
@@ -4344,7 +5628,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001507",
@@ -4353,7 +5639,9 @@
   "stock_code": "466100",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "corp_code": "01784914",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001483",
@@ -4362,7 +5650,9 @@
   "stock_code": "016380",
   "market": "Y",
   "report_nm": "합병등종료보고서(자산양수도)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00115676",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001471",
@@ -4371,7 +5661,9 @@
   "stock_code": "224060",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00530413",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001458",
@@ -4380,7 +5672,14 @@
   "stock_code": "900100",
   "market": "K",
   "report_nm": "주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00781202",
+  "direction": null,
+  "target": null,
+  "counterparty": null,
+  "amount": 9999999315,
+  "note": "증자방식: 제3자배정증자",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001452",
@@ -4389,7 +5688,9 @@
   "stock_code": "119830",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00626011",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001313",
@@ -4398,7 +5699,9 @@
   "stock_code": "009190",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00111111",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001304",
@@ -4407,7 +5710,9 @@
   "stock_code": "002070",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00107677",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001299",
@@ -4416,7 +5721,9 @@
   "stock_code": "002070",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00107677",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001295",
@@ -4425,7 +5732,9 @@
   "stock_code": "182360",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00985686",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001260",
@@ -4434,7 +5743,9 @@
   "stock_code": "095660",
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
-  "category": "합병"
+  "category": "합병",
+  "corp_code": "00628860",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001197",
@@ -4443,7 +5754,9 @@
   "stock_code": "078860",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00543204",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831001162",
@@ -4452,7 +5765,9 @@
   "stock_code": "060900",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00367695",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831000079",
@@ -4461,7 +5776,9 @@
   "stock_code": "210980",
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-  "category": "유상증자"
+  "category": "유상증자",
+  "corp_code": "00508344",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831000011",
@@ -4470,7 +5787,9 @@
   "stock_code": "022220",
   "market": "K",
   "report_nm": "공개매수설명서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00140061",
+  "detail_done": true
  },
  {
   "rcept_no": "20260831000008",
@@ -4479,6 +5798,8 @@
   "stock_code": "022220",
   "market": "K",
   "report_nm": "공개매수신고서",
-  "category": "공개매수"
+  "category": "공개매수",
+  "corp_code": "00140061",
+  "detail_done": true
  }
 ]
