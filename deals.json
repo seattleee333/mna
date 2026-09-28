@@ -1,0 +1,4484 @@
+[
+ {
+  "rcept_no": "20260928900943",
+  "date": "20260928",
+  "corp_name": "CG인바이츠",
+  "stock_code": "083790",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928900939",
+  "date": "20260928",
+  "corp_name": "코난테크놀로지",
+  "stock_code": "402030",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260928900923",
+  "date": "20260928",
+  "corp_name": "베노티앤알",
+  "stock_code": "206400",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260928900901",
+  "date": "20260928",
+  "corp_name": "해성에어로보틱스",
+  "stock_code": "059270",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260928900382",
+  "date": "20260928",
+  "corp_name": "ISC",
+  "stock_code": "095340",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928900330",
+  "date": "20260928",
+  "corp_name": "씨싸이트",
+  "stock_code": "109670",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260928900297",
+  "date": "20260928",
+  "corp_name": "앤씨앤",
+  "stock_code": "092600",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260928900257",
+  "date": "20260928",
+  "corp_name": "휴비츠",
+  "stock_code": "065510",
+  "market": "K",
+  "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과보고)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260928900118",
+  "date": "20260928",
+  "corp_name": "엠아이텍",
+  "stock_code": "179290",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928800899",
+  "date": "20260928",
+  "corp_name": "SGC에너지",
+  "stock_code": "005090",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928800390",
+  "date": "20260928",
+  "corp_name": "SKC",
+  "stock_code": "011790",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928600824",
+  "date": "20260928",
+  "corp_name": "탑선",
+  "stock_code": "180060",
+  "market": "N",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928600712",
+  "date": "20260928",
+  "corp_name": "탑선",
+  "stock_code": "180060",
+  "market": "N",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260928000389",
+  "date": "20260928",
+  "corp_name": "진코스텍",
+  "stock_code": "250030",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260928000378",
+  "date": "20260928",
+  "corp_name": "크라우드웍스",
+  "stock_code": "355390",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260928000317",
+  "date": "20260928",
+  "corp_name": "KX",
+  "stock_code": "122450",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260928000299",
+  "date": "20260928",
+  "corp_name": "모아라이프플러스",
+  "stock_code": "142760",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260928000288",
+  "date": "20260928",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260928000245",
+  "date": "20260928",
+  "corp_name": "코스메카코리아",
+  "stock_code": "241710",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260928000226",
+  "date": "20260928",
+  "corp_name": "디지아이",
+  "stock_code": "043360",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260923900730",
+  "date": "20260923",
+  "corp_name": "씨싸이트",
+  "stock_code": "109670",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260923900724",
+  "date": "20260923",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약해제ㆍ취소등",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260923900554",
+  "date": "20260923",
+  "corp_name": "탑런토탈솔루션",
+  "stock_code": "336680",
+  "market": "K",
+  "report_nm": "[기재정정]영업양수결정(종속회사의주요경영사항)              (철회)",
+  "category": "영업양수도"
+ },
+ {
+  "rcept_no": "20260923900518",
+  "date": "20260923",
+  "corp_name": "케이쓰리아이",
+  "stock_code": "431190",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260923900362",
+  "date": "20260923",
+  "corp_name": "에코프로",
+  "stock_code": "086520",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260923900215",
+  "date": "20260923",
+  "corp_name": "엠케이전자",
+  "stock_code": "033160",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260923800497",
+  "date": "20260923",
+  "corp_name": "LG디스플레이",
+  "stock_code": "034220",
+  "market": "Y",
+  "report_nm": "[기재정정]영업양도결정(종속회사의주요경영사항)",
+  "category": "영업양수도"
+ },
+ {
+  "rcept_no": "20260923800439",
+  "date": "20260923",
+  "corp_name": "에이프로젠",
+  "stock_code": "007460",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000638",
+  "date": "20260923",
+  "corp_name": "케이쓰리아이",
+  "stock_code": "431190",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000636",
+  "date": "20260923",
+  "corp_name": "에코마케팅",
+  "stock_code": "230360",
+  "market": "E",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260923000576",
+  "date": "20260923",
+  "corp_name": "휴림로봇",
+  "stock_code": "090710",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000543",
+  "date": "20260923",
+  "corp_name": "비케이홀딩스",
+  "stock_code": "050090",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000531",
+  "date": "20260923",
+  "corp_name": "비케이홀딩스",
+  "stock_code": "050090",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000500",
+  "date": "20260923",
+  "corp_name": "이렘",
+  "stock_code": "009730",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000418",
+  "date": "20260923",
+  "corp_name": "에이프로젠바이오로직스",
+  "stock_code": "003060",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000410",
+  "date": "20260923",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000390",
+  "date": "20260923",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000362",
+  "date": "20260923",
+  "corp_name": "GMI벤처",
+  "stock_code": "019570",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260923000258",
+  "date": "20260923",
+  "corp_name": "삼영무역",
+  "stock_code": "002810",
+  "market": "Y",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260923000238",
+  "date": "20260923",
+  "corp_name": "루멘스바이오스",
+  "stock_code": "038060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000545",
+  "date": "20260923",
+  "corp_name": "젠큐릭스",
+  "stock_code": "229000",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260922900647",
+  "date": "20260922",
+  "corp_name": "벡트",
+  "stock_code": "457600",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900617",
+  "date": "20260922",
+  "corp_name": "위즈코프",
+  "stock_code": "038620",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900598",
+  "date": "20260922",
+  "corp_name": "인터로조",
+  "stock_code": "119610",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900580",
+  "date": "20260922",
+  "corp_name": "금양그린파워",
+  "stock_code": "282720",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900510",
+  "date": "20260922",
+  "corp_name": "엠투엔",
+  "stock_code": "033310",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900426",
+  "date": "20260922",
+  "corp_name": "핑거",
+  "stock_code": "163730",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260922900420",
+  "date": "20260922",
+  "corp_name": "핑거",
+  "stock_code": "163730",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260922900323",
+  "date": "20260922",
+  "corp_name": "서진시스템",
+  "stock_code": "178320",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900253",
+  "date": "20260922",
+  "corp_name": "인터로조",
+  "stock_code": "119610",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900236",
+  "date": "20260922",
+  "corp_name": "벡트",
+  "stock_code": "457600",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260922900169",
+  "date": "20260922",
+  "corp_name": "한중엔시에스",
+  "stock_code": "107640",
+  "market": "K",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922800633",
+  "date": "20260922",
+  "corp_name": "금양",
+  "stock_code": "001570",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260922800521",
+  "date": "20260922",
+  "corp_name": "고려아연",
+  "stock_code": "010130",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922800518",
+  "date": "20260922",
+  "corp_name": "SKC",
+  "stock_code": "011790",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260922800474",
+  "date": "20260922",
+  "corp_name": "미스토홀딩스",
+  "stock_code": "081660",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260922000533",
+  "date": "20260922",
+  "corp_name": "셀리드",
+  "stock_code": "299660",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000497",
+  "date": "20260922",
+  "corp_name": "유진기업",
+  "stock_code": "023410",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260922000492",
+  "date": "20260922",
+  "corp_name": "유진기업",
+  "stock_code": "023410",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260922000425",
+  "date": "20260922",
+  "corp_name": "아리바이오홀딩스",
+  "stock_code": "290690",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260922000418",
+  "date": "20260922",
+  "corp_name": "캔버스엔",
+  "stock_code": "210120",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000404",
+  "date": "20260922",
+  "corp_name": "티케이지애강",
+  "stock_code": "022220",
+  "market": "K",
+  "report_nm": "공개매수결과보고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260922000386",
+  "date": "20260922",
+  "corp_name": "프리티",
+  "stock_code": "006490",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000378",
+  "date": "20260922",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000245",
+  "date": "20260922",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000240",
+  "date": "20260922",
+  "corp_name": "KS인더스트리",
+  "stock_code": "101000",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000164",
+  "date": "20260922",
+  "corp_name": "국일제지",
+  "stock_code": "078130",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260922000158",
+  "date": "20260922",
+  "corp_name": "셀리드",
+  "stock_code": "299660",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000105",
+  "date": "20260922",
+  "corp_name": "엔젠바이오",
+  "stock_code": "354200",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260922000045",
+  "date": "20260922",
+  "corp_name": "콜마바이오텍",
+  "stock_code": "215380",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260921000434",
+  "date": "20260922",
+  "corp_name": "셀리드",
+  "stock_code": "299660",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000430",
+  "date": "20260922",
+  "corp_name": "KX",
+  "stock_code": "122450",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260921900606",
+  "date": "20260921",
+  "corp_name": "KX",
+  "stock_code": "122450",
+  "market": "K",
+  "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260921900571",
+  "date": "20260921",
+  "corp_name": "아시아경제",
+  "stock_code": "127710",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921900526",
+  "date": "20260921",
+  "corp_name": "엔켐",
+  "stock_code": "348370",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921900498",
+  "date": "20260921",
+  "corp_name": "하나머티리얼즈",
+  "stock_code": "166090",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921900420",
+  "date": "20260921",
+  "corp_name": "스모트로닉",
+  "stock_code": "066590",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260921900283",
+  "date": "20260921",
+  "corp_name": "미코",
+  "stock_code": "059090",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921900261",
+  "date": "20260921",
+  "corp_name": "상상인",
+  "stock_code": "038540",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260921900215",
+  "date": "20260921",
+  "corp_name": "아이엘",
+  "stock_code": "307180",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260921900193",
+  "date": "20260921",
+  "corp_name": "삼표시멘트",
+  "stock_code": "038500",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921800460",
+  "date": "20260921",
+  "corp_name": "STX",
+  "stock_code": "011810",
+  "market": "Y",
+  "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921800442",
+  "date": "20260921",
+  "corp_name": "STX",
+  "stock_code": "011810",
+  "market": "Y",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260921000369",
+  "date": "20260921",
+  "corp_name": "헝셩그룹",
+  "stock_code": "900270",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000327",
+  "date": "20260921",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000303",
+  "date": "20260921",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000298",
+  "date": "20260921",
+  "corp_name": "유진기업",
+  "stock_code": "023410",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260921000240",
+  "date": "20260921",
+  "corp_name": "아센디오",
+  "stock_code": "012170",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000184",
+  "date": "20260921",
+  "corp_name": "상지건설",
+  "stock_code": "042940",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000097",
+  "date": "20260921",
+  "corp_name": "모아라이프플러스",
+  "stock_code": "142760",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260921000086",
+  "date": "20260921",
+  "corp_name": "삼성FN리츠",
+  "stock_code": "448730",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918900765",
+  "date": "20260918",
+  "corp_name": "듀오백",
+  "stock_code": "073190",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900757",
+  "date": "20260918",
+  "corp_name": "중앙첨단소재",
+  "stock_code": "051980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900739",
+  "date": "20260918",
+  "corp_name": "벡트",
+  "stock_code": "457600",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900686",
+  "date": "20260918",
+  "corp_name": "코퍼스코리아",
+  "stock_code": "322780",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918900674",
+  "date": "20260918",
+  "corp_name": "유니트론텍",
+  "stock_code": "142210",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900632",
+  "date": "20260918",
+  "corp_name": "리파인",
+  "stock_code": "377450",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900581",
+  "date": "20260918",
+  "corp_name": "교보16호스팩",
+  "stock_code": "482520",
+  "market": "K",
+  "report_nm": "주권매매거래정지              (SPAC 합병(예비심사청구대상))",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260918900458",
+  "date": "20260918",
+  "corp_name": "앱튼",
+  "stock_code": "270520",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918900451",
+  "date": "20260918",
+  "corp_name": "대동스틸",
+  "stock_code": "048470",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260918900386",
+  "date": "20260918",
+  "corp_name": "CG인바이츠",
+  "stock_code": "083790",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918900148",
+  "date": "20260918",
+  "corp_name": "아이엘",
+  "stock_code": "307180",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918800703",
+  "date": "20260918",
+  "corp_name": "한화시스템",
+  "stock_code": "272210",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918800605",
+  "date": "20260918",
+  "corp_name": "에이프로젠",
+  "stock_code": "007460",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918000457",
+  "date": "20260918",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000455",
+  "date": "20260918",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000453",
+  "date": "20260918",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000443",
+  "date": "20260918",
+  "corp_name": "에피소드컴퍼니",
+  "stock_code": "317530",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260918000407",
+  "date": "20260918",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000391",
+  "date": "20260918",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000373",
+  "date": "20260918",
+  "corp_name": "교보16호스팩",
+  "stock_code": "482520",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260918000371",
+  "date": "20260918",
+  "corp_name": "국일제지",
+  "stock_code": "078130",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260918000349",
+  "date": "20260918",
+  "corp_name": "경남제약",
+  "stock_code": "053950",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000288",
+  "date": "20260918",
+  "corp_name": "코스메카코리아",
+  "stock_code": "241710",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260918000282",
+  "date": "20260918",
+  "corp_name": "앤씨앤",
+  "stock_code": "092600",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000257",
+  "date": "20260918",
+  "corp_name": "케스피온",
+  "stock_code": "079190",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000210",
+  "date": "20260918",
+  "corp_name": "사토시홀딩스",
+  "stock_code": "223310",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000112",
+  "date": "20260918",
+  "corp_name": "MSDI",
+  "stock_code": "123010",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260918000031",
+  "date": "20260918",
+  "corp_name": "금양",
+  "stock_code": "001570",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260918000018",
+  "date": "20260918",
+  "corp_name": "리파인",
+  "stock_code": "377450",
+  "market": "K",
+  "report_nm": "공개매수결과보고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260918000001",
+  "date": "20260918",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "공개매수결과보고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260917000375",
+  "date": "20260918",
+  "corp_name": "인산가",
+  "stock_code": "277410",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000373",
+  "date": "20260918",
+  "corp_name": "삼보산업",
+  "stock_code": "009620",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908100001",
+  "date": "20260918",
+  "corp_name": "로젠",
+  "stock_code": "033290",
+  "market": "K",
+  "report_nm": "효력발생안내( 2026.9.8. 제출 증권신고서(합병) )",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260917900633",
+  "date": "20260917",
+  "corp_name": "마이크로디지탈",
+  "stock_code": "305090",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260917900593",
+  "date": "20260917",
+  "corp_name": "모티브링크",
+  "stock_code": "463480",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260917900571",
+  "date": "20260917",
+  "corp_name": "모티브링크",
+  "stock_code": "463480",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260917900489",
+  "date": "20260917",
+  "corp_name": "크레오에스지",
+  "stock_code": "040350",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260917900374",
+  "date": "20260917",
+  "corp_name": "다보링크",
+  "stock_code": "340360",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260917900175",
+  "date": "20260917",
+  "corp_name": "지어소프트",
+  "stock_code": "051160",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917900147",
+  "date": "20260917",
+  "corp_name": "한중엔시에스",
+  "stock_code": "107640",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917800659",
+  "date": "20260917",
+  "corp_name": "롯데지주",
+  "stock_code": "004990",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260917800656",
+  "date": "20260917",
+  "corp_name": "롯데케미칼",
+  "stock_code": "011170",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260917000371",
+  "date": "20260917",
+  "corp_name": "서울전자통신",
+  "stock_code": "027040",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000346",
+  "date": "20260917",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000340",
+  "date": "20260917",
+  "corp_name": "테라사이언스",
+  "stock_code": "073640",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260917000278",
+  "date": "20260917",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000274",
+  "date": "20260917",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000271",
+  "date": "20260917",
+  "corp_name": "GMI벤처",
+  "stock_code": "019570",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000264",
+  "date": "20260917",
+  "corp_name": "에코글로우",
+  "stock_code": "159910",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000233",
+  "date": "20260917",
+  "corp_name": "본느",
+  "stock_code": "226340",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000227",
+  "date": "20260917",
+  "corp_name": "인산가",
+  "stock_code": "277410",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000174",
+  "date": "20260917",
+  "corp_name": "핀텔",
+  "stock_code": "291810",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000168",
+  "date": "20260917",
+  "corp_name": "광진실업",
+  "stock_code": "026910",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000150",
+  "date": "20260917",
+  "corp_name": "주성코퍼레이션",
+  "stock_code": "109070",
+  "market": "Y",
+  "report_nm": "합병등종료보고서(영업양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260917000132",
+  "date": "20260917",
+  "corp_name": "주성코퍼레이션",
+  "stock_code": "109070",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260917000124",
+  "date": "20260917",
+  "corp_name": "루멘스바이오스",
+  "stock_code": "038060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916900664",
+  "date": "20260916",
+  "corp_name": "레뷰코퍼레이션",
+  "stock_code": "443250",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900639",
+  "date": "20260916",
+  "corp_name": "비투엔",
+  "stock_code": "307870",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916900624",
+  "date": "20260916",
+  "corp_name": "엠투엔",
+  "stock_code": "033310",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900604",
+  "date": "20260916",
+  "corp_name": "이엠앤아이",
+  "stock_code": "083470",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900592",
+  "date": "20260916",
+  "corp_name": "서부T&D",
+  "stock_code": "006730",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900540",
+  "date": "20260916",
+  "corp_name": "덴티스",
+  "stock_code": "261200",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900518",
+  "date": "20260916",
+  "corp_name": "레이",
+  "stock_code": "228670",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916900347",
+  "date": "20260916",
+  "corp_name": "태웅로직스",
+  "stock_code": "124560",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916900255",
+  "date": "20260916",
+  "corp_name": "원텍",
+  "stock_code": "336570",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916900193",
+  "date": "20260916",
+  "corp_name": "한중엔시에스",
+  "stock_code": "107640",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916800377",
+  "date": "20260916",
+  "corp_name": "한화솔루션",
+  "stock_code": "009830",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916800218",
+  "date": "20260916",
+  "corp_name": "AK홀딩스",
+  "stock_code": "006840",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916800210",
+  "date": "20260916",
+  "corp_name": "애경케미칼",
+  "stock_code": "161000",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260916800191",
+  "date": "20260916",
+  "corp_name": "AK홀딩스",
+  "stock_code": "006840",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916800188",
+  "date": "20260916",
+  "corp_name": "애경케미칼",
+  "stock_code": "161000",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916600398",
+  "date": "20260916",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260916000548",
+  "date": "20260916",
+  "corp_name": "앤씨앤",
+  "stock_code": "092600",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000546",
+  "date": "20260916",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000543",
+  "date": "20260916",
+  "corp_name": "STX",
+  "stock_code": "011810",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000537",
+  "date": "20260916",
+  "corp_name": "STX",
+  "stock_code": "011810",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000527",
+  "date": "20260916",
+  "corp_name": "아티스트컴퍼니",
+  "stock_code": "321820",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(영업양도결정)",
+  "category": "영업양수도"
+ },
+ {
+  "rcept_no": "20260916000520",
+  "date": "20260916",
+  "corp_name": "이엠앤아이",
+  "stock_code": "083470",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000511",
+  "date": "20260916",
+  "corp_name": "아리바이오LAB",
+  "stock_code": "261780",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000509",
+  "date": "20260916",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000498",
+  "date": "20260916",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000491",
+  "date": "20260916",
+  "corp_name": "광진실업",
+  "stock_code": "026910",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000465",
+  "date": "20260916",
+  "corp_name": "GMI벤처",
+  "stock_code": "019570",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000451",
+  "date": "20260916",
+  "corp_name": "에이피알",
+  "stock_code": "278470",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260916000438",
+  "date": "20260916",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000398",
+  "date": "20260916",
+  "corp_name": "보령",
+  "stock_code": "003850",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260916000351",
+  "date": "20260916",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000344",
+  "date": "20260916",
+  "corp_name": "아리바이오LAB",
+  "stock_code": "261780",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260916000279",
+  "date": "20260916",
+  "corp_name": "모아라이프플러스",
+  "stock_code": "142760",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915900823",
+  "date": "20260915",
+  "corp_name": "레이",
+  "stock_code": "228670",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900815",
+  "date": "20260915",
+  "corp_name": "이오플로우",
+  "stock_code": "294090",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900712",
+  "date": "20260915",
+  "corp_name": "화일약품",
+  "stock_code": "061250",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900705",
+  "date": "20260915",
+  "corp_name": "에이루트",
+  "stock_code": "096690",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915900649",
+  "date": "20260915",
+  "corp_name": "넥사다이내믹스",
+  "stock_code": "351320",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900552",
+  "date": "20260915",
+  "corp_name": "미투온",
+  "stock_code": "201490",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900525",
+  "date": "20260915",
+  "corp_name": "바른손이앤에이",
+  "stock_code": "035620",
+  "market": "K",
+  "report_nm": "기타주요경영사항              (제3자 배정 유상증자 결정 철회)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915900505",
+  "date": "20260915",
+  "corp_name": "카카오게임즈",
+  "stock_code": "293490",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915900482",
+  "date": "20260915",
+  "corp_name": "원텍",
+  "stock_code": "336570",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915900330",
+  "date": "20260915",
+  "corp_name": "덕산하이메탈",
+  "stock_code": "077360",
+  "market": "K",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915900306",
+  "date": "20260915",
+  "corp_name": "미코",
+  "stock_code": "059090",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915900278",
+  "date": "20260915",
+  "corp_name": "소프트캠프",
+  "stock_code": "258790",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915900012",
+  "date": "20260915",
+  "corp_name": "E8",
+  "stock_code": "418620",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260915800788",
+  "date": "20260915",
+  "corp_name": "AK홀딩스",
+  "stock_code": "006840",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915800786",
+  "date": "20260915",
+  "corp_name": "제주항공",
+  "stock_code": "089590",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915800672",
+  "date": "20260915",
+  "corp_name": "금호에이치티",
+  "stock_code": "214330",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915000428",
+  "date": "20260915",
+  "corp_name": "비케이홀딩스",
+  "stock_code": "050090",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000392",
+  "date": "20260915",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "공개매수에관한의견표명서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260915000380",
+  "date": "20260915",
+  "corp_name": "화일약품",
+  "stock_code": "061250",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000373",
+  "date": "20260915",
+  "corp_name": "티케이지애강",
+  "stock_code": "022220",
+  "market": "K",
+  "report_nm": "공개매수에관한의견표명서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260915000331",
+  "date": "20260915",
+  "corp_name": "광진실업",
+  "stock_code": "026910",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000300",
+  "date": "20260915",
+  "corp_name": "이렘",
+  "stock_code": "009730",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000295",
+  "date": "20260915",
+  "corp_name": "미투온",
+  "stock_code": "201490",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000284",
+  "date": "20260915",
+  "corp_name": "SKAI",
+  "stock_code": "357880",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000281",
+  "date": "20260915",
+  "corp_name": "바른손이앤에이",
+  "stock_code": "035620",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260915000276",
+  "date": "20260915",
+  "corp_name": "오성첨단소재",
+  "stock_code": "052420",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260915000242",
+  "date": "20260915",
+  "corp_name": "삼천리자전거",
+  "stock_code": "024950",
+  "market": "K",
+  "report_nm": "공개매수결과보고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260915000230",
+  "date": "20260915",
+  "corp_name": "바이오인프라",
+  "stock_code": "199730",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260915000070",
+  "date": "20260915",
+  "corp_name": "보령",
+  "stock_code": "003850",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260915000001",
+  "date": "20260915",
+  "corp_name": "E8",
+  "stock_code": "418620",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260914000432",
+  "date": "20260915",
+  "corp_name": "E8",
+  "stock_code": "418620",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914900709",
+  "date": "20260914",
+  "corp_name": "케스피온",
+  "stock_code": "079190",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260914900393",
+  "date": "20260914",
+  "corp_name": "베노티앤알",
+  "stock_code": "206400",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260914900343",
+  "date": "20260914",
+  "corp_name": "비투엔",
+  "stock_code": "307870",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260914900338",
+  "date": "20260914",
+  "corp_name": "서진시스템",
+  "stock_code": "178320",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260914900136",
+  "date": "20260914",
+  "corp_name": "아나패스",
+  "stock_code": "123860",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260914800417",
+  "date": "20260914",
+  "corp_name": "포스코인터내셔널",
+  "stock_code": "047050",
+  "market": "Y",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914800415",
+  "date": "20260914",
+  "corp_name": "포스코인터내셔널",
+  "stock_code": "047050",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260914000421",
+  "date": "20260914",
+  "corp_name": "셀레믹스",
+  "stock_code": "331920",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000397",
+  "date": "20260914",
+  "corp_name": "멕아이씨에스",
+  "stock_code": "058110",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000342",
+  "date": "20260914",
+  "corp_name": "이화전기공업",
+  "stock_code": "024810",
+  "market": "E",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260914000303",
+  "date": "20260914",
+  "corp_name": "프리티",
+  "stock_code": "006490",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000266",
+  "date": "20260914",
+  "corp_name": "하나머티리얼즈",
+  "stock_code": "166090",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260914000246",
+  "date": "20260914",
+  "corp_name": "이브이첨단소재",
+  "stock_code": "131400",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000244",
+  "date": "20260914",
+  "corp_name": "이브이첨단소재",
+  "stock_code": "131400",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000241",
+  "date": "20260914",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000235",
+  "date": "20260914",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000232",
+  "date": "20260914",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000210",
+  "date": "20260914",
+  "corp_name": "사토시홀딩스",
+  "stock_code": "223310",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000184",
+  "date": "20260914",
+  "corp_name": "케스피온",
+  "stock_code": "079190",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000174",
+  "date": "20260914",
+  "corp_name": "툴젠",
+  "stock_code": "199800",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000153",
+  "date": "20260914",
+  "corp_name": "모다이노칩",
+  "stock_code": "080420",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260914000081",
+  "date": "20260914",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000039",
+  "date": "20260914",
+  "corp_name": "루멘스바이오스",
+  "stock_code": "038060",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260914000036",
+  "date": "20260914",
+  "corp_name": "아이에이",
+  "stock_code": "038880",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911900703",
+  "date": "20260911",
+  "corp_name": "아이텍",
+  "stock_code": "119830",
+  "market": "K",
+  "report_nm": "기타주요경영사항              (제3자배정 유상증자 결정 철회)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911900612",
+  "date": "20260911",
+  "corp_name": "다이나믹솔루션",
+  "stock_code": "290660",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260911900487",
+  "date": "20260911",
+  "corp_name": "다산네트웍스",
+  "stock_code": "039560",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911900472",
+  "date": "20260911",
+  "corp_name": "광진실업",
+  "stock_code": "026910",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260911900455",
+  "date": "20260911",
+  "corp_name": "한국첨단소재",
+  "stock_code": "062970",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260911900424",
+  "date": "20260911",
+  "corp_name": "한국정보통신",
+  "stock_code": "025770",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260911900405",
+  "date": "20260911",
+  "corp_name": "비투엔",
+  "stock_code": "307870",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260911900290",
+  "date": "20260911",
+  "corp_name": "모티브링크",
+  "stock_code": "463480",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260911800779",
+  "date": "20260911",
+  "corp_name": "우양피앤엘",
+  "stock_code": "002420",
+  "market": "Y",
+  "report_nm": "영업양수결정(종속회사의주요경영사항)",
+  "category": "영업양수도"
+ },
+ {
+  "rcept_no": "20260911800676",
+  "date": "20260911",
+  "corp_name": "에이프로젠",
+  "stock_code": "007460",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911800199",
+  "date": "20260911",
+  "corp_name": "SGC에너지",
+  "stock_code": "005090",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260911800150",
+  "date": "20260911",
+  "corp_name": "성문전자",
+  "stock_code": "014910",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260911000600",
+  "date": "20260911",
+  "corp_name": "KS인더스트리",
+  "stock_code": "101000",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000570",
+  "date": "20260911",
+  "corp_name": "오늘이엔엠",
+  "stock_code": "192410",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000566",
+  "date": "20260911",
+  "corp_name": "아이텍",
+  "stock_code": "119830",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000555",
+  "date": "20260911",
+  "corp_name": "에이프로젠바이오로직스",
+  "stock_code": "003060",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000526",
+  "date": "20260911",
+  "corp_name": "루멘스바이오스",
+  "stock_code": "038060",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000504",
+  "date": "20260911",
+  "corp_name": "에넥스",
+  "stock_code": "011090",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000503",
+  "date": "20260911",
+  "corp_name": "비트플래닛",
+  "stock_code": "049470",
+  "market": "K",
+  "report_nm": "[기재정정]합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260911000380",
+  "date": "20260911",
+  "corp_name": "코스메카코리아",
+  "stock_code": "241710",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260911000372",
+  "date": "20260911",
+  "corp_name": "넥사다이내믹스",
+  "stock_code": "351320",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000341",
+  "date": "20260911",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000271",
+  "date": "20260911",
+  "corp_name": "아티스트스튜디오",
+  "stock_code": "200350",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000215",
+  "date": "20260911",
+  "corp_name": "케스피온",
+  "stock_code": "079190",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260911000113",
+  "date": "20260911",
+  "corp_name": "금양",
+  "stock_code": "001570",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260910900547",
+  "date": "20260910",
+  "corp_name": "제이앤티씨",
+  "stock_code": "204270",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910900540",
+  "date": "20260910",
+  "corp_name": "제이앤티씨",
+  "stock_code": "204270",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910900405",
+  "date": "20260910",
+  "corp_name": "키움제11호스팩",
+  "stock_code": "489480",
+  "market": "K",
+  "report_nm": "주권매매거래정지              (SPAC 합병(예비심사청구대상))",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260910900265",
+  "date": "20260910",
+  "corp_name": "비엘팜텍",
+  "stock_code": "065170",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910900252",
+  "date": "20260910",
+  "corp_name": "아이엘",
+  "stock_code": "307180",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910800627",
+  "date": "20260910",
+  "corp_name": "HD현대",
+  "stock_code": "267250",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910800520",
+  "date": "20260910",
+  "corp_name": "SK아이이테크놀로지",
+  "stock_code": "361610",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910800416",
+  "date": "20260910",
+  "corp_name": "SKC",
+  "stock_code": "011790",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260910600267",
+  "date": "20260910",
+  "corp_name": "원포유",
+  "stock_code": "122830",
+  "market": "N",
+  "report_nm": "기타주요경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260910000580",
+  "date": "20260910",
+  "corp_name": "우성머티리얼스",
+  "stock_code": "011300",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000536",
+  "date": "20260910",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000465",
+  "date": "20260910",
+  "corp_name": "크라우드웍스",
+  "stock_code": "355390",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000445",
+  "date": "20260910",
+  "corp_name": "엠젠솔루션",
+  "stock_code": "032790",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000423",
+  "date": "20260910",
+  "corp_name": "헝셩그룹",
+  "stock_code": "900270",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000395",
+  "date": "20260910",
+  "corp_name": "엣지파운드리",
+  "stock_code": "105550",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000357",
+  "date": "20260910",
+  "corp_name": "넥써쓰",
+  "stock_code": "205500",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000331",
+  "date": "20260910",
+  "corp_name": "키움제11호스팩",
+  "stock_code": "489480",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260910000322",
+  "date": "20260910",
+  "corp_name": "E8",
+  "stock_code": "418620",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000314",
+  "date": "20260910",
+  "corp_name": "GMI벤처",
+  "stock_code": "019570",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000268",
+  "date": "20260910",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000232",
+  "date": "20260910",
+  "corp_name": "원포유",
+  "stock_code": "122830",
+  "market": "N",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260910000108",
+  "date": "20260910",
+  "corp_name": "볼빅",
+  "stock_code": "206950",
+  "market": "N",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000105",
+  "date": "20260910",
+  "corp_name": "주성코퍼레이션",
+  "stock_code": "109070",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260910000002",
+  "date": "20260910",
+  "corp_name": "아이스크림에듀",
+  "stock_code": "289010",
+  "market": "K",
+  "report_nm": "공개매수설명서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260910000001",
+  "date": "20260910",
+  "corp_name": "아이스크림에듀",
+  "stock_code": "289010",
+  "market": "K",
+  "report_nm": "공개매수신고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260909000544",
+  "date": "20260910",
+  "corp_name": "엠젠솔루션",
+  "stock_code": "032790",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000543",
+  "date": "20260910",
+  "corp_name": "엠젠솔루션",
+  "stock_code": "032790",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000542",
+  "date": "20260910",
+  "corp_name": "본느",
+  "stock_code": "226340",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909900657",
+  "date": "20260909",
+  "corp_name": "디에스케이",
+  "stock_code": "109740",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260909900655",
+  "date": "20260909",
+  "corp_name": "CSA 코스믹",
+  "stock_code": "083660",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260909900603",
+  "date": "20260909",
+  "corp_name": "엠투엔",
+  "stock_code": "033310",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260909900299",
+  "date": "20260909",
+  "corp_name": "아리바이오LAB",
+  "stock_code": "261780",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260909900297",
+  "date": "20260909",
+  "corp_name": "레이",
+  "stock_code": "228670",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260909800257",
+  "date": "20260909",
+  "corp_name": "덕성",
+  "stock_code": "004830",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260909800251",
+  "date": "20260909",
+  "corp_name": "덕성",
+  "stock_code": "004830",
+  "market": "Y",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909800113",
+  "date": "20260909",
+  "corp_name": "에이피알",
+  "stock_code": "278470",
+  "market": "Y",
+  "report_nm": "회사합병결정(종속회사의주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260909000532",
+  "date": "20260909",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000531",
+  "date": "20260909",
+  "corp_name": "바른손이앤에이",
+  "stock_code": "035620",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000530",
+  "date": "20260909",
+  "corp_name": "우성",
+  "stock_code": "006980",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260909000528",
+  "date": "20260909",
+  "corp_name": "본느",
+  "stock_code": "226340",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000507",
+  "date": "20260909",
+  "corp_name": "SKAI",
+  "stock_code": "357880",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000500",
+  "date": "20260909",
+  "corp_name": "시너지이노베이션",
+  "stock_code": "048870",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260909000475",
+  "date": "20260909",
+  "corp_name": "비트플래닛",
+  "stock_code": "049470",
+  "market": "K",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260909000470",
+  "date": "20260909",
+  "corp_name": "금양",
+  "stock_code": "001570",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260909000431",
+  "date": "20260909",
+  "corp_name": "이렘",
+  "stock_code": "009730",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000329",
+  "date": "20260909",
+  "corp_name": "캔버스엔",
+  "stock_code": "210120",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000291",
+  "date": "20260909",
+  "corp_name": "금양",
+  "stock_code": "001570",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260909000290",
+  "date": "20260909",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000286",
+  "date": "20260909",
+  "corp_name": "광무",
+  "stock_code": "029480",
+  "market": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260909000220",
+  "date": "20260909",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260909000045",
+  "date": "20260909",
+  "corp_name": "에이피알",
+  "stock_code": "278470",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260909000002",
+  "date": "20260909",
+  "corp_name": "넥사다이내믹스",
+  "stock_code": "351320",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000434",
+  "date": "20260909",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908900479",
+  "date": "20260908",
+  "corp_name": "와이지-원",
+  "stock_code": "019210",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260908900149",
+  "date": "20260908",
+  "corp_name": "삼보산업",
+  "stock_code": "009620",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260908800584",
+  "date": "20260908",
+  "corp_name": "BGF",
+  "stock_code": "027410",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)(자회사의 주요경영사항)              (소규모합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260908800378",
+  "date": "20260908",
+  "corp_name": "한화솔루션",
+  "stock_code": "009830",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260908800274",
+  "date": "20260908",
+  "corp_name": "우양피앤엘",
+  "stock_code": "002420",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260908000404",
+  "date": "20260908",
+  "corp_name": "바이오인프라",
+  "stock_code": "199730",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260908000381",
+  "date": "20260908",
+  "corp_name": "서울전자통신",
+  "stock_code": "027040",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000361",
+  "date": "20260908",
+  "corp_name": "BGF에코머티리얼즈",
+  "stock_code": "126600",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260908000348",
+  "date": "20260908",
+  "corp_name": "볼빅",
+  "stock_code": "206950",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000315",
+  "date": "20260908",
+  "corp_name": "나노씨엠에스",
+  "stock_code": "247660",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000307",
+  "date": "20260908",
+  "corp_name": "삼부토건",
+  "stock_code": "001470",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000180",
+  "date": "20260908",
+  "corp_name": "HLB제약",
+  "stock_code": "047920",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260908000120",
+  "date": "20260908",
+  "corp_name": "로젠",
+  "stock_code": "033290",
+  "market": "K",
+  "report_nm": "[첨부정정]증권신고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260908000118",
+  "date": "20260908",
+  "corp_name": "로젠",
+  "stock_code": "033290",
+  "market": "K",
+  "report_nm": "[기재정정]증권신고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260907000332",
+  "date": "20260908",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907900631",
+  "date": "20260907",
+  "corp_name": "한울반도체",
+  "stock_code": "320000",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900538",
+  "date": "20260907",
+  "corp_name": "제이스코홀딩스",
+  "stock_code": "023440",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900516",
+  "date": "20260907",
+  "corp_name": "사토시홀딩스",
+  "stock_code": "223310",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900507",
+  "date": "20260907",
+  "corp_name": "유진기업",
+  "stock_code": "023410",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260907900494",
+  "date": "20260907",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900456",
+  "date": "20260907",
+  "corp_name": "엠투엔",
+  "stock_code": "033310",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900414",
+  "date": "20260907",
+  "corp_name": "덴티스",
+  "stock_code": "261200",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907900199",
+  "date": "20260907",
+  "corp_name": "본느",
+  "stock_code": "226340",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260907000272",
+  "date": "20260907",
+  "corp_name": "서울전자통신",
+  "stock_code": "027040",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907000217",
+  "date": "20260907",
+  "corp_name": "경남제약",
+  "stock_code": "053950",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907000199",
+  "date": "20260907",
+  "corp_name": "엔젠바이오",
+  "stock_code": "354200",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907000195",
+  "date": "20260907",
+  "corp_name": "휴림에이텍",
+  "stock_code": "078590",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907000107",
+  "date": "20260907",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260907000075",
+  "date": "20260907",
+  "corp_name": "파인디앤씨",
+  "stock_code": "049120",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904900725",
+  "date": "20260904",
+  "corp_name": "지엔씨에너지",
+  "stock_code": "119850",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904900600",
+  "date": "20260904",
+  "corp_name": "앱튼",
+  "stock_code": "270520",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260904900588",
+  "date": "20260904",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260904900515",
+  "date": "20260904",
+  "corp_name": "크레오에스지",
+  "stock_code": "040350",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260904900372",
+  "date": "20260904",
+  "corp_name": "한국첨단소재",
+  "stock_code": "062970",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904900307",
+  "date": "20260904",
+  "corp_name": "푸드나무",
+  "stock_code": "290720",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260904900280",
+  "date": "20260904",
+  "corp_name": "아이큐어",
+  "stock_code": "175250",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260904900128",
+  "date": "20260904",
+  "corp_name": "에이루트",
+  "stock_code": "096690",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904800462",
+  "date": "20260904",
+  "corp_name": "SKC",
+  "stock_code": "011790",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904800327",
+  "date": "20260904",
+  "corp_name": "SNT홀딩스",
+  "stock_code": "036530",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)(자회사의 주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904100017",
+  "date": "20260904",
+  "corp_name": "SK아이이테크놀로지",
+  "stock_code": "361610",
+  "market": "Y",
+  "report_nm": "정정명령부과( 2026.08.26. 제출 주요사항보고서(회사합병 결정) )",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904100016",
+  "date": "20260904",
+  "corp_name": "SK이노베이션",
+  "stock_code": "096770",
+  "market": "Y",
+  "report_nm": "정정신고서제출요구( 2026.08.26. 제출 증권신고서(합병) )",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000518",
+  "date": "20260904",
+  "corp_name": "에넥스",
+  "stock_code": "011090",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000509",
+  "date": "20260904",
+  "corp_name": "네오오토",
+  "stock_code": "212560",
+  "market": "K",
+  "report_nm": "주요사항보고서(주식교환ㆍ이전결정)",
+  "category": "주식교환·이전"
+ },
+ {
+  "rcept_no": "20260904000484",
+  "date": "20260904",
+  "corp_name": "시지트로닉스",
+  "stock_code": "429270",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000450",
+  "date": "20260904",
+  "corp_name": "나노씨엠에스",
+  "stock_code": "247660",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000384",
+  "date": "20260904",
+  "corp_name": "한울앤제주",
+  "stock_code": "276730",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904000376",
+  "date": "20260904",
+  "corp_name": "사토시홀딩스",
+  "stock_code": "223310",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000355",
+  "date": "20260904",
+  "corp_name": "우성",
+  "stock_code": "006980",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000334",
+  "date": "20260904",
+  "corp_name": "뷰노",
+  "stock_code": "338220",
+  "market": "K",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000328",
+  "date": "20260904",
+  "corp_name": "HLB이노베이션",
+  "stock_code": "024850",
+  "market": "K",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000294",
+  "date": "20260904",
+  "corp_name": "사토시홀딩스",
+  "stock_code": "223310",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000285",
+  "date": "20260904",
+  "corp_name": "젬백스",
+  "stock_code": "082270",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000281",
+  "date": "20260904",
+  "corp_name": "다보링크",
+  "stock_code": "340360",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000246",
+  "date": "20260904",
+  "corp_name": "광진실업",
+  "stock_code": "026910",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000222",
+  "date": "20260904",
+  "corp_name": "SNT모티브",
+  "stock_code": "064960",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000221",
+  "date": "20260904",
+  "corp_name": "신테카바이오",
+  "stock_code": "226330",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000218",
+  "date": "20260904",
+  "corp_name": "뉴프렉스",
+  "stock_code": "085670",
+  "market": "K",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000214",
+  "date": "20260904",
+  "corp_name": "영흥",
+  "stock_code": "012160",
+  "market": "Y",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260904000209",
+  "date": "20260904",
+  "corp_name": "신라교역",
+  "stock_code": "004970",
+  "market": "Y",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260904000208",
+  "date": "20260904",
+  "corp_name": "LIG디펜스앤에어로스페이스",
+  "stock_code": "079550",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000074",
+  "date": "20260904",
+  "corp_name": "골프존홀딩스",
+  "stock_code": "121440",
+  "market": "K",
+  "report_nm": "공개매수결과보고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260904000072",
+  "date": "20260904",
+  "corp_name": "큐리언트",
+  "stock_code": "115180",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000065",
+  "date": "20260904",
+  "corp_name": "상지건설",
+  "stock_code": "042940",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260904000063",
+  "date": "20260904",
+  "corp_name": "E8",
+  "stock_code": "418620",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903900635",
+  "date": "20260903",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903900607",
+  "date": "20260903",
+  "corp_name": "엔시트론",
+  "stock_code": "101400",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903900584",
+  "date": "20260903",
+  "corp_name": "마이크로디지탈",
+  "stock_code": "305090",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903900492",
+  "date": "20260903",
+  "corp_name": "알엔투테크놀로지",
+  "stock_code": "148250",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260903900447",
+  "date": "20260903",
+  "corp_name": "크레버스",
+  "stock_code": "096240",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903900350",
+  "date": "20260903",
+  "corp_name": "아이큐어",
+  "stock_code": "175250",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903900237",
+  "date": "20260903",
+  "corp_name": "다보링크",
+  "stock_code": "340360",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식담보제공계약해제ㆍ취소등",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903800579",
+  "date": "20260903",
+  "corp_name": "에이프로젠",
+  "stock_code": "007460",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903800469",
+  "date": "20260903",
+  "corp_name": "토니모리",
+  "stock_code": "214420",
+  "market": "Y",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903800415",
+  "date": "20260903",
+  "corp_name": "토니모리",
+  "stock_code": "214420",
+  "market": "Y",
+  "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260903800363",
+  "date": "20260903",
+  "corp_name": "롯데에너지머티리얼즈",
+  "stock_code": "020150",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260903000395",
+  "date": "20260903",
+  "corp_name": "비케이홀딩스",
+  "stock_code": "050090",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000384",
+  "date": "20260903",
+  "corp_name": "에넥스",
+  "stock_code": "011090",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000374",
+  "date": "20260903",
+  "corp_name": "신테카바이오",
+  "stock_code": "226330",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000343",
+  "date": "20260903",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000333",
+  "date": "20260903",
+  "corp_name": "서울전자통신",
+  "stock_code": "027040",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000316",
+  "date": "20260903",
+  "corp_name": "에이프로젠바이오로직스",
+  "stock_code": "003060",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000291",
+  "date": "20260903",
+  "corp_name": "엑시온그룹",
+  "stock_code": "069920",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000271",
+  "date": "20260903",
+  "corp_name": "KC그린홀딩스",
+  "stock_code": "009440",
+  "market": "Y",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260903000225",
+  "date": "20260903",
+  "corp_name": "핀텔",
+  "stock_code": "291810",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000196",
+  "date": "20260903",
+  "corp_name": "아이큐어",
+  "stock_code": "175250",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000184",
+  "date": "20260903",
+  "corp_name": "GRT",
+  "stock_code": "900290",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000148",
+  "date": "20260903",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000143",
+  "date": "20260903",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000104",
+  "date": "20260903",
+  "corp_name": "코다코",
+  "stock_code": "046070",
+  "market": "E",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260903000009",
+  "date": "20260903",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "[첨부정정]공개매수신고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260902900577",
+  "date": "20260902",
+  "corp_name": "덕산네오룩스",
+  "stock_code": "213420",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902900536",
+  "date": "20260902",
+  "corp_name": "덕산네오룩스",
+  "stock_code": "213420",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902900456",
+  "date": "20260902",
+  "corp_name": "루멘스바이오스",
+  "stock_code": "038060",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260902900445",
+  "date": "20260902",
+  "corp_name": "테라사이언스",
+  "stock_code": "073640",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902900441",
+  "date": "20260902",
+  "corp_name": "테라사이언스",
+  "stock_code": "073640",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정              (철회)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902900264",
+  "date": "20260902",
+  "corp_name": "에코프로",
+  "stock_code": "086520",
+  "market": "K",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902900243",
+  "date": "20260902",
+  "corp_name": "대명에너지",
+  "stock_code": "389260",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902900241",
+  "date": "20260902",
+  "corp_name": "콜마비앤에이치",
+  "stock_code": "200130",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902900240",
+  "date": "20260902",
+  "corp_name": "대명에너지",
+  "stock_code": "389260",
+  "market": "K",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902900003",
+  "date": "20260902",
+  "corp_name": "지니틱스",
+  "stock_code": "303030",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902800525",
+  "date": "20260902",
+  "corp_name": "태림포장",
+  "stock_code": "011280",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902800277",
+  "date": "20260902",
+  "corp_name": "써니전자",
+  "stock_code": "004770",
+  "market": "Y",
+  "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260902000336",
+  "date": "20260902",
+  "corp_name": "서울전자통신",
+  "stock_code": "027040",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902000329",
+  "date": "20260902",
+  "corp_name": "엑시온그룹",
+  "stock_code": "069920",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902000317",
+  "date": "20260902",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "[기재정정]공개매수설명서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260902000313",
+  "date": "20260902",
+  "corp_name": "가비아",
+  "stock_code": "079940",
+  "market": "K",
+  "report_nm": "[기재정정]공개매수신고서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260902000269",
+  "date": "20260902",
+  "corp_name": "테라사이언스",
+  "stock_code": "073640",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260902000253",
+  "date": "20260902",
+  "corp_name": "볼빅",
+  "stock_code": "206950",
+  "market": "N",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902000167",
+  "date": "20260902",
+  "corp_name": "신테카바이오",
+  "stock_code": "226330",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902000156",
+  "date": "20260902",
+  "corp_name": "에코프로비엠",
+  "stock_code": "247540",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260902000121",
+  "date": "20260902",
+  "corp_name": "에스트래픽",
+  "stock_code": "234300",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901900738",
+  "date": "20260901",
+  "corp_name": "아시아경제",
+  "stock_code": "127710",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901900688",
+  "date": "20260901",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901900644",
+  "date": "20260901",
+  "corp_name": "오픈베이스",
+  "stock_code": "049480",
+  "market": "K",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901900533",
+  "date": "20260901",
+  "corp_name": "성호전자",
+  "stock_code": "043260",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901900389",
+  "date": "20260901",
+  "corp_name": "이엠앤아이",
+  "stock_code": "083470",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901900366",
+  "date": "20260901",
+  "corp_name": "파버나인",
+  "stock_code": "177830",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901900199",
+  "date": "20260901",
+  "corp_name": "아이큐어",
+  "stock_code": "175250",
+  "market": "K",
+  "report_nm": "최대주주변경을수반하는주식담보제공계약해제ㆍ취소등",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901800725",
+  "date": "20260901",
+  "corp_name": "BGF",
+  "stock_code": "027410",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)              (소규모합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901800709",
+  "date": "20260901",
+  "corp_name": "신한서부티엔디리츠",
+  "stock_code": "404990",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901800654",
+  "date": "20260901",
+  "corp_name": "써니전자",
+  "stock_code": "004770",
+  "market": "Y",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901800624",
+  "date": "20260901",
+  "corp_name": "LG생활건강",
+  "stock_code": "051900",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901800508",
+  "date": "20260901",
+  "corp_name": "LG생활건강",
+  "stock_code": "051900",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901800452",
+  "date": "20260901",
+  "corp_name": "LG생활건강",
+  "stock_code": "051900",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901800132",
+  "date": "20260901",
+  "corp_name": "우진아이엔에스",
+  "stock_code": "010400",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901800102",
+  "date": "20260901",
+  "corp_name": "KG모빌리티플랫폼",
+  "stock_code": "381970",
+  "market": "Y",
+  "report_nm": "최대주주등소유주식변동신고서(최대주주변경시)",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901800085",
+  "date": "20260901",
+  "corp_name": "KG모빌리티플랫폼",
+  "stock_code": "381970",
+  "market": "Y",
+  "report_nm": "최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260901800078",
+  "date": "20260901",
+  "corp_name": "SNT홀딩스",
+  "stock_code": "036530",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901600559",
+  "date": "20260901",
+  "corp_name": "원포유",
+  "stock_code": "122830",
+  "market": "N",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260901000339",
+  "date": "20260901",
+  "corp_name": "로지스몬",
+  "stock_code": "223220",
+  "market": "N",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000333",
+  "date": "20260901",
+  "corp_name": "젠큐릭스",
+  "stock_code": "229000",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901000318",
+  "date": "20260901",
+  "corp_name": "BGF에코머티리얼즈",
+  "stock_code": "126600",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901000301",
+  "date": "20260901",
+  "corp_name": "한울반도체",
+  "stock_code": "320000",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000293",
+  "date": "20260901",
+  "corp_name": "핀텔",
+  "stock_code": "291810",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000283",
+  "date": "20260901",
+  "corp_name": "테라사이언스",
+  "stock_code": "073640",
+  "market": "K",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901000241",
+  "date": "20260901",
+  "corp_name": "엑시온그룹",
+  "stock_code": "069920",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000196",
+  "date": "20260901",
+  "corp_name": "이오플로우",
+  "stock_code": "294090",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000174",
+  "date": "20260901",
+  "corp_name": "육일씨엔에쓰",
+  "stock_code": "191410",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000170",
+  "date": "20260901",
+  "corp_name": "육일씨엔에쓰",
+  "stock_code": "191410",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000157",
+  "date": "20260901",
+  "corp_name": "본느",
+  "stock_code": "226340",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000146",
+  "date": "20260901",
+  "corp_name": "이화전기공업",
+  "stock_code": "024810",
+  "market": "E",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할"
+ },
+ {
+  "rcept_no": "20260901000140",
+  "date": "20260901",
+  "corp_name": "계양전기",
+  "stock_code": "012200",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000120",
+  "date": "20260901",
+  "corp_name": "SG",
+  "stock_code": "255220",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260901000066",
+  "date": "20260901",
+  "corp_name": "아고스",
+  "stock_code": "175140",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901000065",
+  "date": "20260901",
+  "corp_name": "씨앤투스",
+  "stock_code": "352700",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260901000005",
+  "date": "20260901",
+  "corp_name": "SNT모티브",
+  "stock_code": "064960",
+  "market": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831900947",
+  "date": "20260831",
+  "corp_name": "코나아이",
+  "stock_code": "052400",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831900855",
+  "date": "20260831",
+  "corp_name": "모아데이타",
+  "stock_code": "288980",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260831900844",
+  "date": "20260831",
+  "corp_name": "한국첨단소재",
+  "stock_code": "062970",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260831900790",
+  "date": "20260831",
+  "corp_name": "상상인",
+  "stock_code": "038540",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권처분결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831900758",
+  "date": "20260831",
+  "corp_name": "서진시스템",
+  "stock_code": "178320",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260831900647",
+  "date": "20260831",
+  "corp_name": "핑거",
+  "stock_code": "163730",
+  "market": "K",
+  "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831900551",
+  "date": "20260831",
+  "corp_name": "싸이토젠",
+  "stock_code": "217330",
+  "market": "K",
+  "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831900545",
+  "date": "20260831",
+  "corp_name": "아이큐어",
+  "stock_code": "175250",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260831900520",
+  "date": "20260831",
+  "corp_name": "오이솔루션",
+  "stock_code": "138080",
+  "market": "K",
+  "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+  "category": "최대주주 변경"
+ },
+ {
+  "rcept_no": "20260831900485",
+  "date": "20260831",
+  "corp_name": "심텍홀딩스",
+  "stock_code": "036710",
+  "market": "K",
+  "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831900382",
+  "date": "20260831",
+  "corp_name": "에이전트AI",
+  "stock_code": "060900",
+  "market": "K",
+  "report_nm": "기타주요경영사항              (유상증자 결정(주주배정후 실권주 일반공모) 철회)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831900361",
+  "date": "20260831",
+  "corp_name": "제이에스링크",
+  "stock_code": "127120",
+  "market": "K",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800878",
+  "date": "20260831",
+  "corp_name": "HS효성",
+  "stock_code": "487570",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800838",
+  "date": "20260831",
+  "corp_name": "HS효성첨단소재",
+  "stock_code": "298050",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800730",
+  "date": "20260831",
+  "corp_name": "AK홀딩스",
+  "stock_code": "006840",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800704",
+  "date": "20260831",
+  "corp_name": "애경케미칼",
+  "stock_code": "161000",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800675",
+  "date": "20260831",
+  "corp_name": "HD건설기계",
+  "stock_code": "267270",
+  "market": "Y",
+  "report_nm": "유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831800639",
+  "date": "20260831",
+  "corp_name": "AK홀딩스",
+  "stock_code": "006840",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831800625",
+  "date": "20260831",
+  "corp_name": "애경케미칼",
+  "stock_code": "161000",
+  "market": "Y",
+  "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831800556",
+  "date": "20260831",
+  "corp_name": "삼성바이오로직스",
+  "stock_code": "207940",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831800369",
+  "date": "20260831",
+  "corp_name": "새론오토모티브",
+  "stock_code": "075180",
+  "market": "Y",
+  "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831001532",
+  "date": "20260831",
+  "corp_name": "신테카바이오",
+  "stock_code": "226330",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001526",
+  "date": "20260831",
+  "corp_name": "다보링크",
+  "stock_code": "340360",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001512",
+  "date": "20260831",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001507",
+  "date": "20260831",
+  "corp_name": "클로봇",
+  "stock_code": "466100",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
+  "category": "타법인 주식 취득·처분"
+ },
+ {
+  "rcept_no": "20260831001483",
+  "date": "20260831",
+  "corp_name": "KG스틸",
+  "stock_code": "016380",
+  "market": "Y",
+  "report_nm": "합병등종료보고서(자산양수도)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831001471",
+  "date": "20260831",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001458",
+  "date": "20260831",
+  "corp_name": "파이온엑스",
+  "stock_code": "900100",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001452",
+  "date": "20260831",
+  "corp_name": "아이텍",
+  "stock_code": "119830",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001313",
+  "date": "20260831",
+  "corp_name": "대양금속",
+  "stock_code": "009190",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001304",
+  "date": "20260831",
+  "corp_name": "비비안",
+  "stock_code": "002070",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001299",
+  "date": "20260831",
+  "corp_name": "비비안",
+  "stock_code": "002070",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001295",
+  "date": "20260831",
+  "corp_name": "큐브엔터",
+  "stock_code": "182360",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001260",
+  "date": "20260831",
+  "corp_name": "네오위즈",
+  "stock_code": "095660",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병"
+ },
+ {
+  "rcept_no": "20260831001197",
+  "date": "20260831",
+  "corp_name": "아이오케이이엔엠",
+  "stock_code": "078860",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831001162",
+  "date": "20260831",
+  "corp_name": "에이전트AI",
+  "stock_code": "060900",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831000079",
+  "date": "20260831",
+  "corp_name": "SK디앤디",
+  "stock_code": "210980",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자"
+ },
+ {
+  "rcept_no": "20260831000011",
+  "date": "20260831",
+  "corp_name": "티케이지애강",
+  "stock_code": "022220",
+  "market": "K",
+  "report_nm": "공개매수설명서",
+  "category": "공개매수"
+ },
+ {
+  "rcept_no": "20260831000008",
+  "date": "20260831",
+  "corp_name": "티케이지애강",
+  "stock_code": "022220",
+  "market": "K",
+  "report_nm": "공개매수신고서",
+  "category": "공개매수"
+ }
+]
