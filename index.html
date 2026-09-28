@@ -29,6 +29,8 @@
   .tag { font-size:12px; background:#e8effa; color:var(--accent); padding:3px 8px;
          border-radius:6px; white-space:nowrap; }
   .title { margin-top:6px; font-size:14px; color:var(--sub); }
+  .detail { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px 16px; font-size:13px; color:var(--sub); }
+  .detail b { color:var(--text); }
   .empty, footer { text-align:center; color:var(--sub); font-size:13px; padding:24px 0; }
 </style>
 </head>
@@ -60,6 +62,26 @@ function fmtDate(d) {
   return d.slice(0,4) + "." + d.slice(4,6) + "." + d.slice(6,8);
 }
 
+const TARGET_LABEL = {"타법인 주식 취득·처분":"대상회사", "영업양수도":"대상 영업", "합병":"합병 상대"};
+
+function fmtWon(n) {
+  if (n == null) return "";
+  if (n >= 1e12) return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "조원";
+  if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
+  if (n >= 1e4) return Math.round(n / 1e4).toLocaleString() + "만원";
+  return n.toLocaleString() + "원";
+}
+
+function detailHtml(d) {
+  const parts = [];
+  if (d.target) parts.push((TARGET_LABEL[d.category] || "대상") + ": <b>" + esc(d.target) + "</b>");
+  if (d.counterparty) parts.push("거래상대방: <b>" + esc(d.counterparty) + "</b>");
+  if (d.amount != null) parts.push((d.category === "유상증자" ? "조달금액" : "딜 규모") + ": <b>" + fmtWon(d.amount) + "</b>");
+  if (d.note) parts.push(esc(d.note));
+  if (!parts.length) return "";
+  return '<div class="detail">' + parts.map(p => "<span>" + p + "</span>").join("") + "</div>";
+}
+
 function render() {
   const q = qEl.value.trim().toLowerCase();
   const rows = deals.filter(d =>
@@ -78,7 +100,7 @@ function render() {
     }
     html += '<div class="deal"><a target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo='
       + esc(d.rcept_no) + '"><div class="top"><span class="name">' + esc(d.corp_name)
-      + '</span><span class="tag">' + esc(d.category) + '</span></div><div class="title">'
+      + '</span><span class="tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</span></div>' + detailHtml(d) + '<div class="title">'
       + esc(d.report_nm) + "</div></a></div>";
   }
   listEl.innerHTML = html;
