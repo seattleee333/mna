@@ -1,0 +1,38 @@
+name: DART M&A 수집
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 매일 한국시간 오전 7시
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "며칠치를 가져올까요"
+        default: "30"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: DART 공시 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          DAYS: ${{ github.event.inputs.days || '7' }}
+        run: python fetch_deals.py
+
+      - name: 결과 저장
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add deals.json
+          git diff --staged --quiet || (git commit -m "update deals" && git push)
