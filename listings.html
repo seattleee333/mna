@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매물·인수희망 리스트 · 상장사 M&A 데일리</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
+  <p>매물·인수희망 리스트 · 뉴스 기반 자동 수집 (2026년 9월~)</p>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main>
+    <div class="controls">
+      <input id="q" type="search" placeholder="회사명 또는 키워드 검색">
+    </div>
+    <div class="chips" id="chips"></div>
+    <div id="list"><div class="empty">불러오는 중...</div></div>
+    <footer>기사 원문을 그대로 옮기지 않고, 제목·요약과 원문 링크만 제공합니다. 정확한 내용은 원문 기사를 확인하세요.</footer>
+  </main>
+</div>
+
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("listings");
+
+let items = [];
+let outlet = "전체";
+const listEl = document.getElementById("list");
+const chipsEl = document.getElementById("chips");
+const qEl = document.getElementById("q");
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function fmtPub(p) {
+  const d = new Date(p);
+  if (isNaN(d)) return p || "";
+  return d.getFullYear() + "." + String(d.getMonth()+1).padStart(2,"0") + "." + String(d.getDate()).padStart(2,"0");
+}
+
+function render() {
+  const q = qEl.value.trim().toLowerCase();
+  const rows = items.filter(it =>
+    (outlet === "전체" || it.outlet === outlet) &&
+    (!q || it.title.toLowerCase().includes(q) || (it.snippet || "").toLowerCase().includes(q))
+  );
+  if (!rows.length) {
+    listEl.innerHTML = '<div class="empty">표시할 항목이 없습니다.</div>';
+    return;
+  }
+  listEl.innerHTML = rows.map(it =>
+    '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.link) + '">' +
+      '<div class="top"><span class="name">' + esc(it.title) + '</span><span class="tag">' + esc(it.outlet) + '</span></div>' +
+      (it.snippet ? '<div class="snippet">' + esc(it.snippet) + '</div>' : "") +
+      '<div class="meta">' + fmtPub(it.pubDate) + '</div>' +
+    '</a></div>'
+  ).join("");
+}
+
+function renderChips() {
+  const outlets = ["전체", ...new Set(items.map(it => it.outlet))];
+  chipsEl.innerHTML = outlets.map(o =>
+    '<button class="chip' + (o === outlet ? " on" : "") + '" data-o="' + esc(o) + '">' + esc(o) + "</button>"
+  ).join("");
+}
+
+chipsEl.addEventListener("click", e => {
+  if (e.target.dataset.o) { outlet = e.target.dataset.o; renderChips(); render(); }
+});
+qEl.addEventListener("input", render);
+
+fetch("listings.json?t=" + Date.now())
+  .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+  .then(data => { items = data; renderChips(); render(); })
+  .catch(() => {
+    listEl.innerHTML = '<div class="empty">아직 수집된 항목이 없습니다. 자동 수집이 한 번 실행되면 표시됩니다.</div>';
+  });
+</script>
+</body>
+</html>

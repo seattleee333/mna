@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>딜 상세 · 상장사 M&A 데일리</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
+  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main>
+    <a class="back" href="index.html">← 목록으로</a>
+    <div id="detailBox"><div class="empty">불러오는 중...</div></div>
+  </main>
+</div>
+
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("daily");
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function fmtDate(d) {
+  if (!d) return "-";
+  return d.slice(0,4) + "." + d.slice(4,6) + "." + d.slice(6,8);
+}
+function fmtWon(n) {
+  if (n == null) return "";
+  if (n >= 1e12) return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "조원";
+  if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
+  if (n >= 1e4) return Math.round(n / 1e4).toLocaleString() + "만원";
+  return n.toLocaleString() + "원";
+}
+const TARGET_LABEL = {"타법인 주식 취득·처분":"대상회사", "영업양수도":"대상 영업", "합병":"합병 상대"};
+
+const params = new URLSearchParams(location.search);
+const no = params.get("no");
+const box = document.getElementById("detailBox");
+
+fetch("deals.json?t=" + Date.now())
+  .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+  .then(data => {
+    const d = data.find(x => x.rcept_no === no);
+    if (!d) {
+      box.innerHTML = '<div class="empty">해당 공시를 찾을 수 없습니다.</div>';
+      return;
+    }
+    document.title = d.corp_name + " · 딜 상세 · 상장사 M&A 데일리";
+
+    let rows = "";
+    if (d.target) rows += '<div class="dt-row"><span>' + esc(TARGET_LABEL[d.category] || "대상") + '</span><b>' + esc(d.target) + '</b></div>';
+    if (d.counterparty) rows += '<div class="dt-row"><span>거래상대방</span><b>' + esc(d.counterparty) + '</b></div>';
+    if (d.amount != null) rows += '<div class="dt-row"><span>' + (d.category === "유상증자" ? "조달금액" : "딜 규모") + '</span><b>' + fmtWon(d.amount) + '</b></div>';
+    if (d.note) rows += '<div class="dt-row"><span>비고</span><b>' + esc(d.note) + '</b></div>';
+    if (!rows) rows = '<div class="dt-row"><span>상세 정보</span><b>DART에 상세 API가 없거나 아직 채워지지 않은 유형입니다</b></div>';
+
+    const top =
+      '<div class="detail-top">' +
+        '<div class="dt-tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</div>' +
+        '<h2>' + esc(d.corp_name) + '</h2>' +
+        '<div class="dt-rows">' + rows + '</div>' +
+      '</div>';
+
+    const raw =
+      '<div class="detail-raw">' +
+        '<h3>공시 원문 정보</h3>' +
+        '<div class="dr-row"><span>공시일자</span><b>' + fmtDate(d.date) + '</b></div>' +
+        '<div class="dr-row"><span>시장구분</span><b>' + esc(d.market || "-") + '</b></div>' +
+        '<div class="dr-row"><span>종목코드</span><b>' + esc(d.stock_code || "-") + '</b></div>' +
+        '<div class="dr-row"><span>공시명</span><b>' + esc(d.report_nm) + '</b></div>' +
+        '<div class="dr-row"><span>DART 원문</span><a target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(d.rcept_no) + '">원문 공시 보기 →</a></div>' +
+      '</div>';
+
+    box.innerHTML = top + raw;
+  })
+  .catch(() => {
+    box.innerHTML = '<div class="empty">데이터를 불러올 수 없습니다.</div>';
+  });
+</script>
+</body>
+</html>
