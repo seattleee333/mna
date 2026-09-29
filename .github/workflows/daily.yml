@@ -30,9 +30,15 @@ jobs:
           DAYS: ${{ github.event.inputs.days || '7' }}
         run: python fetch_deals.py
 
+      - name: M&A 인기뉴스 수집
+        run: python fetch_news.py
+
+      - name: 매물·인수희망 리스트 수집
+        run: python fetch_listings.py
+
       - name: 결과 저장
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deals.json
-          git diff --staged --quiet || (git commit -m "update deals" && git push)
+          git add deals.json news.json listings.json
+          git diff --staged --quiet || (git commit -m "update deals/news/listings" && git push)
