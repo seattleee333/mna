@@ -170,10 +170,15 @@ def enrich(deal, cache, stats):
         stats["skip_correction"] += 1
         deal["no_detail_api"] = True
         return True
-    key = (endpoint, deal["corp_code"], deal["date"])
+    # 상세 API가 실제로 그 딜을 잡아두는 날짜가 목록 API의 접수일자(rcept_dt)와
+    # 하루이틀 어긋나는 경우가 있어, 정확히 하루만 조회하지 않고 앞뒤로 여유를 두고 조회한다.
+    base_day = dt.datetime.strptime(deal["date"], "%Y%m%d")
+    win_bgn = (base_day - dt.timedelta(days=3)).strftime("%Y%m%d")
+    win_end = (base_day + dt.timedelta(days=3)).strftime("%Y%m%d")
+    key = (endpoint, deal["corp_code"], win_bgn, win_end)
     if key not in cache:
         data = call(endpoint + ".json", {
-            "corp_code": deal["corp_code"], "bgn_de": deal["date"], "end_de": deal["date"],
+            "corp_code": deal["corp_code"], "bgn_de": win_bgn, "end_de": win_end,
         })
         status = data.get("status")
         if status == "013":
@@ -199,7 +204,7 @@ def enrich(deal, cache, stats):
     else:
         stats["no_match"] += 1
         print(f"  매칭 실패 [{endpoint}] {deal['corp_name']} {deal['date']} "
-              f"rcept_no={deal['rcept_no']}: 상세API가 그 날짜에 반환한 건수={len(rows)}")
+              f"rcept_no={deal['rcept_no']}: 상세API가 {win_bgn}~{win_end} 기간에 반환한 건수={len(rows)}")
         return False  # 원인 파악될 때까지 매번 다시 시도 (로그도 매번 남김)
     return True
 
