@@ -164,9 +164,11 @@ def enrich(deal, cache, stats):
     endpoint = route(deal)
     if not endpoint:
         stats["no_api"] += 1  # 이 딜 유형은 DART에 상세 API 자체가 없음
+        deal["no_detail_api"] = True
         return True
     if "정정" in deal["report_nm"]:
         stats["skip_correction"] += 1
+        deal["no_detail_api"] = True
         return True
     key = (endpoint, deal["corp_code"], deal["date"])
     if key not in cache:
@@ -241,7 +243,12 @@ def main():
     filled = 0
     stats = {"matched": 0, "no_match": 0, "no_api": 0, "api_error": 0, "skip_correction": 0}
     for d in existing.values():
-        if d.get("detail_done") or not d.get("corp_code"):
+        if not d.get("corp_code"):
+            continue
+        # 이미 상세 정보가 채워졌거나(target/amount/note 중 하나라도 있음),
+        # 애초에 상세 API가 없는 유형으로 확인된 건은 다시 조회하지 않는다.
+        has_detail = d.get("target") or d.get("amount") is not None or d.get("note")
+        if has_detail or d.get("no_detail_api"):
             continue
         try:
             if enrich(d, cache, stats):
