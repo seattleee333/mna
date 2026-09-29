@@ -159,10 +159,14 @@ def extract(endpoint, row):
     return {}
 
 
-def enrich(deal, cache):
+def enrich(deal, cache, stats):
     """상세 정보를 채운다. 다시 시도할 필요가 없으면 True."""
     endpoint = route(deal)
-    if not endpoint or "정정" in deal["report_nm"]:
+    if not endpoint:
+        stats["no_api"] += 1  # 이 딜 유형은 DART에 상세 API 자체가 없음
+        return True
+    if "정정" in deal["report_nm"]:
+        stats["skip_correction"] += 1
         return True
     key = (endpoint, deal["corp_code"], deal["date"])
     if key not in cache:
@@ -177,6 +181,9 @@ def enrich(deal, cache):
         elif status == "020":
             raise RuntimeError("DART 요청 한도 초과")
         else:
+            stats["api_error"] += 1
+            print(f"  상세 API 오류 [{endpoint}] {deal['corp_name']} {deal['date']}: "
+                  f"status={status} message={data.get('message')}")
             return False  # 다음 실행에서 다시 시도
         cache[key] = rows
         time.sleep(0.1)
@@ -186,6 +193,12 @@ def enrich(deal, cache):
         row = rows[0]
     if row:
         deal.update(extract(endpoint, row))
+        stats["matched"] += 1
+    else:
+        stats["no_match"] += 1
+        print(f"  매칭 실패 [{endpoint}] {deal['corp_name']} {deal['date']} "
+              f"rcept_no={deal['rcept_no']}: 상세API가 그 날짜에 반환한 건수={len(rows)}")
+        return False  # 원인 파악될 때까지 매번 다시 시도 (로그도 매번 남김)
     return True
 
 
@@ -226,11 +239,12 @@ def main():
     # 상세 정보(대상 회사, 상대방, 금액) 채우기
     cache = {}
     filled = 0
+    stats = {"matched": 0, "no_match": 0, "no_api": 0, "api_error": 0, "skip_correction": 0}
     for d in existing.values():
         if d.get("detail_done") or not d.get("corp_code"):
             continue
         try:
-            if enrich(d, cache):
+            if enrich(d, cache, stats):
                 d["detail_done"] = True
                 filled += 1
         except RuntimeError as e:
@@ -242,6 +256,8 @@ def main():
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(deals, f, ensure_ascii=False, indent=1)
     print(f"신규 {added}건 추가, 상세 처리 {filled}건, 전체 {len(deals)}건")
+    print(f"상세 내역 - 채워짐:{stats['matched']} 매칭실패:{stats['no_match']} "
+          f"API없는유형:{stats['no_api']} API오류:{stats['api_error']} 정정건너뜀:{stats['skip_correction']}")
 
 
 if __name__ == "__main__":
