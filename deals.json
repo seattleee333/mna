@@ -20,7 +20,43 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1
+  "detail_attempts": 2
+ },
+ {
+  "rcept_no": "20260930000221",
+  "date": "20260930",
+  "corp_code": "00288343",
+  "corp_name": "삼영이엔씨",
+  "stock_code": "065570",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "direction": null,
+  "buyer": null,
+  "seller": null,
+  "target": null,
+  "amount": 10000000000,
+  "note": "증자방식: 제3자배정증자",
+  "summary": "삼영이엔씨가 제3자배정증자 방식으로 100억원을 조달합니다.",
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20260930000197",
+  "date": "20260930",
+  "corp_code": "00288343",
+  "corp_name": "삼영이엔씨",
+  "stock_code": "065570",
+  "market": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "direction": null,
+  "buyer": null,
+  "seller": null,
+  "target": null,
+  "amount": 6353782500,
+  "note": "증자방식: 제3자배정증자",
+  "summary": "삼영이엔씨가 제3자배정증자 방식으로 64억원을 조달합니다.",
+  "detail_done": true
  },
  {
   "rcept_no": "20260929901004",
@@ -48,7 +84,10 @@
   "counterparty": "농협경제지주(주)",
   "amount": 36738000000,
   "note": null,
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "NH농우바이오",
+  "seller": "농협경제지주(주)",
+  "summary": "NH농우바이오가 농협경제지주(주)로부터 농협경제지주(주) 농협종묘센터 영업일체를 367억원에 양수합니다."
  },
  {
   "rcept_no": "20260929900919",
@@ -71,7 +110,7 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (회사합병 결정 철회)",
   "category": "합병",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260929900849",
@@ -154,7 +193,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260929800727",
@@ -165,7 +204,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260929800726",
@@ -176,7 +215,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260929800614",
@@ -228,7 +267,10 @@
   "counterparty": null,
   "amount": 1100002810,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "리튬포어스가 제3자배정증자 방식으로 11억원을 조달합니다."
  },
  {
   "rcept_no": "20260929000639",
@@ -256,7 +298,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 주식회사 사조대림 : 주식회사 삼아벤처 = 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "사조대림",
+  "seller": "주식회사 삼아벤처",
+  "summary": "사조대림이 주식회사 삼아벤처를 흡수합병합니다 (합병비율 주식회사 사조대림 : 주식회사 삼아벤처 = 1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260929000584",
@@ -284,7 +329,10 @@
   "counterparty": "농협경제지주(주)",
   "amount": 36738000000,
   "note": null,
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "NH농우바이오",
+  "seller": "농협경제지주(주)",
+  "summary": "NH농우바이오가 농협경제지주(주)로부터 농협경제지주(주) 농협종묘센터 영업일체를 367억원에 양수합니다."
  },
  {
   "rcept_no": "20260929000566",
@@ -311,8 +359,11 @@
   "target": "주식회사 발라컴퍼니",
   "counterparty": "구나연 외 2인",
   "amount": 7500000000,
-  "note": "취득 후 지분율 100%",
-  "detail_done": true
+  "note": "인수 후 지분율 100%",
+  "detail_done": true,
+  "buyer": "아센디오",
+  "seller": "구나연 외 2인",
+  "summary": "아센디오가 구나연 외 2인으로부터 주식회사 발라컴퍼니 지분을 75억원에 인수합니다, 인수 후 지분율 100%."
  },
  {
   "rcept_no": "20260929000532",
@@ -340,7 +391,10 @@
   "counterparty": null,
   "amount": 1999999554,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "MSDI가 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260929000442",
@@ -560,7 +614,10 @@
   "counterparty": null,
   "amount": 4000000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "모아라이프플러스가 제3자배정증자 방식으로 40억원을 조달합니다."
  },
  {
   "rcept_no": "20260928000391",
@@ -632,7 +689,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00572905",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260928900330",
@@ -716,7 +773,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260928600712",
@@ -728,7 +785,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260928000389",
@@ -756,7 +813,10 @@
   "counterparty": null,
   "amount": 1924887972,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "크라우드웍스가 제3자배정증자 방식으로 19억원을 조달합니다."
  },
  {
   "rcept_no": "20260928000317",
@@ -819,8 +879,11 @@
   "target": "(주)그린팩",
   "counterparty": "천효만, 이명주, 천아름\n(거래상대방에 관한 사항은 \n'15. 기타 투자판단과 관련한 중요사항' 등 참조)",
   "amount": 16500000000,
-  "note": "취득 후 지분율 100.00%",
-  "detail_done": true
+  "note": "인수 후 지분율 100.00%",
+  "detail_done": true,
+  "buyer": "디지아이",
+  "seller": "천효만, 이명주, 천아름\n(거래상대방에 관한 사항은 \n'15. 기타 투자판단과 관련한 중요사항' 등 참조)",
+  "summary": "디지아이가 천효만, 이명주, 천아름\n(거래상대방에 관한 사항은 \n'15. 기타 투자판단과 관련한 중요사항' 등 참조)로부터 (주)그린팩 지분을 165억원에 인수합니다, 인수 후 지분율 100.00%."
  },
  {
   "rcept_no": "20260923900730",
@@ -932,7 +995,10 @@
   "counterparty": null,
   "amount": 2998993060,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "케이쓰리아이가 제3자배정증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260923000636",
@@ -960,7 +1026,10 @@
   "counterparty": null,
   "amount": 2000008360,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "휴림로봇이 일반공모증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260923000543",
@@ -1276,7 +1345,10 @@
   "counterparty": null,
   "amount": 2999997000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "셀리드가 제3자배정증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260922000497",
@@ -1444,7 +1516,7 @@
   "category": "유상증자",
   "corp_code": "01235296",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260921000430",
@@ -1640,7 +1712,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 유진기업(주) : 천안기업(주)    = 1.0000000 : 0.0000000\n유진기업(주) : (주)지구레미콘 = 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "유진기업",
+  "seller": "천안기업(주)\n(지구레미콘(주) 에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)",
+  "summary": "유진기업이 천안기업(주)\n(지구레미콘(주) 에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)를 흡수합병합니다 (합병비율 유진기업(주) : 천안기업(주)    = 1.0000000 : 0.0000000\n유진기업(주) : (주)지구레미콘 = 1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260921000240",
@@ -1736,7 +1811,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01364297",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260918900674",
@@ -1808,7 +1883,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00407814",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260918900148",
@@ -1896,7 +1971,10 @@
   "counterparty": "주식회사 코퍼스코리아",
   "amount": 4000000000,
   "note": null,
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "주식회사 코퍼스코리아",
+  "seller": "에피소드컴퍼니",
+  "summary": "에피소드컴퍼니가 보유 중이던 주식회사 에피소드미디어 지분을 주식회사 코퍼스코리아에 40억원에 매각합니다."
  },
  {
   "rcept_no": "20260918000407",
@@ -1936,7 +2014,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)큐로드 : 교보16호기업인수목적(주) = 1 : 0.0481927",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "교보16호스팩",
+  "seller": "주식회사 큐로드",
+  "summary": "교보16호스팩이 주식회사 큐로드를 흡수합병합니다 (합병비율 (주)큐로드 : 교보16호기업인수목적(주) = 1 : 0.0481927)."
  },
  {
   "rcept_no": "20260918000371",
@@ -1952,7 +2033,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 에스엠국일 주식회사 : 한덕철광산업 주식회사 =  1.0000000 : 15.5536068",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "국일제지",
+  "seller": "한덕철광산업 주식회사",
+  "summary": "국일제지가 한덕철광산업 주식회사를 흡수합병합니다 (합병비율 에스엠국일 주식회사 : 한덕철광산업 주식회사 =  1.0000000 : 15.5536068)."
  },
  {
   "rcept_no": "20260918000349",
@@ -2120,7 +2204,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260917900571",
@@ -2132,7 +2216,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260917900489",
@@ -2204,7 +2288,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00165413",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260917000371",
@@ -2396,7 +2480,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326792",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260916900624",
@@ -2468,7 +2552,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00562245",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260916900255",
@@ -2480,7 +2564,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260916900193",
@@ -2492,7 +2576,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00474588",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260916800377",
@@ -2580,7 +2664,10 @@
   "counterparty": null,
   "amount": 10000000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "앤씨앤이 제3자배정증자 방식으로 100억원을 조달합니다."
  },
  {
   "rcept_no": "20260916000546",
@@ -2608,7 +2695,10 @@
   "counterparty": null,
   "amount": 68000000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "STX가 제3자배정증자 방식으로 680억원을 조달합니다."
  },
  {
   "rcept_no": "20260916000537",
@@ -2624,7 +2714,10 @@
   "counterparty": null,
   "amount": null,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "STX가 제3자배정증자 방식으로 금액 미상을 조달합니다."
  },
  {
   "rcept_no": "20260916000527",
@@ -2712,7 +2805,10 @@
   "counterparty": null,
   "amount": 490000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "GMI벤처가 제3자배정증자 방식으로 5억원을 조달합니다."
  },
  {
   "rcept_no": "20260916000451",
@@ -2776,7 +2872,10 @@
   "counterparty": null,
   "amount": 17999997056,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "아리바이오LAB가 제3자배정증자 방식으로 180억원을 조달합니다."
  },
  {
   "rcept_no": "20260916000279",
@@ -2792,7 +2891,10 @@
   "counterparty": null,
   "amount": 2000000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "모아라이프플러스가 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260915900823",
@@ -2876,7 +2978,7 @@
   "category": "유상증자",
   "corp_code": "00259590",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260915900505",
@@ -2888,7 +2990,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01137383",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260915900482",
@@ -2900,7 +3002,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260915900330",
@@ -2972,7 +3074,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00555874",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260915800672",
@@ -2984,7 +3086,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00105606",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260915000428",
@@ -3000,7 +3102,10 @@
   "counterparty": null,
   "amount": 4734000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "비케이홀딩스가 제3자배정증자 방식으로 47억원을 조달합니다."
  },
  {
   "rcept_no": "20260915000392",
@@ -3028,7 +3133,10 @@
   "counterparty": null,
   "amount": 9999993120,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "화일약품이 제3자배정증자 방식으로 100억원을 조달합니다."
  },
  {
   "rcept_no": "20260915000373",
@@ -3056,7 +3164,10 @@
   "counterparty": null,
   "amount": 1999995110,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "광진실업이 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260915000300",
@@ -3084,7 +3195,10 @@
   "counterparty": null,
   "amount": 27900249356,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "미투온이 제3자배정증자 방식으로 279억원을 조달합니다."
  },
  {
   "rcept_no": "20260915000284",
@@ -3123,8 +3237,11 @@
   "target": "화일약품 주식회사",
   "counterparty": "파마앤바이오 신기술조합",
   "amount": 52928640000,
-  "note": "양도 후 지분율 6.55%",
-  "detail_done": true
+  "note": "처분 후 지분율 6.55%",
+  "detail_done": true,
+  "buyer": "파마앤바이오 신기술조합",
+  "seller": "오성첨단소재",
+  "summary": "오성첨단소재가 보유 중이던 화일약품 주식회사 지분을 파마앤바이오 신기술조합에 529억원에 매각합니다, 처분 후 지분율 6.55%."
  },
  {
   "rcept_no": "20260915000242",
@@ -3175,8 +3292,11 @@
   "target": "주식회사 다컴시스템",
   "counterparty": "주식회사 다컴",
   "amount": 4442550000,
-  "note": "취득 후 지분율 35%",
-  "detail_done": true
+  "note": "인수 후 지분율 35%",
+  "detail_done": true,
+  "buyer": "E8",
+  "seller": "주식회사 다컴",
+  "summary": "E8가 주식회사 다컴으로부터 주식회사 다컴시스템 지분을 44억원에 인수합니다, 인수 후 지분율 35%."
  },
  {
   "rcept_no": "20260914000432",
@@ -3272,7 +3392,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00124504",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260914000421",
@@ -3300,7 +3420,10 @@
   "counterparty": null,
   "amount": 990000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "멕아이씨에스가 제3자배정증자 방식으로 10억원을 조달합니다."
  },
  {
   "rcept_no": "20260914000342",
@@ -3339,8 +3462,11 @@
   "target": "하나마이크론 주식회사",
   "counterparty": "파이프솔루션5호 유한회사",
   "amount": 100000000000,
-  "note": "양도 후 지분율 5.38%",
-  "detail_done": true
+  "note": "처분 후 지분율 5.38%",
+  "detail_done": true,
+  "buyer": "파이프솔루션5호 유한회사",
+  "seller": "하나머티리얼즈",
+  "summary": "하나머티리얼즈가 보유 중이던 하나마이크론 주식회사 지분을 파이프솔루션5호 유한회사에 1,000억원에 매각합니다, 처분 후 지분율 5.38%."
  },
  {
   "rcept_no": "20260914000246",
@@ -3356,7 +3482,10 @@
   "counterparty": null,
   "amount": 2999994240,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "이브이첨단소재가 제3자배정증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260914000244",
@@ -3372,7 +3501,10 @@
   "counterparty": null,
   "amount": 5499996600,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "이브이첨단소재가 제3자배정증자 방식으로 55억원을 조달합니다."
  },
  {
   "rcept_no": "20260914000241",
@@ -3504,7 +3636,7 @@
   "category": "유상증자",
   "corp_code": "00626011",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260911900612",
@@ -3516,7 +3648,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01246034",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260911900487",
@@ -3552,7 +3684,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260911900424",
@@ -3624,7 +3756,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260911800150",
@@ -3652,7 +3784,10 @@
   "counterparty": null,
   "amount": 5999999404,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "KS인더스트리가 제3자배정증자 방식으로 60억원을 조달합니다."
  },
  {
   "rcept_no": "20260911000570",
@@ -3668,7 +3803,10 @@
   "counterparty": null,
   "amount": 999998100,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "오늘이엔엠이 제3자배정증자 방식으로 10억원을 조달합니다."
  },
  {
   "rcept_no": "20260911000566",
@@ -3708,7 +3846,10 @@
   "counterparty": null,
   "amount": 2499999600,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "루멘스바이오스가 제3자배정증자 방식으로 25억원을 조달합니다."
  },
  {
   "rcept_no": "20260911000504",
@@ -3748,7 +3889,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)코스메카코리아 : (주)에스피뷰티글로벌 = 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "코스메카코리아",
+  "seller": "(주)에스피뷰티글로벌",
+  "summary": "코스메카코리아가 (주)에스피뷰티글로벌을 흡수합병합니다 (합병비율 (주)코스메카코리아 : (주)에스피뷰티글로벌 = 1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260911000372",
@@ -3788,7 +3932,10 @@
   "counterparty": null,
   "amount": 3999999160,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "아티스트스튜디오가 제3자배정증자 방식으로 40억원을 조달합니다."
  },
  {
   "rcept_no": "20260911000215",
@@ -3836,7 +3983,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00447575",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260910900405",
@@ -3872,7 +4019,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260910800627",
@@ -3936,7 +4083,10 @@
   "counterparty": null,
   "amount": 1999998380,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "우성머티리얼스가 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000536",
@@ -3964,7 +4114,10 @@
   "counterparty": null,
   "amount": 999999781,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "크라우드웍스가 일반공모증자 방식으로 10억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000445",
@@ -3992,7 +4145,10 @@
   "counterparty": null,
   "amount": 60000000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "헝셩그룹이 제3자배정증자 방식으로 600억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000395",
@@ -4020,7 +4176,10 @@
   "counterparty": null,
   "amount": 3797296895,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "넥써쓰가 제3자배정증자 방식으로 38억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000331",
@@ -4036,7 +4195,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)엑티브온 : 키움제11호기업인수목적(주) = 1: 0.3267974",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "키움제11호스팩",
+  "seller": "주식회사 엑티브온 (ActivON Co., Ltd.)",
+  "summary": "키움제11호스팩이 주식회사 엑티브온 (ActivON Co., Ltd.)를 흡수합병합니다 (합병비율 (주)엑티브온 : 키움제11호기업인수목적(주) = 1: 0.3267974)."
  },
  {
   "rcept_no": "20260910000322",
@@ -4052,7 +4214,10 @@
   "counterparty": null,
   "amount": 2999999560,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "E8가 일반공모증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000314",
@@ -4068,7 +4233,10 @@
   "counterparty": null,
   "amount": 2499995646,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "GMI벤처가 제3자배정증자 방식으로 25억원을 조달합니다."
  },
  {
   "rcept_no": "20260910000268",
@@ -4152,7 +4320,7 @@
   "category": "유상증자",
   "corp_code": "00110884",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260909000543",
@@ -4168,7 +4336,10 @@
   "counterparty": null,
   "amount": 4999999297,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "엠젠솔루션이 제3자배정증자 방식으로 50억원을 조달합니다."
  },
  {
   "rcept_no": "20260909000542",
@@ -4204,7 +4375,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00406037",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260909900603",
@@ -4252,7 +4423,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00114093",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260909800251",
@@ -4280,7 +4451,8 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)에이피알 : (주)에이피알팩토리\n= 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260909000532",
@@ -4308,7 +4480,10 @@
   "counterparty": null,
   "amount": null,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "바른손이앤에이가 제3자배정증자 방식으로 금액 미상을 조달합니다."
  },
  {
   "rcept_no": "20260909000530",
@@ -4348,7 +4523,10 @@
   "counterparty": null,
   "amount": 1999999848,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "SKAI가 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260909000500",
@@ -4447,8 +4625,11 @@
   "target": "(주)유비즈솔루션",
   "counterparty": "지미숙 외 9인",
   "amount": 30700020000,
-  "note": "취득 후 지분율 100%",
-  "detail_done": true
+  "note": "인수 후 지분율 100%",
+  "detail_done": true,
+  "buyer": "광무",
+  "seller": "지미숙 외 9인",
+  "summary": "광무가 지미숙 외 9인으로부터 (주)유비즈솔루션 지분을 307억원에 인수합니다, 인수 후 지분율 100%."
  },
  {
   "rcept_no": "20260909000220",
@@ -4476,7 +4657,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)에이피알 : (주)에이피알팩토리\n= 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "에이피알",
+  "seller": "(주)에이피알팩토리",
+  "summary": "에이피알이 (주)에이피알팩토리를 흡수합병합니다 (합병비율 (주)에이피알 : (주)에이피알팩토리\n= 1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260909000002",
@@ -4492,7 +4676,10 @@
   "counterparty": null,
   "amount": 29999998875,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "넥사다이내믹스가 제3자배정증자 방식으로 300억원을 조달합니다."
  },
  {
   "rcept_no": "20260908000434",
@@ -4552,7 +4739,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260908800274",
@@ -4564,7 +4751,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00133618",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260908000404",
@@ -4580,7 +4767,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)바이오인프라 : (주)유앤인프라 = 1.00000000 : 0.00000000(무증자 합병)",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "바이오인프라",
+  "seller": "(주)유앤인프라",
+  "summary": "바이오인프라가 (주)유앤인프라를 흡수합병합니다 (합병비율 (주)바이오인프라 : (주)유앤인프라 = 1.00000000 : 0.00000000(무증자 합병))."
  },
  {
   "rcept_no": "20260908000381",
@@ -4860,7 +5050,10 @@
   "counterparty": null,
   "amount": 6000001375,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "파인디앤씨가 제3자배정증자 방식으로 60억원을 조달합니다."
  },
  {
   "rcept_no": "20260904900725",
@@ -4872,7 +5065,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00626464",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260904900600",
@@ -4920,7 +5113,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260904900307",
@@ -4956,7 +5149,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00608839",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260904800462",
@@ -4968,7 +5161,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260904800327",
@@ -5044,7 +5237,10 @@
   "counterparty": null,
   "amount": 2999998540,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "시지트로닉스가 일반공모증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260904000450",
@@ -5060,7 +5256,10 @@
   "counterparty": null,
   "amount": 2999994200,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "나노씨엠에스가 일반공모증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260904000384",
@@ -5100,7 +5299,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)우성 보통주 : (주)우성유통 보통주 = 1 : 1.8702948",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "우성",
+  "seller": "주식회사 우성유통(Woosung Distribution Co., Ltd.)",
+  "summary": "우성이 주식회사 우성유통(Woosung Distribution Co., Ltd.)를 흡수합병합니다 (합병비율 (주)우성 보통주 : (주)우성유통 보통주 = 1 : 1.8702948)."
  },
  {
   "rcept_no": "20260904000334",
@@ -5140,7 +5342,10 @@
   "counterparty": null,
   "amount": 14699999660,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "사토시홀딩스가 제3자배정증자 방식으로 147억원을 조달합니다."
  },
  {
   "rcept_no": "20260904000285",
@@ -5168,7 +5373,10 @@
   "counterparty": null,
   "amount": 2199834000,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "다보링크가 일반공모증자 방식으로 22억원을 조달합니다."
  },
  {
   "rcept_no": "20260904000246",
@@ -5243,8 +5451,11 @@
   "target": "선민수산(주)",
   "counterparty": "\"15. 기타 투자판단과 관련한 중요사항\"  참조",
   "amount": 82300000000,
-  "note": "취득 후 지분율 100.00%",
-  "detail_done": true
+  "note": "인수 후 지분율 100.00%",
+  "detail_done": true,
+  "buyer": "신라교역",
+  "seller": "\"15. 기타 투자판단과 관련한 중요사항\"  참조",
+  "summary": "신라교역이 \"15. 기타 투자판단과 관련한 중요사항\"  참조로부터 선민수산(주) 지분을 823억원에 인수합니다, 인수 후 지분율 100.00%."
  },
  {
   "rcept_no": "20260904000208",
@@ -5284,7 +5495,10 @@
   "counterparty": null,
   "amount": 101601000000,
   "note": "증자방식: 주주배정후 실권주 일반공모",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "큐리언트가 주주배정후 실권주 일반공모 방식으로 1,016억원을 조달합니다."
  },
  {
   "rcept_no": "20260904000065",
@@ -5456,7 +5670,10 @@
   "counterparty": null,
   "amount": 4270000000,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "비케이홀딩스가 제3자배정증자 방식으로 43억원을 조달합니다."
  },
  {
   "rcept_no": "20260903000384",
@@ -5520,7 +5737,10 @@
   "counterparty": null,
   "amount": 20000001094,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "에이프로젠바이오로직스가 제3자배정증자 방식으로 200억원을 조달합니다."
  },
  {
   "rcept_no": "20260903000291",
@@ -5547,8 +5767,11 @@
   "target": "케이씨안전기술(주)",
   "counterparty": "오퍼스제4호기업재무안정기관전용사모투자 합자회사",
   "amount": 22330000000,
-  "note": "양도 후 지분율 0%",
-  "detail_done": true
+  "note": "처분 후 지분율 0%",
+  "detail_done": true,
+  "buyer": "오퍼스제4호기업재무안정기관전용사모투자 합자회사",
+  "seller": "KC그린홀딩스",
+  "summary": "KC그린홀딩스가 보유 중이던 케이씨안전기술(주) 지분을 오퍼스제4호기업재무안정기관전용사모투자 합자회사에 223억원에 매각합니다, 처분 후 지분율 0%."
  },
  {
   "rcept_no": "20260903000225",
@@ -5600,7 +5823,8 @@
   "counterparty": null,
   "amount": 1999999456,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260903000143",
@@ -5648,7 +5872,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01061558",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260902900536",
@@ -5720,7 +5944,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01150515",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260902900241",
@@ -5768,7 +5992,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00153524",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260902800277",
@@ -5856,7 +6080,10 @@
   "counterparty": null,
   "amount": 9999994215,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "볼빅이 제3자배정증자 방식으로 100억원을 조달합니다."
  },
  {
   "rcept_no": "20260902000167",
@@ -6060,7 +6287,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00143262",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260901800102",
@@ -6108,7 +6335,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00337296",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260901000339",
@@ -6124,7 +6351,10 @@
   "counterparty": null,
   "amount": 427718900,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "로지스몬이 일반공모증자 방식으로 4억원을 조달합니다."
  },
  {
   "rcept_no": "20260901000333",
@@ -6152,7 +6382,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 (주)비지에프에코머티리얼즈 : (주)비지에프에코솔루션 = \n1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "BGF에코머티리얼즈",
+  "seller": "(주)비지에프에코솔루션",
+  "summary": "BGF에코머티리얼즈가 (주)비지에프에코솔루션을 흡수합병합니다 (합병비율 (주)비지에프에코머티리얼즈 : (주)비지에프에코솔루션 = \n1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260901000301",
@@ -6180,7 +6413,10 @@
   "counterparty": null,
   "amount": 2999999122,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "핀텔이 일반공모증자 방식으로 30억원을 조달합니다."
  },
  {
   "rcept_no": "20260901000283",
@@ -6208,7 +6444,10 @@
   "counterparty": null,
   "amount": 2079330736,
   "note": "증자방식: 일반공모증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "엑시온그룹이 일반공모증자 방식으로 21억원을 조달합니다."
  },
  {
   "rcept_no": "20260901000196",
@@ -6332,7 +6571,10 @@
   "counterparty": null,
   "amount": null,
   "note": "합병비율 SNT모티브 주식회사 : 주식회사 SNT로보틱스\n= 1.0000000 : 0.0000000",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": "SNT모티브",
+  "seller": "주식회사 SNT로보틱스",
+  "summary": "SNT모티브가 주식회사 SNT로보틱스를 흡수합병합니다 (합병비율 SNT모티브 주식회사 : 주식회사 SNT로보틱스\n= 1.0000000 : 0.0000000)."
  },
  {
   "rcept_no": "20260831900947",
@@ -6344,7 +6586,7 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00349732",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260831900855",
@@ -6464,7 +6706,7 @@
   "category": "유상증자",
   "corp_code": "00367695",
   "detail_done": true,
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20260831900361",
@@ -6600,7 +6842,10 @@
   "counterparty": null,
   "amount": 1999998918,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "buyer": null,
+  "seller": null,
+  "summary": "신테카바이오가 제3자배정증자 방식으로 20억원을 조달합니다."
  },
  {
   "rcept_no": "20260831001526",
@@ -6676,7 +6921,8 @@
   "counterparty": null,
   "amount": 9999999315,
   "note": "증자방식: 제3자배정증자",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260831001452",
