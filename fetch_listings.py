@@ -17,7 +17,8 @@ OUTLETS = {
     "머니투데이": "mt.co.kr",
 }
 
-# "매물로 나왔다" / "인수 후보를 찾는다" 류의 기사를 잡기 위한 키워드
+# "매물로 나왔다" / "인수 후보를 찾는다" 류의 기사를 잡기 위한 키워드.
+# 구글 뉴스가 단어를 따로따로 느슨하게 매칭하지 않도록 정확한 문구로 감싼다(따옴표).
 KEYWORDS = [
     "매각 추진",
     "매물로 나왔다",
@@ -26,6 +27,13 @@ KEYWORDS = [
     "지분 매각 추진",
     "인수처 물색",
 ]
+
+# 매일경제 [M&A 매물장터], 한국경제 M&A 장터 처럼 매체가 격주로 연재하는
+# 매물 소개 코너를 따로, 더 정확하게 잡기 위한 전용 검색어.
+SERIES_QUERIES = {
+    "매일경제": ['"M&A 매물장터"'],
+    "한국경제": ['"매물로" 억 site:hankyung.com'],  # 한경 코너는 별도 태그 없이 "매출 OOO억 OOO 매물로" 형식의 제목을 씀
+}
 
 
 def fetch(q):
@@ -53,42 +61,58 @@ def parse_pub(pub):
         return None
 
 
+def add_results(existing, seen_links, outlet, found, tag, added_counter):
+    for it in found:
+        if it["link"] in seen_links:
+            continue
+        pub_dt = parse_pub(it["pubDate"])
+        if pub_dt is not None and pub_dt < START_DATE:
+            continue  # 2026년 9월 이전 기사는 제외
+        existing.append({
+            "title": it["title"],
+            "link": it["link"],
+            "snippet": it["snippet"],
+            "outlet": outlet,
+            "pubDate": it["pubDate"],
+            "series": tag,
+        })
+        seen_links.add(it["link"])
+        added_counter[0] += 1
+
+
 def main():
     existing = []
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as f:
             existing = json.load(f)
     seen_links = {e["link"] for e in existing}
+    added = [0]
 
-    added = 0
+    # 1) 매체별 격주 연재 매물 코너 (정확도 높은 전용 검색)
+    for outlet, queries in SERIES_QUERIES.items():
+        for q in queries:
+            try:
+                found = fetch(q)
+            except Exception as e:
+                print(f"연재 코너 조회 실패 [{outlet}]: {e}")
+                continue
+            add_results(existing, seen_links, outlet, found, "매물장터", added)
+
+    # 2) 일반 키워드 기반 매각/인수 희망 기사 (문구를 따옴표로 감싸 정확도를 높임)
     for outlet, domain in OUTLETS.items():
         for kw in KEYWORDS:
-            q = f'{kw} site:{domain}'
+            q = f'"{kw}" site:{domain}'
             try:
                 found = fetch(q)
             except Exception as e:
                 print(f"목록 조회 실패 [{outlet}/{kw}]: {e}")
                 continue
-            for it in found:
-                if it["link"] in seen_links:
-                    continue
-                pub_dt = parse_pub(it["pubDate"])
-                if pub_dt is not None and pub_dt < START_DATE:
-                    continue  # 2026년 9월 이전 기사는 제외
-                existing.append({
-                    "title": it["title"],
-                    "link": it["link"],
-                    "snippet": it["snippet"],
-                    "outlet": outlet,
-                    "pubDate": it["pubDate"],
-                })
-                seen_links.add(it["link"])
-                added += 1
+            add_results(existing, seen_links, outlet, found, None, added)
 
     existing.sort(key=lambda e: e.get("pubDate", ""), reverse=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=1)
-    print(f"매물·인수희망 리스트 신규 {added}건 추가, 전체 {len(existing)}건")
+    print(f"매물·인수희망 리스트 신규 {added[0]}건 추가, 전체 {len(existing)}건")
 
 
 if __name__ == "__main__":
