@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-  <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
-  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
+  <h1><a href="index.html">상장사 M&A 데일리</a></h1>
+  <p>딜클로징 리스트 실시간 업데이트</p>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar"></aside>
@@ -18,20 +18,28 @@
       <input id="q" type="search" placeholder="회사명 또는 종목코드 검색">
     </div>
     <div class="chips" id="chips"></div>
+    <div class="toggle-row">
+      <input type="checkbox" id="showMinor">
+      <label for="showMinor">정정·자회사 공시 등 상세정보 없는 공시도 표시</label>
+    </div>
     <div id="list"></div>
-    <footer>본 페이지는 DART 공시를 자동 분류한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
+    <footer>본 페이지는 DART 공시를 자동 분류·요약한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
   </main>
+  <aside class="news-panel" id="newsPanel"></aside>
 </div>
 
 <script src="sidebar.js"></script>
 <script>
 renderSidebar("daily");
+renderNewsPanel();
 
 let deals = [];
 let category = "전체";
+let showMinor = false;
 const listEl = document.getElementById("list");
 const chipsEl = document.getElementById("chips");
 const qEl = document.getElementById("q");
+const showMinorEl = document.getElementById("showMinor");
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -40,30 +48,21 @@ function fmtDate(d) {
   return d.slice(0,4) + "." + d.slice(4,6) + "." + d.slice(6,8);
 }
 
-const TARGET_LABEL = {"타법인 주식 취득·처분":"대상회사", "영업양수도":"대상 영업", "합병":"합병 상대"};
-
-function fmtWon(n) {
-  if (n == null) return "";
-  if (n >= 1e12) return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "조원";
-  if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
-  if (n >= 1e4) return Math.round(n / 1e4).toLocaleString() + "만원";
-  return n.toLocaleString() + "원";
-}
-
 function detailHtml(d) {
-  const parts = [];
-  if (d.target) parts.push((TARGET_LABEL[d.category] || "대상") + ": <b>" + esc(d.target) + "</b>");
-  if (d.counterparty) parts.push("거래상대방: <b>" + esc(d.counterparty) + "</b>");
-  if (d.amount != null) parts.push((d.category === "유상증자" ? "조달금액" : "딜 규모") + ": <b>" + fmtWon(d.amount) + "</b>");
-  if (d.note) parts.push(esc(d.note));
-  if (!parts.length) return "";
-  return '<div class="detail">' + parts.map(p => "<span>" + p + "</span>").join("") + "</div>";
+  if (d.summary) {
+    return '<div class="summary-line">' + esc(d.summary) + '</div>';
+  }
+  if (d.no_detail_api) {
+    return '<div class="no-detail-line">DART 상세 공시 API에 정보가 없는 유형입니다 (원문 확인 필요)</div>';
+  }
+  return '<div class="no-detail-line">상세정보 확인 중…</div>';
 }
 
 function render() {
   const q = qEl.value.trim().toLowerCase();
   const rows = deals.filter(d =>
     (category === "전체" || d.category === category) &&
+    (showMinor || !d.no_detail_api) &&
     (!q || d.corp_name.toLowerCase().includes(q) || d.stock_code.includes(q))
   );
   if (!rows.length) {
@@ -95,6 +94,7 @@ chipsEl.addEventListener("click", e => {
   if (e.target.dataset.c) { category = e.target.dataset.c; renderChips(); render(); }
 });
 qEl.addEventListener("input", render);
+showMinorEl.addEventListener("change", () => { showMinor = showMinorEl.checked; render(); });
 
 fetch("deals.json?t=" + Date.now())
   .then(r => { if (!r.ok) throw new Error(); return r.json(); })
