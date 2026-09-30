@@ -10,11 +10,17 @@
   "stage": "mk_body",
   "link": "https://stock.mk.co.kr/news/view/1165909",
   "status": 200,
-  "len": 100905,
+  "len": 100909,
   "has_keyword": false,
   "table_count": 0,
   "sell_rows": 0,
-  "buy_rows": 0
+  "buy_rows": 0,
+  "content_type": "text/html; charset=UTF-8",
+  "title_tag": "[M&A 매물장터] 연 매출 200억 창호 제조사 매물로",
+  "has_next_data": false,
+  "has_body_kw": true,
+  "api_srcs": [],
+  "snippet": "<!doctype html> <html lang=\"ko\"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KTPV2SK');</script> <!-- End Google Tag Manager --> <!-- End Google Tag Manager (noscript) --> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=1210\"> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"> <meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\"> <meta http-equiv=\"Content-Style-Type\" content=\"text/css\"> <meta name=\"naver-site-verification\" content=\"7522a37599a270a379bf95c46d59aba6b962d29d\" /> <script src=\"/js/jquery-3.7.1.min.js\"></script> <script src=\"/js/swiper.min.js\"></script> <script src=\"/js/common.js\"></script> <script src=\"/js/tabcontent.js\"></script> <script src=\"/js/stock.js\"></script> <script src=\"/js/chosen.jquery.min.js\"></script> <link rel=\"stylesheet\" href=\"https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css\" > <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?%2520family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc?oc=5",
@@ -27,11 +33,17 @@
   "stage": "mk_body",
   "link": "https://stock.mk.co.kr/news/view/1158859",
   "status": 200,
-  "len": 100957,
+  "len": 100961,
   "has_keyword": false,
   "table_count": 0,
   "sell_rows": 0,
-  "buy_rows": 0
+  "buy_rows": 0,
+  "content_type": "text/html; charset=UTF-8",
+  "title_tag": "[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요",
+  "has_next_data": false,
+  "has_body_kw": true,
+  "api_srcs": [],
+  "snippet": "<!doctype html> <html lang=\"ko\"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KTPV2SK');</script> <!-- End Google Tag Manager --> <!-- End Google Tag Manager (noscript) --> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=1210\"> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"> <meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\"> <meta http-equiv=\"Content-Style-Type\" content=\"text/css\"> <meta name=\"naver-site-verification\" content=\"7522a37599a270a379bf95c46d59aba6b962d29d\" /> <script src=\"/js/jquery-3.7.1.min.js\"></script> <script src=\"/js/swiper.min.js\"></script> <script src=\"/js/common.js\"></script> <script src=\"/js/tabcontent.js\"></script> <script src=\"/js/stock.js\"></script> <script src=\"/js/chosen.jquery.min.js\"></script> <link rel=\"stylesheet\" href=\"https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css\" > <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?%2520family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw?oc=5",
