@@ -41,4 +41,21 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add deals.json news.json listings.json _debug_listings.json
-          git diff --staged --quiet || (git commit -m "update deals/news/listings" && git push)
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update deals/news/listings"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "push 성공"
+                break
+              fi
+              echo "push 실패, 재시도 ($i) - rebase 후 재시도"
+              git fetch origin main
+              git rebase origin/main
+              if [ "$i" -eq 5 ]; then
+                echo "push 5회 재시도 후 실패"
+                exit 1
+              fi
+            done
+          fi
