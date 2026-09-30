@@ -24,6 +24,18 @@
   "detail_done": true
  },
  {
+  "rcept_no": "20260930800500",
+  "date": "20260930",
+  "corp_code": "00508344",
+  "corp_name": "SK디앤디",
+  "stock_code": "210980",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20260930800176",
   "date": "20260930",
   "corp_code": "00137207",
@@ -45,6 +57,30 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20260930000432",
+  "date": "20260930",
+  "corp_code": "00543204",
+  "corp_name": "아이오케이이엔엠",
+  "stock_code": "078860",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20260930000427",
+  "date": "20260930",
+  "corp_code": "01274310",
+  "corp_name": "이오플로우",
+  "stock_code": "294090",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
   "no_detail_api": true,
   "detail_done": true
  },

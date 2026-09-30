@@ -13,6 +13,7 @@
    "news.bbsi.co.kr",
    "news.kbs.co.kr",
    "v.daum.net",
+   "yonhapnewstv.co.kr",
    "강원도민일보",
    "경향신문",
    "국제신문",
@@ -35,7 +36,7 @@
    "한국M&A경제신문",
    "헤럴드경제"
   ],
-  "outlet_count": 31,
+  "outlet_count": 32,
   "first_seen": "20260929"
  },
  {
@@ -64,6 +65,7 @@
    "MBC 뉴스",
    "SBS Biz",
    "TradingView",
+   "biz.sbs.co.kr",
    "v.daum.net",
    "뉴스1",
    "뉴시스",
@@ -72,7 +74,7 @@
    "연합뉴스",
    "한국경제"
   ],
-  "outlet_count": 10,
+  "outlet_count": 11,
   "first_seen": "20260929"
  },
  {
@@ -658,6 +660,46 @@
   "sources": [
    "haesanews.com",
    "해사신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "[Who Is ?] 김석환 한세예스24홀딩스 대표이사 부회장 - 비즈니스포스트",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE10N3VjVHRoaVRqM0NCYk9jbWxnQXdqVUpqU2RXbVVfOVc0SDh1Tk5FYlNrQzFRamg0VUUwNkJGa3Q5U0otS0RMZHRfSjk2SDFod2VJOTE1d3BxNmxyRjdROFE0TlRibFlpV1k0Y3U4QnRESFk?oc=5",
+  "sources": [
+   "businesspost.co.kr",
+   "비즈니스포스트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "SK에코플랜트, 친환경 사업 손 뗀다…AI·인프라 투자 가속[시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfRGI2ZGtVTi1BazhXMDdnU3M4WUFIMDBPLXFLQnptMl9na29DVWlzUFByQ05WRF9tSXpBZGNkdFB2OFBrNWhPY0lTSG5MS1JVRWRUZGdEaXF4UmNTeHM0NjJQV2tBdlQ0dVE?oc=5",
+  "sources": [
+   "signal.sedaily.com",
+   "서울경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "게임사 M&A 공식 바뀐다…흥행 IP서 '사업 기반' 통째로 확보 - ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sWGdwcWlPcGV2cWtjYk1PNzZsOHlIQVpxUW56OHJyUXppRDVCU3VzSjhFMFpwS0QxcjdVcWhVWmhkV3VhX2l0MjFlM0tuUnN3NVdMeTFTempMTFNxczZDbFZFanJ4M2M1?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "ebn.co.kr"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "BS산업, 오너 2세 회사에 PFV 지분 저가 매각…공정위 “70억 부당지원 혐의” - etnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5MTllNNExQS1h4OEFRWFBsRXh5Q2xEdVJQV2Q4Y0NvUFlIUnNFc2RGOHVibTAzNlVBNjB3WklOQURxU05YX2tmaHFhSXZTdw?oc=5",
+  "sources": [
+   "etnews.com",
+   "뉴시스"
   ],
   "outlet_count": 2,
   "first_seen": "20260930"
@@ -1407,15 +1449,6 @@
   "first_seen": "20260930"
  },
  {
-  "title": "[Who Is ?] 김석환 한세예스24홀딩스 대표이사 부회장 - 비즈니스포스트",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE10N3VjVHRoaVRqM0NCYk9jbWxnQXdqVUpqU2RXbVVfOVc0SDh1Tk5FYlNrQzFRamg0VUUwNkJGa3Q5U0otS0RMZHRfSjk2SDFod2VJOTE1d3BxNmxyRjdROFE0TlRibFlpV1k0Y3U4QnRESFk?oc=5",
-  "sources": [
-   "비즈니스포스트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
   "title": "[사설]200억 챙긴 ‘금융 엘리트 카르텔’ 적발… ‘내부자’ 이들뿐일까 - 동아일보",
   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12ZkxzdnVyOUJ6R3ZKVnVJZ0NycWlrenVxN0RLZ1RhalQ4dXdwY1g2NmtQSGVxcUtreFA5Tkk2YnFLUTFJU2oyNG9IVHZNY2NnQ1M3R291eU5Wd3lCcEVweTZUd0VlQnE0RUNGODltQmVkdnVDclHSAWZBVV95cUxOUkdqTmJFbzh4MkpPU0NSYjNXSTFYdGtlWEIzeElTTGZfazQ3WTc4NmhLNFZ4NzBkVlJyRkk1dWFQeHhsQ2RUSGhxRkVKbE5vT1BpM3FBWTNCYTlxUVJZdVVvczdaamc?oc=5",
   "sources": [
@@ -1546,24 +1579,6 @@
   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN1N1U3o0d3R4bTJPR0owTU9vd3NQaFdlbEQ3OG1kTjdEYmZtbktnQ3BBTkVwalNyRzZqU0FhOUdnQmxJX0tnNTFyTE94a19hLXhQNjQtVVRGbWkwV3RGY05nOENvUmdjSVRUd0FRVXF6aXlhUXlXd0FpQ2tMWHlrRDNHZUIzVXlNanFLOHBvcw?oc=5",
   "sources": [
    "Naver Blog"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "SK에코플랜트, 친환경 사업 손 뗀다…AI·인프라 투자 가속[시그널] - 서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfRGI2ZGtVTi1BazhXMDdnU3M4WUFIMDBPLXFLQnptMl9na29DVWlzUFByQ05WRF9tSXpBZGNkdFB2OFBrNWhPY0lTSG5MS1JVRWRUZGdEaXF4UmNTeHM0NjJQV2tBdlQ0dVE?oc=5",
-  "sources": [
-   "서울경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "게임사 M&A 공식 바뀐다…흥행 IP서 '사업 기반' 통째로 확보 - ebn.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sWGdwcWlPcGV2cWtjYk1PNzZsOHlIQVpxUW56OHJyUXppRDVCU3VzSjhFMFpwS0QxcjdVcWhVWmhkV3VhX2l0MjFlM0tuUnN3NVdMeTFTempMTFNxczZDbFZFanJ4M2M1?oc=5",
-  "sources": [
-   "ebn.co.kr"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -1780,6 +1795,33 @@
   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90cHp3dVAyUnVhcnFMRzRrMlJXLXBweXZvbXlwQUZjMllQcXZzVU1QdHYzcmlnamU2SkF1Xy1fWlNFczNaWHp1TDJoWGJqcVV5b1N4QjcyRl9MMGtVT0Zrd1BrUDY4M0JhYkhZYjlkTHJqUDZXWENueXQ1cXPSAXxBVV95cUxPdHB6d3VQMlJ1YXJxTEc0azJSVy1wcHl2b215cEFGYzJZUHF2c1VNUHR2M3JpZ2plNkpBdV8tX1pTRXMzWlh6dUwyaFhianFVeW9TeEI3MkZfTDBrVU9Ga3dQa1A2ODNCYWJIWWI5ZExyalA2V1hDbnl0NXFz?oc=5",
   "sources": [
    "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "의무공개매수 ‘개악’ 제동나선 운용사…“일반 주주는 2등 시민인가” - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBweWRZc21VRktmTlV5ZGNlYzVUclNlR2k5c1JXSDBRamZ3NWdKVUJ0MlhjeWc4T1RSQmk3SXBjaVFfWDVrb0lyOVFHUmJDTkRWMXc?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "[또 하나의 시작, '하나금융' 청라시대]① '한국투자금융'에서 시작한 하나금융…55년 변천사 - 오피니언뉴스",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLOW5hMjFEZjJrTkhVVHlHX0ZLVURDdmlZb3ZjVFB4aFlHTzZId0p0aVh6Q3BidzkzQUptYWg0blFvSTMtbmRMZWhYb0VXNlhrYzFCZGpkNExYMkNxVEFxNDNZVHNoRDhNOUp0ckdxd2hKUQ?oc=5",
+  "sources": [
+   "오피니언뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "애니파이브, 23년 만에 CI 전면 개편…AI·IP·R&D 플랫폼 기업 도약 - etnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAtbzBhZUFRenFWZS1ad2pnQ1h6RnVLd1NwenRKLW5uTEUzZzlZUlduaWRnOU9tUEtpbVJRS1ZMdThQTDVDUjkxa3ZtSWxRQQ?oc=5",
+  "sources": [
+   "etnews.com"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"

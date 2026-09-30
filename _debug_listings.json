@@ -7,11 +7,14 @@
   "decoded_url": "https://stock.mk.co.kr/news/view/1165909"
  },
  {
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVU5aWTl1OG5seGJCcGFXakJDdEF0VXBlTEFsNkUzQVNyd2pxX3ZmdnpfYTdud19YYmhJMXoxbDJ3RFN2ZUF3VUZnMWRRZDBxdmc?oc=5",
+  "stage": "mk_body",
+  "link": "https://stock.mk.co.kr/news/view/1165909",
   "status": 200,
-  "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVU5aWTl1OG5seGJCcGFXakJDdEF0VXBlTEFsNkUzQVNyd2pxX3ZmdnpfYTdud19YYmhJMXoxbDJ3RFN2ZUF3VUZnMWRRZDBxdmc?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "result": "decoded",
-  "decoded_url": "https://www.mk.co.kr/news/stock/12162945"
+  "len": 100905,
+  "has_keyword": false,
+  "table_count": 0,
+  "sell_rows": 0,
+  "buy_rows": 0
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc?oc=5",
@@ -21,11 +24,14 @@
   "decoded_url": "https://stock.mk.co.kr/news/view/1158859"
  },
  {
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mdW5iV3BtLW9jcWxWMEJfVUkxejVHZUs3MWZWdjd4ZUhzWTRzYVcxUEt1ZnlwTXVqNnl3RTdKN1I0OWc3b1J2MUZNU25aOHZ2MkE?oc=5",
+  "stage": "mk_body",
+  "link": "https://stock.mk.co.kr/news/view/1158859",
   "status": 200,
-  "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mdW5iV3BtLW9jcWxWMEJfVUkxejVHZUs3MWZWdjd4ZUhzWTRzYVcxUEt1ZnlwTXVqNnl3RTdKN1I0OWc3b1J2MUZNU25aOHZ2MkE?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "result": "decoded",
-  "decoded_url": "https://www.mk.co.kr/news/stock/12152352"
+  "len": 100957,
+  "has_keyword": false,
+  "table_count": 0,
+  "sell_rows": 0,
+  "buy_rows": 0
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw?oc=5",
