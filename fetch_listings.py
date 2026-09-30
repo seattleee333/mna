@@ -135,34 +135,52 @@ def parse_mk_prose(html):
     매물/인수희망 항목을 문단 단위로 추출한다."""
     paragraphs = re.split(r"(?:<br\s*/?>\s*){2,}", html)
     sell_items, buy_items = [], []
+    NAME_RE = re.compile(r"\b([A-Z])사(?=[가-힣]|\b)")
     for p in paragraphs:
         text = BeautifulSoup(p, "html.parser").get_text(" ", strip=True)
         text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 15:
             continue
-        is_sell = any(k in text for k in MK_SELL_KW)
-        is_buy = any(k in text for k in MK_BUY_KW)
-        if not is_sell and not is_buy:
-            continue
-        # "A사가", "B사도"처럼 뒤에 조사가 바로 붙어 한글 단어 경계가 없으므로
-        # 앞쪽 경계만 확인한다. 특정 회사(A사/B사 등)를 명시하지 않는 도입부
-        # 요약 문단은 회사 표기가 없어 이 조건에서 자연히 걸러진다.
-        name_m = re.search(r"\b([A-Z])사(?=[가-힣]|\b)", text)
-        if not name_m:
-            continue
-        label = name_m.group(1) + "사"
-        if is_buy:
-            amt_m = re.search(r"희망\s*인수\s*금액은\s*([^.]+?)(?:이다|다)?\.", text)
-            buy_items.append({
-                "label": label, "feature": text[:220],
-                "budget": amt_m.group(1).strip() if amt_m else "",
-            })
-        else:
-            rev_m = re.search(r"매출(?:은)?\s*([\d,]+)\s*억", text)
-            sell_items.append({
-                "label": label, "feature": text[:220],
-                "revenue": (rev_m.group(1) + "억원") if rev_m else "",
-            })
+        # 한 <br><br> 블록 안에 회사가 여러 개(예: "D사는 ... 100억원이다. E사는 ...") 붙어
+        # 나오는 경우가 있어, 회사 표기(A사/B사 등)가 나오는 위치마다 블록을 다시 잘라
+        # 각 회사별로 따로 처리한다. 특정 회사를 명시하지 않는 도입부 요약 문단은
+        # 회사 표기가 없어 자연히 걸러진다.
+        matches = list(NAME_RE.finditer(text))
+        for i, name_m in enumerate(matches):
+            start = name_m.start()
+            end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+            # "연매출 65억원의 ... B사도 매물로 나왔다"처럼 매출 등 설명이 회사명
+            # 앞에 나오는 경우가 많아, 직전 문장 경계(마침표)부터 포함시켜
+            # 매출/특징 정보를 놓치지 않도록 한다 (단, 이전 회사 문단까지 넘어가지
+            # 않도록 그 이전 회사명 위치를 하한으로 둔다).
+            lower_bound = matches[i - 1].start() if i > 0 else 0
+            period_idx = text.rfind(". ", lower_bound, start)
+            if period_idx != -1:
+                ctx_start = period_idx + 2
+            elif i == 0:
+                ctx_start = 0  # 문단 내 첫 회사는 문단 시작부터 포함 (앞선 회사 문장과 섞일 일이 없음)
+            else:
+                ctx_start = start
+            seg = text[ctx_start:end].strip()
+            if len(seg) < 10:
+                continue
+            is_sell = any(k in seg for k in MK_SELL_KW)
+            is_buy = any(k in seg for k in MK_BUY_KW)
+            if not is_sell and not is_buy:
+                continue
+            label = name_m.group(1) + "사"
+            if is_buy:
+                amt_m = re.search(r"희망\s*인수\s*금액은\s*([^.]+?)(?:이다|다)?\.", seg)
+                buy_items.append({
+                    "label": label, "feature": seg[:220],
+                    "budget": amt_m.group(1).strip() if amt_m else "",
+                })
+            else:
+                rev_m = re.search(r"매출(?:은)?\s*([\d,]+)\s*억", seg)
+                sell_items.append({
+                    "label": label, "feature": seg[:220],
+                    "revenue": (rev_m.group(1) + "억원") if rev_m else "",
+                })
     return sell_items, buy_items
 
 
