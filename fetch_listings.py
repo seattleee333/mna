@@ -148,13 +148,16 @@ def collect_mk(existing_keys, added, items_out):
         if pub_dt is not None and pub_dt < START_DATE:
             continue
 
-        real_link = resolve_real_url(it["link"], "mk.co.kr")
-        canonical_link = real_link or it["link"]
-        # 같은 기사가 구글 뉴스에 다른 섹션(예: "매일경제"/"매일경제 마켓")으로 중복 노출되는
-        # 경우가 있어, 실제 기사 URL 기준으로 최종 중복 제거한다.
-        article_key = ("매일경제", canonical_link)
+        clean_title = re.sub(r"\s*-\s*[^-]+$", "", it["title"]).strip()  # " - 매일경제 마켓" 등 언론사 접미사 제거
+        # 같은 기사가 구글 뉴스에 다른 섹션(예: "매일경제"/"매일경제 마켓"/모바일 URL)으로
+        # 중복 노출되는 경우가 있어, 제목 기준으로 먼저 중복 제거한다 (URL은 같은 기사라도
+        # 섹션마다 달라질 수 있어 신뢰할 수 없음).
+        article_key = ("매일경제", clean_title)
         if article_key in existing_keys:
             continue
+
+        real_link = resolve_real_url(it["link"], "mk.co.kr")
+        canonical_link = real_link or it["link"]
 
         sell_rows, buy_rows = [], []
         if real_link:
@@ -162,12 +165,18 @@ def collect_mk(existing_keys, added, items_out):
                 r = requests.get(real_link, headers=UA, timeout=20)
                 r.raise_for_status()
                 sell_rows, buy_rows = parse_mk_tables(r.text)
+                DEBUG_LOG.append({
+                    "stage": "mk_body", "link": real_link, "status": r.status_code,
+                    "len": len(r.text), "has_keyword": "매물 기업정보" in r.text,
+                    "table_count": r.text.count("<table"),
+                    "sell_rows": len(sell_rows), "buy_rows": len(buy_rows),
+                })
             except Exception as e:
                 print(f"매일경제 본문 조회 실패 [{real_link}]: {e}")
+                DEBUG_LOG.append({"stage": "mk_body", "link": real_link, "error": str(e)})
         else:
             print(f"매일경제 실제 기사 URL을 찾지 못함 (구글 리다이렉트만 있음): {it['title']}")
 
-        clean_title = re.sub(r"\s*-\s*(매일경제 ?마켓|매일경제)\s*$", "", it["title"]).strip()
         base = {
             "outlet": "매일경제",
             "article_title": clean_title,
@@ -199,11 +208,15 @@ HK_TITLE_RE = re.compile(r"매출\s*([\d,]+)\s*억\s*(.+?)\s*매물로")
 
 
 def add_hankyung_item(link, title, pub_dt_str, existing_keys, items_out, added):
-    article_key = ("한국경제", link)
+    tm = HK_TITLE_RE.search(title)
+    if not tm:
+        # "매출 OOO억 OOO 매물로" 패턴이 아니면 M&A 매물 코너 기사가 아닐 가능성이 커서
+        # (예: 부동산 매물 기사) 제외한다.
+        return
+    article_key = ("한국경제", title)  # URL보다 제목이 더 안정적인 중복 판단 기준
     if article_key in existing_keys:
         return
-    tm = HK_TITLE_RE.search(title)
-    revenue, feature = (tm.group(1), tm.group(2)) if tm else ("", title)
+    revenue, feature = tm.group(1), tm.group(2)
     items_out.append({
         "outlet": "한국경제", "article_title": title, "article_link": link,
         "pubDate": pub_dt_str,
@@ -271,7 +284,8 @@ def main():
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as f:
             existing = json.load(f)
-    existing_keys = {(e.get("outlet"), e.get("article_link")) for e in existing}
+    # 매물/인수 행 여러 개가 기사 하나에서 나올 수 있어, 중복 판단은 (매체, 기사 제목) 기준으로 한다.
+    existing_keys = {(e.get("outlet"), e.get("article_title")) for e in existing}
     added = [0]
     items_out = []
 
