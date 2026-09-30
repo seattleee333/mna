@@ -165,12 +165,21 @@ def collect_mk(existing_keys, added, items_out):
                 r = requests.get(real_link, headers=UA, timeout=20)
                 r.raise_for_status()
                 sell_rows, buy_rows = parse_mk_tables(r.text)
-                DEBUG_LOG.append({
+                title_m = re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S)
+                api_srcs = re.findall(r'src=["\']([^"\']*(?:api|/_next/data)[^"\']*)["\']', r.text)
+                debug_entry = {
                     "stage": "mk_body", "link": real_link, "status": r.status_code,
                     "len": len(r.text), "has_keyword": "매물 기업정보" in r.text,
                     "table_count": r.text.count("<table"),
                     "sell_rows": len(sell_rows), "buy_rows": len(buy_rows),
-                })
+                    "content_type": r.headers.get("Content-Type", ""),
+                    "title_tag": title_m.group(1).strip() if title_m else None,
+                    "has_next_data": "__NEXT_DATA__" in r.text,
+                    "has_body_kw": "매물" in r.text,
+                    "api_srcs": api_srcs[:5],
+                    "snippet": re.sub(r"\s+", " ", r.text[:1500]),
+                }
+                DEBUG_LOG.append(debug_entry)
             except Exception as e:
                 print(f"매일경제 본문 조회 실패 [{real_link}]: {e}")
                 DEBUG_LOG.append({"stage": "mk_body", "link": real_link, "error": str(e)})
@@ -275,7 +284,7 @@ def collect_hankyung(existing_keys, added, items_out):
         real_link = resolve_real_url(it["link"], "hankyung.com")
         if not real_link:
             continue
-        clean_title = re.sub(r"\s*\|\s*한국경제\s*$", "", it["title"]).strip()
+        clean_title = re.sub(r"\s*[-|]\s*한국경제[^-|]*$", "", it["title"]).strip()
         add_hankyung_item(real_link, clean_title, it["pubDate"], existing_keys, items_out, added)
 
 
