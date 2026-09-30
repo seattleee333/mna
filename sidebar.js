@@ -28,12 +28,15 @@ function renderNewsPanel() {
         list.innerHTML = '<div class="side-empty">아직 수집된 뉴스가 없습니다.</div>';
         return;
       }
-      list.innerHTML = data.slice(0, 12).map(n => {
-        const sources = n.sources && n.sources.length ? escHtml(n.sources.slice(0, 3).join(", ")) : "";
-        const countBadge = n.outlet_count > 1 ? '<span class="nc-count">' + n.outlet_count + '곳</span>' : "";
+      list.innerHTML = data.slice(0, 10).map((n, i) => {
+        const source = n.sources && n.sources.length ? escHtml(n.sources[0]) : "";
+        const countBadge = n.outlet_count > 1 ? '<span class="nc-count">+' + (n.outlet_count - 1) + '</span>' : "";
         return '<a class="news-card" target="_blank" rel="noopener" href="' + escHtml(n.link) + '">' +
-          '<span class="nc-title">' + escHtml(n.title) + '</span>' +
-          '<span class="nc-meta">' + countBadge + sources + '</span>' +
+          '<span class="nc-rank">' + (i + 1) + '</span>' +
+          '<span class="nc-body">' +
+            '<span class="nc-title">' + escHtml(n.title) + '</span>' +
+            '<span class="nc-meta">' + source + countBadge + '</span>' +
+          '</span>' +
           '</a>';
       }).join("");
     })

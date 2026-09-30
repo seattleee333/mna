@@ -25,6 +25,7 @@
     </div>
     <div class="notice-line">상장사 딜만 공지되어있습니다</div>
     <div id="list"></div>
+    <div id="pageControls" class="page-controls"></div>
     <footer>본 페이지는 DART 공시를 자동 분류·요약한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
   </main>
   <aside class="news-panel" id="newsPanel"></aside>
@@ -38,7 +39,12 @@ renderNewsPanel();
 let deals = [];
 let category = "전체";
 let showMinor = false;
+const PAGE_SIZE = 10;
+const MORE_LIMIT = 2; // "더보기"로 최대 2배치(20개)까지 늘어난 뒤엔 페이지네이션으로 전환
+let revealBatches = 1;
+let pageNum = null; // null이면 "더보기" 단계, 숫자가 있으면 페이지네이션 단계
 const listEl = document.getElementById("list");
+const pageControlsEl = document.getElementById("pageControls");
 const chipsEl = document.getElementById("chips");
 const qEl = document.getElementById("q");
 const showMinorEl = document.getElementById("showMinor");
@@ -87,17 +93,7 @@ function detailHtml(d) {
   return '<div class="no-detail-line">상세정보 확인 중…</div>';
 }
 
-function render() {
-  const q = qEl.value.trim().toLowerCase();
-  const rows = deals.filter(d =>
-    (category === "전체" || d.category === category) &&
-    (showMinor || !d.no_detail_api) &&
-    (!q || d.corp_name.toLowerCase().includes(q) || d.stock_code.includes(q))
-  );
-  if (!rows.length) {
-    listEl.innerHTML = '<div class="empty">표시할 공시가 없습니다.</div>';
-    return;
-  }
+function cardsHtml(rows) {
   let html = "", lastDate = "";
   for (const d of rows) {
     if (d.date !== lastDate) {
@@ -109,7 +105,78 @@ function render() {
       + '</span><span class="tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</span></div>' + detailHtml(d) + '<div class="title">'
       + esc(d.report_nm) + "</div></a></div>";
   }
-  listEl.innerHTML = html;
+  return html;
+}
+
+function render() {
+  const q = qEl.value.trim().toLowerCase();
+  const rows = deals.filter(d =>
+    (category === "전체" || d.category === category) &&
+    (showMinor || !d.no_detail_api) &&
+    (!q || d.corp_name.toLowerCase().includes(q) || d.stock_code.includes(q))
+  );
+  revealBatches = 1;
+  pageNum = null;
+  renderPage(rows);
+}
+
+function renderPage(rows) {
+  if (!rows.length) {
+    listEl.innerHTML = '<div class="empty">표시할 공시가 없습니다.</div>';
+    pageControlsEl.innerHTML = "";
+    return;
+  }
+
+  if (pageNum === null) {
+    // "더보기" 단계: 10개 -> (더보기 클릭) 20개까지
+    const shown = Math.min(revealBatches * PAGE_SIZE, rows.length);
+    listEl.innerHTML = cardsHtml(rows.slice(0, shown));
+
+    if (shown >= rows.length) {
+      pageControlsEl.innerHTML = "";
+    } else if (revealBatches < MORE_LIMIT) {
+      pageControlsEl.innerHTML = '<button class="more-btn" id="moreBtn">더보기</button>';
+      document.getElementById("moreBtn").addEventListener("click", () => {
+        revealBatches++;
+        renderPage(rows);
+      });
+    } else {
+      // 20개까지 다 보여줬는데 더 남아있으면 페이지네이션으로 전환
+      pageNum = MORE_LIMIT + 1;
+      renderPage(rows);
+    }
+    return;
+  }
+
+  // 페이지네이션 단계
+  const totalPages = Math.ceil(rows.length / PAGE_SIZE);
+  pageNum = Math.min(Math.max(pageNum, 1), totalPages);
+  const start = (pageNum - 1) * PAGE_SIZE;
+  listEl.innerHTML = cardsHtml(rows.slice(start, start + PAGE_SIZE));
+
+  // 페이지가 많을 땐 현재 페이지 주변 + 처음/끝만 보여주고 나머지는 "…"으로 생략
+  const pages = [];
+  for (let p = 1; p <= totalPages; p++) {
+    if (p === 1 || p === totalPages || Math.abs(p - pageNum) <= 1) pages.push(p);
+    else if (pages[pages.length - 1] !== "…") pages.push("…");
+  }
+  let html = '<div class="pagination">';
+  html += '<button class="page-arrow" data-p="' + (pageNum - 1) + '"' + (pageNum <= 1 ? " disabled" : "") + '>‹</button>';
+  for (const p of pages) {
+    html += p === "…"
+      ? '<span class="page-ellipsis">…</span>'
+      : '<button class="page-num' + (p === pageNum ? " on" : "") + '" data-p="' + p + '">' + p + '</button>';
+  }
+  html += '<button class="page-arrow" data-p="' + (pageNum + 1) + '"' + (pageNum >= totalPages ? " disabled" : "") + '>›</button>';
+  html += '</div>';
+  pageControlsEl.innerHTML = html;
+  pageControlsEl.querySelectorAll("[data-p]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      pageNum = parseInt(btn.dataset.p, 10);
+      renderPage(rows);
+      listEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 }
 
 function renderChips() {
