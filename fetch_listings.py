@@ -75,25 +75,64 @@ def parse_mk_tables(html):
 DEBUG_LOG = []
 
 
+def decode_google_news_link(session, page_html):
+    """구글 뉴스의 news.google.com/rss/articles/CBMi... 링크는 실제 URL이 아니라
+    자바스크립트 SPA가 내부적으로 풀어내는 난독화된 토큰이다. 기사 페이지의
+    <c-wiz data-p="..."> 안에 실제 URL을 얻기 위한 서명값이 들어있어, 구글의
+    내부 batchexecute 엔드포인트에 그 서명을 그대로 되돌려 보내면 실제 언론사
+    URL을 알려준다. (공개적으로 알려진 우회 방법)"""
+    soup = BeautifulSoup(page_html, "html.parser")
+    c_wiz = soup.select_one("c-wiz[data-p]")
+    if not c_wiz:
+        return None
+    data_p = c_wiz.get("data-p")
+    obj = json.loads(data_p.replace("%.@.", '["garturlreq",'))
+    payload = {
+        "f.req": json.dumps([[["Fbv4je", json.dumps(obj[:-6] + obj[-2:]), "null", "generic"]]])
+    }
+    headers = {**UA, "content-type": "application/x-www-form-urlencoded;charset=UTF-8"}
+    r2 = session.post(
+        "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+        headers=headers, data=payload, timeout=15,
+    )
+    r2.raise_for_status()
+    array_string = json.loads(r2.text.split("\n\n", 1)[1])[0][2]
+    return json.loads(array_string)[1]
+
+
 def resolve_real_url(google_link, domain_hint):
     """구글 뉴스 RSS의 링크는 news.google.com으로 감싸진 리다이렉트/난독화 링크라
     실제 언론사 URL을 별도로 찾아내야 한다."""
     try:
-        r = requests.get(google_link, headers=UA, timeout=15)
+        with requests.Session() as session:
+            session.headers.update(UA)
+            r = session.get(google_link, timeout=15)
+            info = {"link": google_link, "status": r.status_code, "final_url": r.url}
+            if domain_hint in r.url:
+                info["result"] = "redirected"
+                DEBUG_LOG.append(info)
+                return r.url  # 이미 실제 언론사 URL로 리다이렉트된 경우
+            # 본문에 실제 URL이 그대로 노출돼 있는 경우 (가끔 있음)
+            m = re.search(r'https?://(?:www\.)?' + re.escape(domain_hint) + r'/[^"\'\\<>\s]+', r.text)
+            if m:
+                info["result"] = "regex_found"
+                DEBUG_LOG.append(info)
+                return m.group(0)
+            # 최후 수단: 구글 내부 API로 실제 URL 디코딩 시도
+            try:
+                real = decode_google_news_link(session, r.text)
+                info["result"] = "decoded" if real else "decode_failed"
+                info["decoded_url"] = real
+                DEBUG_LOG.append(info)
+                return real
+            except Exception as e:
+                info["result"] = "decode_error"
+                info["error"] = str(e)
+                DEBUG_LOG.append(info)
+                return None
     except Exception as e:
         DEBUG_LOG.append({"link": google_link, "error": str(e)})
         return None
-    info = {"link": google_link, "status": r.status_code, "final_url": r.url, "len": len(r.text)}
-    if domain_hint in r.url:
-        info["result"] = "redirected"
-        DEBUG_LOG.append(info)
-        return r.url  # 이미 실제 언론사 URL로 리다이렉트된 경우
-    # 구글이 리다이렉트 안내(interstitial) 페이지만 반환한 경우, 본문에서 실제 기사 URL을 찾는다
-    m = re.search(r'https?://(?:www\.)?' + re.escape(domain_hint) + r'/[^"\'\\<>\s]+', r.text)
-    info["result"] = "regex_found" if m else "not_found"
-    info["snippet"] = r.text[:600]
-    DEBUG_LOG.append(info)
-    return m.group(0) if m else None
 
 
 def collect_mk(existing_keys, added, items_out):
