@@ -165,6 +165,31 @@ def collect_mk(existing_keys, added, items_out):
                 r = requests.get(real_link, headers=UA, timeout=20)
                 r.raise_for_status()
                 sell_rows, buy_rows = parse_mk_tables(r.text)
+
+                # 일반 기사 페이지(/news/view/<id>)는 본문 표가 자바스크립트로 늦게
+                # 채워지는 것으로 보여 <table>이 잡히지 않는다. 인쇄용 페이지
+                # (/news/print/<id>)는 기사 본문만 서버에서 그대로 렌더링해주는
+                # 경우가 많아, 표를 못 찾았을 때 대안으로 시도해본다.
+                print_rows = None
+                if not sell_rows and not buy_rows:
+                    m = re.search(r"/news/view/(\d+)", real_link)
+                    if m:
+                        print_url = f"https://stock.mk.co.kr/news/print/{m.group(1)}"
+                        try:
+                            pr = requests.get(print_url, headers=UA, timeout=20)
+                            pr.raise_for_status()
+                            p_sell, p_buy = parse_mk_tables(pr.text)
+                            print_rows = {
+                                "url": print_url, "status": pr.status_code, "len": len(pr.text),
+                                "table_count": pr.text.count("<table"),
+                                "has_keyword": "매물 기업정보" in pr.text,
+                                "sell_rows": len(p_sell), "buy_rows": len(p_buy),
+                            }
+                            if p_sell or p_buy:
+                                sell_rows, buy_rows = p_sell, p_buy
+                        except Exception as e:
+                            print_rows = {"url": print_url, "error": str(e)}
+                        DEBUG_LOG.append({"stage": "mk_print", **(print_rows or {})})
                 title_m = re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S)
                 api_srcs = re.findall(r'src=["\']([^"\']*(?:api|/_next/data)[^"\']*)["\']', r.text)
                 ajax_calls = re.findall(r'\.ajax\(\{[^}]{0,300}', r.text)
