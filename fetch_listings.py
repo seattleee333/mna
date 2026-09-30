@@ -72,18 +72,27 @@ def parse_mk_tables(html):
     return sell_rows, buy_rows
 
 
+DEBUG_LOG = []
+
+
 def resolve_real_url(google_link, domain_hint):
     """구글 뉴스 RSS의 링크는 news.google.com으로 감싸진 리다이렉트/난독화 링크라
     실제 언론사 URL을 별도로 찾아내야 한다."""
     try:
         r = requests.get(google_link, headers=UA, timeout=15)
     except Exception as e:
-        print(f"리다이렉트 조회 실패 [{google_link}]: {e}")
+        DEBUG_LOG.append({"link": google_link, "error": str(e)})
         return None
+    info = {"link": google_link, "status": r.status_code, "final_url": r.url, "len": len(r.text)}
     if domain_hint in r.url:
+        info["result"] = "redirected"
+        DEBUG_LOG.append(info)
         return r.url  # 이미 실제 언론사 URL로 리다이렉트된 경우
     # 구글이 리다이렉트 안내(interstitial) 페이지만 반환한 경우, 본문에서 실제 기사 URL을 찾는다
     m = re.search(r'https?://(?:www\.)?' + re.escape(domain_hint) + r'/[^"\'\\<>\s]+', r.text)
+    info["result"] = "regex_found" if m else "not_found"
+    info["snippet"] = r.text[:600]
+    DEBUG_LOG.append(info)
     return m.group(0) if m else None
 
 
@@ -229,6 +238,9 @@ def main():
 
     collect_mk(existing_keys, added, items_out)
     collect_hankyung(existing_keys, added, items_out)
+
+    with open("_debug_listings.json", "w", encoding="utf-8") as f:
+        json.dump(DEBUG_LOG, f, ensure_ascii=False, indent=1)
 
     existing.extend(items_out)
     existing.sort(key=lambda e: e.get("pubDate", ""), reverse=True)
