@@ -1,5 +1,28 @@
 [
  {
+  "rcept_no": "20260930800176",
+  "date": "20260930",
+  "corp_code": "00137207",
+  "corp_name": "유니켐",
+  "stock_code": "011330",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20260930800068",
+  "date": "20260930",
+  "corp_code": "01093007",
+  "corp_name": "LS에코에너지",
+  "stock_code": "229640",
+  "market": "Y",
+  "report_nm": "타법인주식및출자증권취득결정",
+  "category": "타법인 주식 취득·처분",
+  "detail_attempts": 1
+ },
+ {
   "rcept_no": "20260929901004",
   "date": "20260929",
   "corp_code": "01042429",
@@ -47,7 +70,8 @@
   "stock_code": "290690",
   "market": "K",
   "report_nm": "기타주요경영사항              (회사합병 결정 철회)",
-  "category": "합병"
+  "category": "합병",
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260929900849",
@@ -129,7 +153,8 @@
   "stock_code": "036460",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260929800727",
@@ -139,7 +164,8 @@
   "stock_code": "096760",
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260929800726",
@@ -149,7 +175,8 @@
   "stock_code": "001060",
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
-  "category": "타법인 주식 취득·처분"
+  "category": "타법인 주식 취득·처분",
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260929800614",
@@ -604,7 +631,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00572905",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260928900330",
@@ -675,7 +703,8 @@
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260928600824",
@@ -686,7 +715,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260928600712",
@@ -697,7 +727,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260928000389",
@@ -1120,7 +1151,8 @@
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260922900420",
@@ -1131,7 +1163,8 @@
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260922900323",
@@ -1410,7 +1443,8 @@
   "report_nm": "주요사항보고서(유상증자결정)",
   "category": "유상증자",
   "corp_code": "01235296",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260921000430",
@@ -1701,7 +1735,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01364297",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260918900674",
@@ -1772,7 +1807,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00407814",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260918900148",
@@ -1795,7 +1831,8 @@
   "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00339391",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260918800605",
@@ -2082,7 +2119,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260917900571",
@@ -2093,7 +2131,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260917900489",
@@ -2128,7 +2167,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00389110",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917900147",
@@ -2139,7 +2179,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00474588",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917800659",
@@ -2150,7 +2191,8 @@
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00120562",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917800656",
@@ -2161,7 +2203,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00165413",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260917000371",
@@ -2352,7 +2395,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326792",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260916900624",
@@ -2423,7 +2467,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00562245",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260916900255",
@@ -2434,7 +2479,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260916900193",
@@ -2445,7 +2491,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00474588",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260916800377",
@@ -2828,7 +2875,8 @@
   "report_nm": "기타주요경영사항              (제3자 배정 유상증자 결정 철회)",
   "category": "유상증자",
   "corp_code": "00259590",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260915900505",
@@ -2839,7 +2887,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01137383",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260915900482",
@@ -2850,7 +2899,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260915900330",
@@ -2909,7 +2959,8 @@
   "report_nm": "타법인주식및출자증권처분결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125080",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915800786",
@@ -2920,7 +2971,8 @@
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00555874",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260915800672",
@@ -2931,7 +2983,8 @@
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00105606",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260915000428",
@@ -3206,7 +3259,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00124504",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260914800415",
@@ -3217,7 +3271,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00124504",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260914000421",
@@ -3448,7 +3503,8 @@
   "report_nm": "기타주요경영사항              (제3자배정 유상증자 결정 철회)",
   "category": "유상증자",
   "corp_code": "00626011",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260911900612",
@@ -3459,7 +3515,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01246034",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260911900487",
@@ -3470,7 +3527,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00268251",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911900472",
@@ -3493,7 +3551,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260911900424",
@@ -3540,7 +3599,8 @@
   "report_nm": "영업양수결정(종속회사의주요경영사항)",
   "category": "영업양수도",
   "corp_code": "00133618",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911800676",
@@ -3563,7 +3623,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260911800150",
@@ -3762,7 +3823,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00447575",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260910900540",
@@ -3773,7 +3835,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00447575",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260910900405",
@@ -3808,7 +3871,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260910800627",
@@ -3819,7 +3883,8 @@
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01205709",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260910800520",
@@ -3842,7 +3907,8 @@
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260910600267",
@@ -4085,7 +4151,8 @@
   "report_nm": "주요사항보고서(유상증자결정)",
   "category": "유상증자",
   "corp_code": "00110884",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260909000543",
@@ -4136,7 +4203,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00406037",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260909900603",
@@ -4183,7 +4251,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00114093",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260909800251",
@@ -4194,7 +4263,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "00114093",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260909800113",
@@ -4481,7 +4551,8 @@
   "report_nm": "타법인주식및출자증권처분결정(자율공시)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260908800274",
@@ -4492,7 +4563,8 @@
   "report_nm": "타법인주식및출자증권취득결정(자율공시)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00133618",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260908000404",
@@ -4663,7 +4735,8 @@
   "report_nm": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00184667",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260907900494",
@@ -4798,7 +4871,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00626464",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260904900600",
@@ -4845,7 +4919,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260904900307",
@@ -4880,7 +4955,8 @@
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00608839",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260904800462",
@@ -4891,7 +4967,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260904800327",
@@ -5326,7 +5403,8 @@
   "report_nm": "주요사항보고서(유상증자결정)(자회사의 주요경영사항)",
   "category": "유상증자",
   "corp_code": "00152385",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260903800469",
@@ -5569,7 +5647,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01061558",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260902900536",
@@ -5580,7 +5659,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "01061558",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260902900456",
@@ -5639,7 +5719,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01150515",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260902900241",
@@ -5662,7 +5743,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "01150515",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260902900003",
@@ -5685,7 +5767,8 @@
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00153524",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260902800277",
@@ -5904,7 +5987,8 @@
   "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)              (소규모합병)",
   "category": "합병",
   "corp_code": "00219097",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260901800709",
@@ -5975,7 +6059,8 @@
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00143262",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260901800102",
@@ -6010,7 +6095,8 @@
   "report_nm": "주요사항보고서(회사합병결정)(자회사의 주요경영사항)",
   "category": "합병",
   "corp_code": "00225159",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260901600559",
@@ -6021,7 +6107,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00337296",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260901000339",
@@ -6256,7 +6343,8 @@
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00349732",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260831900855",
@@ -6315,7 +6403,8 @@
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831900551",
@@ -6374,7 +6463,8 @@
   "report_nm": "기타주요경영사항              (유상증자 결정(주주배정후 실권주 일반공모) 철회)",
   "category": "유상증자",
   "corp_code": "00367695",
-  "detail_done": true
+  "detail_done": true,
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20260831900361",
@@ -6445,7 +6535,8 @@
   "report_nm": "유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
   "corp_code": "01205842",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831800639",
@@ -6480,7 +6571,8 @@
   "report_nm": "타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "corp_code": "00877059",
-  "detail_done": true
+  "detail_done": true,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831800369",
