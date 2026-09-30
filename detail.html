@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>딜 상세 · 상장사 M&A 데일리</title>
+<title>딜 상세 · ALL ABOUT M&A</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
-  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
 </header>
 <div class="layout">
-  <aside class="sidebar" id="sidebar"></aside>
   <main>
     <a class="back" href="index.html">← 목록으로</a>
     <div id="detailBox"><div class="empty">불러오는 중...</div></div>
@@ -53,7 +54,7 @@ fetch("deals.json?t=" + Date.now())
       box.innerHTML = '<div class="empty">해당 공시를 찾을 수 없습니다.</div>';
       return;
     }
-    document.title = d.corp_name + " · 딜 상세 · 상장사 M&A 데일리";
+    document.title = d.corp_name + " · 딜 상세 · ALL ABOUT M&A";
 
     // summary/buyer/seller가 아직 없는 예전 스키마 데이터를 위한 임시 처리 (target/counterparty 필드 기반)
     let buyer = d.buyer, seller = d.seller;

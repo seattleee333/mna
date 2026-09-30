@@ -2,16 +2,13 @@ function escHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
-// 왼쪽 사이드바: 메뉴(내비게이션)만 표시한다.
+// 상단 내비게이션 메뉴
 function renderSidebar(active) {
-  const el = document.getElementById("sidebar");
+  const el = document.getElementById("topNav");
   if (!el) return;
   el.innerHTML =
-    '<div class="side-head"><a href="index.html">M&amp;A 데일리</a></div>' +
-    '<nav class="side-nav">' +
-      '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
-      '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
-    '</nav>';
+    '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
+    '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>';
 }
 
 // 오른쪽 패널: M&A 인기뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역).
