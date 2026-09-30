@@ -9,7 +9,7 @@
 <body>
 <header>
   <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
-  <p>상장사 딜클로징 리스트</p>
+  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar"></aside>
@@ -55,11 +55,17 @@ fetch("deals.json?t=" + Date.now())
     }
     document.title = d.corp_name + " · 딜 상세 · 상장사 M&A 데일리";
 
+    // summary/buyer/seller가 아직 없는 예전 스키마 데이터를 위한 임시 처리 (target/counterparty 필드 기반)
+    let buyer = d.buyer, seller = d.seller;
+    if (!buyer && !seller && (d.counterparty || d.target)) {
+      if (/양수|취득|인수/.test(d.direction || "")) { buyer = d.corp_name; seller = d.counterparty || ""; }
+      else if (/양도|처분/.test(d.direction || "")) { seller = d.corp_name; buyer = d.counterparty || ""; }
+    }
     let parties = "";
-    if (d.buyer || d.seller) {
+    if (buyer || seller) {
       parties = '<div class="dt-parties">' +
-        (d.buyer ? '<div class="party-card buyer"><div class="party-label">인수 / 존속</div><div class="party-name">' + esc(d.buyer) + '</div></div>' : '') +
-        (d.seller ? '<div class="party-card seller"><div class="party-label">매도 / 상대방</div><div class="party-name">' + esc(d.seller) + '</div></div>' : '') +
+        (buyer ? '<div class="party-card buyer"><div class="party-label">인수 / 존속</div><div class="party-name">' + esc(buyer) + '</div></div>' : '') +
+        (seller ? '<div class="party-card seller"><div class="party-label">매도 / 상대방</div><div class="party-name">' + esc(seller) + '</div></div>' : '') +
         '</div>';
     }
 
@@ -68,11 +74,22 @@ fetch("deals.json?t=" + Date.now())
     if (d.amount != null) rows += '<div class="dt-row"><span>' + (d.category === "유상증자" ? "조달금액" : "딜 규모") + '</span><b>' + fmtWon(d.amount) + '</b></div>';
     if (d.note) rows += '<div class="dt-row"><span>비고</span><b>' + esc(d.note) + '</b></div>';
 
+    let fallbackText = "";
+    if (!d.summary && (d.target || d.amount != null)) {
+      const verb = /양수|취득|인수/.test(d.direction || "") ? "인수/취득합니다"
+                 : /양도|처분/.test(d.direction || "") ? "양도/처분합니다"
+                 : "관련 거래를 진행합니다";
+      fallbackText = d.corp_name + "이(가) " + (d.counterparty ? d.counterparty + " 관련하여 " : "") +
+        (d.target || d.category) + "을(를)" + (d.amount != null ? " " + fmtWon(d.amount) + "에" : "") + " " + verb + ".";
+    }
+
     const summaryHtml = d.summary
       ? '<div class="dt-summary">' + esc(d.summary) + '</div>'
-      : (d.no_detail_api
-          ? '<div class="dt-summary">이 공시는 DART 상세 공시 API에서 데이터를 제공하지 않는 유형입니다 (거래소 수시공시 등). 아래 "DART 원문 보기"에서 내용을 확인해주세요.</div>'
-          : '<div class="dt-summary">상세정보를 아직 확인하지 못했습니다. 다음 자동 수집 후 다시 확인해주세요.</div>');
+      : (fallbackText
+          ? '<div class="dt-summary">' + esc(fallbackText) + '</div>'
+          : (d.no_detail_api
+              ? '<div class="dt-summary">이 공시는 DART 상세 공시 API에서 데이터를 제공하지 않는 유형입니다 (거래소 수시공시 등). 아래 "DART 원문 보기"에서 내용을 확인해주세요.</div>'
+              : '<div class="dt-summary">상세정보를 아직 확인하지 못했습니다. 다음 자동 수집 후 다시 확인해주세요.</div>'));
 
     const top =
       '<div class="detail-top">' +

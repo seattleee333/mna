@@ -375,9 +375,10 @@ def main():
     for d in existing.values():
         if not d.get("corp_code"):
             continue
-        # 이미 상세 정보가 채워졌거나(summary/amount/note 중 하나라도 있음),
-        # 애초에 상세 API가 없는 유형으로 확인된 건은 다시 조회하지 않는다.
-        has_detail = d.get("summary") or d.get("amount") is not None or d.get("note")
+        # 이미 요약 문장(summary)까지 채워졌거나, 애초에 상세 API가 없는 유형으로
+        # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
+        # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
+        has_detail = bool(d.get("summary"))
         if has_detail or d.get("no_detail_api"):
             continue
         try:

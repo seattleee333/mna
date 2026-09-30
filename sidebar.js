@@ -9,7 +9,7 @@ function renderSidebar(active) {
   el.innerHTML =
     '<div class="side-head"><a href="index.html">M&amp;A 데일리</a></div>' +
     '<nav class="side-nav">' +
-      '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">M&A 데일리</a>' +
+      '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
       '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
     '</nav>';
 }

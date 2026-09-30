@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-  <h1><a href="index.html">상장사 M&A 데일리</a></h1>
-  <p>딜클로징 리스트 실시간 업데이트</p>
+  <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
+  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar"></aside>
@@ -22,6 +22,7 @@
       <input type="checkbox" id="showMinor">
       <label for="showMinor">정정·자회사 공시 등 상세정보 없는 공시도 표시</label>
     </div>
+    <div class="notice-line">상장사 딜만 공지되어있습니다</div>
     <div id="list"></div>
     <footer>본 페이지는 DART 공시를 자동 분류·요약한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
   </main>
@@ -48,9 +49,36 @@ function fmtDate(d) {
   return d.slice(0,4) + "." + d.slice(4,6) + "." + d.slice(6,8);
 }
 
+function fmtWon(n) {
+  if (n == null) return "";
+  if (n >= 1e12) return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "조원";
+  if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
+  if (n >= 1e4) return Math.round(n / 1e4).toLocaleString() + "만원";
+  return n.toLocaleString() + "원";
+}
+
+// summary 필드가 아직 없는 예전 스키마 데이터를 위한 임시 요약 (target/counterparty 필드 기반)
+function fallbackSummary(d) {
+  if (!d.target && d.amount == null) return "";
+  const other = d.counterparty || d.seller || d.buyer || "";
+  let verb = "관련 거래를 진행합니다";
+  if (/양수|취득|인수/.test(d.direction || "")) verb = "인수/취득합니다";
+  else if (/양도|처분/.test(d.direction || "")) verb = "양도/처분합니다";
+  let s = d.corp_name + "이(가) ";
+  if (other) s += other + (verb.startsWith("양도") ? "에 " : "로부터 ");
+  s += (d.target || d.category) + "을(를) ";
+  if (d.amount != null) s += fmtWon(d.amount) + "에 ";
+  s += verb + ".";
+  return s;
+}
+
 function detailHtml(d) {
   if (d.summary) {
     return '<div class="summary-line">' + esc(d.summary) + '</div>';
+  }
+  const fb = fallbackSummary(d);
+  if (fb) {
+    return '<div class="summary-line">' + esc(fb) + '</div>';
   }
   if (d.no_detail_api) {
     return '<div class="no-detail-line">DART 상세 공시 API에 정보가 없는 유형입니다 (원문 확인 필요)</div>';
