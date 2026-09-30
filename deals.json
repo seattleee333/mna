@@ -5928,7 +5928,8 @@
   "amount": 1999999456,
   "note": "증자방식: 일반공모증자",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260903000143",
@@ -7033,7 +7034,8 @@
   "amount": 9999999315,
   "note": "증자방식: 제3자배정증자",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831001452",

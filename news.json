@@ -98,13 +98,14 @@
   "sources": [
    "edaily.co.kr",
    "newsis.com",
+   "v.daum.net",
    "뉴스1",
    "뉴시스",
    "이투데이",
    "전자신문",
    "파이낸셜뉴스"
   ],
-  "outlet_count": 7,
+  "outlet_count": 8,
   "first_seen": "20260930"
  },
  {
@@ -286,6 +287,17 @@
    "bloter.net",
    "v.daum.net",
    "블로터"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "국민연금, 한미약품 10% 주요주주 재진입…송영숙 회장은 장녀 법인에 지분 매각 - 알파경제",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pSF91NlB6MWZYZnJ5NE9CMkRXU1BESk5zT2V2aFB5d3g3VjUtb1FrQU52Z1JXcVU0dFhSc3N5OU9CeF9MT0tfejBfWVBKRTVNT0dZYXR5azNyYWRscXc0LTZfelFGRUtUV3JrTmxR?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "kr.investing.com",
+   "알파경제"
   ],
   "outlet_count": 3,
   "first_seen": "20260929"
@@ -571,6 +583,86 @@
   "first_seen": "20260930"
  },
  {
+  "title": "TD Cowen, 은행 M&A 기회 포착…잠재적 인수 대상 지목 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JUmdYaUN4aFJDY3NOaDlZNktKVTJCbjV3OUxjeUdfaWE1WjZveWtBZnZsV3l2NXlCQ3BLbHFUakR2ZDRneXpaZlF4bnJtajVkcnNTMGJ5eWtPZXBIakJ5OVA3aHRRTUJsRFZ4S1NLVEk?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "kr.investing.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "[기자수첩]의료기관 간납사 매각이 던진 묵직한 질문 - 의학신문",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xVHdhMHAySmlSN0ZMbUZrSUZTVGtVTHhjZUp0QmpfQlloODY2YWZ3eVVhc3FCdkNnU241NGRUYlo5R1JBZXFETVNpMi1zd1pBZ1otNmpLbjVfVU1ibVBwUWM0ZXhXR0tqRWc?oc=5",
+  "sources": [
+   "bosa.co.kr",
+   "의학신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "LG엔솔, 미시간주 배터리공장 GM 합작 지분 인수 - 미주조선일보",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM1p5WlZXVU5FWk95LTFxRjdtdEpEVWJFTlhKSFhMVlFEUjAwQU5sZGlrcWdtaS1hendOZUNmNGF1VXhKQWVtQW95WkwtN0NQWFZiWnl6OFVtdGdNa2dkRDlVQ1dHOHYybEhBbTN3cENjZW5ObFhiZWpHSlJEakVJM2NieXNfLVJXNUppSTYzMVZ3ZDlqVTN2TUZiWm05RjltYlJXQ2VKX3FTOGQxU1plcW1TMEkwbHFmZVpYV0NkOTV6dm8?oc=5",
+  "sources": [
+   "chosundaily.com",
+   "미주조선일보"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "대한항공, 합병 조건 또 어겼다…공정위 첫 형사 고발 가능성까지 열려 - 리드경제",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kMF94NmdxM3UteHkxOVZKaDItOTVsbDZDVkMyMVBmcmFkMmNhVjNELXlMOWFMTU5nN2Q1eHBmWnYwWUY0cUhvcXBJcWV3N2NyQVRySG82TXZZd3lGSDZ1ZUVfWDR1czVzdzMtcnFyUk4?oc=5",
+  "sources": [
+   "leadeconomy.co.kr",
+   "리드경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "[단독] 한화생명, 센트로이드 손잡고 애큐온캐피탈 인수…SPA 체결 - hankyung.com",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTDNMNzcxckxOSGh5YWJYS1lrTHZGVnZHZUdwTTlmUHI2ekJJMHJhOUJvRFZ2cWtYYTdzclBHQ0dMUF9WLVRETHlib0RZaEFNa2ZjSEpxakZsZw?oc=5",
+  "sources": [
+   "hankyung.com",
+   "한국경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "[머니네버슬립] AMD, 페이페이 리의 '월드 랩스' 82억달러 인수 - dealsite.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE93TkpmZ0FGRzh2RG1INzJNR1F3X25UYWZ5REFkTl9tMzhydkJBZEdSN0otUkxCZXNlYkpuemp4bzZjdW9YRTRMUUNyaTg1UG8?oc=5",
+  "sources": [
+   "dealsite.co.kr",
+   "딜사이트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "컴투스, '나혼렙' 제작사 레드아이스에 컴투스엔 지분 4.5% 매각 - businesspost.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iTDJtN1MzVjRKT21HSzVWMU1Ua21YYXdHXzVPS1o5emxUak5oaHdDZGVTcjVLT3ZWZ25PdUxUdmdCZ1I1WjlIZXV2WnlXczdKOHRMaUdSUXFMRlJYTXNfSnhVX19Xem9fU1laXzlNc05BZVU?oc=5",
+  "sources": [
+   "businesspost.co.kr",
+   "비즈니스포스트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "KKR, 울산 탱크터미널·평택 곡물터미널 매각…한국 물류인프라 투자 회수 - 해사신문",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLcDltbWxqdUF1dEphd00tN3VXTTVRczZKSUdURjdrX2VqdXhaTl9GNjdHVUJkYnpPWmJQbzhHZUtOTGJNSmtzMTVoaU9OcDZtUW5CSFJjdVpSWFNneE5aVGNvSmlmc2JBRjRN?oc=5",
+  "sources": [
+   "haesanews.com",
+   "해사신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
   "title": "미공개 M&A 정보로 200억 부당이익…명문대 '동아리 카르텔' 적발 - 금융소비자뉴스",
   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12S3BUREUxOGI0dWNEOWptR2Q1WGxJN2Jtdm9PcEdoMzMwVE5YSGt5MnBUWnZtR0VzOXY4cWFRU1R0RDNwMTNrTkp3eHBleU43UmtMNFNXUmxseE1MQ1hOUzVyWVJfZ1VZaGc?oc=5",
   "sources": [
@@ -806,16 +898,6 @@
   "sources": [
    "datatooza.com",
    "데이터투자"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20260929"
- },
- {
-  "title": "국민연금, 한미약품 10% 주요주주 재진입…송영숙 회장은 장녀 법인에 지분 매각 - 알파경제",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pSF91NlB6MWZYZnJ5NE9CMkRXU1BESk5zT2V2aFB5d3g3VjUtb1FrQU52Z1JXcVU0dFhSc3N5OU9CeF9MT0tfejBfWVBKRTVNT0dZYXR5azNyYWRscXc0LTZfelFGRUtUV3JrTmxR?oc=5",
-  "sources": [
-   "Investing.com 한국어",
-   "알파경제"
   ],
   "outlet_count": 2,
   "first_seen": "20260929"
@@ -1231,6 +1313,46 @@
   "first_seen": "20260929"
  },
  {
+  "title": "JPM, 성장 회복과 M&A 잠재력에 뷰로 베리타스 지지 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RNGtGajU5UmNqMjR3RS16UjdKVjVHdjhUd3NnM1VpR1JCZ0hYeFU2UWtmOVpDOEM0bkZHU2pDa0hRR0t2M040cVJRWk1kVnhmWkpFZFNYbjEwajhkYS1HZHpmbmVRLWt1NFJYYzlIOE8?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "kr.investing.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "RHI Magnesita의 인수 제안 확인 후 Vesuvius 주가 23% 급등 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DaG5aS3M0U0JNVk80RFV5WDVFTXlIVGVEUFg4RnpNeHRqOElHdDBxM2xDa25nVWoxVDVneWg4cm5BTUg4M0tqTnNxMnZpa0x2ZHF4eDZlNUNYcGZsNUk0TmtFaGtSYXVFcHhXSEllVzM?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "kr.investing.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "JW홀딩스, 자회사 지분 전량 307억원에 매각…'유동성 확보' - 리드경제",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kUmlzYkIySkRtTzc1cFA4dml5cHVTMzk4RldtaTQ2aFlDVF9JeDJWdXZCUUZYRDNJZkJ6c1hiODI1bnNWazA5d0dzbzhFWk9ZU294YWxkb3VsMDhqc2p0TnNPZlQ2LUp1MExGODE3MEw?oc=5",
+  "sources": [
+   "leadeconomy.co.kr",
+   "리드경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "폭스바겐, 고션과 파트너십 확대…지분 5.3% 매각 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zUE8xOTdWLXZVMTV5Z3YxZThHUEhaMjJSUHlPYkNOYW0zd1JrLTJoRFBxbHNVZ3ZTY3d1R0tCRDI0VnNBaXlNeUpNaXZobUhkWHluVW5Lc2RabHN6dHZ4MVVxYXBfNEppOHJaOFd5VlNxVkxrWUgw?oc=5",
+  "sources": [
+   "Investing.com 한국어",
+   "kr.investing.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
   "title": "3분기 M&A 자문 삼일 1위·UBS 2위…회계법인·IB 연말까지 선두 경쟁 예고 - 인베스트조선",
   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcDlJRDRzV2tEei12SDlwaVA2b191Z1Z3d0R0Vkk1Mm9FdVVVQ3NGcXRNOG5xMWZTWE1UbGM5dExGWk1pWFlHTmMxUElxT3Q4OUtNVFhBUEQ2eFU0YUdjWGhjS2xZc2JfLTBrUUFKMFJzaEFydlpCQ3NPOEhNR3loZ0hKaw?oc=5",
   "sources": [
@@ -1253,15 +1375,6 @@
   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMWpCaFAzajFoUzhya3RBQ2lTU3JRdWx1aUs3RHNYQzg1cW1xQlV6QTU4cmYzOTNBaUZyTktYelBMb1JlRjl4a1J0VUtNNnM2N293d0dzclVUbHgwQVNvZFVWcHlycWdDT0RNNXF4c0dwV01DOFRwOC1NQmdxNTRBVEF4Yw?oc=5",
   "sources": [
    "인베스트조선"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "TD Cowen, 은행 M&A 기회 포착…잠재적 인수 대상 지목 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JUmdYaUN4aFJDY3NOaDlZNktKVTJCbjV3OUxjeUdfaWE1WjZveWtBZnZsV3l2NXlCQ3BLbHFUakR2ZDRneXpaZlF4bnJtajVkcnNTMGJ5eWtPZXBIakJ5OVA3aHRRTUJsRFZ4S1NLVEk?oc=5",
-  "sources": [
-   "Investing.com 한국어"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -1316,15 +1429,6 @@
   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90U1hIWjdIa0drSjgyYkhyRTlSaHJYbzBRbGtGMU55TzRxSGJJNjFjOEllc0g2NG8wOWdDNXJHRlJoYWxrRmkySmRqRGl6YWtDMy1DRXUwLUVNYVVGeWxmWUVQdDEtQTNYTFJwZjZNSjFkelRhdjJ2cGxmU1c?oc=5",
   "sources": [
    "TIKR.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "[기자수첩]의료기관 간납사 매각이 던진 묵직한 질문 - 의학신문",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xVHdhMHAySmlSN0ZMbUZrSUZTVGtVTHhjZUp0QmpfQlloODY2YWZ3eVVhc3FCdkNnU241NGRUYlo5R1JBZXFETVNpMi1zd1pBZ1otNmpLbjVfVU1ibVBwUWM0ZXhXR0tqRWc?oc=5",
-  "sources": [
-   "의학신문"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -1501,28 +1605,10 @@
   "first_seen": "20260930"
  },
  {
-  "title": "LG엔솔, 미시간주 배터리공장 GM 합작 지분 인수 - 미주조선일보",
-  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM1p5WlZXVU5FWk95LTFxRjdtdEpEVWJFTlhKSFhMVlFEUjAwQU5sZGlrcWdtaS1hendOZUNmNGF1VXhKQWVtQW95WkwtN0NQWFZiWnl6OFVtdGdNa2dkRDlVQ1dHOHYybEhBbTN3cENjZW5ObFhiZWpHSlJEakVJM2NieXNfLVJXNUppSTYzMVZ3ZDlqVTN2TUZiWm05RjltYlJXQ2VKX3FTOGQxU1plcW1TMEkwbHFmZVpYV0NkOTV6dm8?oc=5",
-  "sources": [
-   "미주조선일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
   "title": "한화생명, 오늘 애큐온캐피탈 인수계약 체결 - 인베스트조선",
   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNktJYmF1LTZkQTlKNVVYQjk1Qk9IRzh4N0p3OFJ5VXRTYkQ0OHg0SmxJT3UyNDlUMVBSa21naVRTWUpfbTFfQmJPd0tVVl9HdTA3a3JXWW44Y2lLMWUxaFk4NDJDQWJaM3FMUjdCQTFIaFF2S0lCMjhkRm1GTlVXdmtoTQ?oc=5",
   "sources": [
    "인베스트조선"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "대한항공, 합병 조건 또 어겼다…공정위 첫 형사 고발 가능성까지 열려 - 리드경제",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kMF94NmdxM3UteHkxOVZKaDItOTVsbDZDVkMyMVBmcmFkMmNhVjNELXlMOWFMTU5nN2Q1eHBmWnYwWUY0cUhvcXBJcWV3N2NyQVRySG82TXZZd3lGSDZ1ZUVfWDR1czVzdzMtcnFyUk4?oc=5",
-  "sources": [
-   "리드경제"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -1618,15 +1704,6 @@
   "first_seen": "20260930"
  },
  {
-  "title": "[단독] 한화생명, 센트로이드 손잡고 애큐온캐피탈 인수…SPA 체결 - hankyung.com",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTDNMNzcxckxOSGh5YWJYS1lrTHZGVnZHZUdwTTlmUHI2ekJJMHJhOUJvRFZ2cWtYYTdzclBHQ0dMUF9WLVRETHlib0RZaEFNa2ZjSEpxakZsZw?oc=5",
-  "sources": [
-   "hankyung.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
   "title": "중앙일보 \"10월까지 우선협상자 선정…M&A 뒤늦은 참여 불가\" - newsis.com",
   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tTFotSjhUYmJIN3o4R0hCaGZKR2hpVmtTODR1LW1QZWQ2b1g0Y0N3bjhsX3k5eVdibklicFRzOWpqRnNkUXZ3U2c3Wm1RUnhJVktJQWhCOEw2Z182S25EOHlvN2VnYU81cnlLNHdVWU1ybGdKUWZmU9IBeEFVX3lxTE0tTFotSjhUYmJIN3o4R0hCaGZKR2hpVmtTODR1LW1QZWQ2b1g0Y0N3bjhsX3k5eVdibklicFRzOWpqRnNkUXZ3U2c3Wm1RUnhJVktJQWhCOEw2Z182S25EOHlvN2VnYU81cnlLNHdVWU1ybGdKUWZmUw?oc=5",
   "sources": [
@@ -1636,37 +1713,10 @@
   "first_seen": "20260930"
  },
  {
-  "title": "[머니네버슬립] AMD, 페이페이 리의 '월드 랩스' 82억달러 인수 - dealsite.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE93TkpmZ0FGRzh2RG1INzJNR1F3X25UYWZ5REFkTl9tMzhydkJBZEdSN0otUkxCZXNlYkpuemp4bzZjdW9YRTRMUUNyaTg1UG8?oc=5",
-  "sources": [
-   "dealsite.co.kr"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
   "title": "컴투스, '나혼렙' 스튜디오에 계열사 지분 매각 - 비즈워치",
   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3d2dTZklaQnNfdV9za2ZsZFpyZWhIcFY3c2FOcXV6ZmE1YnB5dDJUaHJsbWJaVDBDZHZMNDhYUmxNbkhPVVRKeUxLaGlDWkpsV0YtQlFTRW9rd081NGlZUzgzSE9ydS1mR3c?oc=5",
   "sources": [
    "비즈워치"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "컴투스, '나혼렙' 제작사 레드아이스에 컴투스엔 지분 4.5% 매각 - businesspost.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iTDJtN1MzVjRKT21HSzVWMU1Ua21YYXdHXzVPS1o5emxUak5oaHdDZGVTcjVLT3ZWZ25PdUxUdmdCZ1I1WjlIZXV2WnlXczdKOHRMaUdSUXFMRlJYTXNfSnhVX19Xem9fU1laXzlNc05BZVU?oc=5",
-  "sources": [
-   "businesspost.co.kr"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
-  "title": "KKR, 울산 탱크터미널·평택 곡물터미널 매각…한국 물류인프라 투자 회수 - 해사신문",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLcDltbWxqdUF1dEphd00tN3VXTTVRczZKSUdURjdrX2VqdXhaTl9GNjdHVUJkYnpPWmJQbzhHZUtOTGJNSmtzMTVoaU9OcDZtUW5CSFJjdVpSWFNneE5aVGNvSmlmc2JBRjRN?oc=5",
-  "sources": [
-   "해사신문"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -1690,13 +1740,49 @@
   "first_seen": "20260930"
  },
  {
-  "title": "JPM, 성장 회복과 M&A 잠재력에 뷰로 베리타스 지지 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RNGtGajU5UmNqMjR3RS16UjdKVjVHdjhUd3NnM1VpR1JCZ0hYeFU2UWtmOVpDOEM0bkZHU2pDa0hRR0t2M040cVJRWk1kVnhmWkpFZFNYbjEwajhkYS1HZHpmbmVRLWt1NFJYYzlIOE8?oc=5",
+  "title": "서울대 동문·컨설팅 인맥의 'M&A 카르텔'…미공개정보로 200억 챙겼다 - mstoday.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BZm1DaG1zaUtXWS1pVWx3RTNKVUxHRm1UWlUwWlhnYTFyUElLR3h5blpBdEkxcDJJeFBERk02Zk0waVNiVEVYa0U4c0ZfclQ1YzNPSjRsYnhiVmJtY19zaEVIbzZvbE1EMWFNTtIBcEFVX3lxTE00SjZjR2N5RnZpQzlTalVQd0xVWjNza002UE1DeGdzSXJvQ3pKenlQSHN5d25xQ012R2pneU1KLWlHWlFoZTNTdXdiclhlZV9VVHJCZlNnMXdhQ056YXV0NS1VVFNrUFdzcmZzZGViRnU?oc=5",
   "sources": [
-   "Investing.com 한국어"
+   "mstoday.co.kr"
   ],
   "outlet_count": 1,
-  "first_seen": "20260929"
+  "first_seen": "20260930"
+ },
+ {
+  "title": "레이몬드 제임스, 유니티 그룹(UNIT) M&A 잠재력에 등급 재확인 - kr.investing.com",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QaUc4ZTFmdTEtb2hkZU5VTzc3YkxMUU9xbjBUTFh0QVNueHpaSjFaTE1ObnJPTDRJZkJ5TnNKR2RlaFg4YTRGWk1GVFppTEhVdERmWFBtTGozYkpFN1VLUFprTFg3cXhIZlVHWm9wQ1VMWk5k?oc=5",
+  "sources": [
+   "kr.investing.com"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "전량 공개매수 확산하는데…운용업계 \"현 의무공개매수법, 없는 게 낫다\" - KB Think",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5uLU9najFLV0Z6dlItdVBXdF9TVThFRzdnZ2x2WXBWU2RnWktMVjkwVC0zTUEwam5SV01Sb1NDaHE5clNZaTRqckV1TzRRRlhFUThQOFctVjN2Ym84aWlJVW1Bb2RkS1NQWU5YcmpLdWtHdw?oc=5",
+  "sources": [
+   "KB Think"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "M&A 정보 빼돌려 200억 돈잔치…명문대 동아리 '정보 카르텔' 적발 - leadeconomy.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4VjIxLWZqekd4QkNiZzNEZ2k2VzVIQWdvNExscFI2UjhwcTZ0OXBfMVBNa0xVanJNQmYycTFVUVY5MkVjWUMyQlhTYUtlZE4tZjBtWGlNSmp0dnE3dDUzRGdWSmdMak9aRlNmSGw3Zw?oc=5",
+  "sources": [
+   "leadeconomy.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "아리바이오·홀딩스 합병 철회…정재준 대표 \"내일 '그룹 비전' 공개\" - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90cHp3dVAyUnVhcnFMRzRrMlJXLXBweXZvbXlwQUZjMllQcXZzVU1QdHYzcmlnamU2SkF1Xy1fWlNFczNaWHp1TDJoWGJqcVV5b1N4QjcyRl9MMGtVT0Zrd1BrUDY4M0JhYkhZYjlkTHJqUDZXWENueXQ1cXPSAXxBVV95cUxPdHB6d3VQMlJ1YXJxTEc0azJSVy1wcHl2b215cEFGYzJZUHF2c1VNUHR2M3JpZ2plNkpBdV8tX1pTRXMzWlh6dUwyaFhianFVeW9TeEI3MkZfTDBrVU9Ga3dQa1A2ODNCYWJIWWI5ZExyalA2V1hDbnl0NXFz?oc=5",
+  "sources": [
+   "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
  },
  {
   "title": "\"물려받을 사람이 없다\"…기업은행, 후계자 없는 中企 M&A 중매 나선 이유 - 녹색경제신문",
@@ -1865,15 +1951,6 @@
   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQdIBckFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQQ?oc=5",
   "sources": [
    "머니투데이"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
-  "title": "RHI Magnesita의 인수 제안 확인 후 Vesuvius 주가 23% 급등 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DaG5aS3M0U0JNVk80RFV5WDVFTXlIVGVEUFg4RnpNeHRqOElHdDBxM2xDa25nVWoxVDVneWg4cm5BTUg4M0tqTnNxMnZpa0x2ZHF4eDZlNUNYcGZsNUk0TmtFaGtSYXVFcHhXSEllVzM?oc=5",
-  "sources": [
-   "Investing.com 한국어"
   ],
   "outlet_count": 1,
   "first_seen": "20260929"
@@ -2212,15 +2289,6 @@
   "first_seen": "20260929"
  },
  {
-  "title": "JW홀딩스, 자회사 지분 전량 307억원에 매각…'유동성 확보' - 리드경제",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kUmlzYkIySkRtTzc1cFA4dml5cHVTMzk4RldtaTQ2aFlDVF9JeDJWdXZCUUZYRDNJZkJ6c1hiODI1bnNWazA5d0dzbzhFWk9ZU294YWxkb3VsMDhqc2p0TnNPZlQ2LUp1MExGODE3MEw?oc=5",
-  "sources": [
-   "리드경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
   "title": "SK에코플랜트 센바이로 매각, 말레이시아 국부펀드에 달렸다 - fetv.co.kr",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jNWVwNFR1b1IyRGN5aEp1S1B3WHlEdTRES1hXT1ViWkgzemY0R3NtWHJVSG53Y2daMGdUc0lVUWNMc0ZzSE10R3p2RkdUbDdpSHVOdkMzcGd0eUpvVlR2MjlhNjAtTGQz?oc=5",
   "sources": [
@@ -2252,15 +2320,6 @@
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aaXROTjlUMjhETUkyN0w4cnJBZEdmS3FDY0VDTnF1Tks1TVFZQUpYWF9FdjVyMTJPUXYyVlBxZkZuaThDUTgyMjVCcTFlM3A5ZDJ4VDF3?oc=5",
   "sources": [
    "헤럴드경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
-  "title": "폭스바겐, 고션과 파트너십 확대…지분 5.3% 매각 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zUE8xOTdWLXZVMTV5Z3YxZThHUEhaMjJSUHlPYkNOYW0zd1JrLTJoRFBxbHNVZ3ZTY3d1R0tCRDI0VnNBaXlNeUpNaXZobUhkWHluVW5Lc2RabHN6dHZ4MVVxYXBfNEppOHJaOFd5VlNxVkxrWUgw?oc=5",
-  "sources": [
-   "Investing.com 한국어"
   ],
   "outlet_count": 1,
   "first_seen": "20260929"

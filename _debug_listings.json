@@ -3,56 +3,49 @@
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zWTR0eTE3Z0FzbmxWT2F1S1FyT3VrNTZkWExpdG1NZzRXTVQxYzhXU0FtenhuNjlVZTNjdktqTkFsMGxPeTBlSmtvaWotUm5zVlE?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zWTR0eTE3Z0FzbmxWT2F1S1FyT3VrNTZkWExpdG1NZzRXTVQxYzhXU0FtenhuNjlVZTNjdktqTkFsMGxPeTBlSmtvaWotUm5zVlE?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591620,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zWTR0eTE3Z0FzbmxWT2F1S1FyT3VrNTZkWExpdG1NZzRXTVQxYzhXU0FtenhuNjlVZTNjdktqTkFsMGxPeTBlSmtvaWotUm5zVlE\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><met"
+  "result": "decoded",
+  "decoded_url": "https://stock.mk.co.kr/news/view/1165909"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVU5aWTl1OG5seGJCcGFXakJDdEF0VXBlTEFsNkUzQVNyd2pxX3ZmdnpfYTdud19YYmhJMXoxbDJ3RFN2ZUF3VUZnMWRRZDBxdmc?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVU5aWTl1OG5seGJCcGFXakJDdEF0VXBlTEFsNkUzQVNyd2pxX3ZmdnpfYTdud19YYmhJMXoxbDJ3RFN2ZUF3VUZnMWRRZDBxdmc?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591668,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVU5aWTl1OG5seGJCcGFXakJDdEF0VXBlTEFsNkUzQVNyd2pxX3ZmdnpfYTdud19YYmhJMXoxbDJ3RFN2ZUF3VUZnMWRRZDBxdmc\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><met"
+  "result": "decoded",
+  "decoded_url": "https://www.mk.co.kr/news/stock/12162945"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591674,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><met"
+  "result": "decoded",
+  "decoded_url": "https://stock.mk.co.kr/news/view/1158859"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mdW5iV3BtLW9jcWxWMEJfVUkxejVHZUs3MWZWdjd4ZUhzWTRzYVcxUEt1ZnlwTXVqNnl3RTdKN1I0OWc3b1J2MUZNU25aOHZ2MkE?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mdW5iV3BtLW9jcWxWMEJfVUkxejVHZUs3MWZWdjd4ZUhzWTRzYVcxUEt1ZnlwTXVqNnl3RTdKN1I0OWc3b1J2MUZNU25aOHZ2MkE?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591607,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mdW5iV3BtLW9jcWxWMEJfVUkxejVHZUs3MWZWdjd4ZUhzWTRzYVcxUEt1ZnlwTXVqNnl3RTdKN1I0OWc3b1J2MUZNU25aOHZ2MkE\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><met"
+  "result": "decoded",
+  "decoded_url": "https://www.mk.co.kr/news/stock/12152352"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591879,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content"
+  "result": "decoded",
+  "decoded_url": "https://www.hankyung.com/article/2026091422371"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WUmc1RHNJcTlQUlliZWtXWEJxRzVrcTlvMjRWT0oxNXB5VUZYYjVURVlmeUUzZFc5ZGZCazNTYV9uazNrN29KR3hLdWJRdkRhQ3VwMlVvYmVzQQ?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WUmc1RHNJcTlQUlliZWtXWEJxRzVrcTlvMjRWT0oxNXB5VUZYYjVURVlmeUUzZFc5ZGZCazNTYV9uazNrN29KR3hLdWJRdkRhQ3VwMlVvYmVzQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591894,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WUmc1RHNJcTlQUlliZWtXWEJxRzVrcTlvMjRWT0oxNXB5VUZYYjVURVlmeUUzZFc5ZGZCazNTYV9uazNrN29KR3hLdWJRdkRhQ3VwMlVvYmVzQQ\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content"
+  "result": "decoded",
+  "decoded_url": "https://www.hankyung.com/article/202609094502r"
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZVk5IUXI3TmZqVW4tVUZkSzhQcFpBeTRON3pIdGxyVXM4MkYtV3pWSkhvNlBYNEtqRmE0NHBUazFFLWkweUkwVlkwdUlMNUJGWWNXbXk0ZU8wZw?oc=5",
   "status": 200,
   "final_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZVk5IUXI3TmZqVW4tVUZkSzhQcFpBeTRON3pIdGxyVXM4MkYtV3pWSkhvNlBYNEtqRmE0NHBUazFFLWkweUkwVlkwdUlMNUJGWWNXbXk0ZU8wZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-  "len": 591879,
-  "result": "not_found",
-  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://news.google.com/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><link rel=\"canonical\" href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZVk5IUXI3TmZqVW4tVUZkSzhQcFpBeTRON3pIdGxyVXM4MkYtV3pWSkhvNlBYNEtqRmE0NHBUazFFLWkweUkwVlkwdUlMNUJGWWNXbXk0ZU8wZw\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui,viewport-fit=cover\"><meta name=\"google-site-verification\" content=\"AcBy5YFny2HQgVUCR18tO5YUTf6MpVlcJqGTd-a9-SI\"><meta name=\"mobile-web-app-capable\" content"
+  "result": "decoded",
+  "decoded_url": "https://www.hankyung.com/article/202609142149r"
  }
 ]

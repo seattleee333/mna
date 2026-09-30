@@ -1,1 +1,75 @@
-[]
+[
+ {
+  "outlet": "한국경제",
+  "article_title": "청담동 ‘휴젤빌딩’ 매물로…500억원 이하 중소형 사옥 - 한국경제",
+  "article_link": "https://www.hankyung.com/article/202609094502r",
+  "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+  "type": "sell",
+  "label": "",
+  "industry": "",
+  "revenue": "",
+  "feature": "청담동 ‘휴젤빌딩’ 매물로…500억원 이하 중소형 사옥 - 한국경제"
+ },
+ {
+  "outlet": "매일경제",
+  "article_title": "[M&A 매물장터] 연 매출 200억 창호 제조사 매물로",
+  "article_link": "https://stock.mk.co.kr/news/view/1165909",
+  "pubDate": "Mon, 28 Sep 2026 08:44:37 GMT",
+  "type": "sell",
+  "industry": "",
+  "revenue": "",
+  "feature": "[M&A 매물장터] 연 매출 200억 창호 제조사 매물로"
+ },
+ {
+  "outlet": "매일경제",
+  "article_title": "[M&A 매물장터] 연 매출 200억 창호 제조사 매물로 - mk.co.kr",
+  "article_link": "https://www.mk.co.kr/news/stock/12162945",
+  "pubDate": "Mon, 28 Sep 2026 08:44:37 GMT",
+  "type": "sell",
+  "industry": "",
+  "revenue": "",
+  "feature": "[M&A 매물장터] 연 매출 200억 창호 제조사 매물로 - mk.co.kr"
+ },
+ {
+  "outlet": "매일경제",
+  "article_title": "[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요",
+  "article_link": "https://stock.mk.co.kr/news/view/1158859",
+  "pubDate": "Mon, 14 Sep 2026 07:00:00 GMT",
+  "type": "sell",
+  "industry": "",
+  "revenue": "",
+  "feature": "[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요"
+ },
+ {
+  "outlet": "매일경제",
+  "article_title": "[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요 - mk.co.kr",
+  "article_link": "https://www.mk.co.kr/news/stock/12152352",
+  "pubDate": "Mon, 14 Sep 2026 07:00:00 GMT",
+  "type": "sell",
+  "industry": "",
+  "revenue": "",
+  "feature": "[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요 - mk.co.kr"
+ },
+ {
+  "outlet": "한국경제",
+  "article_title": "삼성중앙역 사거리 알짜 개발부지 매물로…3.3㎡당 2.1억원대 - 한국경제",
+  "article_link": "https://www.hankyung.com/article/202609142149r",
+  "pubDate": "Mon, 14 Sep 2026 07:00:00 GMT",
+  "type": "sell",
+  "label": "",
+  "industry": "",
+  "revenue": "",
+  "feature": "삼성중앙역 사거리 알짜 개발부지 매물로…3.3㎡당 2.1억원대 - 한국경제"
+ },
+ {
+  "outlet": "한국경제",
+  "article_title": "매출 250억 핀테크社 매물로",
+  "article_link": "https://www.hankyung.com/article/2026091422371",
+  "pubDate": "Mon, 14 Sep 2026 00:00:00 GMT",
+  "type": "sell",
+  "label": "",
+  "industry": "",
+  "revenue": "250",
+  "feature": "핀테크社"
+ }
+]
