@@ -8,7 +8,8 @@ function renderSidebar(active) {
   if (!el) return;
   el.innerHTML =
     '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
-    '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>';
+    '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
+    '<a href="sell.html" class="' + (active === "sell" ? "on" : "") + '">매각하기</a>';
 }
 
 // 오른쪽 패널: M&A 인기뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역).

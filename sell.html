@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매각하기 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<div class="layout">
+  <main>
+    <div class="sell-hero">
+      <h1>내 기업, 어떻게 매각할까요?</h1>
+      <p>기업가치를 확인하고, AI가 시너지를 낼 수 있는 인수 후보를 찾아드립니다.</p>
+    </div>
+
+    <div class="sell-cards">
+      <a class="sell-card" href="#" id="valuationCard">
+        <div class="sell-card-icon">💰</div>
+        <div class="sell-card-title">내 기업은 얼마?</div>
+        <div class="sell-card-desc">간단한 정보 입력만으로 우리 기업의 예상 가치를 확인해보세요.</div>
+        <span class="sell-card-badge">준비 중</span>
+      </a>
+      <a class="sell-card" href="#" id="matchingCard">
+        <div class="sell-card-icon">🤝</div>
+        <div class="sell-card-title">AI 매칭하기</div>
+        <div class="sell-card-desc">매도 희망 정보를 입력하면, DART 공시 기반으로 시너지가 기대되는 인수 후보 기업을 AI가 찾아드립니다.</div>
+        <span class="sell-card-badge">준비 중</span>
+      </a>
+    </div>
+
+    <div class="sell-notice">
+      두 기능 모두 현재 설계 중입니다. 오픈되면 이 페이지에서 바로 이용하실 수 있습니다.
+    </div>
+  </main>
+  <aside class="news-panel" id="newsPanel"></aside>
+</div>
+
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("sell");
+renderNewsPanel();
+
+document.getElementById("valuationCard").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("‘내 기업은 얼마?’ 기능은 준비 중입니다. 곧 만나보실 수 있어요!");
+});
+document.getElementById("matchingCard").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("‘AI 매칭하기’ 기능은 준비 중입니다. 곧 만나보실 수 있어요!");
+});
+</script>
+</body>
+</html>
