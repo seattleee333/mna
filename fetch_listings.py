@@ -187,6 +187,11 @@ def collect_mk(existing_keys, added, items_out):
                             }
                             if p_sell or p_buy:
                                 sell_rows, buy_rows = p_sell, p_buy
+                            elif print_rows.get("status") == 200:
+                                # 표도 없으면 실제 본문이 어떤 형태인지 확인하기 위해
+                                # <body> 내용을 통째로 로그에 남긴다 (인쇄용 페이지라 용량이 작음).
+                                bm = re.search(r"<body[^>]*>(.*)</body>", pr.text, re.S)
+                                print_rows["body_full"] = re.sub(r"\s+", " ", bm.group(1)) if bm else re.sub(r"\s+", " ", pr.text)
                         except Exception as e:
                             print_rows = {"url": print_url, "error": str(e)}
                         DEBUG_LOG.append({"stage": "mk_print", **(print_rows or {})})
