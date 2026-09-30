@@ -167,6 +167,18 @@ def collect_mk(existing_keys, added, items_out):
                 sell_rows, buy_rows = parse_mk_tables(r.text)
                 title_m = re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S)
                 api_srcs = re.findall(r'src=["\']([^"\']*(?:api|/_next/data)[^"\']*)["\']', r.text)
+                ajax_calls = re.findall(r'\.ajax\(\{[^}]{0,300}', r.text)
+                art_id_m = re.search(r"/news/view/(\d+)", real_link)
+                art_id = art_id_m.group(1) if art_id_m else None
+                id_context = []
+                if art_id:
+                    for m in re.finditer(re.escape(art_id), r.text):
+                        s = max(0, m.start() - 80)
+                        id_context.append(re.sub(r"\s+", " ", r.text[s:m.start() + 80]))
+                # 본문이 <table> 대신 div/li 기반 레이아웃으로 표를 흉내내는 경우를 확인
+                header_kw_hits = {kw: r.text.count(kw) for kw in ["구분", "업종", "매출", "특징", "기업정보", "인수희망대상"]}
+                body_idx = r.text.find("기업정보")
+                body_around = re.sub(r"\s+", " ", r.text[max(0, body_idx - 300):body_idx + 1500]) if body_idx != -1 else None
                 debug_entry = {
                     "stage": "mk_body", "link": real_link, "status": r.status_code,
                     "len": len(r.text), "has_keyword": "매물 기업정보" in r.text,
@@ -177,7 +189,10 @@ def collect_mk(existing_keys, added, items_out):
                     "has_next_data": "__NEXT_DATA__" in r.text,
                     "has_body_kw": "매물" in r.text,
                     "api_srcs": api_srcs[:5],
-                    "snippet": re.sub(r"\s+", " ", r.text[:1500]),
+                    "ajax_calls": ajax_calls[:5],
+                    "header_kw_hits": header_kw_hits,
+                    "id_context": id_context[:6],
+                    "body_around_기업정보": body_around,
                 }
                 DEBUG_LOG.append(debug_entry)
             except Exception as e:
