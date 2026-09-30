@@ -9,7 +9,7 @@
 <body>
 <header>
   <h1><a href="index.html">상장사 M&amp;A 데일리</a></h1>
-  <p>DART 공시 기반 · 매일 오전 자동 업데이트</p>
+  <p>상장사 딜클로징 리스트</p>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar"></aside>
@@ -17,11 +17,13 @@
     <a class="back" href="index.html">← 목록으로</a>
     <div id="detailBox"><div class="empty">불러오는 중...</div></div>
   </main>
+  <aside class="news-panel" id="newsPanel"></aside>
 </div>
 
 <script src="sidebar.js"></script>
 <script>
 renderSidebar("daily");
+renderNewsPanel();
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -53,18 +55,32 @@ fetch("deals.json?t=" + Date.now())
     }
     document.title = d.corp_name + " · 딜 상세 · 상장사 M&A 데일리";
 
+    let parties = "";
+    if (d.buyer || d.seller) {
+      parties = '<div class="dt-parties">' +
+        (d.buyer ? '<div class="party-card buyer"><div class="party-label">인수 / 존속</div><div class="party-name">' + esc(d.buyer) + '</div></div>' : '') +
+        (d.seller ? '<div class="party-card seller"><div class="party-label">매도 / 상대방</div><div class="party-name">' + esc(d.seller) + '</div></div>' : '') +
+        '</div>';
+    }
+
     let rows = "";
     if (d.target) rows += '<div class="dt-row"><span>' + esc(TARGET_LABEL[d.category] || "대상") + '</span><b>' + esc(d.target) + '</b></div>';
-    if (d.counterparty) rows += '<div class="dt-row"><span>거래상대방</span><b>' + esc(d.counterparty) + '</b></div>';
     if (d.amount != null) rows += '<div class="dt-row"><span>' + (d.category === "유상증자" ? "조달금액" : "딜 규모") + '</span><b>' + fmtWon(d.amount) + '</b></div>';
     if (d.note) rows += '<div class="dt-row"><span>비고</span><b>' + esc(d.note) + '</b></div>';
-    if (!rows) rows = '<div class="dt-row"><span>상세 정보</span><b>DART에 상세 API가 없거나 아직 채워지지 않은 유형입니다</b></div>';
+
+    const summaryHtml = d.summary
+      ? '<div class="dt-summary">' + esc(d.summary) + '</div>'
+      : (d.no_detail_api
+          ? '<div class="dt-summary">이 공시는 DART 상세 공시 API에서 데이터를 제공하지 않는 유형입니다 (거래소 수시공시 등). 아래 "DART 원문 보기"에서 내용을 확인해주세요.</div>'
+          : '<div class="dt-summary">상세정보를 아직 확인하지 못했습니다. 다음 자동 수집 후 다시 확인해주세요.</div>');
 
     const top =
       '<div class="detail-top">' +
         '<div class="dt-tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</div>' +
         '<h2>' + esc(d.corp_name) + '</h2>' +
-        '<div class="dt-rows">' + rows + '</div>' +
+        summaryHtml +
+        parties +
+        (rows ? '<div class="dt-rows">' + rows + '</div>' : '') +
       '</div>';
 
     const raw =
