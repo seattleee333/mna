@@ -44,7 +44,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930000351",
@@ -170,7 +172,9 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (회사합병 결정 철회)",
   "category": "합병",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260929900849",
@@ -253,7 +257,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260929800727",
@@ -264,7 +270,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260929800726",
@@ -275,7 +283,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260929800614",
@@ -749,7 +759,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00572905",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260928900330",
@@ -833,7 +844,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260928600712",
@@ -845,7 +857,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260928000389",
@@ -1576,7 +1589,8 @@
   "category": "유상증자",
   "corp_code": "01235296",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260921000430",
@@ -1871,7 +1885,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01364297",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260918900674",
@@ -1943,7 +1958,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00407814",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260918900148",
@@ -2264,7 +2280,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917900571",
@@ -2276,7 +2293,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917900489",
@@ -2348,7 +2366,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00165413",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260917000371",
@@ -2540,7 +2559,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326792",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260916900624",
@@ -2612,7 +2632,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00562245",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260916900255",
@@ -2624,7 +2645,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260916900193",
@@ -2636,7 +2658,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00474588",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260916800377",
@@ -3038,7 +3061,8 @@
   "category": "유상증자",
   "corp_code": "00259590",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915900505",
@@ -3050,7 +3074,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01137383",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915900482",
@@ -3062,7 +3087,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915900330",
@@ -3134,7 +3160,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00555874",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915800672",
@@ -3146,7 +3173,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00105606",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260915000428",
@@ -3452,7 +3480,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00124504",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260914000421",
@@ -3696,7 +3725,8 @@
   "category": "유상증자",
   "corp_code": "00626011",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911900612",
@@ -3708,7 +3738,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01246034",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911900487",
@@ -3744,7 +3775,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911900424",
@@ -3816,7 +3848,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260911800150",
@@ -4043,7 +4076,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00447575",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260910900405",
@@ -4079,7 +4113,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260910800627",
@@ -4380,7 +4415,8 @@
   "category": "유상증자",
   "corp_code": "00110884",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260909000543",
@@ -4435,7 +4471,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00406037",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260909900603",
@@ -4483,7 +4520,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00114093",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260909800251",
@@ -4799,7 +4837,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260908800274",
@@ -4811,7 +4850,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00133618",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260908000404",
@@ -5125,7 +5165,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00626464",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260904900600",
@@ -5173,7 +5214,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260904900307",
@@ -5209,7 +5251,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00608839",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260904800462",
@@ -5221,7 +5264,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260904800327",
@@ -5884,7 +5928,7 @@
   "amount": 1999999456,
   "note": "증자방식: 일반공모증자",
   "detail_done": true,
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260903000143",
@@ -5932,7 +5976,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01061558",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260902900536",
@@ -6004,7 +6049,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01150515",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260902900241",
@@ -6052,7 +6098,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00153524",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260902800277",
@@ -6347,7 +6394,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00143262",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260901800102",
@@ -6395,7 +6443,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00337296",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260901000339",
@@ -6646,7 +6695,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00349732",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831900855",
@@ -6766,7 +6816,8 @@
   "category": "유상증자",
   "corp_code": "00367695",
   "detail_done": true,
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260831900361",
@@ -6982,7 +7033,7 @@
   "amount": 9999999315,
   "note": "증자방식: 제3자배정증자",
   "detail_done": true,
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260831001452",
