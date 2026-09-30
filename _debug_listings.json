@@ -10,7 +10,7 @@
   "stage": "mk_body",
   "link": "https://stock.mk.co.kr/news/view/1165909",
   "status": 200,
-  "len": 100909,
+  "len": 100910,
   "has_keyword": false,
   "table_count": 0,
   "sell_rows": 0,
@@ -20,7 +20,23 @@
   "has_next_data": false,
   "has_body_kw": true,
   "api_srcs": [],
-  "snippet": "<!doctype html> <html lang=\"ko\"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KTPV2SK');</script> <!-- End Google Tag Manager --> <!-- End Google Tag Manager (noscript) --> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=1210\"> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"> <meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\"> <meta http-equiv=\"Content-Style-Type\" content=\"text/css\"> <meta name=\"naver-site-verification\" content=\"7522a37599a270a379bf95c46d59aba6b962d29d\" /> <script src=\"/js/jquery-3.7.1.min.js\"></script> <script src=\"/js/swiper.min.js\"></script> <script src=\"/js/common.js\"></script> <script src=\"/js/tabcontent.js\"></script> <script src=\"/js/stock.js\"></script> <script src=\"/js/chosen.jquery.min.js\"></script> <link rel=\"stylesheet\" href=\"https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css\" > <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?%2520family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;"
+  "ajax_calls": [],
+  "header_kw_hits": {
+   "구분": 0,
+   "업종": 1,
+   "매출": 9,
+   "특징": 0,
+   "기업정보": 3,
+   "인수희망대상": 0
+  },
+  "id_context": [
+   "사 매물로</title> <link rel=\"canonical\" href=\"https://stock.mk.co.kr/news/view/1165909\"> <link rel=\"alternate\" media=\"only screen and ( max-width: 640px)\" ",
+   "<meta name=\"og:url\" property=\"og:url\" content=\"https://stock.mk.co.kr/news/view/1165909\" /> <meta name=\"og:image\" property=\"og:image\" content=\"https://wimg.",
+   "r\"; google_data.pageUrl = \"https://stock.mk.co.kr/news/view/1165909\"; google_data.queryString = \"\"; google_data.refe",
+   "oogle_data.referrer = \"\"; google_data.id = \"1165909\"; google_data.source = \"매일경제\"; google_data.",
+   "dy=' + news_url); } function print(){ window.open(\"/news/print/1165909\", \"news_print\", \"width=1000,height=800,top=100,left=200\"); } </scrip"
+  ],
+  "body_around_기업정보": "iew/1165909\"; google_data.queryString = \"\"; google_data.referrer = \"\"; google_data.id = \"1165909\"; google_data.source = \"매일경제\"; google_data.firstCategory = \"증권\"; google_data.secondCategory = \"기업정보\"; google_data.createdDate = \"2026.09.28 17:44:37\"; google_data.updatedDate = \"2026.09.29 15:29:25\"; google_data.authorName = \"박제완 기자(greenpea94@mk.co.kr)\"; google_data.authorDepartment = \"\"; google_data.contentTitle = \"[M&A 매물장터] 연 매출 200억 창호 제조사 매물로\"; window.dataLayer = window.dataLayer || []; dataLayer.push(google_data); </script> </head> <body> <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KTPV2SK\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript> <!-- End Google Tag Manager (noscript) --> <!-- s: wrapper --> <div class=\"wrapper\"> <!-- s: Header --> <header id=\"header\"> <section class=\"stock_flow_sec top_bar\"> <div class=\"set_inner\"> <h2 class=\"sec_ttl is_blind\">주가 정보</h2> <div class=\"stock_flow_wrap flow_ui\"> <ul class=\"stock_list move_el\" id=\"move_stock\"> <li class=\"stock_node\"> <div class=\"stock_item\" role=\"text\"> <b class=\"stock_name\">코스피</b> <p class=\"stock_info_group\" aria-label=\"6,854.19원, -0.24% 감소\"> <span class=\"stock\" aria-hidden=\"true\">6,854.19</span> <span class=\"is_minus\" aria-hidden=\"true\">-0.24%</span> </p> </div> </li> <li class=\"stock_node\"> "
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yandBNlV3ZUJtazdnemxsNGNPTUNPREJzNHgwM25ab0tybldWYUI2aFRGeWZ3ZEZwbjlWQTd5TVF4M1NXVHV4R3NKNXFGc3pxVXc?oc=5",
@@ -33,7 +49,7 @@
   "stage": "mk_body",
   "link": "https://stock.mk.co.kr/news/view/1158859",
   "status": 200,
-  "len": 100961,
+  "len": 100962,
   "has_keyword": false,
   "table_count": 0,
   "sell_rows": 0,
@@ -43,7 +59,23 @@
   "has_next_data": false,
   "has_body_kw": true,
   "api_srcs": [],
-  "snippet": "<!doctype html> <html lang=\"ko\"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KTPV2SK');</script> <!-- End Google Tag Manager --> <!-- End Google Tag Manager (noscript) --> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=1210\"> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"> <meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\"> <meta http-equiv=\"Content-Style-Type\" content=\"text/css\"> <meta name=\"naver-site-verification\" content=\"7522a37599a270a379bf95c46d59aba6b962d29d\" /> <script src=\"/js/jquery-3.7.1.min.js\"></script> <script src=\"/js/swiper.min.js\"></script> <script src=\"/js/common.js\"></script> <script src=\"/js/tabcontent.js\"></script> <script src=\"/js/stock.js\"></script> <script src=\"/js/chosen.jquery.min.js\"></script> <link rel=\"stylesheet\" href=\"https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css\" > <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?%2520family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;"
+  "ajax_calls": [],
+  "header_kw_hits": {
+   "구분": 0,
+   "업종": 2,
+   "매출": 10,
+   "특징": 0,
+   "기업정보": 3,
+   "인수희망대상": 0
+  },
+  "id_context": [
+   "인 찾아요</title> <link rel=\"canonical\" href=\"https://stock.mk.co.kr/news/view/1158859\"> <link rel=\"alternate\" media=\"only screen and ( max-width: 640px)\" ",
+   "<meta name=\"og:url\" property=\"og:url\" content=\"https://stock.mk.co.kr/news/view/1158859\" /> <meta name=\"og:image\" property=\"og:image\" content=\"https://wimg.",
+   "r\"; google_data.pageUrl = \"https://stock.mk.co.kr/news/view/1158859\"; google_data.queryString = \"\"; google_data.refe",
+   "oogle_data.referrer = \"\"; google_data.id = \"1158859\"; google_data.source = \"매일경제\"; google_data.",
+   "dy=' + news_url); } function print(){ window.open(\"/news/print/1158859\", \"news_print\", \"width=1000,height=800,top=100,left=200\"); } </scrip"
+  ],
+  "body_around_기업정보": "iew/1158859\"; google_data.queryString = \"\"; google_data.referrer = \"\"; google_data.id = \"1158859\"; google_data.source = \"매일경제\"; google_data.firstCategory = \"증권\"; google_data.secondCategory = \"기업정보\"; google_data.createdDate = \"2026.09.14 17:45:23\"; google_data.updatedDate = \"2026.09.14 19:47:33\"; google_data.authorName = \"박제완 기자(greenpea94@mk.co.kr)\"; google_data.authorDepartment = \"\"; google_data.contentTitle = \"[M&A 매물장터] 매출 100억 조선 기자재社 새주인 찾아요\"; window.dataLayer = window.dataLayer || []; dataLayer.push(google_data); </script> </head> <body> <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KTPV2SK\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript> <!-- End Google Tag Manager (noscript) --> <!-- s: wrapper --> <div class=\"wrapper\"> <!-- s: Header --> <header id=\"header\"> <section class=\"stock_flow_sec top_bar\"> <div class=\"set_inner\"> <h2 class=\"sec_ttl is_blind\">주가 정보</h2> <div class=\"stock_flow_wrap flow_ui\"> <ul class=\"stock_list move_el\" id=\"move_stock\"> <li class=\"stock_node\"> <div class=\"stock_item\" role=\"text\"> <b class=\"stock_name\">코스피</b> <p class=\"stock_info_group\" aria-label=\"6,854.19원, -0.24% 감소\"> <span class=\"stock\" aria-hidden=\"true\">6,854.19</span> <span class=\"is_minus\" aria-hidden=\"true\">-0.24%</span> </p> </div> </li> <li class=\"stock_node\"> "
  },
  {
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PUHNrb3NvUFFiblo0b1c2anRJRzNsSXVzUl9PUkw5MURub0pUMWRjMTdYT3kydFpZRUhCSGFMY3NXdjJzWnlGbFo4TXlLZEhYR21iNEpWZFJsdw?oc=5",
