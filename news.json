@@ -10,8 +10,10 @@
    "MTN 머니투데이방송",
    "hani.co.kr",
    "hidomin.com",
+   "kmnanews.com",
    "news.bbsi.co.kr",
    "news.kbs.co.kr",
+   "sedaily.com",
    "v.daum.net",
    "yonhapnewstv.co.kr",
    "강원도민일보",
@@ -36,7 +38,27 @@
    "한국M&A경제신문",
    "헤럴드경제"
   ],
-  "outlet_count": 32,
+  "outlet_count": 34,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "중앙일보 \"10월 말까지 M&A 우선협상대상자 선정\" - MBC 뉴스",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2NlhQRHF2ek54RV9fSmV6bERTRFNyY25rVnJSbnJyb2M0NnRBVE4wUXAtdTRqN3ZNeVMwQnVqYnhMbTJ2ekViUUx2WXV1akJ3cnNTdmhtYldoVUlmVDhiR0MyN1pHVjRGTkItbG44Slg3M1JI0gF0QVVfeXFMT0E3XzduV3JvUXJmSGRTazJ3V2xiRG5Nd21welBEOHNRQlZodDZSSE9qUld6MW9DTWZmVHVQN3hKYXdMd0lEVU5JbndNWmdOUXFxOFVWRHphZW5BU3dpYlBwZ1cySmYtZzU3TnREd2lkZmtVWWE?oc=5",
+  "sources": [
+   "MBC 뉴스",
+   "SBS Biz",
+   "TradingView",
+   "biz.sbs.co.kr",
+   "hankyung.com",
+   "v.daum.net",
+   "뉴스1",
+   "뉴시스",
+   "머니투데이",
+   "세계일보",
+   "연합뉴스",
+   "한국경제"
+  ],
+  "outlet_count": 12,
   "first_seen": "20260929"
  },
  {
@@ -54,25 +76,6 @@
    "아이뉴스24",
    "연합뉴스",
    "조세금융신문"
-  ],
-  "outlet_count": 11,
-  "first_seen": "20260929"
- },
- {
-  "title": "중앙일보 \"10월 말까지 M&A 우선협상대상자 선정\" - MBC 뉴스",
-  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2NlhQRHF2ek54RV9fSmV6bERTRFNyY25rVnJSbnJyb2M0NnRBVE4wUXAtdTRqN3ZNeVMwQnVqYnhMbTJ2ekViUUx2WXV1akJ3cnNTdmhtYldoVUlmVDhiR0MyN1pHVjRGTkItbG44Slg3M1JI0gF0QVVfeXFMT0E3XzduV3JvUXJmSGRTazJ3V2xiRG5Nd21welBEOHNRQlZodDZSSE9qUld6MW9DTWZmVHVQN3hKYXdMd0lEVU5JbndNWmdOUXFxOFVWRHphZW5BU3dpYlBwZ1cySmYtZzU3TnREd2lkZmtVWWE?oc=5",
-  "sources": [
-   "MBC 뉴스",
-   "SBS Biz",
-   "TradingView",
-   "biz.sbs.co.kr",
-   "v.daum.net",
-   "뉴스1",
-   "뉴시스",
-   "머니투데이",
-   "세계일보",
-   "연합뉴스",
-   "한국경제"
   ],
   "outlet_count": 11,
   "first_seen": "20260929"
@@ -112,6 +115,35 @@
   "first_seen": "20260929"
  },
  {
+  "title": "5개 종목 M&A 정보 입수 200억 ‘꿀꺽’…명문대 출신 '정보카르텔' 덜미(종합) - 뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MVnREbGVZWDVtWFVpbkZRdVlNM1NhOF90ZUVGdDlsSUxVNjA2TGJXZmhXdGFmeGlEWkItdkxoNVNGb05DaUVEUUJ3U0t0cFl2cnphSjVaaTFQYTZUMEdB0gFkQVVfeXFMTVI0NmVFRXZyVXNKN3BuMjNGU1ZmUW1vZV8zQmE0dmVpX3N0NzhPMF9jVDd6dU9IbUd3Q2dmODNra1BfTVRWVEVIWkVvVVlmb0RaZl9ESmR0REFiOXN6TVVlRmE2eA?oc=5",
+  "sources": [
+   "YTN",
+   "v.daum.net",
+   "ytn.co.kr",
+   "뉴스1",
+   "디지털데일리",
+   "리드경제",
+   "한국일보"
+  ],
+  "outlet_count": 7,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "금융엘리트 ‘정보 카르텔’ 적발…5년간 M&A 미공개정보 돌려보며 200억대 부당이득 - sisaworld.kr",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjMnNkVUVWU0ZCbUpjQXEzM3JrT0VCVGp1bEJNaDRtNzZMRXhXSFVSemN5VlBnUmlDMFpZZ2xyME14VDROXzdSb1pVa1pTNks4RzRHYmpOTmpVMWI3T2NBWURFalpjcHY5UEE?oc=5",
+  "sources": [
+   "cbci.co.kr",
+   "hani.co.kr",
+   "sisaworld.kr",
+   "데일리굿뉴스",
+   "동아일보",
+   "한겨레"
+  ],
+  "outlet_count": 6,
+  "first_seen": "20260930"
+ },
+ {
   "title": "M&A 내부정보로 200억 챙긴 ‘정보카르텔’ 덜미…합동대응단, 20여곳 압수수색 - v.daum.net",
   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5USXZMM3J4alJfdHo3U2I5aVVhb2FEQUxkbFZVOFBtdThkRjNaamxJNTg1dHFlSGtqWmNlU25Jd0k5QjNCWGJTakwwbXYzYVE?oc=5",
   "sources": [
@@ -121,20 +153,6 @@
    "뉴스인",
    "인더뉴스",
    "채널A 뉴스"
-  ],
-  "outlet_count": 6,
-  "first_seen": "20260929"
- },
- {
-  "title": "5개 종목 M&A 정보 입수 200억 ‘꿀꺽’…명문대 출신 '정보카르텔' 덜미(종합) - 뉴스1",
-  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MVnREbGVZWDVtWFVpbkZRdVlNM1NhOF90ZUVGdDlsSUxVNjA2TGJXZmhXdGFmeGlEWkItdkxoNVNGb05DaUVEUUJ3U0t0cFl2cnphSjVaaTFQYTZUMEdB0gFkQVVfeXFMTVI0NmVFRXZyVXNKN3BuMjNGU1ZmUW1vZV8zQmE0dmVpX3N0NzhPMF9jVDd6dU9IbUd3Q2dmODNra1BfTVRWVEVIWkVvVVlmb0RaZl9ESmR0REFiOXN6TVVlRmE2eA?oc=5",
-  "sources": [
-   "YTN",
-   "v.daum.net",
-   "뉴스1",
-   "디지털데일리",
-   "리드경제",
-   "한국일보"
   ],
   "outlet_count": 6,
   "first_seen": "20260929"
@@ -168,19 +186,6 @@
   "first_seen": "20260929"
  },
  {
-  "title": "금융엘리트 ‘정보 카르텔’ 적발…5년간 M&A 미공개정보 돌려보며 200억대 부당이득 - sisaworld.kr",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjMnNkVUVWU0ZCbUpjQXEzM3JrT0VCVGp1bEJNaDRtNzZMRXhXSFVSemN5VlBnUmlDMFpZZ2xyME14VDROXzdSb1pVa1pTNks4RzRHYmpOTmpVMWI3T2NBWURFalpjcHY5UEE?oc=5",
-  "sources": [
-   "cbci.co.kr",
-   "sisaworld.kr",
-   "데일리굿뉴스",
-   "동아일보",
-   "한겨레"
-  ],
-  "outlet_count": 5,
-  "first_seen": "20260930"
- },
- {
   "title": "명문대 동아리 인맥으로 'M&A 정보카르텔'…200억 부당이득 일당 적발 - 한국경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kOG5kZ2xRMUdMMG1iQjk2MHI5R2YzRy1kOVdYZWY5LUVUYkFnd0JQbHhpU2hLZlNqakppLUdWNnVnLU95RWZfUHF0VzdXTTRGVkgwYlJFTWdXdw?oc=5",
   "sources": [
@@ -189,6 +194,32 @@
    "v.daum.net",
    "연합뉴스",
    "한국경제"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "M&A 미공개정보로 200억 챙긴 정보카르텔 적발 - 중기이코노미",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90Z09rdWFpTTR1NHpWbG9OelhUa3RfZjlJQ2NDelBiTGhpMVVCT0FuLWh6ZGFfVzhSZzBLRTR2TzRUek55UHFEaEtPN2VZXzRGSXhXYWF6Ry1sajBHNlRJU2doWUIwQTBBNHc?oc=5",
+  "sources": [
+   "YTN",
+   "junggi.co.kr",
+   "뉴스1",
+   "매일신문",
+   "중기이코노미"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "'금융엘리트'의 모럴해저드…상장사 M&A 정보로 5년간 200억 사익(종합) - 연합인포맥스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1YUmtna2g5WjhHNkVSRFFjcTJtSEdzcEFvYzdMS3poRElUbzNYSUQ5Q19DS0lmQlhDd3dNcW5DeWJOdDdyZWFlOS1TdTZJcUx1X2pHQ2ZBSURfTExEaEtoNTZqaUItVk04RXhWYUt5Q1g?oc=5",
+  "sources": [
+   "KB Think",
+   "kbthink.com",
+   "news.einfomax.co.kr",
+   "연합인포맥스",
+   "한겨레"
   ],
   "outlet_count": 5,
   "first_seen": "20260929"
@@ -206,6 +237,18 @@
   "first_seen": "20260930"
  },
  {
+  "title": "총수 2세 회사에 지분 헐값 매각 의혹…BS그룹 제재 절차 착수 - edaily.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORFo5UlgxeWQtdE9aLV9NTEZodHJ4WnVYelgyMzN0OTJaOHBCWTJCYVRNX0ZGa2Z0MzBzRE50U3h3WE9WdEJxcXpYX1pOcWhJdU9USFk0elB0QWRxZXliTXhmLTM1d2VKOEU4UDBnMmhQbEVLWVZJazFNcnFpRHJ1MQ?oc=5",
+  "sources": [
+   "edaily.co.kr",
+   "v.daum.net",
+   "뉴스1",
+   "이투데이"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20260930"
+ },
+ {
   "title": "비투엔 “앤씨앤 유증 납입 완료…경영권 인수 본격화” - 서울경제TV",
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iYjBYTlZiS1NodldVZ1hwTkk5NjNPQ2thUkt1bHcxVG9qUHFMdmc3UnFRTm1CVkxqc1I1bG1qb3d4RkFGLVFKb0RZUnZJTXBGY01vMkhtdFh6RDdqNGJZU01iMlY?oc=5",
   "sources": [
@@ -213,18 +256,6 @@
    "머니투데이",
    "서울경제",
    "서울경제TV"
-  ],
-  "outlet_count": 4,
-  "first_seen": "20260929"
- },
- {
-  "title": "M&A 미공개정보로 200억 챙긴 정보카르텔 적발 - 중기이코노미",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90Z09rdWFpTTR1NHpWbG9OelhUa3RfZjlJQ2NDelBiTGhpMVVCT0FuLWh6ZGFfVzhSZzBLRTR2TzRUek55UHFEaEtPN2VZXzRGSXhXYWF6Ry1sajBHNlRJU2doWUIwQTBBNHc?oc=5",
-  "sources": [
-   "YTN",
-   "뉴스1",
-   "매일신문",
-   "중기이코노미"
   ],
   "outlet_count": 4,
   "first_seen": "20260929"
@@ -242,18 +273,6 @@
   "first_seen": "20260929"
  },
  {
-  "title": "'금융엘리트'의 모럴해저드…상장사 M&A 정보로 5년간 200억 사익(종합) - 연합인포맥스",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1YUmtna2g5WjhHNkVSRFFjcTJtSEdzcEFvYzdMS3poRElUbzNYSUQ5Q19DS0lmQlhDd3dNcW5DeWJOdDdyZWFlOS1TdTZJcUx1X2pHQ2ZBSURfTExEaEtoNTZqaUItVk04RXhWYUt5Q1g?oc=5",
-  "sources": [
-   "KB Think",
-   "kbthink.com",
-   "연합인포맥스",
-   "한겨레"
-  ],
-  "outlet_count": 4,
-  "first_seen": "20260929"
- },
- {
   "title": "M&A 정보 빼돌려 200억 꿀꺽…명문대 경영동아리 출신 세력 적발 - 머니투데이 - 머니투데이",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qYm1idDFDYjcyT2lIMzNfaS1hY0xhNjh6MHRDMXRzcmpNTndXTmlCV2FFTkpKcmdqV2pyU2NmT2VXSnY1VzFjVEdobTBjVVozX3JRZkt3ZUcwM251OVMtYkJ5Z1FaT0tZ0gFuQVVfeXFMT3REWGt3QU0zOW1vTENTTm9TSF9TYTd0ZzctYnhSZWdoZnBVcG9ZejlHd2w1Rm1KSWNvQ2JXSU11bVJYSDRfWk9yZzdqVURHbTFNeDBMZzdsdkNfLXA2b0VUV1RlOUlPNktCVVhqd1E?oc=5",
   "sources": [
@@ -264,17 +283,6 @@
   ],
   "outlet_count": 4,
   "first_seen": "20260929"
- },
- {
-  "title": "총수 2세 회사에 지분 헐값 매각 의혹…BS그룹 제재 절차 착수 - edaily.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORFo5UlgxeWQtdE9aLV9NTEZodHJ4WnVYelgyMzN0OTJaOHBCWTJCYVRNX0ZGa2Z0MzBzRE50U3h3WE9WdEJxcXpYX1pOcWhJdU9USFk0elB0QWRxZXliTXhmLTM1d2VKOEU4UDBnMmhQbEVLWVZJazFNcnFpRHJ1MQ?oc=5",
-  "sources": [
-   "edaily.co.kr",
-   "뉴스1",
-   "이투데이"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20260930"
  },
  {
   "title": "SK에코플랜트, 말레이 센바이로 지분 매각 수순… 베올리아 인수 타진 - 메디컬투데이",
@@ -802,6 +810,16 @@
   "sources": [
    "KB Think",
    "금융소비자뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "방미통위, ‘YTN 매각 승인 취소’ 심의 앞서 유진이엔티 청문회 열기로 - 한겨레",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhSVk1dk9FS0I2dDZJNmdzLXZWLU1UMFdZU2JBYWoyQThqb01TVWFKWTJkWm1uZWVzdzFPZ3NJVVRxd1dDdl9zRWc1ejE3eDB1WXd2aUxBTHpXZldXRjV6S19aQ3M?oc=5",
+  "sources": [
+   "hani.co.kr",
+   "한겨레"
   ],
   "outlet_count": 2,
   "first_seen": "20260930"
@@ -1527,6 +1545,36 @@
   "first_seen": "20260929"
  },
  {
+  "title": "김범수 카카오 창업자 '징역 15년' 재구형…1심 무죄 뒤 11월 선고 - PRESS9",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBILUZ5bl85S3dkYU9EUEp2MFhRLWNDNXFvX2ptRnVzZzB2YnlqSHlwYVdwSy1uOEQwcFNjbER6WHg4anJEN1psZ1FvUDRpYTYwd05USnZPZVM2VTZrMVBHbjBTLXBHZw?oc=5",
+  "sources": [
+   "PRESS9",
+   "press9.kr"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "잘나가는 자식을 왜…日 매각설로 보는 스타벅스의 亞 ‘탈출’ 배경은 - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02aVluVTJjQ2owd3cwcDhDYWRtTkQ5OHVCUTlfT01ha3gyRWFaeTR5WDZ0bVFMMHlOUXFTejVZUzVCczFjTjFzYS1EbkhXRDhNalhZ0gFTQVVfeXFMTTZpWW5VMmNDajB3dzBwOENhZG1ORDk4dUJROV9PTWFreDJFYVp5NHlYNnRtUUwweU5RcVN6NVlTNUJzMWNOMXNhLURuSFdEOE1qWFk?oc=5",
+  "sources": [
+   "sedaily.com",
+   "서울경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
+  "title": "스벅, 알짜 日법인까지 매각...北美 위해 아시아 포기하나 - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iSm1RdElTTWVQUDlkNnhtMkxFbE9lTkhhdjVGZjJyQWgxbG1TMlhqel95V200SGxzc082STUwNWl1dUdqczJYQmNYUEMzY1pwV2pZ0gFTQVVfeXFMTWJKbVF0SVNNZVBQOWQ2eG0yTEVsT2VOSGF2NUZmMnJBaDFsbVMyWGp6X3lXbTRIbHNzTzZJNTA1aXV1R2pzMlhCY1hQQzNjWnBXalk?oc=5",
+  "sources": [
+   "sedaily.com",
+   "서울경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929"
+ },
+ {
   "title": "한솔테크닉스, 4000억원 M&A 결실…한솔윌텍 품고 내년 '퀀텀점프' - ebn.co.kr",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xaDBQZkhERzRoZUhtbkRFOXc0QkE1MDV3OS1USHkzQjgzMHJyS2F0LUxPVE8wTlptWVRBMnZCSnpKNXlRNHZtTXV6Z054a3VNWnRhdnNFVTRRQWwxVFBaRWZ1RnZJZ3BD?oc=5",
   "sources": [
@@ -1806,15 +1854,6 @@
   "first_seen": "20260930"
  },
  {
-  "title": "방미통위, ‘YTN 매각 승인 취소’ 심의 앞서 유진이엔티 청문회 열기로 - 한겨레",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhSVk1dk9FS0I2dDZJNmdzLXZWLU1UMFdZU2JBYWoyQThqb01TVWFKWTJkWm1uZWVzdzFPZ3NJVVRxd1dDdl9zRWc1ejE3eDB1WXd2aUxBTHpXZldXRjV6S19aQ3M?oc=5",
-  "sources": [
-   "한겨레"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930"
- },
- {
   "title": "중앙일보 \"10월까지 우선협상자 선정…M&A 뒤늦은 참여 불가\" - newsis.com",
   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tTFotSjhUYmJIN3o4R0hCaGZKR2hpVmtTODR1LW1QZWQ2b1g0Y0N3bjhsX3k5eVdibklicFRzOWpqRnNkUXZ3U2c3Wm1RUnhJVktJQWhCOEw2Z182S25EOHlvN2VnYU81cnlLNHdVWU1ybGdKUWZmU9IBeEFVX3lxTE0tTFotSjhUYmJIN3o4R0hCaGZKR2hpVmtTODR1LW1QZWQ2b1g0Y0N3bjhsX3k5eVdibklicFRzOWpqRnNkUXZ3U2c3Wm1RUnhJVktJQWhCOEw2Z182S25EOHlvN2VnYU81cnlLNHdVWU1ybGdKUWZmUw?oc=5",
   "sources": [
@@ -1918,6 +1957,33 @@
   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJSXRmNkI1STdZODA3RXg1THRULXRyUzIzaXItcHNhX284a0pMWkVJM3RSOE5telRGYy1OZ1czelUwSGUyYTJhRGpPazJVSUpqQVRXeVhaejRfZHA0NWlLM3NBX0xIQTQ?oc=5",
   "sources": [
    "녹색경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "태광산업, 신사업 찾고 투자법 넓히고…M&A 전략 다변화 - 데일리한국",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92SDFGODJOQV9HWFh2THFfUnpnNm5PbFJhdEtGaWZydkQ1UVhoWkpGZUZlZGNhOVhtblQzQkN6bzlzSnFabWladHIyclpuSzBSbHZQczRmVDZhRXpaQVg1Z18tMnc3TjRkTnJZMW9ZRdIBc0FVX3lxTE8yLV9XTjBuNzZReWlXem11WGZ1Z1ZmaVo1ZW5uQzVZOXBtd0lRcDY0bXZwMmUyWE04akl6TVZiaTJLSXBvVl9iYXVtaExWRGlkOVhWWDdwNUE2dW1uVHdyLWRSYXhfYWlvSXBTa3RzNTBnUGs?oc=5",
+  "sources": [
+   "데일리한국"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "워너브러더스, 넷플릭스와 판 깨나 - 미주조선일보",
+  "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc3p1eUpwbjNmcWZPYTVHYkNnX3Fsc1gyLXFSclNsRnVZcElZY09raU92TWRPUFVXNzY1VXByVVBhLXpYM2xXd1Iwanh5cnlKd3hZSjluNGZwRHVRLWk4cXI2bWxQR3BPaDNRcnlqR2g4VHBzMW9JTG0zY2U2ckgwa0h5ZXB5MWUxYUhaYTlKWHR4Ym1kTzZDby1KdG9WVUtCTk1fOHBJNzJDVEJaYnBvRHk4MzFUdm5HX0lyLThCb1BQYk5DRHBfRkdWOWs4TEFha2ZsUjlzU2tYc2xHR2dNRS03TQ?oc=5",
+  "sources": [
+   "미주조선일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930"
+ },
+ {
+  "title": "모건 스탠리, GOTO 5억 3백만 주 매각, 잔여 지분 5.36% - IDNFinancials",
+  "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPbG1lSWE2bzJ5N1ZpUjJ1ZjFFN0NoU2kyekwzcmlQc3lwS3ZnZ1FPbUloMGtZaFFhZEMydDVfZ1pyOTdmbnZoYkRzSWpKTWlxRWZhaUpCbTR2MWxnMm8wbkVxU3k2SHlRVFViVWp0Q2o3b2pXSjA0NURSWnhHQlJwd1ZhdjR5dmJ4QXB6LTdFTWMyMVJxZHBnR1pyMXRRUDlQakVkTlJtS25aUURHTExnenBaY2xaTHdjQ0Z6aUZsRGk4WmktU2p1eGJJaDdGMnhEQkZhMXhlVVdvV1VyV3V2Zlk1NWV3di1XdS1YTElJTXpQdzlBaEU4bVZnRWptZnFCbVEwSERWSDk1OUNPRUJJbmI2amJtMU5BUWs1UVl1UWJHbjlB?oc=5",
+  "sources": [
+   "IDNFinancials"
   ],
   "outlet_count": 1,
   "first_seen": "20260930"
@@ -2328,15 +2394,6 @@
   "first_seen": "20260929"
  },
  {
-  "title": "김범수 카카오 창업자 '징역 15년' 재구형…1심 무죄 뒤 11월 선고 - PRESS9",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBILUZ5bl85S3dkYU9EUEp2MFhRLWNDNXFvX2ptRnVzZzB2YnlqSHlwYVdwSy1uOEQwcFNjbER6WHg4anJEN1psZ1FvUDRpYTYwd05USnZPZVM2VTZrMVBHbjBTLXBHZw?oc=5",
-  "sources": [
-   "PRESS9"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
   "title": "영풍·MBK \"최윤범 회장 퇴진이 고려아연 지배구조 정상화 출발점\" | - 뉴스드림",
   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5mX3R3ZGdjb3Nxakl6ZndIc1ROYWM1T0ZnYkhpeFBPbUZXNVZERFd4c0ZqZ2JkZ0UwUDh2bjlDMHZkX2Zpdzg5OFA0VmZGVUVUdExoOWhLZzFzTkRIQWthZHZ2amQ3aml4WWNzR1RR?oc=5",
   "sources": [
@@ -2418,15 +2475,6 @@
   "first_seen": "20260929"
  },
  {
-  "title": "잘나가는 자식을 왜…日 매각설로 보는 스타벅스의 亞 ‘탈출’ 배경은 - 서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02aVluVTJjQ2owd3cwcDhDYWRtTkQ5OHVCUTlfT01ha3gyRWFaeTR5WDZ0bVFMMHlOUXFTejVZUzVCczFjTjFzYS1EbkhXRDhNalhZ0gFTQVVfeXFMTTZpWW5VMmNDajB3dzBwOENhZG1ORDk4dUJROV9PTWFreDJFYVp5NHlYNnRtUUwweU5RcVN6NVlTNUJzMWNOMXNhLURuSFdEOE1qWFk?oc=5",
-  "sources": [
-   "서울경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
   "title": "김종출 KAI 사장, 국감 증인 채택…수은 지분 매각·민영화 쟁점 - 디지털데일리",
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBZbnB1NXJtd1RVOXhtazlvNS1rdjh5aUc1b3AwYjVHZFNCUDlLd1dudHUwS2tvUklpSTBCYnc2Mnc0ZXp6cXh4Q0Zaekt6blZINHJlU0w2bzJiejdESWIzeEFSbHg?oc=5",
   "sources": [
@@ -2467,15 +2515,6 @@
   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uUW9PQk9Ba3NCaTY2Y3Q4R2RhdWFWZ0luYVotcDI5ek5tOExNdFlDX1dYNFV3SVVJN3RGX2N5Q0s0SUU2ZEx3ZDF2dHhwRE0wa3ZReEN5RjN0cnpaV2xOckZMQkVQdFFQQmFnQkVZeXk?oc=5",
   "sources": [
    "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929"
- },
- {
-  "title": "스벅, 알짜 日법인까지 매각...北美 위해 아시아 포기하나 - 서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iSm1RdElTTWVQUDlkNnhtMkxFbE9lTkhhdjVGZjJyQWgxbG1TMlhqel95V200SGxzc082STUwNWl1dUdqczJYQmNYUEMzY1pwV2pZ0gFTQVVfeXFMTWJKbVF0SVNNZVBQOWQ2eG0yTEVsT2VOSGF2NUZmMnJBaDFsbVMyWGp6X3lXbTRIbHNzTzZJNTA1aXV1R2pzMlhCY1hQQzNjWnBXalk?oc=5",
-  "sources": [
-   "서울경제"
   ],
   "outlet_count": 1,
   "first_seen": "20260929"
