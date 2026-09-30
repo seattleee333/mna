@@ -72,9 +72,6 @@ def parse_mk_tables(html):
     return sell_rows, buy_rows
 
 
-DEBUG_LOG = []
-
-
 def decode_google_news_link(session, page_html):
     """구글 뉴스의 news.google.com/rss/articles/CBMi... 링크는 실제 URL이 아니라
     자바스크립트 SPA가 내부적으로 풀어내는 난독화된 토큰이다. 기사 페이지의
@@ -107,32 +104,66 @@ def resolve_real_url(google_link, domain_hint):
         with requests.Session() as session:
             session.headers.update(UA)
             r = session.get(google_link, timeout=15)
-            info = {"link": google_link, "status": r.status_code, "final_url": r.url}
             if domain_hint in r.url:
-                info["result"] = "redirected"
-                DEBUG_LOG.append(info)
                 return r.url  # 이미 실제 언론사 URL로 리다이렉트된 경우
             # 본문에 실제 URL이 그대로 노출돼 있는 경우 (가끔 있음)
             m = re.search(r'https?://(?:www\.)?' + re.escape(domain_hint) + r'/[^"\'\\<>\s]+', r.text)
             if m:
-                info["result"] = "regex_found"
-                DEBUG_LOG.append(info)
                 return m.group(0)
             # 최후 수단: 구글 내부 API로 실제 URL 디코딩 시도
             try:
-                real = decode_google_news_link(session, r.text)
-                info["result"] = "decoded" if real else "decode_failed"
-                info["decoded_url"] = real
-                DEBUG_LOG.append(info)
-                return real
+                return decode_google_news_link(session, r.text)
             except Exception as e:
-                info["result"] = "decode_error"
-                info["error"] = str(e)
-                DEBUG_LOG.append(info)
+                print(f"구글 뉴스 링크 디코딩 실패 [{google_link}]: {e}")
                 return None
     except Exception as e:
-        DEBUG_LOG.append({"link": google_link, "error": str(e)})
+        print(f"구글 뉴스 링크 조회 실패 [{google_link}]: {e}")
         return None
+
+
+# 매일경제 [M&A 매물장터]는 기사 본문이 표가 아니라, A사/B사/C사(매물)·D사/E사/F사(인수희망)
+# 식으로 여러 회사를 서술형 문단으로 소개하는 방식이다 (진단 결과 <table> 태그 자체가
+# 본문에 없음을 확인함). 문단 단위로 나눠 매물/인수희망 여부를 키워드로 판별하고,
+# 회사 표기(A사 등)·매출·희망 인수 금액을 정규식으로 뽑아낸다.
+MK_SELL_KW = ["매물로 나왔다", "매물로 등록", "매물로 내놨다", "인수자를 찾아 나섰다",
+              "인수자를 찾고 있다", "매수자를 찾는다", "매수자를 찾고 있다"]
+MK_BUY_KW = ["인수를 희망", "인수를 추진", "인수를 검토", "인수를 타진", "인수에 관심"]
+
+
+def parse_mk_prose(html):
+    """인쇄용 페이지 본문(문단이 <br><br>로 구분된 서술형 기사)에서
+    매물/인수희망 항목을 문단 단위로 추출한다."""
+    paragraphs = re.split(r"(?:<br\s*/?>\s*){2,}", html)
+    sell_items, buy_items = [], []
+    for p in paragraphs:
+        text = BeautifulSoup(p, "html.parser").get_text(" ", strip=True)
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text) < 15:
+            continue
+        is_sell = any(k in text for k in MK_SELL_KW)
+        is_buy = any(k in text for k in MK_BUY_KW)
+        if not is_sell and not is_buy:
+            continue
+        # "A사가", "B사도"처럼 뒤에 조사가 바로 붙어 한글 단어 경계가 없으므로
+        # 앞쪽 경계만 확인한다. 특정 회사(A사/B사 등)를 명시하지 않는 도입부
+        # 요약 문단은 회사 표기가 없어 이 조건에서 자연히 걸러진다.
+        name_m = re.search(r"\b([A-Z])사(?=[가-힣]|\b)", text)
+        if not name_m:
+            continue
+        label = name_m.group(1) + "사"
+        if is_buy:
+            amt_m = re.search(r"희망\s*인수\s*금액은\s*([^.]+?)(?:이다|다)?\.", text)
+            buy_items.append({
+                "label": label, "feature": text[:220],
+                "budget": amt_m.group(1).strip() if amt_m else "",
+            })
+        else:
+            rev_m = re.search(r"매출(?:은)?\s*([\d,]+)\s*억", text)
+            sell_items.append({
+                "label": label, "feature": text[:220],
+                "revenue": (rev_m.group(1) + "억원") if rev_m else "",
+            })
+    return sell_items, buy_items
 
 
 def collect_mk(existing_keys, added, items_out):
@@ -159,75 +190,31 @@ def collect_mk(existing_keys, added, items_out):
         real_link = resolve_real_url(it["link"], "mk.co.kr")
         canonical_link = real_link or it["link"]
 
-        sell_rows, buy_rows = [], []
+        sell_items, buy_items = [], []
         if real_link:
             try:
                 r = requests.get(real_link, headers=UA, timeout=20)
                 r.raise_for_status()
-                sell_rows, buy_rows = parse_mk_tables(r.text)
+                # 일반 기사 페이지(/news/view/<id>)는 표가 있는 경우 우선 시도
+                s1, b1 = parse_mk_tables(r.text)
+                sell_items, buy_items = s1, b1
 
-                # 일반 기사 페이지(/news/view/<id>)는 본문 표가 자바스크립트로 늦게
-                # 채워지는 것으로 보여 <table>이 잡히지 않는다. 인쇄용 페이지
-                # (/news/print/<id>)는 기사 본문만 서버에서 그대로 렌더링해주는
-                # 경우가 많아, 표를 못 찾았을 때 대안으로 시도해본다.
-                print_rows = None
-                if not sell_rows and not buy_rows:
+                if not sell_items and not buy_items:
+                    # 표가 없으면 인쇄용 페이지(/news/print/<id>)의 서술형 본문에서 추출한다.
                     m = re.search(r"/news/view/(\d+)", real_link)
                     if m:
                         print_url = f"https://stock.mk.co.kr/news/print/{m.group(1)}"
                         try:
                             pr = requests.get(print_url, headers=UA, timeout=20)
                             pr.raise_for_status()
-                            p_sell, p_buy = parse_mk_tables(pr.text)
-                            print_rows = {
-                                "url": print_url, "status": pr.status_code, "len": len(pr.text),
-                                "table_count": pr.text.count("<table"),
-                                "has_keyword": "매물 기업정보" in pr.text,
-                                "sell_rows": len(p_sell), "buy_rows": len(p_buy),
-                            }
-                            if p_sell or p_buy:
-                                sell_rows, buy_rows = p_sell, p_buy
-                            elif print_rows.get("status") == 200:
-                                # 표도 없으면 실제 본문이 어떤 형태인지 확인하기 위해
-                                # <body> 내용을 통째로 로그에 남긴다 (인쇄용 페이지라 용량이 작음).
-                                bm = re.search(r"<body[^>]*>(.*)</body>", pr.text, re.S)
-                                print_rows["body_full"] = re.sub(r"\s+", " ", bm.group(1)) if bm else re.sub(r"\s+", " ", pr.text)
+                            ps, pb = parse_mk_tables(pr.text)
+                            if not ps and not pb:
+                                ps, pb = parse_mk_prose(pr.text)
+                            sell_items, buy_items = ps, pb
                         except Exception as e:
-                            print_rows = {"url": print_url, "error": str(e)}
-                        DEBUG_LOG.append({"stage": "mk_print", **(print_rows or {})})
-                title_m = re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S)
-                api_srcs = re.findall(r'src=["\']([^"\']*(?:api|/_next/data)[^"\']*)["\']', r.text)
-                ajax_calls = re.findall(r'\.ajax\(\{[^}]{0,300}', r.text)
-                art_id_m = re.search(r"/news/view/(\d+)", real_link)
-                art_id = art_id_m.group(1) if art_id_m else None
-                id_context = []
-                if art_id:
-                    for m in re.finditer(re.escape(art_id), r.text):
-                        s = max(0, m.start() - 80)
-                        id_context.append(re.sub(r"\s+", " ", r.text[s:m.start() + 80]))
-                # 본문이 <table> 대신 div/li 기반 레이아웃으로 표를 흉내내는 경우를 확인
-                header_kw_hits = {kw: r.text.count(kw) for kw in ["구분", "업종", "매출", "특징", "기업정보", "인수희망대상"]}
-                body_idx = r.text.find("기업정보")
-                body_around = re.sub(r"\s+", " ", r.text[max(0, body_idx - 300):body_idx + 1500]) if body_idx != -1 else None
-                debug_entry = {
-                    "stage": "mk_body", "link": real_link, "status": r.status_code,
-                    "len": len(r.text), "has_keyword": "매물 기업정보" in r.text,
-                    "table_count": r.text.count("<table"),
-                    "sell_rows": len(sell_rows), "buy_rows": len(buy_rows),
-                    "content_type": r.headers.get("Content-Type", ""),
-                    "title_tag": title_m.group(1).strip() if title_m else None,
-                    "has_next_data": "__NEXT_DATA__" in r.text,
-                    "has_body_kw": "매물" in r.text,
-                    "api_srcs": api_srcs[:5],
-                    "ajax_calls": ajax_calls[:5],
-                    "header_kw_hits": header_kw_hits,
-                    "id_context": id_context[:6],
-                    "body_around_기업정보": body_around,
-                }
-                DEBUG_LOG.append(debug_entry)
+                            print(f"매일경제 인쇄용 페이지 조회 실패 [{print_url}]: {e}")
             except Exception as e:
                 print(f"매일경제 본문 조회 실패 [{real_link}]: {e}")
-                DEBUG_LOG.append({"stage": "mk_body", "link": real_link, "error": str(e)})
         else:
             print(f"매일경제 실제 기사 URL을 찾지 못함 (구글 리다이렉트만 있음): {it['title']}")
 
@@ -237,20 +224,31 @@ def collect_mk(existing_keys, added, items_out):
             "article_link": canonical_link,
             "pubDate": it["pubDate"],
         }
-        if not sell_rows and not buy_rows:
-            # 표 파싱에 실패해도 기사 자체는 놓치지 않도록 제목만으로 매물 1건 등록
+        if not sell_items and not buy_items:
+            # 파싱에 실패해도 기사 자체는 놓치지 않도록 제목만으로 매물 1건 등록
             items_out.append({**base, "type": "sell", "industry": "", "revenue": "", "feature": clean_title})
         else:
-            for row in sell_rows:
-                items_out.append({**base, "type": "sell",
-                                   "label": row.get("구분", ""), "industry": row.get("업종", ""),
-                                   "revenue": row.get("매출", ""), "feature": row.get("특징", "")})
-            for row in buy_rows:
-                items_out.append({**base, "type": "buy",
-                                   "label": row.get("구분", ""), "form": row.get("형태", ""),
-                                   "industry": row.get("업종", ""),
-                                   "target_industry": row.get("인수희망대상", ""),
-                                   "budget": row.get("인수가능금액", "")})
+            for row in sell_items:
+                if isinstance(row, dict) and "구분" in row:  # parse_mk_tables 결과 (표 형태)
+                    items_out.append({**base, "type": "sell",
+                                       "label": row.get("구분", ""), "industry": row.get("업종", ""),
+                                       "revenue": row.get("매출", ""), "feature": row.get("특징", "")})
+                else:  # parse_mk_prose 결과 (서술형)
+                    items_out.append({**base, "type": "sell", "industry": "",
+                                       "label": row.get("label", ""),
+                                       "revenue": row.get("revenue", ""), "feature": row.get("feature", "")})
+            for row in buy_items:
+                if isinstance(row, dict) and "구분" in row:
+                    items_out.append({**base, "type": "buy",
+                                       "label": row.get("구분", ""), "form": row.get("형태", ""),
+                                       "industry": row.get("업종", ""),
+                                       "target_industry": row.get("인수희망대상", ""),
+                                       "budget": row.get("인수가능금액", "")})
+                else:
+                    items_out.append({**base, "type": "buy", "form": "", "industry": "",
+                                       "label": row.get("label", ""),
+                                       "target_industry": row.get("feature", ""),
+                                       "budget": row.get("budget", "")})
         existing_keys.add(article_key)
         added[0] += 1
 
@@ -345,9 +343,6 @@ def main():
 
     collect_mk(existing_keys, added, items_out)
     collect_hankyung(existing_keys, added, items_out)
-
-    with open("_debug_listings.json", "w", encoding="utf-8") as f:
-        json.dump(DEBUG_LOG, f, ensure_ascii=False, indent=1)
 
     existing.extend(items_out)
     existing.sort(key=lambda e: e.get("pubDate", ""), reverse=True)

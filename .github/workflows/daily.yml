@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deals.json news.json listings.json _debug_listings.json
+          git add deals.json news.json listings.json
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else
