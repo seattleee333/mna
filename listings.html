@@ -15,12 +15,18 @@
 </header>
 <div class="layout">
   <main>
+    <div class="tab-row">
+      <button class="tab-btn on" data-t="sell">매물 리스트</button>
+      <button class="tab-btn" data-t="buy">인수희망 리스트</button>
+    </div>
+    <div class="notice-line">매일경제 [M&amp;A 매물장터] · 한국경제 [M&amp;A 장터] 연재 기사에서만 발췌합니다 (2026년 9월~)</div>
     <div class="controls">
-      <input id="q" type="search" placeholder="회사명 또는 키워드 검색">
+      <input id="q" type="search" placeholder="업종 또는 키워드 검색">
     </div>
     <div class="chips" id="chips"></div>
     <div id="list"><div class="empty">불러오는 중...</div></div>
-    <footer>기사 원문을 그대로 옮기지 않고, 제목·요약과 원문 링크만 제공합니다. 정확한 내용은 원문 기사를 확인하세요.</footer>
+    <div id="pageControls" class="page-controls"></div>
+    <footer>기사 원문의 표·제목에 나온 사실 정보(업종·매출·특징 등)만 정리한 것이며, 매물·인수희망 기업명은 원문에서도 비공개입니다. 자세한 내용은 원문 기사를 확인하세요.</footer>
   </main>
   <aside class="news-panel" id="newsPanel"></aside>
 </div>
@@ -31,10 +37,18 @@ renderSidebar("listings");
 renderNewsPanel();
 
 let items = [];
+let tab = "sell";
 let outlet = "전체";
+const PAGE_SIZE = 10;
+const MORE_LIMIT = 2;
+let revealBatches = 1;
+let pageNum = null;
+
 const listEl = document.getElementById("list");
+const pageControlsEl = document.getElementById("pageControls");
 const chipsEl = document.getElementById("chips");
 const qEl = document.getElementById("q");
+const tabBtns = document.querySelectorAll(".tab-btn");
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -44,33 +58,119 @@ function fmtPub(p) {
   if (isNaN(d)) return p || "";
   return d.getFullYear() + "." + String(d.getMonth()+1).padStart(2,"0") + "." + String(d.getDate()).padStart(2,"0");
 }
+function fmtEok(v) {
+  if (!v) return "";
+  return v + "억원";
+}
+
+function cardHtml(it) {
+  if (it.type === "buy") {
+    return '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.article_link) + '">' +
+      '<div class="top">' +
+        '<span class="name">' + (it.industry ? esc(it.industry) : "인수희망 기업") + '</span>' +
+        '<span class="tag tag-buy">' + esc(it.outlet) + '</span>' +
+      '</div>' +
+      '<div class="listing-rows">' +
+        (it.form ? '<span class="lrow"><b>형태</b>' + esc(it.form) + '</span>' : "") +
+        (it.target_industry ? '<span class="lrow"><b>인수희망대상</b>' + esc(it.target_industry) + '</span>' : "") +
+        (it.budget ? '<span class="lrow"><b>인수가능금액</b>' + esc(fmtEok(it.budget)) + '</span>' : "") +
+      '</div>' +
+      '<div class="meta">' + esc(it.article_title) + ' · ' + fmtPub(it.pubDate) + '</div>' +
+    '</a></div>';
+  }
+  return '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.article_link) + '">' +
+    '<div class="top">' +
+      '<span class="name">' + (it.industry ? esc(it.industry) : esc(it.feature || it.article_title)) + '</span>' +
+      '<span class="tag">' + esc(it.outlet) + '</span>' +
+    '</div>' +
+    '<div class="listing-rows">' +
+      (it.revenue ? '<span class="lrow"><b>매출</b>' + esc(fmtEok(it.revenue)) + '</span>' : "") +
+      (it.feature && it.industry ? '<span class="lrow"><b>특징</b>' + esc(it.feature) + '</span>' : "") +
+    '</div>' +
+    '<div class="meta">' + esc(it.article_title) + ' · ' + fmtPub(it.pubDate) + '</div>' +
+  '</a></div>';
+}
+
+function filteredRows() {
+  const q = qEl.value.trim().toLowerCase();
+  return items.filter(it =>
+    it.type === tab &&
+    (outlet === "전체" || it.outlet === outlet) &&
+    (!q || (it.industry || "").toLowerCase().includes(q) || (it.feature || "").toLowerCase().includes(q)
+        || (it.target_industry || "").toLowerCase().includes(q) || it.article_title.toLowerCase().includes(q))
+  );
+}
 
 function render() {
-  const q = qEl.value.trim().toLowerCase();
-  const rows = items.filter(it =>
-    (outlet === "전체" || it.outlet === outlet) &&
-    (!q || it.title.toLowerCase().includes(q) || (it.snippet || "").toLowerCase().includes(q))
-  );
+  revealBatches = 1;
+  pageNum = null;
+  renderPage(filteredRows());
+}
+
+function renderPage(rows) {
   if (!rows.length) {
-    listEl.innerHTML = '<div class="empty">표시할 항목이 없습니다.</div>';
+    listEl.innerHTML = '<div class="empty">' + (tab === "buy" ? "표시할 인수희망 항목이 없습니다." : "표시할 매물 항목이 없습니다.") + '</div>';
+    pageControlsEl.innerHTML = "";
     return;
   }
-  listEl.innerHTML = rows.map(it =>
-    '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.link) + '">' +
-      '<div class="top"><span class="name">' + (it.series ? '<span class="series-badge">연재</span> ' : '') + esc(it.title) + '</span><span class="tag">' + esc(it.outlet) + '</span></div>' +
-      (it.snippet ? '<div class="snippet">' + esc(it.snippet) + '</div>' : "") +
-      '<div class="meta">' + fmtPub(it.pubDate) + '</div>' +
-    '</a></div>'
-  ).join("");
+  if (pageNum === null) {
+    const shown = Math.min(revealBatches * PAGE_SIZE, rows.length);
+    listEl.innerHTML = rows.slice(0, shown).map(cardHtml).join("");
+    if (shown >= rows.length) {
+      pageControlsEl.innerHTML = "";
+    } else if (revealBatches < MORE_LIMIT) {
+      pageControlsEl.innerHTML = '<button class="more-btn" id="moreBtn">더보기</button>';
+      document.getElementById("moreBtn").addEventListener("click", () => { revealBatches++; renderPage(rows); });
+    } else {
+      pageNum = MORE_LIMIT + 1;
+      renderPage(rows);
+    }
+    return;
+  }
+  const totalPages = Math.ceil(rows.length / PAGE_SIZE);
+  pageNum = Math.min(Math.max(pageNum, 1), totalPages);
+  const start = (pageNum - 1) * PAGE_SIZE;
+  listEl.innerHTML = rows.slice(start, start + PAGE_SIZE).map(cardHtml).join("");
+
+  const pages = [];
+  for (let p = 1; p <= totalPages; p++) {
+    if (p === 1 || p === totalPages || Math.abs(p - pageNum) <= 1) pages.push(p);
+    else if (pages[pages.length - 1] !== "…") pages.push("…");
+  }
+  let html = '<div class="pagination">';
+  html += '<button class="page-arrow" data-p="' + (pageNum - 1) + '"' + (pageNum <= 1 ? " disabled" : "") + '>‹</button>';
+  for (const p of pages) {
+    html += p === "…" ? '<span class="page-ellipsis">…</span>'
+      : '<button class="page-num' + (p === pageNum ? " on" : "") + '" data-p="' + p + '">' + p + '</button>';
+  }
+  html += '<button class="page-arrow" data-p="' + (pageNum + 1) + '"' + (pageNum >= totalPages ? " disabled" : "") + '>›</button>';
+  html += '</div>';
+  pageControlsEl.innerHTML = html;
+  pageControlsEl.querySelectorAll("[data-p]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      pageNum = parseInt(btn.dataset.p, 10);
+      renderPage(rows);
+      listEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 }
 
 function renderChips() {
-  const outlets = ["전체", ...new Set(items.map(it => it.outlet))];
+  const outlets = ["전체", ...new Set(items.filter(it => it.type === tab).map(it => it.outlet))];
   chipsEl.innerHTML = outlets.map(o =>
     '<button class="chip' + (o === outlet ? " on" : "") + '" data-o="' + esc(o) + '">' + esc(o) + "</button>"
   ).join("");
 }
 
+tabBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    tab = btn.dataset.t;
+    tabBtns.forEach(b => b.classList.toggle("on", b === btn));
+    outlet = "전체";
+    renderChips();
+    render();
+  });
+});
 chipsEl.addEventListener("click", e => {
   if (e.target.dataset.o) { outlet = e.target.dataset.o; renderChips(); render(); }
 });
