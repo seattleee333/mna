@@ -18,7 +18,13 @@
     <div class="controls">
       <input id="q" type="search" placeholder="회사명 또는 종목코드 검색">
     </div>
-    <div class="chips" id="chips"></div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-c="전체">전체</button>
+      <div class="chip-dropdown" id="chipDropdown">
+        <button class="chip chip-dropdown-toggle" id="chipDropdownToggle">M&amp;A 종류 선택하기<span id="chipCount"></span></button>
+        <div class="chip-dropdown-panel" id="chipDropdownPanel"></div>
+      </div>
+    </div>
     <div class="toggle-row">
       <input type="checkbox" id="showMinor">
       <label for="showMinor">정정·자회사 공시 등 상세정보 없는 공시도 표시</label>
@@ -37,7 +43,8 @@ renderSidebar("daily");
 renderNewsPanel();
 
 let deals = [];
-let category = "전체";
+let selectedCats = new Set(); // 비어있으면 "전체" (복수 선택 가능)
+const PRIORITY_CAT = "타법인 주식 취득·처분"; // M&A 종류 목록에서 맨 위에 둘 항목
 let showMinor = false;
 const PAGE_SIZE = 10;
 const MORE_LIMIT = 2; // "더보기"로 최대 2배치(20개)까지 늘어난 뒤엔 페이지네이션으로 전환
@@ -111,7 +118,7 @@ function cardsHtml(rows) {
 function render() {
   const q = qEl.value.trim().toLowerCase();
   const rows = deals.filter(d =>
-    (category === "전체" || d.category === category) &&
+    (selectedCats.size === 0 || selectedCats.has(d.category)) &&
     (showMinor || !d.no_detail_api) &&
     (!q || d.corp_name.toLowerCase().includes(q) || d.stock_code.includes(q))
   );
@@ -180,14 +187,46 @@ function renderPage(rows) {
 }
 
 function renderChips() {
-  const cats = ["전체", ...new Set(deals.map(d => d.category))];
-  chipsEl.innerHTML = cats.map(c =>
-    '<button class="chip' + (c === category ? " on" : "") + '" data-c="' + esc(c) + '">' + esc(c) + "</button>"
+  const cats = [...new Set(deals.map(d => d.category))];
+  // "타법인 주식 취득·처분"을 목록 맨 위로 우선 배치
+  cats.sort((a, b) => (a === PRIORITY_CAT ? -1 : b === PRIORITY_CAT ? 1 : 0));
+
+  document.querySelector('[data-c="전체"]').classList.toggle("on", selectedCats.size === 0);
+
+  const toggleBtn = document.getElementById("chipDropdownToggle");
+  const countEl = document.getElementById("chipCount");
+  toggleBtn.classList.toggle("on", selectedCats.size > 0);
+  countEl.textContent = selectedCats.size > 0 ? " (" + selectedCats.size + ")" : "";
+
+  document.getElementById("chipDropdownPanel").innerHTML = cats.map(c =>
+    '<button class="chip' + (selectedCats.has(c) ? " on" : "") + '" data-c="' + esc(c) + '">' + esc(c) + "</button>"
   ).join("");
 }
 
 chipsEl.addEventListener("click", e => {
-  if (e.target.dataset.c) { category = e.target.dataset.c; renderChips(); render(); }
+  const btn = e.target.closest("button");
+  if (!btn) return;
+  if (btn.id === "chipDropdownToggle") {
+    document.getElementById("chipDropdownPanel").classList.toggle("open");
+    return;
+  }
+  if (btn.dataset.c === "전체") {
+    selectedCats.clear();
+    document.getElementById("chipDropdownPanel").classList.remove("open");
+    renderChips(); render();
+    return;
+  }
+  if (btn.dataset.c) {
+    // 패널 안의 항목은 중복 클릭(다중 선택)이 가능하도록 토글만 하고 패널은 열어둔다.
+    if (selectedCats.has(btn.dataset.c)) selectedCats.delete(btn.dataset.c);
+    else selectedCats.add(btn.dataset.c);
+    renderChips(); render();
+  }
+});
+document.addEventListener("click", e => {
+  if (!document.getElementById("chipDropdown").contains(e.target)) {
+    document.getElementById("chipDropdownPanel").classList.remove("open");
+  }
 });
 qEl.addEventListener("input", render);
 showMinorEl.addEventListener("change", () => { showMinor = showMinorEl.checked; render(); });
