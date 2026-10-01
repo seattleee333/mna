@@ -1,5 +1,6 @@
 import os
 import re
+import html as _html
 import io
 import json
 import time
@@ -285,9 +286,22 @@ def fetch_raw_document(rcept_no):
 
 def strip_tags(html):
     text = re.sub(r"<[^>]+>", " ", html)
-    text = re.sub(r"&nbsp;?", " ", text)
+    text = _html.unescape(text).replace("\xa0", " ")
     text = re.sub(r"[ \t]+", " ", text)
     return text.strip()
+
+
+# 회사명: '주식회사 OOO', 'OOO 주식회사', '(주)OOO', 'OOO(주)' 형태를 모두 한 덩어리로 잡는다.
+_TOK = r"[가-힣A-Za-z0-9&·.\-]+"
+_CORP = r"(?:(?:주식회사|\(주\)|㈜)\s*)?" + _TOK + r"(?:\s*(?:주식회사|\(주\)|㈜))?"
+_GENERIC = {"주식회사", "(주)", "㈜", "제3자", "-", ""}
+
+
+def _valid_name(name):
+    if not name:
+        return False
+    core = re.sub(r"주식회사|\(주\)|㈜|\s", "", name)
+    return len(core) >= 2 and name not in _GENERIC
 
 
 def extract_from_raw_doc(raw_html, corp_name, direction_hint):
@@ -296,15 +310,15 @@ def extract_from_raw_doc(raw_html, corp_name, direction_hint):
     text = strip_tags(raw_html)
 
     target = None
-    m = re.search(r"회사명\s*\(국적\)\s*([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)", text)
-    if m:
+    m = re.search(r"회사명\s*\(국적\)\s*(" + _CORP + ")", text)
+    if m and _valid_name(m.group(1).strip()):
         target = m.group(1).strip()
 
     counterparty = None
-    for pat in [r"거래상대방\s*[:：]\s*([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)",
-                r"거래상대방\s+([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)"]:
+    for pat in [r"거래상대방\s*[:：]\s*(" + _CORP + ")",
+                r"거래상대방\s+(" + _CORP + ")"]:
         m = re.search(pat, text)
-        if m:
+        if m and _valid_name(m.group(1).strip()):
             counterparty = m.group(1).strip()
             break
 
@@ -343,9 +357,18 @@ def try_raw_document(deal, endpoint, stats):
     parsed = extract_from_raw_doc(raw, deal["corp_name"], direction_hint)
     if not parsed:
         print(f"  원문은 받았으나 파싱 실패: {deal['corp_name']} {deal['rcept_no']} (len={len(raw)})")
+        # 임시 진단: 왜 실패했는지 확인할 수 있게 핵심 라벨 주변 원문 일부를 남긴다.
+        txt = strip_tags(raw)
+        i = txt.find("회사명")
+        j = txt.find("금액")
+        deal["raw_probe"] = {"len": len(txt), "head": txt[:200],
+                             "near_corp": txt[max(i, 0):max(i, 0) + 250] if i >= 0 else None,
+                             "near_amt": txt[max(j - 60, 0):j + 200] if j >= 0 else None}
         return False
     deal.update(parsed)
     deal["source"] = "raw_document"
+    deal["raw_v"] = 2
+    deal.pop("raw_probe", None)
     stats["matched_raw"] += 1
     print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
     return True
@@ -493,6 +516,15 @@ def main():
         # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
         # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
         has_detail = bool(d.get("summary"))
+        if d.get("source") == "raw_document" and d.get("raw_v") != 2:
+            ep = route(d)
+            if ep and try_raw_document(d, ep, stats):
+                d["detail_done"] = True
+            else:
+                for k in ("summary", "target", "buyer", "seller", "amount", "direction", "note", "source"):
+                    d.pop(k, None)
+                d["raw_retried"] = True
+            continue
         # 원문 파싱 보완책이 생기기 전에 '상세 API 없음/포기'로 닫힌 타법인 주식 건은 한 번 다시 연다.
         if (not has_detail and d.get("no_detail_api") and d["category"] == "타법인 주식 취득·처분"
                 and d.get("source") != "raw_document" and not d.get("raw_retried")):
