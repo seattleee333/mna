@@ -8,6 +8,7 @@
    "KBC광주방송",
    "KBS 뉴스",
    "MTN 머니투데이방송",
+   "donga.com",
    "hani.co.kr",
    "hidomin.com",
    "inews24.com",
@@ -41,7 +42,7 @@
    "한국M&A경제신문",
    "헤럴드경제"
   ],
-  "outlet_count": 37,
+  "outlet_count": 38,
   "first_seen": "20260929",
   "last_seen": "20261001"
  },
@@ -52,6 +53,7 @@
    "edaily.co.kr",
    "fnnews.com",
    "newsis.com",
+   "nongaek.com",
    "v.daum.net",
    "논객닷컴",
    "뉴스1",
@@ -61,7 +63,7 @@
    "전자신문",
    "파이낸셜뉴스"
   ],
-  "outlet_count": 11,
+  "outlet_count": 12,
   "first_seen": "20260930",
   "last_seen": "20261001"
  },
@@ -90,6 +92,7 @@
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Ja3owS1E1MTZ4RTNwZC1yV1R4azNxZllDY2NsYjlwbklQWnRJN2d0X0RqZXJna0JNXzlsdE1BSlY0Z3BVZ1hkcVlqbWVwVHh0ZjhDODZnUkVjZzU1U2lwZ2FfOTdUUnZadURJ0gFvQVVfeXFMT2QyY01UbV91Qm1JN21BNTdUUkYzc2tsSEowWkZXa1N0WWxxcEV3MUM2LVJtOFQwNTJtTGNqSlNCaHlYQ20tNkd3NkxlN2NCaXp4MVVtUFVPYUw5dF90b1hUTmwxYVBoWkdtbS1rUTJv?oc=5",
   "sources": [
    "insnews.co.kr",
+   "koreareport.co.kr",
    "news2day.co.kr",
    "글로벌경제신문",
    "뉴스1",
@@ -100,7 +103,7 @@
    "한국보험신문",
    "한국일보"
   ],
-  "outlet_count": 10,
+  "outlet_count": 11,
   "first_seen": "20261001",
   "last_seen": "20261001"
  },
@@ -123,6 +126,23 @@
   "last_seen": "20261001"
  },
  {
+  "title": "운용사 18곳, 의무공개매수 본회의 보류 요구…\"일반주주 매각기회 차별\" - 뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1kTG0wRWRFcE1fc2gtVVY3cW1JSldHUXFGb1JETEdrSzh4ckdnWnp6WUNpbU9WTXdfd2Z5TjM3dThqQVlLSms4TU1Cakg4bmNIZUI0elBkZXlnNWxQN3hvYWt2NjXSAWRBVV95cUxNZExtMEVkRXBNX3NoLVVWN3FtSUpXR1FxRm9SRExHa0s4eHJHZ1p6ellDaW1PVk13X3dmeU4zN3U4akFZS0prOE1NQmpIOG5jSGVCNHpQZGV5ZzVsUDd4b2FrdjY1?oc=5",
+  "sources": [
+   "view.nate.com",
+   "네이트뷰",
+   "뉴스1",
+   "마이데일리",
+   "메디컬투데이",
+   "비즈워치",
+   "스마트투데이",
+   "연합뉴스"
+  ],
+  "outlet_count": 8,
+  "first_seen": "20260929",
+  "last_seen": "20261001"
+ },
+ {
   "title": "5개 종목 M&A 정보 입수 200억 ‘꿀꺽’…명문대 출신 '정보카르텔' 덜미(종합) - 뉴스1",
   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MVnREbGVZWDVtWFVpbkZRdVlNM1NhOF90ZUVGdDlsSUxVNjA2TGJXZmhXdGFmeGlEWkItdkxoNVNGb05DaUVEUUJ3U0t0cFl2cnphSjVaaTFQYTZUMEdB0gFkQVVfeXFMTVI0NmVFRXZyVXNKN3BuMjNGU1ZmUW1vZV8zQmE0dmVpX3N0NzhPMF9jVDd6dU9IbUd3Q2dmODNra1BfTVRWVEVIWkVvVVlmb0RaZl9ESmR0REFiOXN6TVVlRmE2eA?oc=5",
   "sources": [
@@ -133,22 +153,6 @@
    "디지털데일리",
    "리드경제",
    "한국일보"
-  ],
-  "outlet_count": 7,
-  "first_seen": "20260929",
-  "last_seen": "20261001"
- },
- {
-  "title": "운용사 18곳, 의무공개매수 본회의 보류 요구…\"일반주주 매각기회 차별\" - 뉴스1",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1kTG0wRWRFcE1fc2gtVVY3cW1JSldHUXFGb1JETEdrSzh4ckdnWnp6WUNpbU9WTXdfd2Z5TjM3dThqQVlLSms4TU1Cakg4bmNIZUI0elBkZXlnNWxQN3hvYWt2NjXSAWRBVV95cUxNZExtMEVkRXBNX3NoLVVWN3FtSUpXR1FxRm9SRExHa0s4eHJHZ1p6ellDaW1PVk13X3dmeU4zN3U4akFZS0prOE1NQmpIOG5jSGVCNHpQZGV5ZzVsUDd4b2FrdjY1?oc=5",
-  "sources": [
-   "view.nate.com",
-   "네이트뷰",
-   "뉴스1",
-   "마이데일리",
-   "메디컬투데이",
-   "비즈워치",
-   "스마트투데이"
   ],
   "outlet_count": 7,
   "first_seen": "20260929",
@@ -168,6 +172,22 @@
   ],
   "outlet_count": 7,
   "first_seen": "20260930",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "M&A 내부정보로 200억 챙긴 ‘정보카르텔’ 덜미…합동대응단, 20여곳 압수수색 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5USXZMM3J4alJfdHo3U2I5aVVhb2FEQUxkbFZVOFBtdThkRjNaamxJNTg1dHFlSGtqWmNlU25Jd0k5QjNCWGJTakwwbXYzYVE?oc=5",
+  "sources": [
+   "dt.co.kr",
+   "ichannela.com",
+   "v.daum.net",
+   "경기일보",
+   "뉴스인",
+   "인더뉴스",
+   "채널A 뉴스"
+  ],
+  "outlet_count": 7,
+  "first_seen": "20260929",
   "last_seen": "20261001"
  },
  {
@@ -275,6 +295,34 @@
   "last_seen": "20261001"
  },
  {
+  "title": "서울대 경영동아리 인맥 따라 퍼진 M&A 정보…200억 이상 부당이득 혐의 - 코리아리포트",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1iSTB4bFNhM3hkRW5KVkQ2dkE0YWJyQ0ZQejZpcDRPNWVKUXBFWGpTNjE1d25wYmdsel9mWWl1MFk1OHJTMXhQVmZhdUxEREY2MEtISXM5Yi1FcjAydDQ2dFJOa190aFh4R3ZQV2lKZ3I?oc=5",
+  "sources": [
+   "koreareport.co.kr",
+   "뉴닉",
+   "브릿지경제",
+   "인더스트리뉴스",
+   "코리아리포트"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20260929",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "동원그룹, 화장품 '참존' 인수 추진 … 사업 카테고리 확장 - 뉴데일리",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1sZnNnVXFBSEdZTHY3YUhROFA0Yy1SR3BvenR2RDR1TE9nd25wLVpvdGlTWUR1NlF0Nk4zWnNhbGV2ZHpfdUtYdHZ6MFZmdVZsUXV6TnZWS05PUlI5X2dPeXlReEUwSUxXUWxiS05zdkdnOHE0d2t3N19aRdIBgAFBVV95cUxNSnNFdkJ3UjEwSEduT21hb19NdDNETUhJcnh6ME4zb1RUUDd4WVhCMlltS0o5cG4tZFB3cHA0dFl3WThJaXN2Rl9kcVNxU1VlSnhRVndQX1BaUE9ZZ3VDOUJOUGlBUWdPZUhZN294dVhqVjBlcUJ0NV9fRDJqRlRydA?oc=5",
+  "sources": [
+   "뉴데일리",
+   "마이데일리",
+   "매일일보",
+   "청년일보",
+   "파이낸셜뉴스"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
   "title": "한화생명 이사회, '애큐온캐피탈' 경영권 인수 안건 의결…한화투자증권 유상증자 참여도 - 스포츠조선",
   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Eb0ZzTkVVYVRVcXFCQXdwRlRtOWZSRDJiYVZuRXZva0xEM25EZTF3dVo1blh0RTBaOXpLWXlySjkyNXFQZmd1UG5naGtCOEttYkI5V2U5d1lvRXFvNXFZMG9kcDR6a3JLMlV6QmZTbnM0OGpZZVpQYw?oc=5",
   "sources": [
@@ -327,19 +375,6 @@
   "last_seen": "20261001"
  },
  {
-  "title": "서울대 경영동아리 인맥 따라 퍼진 M&A 정보…200억 이상 부당이득 혐의 - 코리아리포트",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1iSTB4bFNhM3hkRW5KVkQ2dkE0YWJyQ0ZQejZpcDRPNWVKUXBFWGpTNjE1d25wYmdsel9mWWl1MFk1OHJTMXhQVmZhdUxEREY2MEtISXM5Yi1FcjAydDQ2dFJOa190aFh4R3ZQV2lKZ3I?oc=5",
-  "sources": [
-   "뉴닉",
-   "브릿지경제",
-   "인더스트리뉴스",
-   "코리아리포트"
-  ],
-  "outlet_count": 4,
-  "first_seen": "20260929",
-  "last_seen": "20261001"
- },
- {
   "title": "M&A 정보 빼돌려 200억 꿀꺽…명문대 경영동아리 출신 세력 적발 - 머니투데이 - 머니투데이",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qYm1idDFDYjcyT2lIMzNfaS1hY0xhNjh6MHRDMXRzcmpNTndXTmlCV2FFTkpKcmdqV2pyU2NmT2VXSnY1VzFjVEdobTBjVVozX3JRZkt3ZUcwM251OVMtYkJ5Z1FaT0tZ0gFuQVVfeXFMT3REWGt3QU0zOW1vTENTTm9TSF9TYTd0ZzctYnhSZWdoZnBVcG9ZejlHd2w1Rm1KSWNvQ2JXSU11bVJYSDRfWk9yZzdqVURHbTFNeDBMZzdsdkNfLXA2b0VUV1RlOUlPNktCVVhqd1E?oc=5",
   "sources": [
@@ -353,16 +388,42 @@
   "last_seen": "20261001"
  },
  {
-  "title": "동원그룹, 화장품 '참존' 인수 추진 … 사업 카테고리 확장 - 뉴데일리",
-  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1sZnNnVXFBSEdZTHY3YUhROFA0Yy1SR3BvenR2RDR1TE9nd25wLVpvdGlTWUR1NlF0Nk4zWnNhbGV2ZHpfdUtYdHZ6MFZmdVZsUXV6TnZWS05PUlI5X2dPeXlReEUwSUxXUWxiS05zdkdnOHE0d2t3N19aRdIBgAFBVV95cUxNSnNFdkJ3UjEwSEduT21hb19NdDNETUhJcnh6ME4zb1RUUDd4WVhCMlltS0o5cG4tZFB3cHA0dFl3WThJaXN2Rl9kcVNxU1VlSnhRVndQX1BaUE9ZZ3VDOUJOUGlBUWdPZUhZN294dVhqVjBlcUJ0NV9fRDJqRlRydA?oc=5",
+  "title": "현대모비스, 램프사업 6000억원에 매각...내년 4월 물적분할 - ngetnews.com",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82SWVtZmdTV0twbEltZnRra3VVcjBNa21OejN4SVJFbEEzQUFZeU5hTXRSbmJVS2NOakZodU14MDNTa2dPQTJ2bXFfWlo1a2VBWk42b2hQQy15SzVlblNEMkpNblFmRkYzU3Ew?oc=5",
   "sources": [
-   "뉴데일리",
-   "매일일보",
-   "청년일보",
-   "파이낸셜뉴스"
+   "ebn.co.kr",
+   "ngetnews.com",
+   "ziksir.com",
+   "직썰"
   ],
   "outlet_count": 4,
   "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "동원, 참존 인수 추진… 새 먹거리로 뷰티 키운다 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2cEZoTTc4R1NPNk5kcXFEYzVUSkVDRXJTSE90b3Vod2VKNFBKQTE3RFpEZ2F1TzNRbElLWVBuTGRZd3F3dFp2dWtqRmVLc3JYVnFMRA?oc=5",
+  "sources": [
+   "donga.com",
+   "v.daum.net",
+   "동아일보",
+   "중앙일보"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "[K게임 파고든 차이나머니] 20년 전 액토즈처럼…위메이드에 다시 들어온 中 '미르 자본' - 딜사이트",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05MDFzOHRTN0N2SnY5VlQtbUFhRVg0T0Zia08zQmZWXzFwM0RCZ2YzVDBPbkR4aDUwY0VXLUhtdmNEakpiUzFfY3RMMVFDMlE?oc=5",
+  "sources": [
+   "Naver Blog",
+   "blog.naver.com",
+   "dealsite.co.kr",
+   "딜사이트"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20260930",
   "last_seen": "20261001"
  },
  {
@@ -372,30 +433,6 @@
    "동행미디어 시대",
    "메가경제",
    "이투데이"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "현대모비스, 램프사업 6000억원에 매각...내년 4월 물적분할 - ngetnews.com",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82SWVtZmdTV0twbEltZnRra3VVcjBNa21OejN4SVJFbEEzQUFZeU5hTXRSbmJVS2NOakZodU14MDNTa2dPQTJ2bXFfWlo1a2VBWk42b2hQQy15SzVlblNEMkpNblFmRkYzU3Ew?oc=5",
-  "sources": [
-   "ebn.co.kr",
-   "ngetnews.com",
-   "직썰"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "동원, 참존 인수 추진… 새 먹거리로 뷰티 키운다 - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2cEZoTTc4R1NPNk5kcXFEYzVUSkVDRXJTSE90b3Vod2VKNFBKQTE3RFpEZ2F1TzNRbElLWVBuTGRZd3F3dFp2dWtqRmVLc3JYVnFMRA?oc=5",
-  "sources": [
-   "v.daum.net",
-   "동아일보",
-   "중앙일보"
   ],
   "outlet_count": 3,
   "first_seen": "20261001",
@@ -480,18 +517,6 @@
    "Chosunbiz",
    "biz.chosun.com",
    "mt.co.kr"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20260930",
-  "last_seen": "20261001"
- },
- {
-  "title": "[K게임 파고든 차이나머니] 20년 전 액토즈처럼…위메이드에 다시 들어온 中 '미르 자본' - 딜사이트",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05MDFzOHRTN0N2SnY5VlQtbUFhRVg0T0Zia08zQmZWXzFwM0RCZ2YzVDBPbkR4aDUwY0VXLUhtdmNEakpiUzFfY3RMMVFDMlE?oc=5",
-  "sources": [
-   "Naver Blog",
-   "dealsite.co.kr",
-   "딜사이트"
   ],
   "outlet_count": 3,
   "first_seen": "20260930",
@@ -591,6 +616,30 @@
   ],
   "outlet_count": 3,
   "first_seen": "20260929",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "현대모비스, 램프사업 6000억에 매각…佛 OP모빌리티와 본계약(종합) - 뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2cXRFUnNHcmRFa19zYUpycUU2Z1g0Qk1rYUxNYzBCYXJiVWdtVnpyNi05b0V5VU9XMnZmYVhXa3dvald0M0gycmxRbzdDdml3M1hjSnotYk5OZHp2QzFkM3BGa0dVd9IBZkFVX3lxTFB2cXRFUnNHcmRFa19zYUpycUU2Z1g0Qk1rYUxNYzBCYXJiVWdtVnpyNi05b0V5VU9XMnZmYVhXa3dvald0M0gycmxRbzdDdml3M1hjSnotYk5OZHp2QzFkM3BGa0dVdw?oc=5",
+  "sources": [
+   "뉴스1",
+   "뉴스저널리즘",
+   "메가경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "동원, K-뷰티 사업 뛰어든다…1세대 기업 참존 인수 추진 - 헤럴드경제",
+  "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOX3B4OVYzTkFoM216OGdvVTdIeDF1bWhiZjJ2RzVYalRpcG12UEs1aWZ4SnFVblpxdnVuYnNUR1Y4MzB4VElqak1uVm5ReEwyR1k4Q3RvUQ?oc=5",
+  "sources": [
+   "mbiz.heraldcorp.com",
+   "v.daum.net",
+   "헤럴드경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261001",
   "last_seen": "20261001"
  },
  {
@@ -731,17 +780,6 @@
   "sources": [
    "Calgary Roughnecks",
    "calgaryroughnecks.com"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "현대모비스, 램프사업 6000억에 매각…佛 OP모빌리티와 본계약(종합) - 뉴스1",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2cXRFUnNHcmRFa19zYUpycUU2Z1g0Qk1rYUxNYzBCYXJiVWdtVnpyNi05b0V5VU9XMnZmYVhXa3dvald0M0gycmxRbzdDdml3M1hjSnotYk5OZHp2QzFkM3BGa0dVd9IBZkFVX3lxTFB2cXRFUnNHcmRFa19zYUpycUU2Z1g0Qk1rYUxNYzBCYXJiVWdtVnpyNi05b0V5VU9XMnZmYVhXa3dvald0M0gycmxRbzdDdml3M1hjSnotYk5OZHp2QzFkM3BGa0dVdw?oc=5",
-  "sources": [
-   "뉴스1",
-   "뉴스저널리즘"
   ],
   "outlet_count": 2,
   "first_seen": "20261001",
@@ -1243,17 +1281,6 @@
   "last_seen": "20261001"
  },
  {
-  "title": "동원, K-뷰티 사업 뛰어든다…1세대 기업 참존 인수 추진 - 헤럴드경제",
-  "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOX3B4OVYzTkFoM216OGdvVTdIeDF1bWhiZjJ2RzVYalRpcG12UEs1aWZ4SnFVblpxdnVuYnNUR1Y4MzB4VElqak1uVm5ReEwyR1k4Q3RvUQ?oc=5",
-  "sources": [
-   "v.daum.net",
-   "헤럴드경제"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
   "title": "애큐온 인수 나선 한화생명…‘한화금융’ 사업 영역 확대 - 라이센스뉴스",
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OSG1mNVlhc1Uwb2FVak9FeWNCdmZ0cU5mWmlubi1uUHNSUl8xa3hqNEYxYjlINTBneE15ODlzZGM2TFU5cDFrY0FNVVRPR1ZDQjNQT3VMZFhTUnJpdm9Kc3NLQ2N1eWVKbjFV?oc=5",
   "sources": [
@@ -1295,6 +1322,94 @@
   ],
   "outlet_count": 2,
   "first_seen": "20260930",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "BS 계열사 부당지원 혐의···70억원대 저가 지분 매각 - 더리포트",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nb1EtQVNPSVFuNWpBRmdRMEVrNnpvOTV0WE5IcnJ3d0N5NERJa2J1d3NLZHhOVGg0Qm02ZTAxZ1lkU2Y3ZTFpQkZPNnMyTUh2eDVwN1k4cVVFWUFsRndQX3FuWGsxYkdtbHd1dnF3?oc=5",
+  "sources": [
+   "thereport.co.kr",
+   "더리포트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "위메이드에 민주노총 노조 설립…“대주주 변경 따른 구조조정 반대” - 디일렉",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzZWZSZDNjTm8xUzE5UWxTQ1BFbEdNS2hYdHdTOTB3Ynp5V3ZZb2FTa2c2elNnX2RRc3EwaG1hSENVd0FINkgtcmQweDRDbzhtSmZZVFB0SFRHUms5bWVyWGlSTDFhUQ?oc=5",
+  "sources": [
+   "thelec.kr",
+   "디일렉"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "현대모비스, ‘매출 1조’ 램프사업 매각 확정…내년 4월 佛 OP모빌리티 품으로 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB3Q3UzQkk3Q2tEX1BGRXBqb1Z5Tjg0UGtEUDJac3NWQkpWSVBrdkxGQ1VCTS1BLTFGSktFQXI4SWZfWkNBaWdlMjVPbEFMSmdQWlk0OQ?oc=5",
+  "sources": [
+   "mbiz.heraldcorp.com",
+   "v.daum.net"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "인수합병 - TradingView",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6WXNnRzYydHpNRUwweUhjNFg5eUhXbm43NHh1TzcxbElNM1gtSUxIRlpDQ3ZRSGNnVGdidlIwVTFPNDNsZEVfS3ZXeHZfZDZGUUV3OW4tQ2ZEZlJuMG01OXBPX3AtcW5OYTF4cjBwVkVyRWNlZ1VBVA?oc=5",
+  "sources": [
+   "TradingView",
+   "es.tradingview.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260930",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "[속보] '금융 엘리트' 200억 이상 부당이득 적발…'정보 카르텔' 수년간 미공개 인수·합병 정보 공유 - 이코노미스트",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fTWRQYWhUbDdzWnMyem03cFB6b2xWSlBIdXRYbjdFY0FwaEF3bENrZElMcHRXV1N1STdtZFdKSEFRWm94N0VCSjBObnprZEhLV1RoMzZHekgtYk5ncm9qSTVn?oc=5",
+  "sources": [
+   "economist.co.kr",
+   "이코노미스트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "화면의 안내 순서대로 익히는 세븐 777 랜드 게임 첫 조작 - calgaryroughnecks.com",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaU9Rc29BbnBjZU0tQlMzeGJmMXlfcEhENXBGZWFNcnpCcDczU3B2R3p4SEdwQmtkQlI4Q09kMFF3cncycmd3X1BiODdrdDFqREJfT3owYTFSOE8xZWRNa25acXk1T01sMXpvU1loU3pGQ2lQLVdLclUwSXRDUWFkVm5FSWt4LXkyRXZucS1vNnU4Y1BISHpPbDJiRHdtZWRoOFNlN2hkbGFVUVcybjJmd3FmbGN6VTQxeDExRFlB?oc=5",
+  "sources": [
+   "Calgary Roughnecks",
+   "calgaryroughnecks.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "마지막 단추 끼운 파라마운트-워너 합병…美법원이 합의안 승인 - 연합뉴스 한민족센터",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vQ2REY3ZIdV9lUnZqQ1J5RlFOTEp4MUIxaWtmN3ByaTB5Nmh5bUdlVEg3UGtERkNBR0M2TzMwTmdPbkJFNlJXUG5OTVpuQmNhMmhCa2E2VzNndS0wdUdoT2RMbExPOVdYeUhqU0U1Z1lrY05P?oc=5",
+  "sources": [
+   "koreancenter.or.kr",
+   "연합뉴스 한민족센터"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "이숲·투트랙, 이커머스 셀러 매각·인수 콘텐츠 협력 MOU - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQdIBckFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQQ?oc=5",
+  "sources": [
+   "mt.co.kr",
+   "머니투데이"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20260929",
   "last_seen": "20261001"
  },
  {
@@ -1818,30 +1933,10 @@
   "last_seen": "20261001"
  },
  {
-  "title": "BS 계열사 부당지원 혐의···70억원대 저가 지분 매각 - 더리포트",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nb1EtQVNPSVFuNWpBRmdRMEVrNnpvOTV0WE5IcnJ3d0N5NERJa2J1d3NLZHhOVGg0Qm02ZTAxZ1lkU2Y3ZTFpQkZPNnMyTUh2eDVwN1k4cVVFWUFsRndQX3FuWGsxYkdtbHd1dnF3?oc=5",
-  "sources": [
-   "더리포트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
   "title": "중국 자본에 매각된 위메이드, 노조 생겼다 - 조선일보",
   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMU9ScWRsZGVjTEJaQ0c1YUJkRDZMcktMcldfdmtDWldKUGJ2VnN2ZlpkQURsOWhrX2FxbzVPQmdFX2NPRU85Rk51MDh0d0NxRkhaXzlhWTNuOEVBZElsMjZYdWZoZExtZmp0Z09MZE40aWZSekp1MHdIcldBLXRNaWxLNA?oc=5",
   "sources": [
    "조선일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "위메이드에 민주노총 노조 설립…“대주주 변경 따른 구조조정 반대” - 디일렉",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzZWZSZDNjTm8xUzE5UWxTQ1BFbEdNS2hYdHdTOTB3Ynp5V3ZZb2FTa2c2elNnX2RRc3EwaG1hSENVd0FINkgtcmQweDRDbzhtSmZZVFB0SFRHUms5bWVyWGlSTDFhUQ?oc=5",
-  "sources": [
-   "디일렉"
   ],
   "outlet_count": 1,
   "first_seen": "20261001",
@@ -1882,16 +1977,6 @@
   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1xdkJ2YkUtbFFDVkpWWHY4MjdoQUtfMm04ek9kRkFEclV4Z0lzcXBrcWFrWUwtUFYxaE5MN0NfNVdRejBUem5yaTJvZ2xjWGJfS1NCR1RyQjQzaUJQamtJ?oc=5",
   "sources": [
    "조세일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "현대모비스, ‘매출 1조’ 램프사업 매각 확정…내년 4월 佛 OP모빌리티 품으로 - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB3Q3UzQkk3Q2tEX1BGRXBqb1Z5Tjg0UGtEUDJac3NWQkpWSVBrdkxGQ1VCTS1BLTFGSktFQXI4SWZfWkNBaWdlMjVPbEFMSmdQWlk0OQ?oc=5",
-  "sources": [
-   "v.daum.net"
   ],
   "outlet_count": 1,
   "first_seen": "20261001",
@@ -1962,16 +2047,6 @@
   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY051eWFyNEltYnpLb2duOFk4QTNpRUdfWGs5SjFKYU84SmluenMzNkhZUFdvVXdEZ1lCSGRPT3hwTzBSLVJKZzBoak93WlNVcmVHanBqaW5XRlFiRkVDZWpKQ1gtYmUycFVEU1kyVFhCX0M5ejJLX2xZU0FZc0NaZDM2Q1NGbGhjT054NUpMZFVENjFx0gGUAUFVX3lxTFBjTnV5YXI0SW1iektvZ244WThBM2lFR19YazlKMUphTzhKaW56czM2SFlQV29Vd0RnWUJIZE9PeHBPMFItUkpnMGhqT3daU1VyZUdqcGppbldGUWJGRUNlakpDWC1iZTJwVURTWTJUWEJfQzl6MktfbFlTQVlzQ1pkMzZDU0ZsaGNPTng1SkxkVUQ2MXE?oc=5",
   "sources": [
    "simplywall.st"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930",
-  "last_seen": "20261001"
- },
- {
-  "title": "인수합병 - TradingView",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6WXNnRzYydHpNRUwweUhjNFg5eUhXbm43NHh1TzcxbElNM1gtSUxIRlpDQ3ZRSGNnVGdidlIwVTFPNDNsZEVfS3ZXeHZfZDZGUUV3OW4tQ2ZEZlJuMG01OXBPX3AtcW5OYTF4cjBwVkVyRWNlZ1VBVA?oc=5",
-  "sources": [
-   "TradingView"
   ],
   "outlet_count": 1,
   "first_seen": "20260930",
@@ -2112,16 +2187,6 @@
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RUDJCLWpRaTZDa1ZTZnMtSHVTcnpjR1FpMF9ZdFNsN1Q1aTBxcEQwYmlaRHdDeWxLZ0JTUW1aYXpZV0F3UHpuNE53d2VHUjE3WTRMN1Nn?oc=5",
   "sources": [
    "지디넷코리아"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260929",
-  "last_seen": "20261001"
- },
- {
-  "title": "[속보] '금융 엘리트' 200억 이상 부당이득 적발…'정보 카르텔' 수년간 미공개 인수·합병 정보 공유 - 이코노미스트",
-  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fTWRQYWhUbDdzWnMyem03cFB6b2xWSlBIdXRYbjdFY0FwaEF3bENrZElMcHRXV1N1STdtZFdKSEFRWm94N0VCSjBObnprZEhLV1RoMzZHekgtYk5ncm9qSTVn?oc=5",
-  "sources": [
-   "이코노미스트"
   ],
   "outlet_count": 1,
   "first_seen": "20260929",
@@ -2298,30 +2363,10 @@
   "last_seen": "20261001"
  },
  {
-  "title": "화면의 안내 순서대로 익히는 세븐 777 랜드 게임 첫 조작 - calgaryroughnecks.com",
-  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaU9Rc29BbnBjZU0tQlMzeGJmMXlfcEhENXBGZWFNcnpCcDczU3B2R3p4SEdwQmtkQlI4Q09kMFF3cncycmd3X1BiODdrdDFqREJfT3owYTFSOE8xZWRNa25acXk1T01sMXpvU1loU3pGQ2lQLVdLclUwSXRDUWFkVm5FSWt4LXkyRXZucS1vNnU4Y1BISHpPbDJiRHdtZWRoOFNlN2hkbGFVUVcybjJmd3FmbGN6VTQxeDExRFlB?oc=5",
-  "sources": [
-   "calgaryroughnecks.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
   "title": "한화시스템, 美 조선소 정리…재무 강화 글쎄[더시그널] - 한스경제",
   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqUlMzVXJVQk01WlU0RWd6ZkdPVXh0VWxiZUdSbUpOV0dwR0R2Q0NzSF9HOU9hNmxrMkE2aDdMV29TYzZaLXRSRURVNllOYUlwWUFFTU5ISVQ1VllZQzJqUjE3Wk84dzBrVGpUMkhDd9IBb0FVX3lxTFBqUlMzVXJVQk01WlU0RWd6ZkdPVXh0VWxiZUdSbUpOV0dwR0R2Q0NzSF9HOU9hNmxrMkE2aDdMV29TYzZaLXRSRURVNllOYUlwWUFFTU5ISVQ1VllZQzJqUjE3Wk84dzBrVGpUMkhDdw?oc=5",
   "sources": [
    "한스경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261001"
- },
- {
-  "title": "마지막 단추 끼운 파라마운트-워너 합병…美법원이 합의안 승인 - 연합뉴스 한민족센터",
-  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vQ2REY3ZIdV9lUnZqQ1J5RlFOTEp4MUIxaWtmN3ByaTB5Nmh5bUdlVEg3UGtERkNBR0M2TzMwTmdPbkJFNlJXUG5OTVpuQmNhMmhCa2E2VzNndS0wdUdoT2RMbExPOVdYeUhqU0U1Z1lrY05P?oc=5",
-  "sources": [
-   "연합뉴스 한민족센터"
   ],
   "outlet_count": 1,
   "first_seen": "20261001",
@@ -2352,6 +2397,16 @@
   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhdGNwV19BY3NpR0ZNSmtfMGpXOHFKQTFIOGQ1dWQxeHRMaDBTU1FnT3piQndJOXRwcENlSl9KTjFxbnFrX1JlV180T0lnZFQ2Z2pveG84cXFwRWlUdkE?oc=5",
   "sources": [
    "뉴스투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261001",
+  "last_seen": "20261001"
+ },
+ {
+  "title": "AI 퍼스트·M&A·신작에 힘쓴 크래프톤, 2분기 비용 111% 늘어…매출 상위 5개사 중 증가율 1위 - 필드뉴스",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1VGVMY3pLNW9Wc2J6b2VLSk9maDRMVmd1NUR2dkxIZ2JaVl80Y1dTZ0dkRnlDakNvRWI1SFlySk1jdy1WQTl3eEh0RU83YkY0LUwzYWQ3WkJqelk3eUo0X2ZfWmxTUjJtc1pLWtIBbEFVX3lxTFB1VGVMY3pLNW9Wc2J6b2VLSk9maDRMVmd1NUR2dkxIZ2JaVl80Y1dTZ0dkRnlDakNvRWI1SFlySk1jdy1WQTl3eEh0RU83YkY0LUwzYWQ3WkJqelk3eUo0X2ZfWmxTUjJtc1pLWg?oc=5",
+  "sources": [
+   "필드뉴스"
   ],
   "outlet_count": 1,
   "first_seen": "20261001",
@@ -2994,21 +3049,6 @@
   "last_seen": "20260929"
  },
  {
-  "title": "M&A 내부정보로 200억 챙긴 ‘정보카르텔’ 덜미…합동대응단, 20여곳 압수수색 - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5USXZMM3J4alJfdHo3U2I5aVVhb2FEQUxkbFZVOFBtdThkRjNaamxJNTg1dHFlSGtqWmNlU25Jd0k5QjNCWGJTakwwbXYzYVE?oc=5",
-  "sources": [
-   "dt.co.kr",
-   "v.daum.net",
-   "경기일보",
-   "뉴스인",
-   "인더뉴스",
-   "채널A 뉴스"
-  ],
-  "outlet_count": 6,
-  "first_seen": "20260929",
-  "last_seen": "20260929"
- },
- {
   "title": "비투엔 “앤씨앤 유증 납입 완료…경영권 인수 본격화” - 서울경제TV",
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iYjBYTlZiS1NodldVZ1hwTkk5NjNPQ2thUkt1bHcxVG9qUHFMdmc3UnFRTm1CVkxqc1I1bG1qb3d4RkFGLVFKb0RZUnZJTXBGY01vMkhtdFh6RDdqNGJZU01iMlY?oc=5",
   "sources": [
@@ -3536,17 +3576,6 @@
   "sources": [
    "Naver Blog",
    "blog.naver.com"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20260929",
-  "last_seen": "20260929"
- },
- {
-  "title": "이숲·투트랙, 이커머스 셀러 매각·인수 콘텐츠 협력 MOU - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQdIBckFVX3lxTFA5ald4YmJTUUI1YXFGbmJCUkRKMEo3cHRGNFpsaExQM0llVURDam80NEU0UTJvSm0zMHkwZTZoRnRVVkpEdFZOamtxNkFUNHYyV0FWbFpZUE5UdExzVkx0YnR3R2l5QnFBUnNYbGFtU0pMQQ?oc=5",
-  "sources": [
-   "mt.co.kr",
-   "머니투데이"
   ],
   "outlet_count": 2,
   "first_seen": "20260929",

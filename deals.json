@@ -140,7 +140,7 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (주주배정 유상증자 결정 철회)",
   "category": "유상증자",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930900853",
@@ -151,7 +151,7 @@
   "market": "K",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930900826",
@@ -174,7 +174,7 @@
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930900737",
@@ -185,7 +185,7 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (유상증자결정(주주배정후 실권주 일반공모) 철회)",
   "category": "유상증자",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930900692",
@@ -292,7 +292,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930801095",
@@ -327,7 +327,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930800880",
@@ -350,7 +350,7 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20260930800829",
