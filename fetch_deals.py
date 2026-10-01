@@ -258,14 +258,19 @@ def extract(endpoint, row, corp_name):
 # document.xml API는 접수번호만 있으면 접수 경로와 상관없이 공시 원문을 그대로
 # 돌려주므로, 이걸로 표준 서식 표를 직접 파싱해서 보완한다.
 
+_RAW_ERR = [""]
+
+
 def fetch_raw_document(rcept_no):
     """공시서류 원문(zip, 내부는 utf-8 html)을 받아 합쳐진 텍스트로 반환한다."""
     try:
         r = requests.get(BASE + "document.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept_no}, timeout=30)
         r.raise_for_status()
-    except requests.RequestException:
+    except requests.RequestException as e:
+        _RAW_ERR[0] = "request:" + type(e).__name__
         return None
     if not r.content.startswith(b"PK"):  # zip이 아니면(오류 JSON 등) 포기
+        _RAW_ERR[0] = "notzip:" + r.content[:160].decode("utf-8", errors="ignore").replace("\n", " ")
         return None
     try:
         zf = zipfile.ZipFile(io.BytesIO(r.content))
@@ -297,6 +302,13 @@ _CORP = r"(?:(?:주식회사|\(주\)|㈜)\s*)?" + _TOK + r"(?:\s*(?:주식회사
 _GENERIC = {"주식회사", "(주)", "㈜", "제3자", "-", ""}
 
 
+def _clean_name(name):
+    name = name.strip()
+    # 끝에 붙은 영문/약칭 병기 '(IDIENCE CO., LTD.)', '(GSHM)' 제거. '(주)'는 유지.
+    name = re.sub(r"\s*\((?=[^)]*[A-Za-z])[^)가-힣]*\)\s*$", "", name)
+    return name.strip()
+
+
 def _valid_name(name):
     if not name:
         return False
@@ -310,9 +322,21 @@ def extract_from_raw_doc(raw_html, corp_name, direction_hint):
     text = strip_tags(raw_html)
 
     target = None
-    m = re.search(r"회사명\s*\(국적\)\s*(" + _CORP + ")", text)
-    if m and _valid_name(m.group(1).strip()):
-        target = m.group(1).strip()
+    cands = []
+    m = re.search(r"회사명\s+(.{2,100}?)\s+국적\s", text)           # 거래소 접수 서식
+    if m:
+        cands.append(m.group(1))
+    m = re.search(r"회사명\s*\(국적\)\s*(.{2,100}?)\s*[\(（]\s*(?:대한민국|[가-힣]{2,6})\s*[\)）]", text)  # 금융위 서식
+    if m:
+        cands.append(m.group(1))
+    m = re.search(r"회사명\s*\(국적\)\s*(" + _CORP + ")", text)   # 마지막 보루(기존 방식)
+    if m:
+        cands.append(m.group(1))
+    for c in cands:
+        c = _clean_name(c)
+        if _valid_name(c):
+            target = c
+            break
 
     counterparty = None
     for pat in [r"거래상대방\s*[:：]\s*(" + _CORP + ")",
@@ -352,7 +376,8 @@ def try_raw_document(deal, endpoint, stats):
     direction_hint = "양수" if endpoint == "otcprStkInvscrInhDecsn" else "양도"
     raw = fetch_raw_document(deal["rcept_no"])
     if not raw:
-        print(f"  원문 자체를 못 받음: {deal['corp_name']} {deal['rcept_no']}")
+        print(f"  원문 자체를 못 받음: {deal['corp_name']} {deal['rcept_no']} ({_RAW_ERR[0]})")
+        deal["raw_probe"] = {"fetch_failed": _RAW_ERR[0]}
         return False
     parsed = extract_from_raw_doc(raw, deal["corp_name"], direction_hint)
     if not parsed:
@@ -367,7 +392,7 @@ def try_raw_document(deal, endpoint, stats):
         return False
     deal.update(parsed)
     deal["source"] = "raw_document"
-    deal["raw_v"] = 2
+    deal["raw_v"] = 3
     deal.pop("raw_probe", None)
     stats["matched_raw"] += 1
     print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
@@ -516,19 +541,19 @@ def main():
         # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
         # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
         has_detail = bool(d.get("summary"))
-        if d.get("source") == "raw_document" and d.get("raw_v") != 2:
+        if d.get("source") == "raw_document" and d.get("raw_v") != 3:
             ep = route(d)
             if ep and try_raw_document(d, ep, stats):
                 d["detail_done"] = True
             else:
                 for k in ("summary", "target", "buyer", "seller", "amount", "direction", "note", "source"):
                     d.pop(k, None)
-                d["raw_retried"] = True
+                d["raw_retried"] = 3
             continue
         # 원문 파싱 보완책이 생기기 전에 '상세 API 없음/포기'로 닫힌 타법인 주식 건은 한 번 다시 연다.
         if (not has_detail and d.get("no_detail_api") and d["category"] == "타법인 주식 취득·처분"
-                and d.get("source") != "raw_document" and not d.get("raw_retried")):
-            d["raw_retried"] = True
+                and d.get("source") != "raw_document" and d.get("raw_retried") != 3):
+            d["raw_retried"] = 3
             d.pop("no_detail_api", None)
             d["detail_attempts"] = 0
         if has_detail or d.get("no_detail_api"):
