@@ -257,6 +257,9 @@ def extract(endpoint, row, corp_name):
 # document.xml API는 접수번호만 있으면 접수 경로와 상관없이 공시 원문을 그대로
 # 돌려주므로, 이걸로 표준 서식 표를 직접 파싱해서 보완한다.
 
+RAW_DEBUG = []  # 임시 진단용 — 원인 파악 후 제거 예정
+
+
 def fetch_raw_document(rcept_no):
     """공시서류 원문(zip, 내부는 euc-kr html)을 받아 합쳐진 텍스트로 반환한다."""
     try:
@@ -398,6 +401,15 @@ def enrich(deal, cache, stats, diag_budget):
                 stats["matched_raw"] += 1
                 print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
                 return True
+            else:
+                RAW_DEBUG.append({
+                    "rcept_no": deal["rcept_no"], "corp_name": deal["corp_name"],
+                    "raw_len": len(raw), "stripped_sample": strip_tags(raw)[:3000],
+                })
+                print(f"  원문은 받았으나 파싱 실패: {deal['corp_name']} {deal['rcept_no']} (len={len(raw)})")
+        else:
+            RAW_DEBUG.append({"rcept_no": deal["rcept_no"], "corp_name": deal["corp_name"], "raw": None})
+            print(f"  원문 자체를 못 받음: {deal['corp_name']} {deal['rcept_no']}")
 
     # 원인 진단용: 실행당 최대 2건만, 훨씬 넓은(연간) 범위로 다시 조회해서
     # 이 회사가 이 상세 API에 애초에 데이터가 있기는 한지 확인해본다.
@@ -489,6 +501,9 @@ def main():
     deals = sorted(existing.values(), key=lambda d: (d["date"], d["rcept_no"]), reverse=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(deals, f, ensure_ascii=False, indent=1)
+    if RAW_DEBUG:
+        with open("_debug_raw.json", "w", encoding="utf-8") as f:
+            json.dump(RAW_DEBUG, f, ensure_ascii=False, indent=1)
     print(f"신규 {added}건 추가, 상세 처리 {filled}건, 전체 {len(deals)}건")
     print(f"상세 내역 - 채워짐:{stats['matched']} 원문보완:{stats['matched_raw']} 매칭실패:{stats['no_match']} "
           f"API없는유형:{stats['no_api']} API오류:{stats['api_error']} "

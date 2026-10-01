@@ -41,6 +41,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add deals.json news.json listings.json
+          if [ -f _debug_raw.json ]; then git add _debug_raw.json; fi
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else
