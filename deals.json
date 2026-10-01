@@ -1,5 +1,41 @@
 [
  {
+  "rcept_no": "20261001000367",
+  "date": "20261001",
+  "corp_code": "01046391",
+  "corp_name": "싸이토젠",
+  "stock_code": "217330",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20261001000343",
+  "date": "20261001",
+  "corp_code": "00530413",
+  "corp_name": "더코디",
+  "stock_code": "224060",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20261001000339",
+  "date": "20261001",
+  "corp_code": "01416642",
+  "corp_name": "다보링크",
+  "stock_code": "340360",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261001000311",
   "date": "20261001",
   "corp_code": "00176835",
@@ -32,7 +68,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261001000146",
