@@ -261,7 +261,7 @@ RAW_DEBUG = []  # 임시 진단용 — 원인 파악 후 제거 예정
 
 
 def fetch_raw_document(rcept_no):
-    """공시서류 원문(zip, 내부는 euc-kr html)을 받아 합쳐진 텍스트로 반환한다."""
+    """공시서류 원문(zip, 내부는 utf-8 html)을 받아 합쳐진 텍스트로 반환한다."""
     try:
         r = requests.get(BASE + "document.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept_no}, timeout=30)
         r.raise_for_status()
@@ -276,7 +276,11 @@ def fetch_raw_document(rcept_no):
     texts = []
     for name in zf.namelist():
         try:
-            texts.append(zf.read(name).decode("euc-kr", errors="ignore"))
+            raw_bytes = zf.read(name)
+            try:
+                texts.append(raw_bytes.decode("utf-8"))
+            except UnicodeDecodeError:
+                texts.append(raw_bytes.decode("euc-kr", errors="ignore"))
         except Exception:
             continue
     return "\n".join(texts) if texts else None
