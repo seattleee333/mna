@@ -1,5 +1,17 @@
 [
  {
+  "rcept_no": "20261001000311",
+  "date": "20261001",
+  "corp_code": "00176835",
+  "corp_name": "NH농우바이오",
+  "stock_code": "054050",
+  "market": "K",
+  "report_nm": "[첨부정정]주요사항보고서(영업양수결정)",
+  "category": "영업양수도",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261001000301",
   "date": "20261001",
   "corp_code": "00787057",
@@ -20,7 +32,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20261001000146",
@@ -197,7 +209,8 @@
   "note": null,
   "summary": "티움바이오가 보유 중이던 에스케이플라즈마 주식회사 지분을 에스케이디스커버리 주식회사에 93억원에 매각합니다.",
   "source": "raw_document",
-  "detail_done": true
+  "detail_done": true,
+  "raw_v": 2
  },
  {
   "rcept_no": "20260930900826",
@@ -229,7 +242,8 @@
   "note": null,
   "summary": "파인디앤씨가 VINA 지분을 136억원에 인수합니다.",
   "source": "raw_document",
-  "detail_done": true
+  "detail_done": true,
+  "raw_v": 2
  },
  {
   "rcept_no": "20260930900737",
@@ -263,7 +277,8 @@
   "amount": 7103825040,
   "note": null,
   "summary": "엑스페릭스가 보유 중이던 위드윈투자조합80호 지분을 제3자에 71억원에 매각합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260930900602",
@@ -366,9 +381,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3383,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 아이디언스 주식회사(IDIENCE CO., LTD.) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 이원식 \r\n \r\n \r\n 자본금(원) \r\n 21,058,286,000 \r\n 회사와 관계 \r\n 계열회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 50,863,588 \r\n 주요사업 \r\n 의약품의 임상, 지적재산권의 관리 및 라이센스업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 7,097,016 \r\n \r\n \r\n 취득금액(",
+   "near_amt": " 라이센스업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 7,097,016 \r\n \r\n \r\n 취득금액(원) \r\n 36,755,007,200 \r\n \r\n \r\n 자기자본(원) \r\n 239,513,589,413 \r\n \r\n \r\n 자기자본대비(%) \r\n 15.35 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 7,097,016 \r\n \r\n \r\n 지분비율(%) \r\n 13.95 \r\n \r\n \r\n"
+  }
  },
  {
   "rcept_no": "20260930801095",
@@ -403,9 +424,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 4347,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n (주)애큐온캐피탈(Acuon Capital Corporation) \r\n \r\n \r\n 국적 \r\n 대한민국(Republic of Korea) \r\n 대표자 \r\n 이중무 \r\n \r\n \r\n 자본금(원) \r\n 213,165,360,000 \r\n 회사와 관계 \r\n - \r\n \r\n \r\n 발행주식총수(주) \r\n 36,044,058 \r\n 주요사업 \r\n 여신전문금융업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 17,511,066 \r\n \r\n \r\n",
+   "near_amt": "전문금융업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 17,511,066 \r\n \r\n \r\n 취득금액(원) \r\n 440,000,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 16,623,385,088,855 \r\n \r\n \r\n 자기자본대비(%) \r\n 2.65 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 17,511,066 \r\n \r\n \r\n 지분비율(%) \r\n 50.54 \r\n \r\n"
+  }
  },
  {
   "rcept_no": "20260930800880",
@@ -430,9 +457,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3180,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 주식회사 에스비에스에이아이케이콘텐츠허브프로젝트위탁관리부동산투자회사(가칭) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n - \r\n \r\n \r\n 자본금(원) \r\n 5,000,000,000 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 1,000,000 \r\n 주요사업 \r\n 부동산개발 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 22,080,000 \r\n \r\n \r\n 취득금액(원) \r\n 110,400,",
+   "near_amt": "부동산개발 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 22,080,000 \r\n \r\n \r\n 취득금액(원) \r\n 110,400,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 1,298,196,823,993 \r\n \r\n \r\n 자기자본대비(%) \r\n 8.50 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 22,080,000 \r\n \r\n \r\n 지분비율(%) \r\n 99.28 \r\n \r\n "
+  }
  },
  {
   "rcept_no": "20260930800829",
@@ -485,9 +518,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3161,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n GLOBAL SHRE METAL (GSHM) \r\n \r\n \r\n 국적 \r\n 베트남 \r\n 대표자 \r\n 서재태 \r\n \r\n \r\n 자본금(원) \r\n 20,000,000,000 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 36,447,516 \r\n 주요사업 \r\n 희토류 사마륨(Sm) 금속 제조 및 판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 21,139,872 \r\n \r\n \r\n 취득금액(원) \r\n 11,6",
+   "near_amt": " 및 판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 21,139,872 \r\n \r\n \r\n 취득금액(원) \r\n 11,600,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 225,768,642,125 \r\n \r\n \r\n 자기자본대비(%) \r\n 5.14 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 21,139,872 \r\n \r\n \r\n 지분비율(%) \r\n 58.0 \r\n \r\n \r\n "
+  }
  },
  {
   "rcept_no": "20260930000823",
@@ -1030,11 +1069,12 @@
   "direction": "양도",
   "buyer": null,
   "seller": "넥스턴앤롤코리아",
-  "target": "대신",
+  "target": "대신-Y2HC",
   "amount": 12000000000,
   "note": null,
-  "summary": "넥스턴앤롤코리아가 보유 중이던 대신 지분을 제3자에 120억원에 매각합니다.",
-  "source": "raw_document"
+  "summary": "넥스턴앤롤코리아가 보유 중이던 대신-Y2HC 지분을 제3자에 120억원에 매각합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260929800986",
@@ -1085,9 +1125,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3818,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 코가스 캐나다 에너지 유한회사(KOGAS Canada Energy Ltd.) \r\n \r\n \r\n 국적 \r\n 캐나다(Canada) \r\n 대표자 \r\n 김진구 \r\n \r\n \r\n 자본금(원) \r\n 1,958,928,259,622 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 1,673,732,298 \r\n 주요사업 \r\n LNG 액화플랜트 운영 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 799,558,025 \r",
+   "near_amt": "트 운영 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 799,558,025 \r\n \r\n \r\n 취득금액(원) \r\n 767,040,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 10,798,925,298,790 \r\n \r\n \r\n 자기자본대비(%) \r\n 7.10 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n - \r\n \r\n \r\n 지분비율(%) \r\n 100 \r\n \r\n \r\n 4. 취득방법"
+  }
  },
  {
   "rcept_no": "20260929800727",
@@ -1098,9 +1144,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2655,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 주식회사 솔리더스인베스트먼트 \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 김정현 \r\n \r\n \r\n 자본금(원) \r\n 10,000,000,000 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 2,000,000 \r\n 주요사업 \r\n 기타 금융 투자업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 2,000,000 \r\n \r\n \r\n 처분금액(원) \r\n 30,728,000,000 \r\n \r\n \r\n 자기자",
+   "near_amt": "금융 투자업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 2,000,000 \r\n \r\n \r\n 처분금액(원) \r\n 30,728,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 594,627,233,516 \r\n \r\n \r\n 자기자본대비(%) \r\n 5.17 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n - \r\n \r\n \r\n 지분비율(%) \r\n 0 \r\n \r\n \r\n 4. 처분목적 \r\n 보"
+  }
  },
  {
   "rcept_no": "20260929800726",
@@ -1111,9 +1163,15 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
-  "raw_retried": true
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2890,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 주식회사 솔리더스인베스트먼트 \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 김정현 \r\n \r\n \r\n 자본금(원) \r\n 10,000,000,000 \r\n 회사와 관계 \r\n 계열회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 2,000,000 \r\n 주요사업 \r\n 기타 금융 투자업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 2,000,000 \r\n \r\n \r\n 취득금액(원) \r\n 30,728,000,000 \r\n \r\n \r\n 자기",
+   "near_amt": "금융 투자업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 2,000,000 \r\n \r\n \r\n 취득금액(원) \r\n 30,728,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 369,369,599,885 \r\n \r\n \r\n 자기자본대비(%) \r\n 8.32 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 2,000,000 \r\n \r\n \r\n 지분비율(%) \r\n 100.00 \r\n \r\n \r\n"
+  }
  },
  {
   "rcept_no": "20260929800614",
@@ -1552,7 +1610,8 @@
   "amount": 9422797950,
   "note": null,
   "summary": "CG인바이츠가 VISTA 지분을 94억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928900939",
@@ -1609,7 +1668,8 @@
   "amount": 29744000000,
   "note": null,
   "summary": "ISC가 ISC 지분을 297억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928900330",
@@ -1666,7 +1726,8 @@
   "amount": 10020319722,
   "note": null,
   "summary": "엠아이텍이 PrediSurge 지분을 100억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928800899",
@@ -1701,7 +1762,8 @@
   "amount": 29744000000,
   "note": null,
   "summary": "SKC가 ISC 지분을 297억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928600824",
@@ -1714,7 +1776,16 @@
   "corp_code": "00874937",
   "detail_done": true,
   "detail_attempts": 1,
-  "raw_retried": true
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "탑선",
+  "seller": null,
+  "target": "㈜티에스에너지9호",
+  "amount": 15000000000,
+  "note": null,
+  "summary": "탑선이 ㈜티에스에너지9호 지분을 150억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928600712",
@@ -1727,7 +1798,16 @@
   "corp_code": "00874937",
   "detail_done": true,
   "detail_attempts": 1,
-  "raw_retried": true
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "탑선",
+  "seller": null,
+  "target": "㈜함구미태양광",
+  "amount": 14000000000,
+  "note": null,
+  "summary": "탑선이 ㈜함구미태양광 지분을 140억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260928000389",
@@ -1894,7 +1974,8 @@
   "amount": 197820640200,
   "note": null,
   "summary": "에코프로가 PT 지분을 1,978억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260923900215",
@@ -1915,7 +1996,8 @@
   "amount": 55500000000,
   "note": null,
   "summary": "엠케이전자가 보유 중이던 동부엔텍 주식회사 지분을 제3자에 555억원에 매각합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260923800497",
@@ -2186,11 +2268,12 @@
   "direction": "양수",
   "buyer": "핑거",
   "seller": null,
-  "target": "주식회사",
+  "target": "주식회사 세아에프에스아이",
   "amount": 127837838389,
   "note": null,
-  "summary": "핑거가 주식회사 지분을 1,278억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "핑거가 주식회사 세아에프에스아이 지분을 1,278억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260922900420",
@@ -2207,11 +2290,12 @@
   "direction": "양수",
   "buyer": "핑거",
   "seller": null,
-  "target": "S&amp",
+  "target": "S&G",
   "amount": 27162161611,
   "note": null,
-  "summary": "핑거가 S&amp 지분을 272억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "핑거가 S&G 지분을 272억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260922900323",
@@ -2578,11 +2662,12 @@
   "direction": "양도",
   "buyer": null,
   "seller": "스모트로닉",
-  "target": "주식회사",
+  "target": "주식회사 아이엘모빌리티",
   "amount": 10000000000,
   "note": null,
-  "summary": "스모트로닉이 보유 중이던 주식회사 지분을 제3자에 100억원에 매각합니다.",
-  "source": "raw_document"
+  "summary": "스모트로닉이 보유 중이던 주식회사 아이엘모빌리티 지분을 제3자에 100억원에 매각합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260921900283",
@@ -2611,11 +2696,12 @@
   "direction": "양도",
   "buyer": null,
   "seller": "상상인",
-  "target": "주식회사",
+  "target": "주식회사 상상인저축은행",
   "amount": 110700000000,
   "note": null,
-  "summary": "상상인이 보유 중이던 주식회사 지분을 제3자에 1,107억원에 매각합니다.",
-  "source": "raw_document"
+  "summary": "상상인이 보유 중이던 주식회사 상상인저축은행 지분을 제3자에 1,107억원에 매각합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260921900215",
@@ -2821,11 +2907,12 @@
   "direction": "양수",
   "buyer": "코퍼스코리아",
   "seller": null,
-  "target": "주식회사",
+  "target": "주식회사 에피소드미디어",
   "amount": 4000000000,
   "note": null,
-  "summary": "코퍼스코리아가 주식회사 지분을 40억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "코퍼스코리아가 주식회사 에피소드미디어 지분을 40억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260918900674",
@@ -2908,7 +2995,8 @@
   "amount": 9422797950,
   "note": null,
   "summary": "CG인바이츠가 VISTA 지분을 94억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260918900148",
@@ -3244,7 +3332,8 @@
   "amount": 8548454250,
   "note": null,
   "summary": "모티브링크가 DNM 지분을 85억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260917900571",
@@ -3265,7 +3354,8 @@
   "amount": 14766693600,
   "note": null,
   "summary": "모티브링크가 MOTILINK 지분을 148억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260917900489",
@@ -3339,8 +3429,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00165413",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3675,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 에이치앤엘어드밴스드 주식회사(H&L Advanced Co., Ltd.) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 천양식, 조남수 \r\n \r\n \r\n 자본금(원) \r\n 1,824,000,000,000 \r\n 회사와 관계 \r\n 계열회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 364,800,000 \r\n 주요사업 \r\n 석유화학계 기초 화학물질 제조업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 12,000,000 \r\n ",
+   "near_amt": "질 제조업 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 12,000,000 \r\n \r\n \r\n 취득금액(원) \r\n 600,000,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 17,628,428,467,279 \r\n \r\n \r\n 자기자본대비(%) \r\n 3.40 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 194,400,000 \r\n \r\n \r\n 지분비율(%) \r\n 50.0 \r\n \r\n"
+  }
  },
  {
   "rcept_no": "20260917000371",
@@ -3535,7 +3631,16 @@
   "corp_code": "01326792",
   "detail_done": true,
   "detail_attempts": 1,
-  "raw_retried": true
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "비투엔",
+  "seller": null,
+  "target": "(주)앤씨앤",
+  "amount": 6250000000,
+  "note": null,
+  "summary": "비투엔이 (주)앤씨앤 지분을 62억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260916900624",
@@ -3616,7 +3721,8 @@
   "amount": 22622250000,
   "note": null,
   "summary": "태웅로직스가 태웅이커머스홀딩스 주식회사 지분을 226억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260916900255",
@@ -3633,11 +3739,12 @@
   "direction": "양수",
   "buyer": "원텍",
   "seller": null,
-  "target": "주식회사",
+  "target": "주식회사 원메디코",
   "amount": 13274278596,
   "note": null,
-  "summary": "원텍이 주식회사 지분을 133억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "원텍이 주식회사 원메디코 지분을 133억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260916900193",
@@ -3658,7 +3765,8 @@
   "amount": 15833610000,
   "note": null,
   "summary": "한중엔시에스가 HANJUNG 지분을 158억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260916800377",
@@ -4039,7 +4147,8 @@
   "amount": 24669674729,
   "note": null,
   "summary": "에이루트가 보유 중이던 큐리어스볼티지 지분을 제3자에 247억원에 매각합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260915900649",
@@ -4093,11 +4202,12 @@
   "direction": "양수",
   "buyer": "카카오게임즈",
   "seller": "손창욱",
-  "target": "주식회사",
+  "target": "주식회사 미투온",
   "amount": 98014149356,
   "note": null,
-  "summary": "카카오게임즈가 손창욱으로부터 주식회사 지분을 980억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "카카오게임즈가 손창욱으로부터 주식회사 미투온 지분을 980억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260915900482",
@@ -4118,7 +4228,8 @@
   "amount": 10808701410,
   "note": null,
   "summary": "원텍이 Japan 지분을 108억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260915900330",
@@ -4159,11 +4270,12 @@
   "direction": "양수",
   "buyer": "소프트캠프",
   "seller": null,
-  "target": "주식회사",
+  "target": "주식회사 에프엔지정보",
   "amount": 1500000000,
   "note": null,
-  "summary": "소프트캠프가 주식회사 지분을 15억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "소프트캠프가 주식회사 에프엔지정보 지분을 15억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260915900012",
@@ -4201,8 +4313,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00555874",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2912,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 퍼시픽제3호일반사모부동산투자(유) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n ㈜퍼시픽자산운용 \r\n \r\n \r\n 자본금(원) \r\n 55,700,377,381 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 55,411,890,395 \r\n 주요사업 \r\n 부동산임대업 등 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 55,229,087,581 \r\n \r\n \r\n 처분금액(원) \r\n 52,793,715",
+   "near_amt": "등 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 55,229,087,581 \r\n \r\n \r\n 처분금액(원) \r\n 52,793,715,894 \r\n \r\n \r\n 자기자본(원) \r\n 275,152,877,297 \r\n \r\n \r\n 자기자본대비(%) \r\n 19.19 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 104,458,274 \r\n \r\n \r\n 지분비율(%) \r\n 99.86 \r\n \r\n \r"
+  }
  },
  {
   "rcept_no": "20260915800672",
@@ -4214,8 +4332,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00105606",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2837,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 화일약품(주) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 김유정, 서생규 \r\n \r\n \r\n 자본금(원) \r\n 44,017,513,500 \r\n 회사와 관계 \r\n 주요주주 \r\n \r\n \r\n 발행주식총수(주) \r\n 8,417,584 \r\n 주요사업 \r\n 의약품 제조업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 689,730 \r\n \r\n \r\n 처분금액(원) \r\n 22,071,360,000 \r\n \r\n \r\n 자기자본(원) \r",
+   "near_amt": " 의약품 제조업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 689,730 \r\n \r\n \r\n 처분금액(원) \r\n 22,071,360,000 \r\n \r\n \r\n 자기자본(원) \r\n 280,743,169,642 \r\n \r\n \r\n 자기자본대비(%) \r\n 7.86 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 229,891 \r\n \r\n \r\n 지분비율(%) \r\n 2.73 \r\n \r\n \r\n 4. "
+  }
  },
  {
   "rcept_no": "20260915000428",
@@ -4521,8 +4645,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00124504",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3228,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n POSCO International E&P USA Inc. \r\n \r\n \r\n 국적 \r\n 미국 \r\n 대표자 \r\n 전정구 \r\n \r\n \r\n 자본금(원) \r\n 13,464 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 1,000 \r\n 주요사업 \r\n 자원개발 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 2,000 \r\n \r\n \r\n 취득금액(원) \r\n 532,902,157,920 \r\n \r\n \r\n 자기자본(원) ",
+   "near_amt": "사업 \r\n 자원개발 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 2,000 \r\n \r\n \r\n 취득금액(원) \r\n 532,902,157,920 \r\n \r\n \r\n 자기자본(원) \r\n 7,812,655,175,128 \r\n \r\n \r\n 자기자본대비(%) \r\n 6.82 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 3,000 \r\n \r\n \r\n 지분비율(%) \r\n 100 \r\n \r\n \r\n 4. 취"
+  }
  },
  {
   "rcept_no": "20260914000421",
@@ -4788,7 +4918,8 @@
   "amount": 16000000000,
   "note": null,
   "summary": "다이나믹솔루션이 파마앤바이오 지분을 160억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260911900487",
@@ -4833,7 +4964,8 @@
   "amount": 14700000000,
   "note": null,
   "summary": "한국첨단소재가 루센트 지분을 147억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260911900424",
@@ -4878,7 +5010,8 @@
   "amount": 2245120000,
   "note": null,
   "summary": "모티브링크가 LONG 지분을 22억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260911800779",
@@ -4914,8 +5047,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2795,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n SGC-KIS 제1호 사모투자합자회사 \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n - \r\n \r\n \r\n 자본금(원) \r\n - \r\n 회사와 관계 \r\n - \r\n \r\n \r\n 발행주식총수(주) \r\n - \r\n 주요사업 \r\n 사모투자전문회사 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 86,900,000,000 \r\n \r\n \r\n 취득금액(원) \r\n 86,900,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 759,237,",
+   "near_amt": "사 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 86,900,000,000 \r\n \r\n \r\n 취득금액(원) \r\n 86,900,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 759,237,085,895 \r\n \r\n \r\n 자기자본대비(%) \r\n 11.45 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 86,900,000,000 \r\n \r\n \r\n 지분비율(%) \r\n 99.66 \r\n \r"
+  }
  },
  {
   "rcept_no": "20260911800150",
@@ -5153,7 +5292,8 @@
   "amount": 53854159202,
   "note": null,
   "summary": "제이앤티씨가 JNTC 지분을 539억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260910900405",
@@ -5182,11 +5322,12 @@
   "direction": "양수",
   "buyer": "비엘팜텍",
   "seller": null,
-  "target": "광동헬스바이오",
+  "target": "광동헬스바이오(주)",
   "amount": 1047271680,
   "note": null,
-  "summary": "비엘팜텍이 광동헬스바이오 지분을 10억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "비엘팜텍이 광동헬스바이오(주) 지분을 10억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260910900252",
@@ -5199,7 +5340,16 @@
   "corp_code": "01326279",
   "detail_done": true,
   "detail_attempts": 1,
-  "raw_retried": true
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "아이엘",
+  "seller": null,
+  "target": "(주)리드엔지니어링",
+  "amount": 12800000000,
+  "note": null,
+  "summary": "아이엘이 (주)리드엔지니어링 지분을 128억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260910800627",
@@ -5571,7 +5721,8 @@
   "amount": 4100000000,
   "note": null,
   "summary": "CSA 코스믹이 피엘오조합 지분을 41억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260909900603",
@@ -5619,8 +5770,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00114093",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2919,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n PT.DUKSUNG ECOTECH INDONESIA \r\n \r\n \r\n 국적 \r\n 인도네시아 \r\n 대표자 \r\n 한창윤 \r\n \r\n \r\n 자본금(원) \r\n 3,011,097,151 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 160,000 \r\n 주요사업 \r\n 합성피혁제조,판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 140,000 \r\n \r\n \r\n 취득금액(원) \r\n 10,654,000,000 \r\n ",
+   "near_amt": "성피혁제조,판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 140,000 \r\n \r\n \r\n 취득금액(원) \r\n 10,654,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 97,435,058,889 \r\n \r\n \r\n 자기자본대비(%) \r\n 10.93 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 299,840 \r\n \r\n \r\n 지분비율(%) \r\n 99.95 \r\n \r\n \r\n 4."
+  }
  },
  {
   "rcept_no": "20260909800251",
@@ -5938,8 +6095,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2985,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 한화호텔앤드리조트 주식회사 \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 최석진, 김경수 \r\n \r\n \r\n 자본금(원) \r\n 123,785,900,000 \r\n 회사와 관계 \r\n 계열회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 12,378,590 \r\n 주요사업 \r\n 리조트, 골프, 호텔, 단체급식/외식/식자재유통/식품업, 건물관리업/종합건축ㆍ인테리어 사업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 2,545,624",
+   "near_amt": "테리어 사업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 2,545,624 \r\n \r\n \r\n 처분금액(원) \r\n 299,800,684,104 \r\n \r\n \r\n 자기자본(원) \r\n 12,348,796,038,353 \r\n \r\n \r\n 자기자본대비(%) \r\n 2.43 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 3,590,000 \r\n \r\n \r\n 지분비율(%) \r\n 28.97 \r\n \r\n "
+  }
  },
  {
   "rcept_no": "20260908800274",
@@ -5951,8 +6114,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00133618",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2523,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 우양프라퍼티 주식회사 \r\n \r\n \r\n 국적 \r\n 대힌민국 \r\n 대표자 \r\n 조영준 \r\n \r\n \r\n 자본금(원) \r\n 7,000,000,000 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 700,000 \r\n 주요사업 \r\n 부동산 임대 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 700,000 \r\n \r\n \r\n 취득금액(원) \r\n 7,000,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 179,6",
+   "near_amt": "\n 부동산 임대 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 700,000 \r\n \r\n \r\n 취득금액(원) \r\n 7,000,000,000 \r\n \r\n \r\n 자기자본(원) \r\n 179,656,028,381 \r\n \r\n \r\n 자기자본대비(%) \r\n 3.90 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 700,000 \r\n \r\n \r\n 지분비율(%) \r\n 100 \r\n \r\n \r\n 4. 취득"
+  }
  },
  {
   "rcept_no": "20260908000404",
@@ -6277,7 +6446,8 @@
   "amount": 30000000000,
   "note": null,
   "summary": "지엔씨에너지가 케이씨에이브릿지신기술조합 지분을 300억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260904900600",
@@ -6334,7 +6504,8 @@
   "amount": 7000000000,
   "note": null,
   "summary": "한국첨단소재가 루센트 지분을 70억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260904900307",
@@ -6379,7 +6550,8 @@
   "amount": 24669674729,
   "note": null,
   "summary": "에이루트가 보유 중이던 큐리어스볼티지 지분을 제3자에 247억원에 매각합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260904800462",
@@ -6391,8 +6563,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 3369,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n Absolics Inc. \r\n \r\n \r\n 국적 \r\n 미국 \r\n 대표자 \r\n 강지호 \r\n \r\n \r\n 자본금(원) \r\n 301,183 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 236,974 \r\n 주요사업 \r\n 반도체 글라스기판 제조/판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 192,416 \r\n \r\n \r\n 취득금액(원) \r\n 280,981,813,728 \r\n \r\n \r\n 자기자본(원) \r\n ",
+   "near_amt": "기판 제조/판매 \r\n \r\n \r\n 2. 취득내역 \r\n 취득주식수(주) \r\n 192,416 \r\n \r\n \r\n 취득금액(원) \r\n 280,981,813,728 \r\n \r\n \r\n 자기자본(원) \r\n 3,206,768,720,249 \r\n \r\n \r\n 자기자본대비(%) \r\n 8.76 \r\n \r\n \r\n 대규모법인여부 \r\n 해당 \r\n \r\n \r\n 3. 취득후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 358,416 \r\n \r\n \r\n 지분비율(%) \r\n 70.05 \r\n \r\n \r\n "
+  }
  },
  {
   "rcept_no": "20260904800327",
@@ -6808,11 +6986,12 @@
   "direction": "양도",
   "buyer": null,
   "seller": "알엔투테크놀로지",
-  "target": "주식회사",
+  "target": "주식회사 아펙스인베스트먼트",
   "amount": 5500000000,
   "note": null,
-  "summary": "알엔투테크놀로지가 보유 중이던 주식회사 지분을 제3자에 55억원에 매각합니다.",
-  "source": "raw_document"
+  "summary": "알엔투테크놀로지가 보유 중이던 주식회사 아펙스인베스트먼트 지분을 제3자에 55억원에 매각합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260903900447",
@@ -7126,7 +7305,8 @@
   "amount": 71450000000,
   "note": null,
   "summary": "덕산네오룩스가 카노푸스홀딩스 주식회사 지분을 714억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260902900536",
@@ -7207,11 +7387,12 @@
   "direction": "양수",
   "buyer": "대명에너지",
   "seller": null,
-  "target": "곡성그린풍력",
+  "target": "곡성그린풍력 (주)",
   "amount": 18627000000,
   "note": null,
-  "summary": "대명에너지가 곡성그린풍력 지분을 186억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "대명에너지가 곡성그린풍력 (주) 지분을 186억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260902900241",
@@ -7232,7 +7413,8 @@
   "amount": 20000000000,
   "note": null,
   "summary": "콜마비앤에이치가 콜마오랄스 주식회사 지분을 200억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260902900240",
@@ -7265,7 +7447,8 @@
   "amount": 451646097,
   "note": null,
   "summary": "지니틱스가 Zinitix 지분을 5억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260902800525",
@@ -7277,8 +7460,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00153524",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2875,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n 동원페이퍼(주) \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 정동하 \r\n \r\n \r\n 자본금(원) \r\n 11,570,950,000 \r\n 회사와 관계 \r\n 자회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 1,157,095 \r\n 주요사업 \r\n 골판지원지 제조업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 695,910 \r\n \r\n \r\n 처분금액(원) \r\n 26,574,019,260 \r\n \r\n \r\n 자기자본(원) \r\n 3",
+   "near_amt": "판지원지 제조업 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 695,910 \r\n \r\n \r\n 처분금액(원) \r\n 26,574,019,260 \r\n \r\n \r\n 자기자본(원) \r\n 323,398,946,853 \r\n \r\n \r\n 자기자본대비(%) \r\n 8.22 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 0 \r\n \r\n \r\n 지분비율(%) \r\n 0 \r\n \r\n \r\n 4. 처분목적 \r\n 골"
+  }
  },
  {
   "rcept_no": "20260902800277",
@@ -7428,7 +7617,8 @@
   "amount": 6049994940,
   "note": null,
   "summary": "아시아경제가 제이에이치스포츠매니지먼트 주식회사 지분을 60억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260901900688",
@@ -7590,8 +7780,14 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00143262",
   "detail_done": true,
-  "detail_attempts": 1,
-  "raw_retried": true
+  "detail_attempts": 2,
+  "raw_retried": true,
+  "raw_probe": {
+   "len": 2921,
+   "head": ".xforms * { font-family: 돋움체;}\r\n.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}\r\n\r\n.xforms table {\r\n font-size: 10px;\r\n padding:0px;\r\n border-collapse:collapse;\r\n color: #3D3D3D;\r\n}\r\n.xforms t",
+   "near_corp": "회사명 \r\n (주)신라명과 \r\n \r\n \r\n 국적 \r\n 대한민국 \r\n 대표자 \r\n 박창훈 \r\n \r\n \r\n 자본금(원) \r\n 750,000,000 \r\n 회사와 관계 \r\n 계열회사 \r\n \r\n \r\n 발행주식총수(주) \r\n 150,000 \r\n 주요사업 \r\n 빵류,과자 제조,도매 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 30,000 \r\n \r\n \r\n 처분금액(원) \r\n 9,699,240,000 \r\n \r\n \r\n 자기자본(원) \r\n 80,754",
+   "near_amt": ",과자 제조,도매 \r\n \r\n \r\n 2. 처분내역 \r\n 처분주식수(주) \r\n 30,000 \r\n \r\n \r\n 처분금액(원) \r\n 9,699,240,000 \r\n \r\n \r\n 자기자본(원) \r\n 80,754,726,231 \r\n \r\n \r\n 자기자본대비(%) \r\n 12.01 \r\n \r\n \r\n 대규모법인여부 \r\n 미해당 \r\n \r\n \r\n 3. 처분후 소유주식수 및 지분비율 \r\n 소유주식수(주) \r\n 7,500 \r\n \r\n \r\n 지분비율(%) \r\n 5 \r\n \r\n \r\n 4. 처분목적 \r"
+  }
  },
  {
   "rcept_no": "20260901800102",
@@ -7644,11 +7840,12 @@
   "direction": "양수",
   "buyer": "원포유",
   "seller": "박현주",
-  "target": "주식회사",
+  "target": "주식회사 태광이노텍",
   "amount": 5901540000,
   "note": null,
-  "summary": "원포유가 박현주로부터 주식회사 지분을 59억원에 인수합니다.",
-  "source": "raw_document"
+  "summary": "원포유가 박현주로부터 주식회사 태광이노텍 지분을 59억원에 인수합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260901000339",
@@ -7908,7 +8105,8 @@
   "amount": 30283000000,
   "note": null,
   "summary": "코나아이가 KONA 지분을 303억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260831900855",
@@ -7949,11 +8147,12 @@
   "direction": "양도",
   "buyer": null,
   "seller": "상상인",
-  "target": "주식회사",
+  "target": "주식회사 상상인저축은행",
   "amount": 110700000000,
   "note": null,
-  "summary": "상상인이 보유 중이던 주식회사 지분을 제3자에 1,107억원에 매각합니다.",
-  "source": "raw_document"
+  "summary": "상상인이 보유 중이던 주식회사 상상인저축은행 지분을 제3자에 1,107억원에 매각합니다.",
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260831900758",
@@ -8061,7 +8260,8 @@
   "amount": 50000000000,
   "note": null,
   "summary": "제이에스링크가 JS 지분을 500억원에 인수합니다.",
-  "source": "raw_document"
+  "source": "raw_document",
+  "raw_v": 2
  },
  {
   "rcept_no": "20260831800878",
