@@ -1,5 +1,40 @@
 [
  {
+  "rcept_no": "20261001000301",
+  "date": "20261001",
+  "corp_code": "00787057",
+  "corp_name": "휴맥스",
+  "stock_code": "115160",
+  "market": "K",
+  "report_nm": "증권발행실적보고서(합병등)",
+  "category": "합병",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
+  "rcept_no": "20261001000180",
+  "date": "20261001",
+  "corp_code": "00939331",
+  "corp_name": "한국콜마",
+  "stock_code": "161890",
+  "market": "Y",
+  "report_nm": "특수관계인에대한영업양도",
+  "category": "영업양수도",
+  "detail_attempts": 1
+ },
+ {
+  "rcept_no": "20261001000146",
+  "date": "20261001",
+  "corp_code": "01250374",
+  "corp_name": "에스에스알",
+  "stock_code": "275630",
+  "market": "K",
+  "report_nm": "합병등종료보고서(영업양수도)",
+  "category": "합병",
+  "no_detail_api": true,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20260930000870",
   "date": "20261001",
   "corp_code": "00110884",
@@ -218,8 +253,17 @@
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "엑스페릭스",
+  "target": "위드윈투자조합80호",
+  "amount": 7103825040,
+  "note": null,
+  "summary": "엑스페릭스가 보유 중이던 위드윈투자조합80호 지분을 제3자에 71억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260930900602",
@@ -242,8 +286,10 @@
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930900442",
@@ -254,8 +300,10 @@
   "market": "K",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930801232",
@@ -290,8 +338,10 @@
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930801176",
@@ -302,8 +352,10 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930801169",
@@ -314,9 +366,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260930801095",
@@ -351,9 +403,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260930800880",
@@ -364,8 +416,10 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930800847",
@@ -376,9 +430,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260930800829",
@@ -389,8 +443,10 @@
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권처분결정(자율공시)(종속회사의주요경영사항)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930800500",
@@ -401,8 +457,10 @@
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930800176",
@@ -413,8 +471,10 @@
   "market": "Y",
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930800068",
@@ -425,9 +485,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260930000823",
@@ -606,8 +666,10 @@
   "market": "N",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930000626",
@@ -618,8 +680,10 @@
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930000616",
@@ -690,8 +754,10 @@
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930000550",
@@ -726,8 +792,10 @@
   "market": "Y",
   "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
   "category": "타법인 주식 취득·처분",
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "no_detail_api": true
  },
  {
   "rcept_no": "20260930000489",
@@ -957,7 +1025,16 @@
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "넥스턴앤롤코리아",
+  "target": "대신",
+  "amount": 12000000000,
+  "note": null,
+  "summary": "넥스턴앤롤코리아가 보유 중이던 대신 지분을 제3자에 120억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260929800986",
@@ -969,6 +1046,8 @@
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -981,6 +1060,8 @@
   "report_nm": "[기재정정]타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -1004,9 +1085,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260929800727",
@@ -1017,9 +1098,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260929800726",
@@ -1030,9 +1111,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 5,
-  "no_detail_api": true,
-  "detail_done": true
+  "detail_attempts": 1,
+  "detail_done": true,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260929800614",
@@ -1044,6 +1125,8 @@
   "report_nm": "[기재정정]타법인주식및출자증권취득결정(자회사의 주요경영사항)",
   "category": "타법인 주식 취득·처분",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -1056,6 +1139,8 @@
   "report_nm": "[기재정정]타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -1458,7 +1543,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00407814",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "CG인바이츠",
+  "seller": null,
+  "target": "VISTA",
+  "amount": 9422797950,
+  "note": null,
+  "summary": "CG인바이츠가 VISTA 지분을 94억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260928900939",
@@ -1506,8 +1600,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00572905",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "ISC",
+  "seller": null,
+  "target": "ISC",
+  "amount": 29744000000,
+  "note": null,
+  "summary": "ISC가 ISC 지분을 297억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260928900330",
@@ -1555,7 +1657,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00531829",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "엠아이텍",
+  "seller": null,
+  "target": "PrediSurge",
+  "amount": 10020319722,
+  "note": null,
+  "summary": "엠아이텍이 PrediSurge 지분을 100억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260928800899",
@@ -1567,6 +1678,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -1579,7 +1692,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "SKC",
+  "seller": null,
+  "target": "ISC",
+  "amount": 29744000000,
+  "note": null,
+  "summary": "SKC가 ISC 지분을 297억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260928600824",
@@ -1591,8 +1713,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260928600712",
@@ -1604,8 +1726,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00874937",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260928000389",
@@ -1763,7 +1885,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00536541",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "에코프로",
+  "seller": null,
+  "target": "PT",
+  "amount": 197820640200,
+  "note": null,
+  "summary": "에코프로가 PT 지분을 1,978억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260923900215",
@@ -1775,7 +1906,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00121686",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "엠케이전자",
+  "target": "동부엔텍 주식회사",
+  "amount": 55500000000,
+  "note": null,
+  "summary": "엠케이전자가 보유 중이던 동부엔텍 주식회사 지분을 제3자에 555억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260923800497",
@@ -2041,7 +2181,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "핑거",
+  "seller": null,
+  "target": "주식회사",
+  "amount": 127837838389,
+  "note": null,
+  "summary": "핑거가 주식회사 지분을 1,278억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260922900420",
@@ -2053,7 +2202,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "핑거",
+  "seller": null,
+  "target": "S&amp",
+  "amount": 27162161611,
+  "note": null,
+  "summary": "핑거가 S&amp 지분을 272억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260922900323",
@@ -2113,6 +2271,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00106119",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2137,6 +2297,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2149,6 +2311,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00195229",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2409,7 +2573,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00301422",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "스모트로닉",
+  "target": "주식회사",
+  "amount": 10000000000,
+  "note": null,
+  "summary": "스모트로닉이 보유 중이던 주식회사 지분을 제3자에 100억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260921900283",
@@ -2433,7 +2606,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00306162",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "상상인",
+  "target": "주식회사",
+  "amount": 110700000000,
+  "note": null,
+  "summary": "상상인이 보유 중이던 주식회사 지분을 제3자에 1,107억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260921900215",
@@ -2445,6 +2627,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2632,8 +2816,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01364297",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "코퍼스코리아",
+  "seller": null,
+  "target": "주식회사",
+  "amount": 4000000000,
+  "note": null,
+  "summary": "코퍼스코리아가 주식회사 지분을 40억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260918900674",
@@ -2681,6 +2873,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01228515",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2705,8 +2899,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00407814",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "CG인바이츠",
+  "seller": null,
+  "target": "VISTA",
+  "amount": 9422797950,
+  "note": null,
+  "summary": "CG인바이츠가 VISTA 지분을 94억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260918900148",
@@ -2718,6 +2920,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2730,6 +2934,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00339391",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -2742,6 +2948,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00152385",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3027,8 +3235,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "모티브링크",
+  "seller": null,
+  "target": "DNM",
+  "amount": 8548454250,
+  "note": null,
+  "summary": "모티브링크가 DNM 지분을 85억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260917900571",
@@ -3040,8 +3256,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "모티브링크",
+  "seller": null,
+  "target": "MOTILINK",
+  "amount": 14766693600,
+  "note": null,
+  "summary": "모티브링크가 MOTILINK 지분을 148억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260917900489",
@@ -3101,6 +3325,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00120562",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3113,8 +3339,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00165413",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260917000371",
@@ -3150,6 +3376,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00373021",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3306,8 +3534,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326792",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260916900624",
@@ -3379,8 +3607,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00562245",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "태웅로직스",
+  "seller": null,
+  "target": "태웅이커머스홀딩스 주식회사",
+  "amount": 22622250000,
+  "note": null,
+  "summary": "태웅로직스가 태웅이커머스홀딩스 주식회사 지분을 226억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260916900255",
@@ -3392,8 +3628,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "원텍",
+  "seller": null,
+  "target": "주식회사",
+  "amount": 13274278596,
+  "note": null,
+  "summary": "원텍이 주식회사 지분을 133억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260916900193",
@@ -3405,8 +3649,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00474588",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "한중엔시에스",
+  "seller": null,
+  "target": "HANJUNG",
+  "amount": 15833610000,
+  "note": null,
+  "summary": "한중엔시에스가 HANJUNG 지분을 158억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260916800377",
@@ -3418,6 +3670,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3430,6 +3684,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125080",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3442,6 +3698,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00936787",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3772,7 +4030,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00608839",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "에이루트",
+  "target": "큐리어스볼티지",
+  "amount": 24669674729,
+  "note": null,
+  "summary": "에이루트가 보유 중이던 큐리어스볼티지 지분을 제3자에 247억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260915900649",
@@ -3821,8 +4088,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01137383",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "카카오게임즈",
+  "seller": "손창욱",
+  "target": "주식회사",
+  "amount": 98014149356,
+  "note": null,
+  "summary": "카카오게임즈가 손창욱으로부터 주식회사 지분을 980억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260915900482",
@@ -3834,8 +4109,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01407909",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "원텍",
+  "seller": null,
+  "target": "Japan",
+  "amount": 10808701410,
+  "note": null,
+  "summary": "원텍이 Japan 지분을 108억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260915900330",
@@ -3871,7 +4154,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01182408",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "소프트캠프",
+  "seller": null,
+  "target": "주식회사",
+  "amount": 1500000000,
+  "note": null,
+  "summary": "소프트캠프가 주식회사 지분을 15억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260915900012",
@@ -3895,6 +4187,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125080",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -3907,8 +4201,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00555874",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260915800672",
@@ -3920,8 +4214,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00105606",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260915000428",
@@ -4227,8 +4521,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00124504",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260914000421",
@@ -4485,8 +4779,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01246034",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "다이나믹솔루션",
+  "seller": null,
+  "target": "파마앤바이오",
+  "amount": 16000000000,
+  "note": null,
+  "summary": "다이나믹솔루션이 파마앤바이오 지분을 160억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260911900487",
@@ -4522,8 +4824,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "한국첨단소재",
+  "seller": null,
+  "target": "루센트",
+  "amount": 14700000000,
+  "note": null,
+  "summary": "한국첨단소재가 루센트 지분을 147억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260911900424",
@@ -4559,7 +4869,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00367400",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "모티브링크",
+  "seller": null,
+  "target": "LONG",
+  "amount": 2245120000,
+  "note": null,
+  "summary": "모티브링크가 LONG 지분을 22억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260911800779",
@@ -4595,8 +4914,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125150",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260911800150",
@@ -4608,6 +4927,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00132628",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -4823,8 +5144,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00447575",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "제이앤티씨",
+  "seller": null,
+  "target": "JNTC",
+  "amount": 53854159202,
+  "note": null,
+  "summary": "제이앤티씨가 JNTC 지분을 539억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260910900405",
@@ -4848,7 +5177,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00384717",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "비엘팜텍",
+  "seller": null,
+  "target": "광동헬스바이오",
+  "amount": 1047271680,
+  "note": null,
+  "summary": "비엘팜텍이 광동헬스바이오 지분을 10억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260910900252",
@@ -4860,8 +5198,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01326279",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260910800627",
@@ -4873,6 +5211,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01205709",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -4885,6 +5225,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01386916",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -4897,6 +5239,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -5218,8 +5562,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00406037",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "CSA 코스믹",
+  "seller": null,
+  "target": "피엘오조합",
+  "amount": 4100000000,
+  "note": null,
+  "summary": "CSA 코스믹이 피엘오조합 지분을 41억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260909900603",
@@ -5267,8 +5619,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00114093",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260909800251",
@@ -5383,6 +5735,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00475985",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -5439,7 +5793,7 @@
   "corp_name": "금양",
   "stock_code": "001570",
   "market": "Y",
-  "report_nm": "주요사항보고서(회사분할결정)",
+  "report_nm": "[첨부추가]주요사항보고서(회사분할결정)",
   "category": "분할",
   "corp_code": "00106119",
   "detail_done": true,
@@ -5584,8 +5938,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00162461",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260908800274",
@@ -5597,8 +5951,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00133618",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260908000404",
@@ -5773,6 +6127,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00184667",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -5912,8 +6268,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00626464",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "지엔씨에너지",
+  "seller": null,
+  "target": "케이씨에이브릿지신기술조합",
+  "amount": 30000000000,
+  "note": null,
+  "summary": "지엔씨에너지가 케이씨에이브릿지신기술조합 지분을 300억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260904900600",
@@ -5961,8 +6325,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00403766",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "한국첨단소재",
+  "seller": null,
+  "target": "루센트",
+  "amount": 7000000000,
+  "note": null,
+  "summary": "한국첨단소재가 루센트 지분을 70억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260904900307",
@@ -5998,8 +6370,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00608839",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "에이루트",
+  "target": "큐리어스볼티지",
+  "amount": 24669674729,
+  "note": null,
+  "summary": "에이루트가 보유 중이던 큐리어스볼티지 지분을 제3자에 247억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260904800462",
@@ -6011,8 +6391,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00139889",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260904800327",
@@ -6122,6 +6502,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01230255",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -6421,7 +6803,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00915508",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "알엔투테크놀로지",
+  "target": "주식회사",
+  "amount": 5500000000,
+  "note": null,
+  "summary": "알엔투테크놀로지가 보유 중이던 주식회사 지분을 제3자에 55억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260903900447",
@@ -6505,6 +6896,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00113997",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -6724,8 +7117,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01061558",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "덕산네오룩스",
+  "seller": null,
+  "target": "카노푸스홀딩스 주식회사",
+  "amount": 71450000000,
+  "note": null,
+  "summary": "덕산네오룩스가 카노푸스홀딩스 주식회사 지분을 714억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260902900536",
@@ -6761,6 +7162,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00373021",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -6773,6 +7176,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00373021",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -6797,8 +7202,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01150515",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "대명에너지",
+  "seller": null,
+  "target": "곡성그린풍력",
+  "amount": 18627000000,
+  "note": null,
+  "summary": "대명에너지가 곡성그린풍력 지분을 186억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260902900241",
@@ -6810,7 +7223,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01032404",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "콜마비앤에이치",
+  "seller": null,
+  "target": "콜마오랄스 주식회사",
+  "amount": 20000000000,
+  "note": null,
+  "summary": "콜마비앤에이치가 콜마오랄스 주식회사 지분을 200억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260902900240",
@@ -6834,7 +7256,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01318933",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "지니틱스",
+  "seller": null,
+  "target": "Zinitix",
+  "amount": 451646097,
+  "note": null,
+  "summary": "지니틱스가 Zinitix 지분을 5억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260902800525",
@@ -6846,8 +7277,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00153524",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260902800277",
@@ -6919,6 +7350,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00373021",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -6986,7 +7419,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00665676",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "아시아경제",
+  "seller": null,
+  "target": "제이에이치스포츠매니지먼트 주식회사",
+  "amount": 6049994940,
+  "note": null,
+  "summary": "아시아경제가 제이에이치스포츠매니지먼트 주식회사 지분을 60억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260901900688",
@@ -7082,6 +7524,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01436558",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7118,6 +7562,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00356370",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7130,6 +7576,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00356370",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7142,8 +7590,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00143262",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 1,
+  "raw_retried": true
  },
  {
   "rcept_no": "20260901800102",
@@ -7191,8 +7639,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00337296",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "원포유",
+  "seller": "박현주",
+  "target": "주식회사",
+  "amount": 5901540000,
+  "note": null,
+  "summary": "원포유가 박현주로부터 주식회사 지분을 59억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260901000339",
@@ -7443,8 +7899,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00349732",
   "detail_done": true,
-  "detail_attempts": 5,
-  "no_detail_api": true
+  "detail_attempts": 0,
+  "raw_retried": true,
+  "direction": "양수",
+  "buyer": "코나아이",
+  "seller": null,
+  "target": "KONA",
+  "amount": 30283000000,
+  "note": null,
+  "summary": "코나아이가 KONA 지분을 303억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260831900855",
@@ -7480,7 +7944,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00306162",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양도",
+  "buyer": null,
+  "seller": "상상인",
+  "target": "주식회사",
+  "amount": 110700000000,
+  "note": null,
+  "summary": "상상인이 보유 중이던 주식회사 지분을 제3자에 1,107억원에 매각합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260831900758",
@@ -7504,6 +7977,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01142075",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7577,7 +8052,16 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00642541",
   "detail_done": true,
-  "no_detail_api": true
+  "raw_retried": true,
+  "detail_attempts": 0,
+  "direction": "양수",
+  "buyer": "제이에스링크",
+  "seller": null,
+  "target": "JS",
+  "amount": 50000000000,
+  "note": null,
+  "summary": "제이에스링크가 JS 지분을 500억원에 인수합니다.",
+  "source": "raw_document"
  },
  {
   "rcept_no": "20260831800878",
@@ -7589,6 +8073,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01854763",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7601,6 +8087,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01316254",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7613,6 +8101,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00125080",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7625,6 +8115,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00936787",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7673,6 +8165,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "00877059",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
@@ -7740,6 +8234,8 @@
   "category": "타법인 주식 취득·처분",
   "corp_code": "01784914",
   "detail_done": true,
+  "raw_retried": true,
+  "detail_attempts": 0,
   "no_detail_api": true
  },
  {
