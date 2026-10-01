@@ -21,8 +21,17 @@
     <div class="chips" id="chips">
       <button class="chip on" data-c="전체">전체</button>
       <div class="chip-dropdown" id="chipDropdown">
-        <button class="chip chip-dropdown-toggle" id="chipDropdownToggle">M&amp;A 종류 선택하기<span id="chipCount"></span></button>
-        <div class="chip-dropdown-panel" id="chipDropdownPanel"></div>
+        <button class="chip chip-dropdown-toggle" id="chipDropdownToggle">
+          <span class="cdt-icon">▤</span>M&amp;A 종류 선택하기<span id="chipCount" class="cdt-count"></span>
+          <span class="cdt-caret">▾</span>
+        </button>
+        <div class="chip-dropdown-panel" id="chipDropdownPanel">
+          <div class="cdp-head">
+            <span class="cdp-title">M&amp;A 유형 선택<em>중복 선택 가능</em></span>
+            <button type="button" class="cdp-reset" id="chipReset">초기화</button>
+          </div>
+          <div class="type-grid" id="typeGrid"></div>
+        </div>
       </div>
     </div>
     <div class="toggle-row">
@@ -196,23 +205,39 @@ function renderChips() {
   const toggleBtn = document.getElementById("chipDropdownToggle");
   const countEl = document.getElementById("chipCount");
   toggleBtn.classList.toggle("on", selectedCats.size > 0);
-  countEl.textContent = selectedCats.size > 0 ? " (" + selectedCats.size + ")" : "";
+  countEl.textContent = selectedCats.size > 0 ? selectedCats.size : "";
+  countEl.classList.toggle("show", selectedCats.size > 0);
 
-  document.getElementById("chipDropdownPanel").innerHTML = cats.map(c =>
-    '<button class="chip' + (selectedCats.has(c) ? " on" : "") + '" data-c="' + esc(c) + '">' + esc(c) + "</button>"
+  document.getElementById("typeGrid").innerHTML = cats.map(c =>
+    '<button type="button" class="type-option' + (selectedCats.has(c) ? " on" : "") +
+    (c === PRIORITY_CAT ? " priority" : "") + '" data-c="' + esc(c) + '">' +
+    '<span class="dot"></span><span class="type-label">' + esc(c) + "</span>" +
+    (c === PRIORITY_CAT ? '<span class="priority-badge">자주 찾는 유형</span>' : "") +
+    "</button>"
   ).join("");
+}
+
+function setDropdownOpen(open) {
+  document.getElementById("chipDropdownPanel").classList.toggle("open", open);
+  document.getElementById("chipDropdownToggle").classList.toggle("open", open);
 }
 
 chipsEl.addEventListener("click", e => {
   const btn = e.target.closest("button");
   if (!btn) return;
   if (btn.id === "chipDropdownToggle") {
-    document.getElementById("chipDropdownPanel").classList.toggle("open");
+    const willOpen = !document.getElementById("chipDropdownPanel").classList.contains("open");
+    setDropdownOpen(willOpen);
+    return;
+  }
+  if (btn.id === "chipReset") {
+    selectedCats.clear();
+    renderChips(); render();
     return;
   }
   if (btn.dataset.c === "전체") {
     selectedCats.clear();
-    document.getElementById("chipDropdownPanel").classList.remove("open");
+    setDropdownOpen(false);
     renderChips(); render();
     return;
   }
@@ -225,7 +250,7 @@ chipsEl.addEventListener("click", e => {
 });
 document.addEventListener("click", e => {
   if (!document.getElementById("chipDropdown").contains(e.target)) {
-    document.getElementById("chipDropdownPanel").classList.remove("open");
+    setDropdownOpen(false);
   }
 });
 qEl.addEventListener("input", render);

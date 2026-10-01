@@ -60,35 +60,51 @@ function fmtPub(p) {
 }
 function fmtEok(v) {
   if (!v) return "";
-  return v + "억원";
+  const s = String(v).trim();
+  return /억|원/.test(s) ? s : s + "억원"; // 이미 "OO억원" 형태면 중복으로 "억원"을 또 붙이지 않는다
 }
 
-function cardHtml(it) {
-  if (it.type === "buy") {
-    return '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.article_link) + '">' +
-      '<div class="top">' +
-        '<span class="name">' + (it.industry ? esc(it.industry) : "인수희망 기업") + '</span>' +
-        '<span class="tag tag-buy">' + esc(it.outlet) + '</span>' +
-      '</div>' +
-      '<div class="listing-rows">' +
-        (it.form ? '<span class="lrow"><b>형태</b>' + esc(it.form) + '</span>' : "") +
-        (it.target_industry ? '<span class="lrow"><b>인수희망대상</b>' + esc(it.target_industry) + '</span>' : "") +
-        (it.budget ? '<span class="lrow"><b>인수가능금액</b>' + esc(fmtEok(it.budget)) + '</span>' : "") +
-      '</div>' +
-      '<div class="meta">' + esc(it.article_title) + ' · ' + fmtPub(it.pubDate) + '</div>' +
-    '</a></div>';
+// 한 기사(article_link)에 여러 회사(A사/B사/C사 등)가 같이 실리는 경우가 많아,
+// 기사 단위로 묶어서 하나의 표로 보여준다 (회사마다 카드를 반복하지 않도록).
+function groupRows(rows) {
+  const map = new Map();
+  const order = [];
+  for (const it of rows) {
+    const key = it.outlet + "|" + it.article_link + "|" + it.pubDate;
+    if (!map.has(key)) { map.set(key, []); order.push(key); }
+    map.get(key).push(it);
   }
-  return '<div class="listing"><a class="lk" target="_blank" rel="noopener" href="' + esc(it.article_link) + '">' +
-    '<div class="top">' +
-      '<span class="name">' + (it.industry ? esc(it.industry) : esc(it.feature || it.article_title)) + '</span>' +
-      '<span class="tag">' + esc(it.outlet) + '</span>' +
+  return order.map(k => map.get(k));
+}
+
+function rowHtml(it, isBuy) {
+  const label = it.label ? esc(it.label) : "-";
+  if (isBuy) {
+    const target = it.target_industry || it.industry || it.feature || "-";
+    return '<tr><td class="lg-td-label">' + label + '</td>' +
+      '<td>' + esc(target.length > 70 ? target.slice(0, 70) + "…" : target) + '</td>' +
+      '<td>' + (it.budget ? esc(fmtEok(it.budget)) : "-") + '</td></tr>';
+  }
+  const industryText = it.industry || it.feature || "-";
+  return '<tr><td class="lg-td-label">' + label + '</td>' +
+    '<td>' + esc(industryText.length > 70 ? industryText.slice(0, 70) + "…" : industryText) + '</td>' +
+    '<td>' + (it.revenue ? esc(fmtEok(it.revenue)) : "-") + '</td></tr>';
+}
+
+function groupHtml(group) {
+  const first = group[0];
+  const isBuy = first.type === "buy";
+  const headCols = isBuy ? ["구분", "인수희망대상", "인수가능금액"] : ["구분", "업종", "연매출"];
+  const theadHtml = "<tr>" + headCols.map(h => "<th>" + h + "</th>").join("") + "</tr>";
+  const bodyHtml = group.map(it => rowHtml(it, isBuy)).join("");
+  return '<div class="listing-group">' +
+    '<div class="lg-head">' +
+      '<span class="lg-source"><span class="lg-outlet' + (isBuy ? " tag-buy" : "") + '">' + esc(first.outlet) + '</span>' +
+      '<span class="lg-date">' + fmtPub(first.pubDate) + '</span></span>' +
+      '<a class="lg-detail" target="_blank" rel="noopener" href="' + esc(first.article_link) + '">상세보기 <span class="lg-arrow">→</span></a>' +
     '</div>' +
-    '<div class="listing-rows">' +
-      (it.revenue ? '<span class="lrow"><b>매출</b>' + esc(fmtEok(it.revenue)) + '</span>' : "") +
-      (it.feature && it.industry ? '<span class="lrow"><b>특징</b>' + esc(it.feature) + '</span>' : "") +
-    '</div>' +
-    '<div class="meta">' + esc(it.article_title) + ' · ' + fmtPub(it.pubDate) + '</div>' +
-  '</a></div>';
+    '<div class="lg-table-wrap"><table class="lg-table"><thead>' + theadHtml + '</thead><tbody>' + bodyHtml + '</tbody></table></div>' +
+  '</div>';
 }
 
 function filteredRows() {
@@ -104,7 +120,7 @@ function filteredRows() {
 function render() {
   revealBatches = 1;
   pageNum = null;
-  renderPage(filteredRows());
+  renderPage(groupRows(filteredRows()));
 }
 
 function renderPage(rows) {
@@ -115,7 +131,7 @@ function renderPage(rows) {
   }
   if (pageNum === null) {
     const shown = Math.min(revealBatches * PAGE_SIZE, rows.length);
-    listEl.innerHTML = rows.slice(0, shown).map(cardHtml).join("");
+    listEl.innerHTML = rows.slice(0, shown).map(groupHtml).join("");
     if (shown >= rows.length) {
       pageControlsEl.innerHTML = "";
     } else if (revealBatches < MORE_LIMIT) {
@@ -130,7 +146,7 @@ function renderPage(rows) {
   const totalPages = Math.ceil(rows.length / PAGE_SIZE);
   pageNum = Math.min(Math.max(pageNum, 1), totalPages);
   const start = (pageNum - 1) * PAGE_SIZE;
-  listEl.innerHTML = rows.slice(start, start + PAGE_SIZE).map(cardHtml).join("");
+  listEl.innerHTML = rows.slice(start, start + PAGE_SIZE).map(groupHtml).join("");
 
   const pages = [];
   for (let p = 1; p <= totalPages; p++) {
