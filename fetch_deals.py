@@ -333,6 +333,24 @@ def extract_from_raw_doc(raw_html, corp_name, direction_hint):
     }
 
 
+def try_raw_document(deal, endpoint, stats):
+    """공시 원문을 받아 파싱해서 deal을 채운다. 성공하면 True."""
+    direction_hint = "양수" if endpoint == "otcprStkInvscrInhDecsn" else "양도"
+    raw = fetch_raw_document(deal["rcept_no"])
+    if not raw:
+        print(f"  원문 자체를 못 받음: {deal['corp_name']} {deal['rcept_no']}")
+        return False
+    parsed = extract_from_raw_doc(raw, deal["corp_name"], direction_hint)
+    if not parsed:
+        print(f"  원문은 받았으나 파싱 실패: {deal['corp_name']} {deal['rcept_no']} (len={len(raw)})")
+        return False
+    deal.update(parsed)
+    deal["source"] = "raw_document"
+    stats["matched_raw"] += 1
+    print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
+    return True
+
+
 MAX_ATTEMPTS = 5  # 이 횟수만큼 재시도해도 안 되면 포기하고 더 이상 조회하지 않는다
 
 # 이 문구가 제목에 있으면 "금융위 주요사항보고서"가 아니라 "거래소 수시공시"로 접수된
@@ -349,6 +367,10 @@ def enrich(deal, cache, stats, diag_budget):
         return True
     title_flat = deal["report_nm"].replace(" ", "")
     if any(h.replace(" ", "") in title_flat for h in NO_API_HINTS):
+        # 상세 API엔 없는 유형이지만, 타법인 주식 건은 공시 원문(표준 서식)을 직접 파싱해 요약을 만든다.
+        if endpoint in ("otcprStkInvscrInhDecsn", "otcprStkInvscrTrfDecsn"):
+            if try_raw_document(deal, endpoint, stats):
+                return True
         stats["skip_correction"] += 1
         deal["no_detail_api"] = True
         return True
@@ -392,20 +414,8 @@ def enrich(deal, cache, stats, diag_budget):
     # 보완책: 상세 API가 매칭 못한 건(주로 거래소 소관으로 접수돼 금융위 API에
     # 데이터가 없는 경우)은 공시 원문을 직접 받아 표준 서식을 파싱해본다.
     if endpoint in ("otcprStkInvscrInhDecsn", "otcprStkInvscrTrfDecsn"):
-        direction_hint = "양수" if endpoint == "otcprStkInvscrInhDecsn" else "양도"
-        raw = fetch_raw_document(deal["rcept_no"])
-        if raw:
-            parsed = extract_from_raw_doc(raw, deal["corp_name"], direction_hint)
-            if parsed:
-                deal.update(parsed)
-                deal["source"] = "raw_document"
-                stats["matched_raw"] += 1
-                print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
-                return True
-            else:
-                print(f"  원문은 받았으나 파싱 실패: {deal['corp_name']} {deal['rcept_no']} (len={len(raw)})")
-        else:
-            print(f"  원문 자체를 못 받음: {deal['corp_name']} {deal['rcept_no']}")
+        if try_raw_document(deal, endpoint, stats):
+            return True
 
     # 원인 진단용: 실행당 최대 2건만, 훨씬 넓은(연간) 범위로 다시 조회해서
     # 이 회사가 이 상세 API에 애초에 데이터가 있기는 한지 확인해본다.
@@ -483,6 +493,12 @@ def main():
         # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
         # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
         has_detail = bool(d.get("summary"))
+        # 원문 파싱 보완책이 생기기 전에 '상세 API 없음/포기'로 닫힌 타법인 주식 건은 한 번 다시 연다.
+        if (not has_detail and d.get("no_detail_api") and d["category"] == "타법인 주식 취득·처분"
+                and d.get("source") != "raw_document" and not d.get("raw_retried")):
+            d["raw_retried"] = True
+            d.pop("no_detail_api", None)
+            d["detail_attempts"] = 0
         if has_detail or d.get("no_detail_api"):
             continue
         try:
