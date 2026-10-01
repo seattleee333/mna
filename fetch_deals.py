@@ -1,6 +1,9 @@
 import os
+import re
+import io
 import json
 import time
+import zipfile
 import datetime as dt
 
 import requests
@@ -247,6 +250,85 @@ def extract(endpoint, row, corp_name):
     return {}
 
 
+# ---------- 상세 API가 매칭에 실패했을 때의 보완책: 공시 원문 직접 파싱 ----------
+# "타법인주식및출자증권처분/취득결정" 같은 상세 API는 "금융위 주요사항보고서"로 접수된
+# 건만 커버한다. 같은 제목이라도 "거래소(코스닥/유가증권시장본부) 소관"으로 접수되면
+# 그 API엔 애초에 데이터가 없다 (회사 양식 차이가 아니라 접수 경로 차이).
+# document.xml API는 접수번호만 있으면 접수 경로와 상관없이 공시 원문을 그대로
+# 돌려주므로, 이걸로 표준 서식 표를 직접 파싱해서 보완한다.
+
+def fetch_raw_document(rcept_no):
+    """공시서류 원문(zip, 내부는 euc-kr html)을 받아 합쳐진 텍스트로 반환한다."""
+    try:
+        r = requests.get(BASE + "document.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept_no}, timeout=30)
+        r.raise_for_status()
+    except requests.RequestException:
+        return None
+    if not r.content.startswith(b"PK"):  # zip이 아니면(오류 JSON 등) 포기
+        return None
+    try:
+        zf = zipfile.ZipFile(io.BytesIO(r.content))
+    except zipfile.BadZipFile:
+        return None
+    texts = []
+    for name in zf.namelist():
+        try:
+            texts.append(zf.read(name).decode("euc-kr", errors="ignore"))
+        except Exception:
+            continue
+    return "\n".join(texts) if texts else None
+
+
+def strip_tags(html):
+    text = re.sub(r"<[^>]+>", " ", html)
+    text = re.sub(r"&nbsp;?", " ", text)
+    text = re.sub(r"[ \t]+", " ", text)
+    return text.strip()
+
+
+def extract_from_raw_doc(raw_html, corp_name, direction_hint):
+    """'타법인 주식 및 출자증권 취득/처분결정' 표준 서식 원문에서 핵심 정보를 뽑아낸다.
+    (규제상 정해진 서식이라 금융위/거래소 소관과 무관하게 표 구조는 동일하다.)"""
+    text = strip_tags(raw_html)
+
+    target = None
+    m = re.search(r"회사명\s*\(국적\)\s*([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)", text)
+    if m:
+        target = m.group(1).strip()
+
+    counterparty = None
+    for pat in [r"거래상대방\s*[:：]\s*([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)",
+                r"거래상대방\s+([가-힣A-Za-z0-9&·]+(?:\s*주식회사)?)"]:
+        m = re.search(pat, text)
+        if m:
+            counterparty = m.group(1).strip()
+            break
+
+    amount = None
+    for label in ["처분금액", "취득금액"]:
+        m = re.search(label + r"\s*\(원\)\s*([\d,]+)", text)
+        if m:
+            amount = parse_amount(m.group(1))
+            break
+
+    if not target or amount is None:
+        return None  # 핵심 정보를 못 찾으면 포기 (원문 형식이 또 다른 예외 케이스)
+
+    if direction_hint == "양도":
+        summary = (f"{corp_name}{i_ga(corp_name)} 보유 중이던 {target} 지분을 "
+                   f"{(counterparty + '에') if counterparty else '제3자에'} {fmt_amount(amount)}에 매각합니다.")
+        buyer, seller = counterparty, corp_name
+    else:
+        from_txt = f"{counterparty}{euro_ro(counterparty)}부터 " if counterparty else ""
+        summary = f"{corp_name}{i_ga(corp_name)} {from_txt}{target} 지분을 {fmt_amount(amount)}에 인수합니다."
+        buyer, seller = corp_name, counterparty
+
+    return {
+        "direction": direction_hint, "buyer": buyer, "seller": seller,
+        "target": target, "amount": amount, "note": None, "summary": summary,
+    }
+
+
 MAX_ATTEMPTS = 5  # 이 횟수만큼 재시도해도 안 되면 포기하고 더 이상 조회하지 않는다
 
 # 이 문구가 제목에 있으면 "금융위 주요사항보고서"가 아니라 "거래소 수시공시"로 접수된
@@ -302,6 +384,20 @@ def enrich(deal, cache, stats, diag_budget):
     stats["no_match"] += 1
     print(f"  매칭 실패 [{endpoint}] {deal['corp_name']} {deal['date']} "
           f"rcept_no={deal['rcept_no']}: 상세API가 {win_bgn}~{win_end} 기간에 반환한 건수={len(rows)}")
+
+    # 보완책: 상세 API가 매칭 못한 건(주로 거래소 소관으로 접수돼 금융위 API에
+    # 데이터가 없는 경우)은 공시 원문을 직접 받아 표준 서식을 파싱해본다.
+    if endpoint in ("otcprStkInvscrInhDecsn", "otcprStkInvscrTrfDecsn"):
+        direction_hint = "양수" if endpoint == "otcprStkInvscrInhDecsn" else "양도"
+        raw = fetch_raw_document(deal["rcept_no"])
+        if raw:
+            parsed = extract_from_raw_doc(raw, deal["corp_name"], direction_hint)
+            if parsed:
+                deal.update(parsed)
+                deal["source"] = "raw_document"
+                stats["matched_raw"] += 1
+                print(f"  원문 파싱으로 보완 성공: {deal['corp_name']} {deal['rcept_no']}")
+                return True
 
     # 원인 진단용: 실행당 최대 2건만, 훨씬 넓은(연간) 범위로 다시 조회해서
     # 이 회사가 이 상세 API에 애초에 데이터가 있기는 한지 확인해본다.
@@ -371,7 +467,7 @@ def main():
     cache = {}
     filled = 0
     diag_budget = [2]  # 이번 실행에서 [진단] 로그를 남길 수 있는 횟수 (API 호출 아껴쓰기)
-    stats = {"matched": 0, "no_match": 0, "no_api": 0, "api_error": 0, "skip_correction": 0, "gave_up": 0}
+    stats = {"matched": 0, "matched_raw": 0, "no_match": 0, "no_api": 0, "api_error": 0, "skip_correction": 0, "gave_up": 0}
     for d in existing.values():
         if not d.get("corp_code"):
             continue
@@ -394,7 +490,7 @@ def main():
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(deals, f, ensure_ascii=False, indent=1)
     print(f"신규 {added}건 추가, 상세 처리 {filled}건, 전체 {len(deals)}건")
-    print(f"상세 내역 - 채워짐:{stats['matched']} 매칭실패:{stats['no_match']} "
+    print(f"상세 내역 - 채워짐:{stats['matched']} 원문보완:{stats['matched_raw']} 매칭실패:{stats['no_match']} "
           f"API없는유형:{stats['no_api']} API오류:{stats['api_error']} "
           f"정정/자회사공시건너뜀:{stats['skip_correction']} 포기(재시도한도):{stats['gave_up']}")
 
