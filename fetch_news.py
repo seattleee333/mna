@@ -9,7 +9,7 @@ from urllib.parse import quote
 import requests
 
 OUT = "news.json"
-KEEP_DAYS = 365
+KEEP_DAYS = 365   # 전체 데이터 보관 기간 (검색/이력용)
 QUERIES = ["M&A", "인수합병", "경영권 인수", "지분 매각"]
 
 
@@ -91,6 +91,9 @@ def main():
         if merged:
             merged["sources"] = sorted(set(merged.get("sources", []) + sources))
             merged["outlet_count"] = len(merged["sources"]) or merged.get("outlet_count", 1)
+            # 오늘도 계속 보도되고 있다는 뜻이므로 "마지막으로 보도된 날짜"를 갱신한다.
+            # (first_seen은 최초 수집일 그대로 유지 — 이슈가 언제 시작됐는지 보존)
+            merged["last_seen"] = now.strftime("%Y%m%d")
         else:
             new_e = {
                 "title": rep["title"],
@@ -98,6 +101,7 @@ def main():
                 "sources": sources,
                 "outlet_count": len(sources) or 1,
                 "first_seen": now.strftime("%Y%m%d"),
+                "last_seen": now.strftime("%Y%m%d"),
             }
             existing.append(new_e)
             existing_by_title[key] = new_e
@@ -110,10 +114,21 @@ def main():
         except ValueError:
             seen = now
         if seen >= cutoff:
+            # 과거에 수집된 데이터에는 last_seen이 없을 수 있어 first_seen으로 채워준다.
+            e.setdefault("last_seen", e.get("first_seen", ""))
             kept.append(e)
 
-    # 여러 매체가 같이 보도한(=인기) 순, 그 안에서는 최신순
-    kept.sort(key=lambda e: (e.get("outlet_count", 1), e.get("first_seen", "")), reverse=True)
+    # 마지막으로 보도된 "날짜"를 1순위로, 그 날짜 안에서는 매체 수(인기)를 2순위로
+    # 정렬한다. 이렇게 하면 며칠 전부터 누적 보도된 이슈가 오늘자 새 뉴스를
+    # 영구적으로 밀어내지 못하고, 하루만 지나도 자연스럽게 순위에서 빠진다.
+    def sort_key(e):
+        try:
+            last = dt.datetime.strptime(e.get("last_seen", e.get("first_seen", "")), "%Y%m%d")
+        except ValueError:
+            last = cutoff
+        return (last, e.get("outlet_count", 1))
+
+    kept.sort(key=sort_key, reverse=True)
 
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(kept, f, ensure_ascii=False, indent=1)
