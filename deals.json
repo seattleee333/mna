@@ -140,7 +140,9 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (주주배정 유상증자 결정 철회)",
   "category": "유상증자",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930900853",
@@ -151,7 +153,16 @@
   "market": "K",
   "report_nm": "타법인주식및출자증권처분결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 4,
+  "direction": "양도",
+  "buyer": "에스케이디스커버리 주식회사",
+  "seller": "티움바이오",
+  "target": "에스케이플라즈마 주식회사",
+  "amount": 9259903200,
+  "note": null,
+  "summary": "티움바이오가 보유 중이던 에스케이플라즈마 주식회사 지분을 에스케이디스커버리 주식회사에 93억원에 매각합니다.",
+  "source": "raw_document",
+  "detail_done": true
  },
  {
   "rcept_no": "20260930900826",
@@ -174,7 +185,16 @@
   "market": "K",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 4,
+  "direction": "양수",
+  "buyer": "파인디앤씨",
+  "seller": null,
+  "target": "VINA",
+  "amount": 13584000000,
+  "note": null,
+  "summary": "파인디앤씨가 VINA 지분을 136억원에 인수합니다.",
+  "source": "raw_document",
+  "detail_done": true
  },
  {
   "rcept_no": "20260930900737",
@@ -185,7 +205,9 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (유상증자결정(주주배정후 실권주 일반공모) 철회)",
   "category": "유상증자",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930900692",
@@ -292,7 +314,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930801095",
@@ -327,7 +351,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930800880",
@@ -350,7 +376,9 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권취득결정",
   "category": "타법인 주식 취득·처분",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20260930800829",
