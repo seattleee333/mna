@@ -6,28 +6,1261 @@
    "ESG경제",
    "MBC 뉴스",
    "M이코노미뉴스",
+   "SBS Biz",
    "YTN",
+   "thelec.kr",
    "v.daum.net",
+   "yna.co.kr",
    "경기일보",
    "경향신문",
    "뉴스토마토",
    "더팩트",
    "동아일보",
    "디일렉",
+   "메트로신문",
    "문화일보",
    "법률신문",
    "산경투데이",
    "서울신문",
    "시사저널",
+   "시장경제신문",
    "아시아투데이",
    "여성신문",
    "연합뉴스",
    "전자신문",
    "중앙일보"
   ],
-  "outlet_count": 21,
+  "outlet_count": 26,
   "first_seen": "20261003",
-  "last_seen": "20261003"
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK 지분 9440억 매각…이혼 재산분할액과 같은 규모 - 중앙일보",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDX2NDY25hcWVkbFdQUFUzcmtjMzI1bUZuNWFzQWxwZkQ3ZFBUajdMcFh3bVE1T1VyMjMycHg4RFZ6aGZ5V082aVctZ1NLajlkaWdlM0Z3?oc=5",
+  "sources": [
+   "Chosunbiz",
+   "DealSite경제TV",
+   "KBC광주방송",
+   "KBS 뉴스",
+   "dt.co.kr",
+   "v.daum.net",
+   "국제신문",
+   "디지털데일리",
+   "미디어펜",
+   "아주경제",
+   "인더스트리뉴스",
+   "조선일보",
+   "주간조선",
+   "중앙일보",
+   "천지일보"
+  ],
+  "outlet_count": 15,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, 9천억원 SK지분 매각…\"재산분할 대비\" - 연합뉴스TV",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wVGNkcFBGTVJVSnlObUdSMjhlNXVEVkJDUFJNamdqcThmb2NhZ1JlLTh2Q2lxNzJTLVBrQVdESk53ZWZsWUVlck53ZGF5RXRoNVAxQVpZZkhaRUZEZEVGc0w2TDV5Znc?oc=5",
+  "sources": [
+   "v.daum.net",
+   "금융소비자뉴스",
+   "뉴스1",
+   "신아일보",
+   "연합뉴스",
+   "연합뉴스TV",
+   "지디넷코리아",
+   "헤럴드경제"
+  ],
+  "outlet_count": 8,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[속보] 최태원 회장, SK 지분 2.3% 매각 결정…9440억원 규모 - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tX0RWREZwNTZVMTNPcHdZZ3lCS2kzMTM1Nkd0SGNQZ1Q4b253ZzNlWjRUVmhSVFRCR2pEejVMbGh6dFhTZXFnZFluTklLdGcyaGlETE1lWjQ1Y1hzcldYX19TWHBuV0ZCSi1TedIBckFVX3lxTE1IUmkwM1Z3WDMySjMyYkRCdmtiaWtyQlpQM2FIZlFJNVpfV2NNUzBzMUZhWW5RQVB3THJPQTY5YXM2SlVDc2xkY2JVX0RQT3NNZkVqdFc3aXk4QnhveTVwTkZRZnJVWTJhTnpuaXFtZWZsdw?oc=5",
+  "sources": [
+   "KBC광주방송",
+   "v.daum.net",
+   "yna.co.kr",
+   "뉴스1",
+   "머니투데이",
+   "연합뉴스",
+   "워크투데이",
+   "한국경제"
+  ],
+  "outlet_count": 8,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원 회장 SK㈜ 지분 2.26% 매각…재산분할 소송 대응 9440억 마련 - 인베스트조선",
+  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSFktUHFybGh6dmlpWW9kOHVXdUJDYWc1NFBhOUoyaGZVWFRuRkc1VTJQcldLTUIzQ2E1SzdVVWwzbGc5Y3AzLVhvcVBwd3FtRmhpc3k0WGwtZ2NZRTM4SXRZeEd5ellSNnlJQVhFY0FibmlQNWY0RXZYZHhvTjhCNjR4SQ?oc=5",
+  "sources": [
+   "노컷뉴스",
+   "매일일보",
+   "서울신문",
+   "에너지경제신문",
+   "인베스트조선"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[애큐온캐피탈 M&A] 한화생명, 애큐온캐피탈 인수…여신금융 진출 - 딜사이트",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BVWp4VlpXcVZXVGRQakpDM0ZPUVFQa1pXdlVFN2NDb196X2gtb1d2MmN3aFpEcHFrVnUyZHMzYkRtcG9VamZtVnJ0bVJRQlk?oc=5",
+  "sources": [
+   "Naver Blog",
+   "dealsite.co.kr",
+   "딜사이트",
+   "파이낸셜포스트"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261001",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK㈜ 지분 165만주 매각…노소영에 지급할 자금마련(종합) - 연합인포맥스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rZWZTVGw4SjZrTHZBaGszZFlNSU9HNk1UU19hLTJ1bm02aGhUSXFjd2VibWs2Z1l1dFZFaWNWZ1dmby0tUkx6RHdYMjNrRkhMcUZDNjFTR2VZRW53c0FzXzFzNEYwYklYZDFIV3dwNkQ?oc=5",
+  "sources": [
+   "v.daum.net",
+   "경기신문",
+   "블로터",
+   "연합인포맥스"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "한화생명, 애큐온 4400억 인수…종합금융 속도 - 동행미디어 시대",
+  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8tWkVjSHEwVGw3TWdJWUdib1RzSmdPbldRM2VzRWxuQ1dnUFZXTk1NQ1VwaUZkMTdfNUxxblBZSW42bWxTcE5YREVoVEUxV2VyTzdlSWxPSEgwZE1UT1E?oc=5",
+  "sources": [
+   "동행미디어 시대",
+   "메가경제",
+   "서울경제TV",
+   "이투데이"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261001",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "인수합병 - TradingView",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6WXNnRzYydHpNRUwweUhjNFg5eUhXbm43NHh1TzcxbElNM1gtSUxIRlpDQ3ZRSGNnVGdidlIwVTFPNDNsZEVfS3ZXeHZfZDZGUUV3OW4tQ2ZEZlJuMG01OXBPX3AtcW5OYTF4cjBwVkVyRWNlZ1VBVA?oc=5",
+  "sources": [
+   "TradingView",
+   "es.tradingview.com",
+   "tradingview.com"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20260930",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "아프리카 AgriTech AI, 2026년 9월 M&A 12억 달러 유치—한국 기업에 열린 구체적 진입 경로 - 뉴스N연합",
+  "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9za2ZraU1fSFFRbnFQaG11UmdsSkV6SnVtZ1dVYlh1ZTdDWGFRc3JkWGdjbDdHejBZTkcyaGNPaElkZDQ0SFhTb3JB?oc=5",
+  "sources": [
+   "뉴스N연합",
+   "대한청년일보",
+   "얼리어답터뉴스"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, 재산분할금 마련하려 SK주식 매각…지분 2.27% 낮아져 - 동아일보",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YYW9GTnJwdnp5Y185Uzl6R2g2ak1YdEVMYjRNbjk4VWg4Zmx4SUh5ZWxsSmFvck5BV2dQWU1QVTdUYV9KQUJRN1d2Sk92enRkeXl5MC1GdEt6WUFLVnNDY3B4ZVVLM180RjJYdWJUVF85LUtRM2fSAWZBVV95cUxOTjlMc1oxQUFpX3daSUJGS3ZlTlI0bkpCMzZNYVg4ekF2SHhjVmVLOGxsN3B4VXA2alh0V3dubVN0cjRkaXVQS3ExQUpKUFBZVGlIZ0ZVVUx1cGhOQmxienlLYTFlS0E?oc=5",
+  "sources": [
+   "v.daum.net",
+   "대전일보",
+   "동아일보"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "'재산분할 대비' 최태원 회장, SK㈜ 지분 165만주 매각한다…\"9440억원 규모\" - ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JSVNYX3AzdUp5dC1tZzlGb1RwSnI5d2ZZTDkyaTBPVkhuRUFaQnhQbTBMeHZWWVFYdnhNeXpTZDg1OWk4ejJkSUNGc1kxRGw0NjlXMnFwbjZtSXJMWEtkX3BtRWExaHhv?oc=5",
+  "sources": [
+   "ebn.co.kr",
+   "metroseoul.co.kr",
+   "newspim.com"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "동원, ‘참존’ 인수 추진…김남정 회장 첫 M&A로 K뷰티 시동 - 서울경제TV",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54Y3ZSSzlrdDE2TDAyTnhteW4zY1BxUkozTUVZdDNlYUM5Qms2amxnZjRrWnFNdGxvUzRBUDluYkNJZEtlVUJpZ3ZCaHR3R3NUUVB1WGlLOUsxdGpqU255Q0ZqWV8?oc=5",
+  "sources": [
+   "미래경제",
+   "서울경제TV"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[삼성바이오 유증 후폭풍] M&A에 우선배분…6공장 재원 '후순위' - 블로터",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiLThNV1FUQkg1a2tHX1huMHNVbVlKb3BHaWM5OHZsVUlDQ0NfMmV0SjRXbVdSRW4xUjdrMTVkLWplRkRmaDFnblZlVmg2bVRrM0FxQm5lZW13RklqRmdDNHBoZ29ueVduLWUwa9IBbEFVX3lxTFBiLThNV1FUQkg1a2tHX1huMHNVbVlKb3BHaWM5OHZsVUlDQ0NfMmV0SjRXbVdSRW4xUjdrMTVkLWplRkRmaDFnblZlVmg2bVRrM0FxQm5lZW13RklqRmdDNHBoZ29ueVduLWUwaw?oc=5",
+  "sources": [
+   "v.daum.net",
+   "블로터"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "차입 비용 상승의 여파로 3분기 글로벌 M&A 거래 열기가 사그라들었다 - tradingview.com",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VbEQ1djN6cGd0Zk9YX0J1SXRvUktkSjFOZDFQR1ZnNFhMVTBoRzlrbWlBVmh5NkkyS3lBVzYtOXNzMVlVQnNpaHllaTFBUlk3djlUak93Vi03NUNjNXVoZUNZSjFQNHVlUGdoVzJ3RnItSG9CVGxBUg?oc=5",
+  "sources": [
+   "TradingView",
+   "tradingview.com"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK㈜ 지분 2.3% 매각 결정…9,440억 재산분할금 마련 나서 - sisaworld.kr",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yQndJUVhPa25MUnV6VHZUT0pRT1pUR18xUzBFQzFoM2lYMXNVQWstZ2FZRlQ0NkVXRmxDeHo4cnFqdGx2amFvRzZUUlBXSVIyUHlsU21kWTFtb3FrR25rTVAyS1htalAtRWc?oc=5",
+  "sources": [
+   "sisaworld.kr",
+   "아주경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[기자수첩] 시장의 눈을 가리는 낯선 이름들…무자본 M&A 거래 속 ‘카이저 소제’는 누구인가? - lkp.news",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDMTRyZHdBTnpRUWZFb2NUdkFhQnBsOUx6R0xRYmJfeC1VbkxYVVpHVEFMMTdhT2FpVDVWWXNNX3Jsai1SRWZtRWlqeVlhazRQT2lRMXJuMm02eHZQNnpwVmpyUDJWb2PSAWdBVV95cUxQQzE0cmR3QU56UVFmRW9jVHZBYUJwbDlMekdMUWJiX3gtVW5MWFVaR1RBTDE3YU9haVQ1VllzTV9ybGotUkVmbUVpanlZYWs0UE9pUTFybjJtNnh2UDZ6cFZqclAyVm9j?oc=5",
+  "sources": [
+   "lkp.news",
+   "리버티코리아포스트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "KKR 한일 탱크터미널 분리 매각…8000억 회수 - 자본시장뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZR2t6ZUZZdG9xczVDUnNBSXJ1bndsUUxQVTlwV1c4RG0zNmdQMW9vVGgxU0swMThIX1kzblY2dmhrU25GTDVscm00ODZUYlp0eTVtWFc0YUpjNE5mMmg5eDI1ZVhjMDA?oc=5",
+  "sources": [
+   "jabon.co.kr",
+   "자본시장뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "컬리, '대표 남편 회사' 넥스트키친 100% 품는다…간편식 강화 뒤에 놓인 지배구조 정리 - kmnanews.com",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83c3kxQm9EbHE5Y25rbTFuVDR3NXJNOFNxYWVCUEtnYk13MGRoM0prV0RXWHB3V1hMdEdrNGZrYTJ1dlRuMkRGTkt2blVXalctZEwwa2l5VlZNZUJDRkFwMl8zU3ZIVHB0RFE?oc=5",
+  "sources": [
+   "kmnanews.com",
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "아산시, 서울서 투자유치 설명회 개최∙∙∙260억 원 규모 기업 투자 의향 확보 - kmnanews.com",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKOXpzWHlkYUQ2YXBVbjBTNWMtbjBuMVRueklnQ1cwdTNoNFh6dThaNzBZRzFaMVBrNk5CRW9FcXgtOG5EcV9ydWJMNm1vWDRUUXA1U3lwR0k2d1I3OFhYMmZkSXd5dEFrZHc?oc=5",
+  "sources": [
+   "kmnanews.com",
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "제주항공, 흑자 호텔 접고 펀드 해산∙∙∙회수금 528억 원의 행방 - kmnanews.com",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kU2pjSElxYjE5MDdjRFpBa3MybTNpZldSY24xVkxwclJ5LU1zdFBNek13bTk3WV94SG8xcWRQbnNUYU8tNE9qTkozWkNhSzZrTlhGa1dHX1RqNWVSYVRKZi1naVFoQXJOeFE?oc=5",
+  "sources": [
+   "kmnanews.com",
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "온세미콘덕터, 시냅틱스 인수가 상향에 주가 4%↑ - 마켓인",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9xbVFaNG1hUEszUTF5UmRFdzZVc2pKYXUzdGZRbTlmbHROMXJCekxtOXkzN1ZGUDVRbTRUV2xGX1kySlNmREljd01JOVp5NFI1LXozMWZWYmh0Tml0cDl6Ykxja0lzZlNwQW5vWWhFSjZiNDQ?oc=5",
+  "sources": [
+   "edaily.co.kr",
+   "마켓인"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[인도 특징주] TCS, 美 베스트바이 인도 GCC 인수… \"AI 기반 센터로 혁신\" - 뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfVzNCTHc5UUV3X1hEbmJaMDRHbUw2Ymt4OFdiR2RQNEd3b2dBMzFaSjZYbTBOeV9ucFZQYmluUzRlaHdoVGNtRFM2U3Q5dmdvYjcwREpleXpzaE8t?oc=5",
+  "sources": [
+   "newspim.com",
+   "뉴스핌"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "\"사모펀드 인수 후 마취값 40% 상승…한국은 더 심할 수도\" - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1DRlRxR1JLTWdmRHFURHppUUNOc0tiSHNjZ2ZiOHpYSHRKUnZGdXhZQXFCOVJVcjlUOGFpbGlsdXdzUlBPVXJNLUVmRld1R1k?oc=5",
+  "sources": [
+   "v.daum.net",
+   "아시아경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[기자수첩] 외국 자본에 맞설 토종 자본, 운용사의 족쇄부터 풀어라 - lkp.news",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zVFFYNF8xMzRJYU5IN0dLaHVWVDNzWlBKS3hKNzFZZ2VwUXJLd3RBd2dzRmhxSTJYUWpnREJnSGQ0OE5HNzFVRWhQTWRma3pBM1FLUURFYnhQYkVzUVRXd1E3QWZzVlnSAWdBVV95cUxNc1RRWDRfMTM0SWFOSDdHS2h1VlQzc1pQSkt4SjcxWWdlcFFyS3d0QXdnc0ZocUkyWFFqZ0RCZ0hkNDhORzcxVUVoUE1kZmt6QTNRS1FERWJ4UGJFc1FUV3dRN0Fmc1ZZ?oc=5",
+  "sources": [
+   "lkp.news",
+   "리버티코리아포스트"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "'이혼 재산분할' 대응 나선 최태원, SK㈜ 지분 매각…\"경영권 영향 없어\" - 톱데일리",
+  "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TQU9RRjNkcll5YzFpemZiM3pqZ1g2NnVORTJ5LUg2MG1GajlUcVJWVDViZGVKWEowaktYX2lKT3BROGFBY19yT3lEMkpKbktC?oc=5",
+  "sources": [
+   "topdaily.kr",
+   "톱데일리"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, 9440억 재산분할 위해 SK 지분 판다 - 공공뉴스",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBEeG42blRIZ2gxOGhpZURhUXNWY0phU0J5RkxERnl0U2ZNRFpMNDNLVGhvWEZoa2FCQW5hbmFramNWYW1ISXpROVhXNTlFNlpVQ1prU1JWZDJZbmJHcTVna245dFdkeUdoY0lvRTdR0gFuQVVfeXFMUER4bjZuVEhnaDE4aGllRGFRc1ZjSmFTQnlGTERGeXRTZk1EWkw0M0tUaG9YRmhrYUJBbmFuYWtqY1ZhbUhJelE5WFc1OUU2WlVDWmtTUlZkMlluYkdxNWdrbjl0V2R5R2hjSW9FN1E?oc=5",
+  "sources": [
+   "공공뉴스",
+   "비즈워치"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, 이혼소송 재산분할 위해 1조원 SK㈜ 주식 매각키로 - 조선일보",
+  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUzV6WnlKNEhBdDM4U3VQeElPbTNtcDlVdDRiQklIUlozUVo5dVp6RHFveUJHSnVRTzJWdEdxMnp2Q1lwSTJjZk04Nm84QjBicVlQR1JXOERFRkJLeTVkbWFMMGdfYi1xbURSNFd1T2tfdTBZUmtSR3pMX0pxd1JjVkVPMGtaUkx5aURKMWt2VQ?oc=5",
+  "sources": [
+   "대전일보",
+   "조선일보"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "반도체·항공까지 보폭 넓힌 VIG…크레딧 ‘두번째 엔진’도 가동 [하우스리뷰] - heraldk.com",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Oc2ZrTGdGMDk5QmRDYTEzekdqaDFXMUxLcW16Z0xEMDNvNjNzMjJscWM3b1RzdXBNUUJRTzJ6Z1gtVVBNdHdmbTkxWE0xZkczeF9EdjRpS20xcFJqRWRZeA?oc=5",
+  "sources": [
+   "heraldk.com",
+   "v.daum.net"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원 SK그룹 회장, ㈜SK 지분 9,440억어치 매각 - lawtimes.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qOWg1ajB5Mll3blctSnJiQVdVUEZiLTZpR3piZjJzWWlETWhjcG1xY0ZPeVpZZzNnQ3dYY0NYb0tIX3hCRi1vQXV5dDBkSHQ4MFBMR1dIUnoyRmRQcVdIVFFNMVByaEVJSk1YaFVrenp2Z9IBckFVX3lxTE1qOWg1ajB5Mll3blctSnJiQVdVUEZiLTZpR3piZjJzWWlETWhjcG1xY0ZPeVpZZzNnQ3dYY0NYb0tIX3hCRi1vQXV5dDBkSHQ4MFBMR1dIUnoyRmRQcVdIVFFNMVByaEVJSk1YaFVrenp2Zw?oc=5",
+  "sources": [
+   "lawtimes.co.kr",
+   "v.daum.net"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[2보] 최태원, 노소영 재산분할 상응 9천440억 SK지분 매각 추진 - yna.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0wbFBlYnJMZ1JfYnNmbjJFbWp5ZjctM0o0STIwOXh4TkVSVXVsU053TUlXN2tzWG9UVmpBMnZSWEdqUW1ZV2ViVExrOGh3cUlfanBVRW9NRnhpdlHSAWBBVV95cUxQYlpEZTZHSUlVbXpGMkNYRUR3SmJZX09nNXg5UUhVSXdZT1IzRldVRU9KWW9yRUJnejA4ZTBaR21WWUtma1h4NTdacVg4b1BZS2w0dFo0WmxIMzNqQVE1cUU?oc=5",
+  "sources": [
+   "yna.co.kr",
+   "진일보"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "구글 이스터에그 룰렛 도움말에 없는 항목 확인하기 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeWltZUN3bWtUOGRDTlBOOHdOaW1SRVVNbnQxY2hZRGRzZ3hoSVdQc0xHenZvWUFIYXJlLTNLUElaRjc3ZnVXSGNlM0FFY0J5QWRMblBiUzJTZXkyX2dsOGdMLXI4Vm1jNU45S3BJUkV6bjlSUjNZRzFJR3h6UVM2bklQUnZTR3MzNE1jRnRDRWtuUWg2WnNWS1lLaFVnV09p?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261001",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[美특징주]온세미컨덕터, 시냅틱스 인수가 낮춰…시간외 동반 강세 - edaily.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS09xMDNORk9CMzIwcUQ2UVNvcVoxSzRybGVnaHJ3Ql91V284cWhUNS1LcFNVNEp5cU81Zlhpcm96OHBLYXRzS191RHVGRlNxVnhMV0laMHRKUjhwU01UQlRCTl82VDFiQ01lbzNaNHk2ZjFhYUVzbTU1aGYwVjlCcA?oc=5",
+  "sources": [
+   "edaily.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261002",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "비케이홀딩스, 상폐·한계기업 M&A 인맥 경영권 선점 후 외부투자 '채비'③ - 녹색경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lMDV5YmZCSGZmWC1SN2x2R20yM3dhTDRycWlHWV9XR0ZPUXlyUGRWOXZoQjEzQU96cjBPNE5fWjlKaFdKb3RaQmZPdTJxeE8yZ3ROaTNndjhNWDZoMUFKRlp6T25HdjQ?oc=5",
+  "sources": [
+   "녹색경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[대한제강 디스카운트] M&A로 외연 넓혔지만…성장사업 발굴은 제한적 - 블로터",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WOGJNbUx6dTZQUkFNVmk2UnAyYUlQNVZZMmUwNkVkX1lvQlZ0ZVQ3S2NmVzlUYURmSzNGZUFReEVUNFJHdWhEMkN6YjdGN1lPLVpEcHZULUtBR1ItblVMTTVUS0Q1aklUb0FkcNIBbEFVX3lxTE5WOGJNbUx6dTZQUkFNVmk2UnAyYUlQNVZZMmUwNkVkX1lvQlZ0ZVQ3S2NmVzlUYURmSzNGZUFReEVUNFJHdWhEMkN6YjdGN1lPLVpEcHZULUtBR1ItblVMTTVUS0Q1aklUb0FkcA?oc=5",
+  "sources": [
+   "블로터"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "중소기업 M&A 시장 넓어진다… 딜플러스, '조건 기반 양방향 M&A 매칭' 구축 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8td1JCUm9vekFoU3otZS01S1RsaWxXWDF4dGdURjhmQ3Y1U1AtbG41dXd5VEpvYWRyZm1HYllhX2M5M1pNanc?oc=5",
+  "sources": [
+   "v.daum.net"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "산업 재편 바람 타고…달아오르는 M&A 시장 [시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MMnhYV3JsTnlkU1ZFQ1VmU0NoUk4tam5xZ0Fhb2JmbFhFeFVBYTJXbmdyc284N20yVHZaLXRrTVlyNkxXRG5DUVk4QlVhMFJyalHSAVNBVV95cUxOaVBPclpVSjlFYlE5RnRCTFpsTXlwNGE1WnlNeEsxdGM1dmtCWU5RQlllcW1oOGl0Q1I0NUo4aHl2dFAzQTlJcldiLVh1MEh6bkxEbw?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "크로스보더 거래 늘며 외국 로펌들 M&A 리그테이블 압도 - 리걸타임즈",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oLTVrTjZNSGhQOWJXMTdWLXRvXzU0bjNuUFRud2ktTUVEOXhtYkI5YkFUV3dvZnZaTWtBcFRaOWhVODU4QzJ3c2ZEdHRDTGZfRVpScGJ0VDlTMVlRcTZUb2Ffb3FyTE9WelE?oc=5",
+  "sources": [
+   "리걸타임즈"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "RBC 캐피탈, Arxis 주식 등급 M&A 활동 및 가격 강세로 상향 조정 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtT19IVTg3OUJYblU2VEZCamVRZjZ1OGt5SHM3SThzUFd3VHVmNTNiZ25FdVpIMFdPU2dxamFkY0V0RGJ5ajJ6V2tqR1NIaFprcHVIXzNrTEtqTmxPZUVFMEFxNWZsTmpuYWVMVGtNSDFDaG5L?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "컬리, 가정간편식 전문기업 '넥스트키친' 품는다 - 중기이코노미",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VcThrUDl2eE5zZXJzUTQ3NkQtRXYwUWZlZkVFWEk3WXNON2RQczhWU1hoeHU4YkZ6ZzFwbWtYX0lPN3hMUlJES01PNXFadENnRG5lRzdRZmVEVzhXcHBhd2hNVEhndF9PTkE?oc=5",
+  "sources": [
+   "중기이코노미"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "토마스 울먼 교수 \"사모펀드 M&A, 시장지배력·가격상승 막을 규제 보완 필요\" - 빅데이터뉴스",
+  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1RWUpMMlpHajlFQ2FOODBxXzRjVzV0ZDN3VV9Jb1VHT3NIZnJRQzJhb1hqSVM2eXlxcHZ0UWgteEtYUG8xRFR2SVhZTW1GUkltdFpjUmZKM0djZjJpazU0dVh5aS1TeHZCcWMxM2NzdklteklkMG50aWhiUDg?oc=5",
+  "sources": [
+   "빅데이터뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "의무공개매수 대안 부상한 '비례적 공개매수'…시장은 M&A 거래 위축 우려 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9xU0VYcllTbGdCdHJPN3AzZTdCRllpNDRndDM1elVPd21OVjYxWVM5N0xIVjlIZ0hYVFJZNV9yTXpiZXZlMWc?oc=5",
+  "sources": [
+   "v.daum.net"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "PEF ‘정보카르텔’ 의혹에 기관투자자 출자심사도 도마…“운용역 네트워크까지 봐야” - 녹색경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84TWpjVVFMZllUNFYwUmhZRXZzbmZfcFJ2V0tub201djJtbWNyRjlLa2NiQ1BNSmhuemd2dWF2OE5lTmF3c1gteXd0Qko5ZmlUYVV4eHFlRjU3clBTRmZyZmliNDJUOFFK?oc=5",
+  "sources": [
+   "녹색경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[단독] 中企 인수 접은 KT…실사자료 속 호텔·골프 키웠나 - 한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xemdtakJlY2lqZEdhLTgzTVViY2hYZF94Ykx4NWxSZTRjWjlXa0gzUTJjcWdwQkNqRXNqMUZqcWFFNmpqTDBBdm1fdTdWc3o5eC00a1RGRW5xdw?oc=5",
+  "sources": [
+   "한국경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "한화생명, '애큐온캐피탈' 인수로 금융시너지 확장 가속화...국내·외 M&A '광폭행보' 업계 이목 집중 - 녹색경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NRlBfTGhJODMtSHpMYS1uY0xfbDFFc2NFWlVVN0N4U2RyWU1IR1NoVHlOMWhVeTdqRXAwR2ktMzU2OFpjTzRISXZNWHJXZ0piejJnUkhnVFB2ZGQzQ2pnUEwwNktvNGtP?oc=5",
+  "sources": [
+   "녹색경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "‘중복상장’ 우려에 입 연 SK하이닉스… 솔리다임, 美 자본으로 성장판 연다 - S저널",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sNFlQdlg0MEI4c05vdGt0aVhoYlBxLTcxQTRUQWVtRDk4dFVwbHpaekM0UEJIMjlhTnNjOVR6ckd6X1paMUY2Mm1OYkRIUklKOEFUWkpQX3JSTGw5anhvTHJCdmRXSWxLSzYzMnpR?oc=5",
+  "sources": [
+   "S저널"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[단독]JTBC, IOC와 올림픽 중계권 재협상 추진…회생·매각에 변수[시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15R0JtMjZheHZKVHFTZHNOQTJwSVVkdDVKX0d6QVJyMkJOSVFtME1tbWNFeHlPSHhNQzdUcGdoRkVlMnd5bDIyMlVOTXd0NVFxWlHSAVNBVV95cUxQMi0zdkhmN1hsbkk5X2wzV0J0R2hlQlVyQVI1ZVhMSGlCb1Y3MGdkWlVwNmFPZ2JNbDE0U2o1TXN1bTFTMngzbmxvUDR0dC03eGtwQQ?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "(주)큐브바이오, SEC Form F-4 효력발생···Nasdaq ‘Global Market’ 상장 예정 - 이넷뉴스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yeVhfNmZleU9DOUJoallWUkF1NU9KX1hSaTF5cGptM2Q0OUtkTUdQZ3JHTWw5eDhEWTJLLU9BMnBfXzA0SFdwQXh6RUhlRjRBclAzRnpaTi12ZG94QWliVkhIMzY1b0tfYUZtYkJ0amrSAXBBVV95cUxOcnlYXzZmZXlPQzlCaGpZVlJBdTVPSl9YUmkxeXBqbTNkNDlLZE1HUGdyR01sOXg4RFkySy1PQTJwX18wNEhXcEF4ekVIZUY0QXJQM0Z6Wk4tdmRveEFpYlZISDM2NW9LX2FGbWJCdGpq?oc=5",
+  "sources": [
+   "이넷뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "템퍼스 AI, 페르소날리스 인수 합병신고서 정정 제출…주당 최대 16.25달러 가치 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aZFhkQXZIUE1JZ1RSQXdyb3REaEY3X1JudkVVSVMyVk5rcXBPWGowN0VvZ2Z0ME5jRUNnNkdOZjZIbGJGbHhmNFE0Y19RLUVla241SHhrTEpYbm03Z2hiVnRYMkZuOGNLb3YzT0dFaFlXeDQ?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "B.Riley, Priority Technology 인수합병에 따른 주가 등급 하향 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5zei1JUGdlaWF3dHdyRFpUZG5VM3VTQzZMQmNBNEluQUtlbzBuMTNwUVV0RnA1WmRIMUEtN2syUXN3VzBqR3NLUmx6dExac0xvVHJ0WFlKd2hOTFNWamhmdWltemhYdVRGNGV3LTdVUHVXT3R6?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "UBS, Baldwin Insurance 투자의견 하향…인수합병 거래 영향 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lLWRwbTQ5c3lrOTU5TDdYQ0pENVlvVkUyb2pFOXFzZFJqc0M4QnNyZkhjV0FzR2xUUXFHbWNrWXpwZkx3WnNKLVNvQzA1aTF1T0ZucHJYUW4wMURkVU1xVnJhcE14MUJBNFEwcUlEckZSRnE2?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "웨스턴 유니언, IMXI 인수 관련 미 독점금지법 신고서 재제출 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FaHBOcjRTNWtWVHBJVFI0OHhyMVBBUHlRMG1NbkYzVlZtTjFocW1fMmlnTnJmQllTaGNkS20xczk1emp6dHVFbVlBRExzR3JPSzdZamJ2WWI2WUZINGRnWmEyZzdDaERLWW90Yl9CUW1vdzA?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "애코 브랜즈, PC·게이밍 주변기기 기업 '트러스트' 인수 완료 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WTXUtdGYzR0JaM1AzUGR4MFZDZmV6bXNwNU14aklFMkptZURSdUtnekdBSHVyNlVCQnBrVVNKNDFsNEhadjVvYVdMbXdua1lOaXZsRk16V0NRbU9RMGNGS1NWekZINnVpcjVhaWN0cTN0MXc?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "오션라이트 애퀴지션, 1분기 순이익 15만 달러…계속기업 불확실성 언급 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Gazcxc0VSRjd5b285empaVFlwbWR6Y1ljTnYtN0w3OGxIYWNlbDFvWEtVeW5fLXVPV3RwM2tyQ012Y3JScjB3RllBcjYtdVVWLWVmY3ZpcVJjNzZpWTAyTjU1RGllenQ0TmJyYzU5bnVYV0k?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "워너브러더스 인수한 파라마운트, 새 법인 이름은 '스카이댄스' - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVTDg4ZXFkU0JDWHRuRnROQ2tNeTVpZDh4cGo2UDlqa1o1blFBbW0tZmprNnJRQTVJNFVhYzJ1TDl2TFcySVl2Uk9MM3g1dzAtMEtHblJVX09MMkE5QmstNmlRdjJmOTB4Njk3NHJtbkM2YXZZUlHSAXtBVV95cUxPZFZJLUZ6RE5CX0k5bmQ2dlE3bGtYRTRlcjRGT05LSm9DTzluRW8weXV6M3BuRjJrbW5yM01rRWtMRXU3c1FldEtsSjRET1JBVlk5am1vYmUwbnRvR18yVVYwaEZUNHRJeGFOb3RyVXNCS0JsWk1xbUVpT3c?oc=5",
+  "sources": [
+   "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[딜 인사이드] 진시스템, 경보전기 키워 합친다…CB 찍어 증설 뒷받침 - 블로터",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4SEJlVDF2TkNPZ3hmVzM4NUh5dTdTRVdUSEFENkVyS3RGVG1WUi02NEZqZGJmdWZ0eGJfV0JQSS1XejZPWXQzakVRNmVBS1BpZk9FNUdvVkg3d2g1aVltbDJzUFBNMTJ10gFsQVVfeXFMTzNsSFJpY1E5NEQtejJNQUxYOXFzWDh2dmRHWktpOVNMNW9uRzF3aTRncmo5Unl3NmZzRWozVUlUU3JWYkFLX29GTkxrd1ZaTjgtQ08wMU9hSHRrcG5lQXhQUmtlSmdqWVJkWUFK?oc=5",
+  "sources": [
+   "블로터"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "큐브바이오, 美 SEC Form F-4 효력 발생…나스닥 글로벌마켓 상장 후속 절차 돌입 - 동아일보",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8zSHJzdGRMT2ZCc2o4MFZWZVc4Ny1NbkJYYlc4OW83VkhqNEdCcmNGQTBFWGsyTk1OYWh3R2phYkN6dXdfMzR2THA5SWEzVzFFWWZYRGFkVWJ4cDBMWVBIWHFnVElOamM5R0o5bkdtcHNweHRGdmfSAWZBVV95cUxOMW5ZdG1fa1VCOUhqOExCazMxSW1uMS1sVVM0R2FzV0ZZbEMzTjE4WVlaSUtMYlBBSnlIVUpaMUU1S1pweDFUbGFsNFczc3pqSEJVNGs5UHdCdDdzRTdLRERYZmNyQlE?oc=5",
+  "sources": [
+   "동아일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "모바일 이용 전 알아둘 도박 성별 화면 비율 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPd1FucHNJUDFxNXF2bVQ3cXc2YXNveVNLTkdITzVsS0QxOHZnSkphN0VrY1dZMS1kcHZ2Yk5MM2tPbmtJbmZnR3V4LUQ2VWR2ZmRHOUs0NkJJekh6OEhRRXBEOXJxWERjb0R1NXZDMTVrYko2NzY5RVZUaUFudnZBUjctTll2M3pOQzlXTHBUdzVRYU9sSTBHM3dOSTMycUxaQV9STUk2RDFMNTVRQThJMFpIUlpYTnJFTjNYYzZReDE4VEpPcEMtNnlNNnNMQ1N5cEFoRTU0dTllY044V0NJZ25XSEdLLU42aDFvX05RMF8xbWZJSnIzQlFwanFMX3BwckhQOHhkRU4yaE5hQjB3MGJUY1RfVHd5TE5RTDRfcUpzREtXRWhtcUwzdVBpbUZxdmdlOTV1Ym5VVTNXWjMw?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "아프리카 AgriTech M&A 12억 달러 돌파: 한국 농업기술 기업의 진출 전략은 - 대한청년일보",
+  "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBvZFhMdVpCTEhPaHIzRXBodnhOb1Nyd1RoOU10c3ZrWmR2bHVNOFlmVDljcU9ybVlfcFEtUWFzWEJVeEk?oc=5",
+  "sources": [
+   "대한청년일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "멈춰 선 파라마운트-워너 합병 - 미주조선일보",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRDIyR182Zmlmb1ZLQUxQdjE1V1oxWUtBOERCRldyVzdPbGR6NEFjS25JS1VVdkgwdk1LWTNCT1VGSk5SZHViemFKS3lfeE92VFFTbGQxN2hma2tPLTUxdTRWemxmbmVINURvek9FQVhkRTFESGw4emprMVpBMXRJaA?oc=5",
+  "sources": [
+   "미주조선일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "파라마운트·워너 합병사 이름은 ‘스카이댄스’...브랜드는 유지 : 국제 - 재경일보",
+  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB6NFE4UVg5M0piY25mUm4zZFA1VjNidjY2S0FpdlZhTmQweHIzWkpmbC1HNnE0UXBwb0RqRTByN3UwZlZmSGZCb0ZSbw?oc=5",
+  "sources": [
+   "재경일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[주간사모펀드] EQT 팔고 한화생명·센트로이드 산다…애큐온 새판 - 더팩트",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0td3ZucVlKY2lSaWtRNDVQTUthR29RcjN6ZmVmZkF2VTY0SG5wUWVzMTNGc1Y1WlRiSnRYaEV4a1k4elRWZU5hR19sd0NIRk4tZEg0TUw1R3JEUdIBVEFVX3lxTFBrdmF0VjBXb0VTSHF1TkhBaUZWRkNleGRvanlnNjFGeW1SanByY0xPeWJFeVJDdmhLcDFzM0l2UjA0S2lWTmpEb1R6WkU5YmkxOWN6Zg?oc=5",
+  "sources": [
+   "더팩트"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "설명 문구에 표시된 조건을 분리해 읽는 도박 등급 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZUY3aUlxTXhNNk5CWHBES2V5aEY3UzlLZ0t5TElqbjZhQ2hubzhJVmNRZjRsSTNvNGhkXzlzd2M3RmpXaXBqNmV5OUlmbGFjQXI2cEFkN2pDTUVSTFNNRkdCNEZXeHk1dGJzNjBTVmh4cTNkMTJROFAtX0VFMncxRFRudEQ5UVVhTG5BeDVlUGdjdGkwLUZpZ05tUUstekFESk9r?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "러브룰렛 연상연하 2 2026년 애자일 개발: 현상, 본질 및 법칙 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYTBUckRNb3YwMzhmTExpN0pfZ0hPOGlvYXItU1prMU1zX210Slp0dEVVVUhJWkhHSXk3bVpudndlTUUyRnB5YmMtMkU2U193OWZUQUtXUVZUOEdCUmpjcVZkWXlsQ3BkTHc0aFlsUTdwdF83NVYyYnJHVzBEZjhDdDJDTDhNSEtqSm1MQzlXaTcyam1VNWdTWUtBQ2JuWUh1NThJcU1uXzc1WHM2U1ZGR3ROeEhNSGRC?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "어터리언 지분 10% 취득한 미셸 치암 신 링 대량보유 보고…라자르 지분 매각 9월 25일 종결 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3cDBQUVE1cnREdUZ3bHdqelYtQjFWVXllU016NGxiU3dtQnhEeEtNT1RoTWZNTHZJU1Zfei1yaWU1Z04tTDZLcHpKc0tobjVZVjRTTHNKNGZ3U21RaG1YbVU4TnlTMEs4NWw5eXg0M21rQ3M?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK 지분 9440억원어치 매각…SK \"경영권 영향 없을 것\"(종합) - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wYldLRUVyU2hFX3I2MTFoMVpkMC1JSnphNmlSLVhGLVhMUXFJdFhQUHZrMFZfcktxZDczeU1BRVFtRnhETHR6d09lNGJQaEU?oc=5",
+  "sources": [
+   "v.daum.net"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "‘9440억’ SK 지분 매각 나선 최태원…블록딜·PRS로 지배력 지킨다 - 조세일보",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVNHhFNHdJT3BKLTJMSU1QRVlXODVscWJRWkloSWhEN3hIazJxMGFEX2hSaGVrSUNLRTVRNGxNMnpyMWRVS0g1REFkTGoxRWJDRXRITWhZM1hyeGx4aFRj?oc=5",
+  "sources": [
+   "조세일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK 지분 9440억 매각… 노소영 재산분할금과 동일 규모 By 인포스탁데일리 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9JejRweW5BZURJZ1BnbkhSNkRiMkhmNFVBY01pRVMyUW1mM1pfUWhRZWpBWWJnOFdtbzdFazVKakxoRzZaZi15bHduZ1FSMHQzV1dzekJhc3k1dGRDdW9CMmJwT3RoRTJtUVBiVlYySmE?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, '재산분할액 마련' SK 지분 2.3% 매각 경영권에 영향 미치나 - 이코노미스트",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCUHF2enFPcTVzempBMExqX05DSjF0UWpFcGtzcmFLSzBRTFpCdTJPMkE1SEFuWlJfd0FYUzVyVW1WOWRPdjdZeDQ3Tkx5YnBVU09ocnJUR2c5QW1fYm4yeVdB?oc=5",
+  "sources": [
+   "이코노미스트"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK지분 2.3% 매각해 ‘재산분할’ 자금 마련…총 9440억(종합) - 글로벌이코노믹",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZXplSTFpVDRaTHlpbDFDVHZPUkhfWUREeTk1RHo3NmJUS1hUb2thUlZKcDhLZW1zakE4X0ZXNS05WUIzUVB3ZkpZcGJkRjg2aWRYSTY4UFBLWm5XUHdFbV9ZTS1pT21uaXNBQzRkdHdpR2oxMVZQblplUWcxM0RBV3RGNkp0dw?oc=5",
+  "sources": [
+   "글로벌이코노믹"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, SK㈜ 지분 9440억 매각··· 개인 자금·경영권은 과제 - 그린포스트코리아",
+  "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWSFRTaXBkMnFyMktjdFdKM2R1cDN4c09pMGtDZ1k1RGo1ZDVRMzBUMFFHN0VldmVSd203b1cwZFFBdTdVTWRxVklTRU5jZExWeWI2eDA0RXlsYTZ6VjBvdlNPejlZZGxQMnFlNlNJdVk0d0UzSnNmbGpR0gF6QVVfeXFMUFZIVFNpcGQycXIyS2N0V0ozZHVwM3hzT2kwa0NnWTVEajVkNVEzMFQwUUc3RWV2ZVJ3bTdvVzBkUUF1N1VNZHFWSVNFTmNkTFZ5YjZ4MDRFeWxhNnpWMG92U096OVlkbFAycWU2U0l1WTR3RTNKc2ZsalE?oc=5",
+  "sources": [
+   "그린포스트코리아"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원, ‘그룹 지배 핵심’ SK 지분 판다…노소영 재산 분할액 9440억원 확보 - CEO스코어데일리",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZcnIyXy1acGxTOGF3UmtULWdRRUVINmI1SUk0TTUxWmkzLVQ5VGs1TEhjcE5pLXJUWDV5dEx5YnJXUEQta2ZodWxnRkZJVXRJUVl3SkZMNlBYbHhZWDNMTDYyM2NwMVBzVVVB?oc=5",
+  "sources": [
+   "CEO스코어데일리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "Sia, 1억 8,000만 달러 규모의 계약으로 Pophouse에 음악 카탈로그 지분 50% 매각 - Hypebeast.KR",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWndWZzBlcEFHeVhNSTJ5dlJsTGFaeVFIcUxBS21TcmdHNHNNVEM2ZjhCMmstd24yb1FTTFVkdmZKWWwwMnZkT2FzQVVsMWY1N3dWWHY0NldTZzRMTEFEdWhwYXhIOWtjbVBKbHBnVG1sUWc2YzJoU0l2NW5MVVlvb1RMSDdZazNEVWtlenJiSG9uQVBSNnphN2V3NnU?oc=5",
+  "sources": [
+   "Hypebeast.KR"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "보너스 중에도 같은 규칙이 적용되나요? 대구 룰루랄라 토토가 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUFFSENXYUZCaDFLemFLc1czX0o3YlI4YmtxeVV1dHFFbmRQTGZWNUk0NEFQUThmMXduRmVuV2I1cmloVmwzSUpCd3pmMDA1WHdEd00tRmxNR2JxSVJCZHc1Wl9DUmE3UEpjZHBFd0t3MmdILXZHeUcwZjRkSzVpcjd4WndLRHNZTHNCNHFabExEQlZrb0ZscFk2NVk?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261002",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "워너브러더스, 넷플릭스와 판 깨나 - 미주조선일보",
+  "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc3p1eUpwbjNmcWZPYTVHYkNnX3Fsc1gyLXFSclNsRnVZcElZY09raU92TWRPUFVXNzY1VXByVVBhLXpYM2xXd1Iwanh5cnlKd3hZSjluNGZwRHVRLWk4cXI2bWxQR3BPaDNRcnlqR2g4VHBzMW9JTG0zY2U2ckgwa0h5ZXB5MWUxYUhaYTlKWHR4Ym1kTzZDby1KdG9WVUtCTk1fOHBJNzJDVEJaYnBvRHk4MzFUdm5HX0lyLThCb1BQYk5DRHBfRkdWOWs4TEFha2ZsUjlzU2tYc2xHR2dNRS03TQ?oc=5",
+  "sources": [
+   "미주조선일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20260930",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "보험사 M&A, 계륵에서 화수분으로…‘시간 운용’ 능력이 관건 - 한겨레",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBsT0cyYkpHQmM3MjZfYjRQa0pCSE5YeWcwU3NCR1Q4Q3YxN1UtSkpUOWNJb05jMWFlSVhJN2w5VEJjckpGUmEyVFFSRjY4ekNRNmlKVERsMXMwRlU0NlNuMHJEQW9Kc0F3ejloQkJNM2NRQQ?oc=5",
+  "sources": [
+   "한겨레"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "저축은행 하반기 '새판짜기' 속도전…M&A·리브랜딩 잇따라 - 데일리안",
+  "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPNjRZWnJLVjNFb3MzLUV3Ni1ReDc2X2xIcGVaQ2x1WFJ2Y05hTjlkc1NFbWxkRXpyTXdELXI4Umx5TjRLankyeGZKN3dZb1Vwd2VMcHlNTVBNVFBRZW54aGlRcUE1VEswTjFDMWxyM2JPdHFJTVNnSGtYSzhFLXlMVkxUNnhPM0ItVFd0aGVCTW5sQk00MnFaU1UtSjVWUEtlSlNzbnFET3lILUJXWlNCV3ZEVlZVdlZQZE9GRUptVkJTTlh5SVFHWHV1NzViSllUcGExdTVJNE1lMW1ZQ1UzQVdLVTZVUGx6OU9xR2RRU0RyNWxRd2NId2ZxM0h5aTN1a1FVLUw4ZVhzNjEzS2c?oc=5",
+  "sources": [
+   "데일리안"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "손보사까지 M&A 보폭 넓히는 교보생명…‘투자 여력’이 관건 - 이코노미톡뉴스",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DbWEwSllyajNsUmhEM1labDlSWFRXeTJMLXJEaFBnd09maVNEZ2tvT1luVEdNbmo5WEdEOFZUUFhzNXczNEVZcnpHR1l6TmhVRzBTNG9GcmxmUUhfaWk4WEtJcTFpSmxlTUR4Yg?oc=5",
+  "sources": [
+   "이코노미톡뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "3분기만에 작년치 넘어…뜨거운 M&A[시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SQ2RuWEJ5Um1SX1ByNE5SMERCVWJkbV95dllVTWxoY1ZrTHZRYkt1UE5hVFNrVVkyeHB0WUJ6bnF3eWN3YW5aNkF0cTlGRDU1aGVUREhR?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "한화·교보, 보험 넘어 금융영토 확장…커지는 보험업계 M&A - 보험매일",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56ZUZhaVpvbDVwT0ZtR1RLNTZ2aGhoWnZ0UVgyLUIwVl9VUTdJMG4yQXgzdnh4UHRJR3doZV9aRkhOWF9sU2FOSGNESUhnVmpsMGpRT3BqLVE5TklHRVlrMGNVckF5aHdV?oc=5",
+  "sources": [
+   "보험매일"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "메지온, 신장병 신약 법인 분리…글로벌 M&A 노린다 - 리드경제",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fOHo3QmgxekNNclAtT3FmcmxWb09oMjV5QnVDMV9ZLU56cnEzLUxsakhmSU5lSlBtWUZuT1ZKc2tzV0hwLWctX2ZSZ21TMUZ0ZE5DTklEckxIaUhaQmxRaHlnUWZxTXIxVUR4LXZ0cDA?oc=5",
+  "sources": [
+   "리드경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "AI 인프라 선점 경쟁 치열…“금리 뛰기 전에” 딜 클로징 속도전 [시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zYW5ZZUV2X0J6X250VzlJRWgzX3BGTWU1WGRtT2FEXzFOT0c4azFZWmE1V2xnNC1ZdzB0OFRmOUxnUGFkX1hrdlRxTnlBeTVscG9ndEJB?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[기업가치 실전노트] 매각 전 3년 가치 제고 전략 - 이택스뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16MEd6bjdDZk9JbGhVT0NSNWplakIwM3pueE5NaU1TV3prYVd6TF9PNjgzNDllTW9HX0RxRTN5cGlmb2M2dy1hX3h6RldidGpCNldnaTJscGl3Z0ZuV0xCZXIxSlJrd2xZOFE?oc=5",
+  "sources": [
+   "이택스뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "밸류HR, 영업이익 700만 엔 규모 건강검진 지원 기업 14.54억 엔에 M&A｜이익 배수 208배, 850개 이상의 건강보험조합·기업 기반 확보가 목적｜モリタマナヴ / M&Aニュース解説 - note",
+  "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GVDd0WGxEdkN6Y3lDZ2s5STlYRHhVNFZXQU4yMDV0MFZJd0VRZ21YXzBzMTJpVzFVbUU2R09uRzRRRTdxR0FMbGJwRTlyelRmU0NUTjB5NWk?oc=5",
+  "sources": [
+   "note"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "한투, 최태원 회장 PRS 조달 지원…4000억 전량 인수 [시그널] - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5RZVNBRzF4WkNXN0ltNl9kOWw2Yk9SM25PWUFjYTFOeGVPY0djemhEd3ktVk04aDBnRkpxVnpNTkFTN2FaSFllNGJva2haR1BoaXVoWHQzRQ?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "기능 개수보다 작동 방식을 보는 토토 db 가격 제로 비교 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMzNCbkFiMWZvU2wzNUhicXpZSFNiMVd1T0lLMHF2cnRDeEYyemk1cUQ4VjRzSXl1WUphZlY1bUxUbXV6QVVJVmxYVWFjYWNlLUI4S3N1bllYbk1IMG1UVjkxUU5Gei15N2duei03bXR4T0xaVGJiQmRIcmF4bjR5YVFTUFh2OG1rYWtBU2c0UnNaZFhmaFpxM19BMmVaSnJuZGJHRHRxc19oNE5FSl85SmRrNEN0cnFTM2c?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "국내 M&A 시장, AI 인프라 빅딜로 거래액 확대 - Traders Union",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZXJsNnFmU1NsS3I0WXpqZHFWWVdhWnZXbzVISnpGcXJERDlVS3hkZVFoS1NOajl3dHdURUg3UmVxVlc1NUJyeTFrSUx6ZVFYM1h2U1dPX1BDaDBROGtMODc0TGVzSHFWODZTLTBQa0tMRGFhd2lTZ3FOYmpuQVZJZTNwYzZfSGRpSFp3NU9GUE5ZS0ZKazJZ?oc=5",
+  "sources": [
+   "Traders Union"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "\"한국 최고 서울대에서 어떻게 이런 일이\"…가족까지 동원해 '수백억' 챙겨 발칵 - car.withnews.kr",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE83ZzJnUjF3bGN6TEk1WnlZbk5nSVRpblE3a1JXNm5nS05tYmFod3AxM1owRHdzOFJTdFRsOWUxejBvUEVEQW5YbXJ0dDJTRC1HclVpX2szQnNtQk44aEJJbEFjYXE4UG1ETFRZ0gHgAUFVX3lxTE1MQnp1T0dJLTZTaHBxSlhVRmVXOXpqM0x0RWhOVmhmTVpoMm9HNEozeTdSMEZTcXBIWVFVcDB1Y08tWXRSWWZBQ2ZGVDZndkcxZk1KZEVZaTNfZTFYbzFPc0dWVkg3dVFCeWJvMDhfbjFvNTVxQXprTE9sVXFGODZkUlVkSHhFVEZRUEVCbHNlR2lmVTlhWHotbTJmMzZkMmNLa0xucnJyTThPN1d6eENUdkk2RTF3ZXYzMV9lRmJseGNZMUhtWDc3WVRxM3E5TmE1NTJuR3NYUXNwUDRVdDF4?oc=5",
+  "sources": [
+   "car.withnews.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "英 오픈페이드, 연내 나스닥 상장 추진…美 진출 속도 - 블루밍비트",
+  "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1jdjZVUzdZSGFyYzA4emNQN2dkQWIyVjZqcmtVS2lnUDNWc0pFWFdValRxVWd0YUNYeFRUWlRFRHE3OWp2akxSZ2FJTG5fcTBf?oc=5",
+  "sources": [
+   "블루밍비트"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "자사주 매입 및 인수 합병에 따른 성장이 루미네 그룹(TSXV:LMN) 투자 타당성에 변화를 가져올 수 있다 - Simply Wall Street",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMDhSVzVsWTVjYUwzeEl5YXBQay1JMDVsQlFYaERmejd1X25GenJRMWFLa0ozUEt6dUhOTWVvUkEzMTJmeWFqbTBGZGZBRmtOOWNQXzBpN3RWekVVX0NtM1ZOTktkMFlTZ0lzWkR5bmJOSG5wckFTN1lkTVh4TF90a3hMZnh1ZDM2b0FVYWstckFYTjVlN3YwWlRR0gGfAUFVX3lxTE5ydF85V2U2aC05ZzM2bVB1WE05My03NHJHcE9KdmRYbEpNeFpzVF9ubjVCbkotRnBHSnZBTGlVc3NPdVl5YnNtV1RneGFnQkJValAwQ3JaUVIxbDdOOEptdWFHc0JNSHNSOGI4OHZZWFpqV09taTA5TDFsWGw3MDV4Ny1lQWZubV9pYUMzRGxGeXllck40QmdGbzRwNXdGYw?oc=5",
+  "sources": [
+   "Simply Wall Street"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "파라마운트·WBD 합병 마무리...새 사명 '스카이댄스'로 6일 출범 - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE16TGotYmIwNS1OOUV3ajE3MzBFVTRTZUthTXlTb2JCZ2lnRnRCQkd4Q3VHSC0tZDJjUXBoazZHVkNTWEZ5U3BjdUtMcHFlc1E?oc=5",
+  "sources": [
+   "v.daum.net"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "에이전트용 DB 수파베이스, 1억5천만달러 투자유치…터소 인수 - 와우테일",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE40WGIwSEZlMk92QmVNTHU3RlI3bDJlVDRFQ3l4Vkl6d1ZoVkZBa1l0R1pGUy1GT3Ixa2MyX2R6eFprTFFfNXVrUmwwdFVrNWc?oc=5",
+  "sources": [
+   "와우테일"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "핑거, 몸집 두 배 세아FSI 인수…\"빚 60% 무리한 확장\" 경고 - 리드경제",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5leUw1dW4wNHhTaEh5b2ZFOXpUNWhiWjkzT2lCbTA3Qm4zU1BZWWdkcXFnYmJacVVYXzNTQjVHLUZyR0J0bnNGUWcyOTlUd0RDWENSUjR4R2pmMlRJd0plQkprc2tTcWRZVlBCM3FSTjc?oc=5",
+  "sources": [
+   "리드경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "OpenPayd, 연말 나스닥 상장 및 미국 출범 목표로 추가 인수 추진 - CoinDesk",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdjk1ZGtuZmswRXZ6cmVRU3ducWtGdlVpTU5qbFZBeDJZT1lXa2hqMmJmcFlvc0gtZEU3Y19DNFJ6bFIxY1FzLWxmZHlJd3pMUU1SdUFQRGxEUDVCUjVuT3gxQzdoLVBjc1dJMFV2QUtpcXhKSnFaeWRpbmdrNUo5RWg5NmcyOUJnWUNybUhRWF80amlpNTE5X3pNUkVCbmRvRk1RWHY1RTNsbXhydWphb1JSNkhJR0dHaWtsOXFpdDA5VjBDcVE?oc=5",
+  "sources": [
+   "CoinDesk"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "파라마운트와 워너 브라더스의 모회사는 합병 후 스카이댄스라는 이름으로 불리게 되었습니다. - Vietnam.vn",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQR3JtSDhqSjROVzJsSUNodEVvWUlOcE41X0tXQjJBZDU1VE1wb3VJRzk2NGJjRzNGcnl1cHNpRHZlTHViNlZ3OUZxcnB4UUhBLTdoalNpMFItbEVabkFmejMtR2RfSC14Smw5MXpHREFNWnNoSzJNTTFtVDBTaDl6b3Z1anFGaEswYUExRkhFWHVYUHFnOXo5TmE1VDAzeGVNMHc?oc=5",
+  "sources": [
+   "Vietnam.vn"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "보험왕좌 향한 2·3위 박빙 대결…한화 '애큐온' 품고 교보 'SBI' 삼켰다 - ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yd2ZkZEhqMTMxRXpHX2hVV3dhTTIzNU8xX3B2cUZhRUxpSF9LNTJmSmppcU1RNGRYdlhfbVBNbmtoSXZkVjhRRU5jSHhxaEtIZWdpVHkyMjAyc2d2QUswTEk0MnZvcUc1?oc=5",
+  "sources": [
+   "ebn.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "Armada II 주주 찬성 2,050만 주 대 반대 140만 주…합병안 승인 - 위키트리",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ibkJMLWpDOGpfRVM3c0g1TDVhc2pYd2dJZ0IxdlBURFRYSHdFb2p5b1pnbm04M3pjVFg1NGViQXNmRG13alBjUW5ldG1FOUV3N1h0cUNB?oc=5",
+  "sources": [
+   "위키트리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "파라마운트, 합병 완료 후 사명 Skydance로 변경 - 데일리바이트(DAILY BYTE)",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ0pNNk1EdHV6ckRuQ01lUWYzZ0hrWkJ6YUxja3dkYktGbjBKeEdPcTIyVzM3M1R2MTJQaEtCMzBHMUlXWm01SGpkOEJmWHFJT0R2VHZLTUFRNDBLbUhUOXFBczBCMXktajRmY0szWkp0bUl2REhGQ3JQdXRoVjhHamxFRlhHell4NWhfakdBclVsNDA?oc=5",
+  "sources": [
+   "데일리바이트(DAILY BYTE)"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "다시 도는 코넥스 상장 시계…모비콘텐츠테크, 예심 청구 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE10bWtjQUJWLU9oNTdkRFpEYlRTUElWYkRTUkRjMmNxYkpRYmZHUS1ORUZGdnd3Q3pYZ0wxeF93cnEtczJhVUVVTktfUVdOWW5BM0E?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "비주얼 중심으로 둘러보는 007 카지노 로얄 스트리밍 게임 디자인 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWl9nU1VldzlvelQ2ejdHZi1ONDZHMU40RGlOWU0zUXhoTXNYV0dEQkJqUVhfVDg2dm04S3N6QXV2WEZYVW5XZzJyQTlqdlVJMXhta3BDbUIxcUVjWkxPN3FxdnlxNEloVVB4RHNCRnFlR2llYktCRXZWeFZFSkhiV1phaEVsN1RmYlI3dEVuQVZMc3lwekpyQjJlOG1zdVl5NURmRGoyaVc2Qlp4dXVMUW9lNDBJT3RWTTlaYVpnWWxwRUtwejVIZ1dlNndTT2ZhTkZyekZNM212dVRNWVFONjRHUkVjLUFGamxqRUpyck0?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "게임 기능을 주제별로 읽는 블랙잭 surrender 콘텐츠 모음 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwWjJLWEJhb041OGRRcHU5RFJHZnctaDlNb2VXeUZBY0tfaUE5U3JoSFRod0dyQUFmcVltTUlwWDRlaTB3VTZhc2NtMVoyRGpfY2ZXR2l2M1pRcl9ISmp2bnJYWEtjWUZHYklFZEkxX3Y5cVdwVVE?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "'찬바람이 분다'...패션업계, 겨울 대목 선점 경쟁 '앗 뜨거워' - 한국아이닷컴",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jNHRUUGJLWFdZNFJlQUlIRFdqTHJPM3F1MmlyYlFQelVia3dMWTdnZDZyM1hJU1hwYm05bEFLVGlZRU9NeVEzT1BMTFI3ZEZKZW8zNlFfU2h4dGJkWFgySlFaai05dmswSHpz0gFvQVVfeXFMUFIyMGNCZXB0aHozVGNmcmlkNXd4bjMtSTlsa1F1ZEpDX3QxX1h1Zlo0ZHZqM1gyVnpCeWVrT29XVFBiVkZ6SVpFQnFYMk1ZZXFkMjdKdmRTTlpMaTZRSG10SWhxNExoY2FpSF8xaWxj?oc=5",
+  "sources": [
+   "한국아이닷컴"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "대우건설 새 대표에 이강석 취임…30년 대우맨, 수주·해외사업 지휘봉 - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9nQnNuQnhsMDJXUS1sc1J5RjRxcS1EQnRPTUF6OUxwbGNYMkFCclgyd1c4OGluUHBwQTVmRDdwSWVhMUVSU1dMdENMZEU3YjdnU2U0eXBHZllvNlpZZ3A1WEZYVm9tcGNtODg0UWxjTFpGWmRRdktxem5HdTPSAXxBVV95cUxPZ0JzbkJ4bDAyV1EtbHNSeUY0cXEtREJ0T01BejlMcGxjWDJBQnJYMndXODhpblBwcEE1ZkQ3cEllYTFFUlNXTHRDTGRFN2I3Z1NlNHlwR2ZZbzZaWWdwNVhGWFZvbXBjbTg4NFFsY0xaRlpkUXZLcXpuR3Uz?oc=5",
+  "sources": [
+   "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[가상자산 지각변동⑤] 거래소마다 ‘큰손’ 붙는데…‘짝’ 없이 홀로 선 2위 빗썸 - mydaily.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE43aklyZHk0ZnkzUGJVMjgtc2JRRnRtYnFpMVVSN3pZSTZlc3BZU3RmN1RFZGNhTWctMVBVUWhORU5NWEs4dENSd3p6clk4SWl5R1NtTHdEVnh4Zy05TVR2Xw?oc=5",
+  "sources": [
+   "mydaily.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "베팅의민족 해킹 배당표와 게임 규칙의 연결 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONFd2QW11ckNxeEZsVWJEalh4Zjh6OEpfMG1xZGJtZDZqR1VzODdBWWRfUUREMWNsdjMtNkRDMWhCRVpkeXBtRGRTUzllbHlJSk4wbkFGcTV5OW9MR1VfVjRvNWw0Z1l2aC1oS1lBZEJDMU16Sk9zQ0dWa0JEekE1UVlxd0luc2ZKT3JkemdPNVVIMlZBbldaUHZVcE1rSVFCb016anhKS3lWRkc1ZlQ4b2tvcmh4NzRqcnVhcnFGeVBaZzRTVVBiMU10Z2l4ckpzRTZ2Szd1RUEwcWtXVVByRnhGQTg5WUhTUUVxZ2tCcXlpOXMxdVBwQVVxTWtDLXBQ?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "OpenPayd, 연말 나스닥 상장 추진…미국 시장 진출 및 인수 가속화 (OP, 나스닥, 미국 진출, 인수) - 민심뉴스",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xdGJLb0hRRXBqMVY0VWRjNDNmV0dYb3JiX3AxN1R4OF93dko4VHZlbHlfY3FDamRDNWJuNUFkNVdtOEhSZEdqRWxBcEdrZHYweXN6ZDg3STRMZnk5TUFiVDFfbUJfU1pVUGJGag?oc=5",
+  "sources": [
+   "민심뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "모바일어플라이언스, 이재신 전 대표 등 고소…경영권분쟁 격화 - DealSite경제TV",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rNTNvZVVYV0VJTDlsaVFySTdGbE93ZUp6QllEbEdRUjVFYXZJUVRPdE15NXpjSER2akFoM2hSTDhvemo1ekk1VjlpVy0wNUZkSmdZMlpR?oc=5",
+  "sources": [
+   "DealSite경제TV"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[금융맞수] 한화생명 vs 교보생명, 보험 밖 영토 확장…관건은 '수익화' - 스트레이트뉴스",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAyNXhQSE9YdzhCVzV1cGF3YUh1cGUtRlNBc1gzUWE4WS1XTldOUFJEX3RhWDMxbmVvLVRDZ3JRaWhtd01zSXNBblNLWHNjbThydEdlV3I4dU13VVZ4YXpPRktYQ2lTVVlEcnFwc0pITzZ4Tk1XeVBZ0gF3QVVfeXFMUDI1eFBIT1h3OEJXNXVwYXdhSHVwZS1GU0FzWDNRYThZLVdOV05QUkRfdGFYMzFuZW8tVENnclFpaG13TXNJc0FuU0tYc2NtOHJ0R2VXcjh1TXdVVnhhek9GS1hDaVNVWURycXBzSkhPNnhOTVd5UFk?oc=5",
+  "sources": [
+   "스트레이트뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "터치 실수를 줄이기 위해 볼 마크 스피드런 사이트 버튼 간격 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBITmpjYmpjZEhiXzl4WXNySXhTcUJ6d0pURHpPNENsT0ZnTHljbDllbUJGNWZ4TFAzNGRWMXF1RTZ1SXJrVFBnaDVqcXVYVVVZbEdSVzRmTFNwUHVTeUZGY1hIX0UxaTNDMDd3aHZZMG0?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[베스트&워스트] 씨싸이트 75% 급등…‘SK하이닉스 수주 확대 기대’ 윈팩도 ↑ - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4yOGkwVGktRHRjWG1pUEFfSnJoRWJ4eXBzZnB1QWlKOUdsNFNkbWdUeTJ0Q0NsdTQ5TzAxbE9zWXR2WTNDY0Y2LW4zVQ?oc=5",
+  "sources": [
+   "v.daum.net"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "심벌 디자인이 비슷할 때 참고하는 mgm 바카라 조작 구분 포인트 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZLVVZOHhEbV9DQ1BnVkE0Zll4UmhtRGtQd01GUW1najlXZVFBZzAyR0pNWTl0RkljY1kzaVFtZ004aVBCcWEyNlhhX21lejgxaXlFbU5LVUh4LTkxRmtfckxZY25ZNnZUTklVWE5rVXo?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "서울대 동아리 200억원대 부당이득 혐의… 금융당국, 메리츠증권 정조준 - 뉴스W",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zdlFDUVhNZzFjVVI4dFZhUW1haldsdXhYRm5RbjRTM2h5OW90dE9zbEJmeG1pSTVja09yb3hqV2tpLXU3Q0hqdXBaMWFlWmRNczlsNUVlQlZDcVJYS084NW4zU1Z2UjlC0gFsQVVfeXFMTzZGVTN2eXgwdGdBLVJ3dWJJcGk3LWtER3lMLVR3U2R0VGtPazJKeWtMT0U0enJ0cGo2YlF1WHBMb2Vqay1CYVQ1akUtdEo2d2t6bThRYzUzT19ZS0FhbllnZDNEdnktNDNDSmw5?oc=5",
+  "sources": [
+   "뉴스W"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "뉴 헤븐 카지노추천 자산 배분의 파악: 원리, 방법 및 기술 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hd2ZpQ1hHSkdoX08ta29kQTBSY1lUZTdROFJXdTNZRW1Hd1h2R1ZpNnRjbnpkNDlTUjBwSEZYUnllcFpJcTk5ZWlDTWtsdGxtaW93Z05JaXRmcmJLM0lOaXl6eVg4UlBv?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "[A 주간 서머리] 경제·산업계 \"신한은행, 고객 개인정보 유출...오뚜기SF 공장서 협력업체 노동자 사망\" - 아시아에이",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13NzZEZmQ3T3NYSkI2VDVyVnNnWm1uU0laYjV4MkZkZXhJb2Joa293cmdqeEN5RW1NLTVBUk8tbHZTQ1pwR2lhN0RNRk4wTGMzaVRseHlka0h4QURaSFNCT2J3aWNfX2MweW9vUV930gFuQVVfeXFMTXc3NkRmZDdPc1hKQjZUNXJWc2dabW5TSVpiNXgyRmRleElvYmhrb3dyZ2p4Q3lFbU0tNUFSTy1sdlNDWnBHaWE3RE1GTjBMYzNpVGx4eWRrSHhBRFpIU0JPYndpY19fYzB5b29RX3c?oc=5",
+  "sources": [
+   "아시아에이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "반도체 훈풍이 만든 9440억…최태원 SK 지분 매각에 쏠린 중국 시선 - 글로벌이코노믹",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSUE2YnJ0UGJZYzFQd0p0YUVaMlBiWGRkanNxX2tqSTUzSmYtV3dIc3dqcUhMS1BOYkVMQWdINThzNnhKcUpiZ2g0OXllOWJ1QXFSS1VQOUxJSWRRR0VKRzR1eU94T2J5Z3I0RXFmc0VDMmRjZzNKcjQ3MGRvc29KTmtGYVB1MlZM?oc=5",
+  "sources": [
+   "글로벌이코노믹"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "최태원 9440억 팔고도 지배력 유지…PRS 카드 - jabon.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Bc3pZcmhkVnFYMmRveWZYdlBKZXlaZzNuOFBUTGJ0M0VZZE15QzNyVGFub3VsUXNMeVdfYjFVYnVLWlFvV3VPOXBDZV93MzdGalNCR0g0Q2p0SFlJMHhULW1md1VObjA?oc=5",
+  "sources": [
+   "jabon.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
+ },
+ {
+  "title": "'SK 지분 매각' 나선 최태원 회장, 재산분할액 마련 - 프라임경제",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVZUQ3dWtmdDRqcHo5WVJtRVZzd2JZX09ndnMyZ1BoZlNjVlp4a19LTnlyX04zdlIweFlnRHRKMV9kZjJuampEUVFXMzVqaHN3dEQ3N3A1aW95M1Nka29YTVh2WVBmcVkyaVg4WjZNQ1g0dw?oc=5",
+  "sources": [
+   "프라임경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261004",
+  "last_seen": "20261004"
  },
  {
   "title": "명문대·금융엘리트 출신…M&A 미공개정보로 200억원 부당이득 - 매일일보",
@@ -146,23 +1379,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "최태원, SK 지분 9440억 매각…이혼 재산분할액과 같은 규모 - 중앙일보",
-  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDX2NDY25hcWVkbFdQUFUzcmtjMzI1bUZuNWFzQWxwZkQ3ZFBUajdMcFh3bVE1T1VyMjMycHg4RFZ6aGZ5V082aVctZ1NLajlkaWdlM0Z3?oc=5",
-  "sources": [
-   "Chosunbiz",
-   "KBC광주방송",
-   "v.daum.net",
-   "국제신문",
-   "디지털데일리",
-   "인더스트리뉴스",
-   "중앙일보",
-   "천지일보"
-  ],
-  "outlet_count": 8,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "동원그룹, 화장품 '참존' 인수 추진 … 사업 카테고리 확장 - 뉴데일리",
   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1sZnNnVXFBSEdZTHY3YUhROFA0Yy1SR3BvenR2RDR1TE9nd25wLVpvdGlTWUR1NlF0Nk4zWnNhbGV2ZHpfdUtYdHZ6MFZmdVZsUXV6TnZWS05PUlI5X2dPeXlReEUwSUxXUWxiS05zdkdnOHE0d2t3N19aRdIBgAFBVV95cUxNSnNFdkJ3UjEwSEduT21hb19NdDNETUhJcnh6ME4zb1RUUDd4WVhCMlltS0o5cG4tZFB3cHA0dFl3WThJaXN2Rl9kcVNxU1VlSnhRVndQX1BaUE9ZZ3VDOUJOUGlBUWdPZUhZN294dVhqVjBlcUJ0NV9fRDJqRlRydA?oc=5",
   "sources": [
@@ -176,22 +1392,6 @@
   ],
   "outlet_count": 7,
   "first_seen": "20261001",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, 9천억원 SK지분 매각…\"재산분할 대비\" - 연합뉴스TV",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wVGNkcFBGTVJVSnlObUdSMjhlNXVEVkJDUFJNamdqcThmb2NhZ1JlLTh2Q2lxNzJTLVBrQVdESk53ZWZsWUVlck53ZGF5RXRoNVAxQVpZZkhaRUZEZEVGc0w2TDV5Znc?oc=5",
-  "sources": [
-   "v.daum.net",
-   "금융소비자뉴스",
-   "뉴스1",
-   "신아일보",
-   "연합뉴스",
-   "연합뉴스TV",
-   "지디넷코리아"
-  ],
-  "outlet_count": 7,
-  "first_seen": "20261003",
   "last_seen": "20261003"
  },
  {
@@ -240,21 +1440,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "[속보] 최태원 회장, SK 지분 2.3% 매각 결정…9440억원 규모 - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tX0RWREZwNTZVMTNPcHdZZ3lCS2kzMTM1Nkd0SGNQZ1Q4b253ZzNlWjRUVmhSVFRCR2pEejVMbGh6dFhTZXFnZFluTklLdGcyaGlETE1lWjQ1Y1hzcldYX19TWHBuV0ZCSi1TedIBckFVX3lxTE1IUmkwM1Z3WDMySjMyYkRCdmtiaWtyQlpQM2FIZlFJNVpfV2NNUzBzMUZhWW5RQVB3THJPQTY5YXM2SlVDc2xkY2JVX0RQT3NNZkVqdFc3aXk4QnhveTVwTkZRZnJVWTJhTnpuaXFtZWZsdw?oc=5",
-  "sources": [
-   "KBC광주방송",
-   "뉴스1",
-   "머니투데이",
-   "연합뉴스",
-   "워크투데이",
-   "한국경제"
-  ],
-  "outlet_count": 6,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "동원그룹, 참존 인수 추진...K뷰티로 사업 확장 - joongang.co.kr",
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBITXNINVAxc00yblF4MW5TRkl4YklPVDR0eTdkR29pT1JUdnRzYWZ4S0djTjRWLU13eWo3T29XcXZKNWprYnlXNkhBbGxzSWxjNnRXS3d3?oc=5",
   "sources": [
@@ -279,32 +1464,6 @@
   ],
   "outlet_count": 4,
   "first_seen": "20261001",
-  "last_seen": "20261003"
- },
- {
-  "title": "[애큐온캐피탈 M&A] 한화생명, 애큐온캐피탈 인수…여신금융 진출 - 딜사이트",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BVWp4VlpXcVZXVGRQakpDM0ZPUVFQa1pXdlVFN2NDb196X2gtb1d2MmN3aFpEcHFrVnUyZHMzYkRtcG9VamZtVnJ0bVJRQlk?oc=5",
-  "sources": [
-   "Naver Blog",
-   "dealsite.co.kr",
-   "딜사이트",
-   "파이낸셜포스트"
-  ],
-  "outlet_count": 4,
-  "first_seen": "20261001",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원 회장 SK㈜ 지분 2.26% 매각…재산분할 소송 대응 9440억 마련 - 인베스트조선",
-  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSFktUHFybGh6dmlpWW9kOHVXdUJDYWc1NFBhOUoyaGZVWFRuRkc1VTJQcldLTUIzQ2E1SzdVVWwzbGc5Y3AzLVhvcVBwd3FtRmhpc3k0WGwtZ2NZRTM4SXRZeEd5ellSNnlJQVhFY0FibmlQNWY0RXZYZHhvTjhCNjR4SQ?oc=5",
-  "sources": [
-   "노컷뉴스",
-   "매일일보",
-   "서울신문",
-   "인베스트조선"
-  ],
-  "outlet_count": 4,
-  "first_seen": "20261003",
   "last_seen": "20261003"
  },
  {
@@ -341,42 +1500,6 @@
   ],
   "outlet_count": 3,
   "first_seen": "20260930",
-  "last_seen": "20261003"
- },
- {
-  "title": "인수합병 - TradingView",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6WXNnRzYydHpNRUwweUhjNFg5eUhXbm43NHh1TzcxbElNM1gtSUxIRlpDQ3ZRSGNnVGdidlIwVTFPNDNsZEVfS3ZXeHZfZDZGUUV3OW4tQ2ZEZlJuMG01OXBPX3AtcW5OYTF4cjBwVkVyRWNlZ1VBVA?oc=5",
-  "sources": [
-   "TradingView",
-   "es.tradingview.com",
-   "tradingview.com"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20260930",
-  "last_seen": "20261003"
- },
- {
-  "title": "아프리카 AgriTech AI, 2026년 9월 M&A 12억 달러 유치—한국 기업에 열린 구체적 진입 경로 - 뉴스N연합",
-  "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9za2ZraU1fSFFRbnFQaG11UmdsSkV6SnVtZ1dVYlh1ZTdDWGFRc3JkWGdjbDdHejBZTkcyaGNPaElkZDQ0SFhTb3JB?oc=5",
-  "sources": [
-   "뉴스N연합",
-   "대한청년일보",
-   "얼리어답터뉴스"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, 재산분할금 마련하려 SK주식 매각…지분 2.27% 낮아져 - 동아일보",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YYW9GTnJwdnp5Y185Uzl6R2g2ak1YdEVMYjRNbjk4VWg4Zmx4SUh5ZWxsSmFvck5BV2dQWU1QVTdUYV9KQUJRN1d2Sk92enRkeXl5MC1GdEt6WUFLVnNDY3B4ZVVLM180RjJYdWJUVF85LUtRM2fSAWZBVV95cUxOTjlMc1oxQUFpX3daSUJGS3ZlTlI0bkpCMzZNYVg4ekF2SHhjVmVLOGxsN3B4VXA2alh0V3dubVN0cjRkaXVQS3ExQUpKUFBZVGlIZ0ZVVUx1cGhOQmxienlLYTFlS0E?oc=5",
-  "sources": [
-   "v.daum.net",
-   "대전일보",
-   "동아일보"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261003",
   "last_seen": "20261003"
  },
  {
@@ -600,72 +1723,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "동원, ‘참존’ 인수 추진…김남정 회장 첫 M&A로 K뷰티 시동 - 서울경제TV",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54Y3ZSSzlrdDE2TDAyTnhteW4zY1BxUkozTUVZdDNlYUM5Qms2amxnZjRrWnFNdGxvUzRBUDluYkNJZEtlVUJpZ3ZCaHR3R3NUUVB1WGlLOUsxdGpqU255Q0ZqWV8?oc=5",
-  "sources": [
-   "미래경제",
-   "서울경제TV"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[삼성바이오 유증 후폭풍] M&A에 우선배분…6공장 재원 '후순위' - 블로터",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiLThNV1FUQkg1a2tHX1huMHNVbVlKb3BHaWM5OHZsVUlDQ0NfMmV0SjRXbVdSRW4xUjdrMTVkLWplRkRmaDFnblZlVmg2bVRrM0FxQm5lZW13RklqRmdDNHBoZ29ueVduLWUwa9IBbEFVX3lxTFBiLThNV1FUQkg1a2tHX1huMHNVbVlKb3BHaWM5OHZsVUlDQ0NfMmV0SjRXbVdSRW4xUjdrMTVkLWplRkRmaDFnblZlVmg2bVRrM0FxQm5lZW13RklqRmdDNHBoZ29ueVduLWUwaw?oc=5",
-  "sources": [
-   "v.daum.net",
-   "블로터"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "차입 비용 상승의 여파로 3분기 글로벌 M&A 거래 열기가 사그라들었다 - tradingview.com",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VbEQ1djN6cGd0Zk9YX0J1SXRvUktkSjFOZDFQR1ZnNFhMVTBoRzlrbWlBVmh5NkkyS3lBVzYtOXNzMVlVQnNpaHllaTFBUlk3djlUak93Vi03NUNjNXVoZUNZSjFQNHVlUGdoVzJ3RnItSG9CVGxBUg?oc=5",
-  "sources": [
-   "TradingView",
-   "tradingview.com"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK㈜ 지분 165만주 매각…노소영에 지급할 자금마련(종합) - 연합인포맥스",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rZWZTVGw4SjZrTHZBaGszZFlNSU9HNk1UU19hLTJ1bm02aGhUSXFjd2VibWs2Z1l1dFZFaWNWZ1dmby0tUkx6RHdYMjNrRkhMcUZDNjFTR2VZRW53c0FzXzFzNEYwYklYZDFIV3dwNkQ?oc=5",
-  "sources": [
-   "경기신문",
-   "연합인포맥스"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "'재산분할 대비' 최태원 회장, SK㈜ 지분 165만주 매각한다…\"9440억원 규모\" - ebn.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JSVNYX3AzdUp5dC1tZzlGb1RwSnI5d2ZZTDkyaTBPVkhuRUFaQnhQbTBMeHZWWVFYdnhNeXpTZDg1OWk4ejJkSUNGc1kxRGw0NjlXMnFwbjZtSXJMWEtkX3BtRWExaHhv?oc=5",
-  "sources": [
-   "ebn.co.kr",
-   "metroseoul.co.kr"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK㈜ 지분 2.3% 매각 결정…9,440억 재산분할금 마련 나서 - sisaworld.kr",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yQndJUVhPa25MUnV6VHZUT0pRT1pUR18xUzBFQzFoM2lYMXNVQWstZ2FZRlQ0NkVXRmxDeHo4cnFqdGx2amFvRzZUUlBXSVIyUHlsU21kWTFtb3FrR25rTVAyS1htalAtRWc?oc=5",
-  "sources": [
-   "sisaworld.kr",
-   "아주경제"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "[스타트업 필독法]창업과 M&A를 잇는 벤처스튜디오 - 아시아경제",
   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUWNMTTJ2aWdhMFhianBQWXJFR0d6VlBOcXdkMDFBS1RhbmxVM21MbUtuelJvTjByWFJKY2p4akhmWmdOeE1KckhlMDB1NDdRd2xfZVVSeHkxZmJCV0IyNQ?oc=5",
   "sources": [
@@ -780,16 +1837,6 @@
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vZ0xuXzFvQUtOV01DaE9WaGtsSGVMTEFHbTBtN09WRkZnRnBrSDZ4ZnNFaVlFcG1UZmYzSVE5UTdOM1NHWkdMVlpDWDliVDZNWkpCczY2ekw5Z9IBWEFVX3lxTFB3dWo2NE5ORXNiZ29RT25zNmRYSFNLblI3d1FxekpFZjMzQzZ0Q3dJOUE0cHJfUzJCSzhxMG5NMXhsUVFsYlI3OXJLejJEVlR4SkhUR1ZUNDM?oc=5",
   "sources": [
    "아주경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261001",
-  "last_seen": "20261003"
- },
- {
-  "title": "구글 이스터에그 룰렛 도움말에 없는 항목 확인하기 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeWltZUN3bWtUOGRDTlBOOHdOaW1SRVVNbnQxY2hZRGRzZ3hoSVdQc0xHenZvWUFIYXJlLTNLUElaRjc3ZnVXSGNlM0FFY0J5QWRMblBiUzJTZXkyX2dsOGdMLXI4Vm1jNU45S3BJUkV6bjlSUjNZRzFJR3h6UVM2bklQUnZTR3MzNE1jRnRDRWtuUWg2WnNWS1lLaFVnV09p?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
   ],
   "outlet_count": 1,
   "first_seen": "20261001",
@@ -936,16 +1983,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "[美특징주]온세미컨덕터, 시냅틱스 인수가 낮춰…시간외 동반 강세 - edaily.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS09xMDNORk9CMzIwcUQ2UVNvcVoxSzRybGVnaHJ3Ql91V284cWhUNS1LcFNVNEp5cU81Zlhpcm96OHBLYXRzS191RHVGRlNxVnhMV0laMHRKUjhwU01UQlRCTl82VDFiQ01lbzNaNHk2ZjFhYUVzbTU1aGYwVjlCcA?oc=5",
-  "sources": [
-   "edaily.co.kr"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261002",
-  "last_seen": "20261003"
- },
- {
   "title": "온 세미컨덕터, 시냅틱스 인수가 인하…57억달러 전액 현금 매입 - 데이터투자",
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0za3dHa2I5NkNzSG1BN0k1OGFya1lCM3V1Uk5pMTh6ZDZKUldjazkwN1BTcVNtYklPOWtRcEdJVmhrTXJXUEloWjN6TTdFbmtKUW9VaXhLLXlDY2NXU2xWbUh3Z1lTUkNObXU5bTZTQlZYTEU?oc=5",
   "sources": [
@@ -1066,56 +2103,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "비케이홀딩스, 상폐·한계기업 M&A 인맥 경영권 선점 후 외부투자 '채비'③ - 녹색경제신문",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lMDV5YmZCSGZmWC1SN2x2R20yM3dhTDRycWlHWV9XR0ZPUXlyUGRWOXZoQjEzQU96cjBPNE5fWjlKaFdKb3RaQmZPdTJxeE8yZ3ROaTNndjhNWDZoMUFKRlp6T25HdjQ?oc=5",
-  "sources": [
-   "녹색경제신문"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[대한제강 디스카운트] M&A로 외연 넓혔지만…성장사업 발굴은 제한적 - 블로터",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WOGJNbUx6dTZQUkFNVmk2UnAyYUlQNVZZMmUwNkVkX1lvQlZ0ZVQ3S2NmVzlUYURmSzNGZUFReEVUNFJHdWhEMkN6YjdGN1lPLVpEcHZULUtBR1ItblVMTTVUS0Q1aklUb0FkcNIBbEFVX3lxTE5WOGJNbUx6dTZQUkFNVmk2UnAyYUlQNVZZMmUwNkVkX1lvQlZ0ZVQ3S2NmVzlUYURmSzNGZUFReEVUNFJHdWhEMkN6YjdGN1lPLVpEcHZULUtBR1ItblVMTTVUS0Q1aklUb0FkcA?oc=5",
-  "sources": [
-   "블로터"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "중소기업 M&A 시장 넓어진다… 딜플러스, '조건 기반 양방향 M&A 매칭' 구축 - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8td1JCUm9vekFoU3otZS01S1RsaWxXWDF4dGdURjhmQ3Y1U1AtbG41dXd5VEpvYWRyZm1HYllhX2M5M1pNanc?oc=5",
-  "sources": [
-   "v.daum.net"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "산업 재편 바람 타고…달아오르는 M&A 시장 [시그널] - 서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MMnhYV3JsTnlkU1ZFQ1VmU0NoUk4tam5xZ0Fhb2JmbFhFeFVBYTJXbmdyc284N20yVHZaLXRrTVlyNkxXRG5DUVk4QlVhMFJyalHSAVNBVV95cUxOaVBPclpVSjlFYlE5RnRCTFpsTXlwNGE1WnlNeEsxdGM1dmtCWU5RQlllcW1oOGl0Q1I0NUo4aHl2dFAzQTlJcldiLVh1MEh6bkxEbw?oc=5",
-  "sources": [
-   "서울경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "크로스보더 거래 늘며 외국 로펌들 M&A 리그테이블 압도 - 리걸타임즈",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oLTVrTjZNSGhQOWJXMTdWLXRvXzU0bjNuUFRud2ktTUVEOXhtYkI5YkFUV3dvZnZaTWtBcFRaOWhVODU4QzJ3c2ZEdHRDTGZfRVpScGJ0VDlTMVlRcTZUb2Ffb3FyTE9WelE?oc=5",
-  "sources": [
-   "리걸타임즈"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "새 주인 찾기 시작된 저축은행 M&A… 신사업 동력되나 - IT조선",
   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5OZ3VlOWlPZ243VkZpcDNvbTl6ZFNBY3VYMTE4bzdiWkRpNmpsa3gzVThYdk9RRThHT1A3V25XMUQxRjBGRXllaFRjSEROYnBVUTMyeEVkS0Q0RHljczJfT19XWVBZVmo4a3hMWUJDNEHSAXRBVV95cUxPVjQyaU9PSmNxR1pucHI4S3VOUjRVXzdpblEwNHpPdmFSbVkzNjkwYXU2b09Udkt2b0ptZzRvYU1rSUh4Z2htajM5WjJZSHgwNlRma1ZsaFh3US1SSDJZMkJiSTNFTUI1WEFOMUwtNGNVbU9rUg?oc=5",
   "sources": [
@@ -1130,46 +2117,6 @@
   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBVM1I4VXVJaVJBZzNPeE5VcTA2dHBlSGI5MU1hU1NBU0x1dFJyOW52dDdJc0pJWmE3RmtsY3BJM2lXbExYNWNJbG1LRERsb2g1b0s4Y2xiMnJwanZ6M1Q1VVA2amtTRkVYT2szR3NvMjJ6TkJD0gF0QVVfeXFMUFUzUjhVdUlpUkFnM094TlVxMDZ0cGVIYjkxTWFTU0FTTHV0UnI5bnZ0N0lzSklaYTdGa2xjcEkzaVdsTFg1Y0lsbUtERGxvaDVvSzhjbGIycnBqdnozVDVVUDZqa1NGRVhPazNHc28yMnpOQkM?oc=5",
   "sources": [
    "연합인포맥스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[기자수첩] 시장의 눈을 가리는 낯선 이름들…무자본 M&A 거래 속 ‘카이저 소제’는 누구인가? - lkp.news",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDMTRyZHdBTnpRUWZFb2NUdkFhQnBsOUx6R0xRYmJfeC1VbkxYVVpHVEFMMTdhT2FpVDVWWXNNX3Jsai1SRWZtRWlqeVlhazRQT2lRMXJuMm02eHZQNnpwVmpyUDJWb2PSAWdBVV95cUxQQzE0cmR3QU56UVFmRW9jVHZBYUJwbDlMekdMUWJiX3gtVW5MWFVaR1RBTDE3YU9haVQ1VllzTV9ybGotUkVmbUVpanlZYWs0UE9pUTFybjJtNnh2UDZ6cFZqclAyVm9j?oc=5",
-  "sources": [
-   "lkp.news"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "RBC 캐피탈, Arxis 주식 등급 M&A 활동 및 가격 강세로 상향 조정 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtT19IVTg3OUJYblU2VEZCamVRZjZ1OGt5SHM3SThzUFd3VHVmNTNiZ25FdVpIMFdPU2dxamFkY0V0RGJ5ajJ6V2tqR1NIaFprcHVIXzNrTEtqTmxPZUVFMEFxNWZsTmpuYWVMVGtNSDFDaG5L?oc=5",
-  "sources": [
-   "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "컬리, 가정간편식 전문기업 '넥스트키친' 품는다 - 중기이코노미",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VcThrUDl2eE5zZXJzUTQ3NkQtRXYwUWZlZkVFWEk3WXNON2RQczhWU1hoeHU4YkZ6ZzFwbWtYX0lPN3hMUlJES01PNXFadENnRG5lRzdRZmVEVzhXcHBhd2hNVEhndF9PTkE?oc=5",
-  "sources": [
-   "중기이코노미"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "토마스 울먼 교수 \"사모펀드 M&A, 시장지배력·가격상승 막을 규제 보완 필요\" - 빅데이터뉴스",
-  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1RWUpMMlpHajlFQ2FOODBxXzRjVzV0ZDN3VV9Jb1VHT3NIZnJRQzJhb1hqSVM2eXlxcHZ0UWgteEtYUG8xRFR2SVhZTW1GUkltdFpjUmZKM0djZjJpazU0dVh5aS1TeHZCcWMxM2NzdklteklkMG50aWhiUDg?oc=5",
-  "sources": [
-   "빅데이터뉴스"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1206,40 +2153,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "의무공개매수 대안 부상한 '비례적 공개매수'…시장은 M&A 거래 위축 우려 - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9xU0VYcllTbGdCdHJPN3AzZTdCRllpNDRndDM1elVPd21OVjYxWVM5N0xIVjlIZ0hYVFJZNV9yTXpiZXZlMWc?oc=5",
-  "sources": [
-   "v.daum.net"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "PEF ‘정보카르텔’ 의혹에 기관투자자 출자심사도 도마…“운용역 네트워크까지 봐야” - 녹색경제신문",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84TWpjVVFMZllUNFYwUmhZRXZzbmZfcFJ2V0tub201djJtbWNyRjlLa2NiQ1BNSmhuemd2dWF2OE5lTmF3c1gteXd0Qko5ZmlUYVV4eHFlRjU3clBTRmZyZmliNDJUOFFK?oc=5",
-  "sources": [
-   "녹색경제신문"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "물리보안업계 M&A, 신성장 동력 마련위한 결단인가 - 보안뉴스",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9yUzNGcXNMMmpiVEsxeDlVejNSSWFsdm4yT2pDVjllZG9jSXVrRmxiMHZKWmFtRTZTUTkxd2NhZF82TGhRcmF2MU9MMEd2b1BFdWpoRnlJNkhjSVVmU0FyOWUwaW9GUS1P?oc=5",
   "sources": [
    "보안뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "KKR 한일 탱크터미널 분리 매각…8000억 회수 - 자본시장뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZR2t6ZUZZdG9xczVDUnNBSXJ1bndsUUxQVTlwV1c4RG0zNmdQMW9vVGgxU0swMThIX1kzblY2dmhrU25GTDVscm00ODZUYlp0eTVtWFc0YUpjNE5mMmg5eDI1ZVhjMDA?oc=5",
-  "sources": [
-   "자본시장뉴스"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1266,16 +2183,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "[단독] 中企 인수 접은 KT…실사자료 속 호텔·골프 키웠나 - 한국경제",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xemdtakJlY2lqZEdhLTgzTVViY2hYZF94Ykx4NWxSZTRjWjlXa0gzUTJjcWdwQkNqRXNqMUZqcWFFNmpqTDBBdm1fdTdWc3o5eC00a1RGRW5xdw?oc=5",
-  "sources": [
-   "한국경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "신성장 찾는 기업·PEF 투자 맞물려…금리인상에 딜 클로징 속도전도 [시그널] - 서울경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BZHVVVlRGUlhBdW1wWkx0Q1NXbnJoT2NIMXdVRDhGYVNhMG1fem5ZYm40UHQ3OGxjYlIxbEFhMjZWVVgyU0dfU0xVWndJbi13akHSAVNBVV95cUxQX09CX3ptU1oxQzh3R3lFOGZPM1V3N3A5a19zSXBRNEVYd3J4b3YyY0R6WlVPVUpnNG50bldoc0lzQ2NhRWVwVzg5SGZEYnJTTWEzUQ?oc=5",
   "sources": [
@@ -1286,50 +2193,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "한화생명, '애큐온캐피탈' 인수로 금융시너지 확장 가속화...국내·외 M&A '광폭행보' 업계 이목 집중 - 녹색경제신문",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NRlBfTGhJODMtSHpMYS1uY0xfbDFFc2NFWlVVN0N4U2RyWU1IR1NoVHlOMWhVeTdqRXAwR2ktMzU2OFpjTzRISXZNWHJXZ0piejJnUkhnVFB2ZGQzQ2pnUEwwNktvNGtP?oc=5",
-  "sources": [
-   "녹색경제신문"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "\"3900억 M&A 마친 삼양그룹\"…삼양홀딩스, 최대 2000억 회사채 조달 [fn마켓워치] - 파이낸셜뉴스",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05TEZLZi1LQ1dDSGNNcE5yTmEtSzd5YlFFRVZPVEl0M2NsdE9UZmtkYmNhRmxfTlhrR1ZDX3BDQktDMHpiaWhjZzBzamVHeHZjRG43aXlzYnVpQQ?oc=5",
   "sources": [
    "파이낸셜뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "‘중복상장’ 우려에 입 연 SK하이닉스… 솔리다임, 美 자본으로 성장판 연다 - S저널",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sNFlQdlg0MEI4c05vdGt0aVhoYlBxLTcxQTRUQWVtRDk4dFVwbHpaekM0UEJIMjlhTnNjOVR6ckd6X1paMUY2Mm1OYkRIUklKOEFUWkpQX3JSTGw5anhvTHJCdmRXSWxLSzYzMnpR?oc=5",
-  "sources": [
-   "S저널"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "컬리, '대표 남편 회사' 넥스트키친 100% 품는다…간편식 강화 뒤에 놓인 지배구조 정리 - kmnanews.com",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83c3kxQm9EbHE5Y25rbTFuVDR3NXJNOFNxYWVCUEtnYk13MGRoM0prV0RXWHB3V1hMdEdrNGZrYTJ1dlRuMkRGTkt2blVXalctZEwwa2l5VlZNZUJDRkFwMl8zU3ZIVHB0RFE?oc=5",
-  "sources": [
-   "kmnanews.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[단독]JTBC, IOC와 올림픽 중계권 재협상 추진…회생·매각에 변수[시그널] - 서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15R0JtMjZheHZKVHFTZHNOQTJwSVVkdDVKX0d6QVJyMkJOSVFtME1tbWNFeHlPSHhNQzdUcGdoRkVlMnd5bDIyMlVOTXd0NVFxWlHSAVNBVV95cUxQMi0zdkhmN1hsbkk5X2wzV0J0R2hlQlVyQVI1ZVhMSGlCb1Y3MGdkWlVwNmFPZ2JNbDE0U2o1TXN1bTFTMngzbmxvUDR0dC03eGtwQQ?oc=5",
-  "sources": [
-   "서울경제"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1350,16 +2217,6 @@
   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE01U0k4dlpzVTBVZ3oyd0Z3Q0ZUQU5KeVBBWWNFdjhndW1PNVNsVkM3RDdhLUxkU05sa0gwcm01UGZaYmlGbURHTGxEMUxfTmtVTWJqWXBIOVN4RVMwcUpNQUdHMnR5MFZvT0VhOE5Mc1FmYjlONGVDZA?oc=5",
   "sources": [
    "tradingview.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "아산시, 서울서 투자유치 설명회 개최∙∙∙260억 원 규모 기업 투자 의향 확보 - kmnanews.com",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKOXpzWHlkYUQ2YXBVbjBTNWMtbjBuMVRueklnQ1cwdTNoNFh6dThaNzBZRzFaMVBrNk5CRW9FcXgtOG5EcV9ydWJMNm1vWDRUUXA1U3lwR0k2d1I3OFhYMmZkSXd5dEFrZHc?oc=5",
-  "sources": [
-   "kmnanews.com"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1406,26 +2263,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "제주항공, 흑자 호텔 접고 펀드 해산∙∙∙회수금 528억 원의 행방 - kmnanews.com",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kU2pjSElxYjE5MDdjRFpBa3MybTNpZldSY24xVkxwclJ5LU1zdFBNek13bTk3WV94SG8xcWRQbnNUYU8tNE9qTkozWkNhSzZrTlhGa1dHX1RqNWVSYVRKZi1naVFoQXJOeFE?oc=5",
-  "sources": [
-   "kmnanews.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "(주)큐브바이오, SEC Form F-4 효력발생···Nasdaq ‘Global Market’ 상장 예정 - 이넷뉴스",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yeVhfNmZleU9DOUJoallWUkF1NU9KX1hSaTF5cGptM2Q0OUtkTUdQZ3JHTWw5eDhEWTJLLU9BMnBfXzA0SFdwQXh6RUhlRjRBclAzRnpaTi12ZG94QWliVkhIMzY1b0tfYUZtYkJ0amrSAXBBVV95cUxOcnlYXzZmZXlPQzlCaGpZVlJBdTVPSl9YUmkxeXBqbTNkNDlLZE1HUGdyR01sOXg4RFkySy1PQTJwX18wNEhXcEF4ekVIZUY0QXJQM0Z6Wk4tdmRveEFpYlZISDM2NW9LX2FGbWJCdGpq?oc=5",
-  "sources": [
-   "이넷뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "동원그룹, 1세대 화장품기업 참존 인수 '9부 능선' : 네이버 블로그 - Naver Blog",
   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWFRVekc4TWlTNVo2TGU0QUNNREhWX1lLelYwOFRBVEVNeHJ1TnFrZ1F3OENEa2pEQlZ4SXJLS3pCVDIwdExRMVk5YjUzdkFLelVFLTBCeGYwSV9kVHgxclg4WHJNUVVrVzd3bHNJcGNabmo2cERSOHlyRkhDR0xqZ1UxVFBwaldXcHdwWVZRWQ?oc=5",
   "sources": [
@@ -1456,86 +2293,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "템퍼스 AI, 페르소날리스 인수 합병신고서 정정 제출…주당 최대 16.25달러 가치 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aZFhkQXZIUE1JZ1RSQXdyb3REaEY3X1JudkVVSVMyVk5rcXBPWGowN0VvZ2Z0ME5jRUNnNkdOZjZIbGJGbHhmNFE0Y19RLUVla241SHhrTEpYbm03Z2hiVnRYMkZuOGNLb3YzT0dFaFlXeDQ?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "B.Riley, Priority Technology 인수합병에 따른 주가 등급 하향 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5zei1JUGdlaWF3dHdyRFpUZG5VM3VTQzZMQmNBNEluQUtlbzBuMTNwUVV0RnA1WmRIMUEtN2syUXN3VzBqR3NLUmx6dExac0xvVHJ0WFlKd2hOTFNWamhmdWltemhYdVRGNGV3LTdVUHVXT3R6?oc=5",
-  "sources": [
-   "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "온세미콘덕터, 시냅틱스 인수가 상향에 주가 4%↑ - 마켓인",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9xbVFaNG1hUEszUTF5UmRFdzZVc2pKYXUzdGZRbTlmbHROMXJCekxtOXkzN1ZGUDVRbTRUV2xGX1kySlNmREljd01JOVp5NFI1LXozMWZWYmh0Tml0cDl6Ykxja0lzZlNwQW5vWWhFSjZiNDQ?oc=5",
-  "sources": [
-   "마켓인"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[인도 특징주] TCS, 美 베스트바이 인도 GCC 인수… \"AI 기반 센터로 혁신\" - 뉴스핌",
-  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfVzNCTHc5UUV3X1hEbmJaMDRHbUw2Ymt4OFdiR2RQNEd3b2dBMzFaSjZYbTBOeV9ucFZQYmluUzRlaHdoVGNtRFM2U3Q5dmdvYjcwREpleXpzaE8t?oc=5",
-  "sources": [
-   "뉴스핌"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "\"사모펀드 인수 후 마취값 40% 상승…한국은 더 심할 수도\" - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1DRlRxR1JLTWdmRHFURHppUUNOc0tiSHNjZ2ZiOHpYSHRKUnZGdXhZQXFCOVJVcjlUOGFpbGlsdXdzUlBPVXJNLUVmRld1R1k?oc=5",
-  "sources": [
-   "v.daum.net"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "UBS, Baldwin Insurance 투자의견 하향…인수합병 거래 영향 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lLWRwbTQ5c3lrOTU5TDdYQ0pENVlvVkUyb2pFOXFzZFJqc0M4QnNyZkhjV0FzR2xUUXFHbWNrWXpwZkx3WnNKLVNvQzA1aTF1T0ZucHJYUW4wMURkVU1xVnJhcE14MUJBNFEwcUlEckZSRnE2?oc=5",
-  "sources": [
-   "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "웨스턴 유니언, IMXI 인수 관련 미 독점금지법 신고서 재제출 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FaHBOcjRTNWtWVHBJVFI0OHhyMVBBUHlRMG1NbkYzVlZtTjFocW1fMmlnTnJmQllTaGNkS20xczk1emp6dHVFbVlBRExzR3JPSzdZamJ2WWI2WUZINGRnWmEyZzdDaERLWW90Yl9CUW1vdzA?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "애코 브랜즈, PC·게이밍 주변기기 기업 '트러스트' 인수 완료 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WTXUtdGYzR0JaM1AzUGR4MFZDZmV6bXNwNU14aklFMkptZURSdUtnekdBSHVyNlVCQnBrVVNKNDFsNEhadjVvYVdMbXdua1lOaXZsRk16V0NRbU9RMGNGS1NWekZINnVpcjVhaWN0cTN0MXc?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "'노바티스 피인수' 어비디티, ARC서 AOC 변신과정은? - 바이오스펙테이터",
   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBuYXJkRjJ0dGpWaC04TWE3SkpoSnlRcUFiQmF2TndBX09LTUNMNjhuR2NkakMwUGs4bnhnVzZFS200b1FmUnd5ZGN3bjY4dHJLS0ZtYkRySQ?oc=5",
   "sources": [
@@ -1546,50 +2303,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "오션라이트 애퀴지션, 1분기 순이익 15만 달러…계속기업 불확실성 언급 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Gazcxc0VSRjd5b285empaVFlwbWR6Y1ljTnYtN0w3OGxIYWNlbDFvWEtVeW5fLXVPV3RwM2tyQ012Y3JScjB3RllBcjYtdVVWLWVmY3ZpcVJjNzZpWTAyTjU1RGllenQ0TmJyYzU5bnVYV0k?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "워너브러더스 인수한 파라마운트, 새 법인 이름은 '스카이댄스' - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVTDg4ZXFkU0JDWHRuRnROQ2tNeTVpZDh4cGo2UDlqa1o1blFBbW0tZmprNnJRQTVJNFVhYzJ1TDl2TFcySVl2Uk9MM3g1dzAtMEtHblJVX09MMkE5QmstNmlRdjJmOTB4Njk3NHJtbkM2YXZZUlHSAXtBVV95cUxPZFZJLUZ6RE5CX0k5bmQ2dlE3bGtYRTRlcjRGT05LSm9DTzluRW8weXV6M3BuRjJrbW5yM01rRWtMRXU3c1FldEtsSjRET1JBVlk5am1vYmUwbnRvR18yVVYwaEZUNHRJeGFOb3RyVXNCS0JsWk1xbUVpT3c?oc=5",
-  "sources": [
-   "머니투데이"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "[딜 인사이드] 진시스템, 경보전기 키워 합친다…CB 찍어 증설 뒷받침 - 블로터",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4SEJlVDF2TkNPZ3hmVzM4NUh5dTdTRVdUSEFENkVyS3RGVG1WUi02NEZqZGJmdWZ0eGJfV0JQSS1XejZPWXQzakVRNmVBS1BpZk9FNUdvVkg3d2g1aVltbDJzUFBNMTJ10gFsQVVfeXFMTzNsSFJpY1E5NEQtejJNQUxYOXFzWDh2dmRHWktpOVNMNW9uRzF3aTRncmo5Unl3NmZzRWozVUlUU3JWYkFLX29GTkxrd1ZaTjgtQ08wMU9hSHRrcG5lQXhQUmtlSmdqWVJkWUFK?oc=5",
-  "sources": [
-   "블로터"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "맥쿼리 떠난 가비아…전선은 얼라인과의 이사회 표대결로 - 딜사이트",
   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1telp4Ynp2TEtabUhZWTZHNm1TWXRCTlNCaUcxUjlTMzJLb3JqNDBPSlRkSVpWeWNpNnpNd1JHSVZSMDdRSnRSb0cxOWVuTXM?oc=5",
   "sources": [
    "딜사이트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "큐브바이오, 美 SEC Form F-4 효력 발생…나스닥 글로벌마켓 상장 후속 절차 돌입 - 동아일보",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8zSHJzdGRMT2ZCc2o4MFZWZVc4Ny1NbkJYYlc4OW83VkhqNEdCcmNGQTBFWGsyTk1OYWh3R2phYkN6dXdfMzR2THA5SWEzVzFFWWZYRGFkVWJ4cDBMWVBIWHFnVElOamM5R0o5bkdtcHNweHRGdmfSAWZBVV95cUxOMW5ZdG1fa1VCOUhqOExCazMxSW1uMS1sVVM0R2FzV0ZZbEMzTjE4WVlaSUtMYlBBSnlIVUpaMUU1S1pweDFUbGFsNFczc3pqSEJVNGs5UHdCdDdzRTdLRERYZmNyQlE?oc=5",
-  "sources": [
-   "동아일보"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1616,30 +2333,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "모바일 이용 전 알아둘 도박 성별 화면 비율 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPd1FucHNJUDFxNXF2bVQ3cXc2YXNveVNLTkdITzVsS0QxOHZnSkphN0VrY1dZMS1kcHZ2Yk5MM2tPbmtJbmZnR3V4LUQ2VWR2ZmRHOUs0NkJJekh6OEhRRXBEOXJxWERjb0R1NXZDMTVrYko2NzY5RVZUaUFudnZBUjctTll2M3pOQzlXTHBUdzVRYU9sSTBHM3dOSTMycUxaQV9STUk2RDFMNTVRQThJMFpIUlpYTnJFTjNYYzZReDE4VEpPcEMtNnlNNnNMQ1N5cEFoRTU0dTllY044V0NJZ25XSEdLLU42aDFvX05RMF8xbWZJSnIzQlFwanFMX3BwckhQOHhkRU4yaE5hQjB3MGJUY1RfVHd5TE5RTDRfcUpzREtXRWhtcUwzdVBpbUZxdmdlOTV1Ym5VVTNXWjMw?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "차세대 비만치료제 경쟁 한눈에…‘BIX 2026’ 이달 말 코엑스 개막 - 서울뉴스통신",
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44RFNLbWhNYWJ0M3lXdWc0Vmdjc1Q3eFZYQmFMZWF5eGZ1cmdKZGlVUm1QZG9pZW1MbnllX2tJREd3VEVsMERSamdTQ2VTdzdGUmt3YnFweVJTS2RnSU8zNEtpOUxDSEpabVBB?oc=5",
   "sources": [
    "서울뉴스통신"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "아프리카 AgriTech M&A 12억 달러 돌파: 한국 농업기술 기업의 진출 전략은 - 대한청년일보",
-  "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBvZFhMdVpCTEhPaHIzRXBodnhOb1Nyd1RoOU10c3ZrWmR2bHVNOFlmVDljcU9ybVlfcFEtUWFzWEJVeEk?oc=5",
-  "sources": [
-   "대한청년일보"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1666,30 +2363,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "멈춰 선 파라마운트-워너 합병 - 미주조선일보",
-  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRDIyR182Zmlmb1ZLQUxQdjE1V1oxWUtBOERCRldyVzdPbGR6NEFjS25JS1VVdkgwdk1LWTNCT1VGSk5SZHViemFKS3lfeE92VFFTbGQxN2hma2tPLTUxdTRWemxmbmVINURvek9FQVhkRTFESGw4emprMVpBMXRJaA?oc=5",
-  "sources": [
-   "미주조선일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "스페이스X, AI코딩업체 커서 600억달러에 인수 - 미주조선일보",
   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbzJNek5FT2xJOFRGQ3VIazhPZl9OY1hHQzMwTXRrS2UtSmk2M3lpUzUzdWQ3ektldnE0dVJPem54dHdqTWJyYXlUMUZCQU9NM3dvOE93RWV5RlJlRkNxa2NmNHU1TG5sUXJYWTZUVTF3OFcxWGlNbVRzYnZiemJMdnF3bzJDOXFlbk1zMHp0MzJkay1PbUVTejJDNmVJYTJPenlQbGp3TFhvSUNIaFZxUTJuT3ZVUHBXN2FHcUhUZ2hIeXZjMEpLNFF3?oc=5",
   "sources": [
    "미주조선일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "파라마운트·워너 합병사 이름은 ‘스카이댄스’...브랜드는 유지 : 국제 - 재경일보",
-  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB6NFE4UVg5M0piY25mUm4zZFA1VjNidjY2S0FpdlZhTmQweHIzWkpmbC1HNnE0UXBwb0RqRTByN3UwZlZmSGZCb0ZSbw?oc=5",
-  "sources": [
-   "재경일보"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1746,16 +2423,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "[기자수첩] 외국 자본에 맞설 토종 자본, 운용사의 족쇄부터 풀어라 - lkp.news",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zVFFYNF8xMzRJYU5IN0dLaHVWVDNzWlBKS3hKNzFZZ2VwUXJLd3RBd2dzRmhxSTJYUWpnREJnSGQ0OE5HNzFVRWhQTWRma3pBM1FLUURFYnhQYkVzUVRXd1E3QWZzVlnSAWdBVV95cUxNc1RRWDRfMTM0SWFOSDdHS2h1VlQzc1pQSkt4SjcxWWdlcFFyS3d0QXdnc0ZocUkyWFFqZ0RCZ0hkNDhORzcxVUVoUE1kZmt6QTNRS1FERWJ4UGJFc1FUV3dRN0Fmc1ZZ?oc=5",
-  "sources": [
-   "lkp.news"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "한화생명, 김동원 표 금융 영토 본격화…“종투사 까지 목표” - dnews.co.kr",
   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8wLVp6dXUtNFlDVVh6eWo0Y0hzU0NBel9YSEdJbjhnRkNXWU1zVXFRdS0tUE9abDduWFRaejRJQXp2WnBZeTNkc3E2eVpoVkhwdXlUeGhUb0I3SXFZa2FNRXNqWlQtODM2Y2hPWlRjbVVDVzNy?oc=5",
   "sources": [
@@ -1776,40 +2443,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "[주간사모펀드] EQT 팔고 한화생명·센트로이드 산다…애큐온 새판 - 더팩트",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0td3ZucVlKY2lSaWtRNDVQTUthR29RcjN6ZmVmZkF2VTY0SG5wUWVzMTNGc1Y1WlRiSnRYaEV4a1k4elRWZU5hR19sd0NIRk4tZEg0TUw1R3JEUdIBVEFVX3lxTFBrdmF0VjBXb0VTSHF1TkhBaUZWRkNleGRvanlnNjFGeW1SanByY0xPeWJFeVJDdmhLcDFzM0l2UjA0S2lWTmpEb1R6WkU5YmkxOWN6Zg?oc=5",
-  "sources": [
-   "더팩트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "설명 문구에 표시된 조건을 분리해 읽는 도박 등급 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZUY3aUlxTXhNNk5CWHBES2V5aEY3UzlLZ0t5TElqbjZhQ2hubzhJVmNRZjRsSTNvNGhkXzlzd2M3RmpXaXBqNmV5OUlmbGFjQXI2cEFkN2pDTUVSTFNNRkdCNEZXeHk1dGJzNjBTVmh4cTNkMTJROFAtX0VFMncxRFRudEQ5UVVhTG5BeDVlUGdjdGkwLUZpZ05tUUstekFESk9r?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "창업자까지 참전… 모바일어플라이언스 경영권 분쟁 점입가경 - 조선비즈 - Chosunbiz",
   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVEVaa0tPM2Fsa1lXcXJ2S2t6ZnIxazhlVzdHeTd1cHZXZkdraGpOdnBDcm9LbUFTcTZyUlBTdHdqT1B0RjhQN3NOaWhMc1V5VzhidU1oal9yckRuVS1IdFp3aTBzUFBEdmpKUkozNnBHbWJKdXR3Z1d6R3JnM2tnOUhzc0lQOFXSAZsBQVVfeXFMUGRJNlhNdnUtTzJaUXNSX2M5Z2FBckZsVV9ZSUpLU0owRkowZXY3eExMYUhibHZpWVdZZEp3VlQ4bzJOMlk1M1VYakoyakNJU1ZrYXhoT1ZEVldIYUo1bmFUalg4ZVlTdl9NRkM3SGZuTS1rd2EzZlFZeVo2NjVRaVVDY2sweE5lbWd1LVM0eG5FOUk1aEZGT1pUMUk?oc=5",
   "sources": [
    "Chosunbiz"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "러브룰렛 연상연하 2 2026년 애자일 개발: 현상, 본질 및 법칙 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYTBUckRNb3YwMzhmTExpN0pfZ0hPOGlvYXItU1prMU1zX210Slp0dEVVVUhJWkhHSXk3bVpudndlTUUyRnB5YmMtMkU2U193OWZUQUtXUVZUOEdCUmpjcVZkWXlsQ3BkTHc0aFlsUTdwdF83NVYyYnJHVzBEZjhDdDJDTDhNSEtqSm1MQzlXaTcyam1VNWdTWUtBQ2JuWUh1NThJcU1uXzc1WHM2U1ZGR3ROeEhNSGRC?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1866,30 +2503,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "어터리언 지분 10% 취득한 미셸 치암 신 링 대량보유 보고…라자르 지분 매각 9월 25일 종결 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3cDBQUVE1cnREdUZ3bHdqelYtQjFWVXllU016NGxiU3dtQnhEeEtNT1RoTWZNTHZJU1Zfei1yaWU1Z04tTDZLcHpKc0tobjVZVjRTTHNKNGZ3U21RaG1YbVU4TnlTMEs4NWw5eXg0M21rQ3M?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "최태원, SK 지분 9440억원어치 판다…노소영 재산분할액과 ‘똑같네’ - weekly.chosun.com",
   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mX2U1MDZEOVRxek1kYUo2NjZ5Qzc5LWpaZDdlZ1dwX1BuSE9uLW1LbEUwQW9SVUV2dFl3VzVFYzZWVVQxVGpMdVl1SmpWVWtkNTltSjZrb2JuTGZ5Z3RMejJNQlRZNXp3dEd0Q3l30gFuQVVfeXFMT2ZfZTUwNkQ5VHF6TWRhSjY2NnlDNzktalpkN2VnV3BfUG5IT24tbUtsRTBBb1JVRXZ0WXdXNUVjNlZVVDFUakx1WXVKalZVa2Q1OW1KNmtvYm5MZnlndEx6Mk1CVFk1end0R3RDeXc?oc=5",
   "sources": [
    "weekly.chosun.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK 지분 9440억원어치 매각…SK \"경영권 영향 없을 것\"(종합) - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wYldLRUVyU2hFX3I2MTFoMVpkMC1JSnphNmlSLVhGLVhMUXFJdFhQUHZrMFZfcktxZDczeU1BRVFtRnhETHR6d09lNGJQaEU?oc=5",
-  "sources": [
-   "v.daum.net"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -1906,56 +2523,6 @@
   "last_seen": "20261003"
  },
  {
-  "title": "'이혼 재산분할' 대응 나선 최태원, SK㈜ 지분 매각…\"경영권 영향 없어\" - 톱데일리",
-  "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TQU9RRjNkcll5YzFpemZiM3pqZ1g2NnVORTJ5LUg2MG1GajlUcVJWVDViZGVKWEowaktYX2lKT3BROGFBY19yT3lEMkpKbktC?oc=5",
-  "sources": [
-   "톱데일리"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "‘9440억’ SK 지분 매각 나선 최태원…블록딜·PRS로 지배력 지킨다 - 조세일보",
-  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVNHhFNHdJT3BKLTJMSU1QRVlXODVscWJRWkloSWhEN3hIazJxMGFEX2hSaGVrSUNLRTVRNGxNMnpyMWRVS0g1REFkTGoxRWJDRXRITWhZM1hyeGx4aFRj?oc=5",
-  "sources": [
-   "조세일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK 지분 9440억 매각… 노소영 재산분할금과 동일 규모 By 인포스탁데일리 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9JejRweW5BZURJZ1BnbkhSNkRiMkhmNFVBY01pRVMyUW1mM1pfUWhRZWpBWWJnOFdtbzdFazVKakxoRzZaZi15bHduZ1FSMHQzV1dzekJhc3k1dGRDdW9CMmJwT3RoRTJtUVBiVlYySmE?oc=5",
-  "sources": [
-   "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, 9440억 재산분할 위해 SK 지분 판다 - 공공뉴스",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBEeG42blRIZ2gxOGhpZURhUXNWY0phU0J5RkxERnl0U2ZNRFpMNDNLVGhvWEZoa2FCQW5hbmFramNWYW1ISXpROVhXNTlFNlpVQ1prU1JWZDJZbmJHcTVna245dFdkeUdoY0lvRTdR0gFuQVVfeXFMUER4bjZuVEhnaDE4aGllRGFRc1ZjSmFTQnlGTERGeXRTZk1EWkw0M0tUaG9YRmhrYUJBbmFuYWtqY1ZhbUhJelE5WFc1OUU2WlVDWmtTUlZkMlluYkdxNWdrbjl0V2R5R2hjSW9FN1E?oc=5",
-  "sources": [
-   "공공뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, '재산분할액 마련' SK 지분 2.3% 매각 경영권에 영향 미치나 - 이코노미스트",
-  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCUHF2enFPcTVzempBMExqX05DSjF0UWpFcGtzcmFLSzBRTFpCdTJPMkE1SEFuWlJfd0FYUzVyVW1WOWRPdjdZeDQ3Tkx5YnBVU09ocnJUR2c5QW1fYm4yeVdB?oc=5",
-  "sources": [
-   "이코노미스트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "9440억 재산분할 청구서에…최태원, 결국 SK 지분 판다 - news.bizwatch.co.kr",
   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OODFwMERNZi1LN0lkYVlOMTlfaUNGa3lYSlo2VkdtaFZnUDI2eVZFMjhrZXJ0bjNTbUlFclJScWlDdVU2ZThldVlXN1ZrQzh5c2JyMnZ6YnFWck9SYWd0bDBCd0xMMlF0RXlVRQ?oc=5",
   "sources": [
@@ -1966,50 +2533,10 @@
   "last_seen": "20261003"
  },
  {
-  "title": "최태원, 이혼소송 재산분할 위해 1조원 SK㈜ 주식 매각키로 - 조선일보",
-  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUzV6WnlKNEhBdDM4U3VQeElPbTNtcDlVdDRiQklIUlozUVo5dVp6RHFveUJHSnVRTzJWdEdxMnp2Q1lwSTJjZk04Nm84QjBicVlQR1JXOERFRkJLeTVkbWFMMGdfYi1xbURSNFd1T2tfdTBZUmtSR3pMX0pxd1JjVkVPMGtaUkx5aURKMWt2VQ?oc=5",
-  "sources": [
-   "조선일보"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK지분 2.3% 매각해 ‘재산분할’ 자금 마련…총 9440억(종합) - 글로벌이코노믹",
-  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZXplSTFpVDRaTHlpbDFDVHZPUkhfWUREeTk1RHo3NmJUS1hUb2thUlZKcDhLZW1zakE4X0ZXNS05WUIzUVB3ZkpZcGJkRjg2aWRYSTY4UFBLWm5XUHdFbV9ZTS1pT21uaXNBQzRkdHdpR2oxMVZQblplUWcxM0RBV3RGNkp0dw?oc=5",
-  "sources": [
-   "글로벌이코노믹"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, SK㈜ 지분 9440억 매각··· 개인 자금·경영권은 과제 - 그린포스트코리아",
-  "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWSFRTaXBkMnFyMktjdFdKM2R1cDN4c09pMGtDZ1k1RGo1ZDVRMzBUMFFHN0VldmVSd203b1cwZFFBdTdVTWRxVklTRU5jZExWeWI2eDA0RXlsYTZ6VjBvdlNPejlZZGxQMnFlNlNJdVk0d0UzSnNmbGpR0gF6QVVfeXFMUFZIVFNpcGQycXIyS2N0V0ozZHVwM3hzT2kwa0NnWTVEajVkNVEzMFQwUUc3RWV2ZVJ3bTdvVzBkUUF1N1VNZHFWSVNFTmNkTFZ5YjZ4MDRFeWxhNnpWMG92U096OVlkbFAycWU2U0l1WTR3RTNKc2ZsalE?oc=5",
-  "sources": [
-   "그린포스트코리아"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
   "title": "[종합] 재산분할 9440억 마련 나선 최태원 회장…SK㈜ 지분 165만주 판다 - 뉴스핌",
   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oQU43ZldqYWxEalM3Xzd5dWcwWGlqSE5YTnZQTVJWZkhrcVV3SkNBWEswaEx4SnlGLWdzckthY3JDSTY4SHBSUDBhcFg2eDRxWE5SbXhZR1V3aVJC?oc=5",
   "sources": [
    "뉴스핌"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "최태원, ‘그룹 지배 핵심’ SK 지분 판다…노소영 재산 분할액 9440억원 확보 - CEO스코어데일리",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZcnIyXy1acGxTOGF3UmtULWdRRUVINmI1SUk0TTUxWmkzLVQ5VGs1TEhjcE5pLXJUWDV5dEx5YnJXUEQta2ZodWxnRkZJVXRJUVl3SkZMNlBYbHhZWDNMTDYyM2NwMVBzVVVB?oc=5",
-  "sources": [
-   "CEO스코어데일리"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -2050,16 +2577,6 @@
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LUFpzT3NHLUd4U3FIZl9GcDJBd1ZJdEJiSUotTEpuWjJDRHVSdXZSdzRieFl2TGhTMUV0RU9xSkxwOVdFWlQwaWs2V2w5b1pkclJTeVZn?oc=5",
   "sources": [
    "DealSite경제TV"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
-  "last_seen": "20261003"
- },
- {
-  "title": "Sia, 1억 8,000만 달러 규모의 계약으로 Pophouse에 음악 카탈로그 지분 50% 매각 - Hypebeast.KR",
-  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWndWZzBlcEFHeVhNSTJ5dlJsTGFaeVFIcUxBS21TcmdHNHNNVEM2ZjhCMmstd24yb1FTTFVkdmZKWWwwMnZkT2FzQVVsMWY1N3dWWHY0NldTZzRMTEFEdWhwYXhIOWtjbVBKbHBnVG1sUWc2YzJoU0l2NW5MVVlvb1RMSDdZazNEVWtlenJiSG9uQVBSNnphN2V3NnU?oc=5",
-  "sources": [
-   "Hypebeast.KR"
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
@@ -2251,18 +2768,6 @@
    "인베스트조선"
   ],
   "outlet_count": 4,
-  "first_seen": "20261001",
-  "last_seen": "20261002"
- },
- {
-  "title": "한화생명, 애큐온 4400억 인수…종합금융 속도 - 동행미디어 시대",
-  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8tWkVjSHEwVGw3TWdJWUdib1RzSmdPbldRM2VzRWxuQ1dnUFZXTk1NQ1VwaUZkMTdfNUxxblBZSW42bWxTcE5YREVoVEUxV2VyTzdlSWxPSEgwZE1UT1E?oc=5",
-  "sources": [
-   "동행미디어 시대",
-   "메가경제",
-   "이투데이"
-  ],
-  "outlet_count": 3,
   "first_seen": "20261001",
   "last_seen": "20261002"
  },
@@ -3447,16 +3952,6 @@
   "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTU3Ym55bUZDeXpDSm9mX19CN0FvYW9NZFRJTzZrSFo0ZWFfUTA3WW1NSS1MalM3X285SktmZk5PUHpOdVZ0VzRYWjlsTnlPOHduU1kzbUxLZE45MGlNcHJrNnpUbzFrU0otM1hBbHdvQUgwc3FSOG9uQXdhM0pJa2VBSTVhSHJaa0Nra3hRRElxLXNoTDQ2UXdDa0N2MFl1RFlIUmhFbkRnQTRMVlZxTG56UXdQZWFMTE4zRGYwNXoyUkVzeUZVR3B3QzBGUTNVVkxzSnVtLXVvQkJqbzFRWm9EdHRZQVp1TElad0VORXhoYi1uT1VoSDIyb1ZLUnZrOWV3T1p0R3RBZkw1T2lCbXl4Ymg3ckw5UnFYX1ZraUJBbDd0LUY3cE1KN3lOaW9fQ25ZREgybzNjWjVfeXc?oc=5",
   "sources": [
    "idnfinancials.com"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261002",
-  "last_seen": "20261002"
- },
- {
-  "title": "보너스 중에도 같은 규칙이 적용되나요? 대구 룰루랄라 토토가 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUFFSENXYUZCaDFLemFLc1czX0o3YlI4YmtxeVV1dHFFbmRQTGZWNUk0NEFQUThmMXduRmVuV2I1cmloVmwzSUpCd3pmMDA1WHdEd00tRmxNR2JxSVJCZHc1Wl9DUmE3UEpjZHBFd0t3MmdILXZHeUcwZjRkSzVpcjd4WndLRHNZTHNCNHFabExEQlZrb0ZscFk2NVk?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
   ],
   "outlet_count": 1,
   "first_seen": "20261002",
@@ -5500,16 +5995,6 @@
   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLOW5hMjFEZjJrTkhVVHlHX0ZLVURDdmlZb3ZjVFB4aFlHTzZId0p0aVh6Q3BidzkzQUptYWg0blFvSTMtbmRMZWhYb0VXNlhrYzFCZGpkNExYMkNxVEFxNDNZVHNoRDhNOUp0ckdxd2hKUQ?oc=5",
   "sources": [
    "오피니언뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20260930",
-  "last_seen": "20260930"
- },
- {
-  "title": "워너브러더스, 넷플릭스와 판 깨나 - 미주조선일보",
-  "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc3p1eUpwbjNmcWZPYTVHYkNnX3Fsc1gyLXFSclNsRnVZcElZY09raU92TWRPUFVXNzY1VXByVVBhLXpYM2xXd1Iwanh5cnlKd3hZSjluNGZwRHVRLWk4cXI2bWxQR3BPaDNRcnlqR2g4VHBzMW9JTG0zY2U2ckgwa0h5ZXB5MWUxYUhaYTlKWHR4Ym1kTzZDby1KdG9WVUtCTk1fOHBJNzJDVEJaYnBvRHk4MzFUdm5HX0lyLThCb1BQYk5DRHBfRkdWOWs4TEFha2ZsUjlzU2tYc2xHR2dNRS03TQ?oc=5",
-  "sources": [
-   "미주조선일보"
   ],
   "outlet_count": 1,
   "first_seen": "20260930",
