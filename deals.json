@@ -232,7 +232,9 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (회사 합병결정 철회)",
   "category": "합병",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true
  },
  {
   "rcept_no": "20261001900651",
