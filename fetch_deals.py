@@ -569,6 +569,12 @@ def enrich(deal, cache, stats, diag_budget):
     row = next((x for x in rows if x.get("rcept_no") == deal["rcept_no"]), None)
     if row is None and len(rows) == 1 and not correction:
         row = rows[0]
+    if row is None and correction:
+        # 정정 공시의 접수번호는 상세 API에 없고 원 공시 접수번호로만 잡히므로,
+        # 같은 회사의 직전(원) 공시 행을 가져온다.
+        earlier = [x for x in rows if x.get("rcept_no") and x["rcept_no"] < deal["rcept_no"]]
+        if earlier:
+            row = max(earlier, key=lambda x: x["rcept_no"])
     if row:
         deal.update(extract(endpoint, row, deal["corp_name"]))
         finalize_summary(deal)
@@ -651,8 +657,11 @@ _TITLE_FACTS = [
     ("최대주주 변경", "소유주식변동신고서", "최대주주 등의 소유주식 변동을 신고했습니다"),
     ("최대주주 변경", "", "최대주주가 변경됐습니다"),
     ("합병", "합병등종료보고서(자산양수도)", "자산양수도를 완료했습니다"),
+    ("합병", "합병등종료보고서(영업양수도)", "영업양수도를 완료했습니다"),
     ("합병", "합병등종료보고서", "합병을 완료했습니다"),
-    ("합병", "", "합병을 결정했습니다"),
+    ("합병", "회사합병결정", "합병을 결정했습니다"),
+    ("합병", "증권신고서(합병)", "합병 증권신고서를 제출했습니다"),
+    ("합병", "", "합병 관련 공시를 냈습니다"),
     ("분할", "", "회사분할을 결정했습니다"),
     ("주식교환·이전", "", "주식교환·이전을 결정했습니다"),
     ("공개매수", "결과보고서", "공개매수 결과를 보고했습니다"),
@@ -751,6 +760,12 @@ def main():
         # 이미 요약 문장(summary)까지 채워졌거나, 애초에 상세 API가 없는 유형으로
         # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
         # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
+        # 제목 기반 임시 요약은 정정 공시 매칭 개선 후 한 번 다시 연다.
+        if d.get("summary_src") == "title" and d.get("fix_v") != 5:
+            for k in ("summary", "summary_src", "sum_v", "kind", "no_detail_api"):
+                d.pop(k, None)
+            d["fix_v"] = 5
+            d["detail_attempts"] = 0
         has_detail = bool(d.get("summary"))
         if d.get("source") == "raw_document" and d.get("raw_v") != 3:
             ep = route(d)
@@ -768,7 +783,7 @@ def main():
             d.pop("no_detail_api", None)
             d["detail_attempts"] = 0
         # 합병종료·정정 공시 처리를 추가하기 전에 닫힌 요약 없는 건도 한 번 다시 연다.
-        if not has_detail and d.get("no_detail_api") and d.get("fix_v") != 4:
+        if not has_detail and d.get("no_detail_api") and d.get("fix_v") not in (4, 5):
             d["fix_v"] = 4
             d.pop("no_detail_api", None)
             d["detail_attempts"] = 0
