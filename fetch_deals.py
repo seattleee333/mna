@@ -153,7 +153,9 @@ def short_name(name):
     """'주식회사', '(주)' 같은 법인 표기를 떼고 짧게 만든다 (요약 문장용)."""
     if not name:
         return name
-    s = _CORP_WORDS.sub("", name).strip()
+    s = re.sub(r"\s+", " ", name)
+    s = re.sub(r"\s*\([^()가-힣]*[A-Za-z][^()가-힣]*\)", "", s)  # '(Soulbrain Network Co., LTD.)' 같은 영문 병기 제거
+    s = _CORP_WORDS.sub("", s).strip()
     return s or name
 
 
@@ -227,7 +229,7 @@ def finalize_summary(deal):
     s = build_summary(deal)
     if s:
         deal["summary"] = s
-        deal["sum_v"] = 2
+        deal["sum_v"] = 3
         deal["kind"] = infer_kind(deal)
 
 
@@ -700,7 +702,7 @@ def fill_fallback_summaries(all_deals):
     """상세 요약이 없는 건을 채운다. 1) 예전 형식 요약을 새 형식으로 다시 만들고
     2) 정정 공시는 같은 회사의 원 공시 요약을 가져오고 3) 그래도 없으면 제목 기반 요약을 쓴다."""
     for d in all_deals:
-        if d.get("summary") and not d.get("summary_src") and d.get("sum_v") != 2 and infer_kind(d):
+        if d.get("summary") and d.get("summary_src") != "title" and d.get("sum_v") != 3 and infer_kind(d):
             finalize_summary(d)  # 저장된 필드(대상·금액·지분율)로 새 형식 요약을 다시 만든다
     for d in all_deals:
         if d.get("summary") or not d.get("no_detail_api") or not d.get("corp_code"):
