@@ -9,6 +9,7 @@
    "PRESS9",
    "SBS Biz",
    "YTN",
+   "press9.kr",
    "thelec.kr",
    "v.daum.net",
    "yna.co.kr",
@@ -36,7 +37,7 @@
    "투데이e코노믹",
    "파이낸셜투데이"
   ],
-  "outlet_count": 32,
+  "outlet_count": 33,
   "first_seen": "20261003",
   "last_seen": "20261006"
  },
@@ -92,6 +93,19 @@
    "news1.kr",
    "v.daum.net",
    "뉴스1"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "\"최태원 SK 지분 매각, 3%룰 회피 목적 아닌지 설명해야\" - v.daum.net",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YSHIyMHlUeldhemo2U1RmdXZSb2stZlI3VXVqUXk0LWxna3c4U1poQmNqRzhoZlROMVBXbjVKTGxsS3dLaHMzS1BmZERLOVU?oc=5",
+  "sources": [
+   "edaily.co.kr",
+   "v.daum.net",
+   "서울파이낸스",
+   "한스경제"
   ],
   "outlet_count": 4,
   "first_seen": "20261006",
@@ -206,24 +220,36 @@
   "last_seen": "20261006"
  },
  {
-  "title": "\"최태원 SK 지분 매각, 3%룰 회피 목적 아닌지 설명해야\" - v.daum.net",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YSHIyMHlUeldhemo2U1RmdXZSb2stZlI3VXVqUXk0LWxna3c4U1poQmNqRzhoZlROMVBXbjVKTGxsS3dLaHMzS1BmZERLOVU?oc=5",
-  "sources": [
-   "v.daum.net",
-   "서울파이낸스",
-   "한스경제"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "거버넌스포럼, 최태원 회장 SK 지분 매각에 '3%룰 회피' 비판 - 아시아경제",
   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13R1RIUG1TRkpEM2hBa2xIWnFVRV9OMWtubVVCbFRwX3VHZUtLYU1hLUhrSUFZX2dCcWEzNng5b1FUQ08zeWpWNFZZYktnWEd5VFJtdzZVeWkwN3dMLWF2WA?oc=5",
   "sources": [
    "ESG경제",
    "PRESS9",
    "아시아경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "최태원, SK 지분 2.3% 매각… 9440억원 확보에도 최대주주 유지 - 비즈트리뷴",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SR2lFVUxUVGYxY0ZIVHIyS3pSYWwzcEpVUHNsc21YSDV0UVZOM0ZRdFF5SXQ1amx0SE9sY0lhNk1MSVdpRGZmWE1GOUpBRHpIM19xVVBFZVA3eEx2X3FyVXpBM2pVdXNfaEhFVUF6bXY?oc=5",
+  "sources": [
+   "PRESS9",
+   "press9.kr",
+   "비즈트리뷴"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261005",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "'M&A 큰손' 美 릴리, 미용시장까지 넘본다 - 네이트",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15cG9vMXZDZjRrSEVJWElST3E5MEFsWnczbTRxTUFmUVZmbGFXWmgxRFpDVUFsd1I5czdHNEhvYzR5cEdmTFpBM3BUZXZ3Vy1UTERzSmNzbEFGWnd0MjB2WGpTblVtamFQWTlaTFFjQnQ3bzFEcUpJaw?oc=5",
+  "sources": [
+   "news.nate.com",
+   "네이트",
+   "한국경제"
   ],
   "outlet_count": 3,
   "first_seen": "20261006",
@@ -373,17 +399,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "최태원, SK 지분 2.3% 매각… 9440억원 확보에도 최대주주 유지 - 비즈트리뷴",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SR2lFVUxUVGYxY0ZIVHIyS3pSYWwzcEpVUHNsc21YSDV0UVZOM0ZRdFF5SXQ1amx0SE9sY0lhNk1MSVdpRGZmWE1GOUpBRHpIM19xVVBFZVA3eEx2X3FyVXpBM2pVdXNfaEhFVUF6bXY?oc=5",
-  "sources": [
-   "PRESS9",
-   "비즈트리뷴"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261005",
-  "last_seen": "20261006"
- },
- {
   "title": "삼일·김앤장, 회계·법률 1위…3분기 M&A 누적 62조 [시그널] - 서울경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA4THJ2RlMxMWtYS2JPdXJJNEdqRW8wNkZQcE5lSWZaSW1lZnAxeDhYV01ZSEw2NjU1Mm1sMjZGX3UwdVNtRTZHWVpuUm4tWkRoTnfSAVNBVV95cUxNVHJMWFJqQWlWUFRuWXVob2xQQnE1RDJLOE41eWJ2Si1kcjBoSUtHVktBVG13UWJOeXFscVY2bEdJcDN5cHFnYjdfc0szVFJGQy04WQ?oc=5",
   "sources": [
@@ -422,17 +437,6 @@
   "sources": [
    "서울경제",
    "서울경제TV"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
-  "title": "'M&A 큰손' 美 릴리, 미용시장까지 넘본다 - 네이트",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15cG9vMXZDZjRrSEVJWElST3E5MEFsWnczbTRxTUFmUVZmbGFXWmgxRFpDVUFsd1I5czdHNEhvYzR5cEdmTFpBM3BUZXZ3Vy1UTERzSmNzbEFGWnd0MjB2WGpTblVtamFQWTlaTFFjQnQ3bzFEcUpJaw?oc=5",
-  "sources": [
-   "news.nate.com",
-   "네이트"
   ],
   "outlet_count": 2,
   "first_seen": "20261006",
@@ -631,6 +635,61 @@
   "sources": [
    "cadgraphics.co.kr",
    "캐드앤그래픽스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "[자본시장 분쟁사례] M&A ‘정보 카르텔’이 던진 내부자거래의 새로운 질문 - kbanker.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NSFdtcHRSU1EwRGdYNEQ1MHBIQ0VSdFJmdTVQeVFmNF8yblgwd1NndElzYzVqbzNFSzNFc3Nxa2Q5Q0xOU2plbEV2bzFQMGh0ckx0OEp0MkpWNzJsNk84bVMyZzZqTmI2aWpMWGRpOFHSAXBBVV95cUxNTUhXbXB0UlNRMERnWDRENTBwSENFUnRSZnU1UHlRZjRfMm5YMHdTZ3RJc2M1am8zRUszRXNzcWtkOUNMTlNqZWxFdm8xUDBodHJMdDhKdDJKVjcybDZPOG1TMmc2ak5iNmlqTFhkaThR?oc=5",
+  "sources": [
+   "DFT 대한금융신문",
+   "kbanker.co.kr"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "[CEONEWS 이재훈의 경제칼럼 9] 대한항공 10년 만의 파업 위기 진단 - CEONEWS",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0xZXBjRkJGUkpRUXBnYm4yeGtKNmwwVXByZjNOUElvTVlJR3BKNnozRGVQUXFoT3RIbTlNQll2QTNzbzVWSFRnTS1rc3drSjB4VUZQRGt0Y3B4aEt2MXBr?oc=5",
+  "sources": [
+   "CEONEWS",
+   "ceomagazine.co.kr"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "SK, 1.3조 지분매각 뒤 1.2조 재투자…남은 현금은 [SK 리밸런싱①] - PRESS9",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44WEVDN28wTG84WWFoVEhtNFFJSXZabmlpVG9sODU3dFU5TVkzMWg5UTI0QkY2ZG0xMWZTTUVpa19FRm5UR3ZmTWlqVE9xRDBMZ3pLVU95TlhkNzhLdlBvX2ptQTg?oc=5",
+  "sources": [
+   "PRESS9",
+   "press9.kr"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "‘사법 변수’ 만난 LG화학 사업 재편···‘엔솔 지분’ 활용 앞당기나 - newsfreezone.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9pRGdQOFZEVkpYNU9MQXROYmtIZWkzQ1F1dFdhenktUGc1bzR0M2t0R2gxNVdYV2VTMmhxbzB0Qml2cTl0NUliZ1VxQlNzems0R0NCeUtaOWhKTG91RnBCX3lnNHlxaTM2ZkNUWnJPcEZJaE3SAXdBVV95cUxQNGFvUThZMFpMRXprbU1KYmxNZGNFYy1jdU5kZ0pfNWdoRi16SHp6YzRBcVJETTIxOUs3SjF4Nnc0bzl5Tk1KcER6SzhHeTNIVEpqTTVzUno4NEc1bm13eHVwN0c0WlRIX0EtWUV1OVlxa0dfR0xsWQ?oc=5",
+  "sources": [
+   "newsfreezone.co.kr",
+   "뉴스프리존"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "최태원 9440억 SK(주) 지분 처분…거버넌스포럼 ‘3% 룰 회피’ 의혹 제기 - 일요신문",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ta0pqaExYdFhvTktYbjBlUE1TS3U5WUpyUURRcjhCNXZyS2k3M1J1Mk9GdVhBTGhJUEZGc25Xa21UdHN6VXhDWXFJR0Z4M1BwalBoRWgwbXZlTFJBTlBaSWhQbGJ1Zw?oc=5",
+  "sources": [
+   "ilyo.co.kr",
+   "일요신문"
   ],
   "outlet_count": 2,
   "first_seen": "20261006",
@@ -1697,16 +1756,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "[자본시장 분쟁사례] M&A ‘정보 카르텔’이 던진 내부자거래의 새로운 질문 - kbanker.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NSFdtcHRSU1EwRGdYNEQ1MHBIQ0VSdFJmdTVQeVFmNF8yblgwd1NndElzYzVqbzNFSzNFc3Nxa2Q5Q0xOU2plbEV2bzFQMGh0ckx0OEp0MkpWNzJsNk84bVMyZzZqTmI2aWpMWGRpOFHSAXBBVV95cUxNTUhXbXB0UlNRMERnWDRENTBwSENFUnRSZnU1UHlRZjRfMm5YMHdTZ3RJc2M1am8zRUszRXNzcWtkOUNMTlNqZWxFdm8xUDBodHJMdDhKdDJKVjcybDZPOG1TMmc2ak5iNmlqTFhkaThR?oc=5",
-  "sources": [
-   "kbanker.co.kr"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "[단독] GS리테일, 쿠캣 매각 추진…비핵심 자산 정리 가속 - 블로터",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LYWZZSFJzZE9oWF9PaU8zOV9lMjVPaWE2dXBzcVBvTEVNZV8yMF9ObmI3U2lXV1NQTkExMEVDWExERGoyWTgycXRqUlFfMm03a0V1eXdQMFZSanVxWjJVVjFYdzJ2RkZH0gFsQVVfeXFMTlFVcVNQcjB3VGZNZFhBUHJjTjZWUkVFV2FfbkpLTHZTalAtMkYyTG51VElpdXV4UEdZQmo0cUVrU3ZHUWs0cVVocEpreWhJdm9EdzNCbWVlOFFpblFDcGUxQVB5X3ZFM2lHNmVf?oc=5",
   "sources": [
@@ -1907,16 +1956,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "[CEONEWS 이재훈의 경제칼럼 9] 대한항공 10년 만의 파업 위기 진단 - CEONEWS",
-  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0xZXBjRkJGUkpRUXBnYm4yeGtKNmwwVXByZjNOUElvTVlJR3BKNnozRGVQUXFoT3RIbTlNQll2QTNzbzVWSFRnTS1rc3drSjB4VUZQRGt0Y3B4aEt2MXBr?oc=5",
-  "sources": [
-   "CEONEWS"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "엔비디아 '그록 우회 인수' 소송전…주주들 \"수십억달러 손실\" - inews24.com",
   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBsU0syVV9Za3hyUjFTWFQ1VHVPbXYxWkR1YmlUNzJ6SUI0UnZ0VGo5Vm1GRmFCdklweW43ZE5KOWtaSF8xSGgw?oc=5",
   "sources": [
@@ -2027,16 +2066,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "SK, 1.3조 지분매각 뒤 1.2조 재투자…남은 현금은 [SK 리밸런싱①] - PRESS9",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44WEVDN28wTG84WWFoVEhtNFFJSXZabmlpVG9sODU3dFU5TVkzMWg5UTI0QkY2ZG0xMWZTTUVpa19FRm5UR3ZmTWlqVE9xRDBMZ3pLVU95TlhkNzhLdlBvX2ptQTg?oc=5",
-  "sources": [
-   "PRESS9"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "한국기업거버넌스포럼, 최태원 회장 SK 지분 9440억원 매각에 \"암묵적 약정 여부 설명하라\" - 조선일보",
   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPeXc4N2hDaGpsYnQzUWtQd3g4NzZpYkxTQldMcEd4em5MNnVfbVdUcFR2TkNHMEIwUnFjd1pzdVczaS1wOWJjNGhDODFGVnQzV0RuMGhpbXQ2SUVjN3NBREdPcS1MTGs3OHpnVFZ6SHF1QWQ4aHVsZDMySDJyaDQydVVxVVRXRmFmbHRvRlYzZEZ0Z1h0dkJybG95OXM4LTdXN1FXeUhCUFdMM1RqSHdkbXQ4WFZEVm52UzEwUFRlc3VzR2pNMjJ4TVhPWE96UEFCUXlERWpXMkxnc2o5M3E0?oc=5",
   "sources": [
@@ -2051,16 +2080,6 @@
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB2U1VDZ0JKVzQzZ01LM2VwcjBRUVJWaFE4aW1PX2JUUHJzSFFoUEdFdERPTk9CMzc0WGNUZnhwM3NXclhnU0VkS1kzdzBIeTMxUTR1Vm5YVU9oMmZhc2Y3UmNFMlo?oc=5",
   "sources": [
    "법률방송뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
-  "title": "‘사법 변수’ 만난 LG화학 사업 재편···‘엔솔 지분’ 활용 앞당기나 - newsfreezone.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9pRGdQOFZEVkpYNU9MQXROYmtIZWkzQ1F1dFdhenktUGc1bzR0M2t0R2gxNVdYV2VTMmhxbzB0Qml2cTl0NUliZ1VxQlNzems0R0NCeUtaOWhKTG91RnBCX3lnNHlxaTM2ZkNUWnJPcEZJaE3SAXdBVV95cUxQNGFvUThZMFpMRXprbU1KYmxNZGNFYy1jdU5kZ0pfNWdoRi16SHp6YzRBcVJETTIxOUs3SjF4Nnc0bzl5Tk1KcER6SzhHeTNIVEpqTTVzUno4NEc1bm13eHVwN0c0WlRIX0EtWUV1OVlxa0dfR0xsWQ?oc=5",
-  "sources": [
-   "newsfreezone.co.kr"
   ],
   "outlet_count": 1,
   "first_seen": "20261006",
@@ -2084,16 +2103,6 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261003",
-  "last_seen": "20261006"
- },
- {
-  "title": "최태원 9440억 SK(주) 지분 처분…거버넌스포럼 ‘3% 룰 회피’ 의혹 제기 - 일요신문",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ta0pqaExYdFhvTktYbjBlUE1TS3U5WUpyUURRcjhCNXZyS2k3M1J1Mk9GdVhBTGhJUEZGc25Xa21UdHN6VXhDWXFJR0Z4M1BwalBoRWgwbXZlTFJBTlBaSWhQbGJ1Zw?oc=5",
-  "sources": [
-   "일요신문"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
   "last_seen": "20261006"
  },
  {
@@ -2121,6 +2130,16 @@
   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZZy1hSm8wbV9Xd19jdUpTWmloS254SnR5RDBOazF6NG5pQlplU3BFcFFsbmNIczR1aXdySjQ4cWxwRl9yQUZQWFRjaGt5X1lkeE00WGwtbHNXZDgwVU1Ma3UxVm83YVk?oc=5",
   "sources": [
    "한겨레"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "Ynon Kreiz, Paramount Skydance 및 Warner Bros.의 공동 CEO로 임명 - IDNFinancials",
+  "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQjc2NG03NzFlQjlXa1FUS0drdXdpMWNfVTV4QU4wYlVxWXE3Z0xDeklXRkhUWjA2UXBXNjliUERZa1dMeGtvUzVkQXJtazU4UURYMUFTcmtlV0s2bDF0YVdKM002SVE1WXIwd1UxYjNxS2hVRkp5c3lvR09VRUVIRlJVYWFmM0ZDd19XTkJVRkdoWkMtQnFESTNJWEZUWGN4Vi16YVVNV24yV0pPQjBqRGQ3TEloYVRWT0NGRU5hRENfRWg3N1V6ZnJVdklEQjlqdHJvZ3RkVkphcGhRVVM3bW9sWTk0OUNJWUdEVA?oc=5",
+  "sources": [
+   "IDNFinancials"
   ],
   "outlet_count": 1,
   "first_seen": "20261006",
