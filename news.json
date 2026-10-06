@@ -6,6 +6,7 @@
    "ESG경제",
    "MBC 뉴스",
    "M이코노미뉴스",
+   "PRESS9",
    "SBS Biz",
    "YTN",
    "thelec.kr",
@@ -30,11 +31,12 @@
    "여성신문",
    "연합뉴스",
    "전자신문",
+   "조선일보",
    "중앙일보",
    "투데이e코노믹",
    "파이낸셜투데이"
   ],
-  "outlet_count": 30,
+  "outlet_count": 32,
   "first_seen": "20261003",
   "last_seen": "20261006"
  },
@@ -197,6 +199,30 @@
    "v.daum.net",
    "서울파이낸스",
    "한스경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "中企 인수합병 새 대안 되나…기보, '한국형 M&A거래소' 정책 연구 돌입 - news1.kr",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16SURlT2RNc0RUeHd3WE0yOUd6WVIxZ2JZcFJjcUxqUFpWamt6bkFNZWlwX3RSQWZuWU5OQTcyQUsxZW9ENEZadG5uZEVZcWlFY0NwRnExTjN5OWZQSG9Qb1hHdGs1WDF2bHfSAWpBVV95cUxNeklEZU9kTXNEVHh3d1hNMjlHellSMWdiWXBSY3FMalBaVmprem5BTWVpcF90UkFmbllOTkE3MkFLMWVvRDRGWnRubmRFWXFpRWNDcEZxMU4zeTlmUEhvUG9YR3RrNVgxdmx3?oc=5",
+  "sources": [
+   "2news.co.kr",
+   "news1.kr",
+   "v.daum.net"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "거버넌스포럼, 최태원 회장 SK 지분 매각에 '3%룰 회피' 비판 - 아시아경제",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13R1RIUG1TRkpEM2hBa2xIWnFVRV9OMWtubVVCbFRwX3VHZUtLYU1hLUhrSUFZX2dCcWEzNng5b1FUQ08zeWpWNFZZYktnWEd5VFJtdzZVeWkwN3dMLWF2WA?oc=5",
+  "sources": [
+   "ESG경제",
+   "PRESS9",
+   "아시아경제"
   ],
   "outlet_count": 3,
   "first_seen": "20261006",
@@ -533,17 +559,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "中企 인수합병 새 대안 되나…기보, '한국형 M&A거래소' 정책 연구 돌입 - news1.kr",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16SURlT2RNc0RUeHd3WE0yOUd6WVIxZ2JZcFJjcUxqUFpWamt6bkFNZWlwX3RSQWZuWU5OQTcyQUsxZW9ENEZadG5uZEVZcWlFY0NwRnExTjN5OWZQSG9Qb1hHdGs1WDF2bHfSAWpBVV95cUxNeklEZU9kTXNEVHh3d1hNMjlHellSMWdiWXBSY3FMalBaVmprem5BTWVpcF90UkFmbllOTkE3MkFLMWVvRDRGWnRubmRFWXFpRWNDcEZxMU4zeTlmUEhvUG9YR3RrNVgxdmx3?oc=5",
-  "sources": [
-   "2news.co.kr",
-   "news1.kr"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "CH로빈슨, 58억달러에 ‘RXO’ 인수합병 - 카고뉴스",
   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TZFNPYW1VTHZDNjg0c245YS1xeVZCR29pcUl3VXpfZDRtM2JJUmlBSFRURGNvZDctV3M0YXd3NlJYeWNhVGttcDk0N19UZElKZXlYZDF1bnpvc3Y2azhyT1JDUjRmUmhuYVdKMmpR?oc=5",
   "sources": [
@@ -566,11 +581,44 @@
   "last_seen": "20261006"
  },
  {
-  "title": "거버넌스포럼, 최태원 회장 SK 지분 매각에 '3%룰 회피' 비판 - 아시아경제",
-  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13R1RIUG1TRkpEM2hBa2xIWnFVRV9OMWtubVVCbFRwX3VHZUtLYU1hLUhrSUFZX2dCcWEzNng5b1FUQ08zeWpWNFZZYktnWEd5VFJtdzZVeWkwN3dMLWF2WA?oc=5",
+  "title": "중앙일보 인수전에 삼성·CJ·BGF 다 빠졌다 - 더퍼블릭",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8tZElub1N4YjZWakRIOEpCdzBGOExMSElMcEFzeTctQnFjTjd2ZUwwZUxCbk5RQXFHdGh4SGJYcU9lc1ZocnI4X0F0S1RubTBBVW1Dc29PV1VxeFZRTXUybHJhTWo3MnZpd1M1R0RwZ9IBb0FVX3lxTE8tZElub1N4YjZWakRIOEpCdzBGOExMSElMcEFzeTctQnFjTjd2ZUwwZUxCbk5RQXFHdGh4SGJYcU9lc1ZocnI4X0F0S1RubTBBVW1Dc29PV1VxeFZRTXUybHJhTWo3MnZpd1M1R0RwZw?oc=5",
   "sources": [
-   "PRESS9",
-   "아시아경제"
+   "thepublic.kr",
+   "더퍼블릭"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "이강석 체제 출범한 대우건설…AI·데이터센터 신사업·M&A 추진 - 더퍼블릭",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1UzR3dEFtVHM4SzdWU25zM2hPOC1rYlRvQzFZUUN1ZmxXNlQwMnA1RzBsenBZOXVLd3gtM19tNHF5d0UyX3lCX3hEcjN1bVJhbk1iRmJRY1FZR2tzRFpvUnRyT1RXaTFtZVhF0gFvQVVfeXFMUGlCZU1CaVZJQnFfOVh2QzlXRW5XbV9QbzJRSmE1Wkg5MFFuaDRLMzNLODNOeE5FQkwzYTBBN2xuVl9aLVpEb2tJTjNkd0c3Wks5emdjRXlmdlM1YXpROFh4MzNUVk12a3hrdGhJdkJN?oc=5",
+  "sources": [
+   "thepublic.kr",
+   "더퍼블릭"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "슈나이더일렉트릭, 美 PTC 20조원에 인수 - gokorea.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtZF83WXZYVTB4U1BoR1AyTEJFTnBmVF9uTWQ3MERhWjhZNEFLSTg5YTZCbUxKOG56NGZ5eXB2VFhJbi16TVlZS0R2T0FaT2UteUoxdjA0alQ5LXZKcjZmejFoclRiN25y?oc=5",
+  "sources": [
+   "gokorea.kr",
+   "공감신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "한화갤러리아, 타임월드 매각 저울질…서울 핵심 상권 투자 확대 - 더퍼블릭",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE94b3JtQV9LcWFCbXFxbVhHZWdGQ0tOTHRLU3d4N3ZaMWotUHBLVUN4UjgzMXJGY0VLQlgya2hfdS0zRmttOU42SjNDdTlac1NxY1NaYXRNeUFlbDloSWhzOUF2eGl5bDZiQ1pV0gFvQVVfeXFMT3I1NThNdnQ3NXZBMnZjR1hIakFZOVRubVpMQ1RzcS1COHE2REMtMUlIX3hGbjI0ZXNNbnVuX3ljVGp4cVI5d3FhdTBzb29JSmF0eGFTdHZFWHpsQlkxMDUta2g1RXRyaEMyUDd4UE1z?oc=5",
+  "sources": [
+   "thepublic.kr",
+   "더퍼블릭"
   ],
   "outlet_count": 2,
   "first_seen": "20261006",
@@ -1407,16 +1455,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "중앙일보 인수전에 삼성·CJ·BGF 다 빠졌다 - 더퍼블릭",
-  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8tZElub1N4YjZWakRIOEpCdzBGOExMSElMcEFzeTctQnFjTjd2ZUwwZUxCbk5RQXFHdGh4SGJYcU9lc1ZocnI4X0F0S1RubTBBVW1Dc29PV1VxeFZRTXUybHJhTWo3MnZpd1M1R0RwZ9IBb0FVX3lxTE8tZElub1N4YjZWakRIOEpCdzBGOExMSElMcEFzeTctQnFjTjd2ZUwwZUxCbk5RQXFHdGh4SGJYcU9lc1ZocnI4X0F0S1RubTBBVW1Dc29PV1VxeFZRTXUybHJhTWo3MnZpd1M1R0RwZw?oc=5",
-  "sources": [
-   "더퍼블릭"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "‘산은 DNA’ 노앤파트너스, 성장투자·바이아웃 쌍끌이 - 뉴스톱",
   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpM0VxNFJZUEswMDNvUC1PTXRsQUdaQ2I3QUQwM2ZTVFliQ1JCeTlpd1ZteV9OUTRLLXJpMngtT0VqRW80UTdrTThpa21DOVdrQm8xd2dxVUVyTFBRNXhzV0tVSjk3UHVpZDNXZ05VRQ?oc=5",
   "sources": [
@@ -1717,16 +1755,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "이강석 체제 출범한 대우건설…AI·데이터센터 신사업·M&A 추진 - 더퍼블릭",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1UzR3dEFtVHM4SzdWU25zM2hPOC1rYlRvQzFZUUN1ZmxXNlQwMnA1RzBsenBZOXVLd3gtM19tNHF5d0UyX3lCX3hEcjN1bVJhbk1iRmJRY1FZR2tzRFpvUnRyT1RXaTFtZVhF0gFvQVVfeXFMUGlCZU1CaVZJQnFfOVh2QzlXRW5XbV9QbzJRSmE1Wkg5MFFuaDRLMzNLODNOeE5FQkwzYTBBN2xuVl9aLVpEb2tJTjNkd0c3Wks5emdjRXlmdlM1YXpROFh4MzNUVk12a3hrdGhJdkJN?oc=5",
-  "sources": [
-   "더퍼블릭"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "AI·M&A 훈풍 뉴욕증시 상승…나스닥 사상 최고 - thefairnews.co.kr",
   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PYUdnclNaMUg2aEtBU3BiZ1dyXzVDTi0zb0VuRWU0ZjRhYWdHd1FZOVkwVWNLNnUzY3RpbTJkVWs3aVNNeS1ndFF6TFlrYTBsd3J2eERVQlJPVVQxZjdvclFfOHNLMUo1dThJRHVuNHjSAXRBVV95cUxOeWxXQmg5M1kxc2I4NW04YTJ2QVZGdkJubVBsVHB5YnRwOVBvbE5aQy1pUnNYYnl0S0VEdFl2OUg0dVkxZm0yVzl2X0JnaGpVdTB5OU5aX2NrSU1fbGxfNEVXSHhmQ1NXbVpUNWMxOWdJNF9zNA?oc=5",
   "sources": [
@@ -1791,16 +1819,6 @@
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAtd0tUdzE2ODc2TnA0VVVrZm8zZXZDVWF5TjBDTi1iMlF0cWF5YWI0MzMxekxzY19YNkVsdTduUmlOYmM3b2JnczlrWnFHUF9UY0hQb0VUNnJSSm5rNDVrV2pTcUFFWm04M2ZN?oc=5",
   "sources": [
    "산학뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
-  "title": "슈나이더일렉트릭, 美 PTC 20조원에 인수 - gokorea.kr",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtZF83WXZYVTB4U1BoR1AyTEJFTnBmVF9uTWQ3MERhWjhZNEFLSTg5YTZCbUxKOG56NGZ5eXB2VFhJbi16TVlZS0R2T0FaT2UteUoxdjA0alQ5LXZKcjZmejFoclRiN25y?oc=5",
-  "sources": [
-   "gokorea.kr"
   ],
   "outlet_count": 1,
   "first_seen": "20261006",
@@ -2027,16 +2045,6 @@
   "last_seen": "20261006"
  },
  {
-  "title": "한화갤러리아, 타임월드 매각 저울질…서울 핵심 상권 투자 확대 - 더퍼블릭",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE94b3JtQV9LcWFCbXFxbVhHZWdGQ0tOTHRLU3d4N3ZaMWotUHBLVUN4UjgzMXJGY0VLQlgya2hfdS0zRmttOU42SjNDdTlac1NxY1NaYXRNeUFlbDloSWhzOUF2eGl5bDZiQ1pV0gFvQVVfeXFMT3I1NThNdnQ3NXZBMnZjR1hIakFZOVRubVpMQ1RzcS1COHE2REMtMUlIX3hGbjI0ZXNNbnVuX3ljVGp4cVI5d3FhdTBzb29JSmF0eGFTdHZFWHpsQlkxMDUta2g1RXRyaEMyUDd4UE1z?oc=5",
-  "sources": [
-   "더퍼블릭"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261006",
-  "last_seen": "20261006"
- },
- {
   "title": "‘사법 변수’ 만난 LG화학 사업 재편···‘엔솔 지분’ 활용 앞당기나 - newsfreezone.co.kr",
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9pRGdQOFZEVkpYNU9MQXROYmtIZWkzQ1F1dFdhenktUGc1bzR0M2t0R2gxNVdYV2VTMmhxbzB0Qml2cTl0NUliZ1VxQlNzems0R0NCeUtaOWhKTG91RnBCX3lnNHlxaTM2ZkNUWnJPcEZJaE3SAXdBVV95cUxQNGFvUThZMFpMRXprbU1KYmxNZGNFYy1jdU5kZ0pfNWdoRi16SHp6YzRBcVJETTIxOUs3SjF4Nnc0bzl5Tk1KcER6SzhHeTNIVEpqTTVzUno4NEc1bm13eHVwN0c0WlRIX0EtWUV1OVlxa0dfR0xsWQ?oc=5",
   "sources": [
@@ -2051,6 +2059,36 @@
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsRzVZZWFPWTAwcElVNGZJSS1aZy1Da1JPaFJIdURzRTNmdWdDOUFXdmFOSWJNbnZpZGlNRVpnR05hVElIYzZLV3M1UkhfQmo4c2JQX1ZMMGk1aEJnZWVkSnBvN2stVzNOMVNHNjRDZGYyU00?oc=5",
   "sources": [
    "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "모바일 이용 전 알아둘 도박 성별 화면 비율 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPd1FucHNJUDFxNXF2bVQ3cXc2YXNveVNLTkdITzVsS0QxOHZnSkphN0VrY1dZMS1kcHZ2Yk5MM2tPbmtJbmZnR3V4LUQ2VWR2ZmRHOUs0NkJJekh6OEhRRXBEOXJxWERjb0R1NXZDMTVrYko2NzY5RVZUaUFudnZBUjctTll2M3pOQzlXTHBUdzVRYU9sSTBHM3dOSTMycUxaQV9STUk2RDFMNTVRQThJMFpIUlpYTnJFTjNYYzZReDE4VEpPcEMtNnlNNnNMQ1N5cEFoRTU0dTllY044V0NJZ25XSEdLLU42aDFvX05RMF8xbWZJSnIzQlFwanFMX3BwckhQOHhkRU4yaE5hQjB3MGJUY1RfVHd5TE5RTDRfcUpzREtXRWhtcUwzdVBpbUZxdmdlOTV1Ym5VVTNXWjMw?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261003",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "슈나이더 일렉트릭, PTC 인수로 산업 AI와 디지털 스레드 결합 추진 - 캐드앤그래픽스",
+  "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaTRTUWUtRENkNXBGdlBJZjYwVXNoRTdGRUpoaG1QckhrLUFQMWx0UGxQRTFoc2NYSlA2eWVpNU5mWGdLT3FUeENvR2VneWhrc3N0R2JLNHBkVTktZXBEZ0QwemhwaEpXQ3ZWcGxoejRKN0N2WllIMUZ1azFjbktXMzR0cEQ4aFo5aFVKM2t3?oc=5",
+  "sources": [
+   "캐드앤그래픽스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261006",
+  "last_seen": "20261006"
+ },
+ {
+  "title": "최태원 9440억 SK(주) 지분 처분…거버넌스포럼 ‘3% 룰 회피’ 의혹 제기 - 일요신문",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ta0pqaExYdFhvTktYbjBlUE1TS3U5WUpyUURRcjhCNXZyS2k3M1J1Mk9GdVhBTGhJUEZGc25Xa21UdHN6VXhDWXFJR0Z4M1BwalBoRWgwbXZlTFJBTlBaSWhQbGJ1Zw?oc=5",
+  "sources": [
+   "일요신문"
   ],
   "outlet_count": 1,
   "first_seen": "20261006",
@@ -2136,16 +2174,6 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261005",
-  "last_seen": "20261005"
- },
- {
-  "title": "모바일 이용 전 알아둘 도박 성별 화면 비율 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPd1FucHNJUDFxNXF2bVQ3cXc2YXNveVNLTkdITzVsS0QxOHZnSkphN0VrY1dZMS1kcHZ2Yk5MM2tPbmtJbmZnR3V4LUQ2VWR2ZmRHOUs0NkJJekh6OEhRRXBEOXJxWERjb0R1NXZDMTVrYko2NzY5RVZUaUFudnZBUjctTll2M3pOQzlXTHBUdzVRYU9sSTBHM3dOSTMycUxaQV9STUk2RDFMNTVRQThJMFpIUlpYTnJFTjNYYzZReDE4VEpPcEMtNnlNNnNMQ1N5cEFoRTU0dTllY044V0NJZ25XSEdLLU42aDFvX05RMF8xbWZJSnIzQlFwanFMX3BwckhQOHhkRU4yaE5hQjB3MGJUY1RfVHd5TE5RTDRfcUpzREtXRWhtcUwzdVBpbUZxdmdlOTV1Ym5VVTNXWjMw?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261003",
   "last_seen": "20261005"
  },
  {
