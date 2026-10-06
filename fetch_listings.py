@@ -130,6 +130,48 @@ MK_SELL_KW = ["매물로 나왔다", "매물로 등록", "매물로 내놨다", 
 MK_BUY_KW = ["인수를 희망", "인수를 추진", "인수를 검토", "인수를 타진", "인수에 관심"]
 
 
+def _tidy(s, limit=40):
+    s = re.sub(r"\s+", " ", s).strip(" ,.·")
+    if len(s) > limit:
+        s = s[:limit].rsplit(" ", 1)[0].strip(" ,.·")
+    return s
+
+
+def sell_industry(seg, label):
+    """매물 문단에서 업종만 짧게 뽑는다.
+    '…에 따르면 …수행하는 창호 제조사 A사가 인수자를 찾아 나섰다' → '창호 제조사'
+    '연 매출 60억원의 물류 운송사 B사도 매물로 나왔다' → '물류 운송사'
+    '…대상으로 기자재용품을 공급하는 A사가 매수자를 찾는다' → '기자재용품 공급'"""
+    i = seg.find(label)
+    if i <= 0:
+        return ""
+    pre = seg[:i]
+    pre = re.sub(r"^.*?따르면\s*", "", pre)                                   # '28일 한국M&A거래소에 따르면'
+    pre = re.sub(r"연\s*매출(?:은)?\s*[\d,.]+\s*(?:억|조)?\s*원?(?:대|가량|수준|이상|안팎)?\s*(?:의|인)?\s*", "", pre)
+    pre = pre.strip(" ,")
+    if "하는 " in pre:                       # '…일괄 수행하는 창호 제조사' → 마지막 명사구만
+        pre = pre.rsplit("하는 ", 1)[1]
+    m = re.search(r"([가-힣A-Za-z0-9·&\- ]+?)[을를]\s+([가-힣]+?)하는$", pre)  # '세정 장비를 제조하는'
+    if m:
+        pre = m.group(1).strip() + " " + m.group(2)
+    else:
+        pre = re.sub(r"하는$", "", pre)
+    return _tidy(pre)
+
+
+def buy_target(seg, label):
+    """인수희망 문단에서 '어떤 회사를 인수하고 싶은지'만 뽑는다.
+    'D사는 석산·크러셔 관련 업체 인수를 희망하고 있다' → '석산·크러셔 관련 업체'"""
+    i = seg.find(label)
+    if i < 0:
+        return ""
+    m = re.search(r"사(?:는|가)\s*(.+?)\s*인수(?:를|에)\s*(?:희망|추진|검토|타진|관심)", seg[i:])
+    if not m:
+        return ""
+    t = re.sub(r"^.*?차원에서\s*", "", m.group(1))
+    return _tidy(t, 50)
+
+
 def parse_mk_prose(html):
     """인쇄용 페이지 본문(문단이 <br><br>로 구분된 서술형 기사)에서
     매물/인수희망 항목을 문단 단위로 추출한다."""
@@ -172,13 +214,13 @@ def parse_mk_prose(html):
             if is_buy:
                 amt_m = re.search(r"희망\s*인수\s*금액은\s*([^.]+?)(?:이다|다)?\.", seg)
                 buy_items.append({
-                    "label": label, "feature": seg[:220],
+                    "label": label, "feature": seg[:220], "industry": buy_target(seg, label),
                     "budget": amt_m.group(1).strip() if amt_m else "",
                 })
             else:
                 rev_m = re.search(r"매출(?:은)?\s*([\d,]+)\s*억", seg)
                 sell_items.append({
-                    "label": label, "feature": seg[:220],
+                    "label": label, "feature": seg[:220], "industry": sell_industry(seg, label),
                     "revenue": (rev_m.group(1) + "억원") if rev_m else "",
                 })
     return sell_items, buy_items
@@ -252,8 +294,8 @@ def collect_mk(existing_keys, added, items_out):
                                        "label": row.get("구분", ""), "industry": row.get("업종", ""),
                                        "revenue": row.get("매출", ""), "feature": row.get("특징", "")})
                 else:  # parse_mk_prose 결과 (서술형)
-                    items_out.append({**base, "type": "sell", "industry": "",
-                                       "label": row.get("label", ""),
+                    items_out.append({**base, "type": "sell", "industry": row.get("industry", ""),
+                                       "label": row.get("label", ""), "ind_v": 2,
                                        "revenue": row.get("revenue", ""), "feature": row.get("feature", "")})
             for row in buy_items:
                 if isinstance(row, dict) and "구분" in row:
@@ -264,8 +306,9 @@ def collect_mk(existing_keys, added, items_out):
                                        "budget": row.get("인수가능금액", "")})
                 else:
                     items_out.append({**base, "type": "buy", "form": "", "industry": "",
-                                       "label": row.get("label", ""),
-                                       "target_industry": row.get("feature", ""),
+                                       "label": row.get("label", ""), "ind_v": 2,
+                                       "target_industry": row.get("industry", ""),
+                                       "feature": row.get("feature", ""),
                                        "budget": row.get("budget", "")})
         existing_keys.add(article_key)
         added[0] += 1
@@ -290,7 +333,7 @@ def add_hankyung_item(link, title, pub_dt_str, existing_keys, items_out, added):
     items_out.append({
         "outlet": "한국경제", "article_title": title, "article_link": link,
         "pubDate": pub_dt_str,
-        "type": "sell", "label": "", "industry": "", "revenue": revenue, "feature": feature,
+        "type": "sell", "label": "", "industry": feature, "ind_v": 2, "revenue": revenue, "feature": feature,
     })
     existing_keys.add(article_key)
     added[0] += 1
@@ -349,12 +392,31 @@ def collect_hankyung(existing_keys, added, items_out):
         add_hankyung_item(real_link, clean_title, it["pubDate"], existing_keys, items_out, added)
 
 
+def migrate_summaries(rows):
+    """예전에 기사 문장을 그대로 저장한 항목을, 저장돼 있는 문장(feature/target_industry)에서
+    업종만 뽑은 짧은 요약으로 바꾼다 (기사를 다시 받지 않는다)."""
+    for e in rows:
+        if e.get("ind_v") == 2:
+            continue
+        label, kind = e.get("label", ""), e.get("type")
+        if e.get("outlet") == "한국경제":
+            e["industry"] = e.get("feature", "")
+        elif label and kind == "sell" and not e.get("industry"):   # 표에서 온 항목은 업종이 이미 있다
+            e["industry"] = sell_industry(e.get("feature", ""), label)
+        elif label and kind == "buy" and not e.get("form"):        # 표에서 온 항목은 form 칸이 있다
+            text = e.get("target_industry", "") or e.get("feature", "")
+            e["feature"] = text
+            e["target_industry"] = buy_target(text, label)
+        e["ind_v"] = 2
+
+
 def main():
     existing = []
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as f:
             existing = json.load(f)
     # 매물/인수 행 여러 개가 기사 하나에서 나올 수 있어, 중복 판단은 (매체, 기사 제목) 기준으로 한다.
+    migrate_summaries(existing)
     existing_keys = {(e.get("outlet"), e.get("article_title")) for e in existing}
     added = [0]
     items_out = []

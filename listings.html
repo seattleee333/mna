@@ -39,6 +39,7 @@ renderNewsPanel();
 let items = [];
 let tab = "sell";
 let outlet = "전체";
+const NO_SUMMARY = "업종 정보는 상세보기 참고"; // 기사에서 업종을 뽑지 못한 경우
 const PAGE_SIZE = 10;
 const MORE_LIMIT = 2;
 let revealBatches = 1;
@@ -80,14 +81,14 @@ function groupRows(rows) {
 function rowHtml(it, isBuy) {
   const label = it.label ? esc(it.label) : "-";
   if (isBuy) {
-    const target = it.target_industry || it.industry || it.feature || "-";
+    const target = it.target_industry || it.industry || NO_SUMMARY;
     return '<tr><td class="lg-td-label">' + label + '</td>' +
-      '<td>' + esc(target.length > 70 ? target.slice(0, 70) + "…" : target) + '</td>' +
+      '<td>' + esc(target) + '</td>' +
       '<td>' + (it.budget ? esc(fmtEok(it.budget)) : "-") + '</td></tr>';
   }
-  const industryText = it.industry || it.feature || "-";
+  const industryText = it.industry || NO_SUMMARY;
   return '<tr><td class="lg-td-label">' + label + '</td>' +
-    '<td>' + esc(industryText.length > 70 ? industryText.slice(0, 70) + "…" : industryText) + '</td>' +
+    '<td>' + esc(industryText) + '</td>' +
     '<td>' + (it.revenue ? esc(fmtEok(it.revenue)) : "-") + '</td></tr>';
 }
 
