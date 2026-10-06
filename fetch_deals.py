@@ -540,12 +540,12 @@ def enrich(deal, cache, stats, diag_budget):
         deal["no_detail_api"] = True
         return True
     correction = "정정" in _flat(deal)
-    # 상세 API가 실제로 그 딜을 잡아두는 날짜가 목록 API의 접수일자(rcept_dt)와
-    # 하루이틀 어긋나는 경우가 있어, 정확히 하루만 조회하지 않고 앞뒤로 여유를 두고 조회한다.
-    # 정정 공시는 원 공시가 며칠 앞서 있으므로 조회 기간을 더 앞으로 넓힌다.
+    # 상세 API는 짧은 기간(수 일)으로 조회하면 이미 있는 건도 비어서 오는 경우가 있고(로그로 확인),
+    # 같은 날 건도 목록 API와 접수번호가 다르게 잡히는 경우가 있다. 그래서 그 회사의 해당 연도 전체를
+    # 한 번 받아 두고(회사·유형당 1회, 캐시), 접수번호가 같으면 그 행, 아니면 가장 가까운 행을 쓴다.
     base_day = dt.datetime.strptime(deal["date"], "%Y%m%d")
-    win_bgn = (base_day - dt.timedelta(days=30 if correction else 3)).strftime("%Y%m%d")
-    win_end = (base_day + dt.timedelta(days=3)).strftime("%Y%m%d")
+    win_bgn = deal["date"][:4] + "0101"
+    win_end = deal["date"][:4] + "1231"
     key = (endpoint, deal["corp_code"], win_bgn, win_end)
     if key not in cache:
         data = call(endpoint + ".json", {
@@ -567,14 +567,16 @@ def enrich(deal, cache, stats, diag_budget):
         time.sleep(0.1)
     rows = cache[key]
     row = next((x for x in rows if x.get("rcept_no") == deal["rcept_no"]), None)
-    if row is None and len(rows) == 1 and not correction:
-        row = rows[0]
-    if row is None and correction:
-        # 정정 공시의 접수번호는 상세 API에 없고 원 공시 접수번호로만 잡히므로,
-        # 같은 회사의 직전(원) 공시 행을 가져온다.
-        earlier = [x for x in rows if x.get("rcept_no") and x["rcept_no"] < deal["rcept_no"]]
-        if earlier:
-            row = max(earlier, key=lambda x: x["rcept_no"])
+    if row is None:
+        def gap(x):
+            return abs((dt.datetime.strptime(x["rcept_no"][:8], "%Y%m%d") - base_day).days)
+        if correction:
+            # 정정 공시는 원 공시 접수번호로만 잡히므로, 같은 회사의 직전(원) 공시 중 가장 최근 행을 쓴다.
+            near = [x for x in rows if x.get("rcept_no") and x["rcept_no"] < deal["rcept_no"] and gap(x) <= 60]
+            row = max(near, key=lambda x: x["rcept_no"]) if near else None
+        else:
+            near = [x for x in rows if x.get("rcept_no") and gap(x) <= 7]
+            row = min(near, key=gap) if near else None
     if row:
         deal.update(extract(endpoint, row, deal["corp_name"]))
         finalize_summary(deal)
@@ -583,7 +585,7 @@ def enrich(deal, cache, stats, diag_budget):
 
     stats["no_match"] += 1
     print(f"  매칭 실패 [{endpoint}] {deal['corp_name']} {deal['date']} "
-          f"rcept_no={deal['rcept_no']}: 상세API가 {win_bgn}~{win_end} 기간에 반환한 건수={len(rows)}")
+          f"rcept_no={deal['rcept_no']}: 상세API가 {deal['date'][:4]}년 전체로 반환한 건수={len(rows)}")
 
     # 보완책: 상세 API가 매칭 못한 건(주로 거래소 소관으로 접수돼 금융위 API에
     # 데이터가 없는 경우)은 공시 원문을 직접 받아 표준 서식을 파싱해본다.
@@ -761,10 +763,10 @@ def main():
         # 확인된 건은 다시 조회하지 않는다. (구버전 스키마로 amount/note만 채워지고
         # summary가 없는 건은 재조회 대상에 포함시켜 새 스키마로 채운다.)
         # 제목 기반 임시 요약은 정정 공시 매칭 개선 후 한 번 다시 연다.
-        if d.get("summary_src") == "title" and d.get("fix_v") != 5:
+        if d.get("summary_src") == "title" and d.get("fix_v") != 6:
             for k in ("summary", "summary_src", "sum_v", "kind", "no_detail_api"):
                 d.pop(k, None)
-            d["fix_v"] = 5
+            d["fix_v"] = 6
             d["detail_attempts"] = 0
         has_detail = bool(d.get("summary"))
         if d.get("source") == "raw_document" and d.get("raw_v") != 3:
@@ -783,7 +785,7 @@ def main():
             d.pop("no_detail_api", None)
             d["detail_attempts"] = 0
         # 합병종료·정정 공시 처리를 추가하기 전에 닫힌 요약 없는 건도 한 번 다시 연다.
-        if not has_detail and d.get("no_detail_api") and d.get("fix_v") not in (4, 5):
+        if not has_detail and d.get("no_detail_api") and d.get("fix_v") not in (4, 5, 6):
             d["fix_v"] = 4
             d.pop("no_detail_api", None)
             d["detail_attempts"] = 0
