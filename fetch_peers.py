@@ -139,6 +139,83 @@ def extract_metrics(rows):
     return {"op": op, "da": da, "cash": cash, "debt": debt, "nci": nci, "ni": ni}
 
 
+def find_annual_rcept(corp_code, year):
+    """해당 사업연도 사업보고서 접수번호"""
+    try:
+        r = requests.get(BASE + "list.json", params={
+            "crtfc_key": API_KEY, "corp_code": corp_code, "bgn_de": f"{year + 1}0101", "end_de": f"{year + 1}1231",
+            "pblntf_detail_ty": "A001", "last_reprt_at": "Y", "page_count": 20}, timeout=30).json()
+    except Exception:
+        return None
+    best = None
+    for it in r.get("list", []) or []:
+        nm = it.get("report_nm", "")
+        if "사업보고서" in nm and "기재정정" not in nm:
+            best = it["rcept_no"]
+            break
+        if "사업보고서" in nm and best is None:
+            best = it["rcept_no"]
+    return best
+
+
+def da_from_xbrl(corp_code, year, fs_div):
+    """재무제표 API에 영업활동 상세가 없을 때, XBRL 원문에서 감가상각비+무형자산상각비를 추출 (원 단위)"""
+    rcept = find_annual_rcept(corp_code, year)
+    if not rcept:
+        return None, "사업보고서 접수번호 없음"
+    try:
+        r = requests.get(BASE + "fnlttXbrl.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept, "reprt_code": "11011"}, timeout=120)
+        zf = zipfile.ZipFile(io.BytesIO(r.content))
+    except Exception as e:
+        return None, f"XBRL 다운로드 실패({type(e).__name__})"
+    names = [n for n in zf.namelist() if n.lower().endswith((".xbrl", ".xml"))]
+    names.sort(key=lambda n: (0 if n.lower().endswith(".xbrl") else 1))
+    if not names:
+        return None, "XBRL 파일 없음"
+    try:
+        root = ET.fromstring(zf.read(names[0]))
+    except Exception:
+        return None, "XBRL 파싱 실패"
+    # 컨텍스트: 차원(세그먼트) 없는 당기 연간 기간
+    ctx = {}
+    for c in root.iter():
+        if c.tag.endswith("}context"):
+            seg = any(x.tag.endswith(("}segment", "}scenario")) for x in c.iter())
+            st = en = None
+            for x in c.iter():
+                if x.tag.endswith("}startDate"): st = (x.text or "").strip()
+                elif x.tag.endswith("}endDate"): en = (x.text or "").strip()
+            if st and en and not seg:
+                ctx[c.get("id")] = (st, en)
+    if not ctx:
+        return None, "XBRL 컨텍스트 없음"
+    last_end = max(e for _, e in ctx.values())
+    cur = {k for k, (a, e) in ctx.items() if e == last_end and 300 <= (dt.date.fromisoformat(e) - dt.date.fromisoformat(a)).days <= 380}
+    found = {}
+    for el in root.iter():
+        if el.get("contextRef") in cur and el.text:
+            local = el.tag.split("}")[-1]
+            if ("Depreciation" in local or "Amortisation" in local or "Amortization" in local) and "Impairment" not in local \
+               and "Accumulated" not in local and "Reversal" not in local:
+                v = parse_amt(el.text)
+                if v is not None:
+                    found.setdefault(local, v)
+    if not found:
+        return None, "XBRL에 상각비 태그 없음"
+    combo = [v for k, v in found.items() if "DepreciationAndAmortisation" in k and k.startswith("AdjustmentsFor")]
+    if combo:
+        return abs(combo[0]), None
+    adj = {k: v for k, v in found.items() if k.startswith("AdjustmentsFor")}
+    if adj:
+        return abs(sum(adj.values())), None
+    # 현금흐름 조정 항목이 없으면 비용 항목(주석)에서 큰 순으로 감가+무형만 합산
+    dep = [v for k, v in found.items() if k in ("DepreciationExpense", "DepreciationPropertyPlantAndEquipment", "DepreciationOfPropertyPlantAndEquipment")]
+    amo = [v for k, v in found.items() if k in ("AmortisationExpense", "AmortisationIntangibleAssetsOtherThanGoodwill")]
+    if dep or amo:
+        return abs(max(dep, default=0)) + abs(max(amo, default=0)), None
+    return None, "XBRL 상각비 태그 분류 실패"
+
+
 def parse_korean_money(s):
     """'1조 2,345억' / '2,345억' / '3,456,789' 같은 표기를 원 단위로"""
     if s is None:
@@ -241,11 +318,13 @@ def main():
             return out
         mt = extract_metrics(rows)
         out.update({"year": year, "fs": fs})
-        if mt["da"] is None and len(DEBUG) < 4:
-            DEBUG.append({"name": name, "sj": sorted({r.get("sj_div") for r in rows}),
-                          "cf": [(r.get("account_id"), r.get("account_nm")) for r in rows if r.get("sj_div") == "CF"][:30],
-                          "dep_like": [(r.get("sj_div"), r.get("account_id"), r.get("account_nm")) for r in rows
-                                       if any(k in ((r.get("account_nm") or "") + (r.get("account_id") or "")) for k in ("상각", "Depreciation", "Amortisation"))][:15]})
+        if mt["da"] is None:
+            xda, xwhy = da_from_xbrl(corp_code, year, fs)
+            if xda is not None:
+                mt["da"] = xda
+                out["da_src"] = "xbrl"
+            else:
+                out["da_why"] = xwhy
         mcap, src = fetch_mcap(code)
         time.sleep(0.2)
         if not mcap:
@@ -269,7 +348,7 @@ def main():
             else:
                 reasons.append("EBITDA 또는 EV가 0 이하")
         else:
-            reasons.append("영업이익 미식별" if mt["op"] is None else "감가상각비 미식별")
+            reasons.append("영업이익 미식별" if mt["op"] is None else "감가상각비 미식별(" + str(out.get("da_why", "")) + ")")
         if mt["ni"] is not None and mt["ni"] > 0:
             per = mcap / mt["ni"]
             if 0 < per <= 100:
