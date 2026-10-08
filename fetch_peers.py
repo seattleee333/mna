@@ -21,6 +21,7 @@ API_KEY = os.environ.get("DART_API_KEY", "")
 BASE = "https://opendart.fss.or.kr/api/"
 SEED = "peers_seed.json"
 OUT = "peers.json"
+DEBUG = []
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
@@ -240,6 +241,11 @@ def main():
             return out
         mt = extract_metrics(rows)
         out.update({"year": year, "fs": fs})
+        if mt["da"] is None and len(DEBUG) < 4:
+            DEBUG.append({"name": name, "sj": sorted({r.get("sj_div") for r in rows}),
+                          "cf": [(r.get("account_id"), r.get("account_nm")) for r in rows if r.get("sj_div") == "CF"][:30],
+                          "dep_like": [(r.get("sj_div"), r.get("account_id"), r.get("account_nm")) for r in rows
+                                       if any(k in ((r.get("account_nm") or "") + (r.get("account_id") or "")) for k in ("상각", "Depreciation", "Amortisation"))][:15]})
         mcap, src = fetch_mcap(code)
         time.sleep(0.2)
         if not mcap:
@@ -299,7 +305,7 @@ def main():
 
     out = {"updated": now.strftime("%Y%m%d"),
            "note": "최근 사업연도 재무제표(DART)와 현재 시가총액(네이버 증권)으로 계산한 참고용 배수입니다. 25%/중앙값/75% 분위수를 보수/기본/낙관에 대응시킵니다.",
-           "sectors": sectors_out}
+           "sectors": sectors_out, "debug": DEBUG}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print("peers.json 저장 완료")
