@@ -277,7 +277,7 @@ main { flex:1; min-width:0; max-width:780px; }
 }
 
 /* 인기뉴스 패널: 5개 + 더보기, 오른쪽 끝 정렬 */
-.news-panel { margin-left:auto; }
+
 .np-all { margin-left:auto; font-size:12px; font-weight:700; color:var(--accent); text-decoration:none; }
 .news-card.extra { display:none; }
 .news-card-list.expanded .news-card.extra { display:flex; }
@@ -297,3 +297,7 @@ main { flex:1; min-width:0; max-width:780px; }
 .sell-card-price b { color:var(--text); }
 .sell-card.is-soon { cursor:default; opacity:.8; }
 .sell-card.is-soon:hover { box-shadow:none; transform:none; border-color:var(--line); }
+
+/* 본문은 왼쪽 끝이 아니라 인기뉴스 패널을 뺀 영역의 가운데에 둔다 */
+.layout > main { margin-left:auto; margin-right:auto; width:100%; }
+@media (max-width:1000px) { .layout > main { margin:0; } }
