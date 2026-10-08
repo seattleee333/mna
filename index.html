@@ -45,14 +45,14 @@
   <div class="hgrid">
     <section class="hcard">
       <h2>금융권 채용</h2>
-      <p class="sub">금융협회 채용공고</p>
-      <div class="soon"><span class="pill">준비 중</span>곧 금융권 채용 공고를 모아 보여드릴게요</div>
+      <p class="sub">금융투자협회 채용안내 · 최근 30일 · <a class="more" target="_blank" rel="noopener" href="https://www.kofia.or.kr/brd/m_96/list.do">전체보기</a></p>
+      <ul class="hlist scroll" id="jobs"><li class="empty-s">불러오는 중...</li></ul>
     </section>
 
     <section class="hcard">
       <h2>더벨 M&amp;A 뉴스</h2>
-      <p class="sub">제목을 누르면 더벨 원문으로 이동해요</p>
-      <ul class="hlist" id="bell"><li class="empty-s">불러오는 중...</li></ul>
+      <p class="sub">이번 달 기사 · 제목을 누르면 더벨 원문으로 이동해요</p>
+      <ul class="hlist scroll" id="bell"><li class="empty-s">불러오는 중...</li></ul>
     </section>
 
     <section class="hcard cta">
@@ -138,10 +138,18 @@ get("deals.json").then(list => {
     '<span class="hmeta">' + d.date.slice(4, 6) + "." + d.date.slice(6, 8) + '</span></a></li>').join("");
 });
 
+get("jobs.json").then(list => {
+  const el = document.getElementById("jobs");
+  if (!list.length) { el.innerHTML = '<li class="empty-s">채용공고를 불러오는 중이에요. 매일 아침 갱신돼요.</li>'; return; }
+  el.innerHTML = list.map(n =>
+    '<li class="job"><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="ht"><b>' + esc(n.company) + '</b> ' +
+    esc(n.title.replace(/^\[[^\]]*\]\s*/, "")) + '</span><span class="hmeta">' + n.date.slice(5).replace("-", ".") + '</span></a></li>').join("");
+});
+
 get("thebell.json").then(list => {
   const el = document.getElementById("bell");
   if (!list.length) { el.innerHTML = '<li class="empty-s">더벨 기사를 불러오는 중이에요. 매일 아침 갱신돼요.</li>'; return; }
-  el.innerHTML = list.slice(0, 6).map(n =>
+  el.innerHTML = list.map(n =>
     '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="ht">' + esc(n.title) +
     '</span><span class="hmeta">' + rel(n.pubDate) + '</span></a></li>').join("");
 });

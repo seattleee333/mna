@@ -9,12 +9,13 @@ from urllib.parse import quote
 import requests
 
 OUT = "thebell.json"
-QUERIES = ["site:thebell.co.kr M&A", "site:thebell.co.kr 인수", "site:thebell.co.kr 매각"]
+QUERIES = ["site:thebell.co.kr M&A", "site:thebell.co.kr 인수", "site:thebell.co.kr 매각", "site:thebell.co.kr 경영권", "site:thebell.co.kr 지분 매각", "site:thebell.co.kr 사모펀드 인수"]
 KEYS = ("M&A", "인수", "매각", "합병", "지분", "경영권", "엠앤에이", "매물", "PEF", "사모펀드", "인수합병")
 
 
 def fetch(q):
-    url = f"https://news.google.com/rss/search?q={quote(q)}+when:14d&hl=ko&gl=KR&ceid=KR:ko"
+    month_start = (dt.datetime.utcnow() + dt.timedelta(hours=9)).strftime("%Y-%m-01")
+    url = f"https://news.google.com/rss/search?q={quote(q)}+after:{month_start}&hl=ko&gl=KR&ceid=KR:ko"
     r = requests.get(url, timeout=20)
     r.raise_for_status()
     out = []
@@ -41,7 +42,7 @@ def main():
                     items.setdefault(x["title"], x)
         except Exception as e:
             print("더벨 조회 실패:", q, e)
-    rows = sorted(items.values(), key=lambda x: x["pubDate"], reverse=True)[:30]
+    rows = sorted(items.values(), key=lambda x: x["pubDate"], reverse=True)[:40]
     if rows:   # 실패 시 기존 파일 유지
         with open(OUT, "w", encoding="utf-8") as f:
             json.dump(rows, f, ensure_ascii=False, indent=1)

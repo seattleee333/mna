@@ -25,6 +25,7 @@ jobs:
       - run: pip install requests beautifulsoup4
 
       - name: DART 공시 수집
+        continue-on-error: true
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           DAYS: ${{ github.event.inputs.days || '7' }}
@@ -36,6 +37,10 @@ jobs:
       - name: 더벨 M&A 기사 수집
         continue-on-error: true
         run: python fetch_thebell.py
+
+      - name: 금융투자협회 채용공고 수집
+        continue-on-error: true
+        run: python fetch_jobs.py
 
       - name: 매물·인수희망 리스트 수집
         run: python fetch_listings.py
@@ -51,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deals.json news.json listings.json peers.json thebell.json
+          git add deals.json news.json listings.json peers.json thebell.json jobs.json
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else
