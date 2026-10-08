@@ -59,7 +59,7 @@ function renderNewsPanel() {
 // 상단 오른쪽 로그인/로그아웃 표시
 function renderAuthBox(navEl) {
   const A = window.MNA_AUTH;
-  if (!A || !A.enabled()) return;
+  if (!A) return;
   let box = document.getElementById("authBox");
   if (!box) {
     box = document.createElement("div");
@@ -74,7 +74,7 @@ function renderAuthBox(navEl) {
     document.getElementById("logoutBtn").onclick = () => { A.logout(); location.reload(); };
   } else {
     const next = location.pathname.split("/").pop() + location.search;
-    box.innerHTML = '<a class="auth-btn primary" href="login.html?next=' + encodeURIComponent(next) + '">로그인 / 회원가입</a>';
+    box.innerHTML = '<a class="auth-btn primary" href="login.html?next=' + encodeURIComponent(next) + '">로그인<span class="auth-sub"> / 회원가입</span></a>';
   }
 }
 

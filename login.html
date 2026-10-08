@@ -40,6 +40,7 @@
     <button class="sbtn kakao" id="kakaoBtn" type="button">카카오로 계속하기</button>
     <button class="sbtn naver" id="naverBtn" type="button">네이버로 계속하기</button>
     <div class="lg-msg" id="msg"></div>
+    <div class="lg-note" id="adminNote"></div>
     <div class="lg-note">회사 재무정보 등 설문 입력값은 서버로 전송되지 않고 내 브라우저에서만 계산돼요. 로그인 정보(이름·이메일)만 회원 관리를 위해 저장됩니다.</div>
   </div>
 </main>
@@ -73,8 +74,9 @@ async function finish(payload) {
 }
 
 if (!A.enabled()) {
-  say("로그인 기능이 아직 설정되지 않았어요. (관리자: docs/로그인-설정.md 참고)", true);
+  say("회원가입·로그인은 곧 오픈돼요. 오픈 전에는 로그인 없이 모든 기능을 이용할 수 있어요.", false);
   document.querySelectorAll(".sbtn").forEach(b => b.disabled = true);
+  document.getElementById("adminNote").textContent = "관리자: 구글·카카오·네이버 키를 config.js에 넣으면 활성화됩니다 (docs/로그인-설정.md).";
 } else {
   const pv = A.providers();
   if (q.get("next")) sessionStorage.setItem("mnaNext", safeNext(q.get("next")));

@@ -326,3 +326,6 @@ main { flex:1; min-width:0; max-width:780px; }
 .avatar-mono { display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:15px; }
 .avatar.sm { width:30px; height:30px; } .avatar.sm .avatar-mono { font-size:13px; }
 .deal .top .name { display:flex; align-items:center; gap:10px; }
+.auth-btn { white-space:nowrap; }
+@media (max-width:680px) { .auth-sub { display:none; } .auth-box { gap:6px; } }
+@media (max-width:680px) { .top-nav { flex:1; min-width:0; overflow-x:auto; scrollbar-width:none; } .top-nav::-webkit-scrollbar { display:none; } .top-nav a { white-space:nowrap; padding:8px 10px; } .brand { font-size:15px; } }
