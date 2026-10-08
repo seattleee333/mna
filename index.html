@@ -82,15 +82,15 @@ function fmtWon(n) {
   if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
   return Math.round(n / 1e4).toLocaleString() + "만원";
 }
-// 10개씩 보여주고 "더보기"로 10개씩 추가
+// 5개씩 보여주고 "더보기"로 5개씩 추가
 function pager(el, btnId, list, fmt) {
   const btn = document.getElementById(btnId);
-  let shown = 10;
+  let shown = 5;
   const draw = () => {
     el.innerHTML = list.slice(0, shown).map(fmt).join("");
     btn.hidden = shown >= list.length;
   };
-  btn.onclick = () => { shown += 10; draw(); };
+  btn.onclick = () => { shown += 5; draw(); };
   draw();
 }
 function josa(w, a, b) {
