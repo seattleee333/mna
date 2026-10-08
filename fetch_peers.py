@@ -185,39 +185,46 @@ def da_from_xbrl(corp_code, year, fs_div):
         root = ET.fromstring(zf.read(names[0]))
     except Exception:
         return None, "XBRL 파싱 실패"
-    # 컨텍스트: 차원(세그먼트) 없는 당기 연간 기간
-    ctx = {}
+    # 컨텍스트: 추가 차원 없이 연결/별도 구분만 있는 당기 연간 기간
+    want = "Consolidated" if fs_div == "CFS" else "Separate"
+    ctx = {}   # id -> (start, end, kind)  kind: 'C' 연결, 'S' 별도, '' 차원없음
     for c in root.iter():
         if c.tag.endswith("}context"):
-            seg = any(x.tag.endswith(("}segment", "}scenario")) for x in c.iter())
+            dims = [(x.get("dimension") or "", (x.text or "").strip()) for x in c.iter() if x.tag.endswith("}explicitMember")]
+            kind = None
+            if not dims:
+                kind = ""
+            elif len(dims) == 1 and "ConsolidatedAndSeparateFinancialStatementsAxis" in dims[0][0]:
+                kind = "C" if dims[0][1].endswith("ConsolidatedMember") else ("S" if dims[0][1].endswith("SeparateMember") else None)
+            if kind is None:
+                continue
             st = en = None
             for x in c.iter():
                 if x.tag.endswith("}startDate"): st = (x.text or "").strip()
                 elif x.tag.endswith("}endDate"): en = (x.text or "").strip()
-            if st and en and not seg:
-                ctx[c.get("id")] = (st, en)
+            if st and en:
+                ctx[c.get("id")] = (st, en, kind)
     if not ctx:
         return None, "XBRL 컨텍스트 없음"
-    last_end = max(e for _, e in ctx.values())
-    cur = {k for k, (a, e) in ctx.items() if e == last_end and 300 <= (dt.date.fromisoformat(e) - dt.date.fromisoformat(a)).days <= 380}
-    found = {}
-    for el in root.iter():
-        if el.get("contextRef") in cur and el.text:
-            local = el.tag.split("}")[-1]
-            if ("Depreciation" in local or "Amortisation" in local or "Amortization" in local) and "Impairment" not in local \
-               and "Accumulated" not in local and "Reversal" not in local:
-                v = parse_amt(el.text)
-                if v is not None:
-                    found.setdefault(local, v)
-    if not found:
-        if len(DEBUG) < 3:
-            anyd = []
-            for el in root.iter():
+    last_end = max(e for _, e, _ in ctx.values())
+    cur = {k: kd for k, (a, e, kd) in ctx.items()
+           if e == last_end and 300 <= (dt.date.fromisoformat(e) - dt.date.fromisoformat(a)).days <= 380}
+
+    def collect(kinds):
+        found = {}
+        for el in root.iter():
+            ref = el.get("contextRef")
+            if ref in cur and cur[ref] in kinds and el.text:
                 local = el.tag.split("}")[-1]
-                if ("Depreciation" in local or "Amortisation" in local) and len(anyd) < 12:
-                    anyd.append([local, el.get("contextRef"), (el.text or "")[:20]])
-            DEBUG.append({"files": zf.namelist()[:10], "chosen": names[0], "n_ctx": len(ctx), "n_cur": len(cur),
-                          "last_end": last_end, "any_dep_tags": anyd, "root": root.tag[:80]})
+                if ("Depreciation" in local or "Amortisation" in local or "Amortization" in local) and "Impairment" not in local \
+                   and "Accumulated" not in local and "Reversal" not in local:
+                    v = parse_amt(el.text)
+                    if v is not None:
+                        found.setdefault(local, v)
+        return found
+
+    found = collect(("C", "") if want == "Consolidated" else ("S", "")) or collect(("C", "S", ""))
+    if not found:
         return None, "XBRL에 상각비 태그 없음"
     combo = [v for k, v in found.items() if "DepreciationAndAmortisation" in k and k.startswith("AdjustmentsFor")]
     if combo:
@@ -225,11 +232,11 @@ def da_from_xbrl(corp_code, year, fs_div):
     adj = {k: v for k, v in found.items() if k.startswith("AdjustmentsFor")}
     if adj:
         return abs(sum(adj.values())), None
-    # 현금흐름 조정 항목이 없으면 비용 항목(주석)에서 큰 순으로 감가+무형만 합산
-    dep = [v for k, v in found.items() if k in ("DepreciationExpense", "DepreciationPropertyPlantAndEquipment", "DepreciationOfPropertyPlantAndEquipment")]
-    amo = [v for k, v in found.items() if k in ("AmortisationExpense", "AmortisationIntangibleAssetsOtherThanGoodwill")]
+    dep = found.get("DepreciationPropertyPlantAndEquipment", 0) + found.get("DepreciationRightofuseAssets", 0) \
+        + found.get("DepreciationInvestmentProperty", 0)
+    amo = found.get("AmortisationIntangibleAssetsOtherThanGoodwill", 0)
     if dep or amo:
-        return abs(max(dep, default=0)) + abs(max(amo, default=0)), None
+        return abs(dep) + abs(amo), None
     return None, "XBRL 상각비 태그 분류 실패"
 
 
