@@ -61,6 +61,7 @@
         '<div class="ico">💰</div>' +
         '<h1>기업마다 매도가격이 달라요</h1>' +
         '<p>기업가치 간이평가를 하려면 설문조사를 완성해주셔야해요.</p>' +
+        '<div class="notice-strong">⚠️ <b>간이평가</b>입니다. 입력하신 정보만을 바탕으로 한 단순 추정치이므로 <b>실제 매각가격과 차이가 있을 수 있어요.</b></div>' +
         '<button class="btn primary big" id="goStart">설문조사하고 기업가치 평가해보기</button>' +
         (resume ? '<div class="sub-actions">작성하던 내용이 있어요 · <button id="goResume">이어서 하기</button> · <button id="goReset">처음부터</button></div>' : '') +
       '</div>' +
@@ -90,6 +91,7 @@
         '<ul class="doc-list">' + DOCS.map(function (d) {
           return '<li><span>' + (d[0] === "필수" ? '<span class="req">필수</span>' : '') + esc(d[1]) + '</span></li>';
         }).join("") + '</ul>' +
+        '<div class="notice-strong">⚠️ 간이평가이며, 입력하신 내용만으로 계산하기 때문에 <b>실제와 차이가 있을 수 있어요.</b> 실사·거래구조·협상에 따라 크게 달라질 수 있습니다.</div>' +
         '<div class="privacy">🔒 입력하신 내용은 이 브라우저 안에서만 계산돼요. 서버로 전송되지 않고, 탭을 닫으면 사라져요.</div>' +
         '<div class="btns"><button class="btn ghost" id="mClose">나중에 할게요</button><button class="btn primary" id="mStart">시작하기</button></div>' +
       '</div>';
@@ -297,7 +299,8 @@
 
     var html =
       '<div class="res-head"><h1>' + esc(title) + '</h1><p>기준일 ' + esc(A.baseDate) + ' · 지분 100% 기준 · 단위 억원 · 참고용 간이평가</p></div>' +
-      '<div class="res-hero"><div class="k">예상 매도가격 (기본 시나리오)</div>' +
+      '<div class="notice-strong top">⚠️ <b>간이평가 결과</b>입니다. 단순 입력 사항을 기반으로 한 추정치이며, <b>실제 매각가격과 차이가 있을 수 있습니다.</b></div>' +
+      '<div class="res-hero"><div class="k">예상 매도가격 (기본 시나리오) · 간이평가</div>' +
         '<div class="big">' + eok(eqB, 0).replace(/억$/, '<small>억원</small>').replace(/조$/, '<small>조원</small>') + '</div>' +
         '<div class="rng">보수 ' + eok(eqD, 0) + ' ~ 낙관 ' + eok(eqU, 0) + '</div><div class="chips">' + chips + '</div></div>';
 
@@ -314,7 +317,7 @@
     if (R.base.tvShare > 0.75) warns.push("기본 시나리오 가치의 " + Math.round(R.base.tvShare * 100) + "%가 5년 이후(터미널) 가치예요. 장기 가정에 민감하니 민감도 표를 함께 보세요.");
     if (warns.length) html += '<div class="warn"><b>확인이 필요한 점</b><br>' + warns.map(function (w) { return "· " + esc(w); }).join("<br>") + '</div>';
 
-    html += '<div class="disclaimer">본 결과는 입력하신 값과 일반적인 평가 가정으로 계산한 <b>참고용 간이평가</b>이며 가치평가 보고서·투자 자문이 아닙니다. 실제 거래가격은 실사, 거래구조(지분율·어닝아웃 등), 세금, 협상에 따라 크게 달라질 수 있어요. 할인율 요소와 세율, 배수는 판단값이므로 전문가와 검증하세요.</div>';
+    html += '<div class="disclaimer strong"><b>※ 간이평가 안내:</b> 본 결과는 입력하신 값과 일반적인 평가 가정으로 계산한 <b>참고용 간이평가</b>이며 가치평가 보고서·투자 자문이 아닙니다. 실제 거래가격은 실사, 거래구조(지분율·어닝아웃 등), 세금, 협상에 따라 크게 달라질 수 있어요. 할인율 요소와 세율, 배수는 판단값이므로 전문가와 검증하세요.</div>';
     html += '<div class="res-actions"><button class="btn" id="aEdit">입력값 수정하기</button><button class="btn" id="aJson">입력값 내려받기</button><button class="btn" id="aPrint">인쇄 / PDF 저장</button><button class="btn ghost" id="aReset">처음부터 다시</button></div>';
 
     var wasOpen = document.getElementById("advBox") && document.getElementById("advBox").open;

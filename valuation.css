@@ -181,3 +181,10 @@ details.adv .body { padding:0 24px 22px; }
   body { background:#fff; }
   .section, .res-hero { box-shadow:none; break-inside:avoid; }
 }
+
+.notice-strong { background:#fff6e5; border:1px solid #ffd99a; color:#7a4b00; border-radius:12px; padding:11px 14px; font-size:13px; line-height:1.55; text-align:left; margin:14px auto 0; max-width:560px; }
+.notice-strong b { color:#5a3500; }
+.notice-strong.top { max-width:none; margin:0 0 14px; }
+.modal .notice-strong { margin:0 0 12px; max-width:none; }
+.disclaimer.strong { color:var(--sub); background:#fff6e5; border-radius:12px; padding:12px 14px; }
+.val-hero .notice-strong { margin:16px auto 20px; }
