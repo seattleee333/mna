@@ -119,7 +119,7 @@ function cardsHtml(rows) {
       lastDate = d.date;
     }
     html += '<div class="deal"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no)
-      + '"><div class="top"><span class="name">' + esc(d.corp_name)
+      + '"><div class="top"><span class="name">' + corpAvatar(d.stock_code, d.corp_name) + '<span>' + esc(d.corp_name) + '</span>'
       + '</span><span class="tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</span></div>' + detailHtml(d) + '<div class="title">'
       + esc(d.report_nm) + "</div></a></div>";
   }

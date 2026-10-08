@@ -120,7 +120,7 @@ get("deals.json").then(list => {
     .sort((a, b) => b.date.localeCompare(a.date) || b.amount - a.amount).slice(0, 5);
   if (!rows.length) { el.innerHTML = '<li class="empty-s">표시할 인수 소식이 없어요.</li>'; return; }
   el.innerHTML = rows.map((d, i) =>
-    '<li class="deal-line"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no) + '"><span class="hrank">' + (i + 1) + '</span><span class="ht"><b>' + esc(d.corp_name) +
+    '<li class="deal-line"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no) + '"><span class="hrank">' + (i + 1) + '</span>' + corpAvatar(d.stock_code, d.corp_name, "sm") + '<span class="ht"><b>' + esc(d.corp_name) +
     '</b>' + josa(d.corp_name, "이", "가") + ' <b>' + esc(d.target) + '</b>' + josa(d.target, "을", "를") + ' <span class="amt">' + fmtWon(d.amount) + '</span>에 인수</span>' +
     '<span class="hmeta">' + d.date.slice(4, 6) + "." + d.date.slice(6, 8) + '</span></a></li>').join("");
 });

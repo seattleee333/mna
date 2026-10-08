@@ -136,3 +136,17 @@ function renderFooter() {
   </div>`;
   document.body.appendChild(f);
 }
+
+// 기업 로고(동그라미). 로고가 없거나 불러오지 못하면 회사명 첫 글자 아바타로 대체한다.
+const AVATAR_COLORS = ["#3457e0","#0f9d58","#e0733d","#8e44ad","#16a2b8","#d6336c","#5c7cfa","#2f9e44"];
+function corpAvatar(code, name, cls) {
+  const nm = String(name || "?").replace(/^\(주\)|^주식회사\s*/, "").trim();
+  const ch = escHtml(nm.charAt(0) || "?");
+  let h = 0; for (const c of nm) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  const color = AVATAR_COLORS[h % AVATAR_COLORS.length];
+  const mono = '<span class="avatar-mono" style="background:' + color + '">' + ch + '</span>';
+  const ok = code && /^[0-9A-Za-z]{6}$/.test(code);
+  const img = ok ? '<img src="https://ssl.pstatic.net/imgstock/fn/real/logo/stock/Stock' + code + '.svg" alt="" loading="lazy" referrerpolicy="no-referrer" ' +
+    'onerror="this.remove()" onload="if(this.naturalWidth<2)this.remove()">' : "";
+  return '<span class="avatar ' + (cls || "") + '">' + mono + img + '</span>';
+}
