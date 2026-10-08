@@ -51,6 +51,10 @@ def main():
             print("채용안내 조회 실패:", page, e)
             break
         rows = parse(r.text)
+        if page == 1:
+            i = r.text.find("<tbody")
+            with open("jobs_debug.txt", "w", encoding="utf-8") as f:
+                f.write(f"status={r.status_code} len={len(r.text)} rows={len(rows)}\n{r.text[i:i + 1500] if i >= 0 else r.text[:1500]}")
         if not rows:
             break
         for x in rows:

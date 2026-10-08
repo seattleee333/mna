@@ -24,7 +24,7 @@ def fetch(q):
         src = it.find("source")
         if src is None or not ("thebell" in (src.get("url") or "").lower() or "더벨" in (src.text or "")):
             continue
-        title = re.sub(r"\s*-\s*(더벨|thebell)\s*$", "", title, flags=re.I)
+        title = re.sub(r"\s*-\s*(더벨|thebell)(\s*free)?\s*$", "", title, flags=re.I)
         try:
             pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(dt.timezone(dt.timedelta(hours=9)))
         except Exception:
