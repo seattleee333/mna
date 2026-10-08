@@ -8,8 +8,10 @@
   "market": "K",
   "report_nm": "최대주주변경",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "비케이홀딩스의 최대주주가 변경됐습니다.",
   "summary_src": "title"
  },
@@ -22,8 +24,10 @@
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "블루엠텍이 최대주주 변경을 수반하는 주식양수도 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -150,7 +154,11 @@
   "raw_probe": {
    "fetch_failed": "notzip:<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>"
   },
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "대림통상이 타법인 주식 처분을 결정했습니다.",
+  "summary_src": "title"
  },
  {
   "rcept_no": "20261008800626",
@@ -221,7 +229,7 @@
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
   "category": "합병",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261008000618",
@@ -844,11 +852,9 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 5,
-  "no_detail_api": true,
+  "detail_attempts": 1,
   "detail_done": true,
-  "summary": "삼환기업이 유상증자를 결정했습니다.",
-  "summary_src": "title"
+  "fix_v": 6
  },
  {
   "rcept_no": "20261007000004",

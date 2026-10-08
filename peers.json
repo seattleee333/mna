@@ -41,7 +41,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 78205,
+     "mcap_eok": 78146,
      "mcap_src": "naver_mobile",
      "per": 30.4,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -82,7 +82,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 32363,
+     "mcap_eok": 32339,
      "mcap_src": "naver_mobile",
      "per": 25.9,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -109,9 +109,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 2196,
+     "mcap_eok": 2185,
      "mcap_src": "naver_mobile",
-     "per": 16.2,
+     "per": 16.1,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -135,7 +135,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 1341,
+     "mcap_eok": 1340,
      "mcap_src": "naver_mobile",
      "per": 6.1,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -174,7 +174,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 8196,
+     "mcap_eok": 8209,
      "mcap_src": "naver_mobile",
      "per": 23.7,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -322,7 +322,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 24057,
+     "mcap_eok": 24026,
      "mcap_src": "naver_mobile",
      "per": 14.1,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -349,7 +349,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 27564,
+     "mcap_eok": 27489,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); 지배주주순이익 없음/적자"
     },
@@ -361,7 +361,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 87684,
+     "mcap_eok": 87760,
      "mcap_src": "naver_mobile",
      "per": 22.5,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -374,9 +374,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 3324,
+     "mcap_eok": 3316,
      "mcap_src": "naver_mobile",
-     "per": 18.4,
+     "per": 18.3,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -428,7 +428,7 @@
     "evEbitda": null,
     "per": {
      "down": 37.5,
-     "base": 51.5,
+     "base": 51.6,
      "up": 54.4,
      "n": 3
     }
@@ -454,9 +454,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 91982,
+     "mcap_eok": 91688,
      "mcap_src": "naver_mobile",
-     "per": 57.3,
+     "per": 57.1,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -467,9 +467,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 11169,
+     "mcap_eok": 11186,
      "mcap_src": "naver_mobile",
-     "per": 51.5,
+     "per": 51.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -480,9 +480,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 78029,
+     "mcap_eok": 77930,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(163.9)"
+     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(163.7)"
     },
     {
      "name": "비에이치",
@@ -540,9 +540,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 490670,
+     "mcap_eok": 489389,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(578.9)"
+     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(577.4)"
     },
     {
      "name": "한화에어로스페이스",
@@ -565,7 +565,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 44855,
+     "mcap_eok": 45050,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); 지배주주순이익 없음/적자"
     },
@@ -577,7 +577,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 13815,
+     "mcap_eok": 13842,
      "mcap_src": "naver_mobile",
      "per": 34.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -616,7 +616,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 323354,
+     "mcap_eok": 322905,
      "mcap_src": "naver_mobile",
      "per": 8.8,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -629,7 +629,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 20849,
+     "mcap_eok": 20802,
      "mcap_src": "naver_mobile",
      "per": 20.8,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -641,10 +641,10 @@
      "dart_name": "에스엘",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 23201,
+     "mcap_eok": 23178,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 5700.1,
-     "ev_eok": 19496,
+     "ev_eok": 19473,
      "evEbitda": 3.4,
      "per": 7.5
     },
@@ -656,7 +656,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 2588,
+     "mcap_eok": 2591,
      "mcap_src": "naver_mobile",
      "per": 3.9,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -669,7 +669,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 13815,
+     "mcap_eok": 13842,
      "mcap_src": "naver_mobile",
      "per": 34.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -709,7 +709,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 197659,
+     "mcap_eok": 198364,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); 지배주주순이익 없음/적자"
     },
@@ -745,11 +745,11 @@
      "dart_name": "한솔케미칼",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 28712,
+     "mcap_eok": 28766,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2102.7,
-     "ev_eok": 30976,
-     "evEbitda": 14.7,
+     "ev_eok": 31030,
+     "evEbitda": 14.8,
      "per": 19.5
     },
     {
@@ -786,9 +786,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 9.8,
-     "base": 19.3,
-     "up": 30.1,
+     "down": 9.7,
+     "base": 19.2,
+     "up": 30.0,
      "n": 4
     }
    },
@@ -800,12 +800,12 @@
      "dart_name": "POSCO홀딩스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 243668,
+     "mcap_eok": 242875,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 59862.9,
-     "ev_eok": 524565,
-     "evEbitda": 8.8,
-     "per": 37.1
+     "ev_eok": 523772,
+     "evEbitda": 8.7,
+     "per": 36.9
     },
     {
      "name": "현대제철",
@@ -815,7 +815,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 실패(BadZipFile)",
-     "mcap_eok": 37432,
+     "mcap_eok": 37498,
      "mcap_src": "naver_mobile",
      "per": 6.4,
      "reason": "감가상각비 미식별(XBRL 다운로드 실패(BadZipFile))"
@@ -828,7 +828,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 214992,
+     "mcap_eok": 214574,
      "mcap_src": "naver_mobile",
      "per": 27.7,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -840,12 +840,12 @@
      "dart_name": "풍산",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 18440,
+     "mcap_eok": 18384,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3877.4,
-     "ev_eok": 26711,
+     "ev_eok": 26655,
      "evEbitda": 6.9,
-     "per": 10.9
+     "per": 10.8
     }
    ]
   },
@@ -866,7 +866,7 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 10.3,
+     "down": 10.2,
      "base": 16.9,
      "up": 25.8,
      "n": 4
@@ -880,10 +880,10 @@
      "dart_name": "유한양행",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 53740,
+     "mcap_eok": 53813,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1735.3,
-     "ev_eok": 53887,
+     "ev_eok": 53960,
      "evEbitda": 31.1,
      "per": 22.2
     },
@@ -894,10 +894,10 @@
      "dart_name": "한미약품",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 61877,
+     "mcap_eok": 61813,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3566.1,
-     "ev_eok": 66774,
+     "ev_eok": 66710,
      "evEbitda": 18.7,
      "per": 36.5
     },
@@ -909,9 +909,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 9055,
+     "mcap_eok": 9013,
      "mcap_src": "naver_mobile",
-     "per": 11.7,
+     "per": 11.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -922,7 +922,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 12514,
+     "mcap_eok": 12525,
      "mcap_src": "naver_mobile",
      "per": 6.0,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -935,7 +935,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 14994,
+     "mcap_eok": 14982,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); 지배주주순이익 없음/적자"
     }
@@ -957,7 +957,7 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 18.8,
+     "down": 18.7,
      "base": 22.6,
      "up": 25.2,
      "n": 3
@@ -982,7 +982,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 3467,
+     "mcap_eok": 3462,
      "mcap_src": "naver_mobile",
      "per": 27.9,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -995,7 +995,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 6929,
+     "mcap_eok": 6916,
      "mcap_src": "naver_mobile",
      "per": 22.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1007,12 +1007,12 @@
      "dart_name": "클래시스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 19636,
+     "mcap_eok": 19571,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1852.4,
-     "ev_eok": 18420,
+     "ev_eok": 18355,
      "evEbitda": 9.9,
-     "per": 14.9
+     "per": 14.8
     }
    ]
   },
@@ -1036,7 +1036,7 @@
     "per": {
      "down": 23.4,
      "base": 26.7,
-     "up": 39.5,
+     "up": 39.4,
      "n": 3
     }
    },
@@ -1049,7 +1049,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 151738,
+     "mcap_eok": 151583,
      "mcap_src": "naver_mobile",
      "per": 20.0,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1084,9 +1084,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 99549,
+     "mcap_eok": 99275,
      "mcap_src": "naver_mobile",
-     "per": 52.2,
+     "per": 52.1,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     }
    ]
@@ -1108,8 +1108,8 @@
     "evEbitda": null,
     "per": {
      "down": 12.4,
-     "base": 12.4,
-     "up": 13.1,
+     "base": 12.5,
+     "up": 13.2,
      "n": 3
     }
    },
@@ -1122,7 +1122,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 85496,
+     "mcap_eok": 85680,
      "mcap_src": "naver_mobile",
      "per": 12.4,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1134,12 +1134,12 @@
      "dart_name": "NC",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 47612,
+     "mcap_eok": 47828,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1116.7,
-     "ev_eok": 29904,
-     "evEbitda": 26.8,
-     "per": 13.7
+     "ev_eok": 30120,
+     "evEbitda": 27.0,
+     "per": 13.8
     },
     {
      "name": "넷마블",
@@ -1149,9 +1149,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 27983,
+     "mcap_eok": 28024,
      "mcap_src": "naver_mobile",
-     "per": 12.4,
+     "per": 12.5,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     }
    ]
@@ -1173,7 +1173,7 @@
     "per": {
      "down": 8.4,
      "base": 10.4,
-     "up": 15.8,
+     "up": 15.7,
      "n": 3
     }
    },
@@ -1199,7 +1199,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 7148,
+     "mcap_eok": 7140,
      "mcap_src": "naver_mobile",
      "per": 6.5,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1212,9 +1212,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 1424,
+     "mcap_eok": 1418,
      "mcap_src": "naver_mobile",
-     "per": 21.1,
+     "per": 21.0,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -1259,7 +1259,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 19400,
+     "mcap_eok": 19372,
      "mcap_src": "naver_mobile",
      "per": 14.2,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1318,7 +1318,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 137400,
+     "mcap_eok": 137325,
      "mcap_src": "naver_mobile",
      "per": 7.9,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1331,7 +1331,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 2660,
+     "mcap_eok": 2661,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); 지배주주순이익 없음/적자"
     },
@@ -1382,9 +1382,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 118260,
+     "mcap_eok": 118037,
      "mcap_src": "naver_mobile",
-     "per": 31.7,
+     "per": 31.6,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -1447,7 +1447,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 31284,
+     "mcap_eok": 31328,
      "mcap_src": "naver_mobile",
      "per": 6.4,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1460,7 +1460,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 3532,
+     "mcap_eok": 3528,
      "mcap_src": "naver_mobile",
      "per": 6.2,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1473,7 +1473,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 20281,
+     "mcap_eok": 20308,
      "mcap_src": "naver_mobile",
      "per": 9.8,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
@@ -1504,9 +1504,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 9543,
+     "mcap_eok": 9567,
      "mcap_src": "naver_mobile",
-     "per": 20.6,
+     "per": 20.7,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -1570,11 +1570,11 @@
      "dart_name": "엘에스일렉트릭",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 295050,
+     "mcap_eok": 295200,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 5587.2,
-     "ev_eok": 302034,
-     "reason": "EV/EBITDA 범위 밖(54.1); PER 범위 밖(102.9)"
+     "ev_eok": 302184,
+     "reason": "EV/EBITDA 범위 밖(54.1); PER 범위 밖(103.0)"
     },
     {
      "name": "효성중공업",
@@ -1614,10 +1614,10 @@
      "dart_name": "엘앤에프",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 47074,
+     "mcap_eok": 47033,
      "mcap_src": "naver_mobile",
      "ebitda_eok": -715.5,
-     "ev_eok": 56628,
+     "ev_eok": 56587,
      "reason": "EBITDA 또는 EV가 0 이하; 지배주주순이익 없음/적자"
     },
     {
@@ -1628,9 +1628,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 123266,
+     "mcap_eok": 123951,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(355.9)"
+     "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음); PER 범위 밖(357.9)"
     }
    ]
   },
@@ -1680,5 +1680,240 @@
    ]
   }
  ],
- "debug": []
+ "debug": [
+  {
+   "files": [
+    "entity00583424_2025-12-31.xbrl",
+    "entity00583424_2025-12-31.xsd",
+    "entity00583424_2025-12-31_def.xml",
+    "entity00583424_2025-12-31_cal.xml",
+    "entity00583424_2025-12-31_pre.xml",
+    "entity00583424_2025-12-31_lab-ko.xml",
+    "entity00583424_2025-12-31_lab-en.xml"
+   ],
+   "chosen": "entity00583424_2025-12-31.xbrl",
+   "n_ctx": 1,
+   "n_cur": 1,
+   "last_end": "2025-12-31",
+   "any_dep_tags": [
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_AttributionOfExpensesByNatureToTheirFunctionAxis_ifrs-full_SellingGeneralAndAdministrativeExpenseMember",
+     "54062000000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_AttributionOfExpensesByNatureToTheirFunctionAxis_ifrs-full_CostOfSalesMember",
+     "41471000000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember",
+     "95533000000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_AttributionOfExpensesByNatureToTheirFunctionAxis_ifrs-full_SellingGeneralAndAdministrativeExpenseMember",
+     "53827000000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_AttributionOfExpensesByNatureToTheirFunctionAxis_ifrs-full_CostOfSalesMember",
+     "43408000000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember",
+     "97235000000"
+    ],
+    [
+     "AdjustmentsForDepreciationAndAmortisationExpense",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+     "257414000000"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_CopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRightsMember",
+     "4041000000"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_ComputerSoftwareMember",
+     "32577000000"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_OtherIntangibleAssetsMember",
+     "7000000"
+    ],
+    [
+     "DepreciationAndAmortisationExpenseSellingGeneralAdministrativeExpensesIncludingInvestmentPropertyAndRightOfUseAssetsOfSellingGeneralAndAdministrativeExpenseOfSellingGeneralAndAdministrativeExpensesTableOfItems",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+     "100053000000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_FixturesAndFittingsMember",
+     "557000000"
+    ]
+   ],
+   "root": "{http://www.xbrl.org/2003/instance}xbrl"
+  },
+  {
+   "files": [
+    "entity00939331_2025-12-31.xbrl",
+    "entity00939331_2025-12-31.xsd",
+    "entity00939331_2025-12-31_def.xml",
+    "entity00939331_2025-12-31_cal.xml",
+    "entity00939331_2025-12-31_pre.xml",
+    "entity00939331_2025-12-31_lab-ko.xml",
+    "entity00939331_2025-12-31_lab-en.xml"
+   ],
+   "chosen": "entity00939331_2025-12-31.xbrl",
+   "n_ctx": 1,
+   "n_cur": 1,
+   "last_end": "2025-12-31",
+   "any_dep_tags": [
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember",
+     "4441842000"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_IntangibleAssetsUnderDevelopmentMember",
+     "0"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_OtherIntangibleAssetsMember",
+     "4020489000"
+    ],
+    [
+     "AmortisationIntangibleAssetsOtherThanGoodwill",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfIntangibleAssetsOtherThanGoodwillAxis_ifrs-full_CopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRightsMember",
+     "421353000"
+    ],
+    [
+     "AmortisationExpense",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+     "21076242000"
+    ],
+    [
+     "AmortisationExpense",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+     "22692093000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember",
+     "7704942000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_VehiclesMember",
+     "190509000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_MachineryMember",
+     "97777000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_BuildingsMember",
+     "7416656000"
+    ],
+    [
+     "DepreciationInvestmentProperty",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember",
+     "137349000"
+    ],
+    [
+     "DepreciationInvestmentProperty",
+     "PFY2024dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_ClassesOfAssetsAxis_dart_StructureMember",
+     "244000"
+    ]
+   ],
+   "root": "{http://www.xbrl.org/2003/instance}xbrl"
+  },
+  {
+   "files": [
+    "entity00957735_2025-12-31.xbrl",
+    "entity00957735_2025-12-31.xsd",
+    "entity00957735_2025-12-31_def.xml",
+    "entity00957735_2025-12-31_cal.xml",
+    "entity00957735_2025-12-31_pre.xml",
+    "entity00957735_2025-12-31_lab-ko.xml",
+    "entity00957735_2025-12-31_lab-en.xml"
+   ],
+   "chosen": "entity00957735_2025-12-31.xbrl",
+   "n_ctx": 1,
+   "n_cur": 1,
+   "last_end": "2025-12-31",
+   "any_dep_tags": [
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+     "1260731000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_OfficeEquipmentMember",
+     "31392000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfAssetsAxis_ifrs-full_VehiclesMember",
+     "18296000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_ifrs-full_LandMember",
+     "0"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_ifrs-full_BuildingsMember",
+     "637577000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_entity00957735_LeasedFacilitiesMemberOfPropertyPlantAndEquipmentMemberOfDisclosureOfPropertyPlantAndEquipmentTableOfMember",
+     "31225000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_ifrs-full_OfficeEquipmentMember",
+     "155812000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_ifrs-full_OtherPropertyPlantAndEquipmentMember",
+     "284003000"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfPropertyPlantAndEquipmentAxis_ifrs-full_ConstructionInProgressMember",
+     "0"
+    ],
+    [
+     "DepreciationPropertyPlantAndEquipment",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+     "1108616000"
+    ],
+    [
+     "DepreciationAndAmortisationExpense",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_SeparateMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+     "2606143000"
+    ],
+    [
+     "DepreciationRightofuseAssets",
+     "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfAssetsAxis_entity00957735_LeasedFacilitiesMemberOfAssetsMemberOfDisclosureOfLeasesRelatedToAmountsRecognizedInTheStatementOfProfitOrLossAndOtherComprehensiveIncomeTableOfMember",
+     "1211043000"
+    ]
+   ],
+   "root": "{http://www.xbrl.org/2003/instance}xbrl"
+  }
+ ]
 }
