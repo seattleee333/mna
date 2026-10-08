@@ -1,0 +1,61 @@
+status=200 len=44710 rows=0
+<tbody>
+				
+
+				
+				<tr>
+					<td class="first num">33976</td><!-- 번호 -->
+					
+					
+					<td>토스증권</td><!-- 회원사 -->
+					
+					
+					
+					
+						<td class="left new">
+								
+									<span><a href="./view.do?seq=42603&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=">
+									</span>
+								[토스증권] Overseas Operations Specialist</a>
+								
+									<span><img src="../../images/cms/new_icon.gif" alt="new" /></span>
+								
+						</td>
+					<!-- 제목 -->
+					
+						<td>
+							
+						</td><!-- 업로드파일 -->
+					
+					
+					
+					<td class="num">2026-10-08</td><!-- 작성일 -->
+					
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="first num">33975</td><!-- 번호 -->
+					
+					
+					<td>브라이트자산운용</td><!-- 회원사 -->
+					
+					
+					
+					
+						<td class="left new">
+								
+									<span><a href="./view.do?seq=42602&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=">
+									</span>
+								[브라이트자산운용㈜] 운용지원팀 채용 공고</a>
+								
+									<span><img src="../../images/cms/new_icon.gif" alt="new" /></span>
+								
+						</td>
+					<!-- 제목 -->
+					
+						<td>
+							
+							<a href="./down.do?brd_id=www_comp_recruit&amp;seq=42602&amp;data_tp=A&amp;file_seq=1" target="_blank" title="새창열림"><img src="/images/common/ext/doc.gif" alt="[브라이트자산운용㈜] 운용지원팀 채용 공고 (브라이트자산운용) 입사지원서, 개인정보 수집 및 이용 동의서.docx 파일 다운로드"/></a>
+						
