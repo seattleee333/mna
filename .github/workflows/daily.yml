@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deals.json news.json listings.json peers.json thebell.json jobs.json
+          for f in deals.json news.json listings.json peers.json thebell.json jobs.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else
