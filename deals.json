@@ -107,7 +107,8 @@
   "amount": 29744000000,
   "direction": "양수",
   "note": null,
-  "summary_src": "original"
+  "summary_src": "original",
+  "sum_v": 3
  },
  {
   "rcept_no": "20261008800876",
@@ -121,7 +122,7 @@
   "raw_probe": {
    "fetch_failed": "notzip:<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>"
   },
-  "detail_attempts": 2
+  "detail_attempts": 3
  },
  {
   "rcept_no": "20261008800626",
@@ -192,7 +193,7 @@
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
   "category": "합병",
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20261008000618",
@@ -815,7 +816,7 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261007000004",
@@ -2365,7 +2366,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 3,
+  "detail_attempts": 4,
   "detail_done": true,
   "fix_v": 6
  },
@@ -3831,7 +3832,7 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (회사합병 결정 철회)",
   "category": "합병",
-  "detail_attempts": 3,
+  "detail_attempts": 4,
   "detail_done": true,
   "fix_v": 6
  },

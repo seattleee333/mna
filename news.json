@@ -62,9 +62,10 @@
    "오피니언뉴스",
    "이데일리",
    "자본시장뉴스",
+   "조세일보",
    "한스경제"
   ],
-  "outlet_count": 8,
+  "outlet_count": 9,
   "first_seen": "20261006",
   "last_seen": "20261008"
  },
@@ -675,6 +676,17 @@
   "sources": [
    "블로터",
    "서울경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261008",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "국내 결정사 1위 듀오, 경영권 지분 매각 추진 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13T0JmcUhHQ3lKZ2ZDTHlRbUtYM2dsY1kwa01BRkpqbUtWQ3ZqQk9fYzJDN1hnbzJ2dkc5UWtYV0hveVNtSXdnZ2steGkyQ09Ib2c?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
   ],
   "outlet_count": 2,
   "first_seen": "20261008",
@@ -2961,16 +2973,6 @@
   "last_seen": "20261008"
  },
  {
-  "title": "국내 결정사 1위 듀오, 경영권 지분 매각 추진 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13T0JmcUhHQ3lKZ2ZDTHlRbUtYM2dsY1kwa01BRkpqbUtWQ3ZqQk9fYzJDN1hnbzJ2dkc5UWtYV0hveVNtSXdnZ2steGkyQ09Ib2c?oc=5",
-  "sources": [
-   "매일경제 마켓"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261008",
-  "last_seen": "20261008"
- },
- {
   "title": "복잡한 설명에서 기준을 찾는 문문 그때는 맞고 지금은 틀리다고 가사 규칙 읽기 - Calgary Roughnecks",
   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9rNFJjSDN3aWJYRTVScWE1RGQ5M1ZkUDJEc0FlNmVHQWtmZ1R0cjNJR1BCTHZMVjFsZUNPVFBoZVFKMFZ4OGJtcVFVNjlWNkE0UUMydWZtZWNYV0RSVjFuVWxhYjhGQQ?oc=5",
   "sources": [
@@ -2993,6 +2995,56 @@
  {
   "title": "이름만 보고 오해하기 쉬운 아이돌마스터 밀리언라이브 기능 표현 - Calgary Roughnecks",
   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBIZmU2a2ZCR254ZjZyYy1JMFYxUFNOWWp3c1U4TzlCa1pTVEYwY3NBb2JrUzZsbWtmTGFmWHNzRzhFcFFtZ0dSNC00Qnl5N21yd3lUZ1R2TFY0VXRBdF9IYTJSU0NfT1dDQ1dyMld6RjVPUQ?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261008",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "마작 패보는법 프리스핀 기능 유무와 기본 설명 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQY1NMcGF4MVhYdGtsLURLZUZ1cERVM1N0VmNlZUxOUkt1Tkw2QmJyMGtlUjNBMFhxYmlJdExrMjFoeG1McWZmMUJZZ1AzbDJCbi1CeVptSHUwaWtueG5fMEhJM2dKV1Rja3hZVnAxWG9JVUpKTnl1MFVuRFJWcUNMRDEzbGxsbXFfTUJsTC1Xbi1fWmg3R1JpN3RqazBEV09hYWZ1MEYzRDJlWlQ3b0NtZC1CY21nSGdQUUxjWXJjZlIyVklDT3Z4d19oM3l1R20xTDVRT0R2QTdzS1oxWkpPTg?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261002",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "HD현대마린솔루션, 미국 선박엔진 MRO 기업 '골텐스' 3315억에 M&A - 글로벌경제신문",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA1QklubWdCUmlMeVlLdlRjME1lcENPYlNxemhWWXhyNFM0STk1M3JRRDFEaDJkSFdMcGFmcTdpMkotSDFZcU5iRnNqcGpGWkphZzhybWxSanJTbWJFdEpkUUJTRzE3U04ya3UtdWM5UC3SAXBBVV95cUxQNUJJbm1nQlJpTHlZS3ZUYzBNZXBDT2JTcXpoVll4cjRTNEk5NTNyUUQxRGgyZEhXTHBhZnE3aTJKLUgxWXFOYkZzanBqRlpKYWc4cm1sUmpyU21iRXRKZFFCU0cxN1NOMmt1LXVjOVAt?oc=5",
+  "sources": [
+   "글로벌경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261008",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "스타필드에 해리포터?…신세계, 워너브러더스 인수에 약 1조 간접투자 - 한겨레",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzNnA1Vnp5NDlCQ0tHZm0xNzNPRmVNV0NnWlJ4UkNMejZMaF9BQ3lEbmZ3ZDZ1SE84VTVJLThLaDJiRHRXd0hQNHhMVk9DbkxLd1J4Q2g2WW9ZZkZWb1cxRGVIakZnOUJqUGc?oc=5",
+  "sources": [
+   "한겨레"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261008",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "어디서부터 봐야 할지 막막할 때, 바카라 6 매 시스템 입문 순서 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XckVxT2J3NGpMSFFOZ0lkYmJySWR2TmtMdWJ4TklBRjJ3RVRJMC1JaWJkT0l6UUVuM1pGY2RIcjdNSUdjVjVjZDI5c1k4SDJtMDlrQWV0bDBtTUctUmVVbUIyMVJBdmsyR1pMTw?oc=5",
+  "sources": [
+   "Calgary Roughnecks"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261008",
+  "last_seen": "20261008"
+ },
+ {
+  "title": "힐튼 토토 주소 창업자를 위한 투자 재테크 필수 포인트 - Calgary Roughnecks",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTUtDbkVtZDcyamFlLUdSaHZJcGpWUm1rVHNHVW93cTFESnl0bWUzenVNQnJGcHBBMktSbnlCby13QUZjbThUdzgwTlByN0dGenZvUE9ZbjJiZHM2NmNQbVVnMDRTNWlKblUzYXpMWEF0MjlMZENZSmdfcGhkTFpRb19YYThuSUxjVkY4NHE4UjFRekROOEFScVEtWHdoeFcxcFhwT3RDc2VXRlkw?oc=5",
   "sources": [
    "Calgary Roughnecks"
   ],
@@ -5196,16 +5248,6 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261004",
-  "last_seen": "20261005"
- },
- {
-  "title": "마작 패보는법 프리스핀 기능 유무와 기본 설명 - Calgary Roughnecks",
-  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQY1NMcGF4MVhYdGtsLURLZUZ1cERVM1N0VmNlZUxOUkt1Tkw2QmJyMGtlUjNBMFhxYmlJdExrMjFoeG1McWZmMUJZZ1AzbDJCbi1CeVptSHUwaWtueG5fMEhJM2dKV1Rja3hZVnAxWG9JVUpKTnl1MFVuRFJWcUNMRDEzbGxsbXFfTUJsTC1Xbi1fWmg3R1JpN3RqazBEV09hYWZ1MEYzRDJlWlQ3b0NtZC1CY21nSGdQUUxjWXJjZlIyVklDT3Z4d19oM3l1R20xTDVRT0R2QTdzS1oxWkpPTg?oc=5",
-  "sources": [
-   "Calgary Roughnecks"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261002",
   "last_seen": "20261005"
  },
  {

@@ -20,15 +20,15 @@
    ],
    "stats": {
     "evEbitda": {
-     "down": 9.8,
-     "base": 12.2,
+     "down": 9.7,
+     "base": 12.1,
      "up": 23.5,
      "n": 3
     },
     "per": {
      "down": 13.5,
      "base": 25.9,
-     "up": 29.4,
+     "up": 29.2,
      "n": 7
     }
    },
@@ -40,9 +40,9 @@
      "dart_name": "아모레퍼시픽",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 78848,
+     "mcap_eok": 78439,
      "mcap_src": "naver_mobile",
-     "per": 30.7,
+     "per": 30.5,
      "reason": "감가상각비 미식별"
     },
     {
@@ -52,11 +52,11 @@
      "dart_name": "LG생활건강",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 39910,
+     "mcap_eok": 39835,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 4106.8,
-     "ev_eok": 29806,
-     "evEbitda": 7.3,
+     "ev_eok": 29731,
+     "evEbitda": 7.2,
      "reason": "지배주주순이익 없음/적자"
     },
     {
@@ -66,12 +66,12 @@
      "dart_name": "코스맥스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 34616,
+     "mcap_eok": 34503,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2699.4,
-     "ev_eok": 32807,
-     "evEbitda": 12.2,
-     "per": 28.1
+     "ev_eok": 32694,
+     "evEbitda": 12.1,
+     "per": 28.0
     },
     {
      "name": "한국콜마",
@@ -118,7 +118,7 @@
      "dart_name": "토니모리",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 1175,
+     "mcap_eok": 1179,
      "mcap_src": "naver_mobile",
      "per": 10.6,
      "reason": "감가상각비 미식별"
@@ -130,7 +130,7 @@
      "dart_name": "아이패밀리에스씨",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 1336,
+     "mcap_eok": 1340,
      "mcap_src": "naver_mobile",
      "per": 6.1,
      "reason": "감가상각비 미식별"
@@ -168,7 +168,7 @@
      "dart_name": "펌텍코리아",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 8234,
+     "mcap_eok": 8221,
      "mcap_src": "naver_mobile",
      "per": 23.8,
      "reason": "감가상각비 미식별"
@@ -311,9 +311,9 @@
      "dart_name": "농심",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 24057,
+     "mcap_eok": 24087,
      "mcap_src": "naver_mobile",
-     "per": 14.1,
+     "per": 14.2,
      "reason": "감가상각비 미식별"
     },
     {
@@ -323,10 +323,10 @@
      "dart_name": "오리온",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 41347,
+     "mcap_eok": 41189,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 7228.7,
-     "ev_eok": 39624,
+     "ev_eok": 39466,
      "evEbitda": 5.5,
      "per": 10.8
     },
@@ -337,7 +337,7 @@
      "dart_name": "CJ제일제당",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 27624,
+     "mcap_eok": 27609,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별; 지배주주순이익 없음/적자"
     },
@@ -384,12 +384,12 @@
      "dart_name": "하이트진로",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 10366,
+     "mcap_eok": 10345,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3197.8,
-     "ev_eok": 8140,
+     "ev_eok": 8119,
      "evEbitda": 2.5,
-     "per": 25.0
+     "per": 24.9
     }
    ]
   },
@@ -412,9 +412,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 37.6,
-     "base": 51.7,
-     "up": 54.5,
+     "down": 37.5,
+     "base": 51.6,
+     "up": 54.4,
      "n": 3
     }
    },
@@ -437,7 +437,7 @@
      "dart_name": "이수페타시스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 91835,
+     "mcap_eok": 91762,
      "mcap_src": "naver_mobile",
      "per": 57.2,
      "reason": "감가상각비 미식별"
@@ -449,9 +449,9 @@
      "dart_name": "해성디에스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 11220,
+     "mcap_eok": 11203,
      "mcap_src": "naver_mobile",
-     "per": 51.7,
+     "per": 51.6,
      "reason": "감가상각비 미식별"
     },
     {
@@ -461,9 +461,9 @@
      "dart_name": "대덕전자",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 77930,
+     "mcap_eok": 78029,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별; PER 범위 밖(163.7)"
+     "reason": "감가상각비 미식별; PER 범위 밖(163.9)"
     },
     {
      "name": "비에이치",
@@ -507,9 +507,9 @@
      "dart_name": "두산밥캣",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 51379,
+     "mcap_eok": 51187,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별; PER 범위 밖(18161.6)"
+     "reason": "감가상각비 미식별; PER 범위 밖(18093.7)"
     },
     {
      "name": "두산에너빌리티",
@@ -518,9 +518,9 @@
      "dart_name": "두산에너빌리티",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 492592,
+     "mcap_eok": 491310,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별; PER 범위 밖(581.1)"
+     "reason": "감가상각비 미식별; PER 범위 밖(579.6)"
     },
     {
      "name": "한화에어로스페이스",
@@ -552,9 +552,9 @@
      "dart_name": "현대위아",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 13869,
+     "mcap_eok": 13842,
      "mcap_src": "naver_mobile",
-     "per": 34.7,
+     "per": 34.6,
      "reason": "감가상각비 미식별"
     }
    ]
@@ -578,7 +578,7 @@
     "per": {
      "down": 7.5,
      "base": 8.9,
-     "up": 20.9,
+     "up": 20.8,
      "n": 5
     }
    },
@@ -590,7 +590,7 @@
      "dart_name": "현대모비스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 324252,
+     "mcap_eok": 323803,
      "mcap_src": "naver_mobile",
      "per": 8.9,
      "reason": "감가상각비 미식별"
@@ -602,9 +602,9 @@
      "dart_name": "HL만도",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 20896,
+     "mcap_eok": 20849,
      "mcap_src": "naver_mobile",
-     "per": 20.9,
+     "per": 20.8,
      "reason": "감가상각비 미식별"
     },
     {
@@ -640,9 +640,9 @@
      "dart_name": "현대위아",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 13869,
+     "mcap_eok": 13842,
      "mcap_src": "naver_mobile",
-     "per": 34.7,
+     "per": 34.6,
      "reason": "감가상각비 미식별"
     }
    ]
@@ -665,9 +665,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 14.9,
-     "base": 19.8,
-     "up": 31.9,
+     "down": 14.8,
+     "base": 19.6,
+     "up": 31.7,
      "n": 3
     }
    },
@@ -679,7 +679,7 @@
      "dart_name": "LG화학",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 199423,
+     "mcap_eok": 199070,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별; 지배주주순이익 없음/적자"
     },
@@ -690,7 +690,7 @@
      "dart_name": "롯데케미칼",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 25409,
+     "mcap_eok": 25366,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별; 지배주주순이익 없음/적자"
     },
@@ -713,12 +713,12 @@
      "dart_name": "한솔케미칼",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 29144,
+     "mcap_eok": 28928,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2102.7,
-     "ev_eok": 31408,
-     "evEbitda": 14.9,
-     "per": 19.8
+     "ev_eok": 31192,
+     "evEbitda": 14.8,
+     "per": 19.6
     },
     {
      "name": "코오롱인더스트리",
@@ -727,12 +727,12 @@
      "dart_name": "코오롱인더",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 16800,
+     "mcap_eok": 16740,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3684.6,
-     "ev_eok": 14440,
+     "ev_eok": 14380,
      "evEbitda": 3.9,
-     "per": 43.9
+     "per": 43.7
     }
    ]
   },
@@ -768,10 +768,10 @@
      "dart_name": "POSCO홀딩스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 244064,
+     "mcap_eok": 243668,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 59862.9,
-     "ev_eok": 524961,
+     "ev_eok": 524565,
      "evEbitda": 8.8,
      "per": 37.1
     },
@@ -782,7 +782,7 @@
      "dart_name": "현대제철",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 37432,
+     "mcap_eok": 37498,
      "mcap_src": "naver_mobile",
      "per": 6.4,
      "reason": "감가상각비 미식별"
@@ -794,7 +794,7 @@
      "dart_name": "고려아연",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 215618,
+     "mcap_eok": 215409,
      "mcap_src": "naver_mobile",
      "per": 27.8,
      "reason": "감가상각비 미식별"
@@ -832,8 +832,8 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 10.4,
-     "base": 17.0,
+     "down": 10.3,
+     "base": 16.9,
      "up": 25.8,
      "n": 4
     }
@@ -846,10 +846,10 @@
      "dart_name": "유한양행",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 53887,
+     "mcap_eok": 53813,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1735.3,
-     "ev_eok": 54034,
+     "ev_eok": 53960,
      "evEbitda": 31.1,
      "per": 22.2
     },
@@ -860,10 +860,10 @@
      "dart_name": "한미약품",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 61685,
+     "mcap_eok": 61749,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3566.1,
-     "ev_eok": 66582,
+     "ev_eok": 66646,
      "evEbitda": 18.7,
      "per": 36.4
     },
@@ -874,9 +874,9 @@
      "dart_name": "종근당",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 9124,
+     "mcap_eok": 9041,
      "mcap_src": "naver_mobile",
-     "per": 11.8,
+     "per": 11.7,
      "reason": "감가상각비 미식별"
     },
     {
@@ -886,7 +886,7 @@
      "dart_name": "대웅제약",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 12525,
+     "mcap_eok": 12514,
      "mcap_src": "naver_mobile",
      "per": 6.0,
      "reason": "감가상각비 미식별"
@@ -1041,7 +1041,7 @@
      "dart_name": "현대오토에버",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 99549,
+     "mcap_eok": 99412,
      "mcap_src": "naver_mobile",
      "per": 52.2,
      "reason": "감가상각비 미식별"
@@ -1104,7 +1104,7 @@
      "dart_name": "넷마블",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 28066,
+     "mcap_eok": 28024,
      "mcap_src": "naver_mobile",
      "per": 12.5,
      "reason": "감가상각비 미식별"
@@ -1126,8 +1126,8 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 8.6,
-     "base": 10.5,
+     "down": 8.5,
+     "base": 10.4,
      "up": 15.8,
      "n": 3
     }
@@ -1140,9 +1140,9 @@
      "dart_name": "제일기획",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 21697,
+     "mcap_eok": 21628,
      "mcap_src": "naver_mobile",
-     "per": 10.5,
+     "per": 10.4,
      "reason": "감가상각비 미식별"
     },
     {
@@ -1210,7 +1210,7 @@
      "dart_name": "이마트",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 19345,
+     "mcap_eok": 19372,
      "mcap_src": "naver_mobile",
      "per": 14.2,
      "reason": "감가상각비 미식별"
@@ -1222,7 +1222,7 @@
      "dart_name": "BGF리테일",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 21881,
+     "mcap_eok": 21795,
      "mcap_src": "naver_mobile",
      "per": 11.2,
      "reason": "감가상각비 미식별"
@@ -1327,9 +1327,9 @@
      "dart_name": "현대건설",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 118705,
+     "mcap_eok": 118928,
      "mcap_src": "naver_mobile",
-     "per": 31.8,
+     "per": 31.9,
      "reason": "감가상각비 미식별"
     },
     {
@@ -1351,10 +1351,10 @@
      "dart_name": "케이씨씨",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 39398,
+     "mcap_eok": 39355,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 8873.8,
-     "ev_eok": 56223,
+     "ev_eok": 56180,
      "evEbitda": 6.3,
      "per": 1.5
     }
@@ -1377,7 +1377,7 @@
     "evEbitda": null,
     "per": {
      "down": 6.2,
-     "base": 6.4,
+     "base": 6.3,
      "up": 8.1,
      "n": 3
     }
@@ -1390,9 +1390,9 @@
      "dart_name": "영원무역",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 31328,
+     "mcap_eok": 31240,
      "mcap_src": "naver_mobile",
-     "per": 6.4,
+     "per": 6.3,
      "reason": "감가상각비 미식별"
     },
     {
@@ -1444,7 +1444,7 @@
      "dart_name": "한샘",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 9519,
+     "mcap_eok": 9531,
      "mcap_src": "naver_mobile",
      "per": 20.6,
      "reason": "감가상각비 미식별"
@@ -1496,9 +1496,9 @@
      "dart_name": "HD현대일렉트릭",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 218806,
+     "mcap_eok": 218446,
      "mcap_src": "naver_mobile",
-     "per": 29.9,
+     "per": 29.8,
      "reason": "감가상각비 미식별"
     },
     {
@@ -1521,7 +1521,7 @@
      "dart_name": "효성중공업",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 233860,
+     "mcap_eok": 233953,
      "mcap_src": "naver_mobile",
      "per": 45.0,
      "reason": "감가상각비 미식별"
@@ -1564,9 +1564,9 @@
      "dart_name": "에코프로비엠",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 124440,
+     "mcap_eok": 124342,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별; PER 범위 밖(359.3)"
+     "reason": "감가상각비 미식별; PER 범위 밖(359.0)"
     }
    ]
   },
@@ -1594,10 +1594,10 @@
      "dart_name": "메가스터디교육",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 4006,
+     "mcap_eok": 4001,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1943.5,
-     "ev_eok": 3715,
+     "ev_eok": 3710,
      "evEbitda": 1.9,
      "per": 4.7
     },
@@ -1613,6 +1613,578 @@
      "reason": "감가상각비 미식별; 지배주주순이익 없음/적자"
     }
    ]
+  }
+ ],
+ "debug": [
+  {
+   "name": "아모레퍼시픽",
+   "sj": [
+    "BS",
+    "CF",
+    "CIS",
+    "SCE"
+   ],
+   "cf": [
+    [
+     "dart_CashAndCashEquivalentsAtBeginningOfPeriodCf",
+     "기초의 현금및현금성자산"
+    ],
+    [
+     "dart_CashAndCashEquivalentsAtEndOfPeriodCf",
+     "기말의 현금및현금성자산"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+     "재무활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_AcquisitionOfTreasuryShares",
+     "자기주식의 취득"
+    ],
+    [
+     "dart_DecreaseInGuaranteeDepositsAsFinancialActivities",
+     "임대보증금의 반환"
+    ],
+    [
+     "dart_IncreaseInGuaranteeDepositsAsFinancialActivities",
+     "임대보증금의 수취"
+    ],
+    [
+     "dart_ProceedsFromExerciseOfShareOptions",
+     "주식선택권행사로 인한 현금유입"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "비지배지분과의 거래로 인한 현금유출"
+    ],
+    [
+     "ifrs-full_DividendsPaidClassifiedAsFinancingActivities",
+     "배당금의 지급"
+    ],
+    [
+     "ifrs-full_PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+     "리스부채의 상환"
+    ],
+    [
+     "ifrs-full_ProceedsFromCurrentBorrowings",
+     "단기차입금의 증가"
+    ],
+    [
+     "ifrs-full_RepaymentsOfCurrentBorrowings",
+     "단기차입금의 감소"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+     "투자활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_ProceedsFromSalesOfCurrentFairValueFinancialAsset",
+     "유동성 당기손익-공정가치측정 금융자산의 순감소"
+    ],
+    [
+     "dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "기타포괄손익-공정가치측정금융자산의처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale",
+     "매각예정비유동자산의 처분"
+    ],
+    [
+     "dart_PurchaseOfCurrentFairValueFinancialAsset",
+     "유동성 당기손익-공정가치측정 금융자산의 순증가"
+    ],
+    [
+     "dart_PurchaseOfNonCurrentFairValueFinancialAsset",
+     "비유동당기손익인식금융자산의 취득"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유동성 상각후원가측정 금융자산의 순증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "취득세의 환급"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "사용권자산의 증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "기타수취채권의 감소"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "비유동성 금융기관예치금의 취득"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "기타수취채권의 증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유동성 상각후원가측정 금융자산의 순감소"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유동성 금융기관예치금의순증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "비유동성 금융기관예치금의 처분"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "비유동성 상각후원가측정 금융자산의 처분"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "비유동성 상각후원가측정금융자산의 취득"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유동성 금융기관예치금의 순감소"
+    ]
+   ],
+   "dep_like": [
+    [
+     "BS",
+     "ifrs-full_CurrentFinancialAssetsAtAmortisedCost",
+     "상각후원가측정금융자산"
+    ],
+    [
+     "BS",
+     "ifrs-full_NoncurrentFinancialAssetsAtAmortisedCost",
+     "상각후원가측정금융자산"
+    ],
+    [
+     "CF",
+     "-표준계정코드 미사용-",
+     "유동성 상각후원가측정 금융자산의 순증가"
+    ],
+    [
+     "CF",
+     "-표준계정코드 미사용-",
+     "유동성 상각후원가측정 금융자산의 순감소"
+    ],
+    [
+     "CF",
+     "-표준계정코드 미사용-",
+     "비유동성 상각후원가측정 금융자산의 처분"
+    ],
+    [
+     "CF",
+     "-표준계정코드 미사용-",
+     "비유동성 상각후원가측정금융자산의 취득"
+    ]
+   ]
+  },
+  {
+   "name": "한국콜마",
+   "sj": [
+    "BS",
+    "CF",
+    "CIS",
+    "SCE"
+   ],
+   "cf": [
+    [
+     "dart_CashAndCashEquivalentsAtBeginningOfPeriodCf",
+     "기초현금및현금성자산"
+    ],
+    [
+     "dart_CashAndCashEquivalentsAtEndOfPeriodCf",
+     "기말현금및현금성자산"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+     "재무활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_AcquisitionOfTreasuryShares",
+     "자기주식의 취득"
+    ],
+    [
+     "dart_AdjustmentsForIncreaseDecreaseInOtherNonCurrentLiabilities",
+     "기타비유동부채의 증가(감소)"
+    ],
+    [
+     "dart_AdjustmentsForIncreasedecreaseInLongTermGuaranteeDepositRent",
+     "장기임대보증금의 증가(감소)"
+    ],
+    [
+     "dart_AdjustmentsForIncreasedecreaseInShortTermGuaranteeDepositRent",
+     "단기임대보증금의 증가(감소)"
+    ],
+    [
+     "dart_DispositionOfTreasuryShares",
+     "자기주식의 처분"
+    ],
+    [
+     "dart_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities",
+     "리스부채의 상환"
+    ],
+    [
+     "dart_ProceedsFromBonds",
+     "사채의 증가"
+    ],
+    [
+     "dart_ProceedsFromLongTermBorrowings",
+     "장기차입금의 차입"
+    ],
+    [
+     "dart_ProceedsFromShortTermBorrowings",
+     "단기차입금의 차입"
+    ],
+    [
+     "dart_RepaymentsOfBonds",
+     "사채의 상환"
+    ],
+    [
+     "dart_RepaymentsOfLongTermBorrowings",
+     "장기차입금의 상환"
+    ],
+    [
+     "dart_RepaymentsOfShortTermBorrowings",
+     "단기차입금의 상환"
+    ],
+    [
+     "ifrs-full_AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities",
+     "기타유동부채의 증가(감소)"
+    ],
+    [
+     "ifrs-full_DividendsPaidClassifiedAsFinancingActivities",
+     "배당금의 지급"
+    ],
+    [
+     "ifrs-full_PaymentsFromChangesInOwnershipInterestsInSubsidiaries",
+     "종속기업투자주식의 취득"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+     "투자활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_AdjustmentsForDecreaseincreaseInLongTermTradeAndOtherNonCurrentReceivables",
+     "기타비유동자산의 감소"
+    ],
+    [
+     "dart_ProceedsFromSalesOfInvestmentsInAssociates",
+     "관계기업및공동기업투자주식의 처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale",
+     "매각예정자산의 처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfOtherCurrentFinancialAssets",
+     "기타유동금융자산의 감소"
+    ],
+    [
+     "dart_ProceedsFromSalesOfOtherNonCurrentFinancialAssets",
+     "기타비유동금융자산의 감소"
+    ],
+    [
+     "dart_PurchaseOfFinanceLeaseAssets",
+     "리스사용권자산의 취득"
+    ],
+    [
+     "dart_PurchaseOfInvestmentsInAssociates",
+     "관계기업및공동기업투자주식의 취득"
+    ],
+    [
+     "dart_PurchaseOfOtherCurrentFinancialAssets",
+     "기타유동금융자산의 증가"
+    ],
+    [
+     "dart_PurchaseOfOtherNonCurrentFinancialAssets",
+     "기타비유동금융자산의 증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "정부보조금의 사용"
+    ],
+    [
+     "ifrs-full_AdjustmentsForDecreaseIncreaseInOtherAssets",
+     "기타비유동자산의 증가"
+    ]
+   ],
+   "dep_like": []
+  },
+  {
+   "name": "클리오",
+   "sj": [
+    "BS",
+    "CF",
+    "CIS",
+    "SCE"
+   ],
+   "cf": [
+    [
+     "dart_CashAndCashEquivalentsAtBeginningOfPeriodCf",
+     "기초현금및현금성자산"
+    ],
+    [
+     "dart_CashAndCashEquivalentsAtEndOfPeriodCf",
+     "기말현금및현금성자산"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+     "재무활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_DecreaseInGuaranteeDepositsAsFinancialActivities",
+     "임대보증금의 감소"
+    ],
+    [
+     "dart_IncreaseInGuaranteeDepositsAsFinancialActivities",
+     "임대보증금의 증가"
+    ],
+    [
+     "dart_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities",
+     "리스부채의 감소"
+    ],
+    [
+     "dart_RepaymentsOfBonds",
+     "사채의 감소"
+    ],
+    [
+     "dart_RepaymentsOfLongTermBorrowings",
+     "장기차입금의 상환"
+    ],
+    [
+     "dart_RepaymentsOfShortTermBorrowings",
+     "단기차입금의 상환"
+    ],
+    [
+     "ifrs-full_DividendsPaidClassifiedAsFinancingActivities",
+     "배당금의 지급"
+    ],
+    [
+     "ifrs-full_ProceedsFromChangesInOwnershipInterestsInSubsidiaries",
+     "종속기업 유상증자"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+     "투자활동으로 인한 현금흐름"
+    ],
+    [
+     "dart_DecreaseInGuaranteeDeposits",
+     "임차보증금의 감소"
+    ],
+    [
+     "dart_DecreaseInLoans",
+     "단기대여금의 감소"
+    ],
+    [
+     "dart_IncreaseInGuaranteeDeposits",
+     "임차보증금의 증가"
+    ],
+    [
+     "dart_IncreaseInLoans",
+     "단기대여금의 증가"
+    ],
+    [
+     "dart_ProceedsFromSalesOfCurrentFairValueFinancialAsset",
+     "단기당기손익공정가치측정금융자산의 감소"
+    ],
+    [
+     "dart_ProceedsFromSalesOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities",
+     "단기상각후원가측정금융자산의 감소"
+    ],
+    [
+     "dart_ProceedsFromSalesOfNonCurrentFairValueFinancialAsset",
+     "장기당기손익공정가치측정금융자산의 감소"
+    ],
+    [
+     "dart_PurchaseOfCurrentFairValueFinancialAsset",
+     "단기당기손익공정가치측정금융자산의 증가"
+    ],
+    [
+     "dart_PurchaseOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities",
+     "단기상각후원가측정금융자산의 증가"
+    ],
+    [
+     "dart_PurchaseOfNonCurrentFairValueFinancialAsset",
+     "장기당기손익공정가치측정금융자산의 증가"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "기타보증금의 감소"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "기타보증금의 증가"
+    ],
+    [
+     "ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities",
+     "종속기업투자의 취득"
+    ],
+    [
+     "ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+     "유형자산의 처분"
+    ],
+    [
+     "ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities",
+     "무형자산의 취득"
+    ],
+    [
+     "ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+     "유형자산의 취득"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInOperatingActivities",
+     "영업활동으로 인한 현금흐름"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInOperations",
+     "영업으로부터 창출된 현금흐름"
+    ]
+   ],
+   "dep_like": [
+    [
+     "CF",
+     "dart_ProceedsFromSalesOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities",
+     "단기상각후원가측정금융자산의 감소"
+    ],
+    [
+     "CF",
+     "dart_PurchaseOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities",
+     "단기상각후원가측정금융자산의 증가"
+    ]
+   ]
+  },
+  {
+   "name": "토니모리",
+   "sj": [
+    "BS",
+    "CF",
+    "CIS",
+    "SCE"
+   ],
+   "cf": [
+    [
+     "dart_CashAndCashEquivalentsAtBeginningOfPeriodCf",
+     "기초현금및현금성자산"
+    ],
+    [
+     "dart_CashAndCashEquivalentsAtEndOfPeriodCf",
+     "기말현금및현금성자산"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+     "재무활동현금흐름"
+    ],
+    [
+     "dart_ProceedsFromLongTermBorrowings",
+     "장기차입금의 증가"
+    ],
+    [
+     "dart_ProceedsFromShortTermBorrowings",
+     "단기차입금의 증가"
+    ],
+    [
+     "dart_RepaymentsOfLongTermBorrowings",
+     "장기차입금의 상환"
+    ],
+    [
+     "dart_RepaymentsOfShortTermBorrowings",
+     "단기차입금의 상환"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "리스부채의 상환"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유동성장기차입금의상환"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "유상증자"
+    ],
+    [
+     "ifrs-full_DividendsPaidClassifiedAsFinancingActivities",
+     "배당금지급"
+    ],
+    [
+     "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+     "투자활동현금흐름"
+    ],
+    [
+     "dart_DecreaseInGuaranteeDeposits",
+     "보증금의 감소"
+    ],
+    [
+     "dart_IncreaseInGuaranteeDeposits",
+     "보증금의 증가"
+    ],
+    [
+     "dart_ProceedsFromSalesOfInvestmentsInAssociates",
+     "관계기업에 대한 투자자산의 처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfLongTermFinancialInstruments",
+     "장기금융상품의 처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfShortTermFinancialInstruments",
+     "단기금융상품의 처분"
+    ],
+    [
+     "dart_ProceedsFromSalesOfShortTermLoansAndReceivables",
+     "단기대여금및수취채권의 처분"
+    ],
+    [
+     "dart_PurchaseOfInvestmentsInAssociates",
+     "관계기업에 대한 투자자산의 취득"
+    ],
+    [
+     "dart_PurchaseOfLongTermFinancialInstruments",
+     "장기금융상품의 취득"
+    ],
+    [
+     "dart_PurchaseOfNonCurrentFairValueFinancialAsset",
+     "비유동당기손익인식금융자산의 취득"
+    ],
+    [
+     "dart_PurchaseOfShortTermFinancialInstruments",
+     "단기금융상품의 취득"
+    ],
+    [
+     "dart_PurchaseOfShortTermLoansAndReceivables",
+     "단기대여금및수취채권의 취득"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "연결대상범위의 변동"
+    ],
+    [
+     "-표준계정코드 미사용-",
+     "기타유동자산의 취득"
+    ],
+    [
+     "ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities",
+     "정부보조금의 수취"
+    ],
+    [
+     "ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities",
+     "무형자산의 처분"
+    ],
+    [
+     "ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+     "유형자산의 처분"
+    ],
+    [
+     "ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities",
+     "무형자산의 취득"
+    ],
+    [
+     "ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+     "유형자산의 취득"
+    ]
+   ],
+   "dep_like": []
   }
  ]
 }
