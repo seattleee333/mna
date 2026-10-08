@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b3d"/><stop offset=".55" stop-color="#1d3a8a"/><stop offset="1" stop-color="#2fb7a4"/></linearGradient>
+<radialGradient id="r" cx=".8" cy=".2" r=".7"><stop offset="0" stop-color="#7cf0d8" stop-opacity=".55"/><stop offset="1" stop-color="#7cf0d8" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="640" height="340" fill="url(#g)"/><rect width="640" height="340" fill="url(#r)"/>
+<g fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="1.2">
+<circle cx="470" cy="150" r="120"/><circle cx="560" cy="150" r="120"/><circle cx="515" cy="150" r="170"/></g>
+<g fill="#fff"><circle cx="470" cy="150" r="5" fill-opacity=".9"/><circle cx="560" cy="150" r="5" fill-opacity=".9"/><circle cx="515" cy="150" r="9"/></g>
+<path d="M470 150 L515 150 L560 150" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+<text x="604" y="318" text-anchor="end" fill="#fff" fill-opacity=".38" font-family="Pretendard,'Malgun Gothic',sans-serif" font-size="12">AD · 제휴·광고 문의</text>
+</svg>

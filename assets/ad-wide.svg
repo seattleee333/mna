@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 120" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7c72"/><stop offset=".5" stop-color="#16b8a0"/><stop offset="1" stop-color="#3a7bd5"/></linearGradient></defs>
+<rect width="1620" height="120" fill="url(#g)"/>
+<g fill="none" stroke="#fff" stroke-opacity=".14" stroke-width="1.2"><circle cx="220" cy="60" r="90"/><circle cx="1400" cy="60" r="110"/><circle cx="1480" cy="60" r="70"/></g>
+<text x="1596" y="108" text-anchor="end" fill="#fff" fill-opacity=".4" font-family="Pretendard,'Malgun Gothic',sans-serif" font-size="12">AD · 제휴·광고 문의</text>
+</svg>

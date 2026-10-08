@@ -7,7 +7,7 @@ function renderSidebar(active) {
   const el = document.getElementById("topNav");
   if (!el) return;
   el.innerHTML =
-    '<a href="index.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
+    '<a href="deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
     '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
     '<a href="sell.html" class="' + (active === "sell" ? "on" : "") + '">매각하기</a>';
 }

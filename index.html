@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ALL ABOUT M&A</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 <header class="topbar">
@@ -13,255 +14,137 @@
     <nav class="top-nav" id="topNav"></nav>
   </div>
 </header>
-<div class="layout">
-  <main>
-    <div class="controls">
-      <input id="q" type="search" placeholder="회사명 또는 종목코드 검색">
-    </div>
-    <div class="chips" id="chips">
-      <button class="chip on" data-c="전체">전체</button>
-      <div class="chip-dropdown" id="chipDropdown">
-        <button class="chip chip-dropdown-toggle" id="chipDropdownToggle">
-          <span class="cdt-icon">▤</span>M&amp;A 종류 선택하기<span id="chipCount" class="cdt-count"></span>
-          <span class="cdt-caret">▾</span>
-        </button>
-        <div class="chip-dropdown-panel" id="chipDropdownPanel">
-          <div class="cdp-head">
-            <span class="cdp-title">M&amp;A 유형 선택<em>중복 선택 가능</em></span>
-            <button type="button" class="cdp-reset" id="chipReset">초기화</button>
-          </div>
-          <div class="type-grid" id="typeGrid"></div>
-        </div>
+
+<main class="home">
+  <div class="hgrid">
+    <a class="ad ad-hero" href="#contact" aria-label="광고 영역">
+      <img src="assets/ad-hero.svg" alt="">
+      <span class="ad-copy">좋은 거래는<br>좋은 만남에서<br>시작됩니다</span>
+      <span class="ad-tag">제휴·광고 문의 →</span>
+    </a>
+
+    <section class="hcard">
+      <h2>🔥 M&amp;A 핫뉴스 TOP 5</h2>
+      <p class="sub">오늘 가장 많이 보도된 순</p>
+      <ul class="hlist" id="hot"><li class="empty-s">불러오는 중...</li></ul>
+    </section>
+
+    <section class="hcard">
+      <h2>최근 인수 소식</h2>
+      <p class="sub">상장사 공시 기준 · 타법인 지분 인수</p>
+      <ul class="hlist" id="recent"><li class="empty-s">불러오는 중...</li></ul>
+    </section>
+  </div>
+
+  <a class="ad ad-wide" href="#contact" aria-label="광고 영역">
+    <img src="assets/ad-wide.svg" alt="">
+    <span class="ad-copy ad-copy-wide">M&amp;A 전문가와 기업을 잇는 곳,<br class="mb"> 여기에 브랜드를 알려보세요</span>
+    <span class="ad-tag">제휴·광고 문의 →</span>
+  </a>
+
+  <div class="hgrid">
+    <section class="hcard">
+      <h2>금융권 채용</h2>
+      <p class="sub">금융협회 채용공고</p>
+      <div class="soon"><span class="pill">준비 중</span>곧 금융권 채용 공고를 모아 보여드릴게요</div>
+    </section>
+
+    <section class="hcard">
+      <h2>더벨 M&amp;A 뉴스</h2>
+      <p class="sub">제목을 누르면 더벨 원문으로 이동해요</p>
+      <ul class="hlist" id="bell"><li class="empty-s">불러오는 중...</li></ul>
+    </section>
+
+    <section class="hcard cta">
+      <div>
+        <h2>우리 회사,<br>얼마에 팔 수 있을까요?</h2>
+        <p>설문 21개로 보수·기본·낙관 시나리오별 매도 가격 범위를 확인해보세요. 입력값은 내 브라우저에서만 계산돼요.</p>
       </div>
+      <a class="btn" href="valuation.html">매도 가격 확인해보기 →</a>
+    </section>
+  </div>
+</main>
+
+<footer class="hfooter" id="contact">
+  <div class="hfooter-in">
+    <nav class="fnav">
+      <a href="deals.html">딜클로징 리스트</a>
+      <a href="listings.html">매물·인수희망</a>
+      <a href="sell.html">매각하기</a>
+      <a href="#">공지사항</a>
+      <a href="#">자주 묻는 질문</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="mailto:contact@example.com">제휴·광고 문의</a>
+    </nav>
+    <div class="finfo">
+      <span><b>[회사명]</b></span>
+      <span>대표자: [대표자명]</span>
+      <span>개인정보관리책임자: [성명]</span>
+      <span>사업자등록번호: [000-00-00000]</span>
+      <span>통신판매업신고: [신고번호]</span>
     </div>
-    <div class="toggle-row">
-      <input type="checkbox" id="showMinor">
-      <label for="showMinor">정정·자회사 공시 등 상세정보 없는 공시도 표시</label>
+    <div class="finfo">
+      <span>주소: [사업장 주소]</span>
+      <span>문의·제휴: [contact@example.com]</span>
+      <span>전화: [000-0000-0000]</span>
     </div>
-    <div class="notice-line">상장사 딜만 공지되어있습니다</div>
-    <div id="list"></div>
-    <div id="pageControls" class="page-controls"></div>
-    <footer>본 페이지는 DART 공시를 자동 분류·요약한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
-  </main>
-  <aside class="news-panel" id="newsPanel"></aside>
-</div>
+    <div class="fdisc">ALL ABOUT M&amp;A의 모든 정보는 DART 공시와 공개 보도를 자동 분류·요약한 참고 자료이며, 투자·거래 판단의 근거가 될 수 없습니다. 정확한 내용은 원문을 확인하세요.<br>
+      기업가치 간이평가 결과는 입력값과 시장 가정에 따른 추정치로, 실제 거래 가격과 다를 수 있습니다.</div>
+    <div class="fcopy">Copyright © [회사명] All rights reserved.</div>
+  </div>
+</footer>
 
 <script src="sidebar.js"></script>
 <script>
-renderSidebar("daily");
-renderNewsPanel();
-
-let deals = [];
-let selectedCats = new Set(); // 비어있으면 "전체" (복수 선택 가능)
-const PRIORITY_CAT = "타법인 주식 취득·처분"; // M&A 종류 목록에서 맨 위에 둘 항목
-let showMinor = false;
-const PAGE_SIZE = 10;
-const MORE_LIMIT = 2; // "더보기"로 최대 2배치(20개)까지 늘어난 뒤엔 페이지네이션으로 전환
-let revealBatches = 1;
-let pageNum = null; // null이면 "더보기" 단계, 숫자가 있으면 페이지네이션 단계
-const listEl = document.getElementById("list");
-const pageControlsEl = document.getElementById("pageControls");
-const chipsEl = document.getElementById("chips");
-const qEl = document.getElementById("q");
-const showMinorEl = document.getElementById("showMinor");
-
-function esc(s) {
-  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-}
-function fmtDate(d) {
-  return d.slice(0,4) + "." + d.slice(4,6) + "." + d.slice(6,8);
-}
-
+renderSidebar("home");
+const esc = escHtml;
+const get = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []);
+const clean = t => String(t).replace(/\s+-\s+[^-]{1,20}$/, "");
 function fmtWon(n) {
-  if (n == null) return "";
   if (n >= 1e12) return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "조원";
   if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
-  if (n >= 1e4) return Math.round(n / 1e4).toLocaleString() + "만원";
-  return n.toLocaleString() + "원";
+  return Math.round(n / 1e4).toLocaleString() + "만원";
+}
+function josa(w, a, b) {
+  const c = String(w).trim().slice(-1).charCodeAt(0);
+  if (c >= 0xAC00 && c <= 0xD7A3) return (c - 0xAC00) % 28 ? a : b;
+  return b;
+}
+function rel(iso) {
+  const d = new Date(iso); if (isNaN(d)) return "";
+  const h = (Date.now() - d) / 36e5;
+  if (h < 1) return "방금"; if (h < 24) return Math.floor(h) + "시간 전";
+  return (d.getMonth() + 1) + "." + String(d.getDate()).padStart(2, "0");
 }
 
-// summary 필드가 아직 없는 예전 스키마 데이터를 위한 임시 요약 (target/counterparty 필드 기반)
-function fallbackSummary(d) {
-  if (!d.target && d.amount == null) return "";
-  const other = d.counterparty || d.seller || d.buyer || "";
-  let verb = "관련 거래를 진행합니다";
-  if (/양수|취득|인수/.test(d.direction || "")) verb = "인수/취득합니다";
-  else if (/양도|처분/.test(d.direction || "")) verb = "양도/처분합니다";
-  let s = d.corp_name + "이(가) ";
-  if (other) s += other + (verb.startsWith("양도") ? "에 " : "로부터 ");
-  s += (d.target || d.category) + "을(를) ";
-  if (d.amount != null) s += fmtWon(d.amount) + "에 ";
-  s += verb + ".";
-  return s;
-}
-
-function detailHtml(d) {
-  if (d.summary) {
-    return '<div class="summary-line">' + esc(d.summary) + '</div>';
-  }
-  const fb = fallbackSummary(d);
-  if (fb) {
-    return '<div class="summary-line">' + esc(fb) + '</div>';
-  }
-  if (d.no_detail_api) {
-    return '<div class="no-detail-line">요약을 만들지 못한 공시입니다 (원문 확인 필요)</div>';
-  }
-  return '<div class="no-detail-line">상세정보 확인 중…</div>';
-}
-
-function cardsHtml(rows) {
-  let html = "", lastDate = "";
-  for (const d of rows) {
-    if (d.date !== lastDate) {
-      html += '<div class="day">' + fmtDate(d.date) + "</div>";
-      lastDate = d.date;
-    }
-    html += '<div class="deal"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no)
-      + '"><div class="top"><span class="name">' + esc(d.corp_name)
-      + '</span><span class="tag">' + esc(d.category + (d.direction ? " · " + d.direction : "")) + '</span></div>' + detailHtml(d) + '<div class="title">'
-      + esc(d.report_nm) + "</div></a></div>";
-  }
-  return html;
-}
-
-function render() {
-  const q = qEl.value.trim().toLowerCase();
-  const rows = deals.filter(d =>
-    (selectedCats.size === 0 || selectedCats.has(d.category)) &&
-    (showMinor || !d.no_detail_api) &&
-    (!q || d.corp_name.toLowerCase().includes(q) || d.stock_code.includes(q))
-  );
-  revealBatches = 1;
-  pageNum = null;
-  renderPage(rows);
-}
-
-function renderPage(rows) {
-  if (!rows.length) {
-    listEl.innerHTML = '<div class="empty">표시할 공시가 없습니다.</div>';
-    pageControlsEl.innerHTML = "";
-    return;
-  }
-
-  if (pageNum === null) {
-    // "더보기" 단계: 10개 -> (더보기 클릭) 20개까지
-    const shown = Math.min(revealBatches * PAGE_SIZE, rows.length);
-    listEl.innerHTML = cardsHtml(rows.slice(0, shown));
-
-    if (shown >= rows.length) {
-      pageControlsEl.innerHTML = "";
-    } else if (revealBatches < MORE_LIMIT) {
-      pageControlsEl.innerHTML = '<button class="more-btn" id="moreBtn">더보기</button>';
-      document.getElementById("moreBtn").addEventListener("click", () => {
-        revealBatches++;
-        renderPage(rows);
-      });
-    } else {
-      // 20개까지 다 보여줬는데 더 남아있으면 페이지네이션으로 전환
-      pageNum = MORE_LIMIT + 1;
-      renderPage(rows);
-    }
-    return;
-  }
-
-  // 페이지네이션 단계
-  const totalPages = Math.ceil(rows.length / PAGE_SIZE);
-  pageNum = Math.min(Math.max(pageNum, 1), totalPages);
-  const start = (pageNum - 1) * PAGE_SIZE;
-  listEl.innerHTML = cardsHtml(rows.slice(start, start + PAGE_SIZE));
-
-  // 페이지가 많을 땐 현재 페이지 주변 + 처음/끝만 보여주고 나머지는 "…"으로 생략
-  const pages = [];
-  for (let p = 1; p <= totalPages; p++) {
-    if (p === 1 || p === totalPages || Math.abs(p - pageNum) <= 1) pages.push(p);
-    else if (pages[pages.length - 1] !== "…") pages.push("…");
-  }
-  let html = '<div class="pagination">';
-  html += '<button class="page-arrow" data-p="' + (pageNum - 1) + '"' + (pageNum <= 1 ? " disabled" : "") + '>‹</button>';
-  for (const p of pages) {
-    html += p === "…"
-      ? '<span class="page-ellipsis">…</span>'
-      : '<button class="page-num' + (p === pageNum ? " on" : "") + '" data-p="' + p + '">' + p + '</button>';
-  }
-  html += '<button class="page-arrow" data-p="' + (pageNum + 1) + '"' + (pageNum >= totalPages ? " disabled" : "") + '>›</button>';
-  html += '</div>';
-  pageControlsEl.innerHTML = html;
-  pageControlsEl.querySelectorAll("[data-p]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      pageNum = parseInt(btn.dataset.p, 10);
-      renderPage(rows);
-      listEl.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-}
-
-function renderChips() {
-  const cats = [...new Set(deals.map(d => d.category))];
-  // "타법인 주식 취득·처분"을 목록 맨 위로 우선 배치
-  cats.sort((a, b) => (a === PRIORITY_CAT ? -1 : b === PRIORITY_CAT ? 1 : 0));
-
-  document.querySelector('[data-c="전체"]').classList.toggle("on", selectedCats.size === 0);
-
-  const toggleBtn = document.getElementById("chipDropdownToggle");
-  const countEl = document.getElementById("chipCount");
-  toggleBtn.classList.toggle("on", selectedCats.size > 0);
-  countEl.textContent = selectedCats.size > 0 ? selectedCats.size : "";
-  countEl.classList.toggle("show", selectedCats.size > 0);
-
-  document.getElementById("typeGrid").innerHTML = cats.map(c =>
-    '<button type="button" class="type-option' + (selectedCats.has(c) ? " on" : "") +
-    (c === PRIORITY_CAT ? " priority" : "") + '" data-c="' + esc(c) + '">' +
-    '<span class="dot"></span><span class="type-label">' + esc(c) + "</span>" +
-    (c === PRIORITY_CAT ? '<span class="priority-badge">자주 찾는 유형</span>' : "") +
-    "</button>"
-  ).join("");
-}
-
-function setDropdownOpen(open) {
-  document.getElementById("chipDropdownPanel").classList.toggle("open", open);
-  document.getElementById("chipDropdownToggle").classList.toggle("open", open);
-}
-
-chipsEl.addEventListener("click", e => {
-  const btn = e.target.closest("button");
-  if (!btn) return;
-  if (btn.id === "chipDropdownToggle") {
-    const willOpen = !document.getElementById("chipDropdownPanel").classList.contains("open");
-    setDropdownOpen(willOpen);
-    return;
-  }
-  if (btn.id === "chipReset") {
-    selectedCats.clear();
-    renderChips(); render();
-    return;
-  }
-  if (btn.dataset.c === "전체") {
-    selectedCats.clear();
-    setDropdownOpen(false);
-    renderChips(); render();
-    return;
-  }
-  if (btn.dataset.c) {
-    // 패널 안의 항목은 중복 클릭(다중 선택)이 가능하도록 토글만 하고 패널은 열어둔다.
-    if (selectedCats.has(btn.dataset.c)) selectedCats.delete(btn.dataset.c);
-    else selectedCats.add(btn.dataset.c);
-    renderChips(); render();
-  }
+get("news.json").then(list => {
+  const el = document.getElementById("hot");
+  if (!list.length) { el.innerHTML = '<li class="empty-s">아직 수집된 뉴스가 없어요.</li>'; return; }
+  el.innerHTML = list.slice(0, 5).map((n, i) =>
+    '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="hrank">' + (i + 1) + '</span>' +
+    '<span class="ht">' + esc(clean(n.title)) + '</span></a></li>').join("");
 });
-document.addEventListener("click", e => {
-  if (!document.getElementById("chipDropdown").contains(e.target)) {
-    setDropdownOpen(false);
-  }
-});
-qEl.addEventListener("input", render);
-showMinorEl.addEventListener("change", () => { showMinor = showMinorEl.checked; render(); });
 
-fetch("deals.json?t=" + Date.now())
-  .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-  .then(data => { deals = data; renderChips(); render(); })
-  .catch(() => {
-    listEl.innerHTML = '<div class="empty">아직 수집된 데이터가 없습니다. 자동 수집이 한 번 실행되면 표시됩니다.</div>';
-  });
+get("deals.json").then(list => {
+  const el = document.getElementById("recent");
+  const rows = list.filter(d => d.category === "타법인 주식 취득·처분" && d.direction === "양수" && d.amount >= 1e9
+      && d.target && d.target.length <= 40 && !/\n/.test(d.target))
+    .sort((a, b) => b.date.localeCompare(a.date) || b.amount - a.amount).slice(0, 5);
+  if (!rows.length) { el.innerHTML = '<li class="empty-s">표시할 인수 소식이 없어요.</li>'; return; }
+  el.innerHTML = rows.map(d =>
+    '<li class="deal-line"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no) + '"><span class="ht"><b>' + esc(d.corp_name) +
+    '</b>' + josa(d.corp_name, "이", "가") + ' <b>' + esc(d.target) + '</b>' + josa(d.target, "을", "를") + ' <span class="amt">' + fmtWon(d.amount) + '</span>에 인수</span>' +
+    '<span class="hmeta">' + d.date.slice(4, 6) + "." + d.date.slice(6, 8) + '</span></a></li>').join("");
+});
+
+get("thebell.json").then(list => {
+  const el = document.getElementById("bell");
+  if (!list.length) { el.innerHTML = '<li class="empty-s">더벨 기사를 불러오는 중이에요. 매일 아침 갱신돼요.</li>'; return; }
+  el.innerHTML = list.slice(0, 6).map(n =>
+    '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="ht">' + esc(n.title) +
+    '</span><span class="hmeta">' + rel(n.pubDate) + '</span></a></li>').join("");
+});
 </script>
 </body>
 </html>
