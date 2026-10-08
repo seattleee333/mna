@@ -210,6 +210,14 @@ def da_from_xbrl(corp_code, year, fs_div):
                 if v is not None:
                     found.setdefault(local, v)
     if not found:
+        if len(DEBUG) < 3:
+            anyd = []
+            for el in root.iter():
+                local = el.tag.split("}")[-1]
+                if ("Depreciation" in local or "Amortisation" in local) and len(anyd) < 12:
+                    anyd.append([local, el.get("contextRef"), (el.text or "")[:20]])
+            DEBUG.append({"files": zf.namelist()[:10], "chosen": names[0], "n_ctx": len(ctx), "n_cur": len(cur),
+                          "last_end": last_end, "any_dep_tags": anyd, "root": root.tag[:80]})
         return None, "XBRL에 상각비 태그 없음"
     combo = [v for k, v in found.items() if "DepreciationAndAmortisation" in k and k.startswith("AdjustmentsFor")]
     if combo:
