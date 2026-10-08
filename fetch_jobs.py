@@ -22,14 +22,17 @@ def parse(html):
         if len(tds) < 4:
             continue
         txt = [re.sub(r"\s+", " ", td.get_text(" ", strip=True)) for td in tds]
-        date = next((t for t in reversed(txt) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", t)), None)
+        date = next((t for t in reversed(txt) if re.fullmatch(r"\d{4}[-./]\d{2}[-./]\d{2}", t)), None)
+        if date:
+            date = re.sub(r"[./]", "-", date)
         seq = None
         title = ""
         for a in tr.find_all("a", href=True):
             m = re.search(r"seq=(\d+)", a["href"])
             if m:
                 seq = m.group(1)
-                t = a.get_text(" ", strip=True)
+                td = a.find_parent("td")
+                t = (td or a).get_text(" ", strip=True)
                 if len(t) > len(title):
                     title = re.sub(r"\s+", " ", t)
         if not (date and seq and title):
@@ -51,10 +54,6 @@ def main():
             print("채용안내 조회 실패:", page, e)
             break
         rows = parse(r.text)
-        if page == 1:
-            i = r.text.find("<tbody")
-            with open("jobs_debug.txt", "w", encoding="utf-8") as f:
-                f.write(f"status={r.status_code} len={len(r.text)} rows={len(rows)}\n{r.text[i:i + 1500] if i >= 0 else r.text[:1500]}")
         if not rows:
             break
         for x in rows:
