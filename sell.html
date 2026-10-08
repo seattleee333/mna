@@ -21,11 +21,11 @@
     </div>
 
     <div class="sell-cards">
-      <a class="sell-card" href="#" id="valuationCard">
+      <a class="sell-card" href="valuation.html" id="valuationCard">
         <div class="sell-card-icon">💰</div>
-        <div class="sell-card-title">내 기업은 얼마?</div>
-        <div class="sell-card-desc">간단한 정보 입력만으로 우리 기업의 예상 가치를 확인해보세요.</div>
-        <span class="sell-card-badge">준비 중</span>
+        <div class="sell-card-title">매도 가격 확인해보기</div>
+        <div class="sell-card-desc">설문에 답하면 DCF와 업종 피어 배수로 우리 기업의 예상 매도가격 범위를 계산해 드려요.</div>
+        <span class="sell-card-badge new">NEW</span>
       </a>
       <a class="sell-card" href="#" id="matchingCard">
         <div class="sell-card-icon">🤝</div>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="sell-notice">
-      두 기능 모두 현재 설계 중입니다. 오픈되면 이 페이지에서 바로 이용하실 수 있습니다.
+      ‘AI 매칭하기’는 현재 설계 중입니다. 오픈되면 이 페이지에서 바로 이용하실 수 있습니다.
     </div>
   </main>
   <aside class="news-panel" id="newsPanel"></aside>
@@ -47,10 +47,6 @@
 renderSidebar("sell");
 renderNewsPanel();
 
-document.getElementById("valuationCard").addEventListener("click", function (e) {
-  e.preventDefault();
-  alert("‘내 기업은 얼마?’ 기능은 준비 중입니다. 곧 만나보실 수 있어요!");
-});
 document.getElementById("matchingCard").addEventListener("click", function (e) {
   e.preventDefault();
   alert("‘AI 매칭하기’ 기능은 준비 중입니다. 곧 만나보실 수 있어요!");

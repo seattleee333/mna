@@ -36,11 +36,17 @@ jobs:
       - name: 매물·인수희망 리스트 수집
         run: python fetch_listings.py
 
+      - name: 업종별 피어 배수 수집
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python fetch_peers.py
+
       - name: 결과 저장
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deals.json news.json listings.json
+          git add deals.json news.json listings.json peers.json
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else

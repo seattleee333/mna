@@ -251,6 +251,7 @@ main { flex:1; min-width:0; max-width:780px; }
 .sell-card-desc { font-size:13.5px; color:var(--sub); line-height:1.55; }
 .sell-card-badge { position:absolute; top:20px; right:20px; font-size:11px; font-weight:700; color:var(--accent);
                     background:var(--accent-soft); padding:4px 10px; border-radius:999px; }
+.sell-card-badge.new { background:var(--accent); color:#fff; }
 .sell-notice { font-size:12.5px; color:var(--faint); text-align:center; padding:8px; }
 @media (max-width: 640px) {
   .sell-cards { grid-template-columns:1fr; }
@@ -264,4 +265,13 @@ main { flex:1; min-width:0; max-width:780px; }
   .topbar-inner { padding:0 16px; gap:16px; }
   main { max-width:none; }
   .detail-top { padding:20px; }
+}
+
+/* 모바일 상단 메뉴 */
+@media (max-width:640px) {
+  .topbar-inner { padding:0 12px; gap:8px; }
+  .brand { font-size:14px; }
+  .top-nav { overflow-x:auto; gap:0; scrollbar-width:none; }
+  .top-nav::-webkit-scrollbar { display:none; }
+  .top-nav a { padding:7px 8px; font-size:12.5px; white-space:nowrap; }
 }
