@@ -11,7 +11,7 @@ BASE = "https://www.kofia.or.kr/brd/m_96/"
 OUT = "jobs.json"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 DAYS = 30
-MAX_PAGES = 15
+MAX_PAGES = 80
 
 
 def parse(html):
