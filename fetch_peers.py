@@ -22,6 +22,8 @@ BASE = "https://opendart.fss.or.kr/api/"
 SEED = "peers_seed.json"
 OUT = "peers.json"
 DEBUG = []
+START = time.time()
+BUDGET = 28 * 60  # XBRL 조회에 쓸 수 있는 총 시간(초)
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
@@ -164,8 +166,15 @@ def da_from_xbrl(corp_code, year, fs_div):
     if not rcept:
         return None, "사업보고서 접수번호 없음"
     try:
-        r = requests.get(BASE + "fnlttXbrl.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept, "reprt_code": "11011"}, timeout=120)
-        zf = zipfile.ZipFile(io.BytesIO(r.content))
+        t0 = time.time()
+        buf = io.BytesIO()
+        with requests.get(BASE + "fnlttXbrl.xml", params={"crtfc_key": API_KEY, "rcept_no": rcept, "reprt_code": "11011"},
+                          timeout=(15, 30), stream=True) as r:
+            for chunk in r.iter_content(1 << 16):
+                buf.write(chunk)
+                if time.time() - t0 > 60 or buf.tell() > 60 * 1024 * 1024:
+                    return None, "XBRL 다운로드 시간/용량 초과"
+        zf = zipfile.ZipFile(io.BytesIO(buf.getvalue()))
     except Exception as e:
         return None, f"XBRL 다운로드 실패({type(e).__name__})"
     names = [n for n in zf.namelist() if n.lower().endswith((".xbrl", ".xml"))]
@@ -318,7 +327,10 @@ def main():
             return out
         mt = extract_metrics(rows)
         out.update({"year": year, "fs": fs})
-        if mt["da"] is None:
+        if mt["da"] is None and time.time() - START > BUDGET:
+            out["da_why"] = "시간 예산 초과"
+        elif mt["da"] is None:
+            print("  XBRL 조회:", name, flush=True)
             xda, xwhy = da_from_xbrl(corp_code, year, fs)
             if xda is not None:
                 mt["da"] = xda

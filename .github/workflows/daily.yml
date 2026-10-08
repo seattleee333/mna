@@ -37,6 +37,7 @@ jobs:
         run: python fetch_listings.py
 
       - name: 업종별 피어 배수 수집
+        timeout-minutes: 40
         continue-on-error: true
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
