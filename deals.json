@@ -8,8 +8,10 @@
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식담보제공계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "버킷스튜디오가 최대주주 변경을 수반하는 주식담보제공 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -22,8 +24,10 @@
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "광진실업이 최대주주 변경을 수반하는 주식담보제공 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -36,8 +40,10 @@
   "market": "K",
   "report_nm": "최대주주변경",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "파인테크닉스의 최대주주가 변경됐습니다.",
   "summary_src": "title"
  },
@@ -72,10 +78,36 @@
   "market": "K",
   "report_nm": "[기재정정]회사합병결정(종속회사의주요경영사항)",
   "category": "합병",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "엔켐의 종속회사가 합병을 결정했습니다.",
   "summary_src": "title"
+ },
+ {
+  "rcept_no": "20261008800888",
+  "date": "20261008",
+  "corp_code": "00139889",
+  "corp_name": "SKC",
+  "stock_code": "011790",
+  "market": "Y",
+  "report_nm": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+  "category": "타법인 주식 취득·처분",
+  "raw_probe": {
+   "fetch_failed": "notzip:<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>"
+  },
+  "no_detail_api": true,
+  "detail_done": true,
+  "kind": "stake_in",
+  "summary": "SKC가 ISC 지분을 297억원에 인수합니다.",
+  "target": "ISC",
+  "buyer": "SKC",
+  "seller": null,
+  "amount": 29744000000,
+  "direction": "양수",
+  "note": null,
+  "summary_src": "original"
  },
  {
   "rcept_no": "20261008800876",
@@ -89,7 +121,7 @@
   "raw_probe": {
    "fetch_failed": "notzip:<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>"
   },
-  "detail_attempts": 1
+  "detail_attempts": 2
  },
  {
   "rcept_no": "20261008800626",
@@ -122,8 +154,10 @@
   "market": "Y",
   "report_nm": "[기재정정]유상증자결정(종속회사의주요경영사항)",
   "category": "유상증자",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "한화오션의 종속회사가 유상증자를 결정했습니다.",
   "summary_src": "title"
  },
@@ -148,6 +182,17 @@
   "summary": "현대비앤지스틸이 성림첨단산업 지분을 708억원에 인수합니다.",
   "sum_v": 3,
   "detail_done": true
+ },
+ {
+  "rcept_no": "20261008000704",
+  "date": "20261008",
+  "corp_code": "00152437",
+  "corp_name": "케이프",
+  "stock_code": "064820",
+  "market": "K",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병",
+  "detail_attempts": 1
  },
  {
   "rcept_no": "20261008000618",
@@ -278,8 +323,10 @@
   "market": "K",
   "report_nm": "공개매수설명서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "BGF에코머티리얼즈가 공개매수를 진행합니다.",
   "summary_src": "title"
  },
@@ -292,8 +339,10 @@
   "market": "K",
   "report_nm": "공개매수신고서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "BGF에코머티리얼즈가 공개매수를 신고했습니다.",
   "summary_src": "title"
  },
@@ -766,7 +815,7 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 2
+  "detail_attempts": 3
  },
  {
   "rcept_no": "20261007000004",
@@ -2316,7 +2365,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 2,
+  "detail_attempts": 3,
   "detail_done": true,
   "fix_v": 6
  },
@@ -3332,7 +3381,7 @@
   "rcept_no": "20260930000604",
   "date": "20260930",
   "corp_code": "00550082",
-  "corp_name": "캔버스엔",
+  "corp_name": "빅텐츠",
   "stock_code": "210120",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
@@ -3782,7 +3831,7 @@
   "market": "K",
   "report_nm": "기타주요경영사항              (회사합병 결정 철회)",
   "category": "합병",
-  "detail_attempts": 2,
+  "detail_attempts": 3,
   "detail_done": true,
   "fix_v": 6
  },
@@ -5862,7 +5911,7 @@
  {
   "rcept_no": "20260922000418",
   "date": "20260922",
-  "corp_name": "캔버스엔",
+  "corp_name": "빅텐츠",
   "stock_code": "210120",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
@@ -5992,7 +6041,7 @@
  {
   "rcept_no": "20260922000164",
   "date": "20260922",
-  "corp_name": "국일제지",
+  "corp_name": "에스엠국일",
   "stock_code": "078130",
   "market": "K",
   "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
@@ -6929,7 +6978,7 @@
  {
   "rcept_no": "20260918000371",
   "date": "20260918",
-  "corp_name": "국일제지",
+  "corp_name": "에스엠국일",
   "stock_code": "078130",
   "market": "K",
   "report_nm": "주요사항보고서(회사합병결정)",
@@ -10956,7 +11005,7 @@
  {
   "rcept_no": "20260909000329",
   "date": "20260909",
-  "corp_name": "캔버스엔",
+  "corp_name": "빅텐츠",
   "stock_code": "210120",
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
