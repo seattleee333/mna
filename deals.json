@@ -151,14 +151,20 @@
   "market": "Y",
   "report_nm": "타법인주식및출자증권처분결정(자율공시)",
   "category": "타법인 주식 취득·처분",
-  "raw_probe": {
-   "fetch_failed": "notzip:<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>"
-  },
-  "detail_attempts": 5,
-  "no_detail_api": true,
+  "detail_attempts": 0,
   "detail_done": true,
-  "summary": "대림통상이 타법인 주식 처분을 결정했습니다.",
-  "summary_src": "title"
+  "fix_v": 6,
+  "kind": "stake_out",
+  "direction": "양도",
+  "buyer": null,
+  "seller": "대림통상",
+  "target": "광동대림건재오금유한공사",
+  "amount": 1000,
+  "note": null,
+  "source": "raw_document",
+  "raw_v": 3,
+  "summary": "대림통상이 보유 중이던 광동대림건재오금유한공사 지분을 1,000원에 매각합니다.",
+  "sum_v": 3
  },
  {
   "rcept_no": "20261008800626",
@@ -229,7 +235,19 @@
   "market": "K",
   "report_nm": "합병등종료보고서(합병)",
   "category": "합병",
-  "detail_attempts": 4
+  "detail_attempts": 4,
+  "kind": "merger_done",
+  "direction": null,
+  "buyer": null,
+  "seller": "케이프인베스트먼트 주식회사",
+  "target": "케이프인베스트먼트 주식회사",
+  "amount": null,
+  "note": null,
+  "source": "raw_document",
+  "raw_v": 3,
+  "summary": "케이프가 케이프인베스트먼트를 흡수합병했습니다.",
+  "sum_v": 3,
+  "detail_done": true
  },
  {
   "rcept_no": "20261008000618",
@@ -852,7 +870,7 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
   "fix_v": 6
  },
