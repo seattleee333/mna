@@ -73,45 +73,69 @@ def fetch_fin(corp_code, year):
     return None, None
 
 
+def norm_nm(nm):
+    """계정명 정규화: 공백·로마숫자·번호 접두어 제거"""
+    nm = re.sub(r"\s+", "", nm or "")
+    return re.sub(r"^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX0-9]+[\.\)]", "", nm)
+
+
 def extract_metrics(rows):
     op = None
-    da = 0.0
+    da_cf = 0.0
     da_found = False
+    da_is = 0.0   # 손익계산서/주석에 따로 나온 감가상각비(대체)
+    da_is_found = False
     cash = debt = nci = 0.0
     ni = None
+    gp = sga = None
     for r in rows:
-        nm = (r.get("account_nm") or "").strip()
+        raw = (r.get("account_nm") or "").strip()
+        nm = norm_nm(raw)
         aid = (r.get("account_id") or "").strip()
         sj = (r.get("sj_div") or "").strip()
         amt = parse_amt(r.get("thstrm_amount"))
         if amt is None:
             continue
         if sj in ("IS", "CIS"):
-            if aid == "dart_OperatingIncomeLoss" or nm in ("영업이익", "영업이익(손실)"):
-                if op is None:
-                    op = amt
+            if op is None and (aid == "dart_OperatingIncomeLoss" or nm.startswith("영업이익") or nm.startswith("영업손익")
+                               or nm.startswith("영업손실")):
+                op = amt
+            if gp is None and (aid == "ifrs-full_GrossProfit" or nm.startswith("매출총이익") or nm.startswith("매출총손익")):
+                gp = amt
+            if sga is None and (aid == "dart_TotalSellingGeneralAdministrativeExpenses" or nm.startswith("판매비와관리비")
+                                or nm.startswith("판매비와일반관리비")):
+                sga = amt
             if ni is None and (aid == "ifrs-full_ProfitLossAttributableToOwnersOfParent"
-                               or nm in ("지배기업의 소유주에게 귀속되는 당기순이익", "지배기업 소유주지분", "지배기업소유주지분",
-                                         "지배기업의 소유주에게 귀속되는 당기순이익(손실)")):
+                               or "지배기업" in nm and "소유주" in nm and "당기" in nm
+                               or nm in ("지배기업소유주지분", "지배기업의소유주에게귀속되는당기순이익")):
                 ni = amt
+            if "감가상각" in nm or "무형자산상각" in nm or "Depreciation" in aid or "Amortisation" in aid:
+                da_is += amt
+                da_is_found = True
         elif sj == "CF":
-            if "상각" in nm and "상각후원가" not in nm and "대손" not in nm and "할인발행" not in nm and "사채" not in nm:
-                da += amt
+            low_aid = aid
+            is_da = ("상각" in nm and not any(x in nm for x in ("상각후원가", "대손", "할인발행", "사채", "현재가치", "손상")))
+            is_da = is_da or ("Depreciation" in low_aid or "Amortisation" in low_aid) and "Impairment" not in low_aid
+            if is_da:
+                da_cf += amt
                 da_found = True
         elif sj == "BS":
-            if nm in DEBT_NAMES:
+            if nm in {re.sub(r"\s+", "", x) for x in DEBT_NAMES}:
                 debt += amt
-            elif nm in CASH_NAMES:
+            elif nm in {re.sub(r"\s+", "", x) for x in CASH_NAMES}:
                 cash += amt
             elif nm in NCI_NAMES:
                 nci += amt
+    if op is None and gp is not None and sga is not None:
+        op = gp - abs(sga)
     if ni is None:
         for r in rows:
-            if (r.get("sj_div") or "") in ("IS", "CIS") and (r.get("account_nm") or "").strip() in ("당기순이익", "당기순이익(손실)", "연결당기순이익"):
+            if (r.get("sj_div") or "") in ("IS", "CIS") and norm_nm(r.get("account_nm")) in ("당기순이익", "당기순이익(손실)", "연결당기순이익", "당기순손익"):
                 ni = parse_amt(r.get("thstrm_amount"))
                 if ni is not None:
                     break
-    return {"op": op, "da": da if da_found else None, "cash": cash, "debt": debt, "nci": nci, "ni": ni}
+    da = da_cf if da_found else (da_is if da_is_found else None)
+    return {"op": op, "da": da, "cash": cash, "debt": debt, "nci": nci, "ni": ni}
 
 
 def parse_korean_money(s):
@@ -152,6 +176,16 @@ def fetch_mcap(code):
                 v = parse_korean_money(txt)
                 if v:
                     return v * 1e8 if v < 1e9 and "조" not in txt and "억" not in txt else v, "naver_desktop"
+    except Exception:
+        pass
+    # 마지막 폴백: 네이버 주가 API(종가) × DART 발행주식 수는 복잡하므로 polling API의 시가총액 필드 시도
+    try:
+        r = requests.get(f"https://polling.finance.naver.com/api/realtime/domestic/stock/{code}", headers=UA, timeout=15)
+        if r.ok:
+            d = (r.json().get("datas") or [{}])[0]
+            v = parse_korean_money(d.get("marketValue") or d.get("marketCap"))
+            if v:
+                return (v * 1e6 if v < 1e11 else v), "naver_polling"
     except Exception:
         pass
     return None, None
@@ -229,7 +263,7 @@ def main():
             else:
                 reasons.append("EBITDA 또는 EV가 0 이하")
         else:
-            reasons.append("영업이익/감가상각비 항목 미식별")
+            reasons.append("영업이익 미식별" if mt["op"] is None else "감가상각비 미식별")
         if mt["ni"] is not None and mt["ni"] > 0:
             per = mcap / mt["ni"]
             if 0 < per <= 100:
