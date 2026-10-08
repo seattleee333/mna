@@ -49,3 +49,8 @@
 .job .ht b { font-weight:800; margin-right:2px; }
 .more { color:var(--accent); text-decoration:none; font-weight:700; }
 .job .src { font-style:normal; font-size:11px; font-weight:700; color:var(--sub); background:var(--bg); border-radius:6px; padding:1px 6px; margin-right:6px; }
+
+/* 로고 동그라미와 글자 세로 가운데 맞춤 */
+.deal-line a { align-items:center; }
+.deal-line .avatar { vertical-align:middle; margin:0; }
+.deal-line .hrank, .deal-line .hmeta { align-self:center; }
