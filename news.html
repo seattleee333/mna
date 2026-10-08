@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&A 인기뉴스 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<main class="home" style="max-width:860px">
+  <section class="hcard">
+    <h2>🔥 M&amp;A 인기뉴스</h2>
+    <p class="sub">같은 이슈를 다룬 기사는 +N으로 묶었어요 · 제목을 누르면 기사 원문으로 이동해요</p>
+    <ul class="hlist" id="all"><li class="empty-s">불러오는 중...</li></ul>
+    <button type="button" class="np-more" id="more" hidden>더보기 ▾</button>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("news");
+let rows = [], shown = 20;
+const el = document.getElementById("all"), more = document.getElementById("more");
+function draw() {
+  el.innerHTML = rows.slice(0, shown).map((n, i) => {
+    const src = n.sources && n.sources.length ? escHtml(n.sources[0]) : "";
+    const cnt = n.outlet_count > 1 ? " +" + (n.outlet_count - 1) : "";
+    return '<li><a target="_blank" rel="noopener" href="' + escHtml(n.link) + '"><span class="hrank">' + (i + 1) + '</span>' +
+      '<span class="ht" style="white-space:normal">' + escHtml(String(n.title).replace(/\s+-\s+[^-]{1,20}$/, "")) + '</span>' +
+      '<span class="hmeta">' + src + cnt + '</span></a></li>';
+  }).join("");
+  more.hidden = shown >= rows.length;
+}
+fetch("news.json?t=" + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []).then(d => {
+  rows = d || [];
+  if (!rows.length) { el.innerHTML = '<li class="empty-s">아직 수집된 뉴스가 없어요.</li>'; return; }
+  draw();
+});
+more.onclick = () => { shown += 20; draw(); };
+</script>
+</body>
+</html>

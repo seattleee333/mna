@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>로그인 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.lg-wrap { max-width:440px; margin:48px auto; padding:0 16px; }
+.lg-card { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:30px 28px; }
+.lg-card h1 { margin:0 0 6px; font-size:22px; letter-spacing:-.02em; }
+.lg-card p.s { margin:0 0 22px; color:var(--sub); font-size:14px; line-height:1.55; }
+.sbtn { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; height:48px; border:0; border-radius:11px; font-size:15px; font-weight:700; cursor:pointer; margin-bottom:10px; }
+.sbtn.kakao { background:#fee500; color:#191919; } .sbtn.naver { background:#03c75a; color:#fff; }
+.sbtn.google { background:#fff; color:#3c4043; border:1px solid #dadce0; }
+.sbtn[disabled] { opacity:.45; cursor:not-allowed; }
+.consent { display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--sub); line-height:1.5; margin:0 0 18px; padding:12px; background:var(--bg); border-radius:10px; }
+.consent input { margin-top:3px; }
+.consent b { color:var(--text); }
+.lg-msg { margin-top:14px; font-size:13.5px; text-align:center; color:var(--sub); }
+.lg-msg.err { color:var(--sell); }
+.lg-note { margin-top:18px; font-size:12px; color:var(--faint); line-height:1.6; }
+#gbtn { display:flex; justify-content:center; margin-bottom:10px; }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="index.html">ALL ABOUT M&amp;A</a><nav class="top-nav" id="topNav"></nav>
+</div></header>
+
+<main class="lg-wrap">
+  <div class="lg-card">
+    <h1>로그인 / 회원가입</h1>
+    <p class="s">처음이면 소셜 계정으로 자동 가입돼요. 따로 비밀번호를 만들 필요가 없어요.</p>
+
+    <label class="consent"><input type="checkbox" id="agree">
+      <span><b>[필수] 개인정보 수집·이용에 동의합니다.</b><br>수집 항목: 이름(닉네임), 이메일, 소셜 계정 고유번호 · 목적: 회원 식별 및 서비스 안내 · 보유: 탈퇴 시까지</span></label>
+
+    <div id="gbtn"></div>
+    <button class="sbtn kakao" id="kakaoBtn" type="button">카카오로 계속하기</button>
+    <button class="sbtn naver" id="naverBtn" type="button">네이버로 계속하기</button>
+    <div class="lg-msg" id="msg"></div>
+    <div class="lg-note">회사 재무정보 등 설문 입력값은 서버로 전송되지 않고 내 브라우저에서만 계산돼요. 로그인 정보(이름·이메일)만 회원 관리를 위해 저장됩니다.</div>
+  </div>
+</main>
+
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("login");
+const C = window.MNA_CONFIG, A = window.MNA_AUTH;
+const q = new URLSearchParams(location.search);
+const msg = document.getElementById("msg");
+const REDIRECT = location.origin + location.pathname;
+const say = (t, err) => { msg.textContent = t; msg.className = "lg-msg" + (err ? " err" : ""); };
+const safeNext = n => (n && /^[A-Za-z0-9_\-]+\.html(\?[A-Za-z0-9_=&%\-.]*)?$/.test(n)) ? n : "index.html";
+const nextUrl = () => safeNext(sessionStorage.getItem("mnaNext") || q.get("next"));
+const agree = document.getElementById("agree");
+const rnd = () => Array.from(crypto.getRandomValues(new Uint8Array(12))).map(b => b.toString(16).padStart(2, "0")).join("");
+
+async function finish(payload) {
+  say("로그인 확인 중...");
+  try {
+    const r = await fetch(C.appsScriptUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "로그인에 실패했어요");
+    A.save({ name: j.name, email: j.email, provider: j.provider, at: Date.now() });
+    const n = nextUrl();
+    sessionStorage.removeItem("mnaNext"); sessionStorage.removeItem("mnaState");
+    location.replace(n);
+  } catch (e) { say("로그인에 실패했어요. 잠시 후 다시 시도해주세요. (" + e.message + ")", true); }
+}
+
+if (!A.enabled()) {
+  say("로그인 기능이 아직 설정되지 않았어요. (관리자: docs/로그인-설정.md 참고)", true);
+  document.querySelectorAll(".sbtn").forEach(b => b.disabled = true);
+} else {
+  const pv = A.providers();
+  if (q.get("next")) sessionStorage.setItem("mnaNext", safeNext(q.get("next")));
+  const need = () => { if (!agree.checked) { say("개인정보 수집·이용에 먼저 동의해주세요.", true); return false; } say(""); return true; };
+
+  // 소셜 로그인 후 돌아온 경우 (카카오·네이버)
+  const code = q.get("code"), state = q.get("state");
+  if (code && state) {
+    history.replaceState(null, "", location.pathname);
+    if (state !== sessionStorage.getItem("mnaState")) say("잘못된 로그인 요청이에요. 다시 시도해주세요.", true);
+    else finish({ action: "login", provider: state.split(":")[0], code, state, redirectUri: REDIRECT, consent: true });
+  }
+
+  const kb = document.getElementById("kakaoBtn"), nb = document.getElementById("naverBtn");
+  kb.disabled = !pv.kakao; nb.disabled = !pv.naver;
+  kb.onclick = () => { if (!need()) return; const st = "kakao:" + rnd(); sessionStorage.setItem("mnaState", st);
+    location.href = "https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + encodeURIComponent(C.kakaoRestKey) +
+      "&redirect_uri=" + encodeURIComponent(REDIRECT) + "&state=" + encodeURIComponent(st); };
+  nb.onclick = () => { if (!need()) return; const st = "naver:" + rnd(); sessionStorage.setItem("mnaState", st);
+    location.href = "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=" + encodeURIComponent(C.naverClientId) +
+      "&redirect_uri=" + encodeURIComponent(REDIRECT) + "&state=" + encodeURIComponent(st); };
+
+  if (pv.google) {
+    const s = document.createElement("script");
+    s.src = "https://accounts.google.com/gsi/client"; s.async = true;
+    s.onload = () => {
+      google.accounts.id.initialize({ client_id: C.googleClientId, callback: r => { if (need()) finish({ action: "login", provider: "google", idToken: r.credential, consent: true }); } });
+      google.accounts.id.renderButton(document.getElementById("gbtn"), { theme: "outline", size: "large", text: "continue_with", width: 380, locale: "ko" });
+    };
+    document.head.appendChild(s);
+  }
+}
+</script>
+</body>
+</html>

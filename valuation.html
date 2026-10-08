@@ -21,9 +21,17 @@
 
 <div class="modal-back" id="modal" hidden></div>
 
+<script src="config.js"></script>
+<script src="auth.js"></script>
 <script src="sidebar.js"></script>
 <script src="dcf.js"></script>
 <script src="survey.js"></script>
-<script src="valuation.js"></script>
+<script>
+if (MNA_AUTH.require()) {
+  const s = document.createElement("script");
+  s.src = "valuation.js";
+  document.body.appendChild(s);
+}
+</script>
 </body>
 </html>

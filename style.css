@@ -13,7 +13,7 @@ a { color:inherit; }
 
 /* ── 상단 내비게이션 ───────────────────────────────── */
 .topbar { background:var(--card); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
-.topbar-inner { max-width:1360px; margin:0 auto; padding:0 24px; height:60px;
+.topbar-inner { max-width:none; margin:0 auto; padding:0 24px; height:60px;
                 display:flex; align-items:center; gap:28px; }
 .brand { font-weight:800; font-size:17px; letter-spacing:-.01em; color:var(--text); text-decoration:none;
          white-space:nowrap; }
@@ -23,7 +23,7 @@ a { color:inherit; }
 .top-nav a:hover { background:var(--bg); color:var(--text); }
 .top-nav a.on { background:var(--accent-soft); color:var(--accent); }
 
-.layout { max-width:1360px; margin:0 auto; display:flex; align-items:flex-start; gap:24px;
+.layout { max-width:none; margin:0 auto; justify-content:space-between; display:flex; align-items:flex-start; gap:24px;
           padding:28px 24px 60px; }
 
 main { flex:1; min-width:0; max-width:780px; }
@@ -275,3 +275,23 @@ main { flex:1; min-width:0; max-width:780px; }
   .top-nav::-webkit-scrollbar { display:none; }
   .top-nav a { padding:7px 8px; font-size:12.5px; white-space:nowrap; }
 }
+
+/* 인기뉴스 패널: 5개 + 더보기, 오른쪽 끝 정렬 */
+.news-panel { margin-left:auto; }
+.np-all { margin-left:auto; font-size:12px; font-weight:700; color:var(--accent); text-decoration:none; }
+.news-card.extra { display:none; }
+.news-card-list.expanded .news-card.extra { display:flex; }
+.np-more { margin-top:10px; width:100%; padding:9px; border:1px solid var(--line); background:var(--card); border-radius:10px;
+           font-size:13px; font-weight:700; color:var(--sub); cursor:pointer; }
+.np-more:hover { background:var(--bg); color:var(--text); }
+
+/* 로그인 영역 */
+.topbar-inner { position:relative; }
+.auth-box { margin-left:auto; display:flex; align-items:center; gap:10px; }
+.auth-name { font-size:13.5px; font-weight:700; }
+.auth-btn { border:1px solid var(--line); background:var(--card); border-radius:9px; padding:7px 12px; font-size:13px; font-weight:700;
+            color:var(--sub); cursor:pointer; text-decoration:none; }
+.auth-btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+@media (max-width:680px) { .auth-name { display:none; } }
+.sell-card-price { margin-top:12px; font-size:12.5px; color:var(--sub); background:var(--bg); border-radius:8px; padding:7px 10px; display:inline-block; }
+.sell-card-price b { color:var(--text); }

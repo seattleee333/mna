@@ -25,7 +25,7 @@
 
     <section class="hcard">
       <h2>🔥 M&amp;A 핫뉴스 TOP 5</h2>
-      <p class="sub">오늘 가장 많이 보도된 순</p>
+      <p class="sub">겹치지 않는 이슈만 · 많이 보도된 순 · <a class="more" href="news.html">전체보기</a></p>
       <ul class="hlist" id="hot"><li class="empty-s">불러오는 중...</li></ul>
     </section>
 
@@ -95,6 +95,8 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
+<script src="auth.js"></script>
 <script src="sidebar.js"></script>
 <script>
 renderSidebar("home");
@@ -121,7 +123,7 @@ function rel(iso) {
 get("news.json").then(list => {
   const el = document.getElementById("hot");
   if (!list.length) { el.innerHTML = '<li class="empty-s">아직 수집된 뉴스가 없어요.</li>'; return; }
-  el.innerHTML = list.slice(0, 5).map((n, i) =>
+  el.innerHTML = pickDistinctNews(list, 5).map((n, i) =>
     '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="hrank">' + (i + 1) + '</span>' +
     '<span class="ht">' + esc(clean(n.title)) + '</span></a></li>').join("");
 });
@@ -132,8 +134,8 @@ get("deals.json").then(list => {
       && d.target && d.target.length <= 40 && !/\n/.test(d.target))
     .sort((a, b) => b.date.localeCompare(a.date) || b.amount - a.amount).slice(0, 5);
   if (!rows.length) { el.innerHTML = '<li class="empty-s">표시할 인수 소식이 없어요.</li>'; return; }
-  el.innerHTML = rows.map(d =>
-    '<li class="deal-line"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no) + '"><span class="ht"><b>' + esc(d.corp_name) +
+  el.innerHTML = rows.map((d, i) =>
+    '<li class="deal-line"><a href="detail.html?no=' + encodeURIComponent(d.rcept_no) + '"><span class="hrank">' + (i + 1) + '</span><span class="ht"><b>' + esc(d.corp_name) +
     '</b>' + josa(d.corp_name, "이", "가") + ' <b>' + esc(d.target) + '</b>' + josa(d.target, "을", "를") + ' <span class="amt">' + fmtWon(d.amount) + '</span>에 인수</span>' +
     '<span class="hmeta">' + d.date.slice(4, 6) + "." + d.date.slice(6, 8) + '</span></a></li>').join("");
 });
@@ -141,16 +143,16 @@ get("deals.json").then(list => {
 get("jobs.json").then(list => {
   const el = document.getElementById("jobs");
   if (!list.length) { el.innerHTML = '<li class="empty-s">채용공고를 불러오는 중이에요. 매일 아침 갱신돼요.</li>'; return; }
-  el.innerHTML = list.map(n =>
-    '<li class="job"><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="ht"><b>' + esc(n.company) + '</b> ' +
+  el.innerHTML = list.map((n, i) =>
+    '<li class="job"><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="hrank">' + (i + 1) + '</span><span class="ht"><b>' + esc(n.company) + '</b> ' +
     esc(n.title.replace(/^\[[^\]]*\]\s*/, "")) + '</span><span class="hmeta">' + n.date.slice(5).replace("-", ".") + '</span></a></li>').join("");
 });
 
 get("thebell.json").then(list => {
   const el = document.getElementById("bell");
   if (!list.length) { el.innerHTML = '<li class="empty-s">더벨 기사를 불러오는 중이에요. 매일 아침 갱신돼요.</li>'; return; }
-  el.innerHTML = list.map(n =>
-    '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="ht">' + esc(n.title) +
+  el.innerHTML = list.map((n, i) =>
+    '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="hrank">' + (i + 1) + '</span><span class="ht">' + esc(n.title) +
     '</span><span class="hmeta">' + rel(n.pubDate) + '</span></a></li>').join("");
 });
 </script>
