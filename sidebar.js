@@ -7,6 +7,7 @@ function renderSidebar(active) {
   const el = document.getElementById("topNav");
   if (!el) return;
   renderAuthBox(el);
+  renderFooter();
   el.innerHTML =
     '<a href="deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
     '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
@@ -98,4 +99,40 @@ function pickDistinctNews(list, limit) {
     if (out.length >= limit) break;
   }
   return out;
+}
+
+// 모든 페이지 공통 푸터 (회사 정보는 이 한 곳에서만 수정)
+function renderFooter() {
+  if (document.getElementById("contact")) return;
+  const f = document.createElement("footer");
+  f.className = "hfooter";
+  f.id = "contact";
+  f.innerHTML = `<div class="hfooter-in">
+    <nav class="fnav">
+      <a href="deals.html">딜클로징 리스트</a>
+      <a href="listings.html">매물·인수희망</a>
+      <a href="sell.html">매각하기</a>
+      <a href="#">공지사항</a>
+      <a href="#">자주 묻는 질문</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="mailto:contact@example.com">제휴·광고 문의</a>
+    </nav>
+    <div class="finfo">
+      <span><b>[회사명]</b></span>
+      <span>대표자: [대표자명]</span>
+      <span>개인정보관리책임자: [성명]</span>
+      <span>사업자등록번호: [000-00-00000]</span>
+      <span>통신판매업신고: [신고번호]</span>
+    </div>
+    <div class="finfo">
+      <span>주소: [사업장 주소]</span>
+      <span>문의·제휴: [contact@example.com]</span>
+      <span>전화: [000-0000-0000]</span>
+    </div>
+    <div class="fdisc">ALL ABOUT M&amp;A의 모든 정보는 DART 공시와 공개 보도를 자동 분류·요약한 참고 자료이며, 투자·거래 판단의 근거가 될 수 없습니다. 정확한 내용은 원문을 확인하세요.<br>
+      기업가치 간이평가 결과는 입력값과 시장 가정에 따른 추정치로, 실제 거래 가격과 다를 수 있습니다.</div>
+    <div class="fcopy">Copyright © [회사명] All rights reserved.</div>
+  </div>`;
+  document.body.appendChild(f);
 }
