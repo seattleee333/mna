@@ -38,6 +38,7 @@ LIST_TYPES = ["B001", "I001"]   # 주요사항보고서(금융위), 수시공시
 _log_lines = []
 _lock = threading.Lock()
 _quota_hit = False
+_doc_errors = 0
 
 
 def log(msg):
@@ -189,6 +190,12 @@ def doc_tokens(rcept_no):
     raw = call("document.xml", {"rcept_no": rcept_no}, raw=True)
     if not raw:
         return None
+    if raw[:5] == b"<?xml":      # zip이 아니라 오류 응답(예: 800 시스템 점검)
+        global _doc_errors
+        _doc_errors += 1
+        if _doc_errors <= 3:
+            log("원문 조회 오류 응답: " + raw[:300].decode("utf-8", "replace"))
+        return None
     try:
         z = zipfile.ZipFile(io.BytesIO(raw))
         name = z.namelist()[0]
@@ -258,6 +265,8 @@ def doc_info(cache, f):
     cur = docs.get(rno)
     if cur and cur.get("v") == PARSER_VERSION:
         return cur
+    if _doc_errors >= 8:        # 점검 중 등으로 계속 실패하면 더 호출하지 않는다
+        return {}
     tokens = doc_tokens(rno)
     time.sleep(0.1)
     if tokens is None:
