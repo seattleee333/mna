@@ -27,6 +27,7 @@ renderNewsPanel();
 const id = new URLSearchParams(location.search).get("id") === "expensive" ? "expensive" : "active";
 const view = document.getElementById("view");
 
+const tidy = t => String(t || "-").replace(/^당사의\s*/, "");
 function fmtWon(n) {
   if (!n) return "-";
   if (n >= 1e12) { const j = Math.floor(n / 1e12), e = Math.round((n % 1e12) / 1e8); return j.toLocaleString() + "조" + (e ? " " + e.toLocaleString() + "억원" : "원"); }
@@ -81,13 +82,15 @@ function renderExpensive(d) {
   if (!list || !list.length) return empty(T, L);
   const top = list[0];
   let html = head(T, L);
-  html += '<div class="dnote" style="background:var(--accent-soft);color:var(--text);margin:0 0 8px"><b>1위 · ' + escHtml(top.corp_name) + '</b>이(가) ' +
-    escHtml(top.target || "-") + (top.buyer ? ' 관련 거래를 <b>' + escHtml(top.buyer) + '</b>에 ' : ' 거래를 ') +
-    '<b>' + fmtWon(top.amount) + '</b>에 매각하기로 결정했습니다 (' + fmtDate(top.date) + ' 공시).</div>';
+  const josa = (w, a, b) => { const c = String(w).trim().slice(-1).charCodeAt(0); return (c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 !== 0) ? a : b; };
+  const verb = top.type === "사업(영업) 양도" ? "양도" : "매각";
+  html += '<div class="dnote" style="background:var(--accent-soft);color:var(--text);margin:0 0 8px"><b>1위 · ' + escHtml(top.corp_name) + '</b> — ' +
+    (top.buyer ? '<b>' + escHtml(top.buyer) + '</b>에게 ' : '') + '‘' + escHtml(tidy(top.target)) + '’' + josa(tidy(top.target), "을", "를") + ' ' +
+    '<b>' + fmtWon(top.amount) + '</b>에 ' + verb + '하기로 결정 (' + fmtDate(top.date) + ' 공시)</div>';
   html += list.slice(0, 10).map((r, i) =>
     '<div class="drow"><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
     '<div class="dinfo"><div class="dname">' + escHtml(r.corp_name) + '</div>' +
-    '<div class="dsub">' + escHtml(r.type) + ' · 대상: ' + escHtml(r.target || "-") + (r.buyer ? ' · 상대방: ' + escHtml(r.buyer) : "") +
+    '<div class="dsub">' + escHtml(r.type) + ' · 대상: ' + escHtml(tidy(r.target)) + (r.buyer ? ' · 상대방: ' + escHtml(r.buyer) : "") +
     (r.stake_after ? ' · 매각 후 지분율 ' + escHtml(r.stake_after) + '%' : "") + '</div>' +
     '<div class="dsub">공시일 ' + fmtDate(r.date) + '</div>' +
     '<div class="dsrc"><a target="_blank" rel="noopener" href="' + dartLink(r.rcept_no) + '">공시 원문 보기 ›</a></div></div>' +

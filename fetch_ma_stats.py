@@ -172,7 +172,7 @@ def amount(v):
 
 
 def clean(v):
-    s = (str(v).strip() if v is not None else "")
+    s = re.sub(r"\s+", " ", str(v)).strip() if v is not None else ""
     return None if s in ("", "-") else s
 
 

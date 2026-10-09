@@ -541,7 +541,7 @@
    "rcept_no": "20250123000423",
    "date": "20250123",
    "target": "당사의 특수가스사업부",
-   "buyer": "효성네오켐 주식회사\n(Hyosung  Corporation)",
+   "buyer": "효성네오켐 주식회사 (Hyosung Corporation)",
    "amount": 920000000000,
    "stake_after": null,
    "type": "사업(영업) 양도"
@@ -745,7 +745,7 @@
    "rcept_no": "20220221002132",
    "date": "20220221",
    "target": "SG의 레미콘사업부문 포괄양도",
-   "buyer": "(주)장원산업  /  삼양알엠씨(주)",
+   "buyer": "(주)장원산업 / 삼양알엠씨(주)",
    "amount": 67000000000,
    "stake_after": null,
    "type": "사업(영업) 양도"
