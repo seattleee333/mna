@@ -3,108 +3,21 @@
  "since": "20211009",
  "complete": false,
  "totals": {
-  "acq_filings": 1326,
-  "disp_filings": 318,
-  "biz_out_filings": 22
+  "acq_filings": 2073,
+  "disp_filings": 508,
+  "biz_out_filings": 36
  },
  "active": {
   "top10": [
    {
-    "corp_code": "00162461",
-    "corp_name": "한화솔루션",
-    "stock_code": "009830",
-    "count": 9,
+    "corp_code": "01336762",
+    "corp_name": "스피어",
+    "stock_code": "347700",
+    "count": 14,
     "by_year": {
-     "2021": 2,
-     "2022": 5,
-     "2023": 2
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "01160363",
-    "corp_name": "에코프로비엠",
-    "stock_code": "247540",
-    "count": 8,
-    "by_year": {
-     "2022": 4,
-     "2023": 4
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "00327396",
-    "corp_name": "옵트론텍",
-    "stock_code": "082210",
-    "count": 8,
-    "by_year": {
-     "2022": 2,
-     "2023": 6
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "00766106",
-    "corp_name": "엣지파운드리",
-    "stock_code": "105550",
-    "count": 7,
-    "by_year": {
-     "2021": 1,
-     "2022": 4,
-     "2023": 2
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "00104519",
-    "corp_name": "국보",
-    "stock_code": "001140",
-    "count": 7,
-    "by_year": {
-     "2021": 1,
-     "2022": 1,
-     "2023": 4,
-     "2024": 1
-    },
-    "top_targets": [
-     {
-      "name": "주식회사 아이에스이커머스",
-      "amount": 21510000000
-     }
-    ]
-   },
-   {
-    "corp_code": "00547583",
-    "corp_name": "하나금융지주",
-    "stock_code": "086790",
-    "count": 7,
-    "by_year": {
-     "2021": 1,
-     "2022": 4,
-     "2023": 2
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "00378220",
-    "corp_name": "버킷스튜디오",
-    "stock_code": "066410",
-    "count": 7,
-    "by_year": {
-     "2021": 3,
-     "2022": 4
-    },
-    "top_targets": []
-   },
-   {
-    "corp_code": "00854997",
-    "corp_name": "에스디바이오센서",
-    "stock_code": "137310",
-    "count": 7,
-    "by_year": {
-     "2021": 2,
-     "2022": 3,
-     "2023": 2
+     "2023": 1,
+     "2025": 1,
+     "2026": 12
     },
     "top_targets": []
    },
@@ -112,41 +25,243 @@
     "corp_code": "01316236",
     "corp_name": "효성화학",
     "stock_code": "298000",
-    "count": 7,
+    "count": 12,
     "by_year": {
      "2022": 2,
-     "2023": 4,
-     "2024": 1
+     "2023": 3,
+     "2024": 4,
+     "2025": 2,
+     "2026": 1
     },
     "top_targets": []
    },
    {
-    "corp_code": "00469799",
-    "corp_name": "이엔플러스",
-    "stock_code": "074610",
-    "count": 7,
+    "corp_code": "00556907",
+    "corp_name": "에이스테크",
+    "stock_code": "088800",
+    "count": 10,
     "by_year": {
      "2022": 3,
-     "2023": 3,
-     "2024": 1
+     "2023": 1,
+     "2024": 2,
+     "2025": 2,
+     "2026": 2
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00547583",
+    "corp_name": "하나금융지주",
+    "stock_code": "086790",
+    "count": 10,
+    "by_year": {
+     "2021": 1,
+     "2022": 4,
+     "2023": 2,
+     "2024": 2,
+     "2025": 1
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00126566",
+    "corp_name": "한화에어로스페이스",
+    "stock_code": "012450",
+    "count": 10,
+    "by_year": {
+     "2022": 2,
+     "2023": 2,
+     "2024": 3,
+     "2025": 1,
+     "2026": 2
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00139889",
+    "corp_name": "SKC",
+    "stock_code": "011790",
+    "count": 9,
+    "by_year": {
+     "2021": 3,
+     "2022": 2,
+     "2023": 1,
+     "2024": 2,
+     "2026": 1
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00791209",
+    "corp_name": "메타케어",
+    "stock_code": "118000",
+    "count": 9,
+    "by_year": {
+     "2021": 2,
+     "2022": 4,
+     "2024": 1,
+     "2025": 1,
+     "2026": 1
     },
     "top_targets": [
      {
-      "name": "주식회사 바이오로그디바이스",
-      "amount": 14998200000
+      "name": "주식회사 메타마케팅",
+      "amount": 43780063680
+     },
+     {
+      "name": "주식회사 테크랩스",
+      "amount": 17500010000
      }
     ]
+   },
+   {
+    "corp_code": "01276594",
+    "corp_name": "신한알파리츠",
+    "stock_code": "293940",
+    "count": 9,
+    "by_year": {
+     "2022": 2,
+     "2023": 3,
+     "2024": 2,
+     "2025": 1,
+     "2026": 1
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00220109",
+    "corp_name": "알파AI",
+    "stock_code": "043100",
+    "count": 9,
+    "by_year": {
+     "2021": 2,
+     "2022": 3,
+     "2025": 2,
+     "2026": 2
+    },
+    "top_targets": []
+   },
+   {
+    "corp_code": "00162461",
+    "corp_name": "한화솔루션",
+    "stock_code": "009830",
+    "count": 9,
+    "by_year": {
+     "2021": 2,
+     "2022": 4,
+     "2023": 2,
+     "2025": 1
+    },
+    "top_targets": []
    }
   ],
   "next": [
    {
-    "corp_code": "01515323",
-    "corp_name": "LG에너지솔루션",
-    "stock_code": "373220",
+    "corp_code": "01817081",
+    "corp_name": "SK이터닉스",
+    "stock_code": "475150",
+    "count": 8,
+    "by_year": {
+     "2024": 5,
+     "2025": 2,
+     "2026": 1
+    }
+   },
+   {
+    "corp_code": "00486705",
+    "corp_name": "아주스틸",
+    "stock_code": "139990",
+    "count": 8,
+    "by_year": {
+     "2022": 1,
+     "2023": 2,
+     "2024": 5
+    }
+   },
+   {
+    "corp_code": "01011526",
+    "corp_name": "엔켐",
+    "stock_code": "348370",
+    "count": 8,
+    "by_year": {
+     "2021": 2,
+     "2022": 2,
+     "2023": 1,
+     "2025": 3
+    }
+   },
+   {
+    "corp_code": "00766106",
+    "corp_name": "엣지파운드리",
+    "stock_code": "105550",
+    "count": 8,
+    "by_year": {
+     "2021": 1,
+     "2022": 4,
+     "2023": 2,
+     "2024": 1
+    }
+   },
+   {
+    "corp_code": "00152862",
+    "corp_name": "코오롱",
+    "stock_code": "002020",
+    "count": 8,
+    "by_year": {
+     "2021": 1,
+     "2022": 2,
+     "2023": 1,
+     "2024": 3,
+     "2025": 1
+    }
+   },
+   {
+    "corp_code": "00125080",
+    "corp_name": "AK홀딩스",
+    "stock_code": "006840",
     "count": 7,
     "by_year": {
+     "2021": 1,
+     "2022": 1,
+     "2023": 2,
+     "2024": 1,
+     "2025": 1,
+     "2026": 1
+    }
+   },
+   {
+    "corp_code": "00199252",
+    "corp_name": "HLB",
+    "stock_code": "028300",
+    "count": 7,
+    "by_year": {
+     "2021": 1,
+     "2022": 2,
+     "2023": 3,
+     "2024": 1
+    }
+   },
+   {
+    "corp_code": "01386916",
+    "corp_name": "SK아이이테크놀로지",
+    "stock_code": "361610",
+    "count": 7,
+    "by_year": {
+     "2021": 1,
      "2022": 3,
-     "2023": 4
+     "2025": 1,
+     "2026": 2
+    }
+   },
+   {
+    "corp_code": "00102858",
+    "corp_name": "고려아연",
+    "stock_code": "010130",
+    "count": 7,
+    "by_year": {
+     "2022": 4,
+     "2024": 1,
+     "2025": 2
     }
    },
    {
@@ -160,6 +275,29 @@
     }
    },
    {
+    "corp_code": "00453929",
+    "corp_name": "메디포스트",
+    "stock_code": "078160",
+    "count": 7,
+    "by_year": {
+     "2022": 1,
+     "2023": 1,
+     "2024": 2,
+     "2025": 1,
+     "2026": 2
+    }
+   },
+   {
+    "corp_code": "00378220",
+    "corp_name": "버킷스튜디오",
+    "stock_code": "066410",
+    "count": 7,
+    "by_year": {
+     "2021": 3,
+     "2022": 4
+    }
+   },
+   {
     "corp_code": "01526806",
     "corp_name": "삼기에너지솔루션즈",
     "stock_code": "419050",
@@ -170,188 +308,114 @@
     }
    },
    {
-    "corp_code": "00139889",
-    "corp_name": "SKC",
-    "stock_code": "011790",
-    "count": 6,
-    "by_year": {
-     "2021": 3,
-     "2022": 2,
-     "2023": 1
-    }
-   },
-   {
-    "corp_code": "00163716",
-    "corp_name": "한창",
-    "stock_code": "005110",
-    "count": 6,
-    "by_year": {
-     "2021": 1,
-     "2022": 5
-    }
-   },
-   {
-    "corp_code": "01011526",
-    "corp_name": "엔켐",
-    "stock_code": "348370",
-    "count": 6,
+    "corp_code": "00854997",
+    "corp_name": "에스디바이오센서",
+    "stock_code": "137310",
+    "count": 7,
     "by_year": {
      "2021": 2,
-     "2022": 2,
-     "2023": 2
-    }
-   },
-   {
-    "corp_code": "01204056",
-    "corp_name": "하이브",
-    "stock_code": "352820",
-    "count": 6,
-    "by_year": {
-     "2021": 1,
-     "2022": 1,
-     "2023": 3,
-     "2024": 1
-    }
-   },
-   {
-    "corp_code": "00199252",
-    "corp_name": "HLB",
-    "stock_code": "028300",
-    "count": 6,
-    "by_year": {
-     "2021": 1,
-     "2022": 2,
-     "2023": 3
-    }
-   },
-   {
-    "corp_code": "00791209",
-    "corp_name": "메타케어",
-    "stock_code": "118000",
-    "count": 6,
-    "by_year": {
-     "2021": 2,
-     "2022": 4
-    }
-   },
-   {
-    "corp_code": "00453488",
-    "corp_name": "다이나믹디자인",
-    "stock_code": "145210",
-    "count": 6,
-    "by_year": {
-     "2021": 1,
-     "2022": 1,
-     "2023": 4
-    }
-   },
-   {
-    "corp_code": "00152862",
-    "corp_name": "코오롱",
-    "stock_code": "002020",
-    "count": 6,
-    "by_year": {
-     "2021": 1,
-     "2022": 2,
-     "2023": 1,
-     "2024": 2
-    }
-   },
-   {
-    "corp_code": "00120562",
-    "corp_name": "롯데지주",
-    "stock_code": "004990",
-    "count": 6,
-    "by_year": {
-     "2022": 6
-    }
-   },
-   {
-    "corp_code": "00486705",
-    "corp_name": "아주스틸",
-    "stock_code": "139990",
-    "count": 6,
-    "by_year": {
-     "2022": 1,
-     "2023": 3,
-     "2024": 2
-    }
-   },
-   {
-    "corp_code": "00991225",
-    "corp_name": "더콘텐츠온",
-    "stock_code": "302920",
-    "count": 6,
-    "by_year": {
-     "2023": 6
-    }
-   },
-   {
-    "corp_code": "00356361",
-    "corp_name": "LG화학",
-    "stock_code": "051910",
-    "count": 5,
-    "by_year": {
-     "2021": 1,
-     "2022": 2,
-     "2023": 2
-    }
-   },
-   {
-    "corp_code": "00165413",
-    "corp_name": "롯데케미칼",
-    "stock_code": "011170",
-    "count": 5,
-    "by_year": {
-     "2021": 2,
-     "2022": 3
-    }
-   },
-   {
-    "corp_code": "00220109",
-    "corp_name": "알파AI",
-    "stock_code": "043100",
-    "count": 5,
-    "by_year": {
-     "2021": 2,
-     "2022": 3
-    }
-   },
-   {
-    "corp_code": "01394377",
-    "corp_name": "이지스밸류플러스리츠",
-    "stock_code": "334890",
-    "count": 5,
-    "by_year": {
-     "2021": 4,
-     "2022": 1
-    }
-   },
-   {
-    "corp_code": "00120076",
-    "corp_name": "LX인터내셔널",
-    "stock_code": "001120",
-    "count": 5,
-    "by_year": {
-     "2021": 1,
      "2022": 3,
-     "2024": 1
+     "2023": 2
+    }
+   },
+   {
+    "corp_code": "00327396",
+    "corp_name": "옵트론텍",
+    "stock_code": "082210",
+    "count": 7,
+    "by_year": {
+     "2022": 2,
+     "2023": 3,
+     "2024": 1,
+     "2026": 1
+    }
+   },
+   {
+    "corp_code": "00469799",
+    "corp_name": "이엔플러스",
+    "stock_code": "074610",
+    "count": 7,
+    "by_year": {
+     "2022": 2,
+     "2023": 3,
+     "2024": 1,
+     "2025": 1
     }
    },
    {
     "corp_code": "00155276",
     "corp_name": "포스코퓨처엠",
     "stock_code": "003670",
-    "count": 5,
+    "count": 7,
     "by_year": {
      "2021": 1,
      "2022": 1,
-     "2023": 3
+     "2023": 3,
+     "2025": 2
+    }
+   },
+   {
+    "corp_code": "01204056",
+    "corp_name": "하이브",
+    "stock_code": "352820",
+    "count": 7,
+    "by_year": {
+     "2021": 1,
+     "2022": 1,
+     "2023": 3,
+     "2024": 2
+    }
+   },
+   {
+    "corp_code": "00111704",
+    "corp_name": "한화오션",
+    "stock_code": "042660",
+    "count": 7,
+    "by_year": {
+     "2023": 1,
+     "2024": 4,
+     "2025": 2
+    }
+   },
+   {
+    "corp_code": "01437186",
+    "corp_name": "ESR켄달스퀘어리츠",
+    "stock_code": "365550",
+    "count": 6,
+    "by_year": {
+     "2022": 1,
+     "2023": 3,
+     "2024": 1,
+     "2025": 1
     }
    }
   ]
  },
  "expensive": [
+  {
+   "corp_code": "01316236",
+   "corp_name": "효성화학",
+   "stock_code": "298000",
+   "rcept_no": "20250123000423",
+   "date": "20250123",
+   "target": "당사의 특수가스사업부",
+   "buyer": "효성네오켐 주식회사\n(Hyosung  Corporation)",
+   "amount": 920000000000,
+   "stake_after": null,
+   "type": "사업(영업) 양도"
+  },
+  {
+   "corp_code": "01011526",
+   "corp_name": "엔켐",
+   "stock_code": "348370",
+   "rcept_no": "20261008000178",
+   "date": "20261008",
+   "target": "Enchem America Inc.",
+   "buyer": "THE GROWHUB LIMITED",
+   "amount": 596880000000,
+   "stake_after": null,
+   "type": "타법인 지분 매각"
+  },
   {
    "corp_code": "01497869",
    "corp_name": "티와이홀딩스",
@@ -363,6 +427,18 @@
    "amount": 426000000000,
    "stake_after": "0.00",
    "type": "타법인 지분 매각"
+  },
+  {
+   "corp_code": "00307189",
+   "corp_name": "에스케이엔펄스",
+   "stock_code": "057500",
+   "rcept_no": "20250404003952",
+   "date": "20250404",
+   "target": "CMP PAD 사업부문",
+   "buyer": "엔펄스 주식회사",
+   "amount": 334611334860,
+   "stake_after": null,
+   "type": "사업(영업) 양도"
   },
   {
    "corp_code": "00307189",
@@ -401,6 +477,18 @@
    "type": "사업(영업) 양도"
   },
   {
+   "corp_code": "00350048",
+   "corp_name": "오성첨단소재",
+   "stock_code": "052420",
+   "rcept_no": "20260409002970",
+   "date": "20260409",
+   "target": "DISPLAY 소재사업부문",
+   "buyer": "오성하이테크놀로지(주)",
+   "amount": 160000000000,
+   "stake_after": null,
+   "type": "사업(영업) 양도"
+  },
+  {
    "corp_code": "01205842",
    "corp_name": "HD건설기계",
    "stock_code": "267270",
@@ -413,28 +501,16 @@
    "type": "사업(영업) 양도"
   },
   {
-   "corp_code": "00482426",
-   "corp_name": "인화정공",
-   "stock_code": "101930",
-   "rcept_no": "20240208001287",
-   "date": "20240208",
-   "target": "HSD엔진주식회사",
-   "buyer": "한화임팩트(주)",
-   "amount": 137438072000,
-   "stake_after": "11.53",
-   "type": "타법인 지분 매각"
-  },
-  {
-   "corp_code": "00366942",
-   "corp_name": "미코",
-   "stock_code": "059090",
-   "rcept_no": "20230601000332",
-   "date": "20230601",
-   "target": "주식회사 미코세라믹스",
-   "buyer": "주식회사 코미코",
-   "amount": 132504560067,
-   "stake_after": "0.0",
-   "type": "타법인 지분 매각"
+   "corp_code": "00274933",
+   "corp_name": "신세계푸드",
+   "stock_code": "031440",
+   "rcept_no": "20260319000877",
+   "date": "20260319",
+   "target": "급식사업부문",
+   "buyer": "고메드갤러리아 주식회사",
+   "amount": 118904071260,
+   "stake_after": null,
+   "type": "사업(영업) 양도"
   },
   {
    "corp_code": "00444329",
@@ -449,6 +525,18 @@
    "type": "타법인 지분 매각"
   },
   {
+   "corp_code": "00234412",
+   "corp_name": "신세계인터내셔날",
+   "stock_code": "031430",
+   "rcept_no": "20260212001668",
+   "date": "20260212",
+   "target": "JAJU사업부문",
+   "buyer": "(주)신세계까사",
+   "amount": 91673974973,
+   "stake_after": null,
+   "type": "사업(영업) 양도"
+  },
+  {
    "corp_code": "00458562",
    "corp_name": "에이티세미콘",
    "stock_code": "089530",
@@ -459,18 +547,6 @@
    "amount": 76000000000,
    "stake_after": null,
    "type": "사업(영업) 양도"
-  },
-  {
-   "corp_code": "00163716",
-   "corp_name": "한창",
-   "stock_code": "005110",
-   "rcept_no": "20250529000734",
-   "date": "20250529",
-   "target": "한주케미칼 주식회사",
-   "buyer": "에스티베타제일차 주식회사",
-   "amount": 74171900000,
-   "stake_after": null,
-   "type": "타법인 지분 매각"
   },
   {
    "corp_code": "00963976",
@@ -497,6 +573,18 @@
    "type": "사업(영업) 양도"
   },
   {
+   "corp_code": "00545734",
+   "corp_name": "아미코젠",
+   "stock_code": "092040",
+   "rcept_no": "20250110000603",
+   "date": "20250110",
+   "target": "아미코젠(중국)바이오팜유한공사",
+   "buyer": "산동중딩바이오텍유한공사",
+   "amount": 54741696480,
+   "stake_after": "14.36",
+   "type": "타법인 지분 매각"
+  },
+  {
    "corp_code": "00145260",
    "corp_name": "율촌화학",
    "stock_code": "008730",
@@ -521,75 +609,27 @@
    "type": "사업(영업) 양도"
   },
   {
-   "corp_code": "00136776",
-   "corp_name": "차AI헬스케어",
-   "stock_code": "025620",
-   "rcept_no": "20220906000229",
-   "date": "20220906",
-   "target": "(주)알에프텍 (RFTech CO.,LTD.)",
-   "buyer": "(주)이도헬스케어 (IDO Healthcare Co.,LTD.) 외 1명",
-   "amount": 35022980680,
-   "stake_after": null,
-   "type": "타법인 지분 매각"
-  },
-  {
-   "corp_code": "00494616",
-   "corp_name": "포인트임플란트",
+   "corp_code": "00821218",
+   "corp_name": "엑스엘게임즈",
    "stock_code": "",
-   "rcept_no": "20240312000841",
-   "date": "20240312",
-   "target": "EMR 사업부문",
-   "buyer": "주식회사 이지스헬스케어",
-   "amount": 27000000000,
+   "rcept_no": "20260908000408",
+   "date": "20260908",
+   "target": "게임 사업 일부",
+   "buyer": "주식회사 얼라인스튜디오 (alinestudio corp.)",
+   "amount": 39221943293,
    "stake_after": null,
    "type": "사업(영업) 양도"
   },
   {
-   "corp_code": "00414850",
-   "corp_name": "효성 ITX",
-   "stock_code": "094280",
-   "rcept_no": "20221107000323",
-   "date": "20221107",
-   "target": "갤럭시아머니트리(주)\n(GalaxiaMoneytree Co.,Ltd.)",
-   "buyer": "주식회사 갤럭시아에스엠",
-   "amount": 24999998760,
-   "stake_after": "4.33",
-   "type": "타법인 지분 매각"
-  },
-  {
-   "corp_code": "00111458",
-   "corp_name": "대영포장",
-   "stock_code": "014160",
-   "rcept_no": "20220812000778",
-   "date": "20220812",
-   "target": "대영포장(주)달성공장 사업부문",
-   "buyer": "대양제지공업(주)",
-   "amount": 22400000000,
+   "corp_code": "00249894",
+   "corp_name": "테라젠이텍스",
+   "stock_code": "066700",
+   "rcept_no": "20241122000476",
+   "date": "20241122",
+   "target": "(주)메드팩토",
+   "buyer": null,
+   "amount": 35700722360,
    "stake_after": null,
-   "type": "사업(영업) 양도"
-  },
-  {
-   "corp_code": "00529815",
-   "corp_name": "오디텍",
-   "stock_code": "080520",
-   "rcept_no": "20240213000563",
-   "date": "20240213",
-   "target": "주식회사 리노스",
-   "buyer": "(주)폴라리스우노",
-   "amount": 21300000000,
-   "stake_after": null,
-   "type": "타법인 지분 매각"
-  },
-  {
-   "corp_code": "00327396",
-   "corp_name": "옵트론텍",
-   "stock_code": "082210",
-   "rcept_no": "20230811002261",
-   "date": "20230811",
-   "target": "주식회사 웰랑",
-   "buyer": "웰투시인베스트먼트리빌딩챔피언제3호 주식회사",
-   "amount": 19605706692,
-   "stake_after": "0",
    "type": "타법인 지분 매각"
   }
  ]
