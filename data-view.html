@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&A 데이터 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<div class="layout">
+  <main><div class="dview" id="view"><div class="dempty">불러오는 중...</div></div></main>
+  <aside class="news-panel" id="newsPanel"></aside>
+</div>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("data");
+renderNewsPanel();
+
+const id = new URLSearchParams(location.search).get("id") === "expensive" ? "expensive" : "active";
+const view = document.getElementById("view");
+
+function fmtWon(n) {
+  if (!n) return "-";
+  if (n >= 1e12) { const j = Math.floor(n / 1e12), e = Math.round((n % 1e12) / 1e8); return j.toLocaleString() + "조" + (e ? " " + e.toLocaleString() + "억원" : "원"); }
+  if (n >= 1e8) return Math.round(n / 1e8).toLocaleString() + "억원";
+  return Math.round(n / 1e4).toLocaleString() + "만원";
+}
+const fmtDate = d => d ? d.slice(0, 4) + "." + d.slice(4, 6) + "." + d.slice(6, 8) : "";
+const dartLink = r => "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=" + r;
+function head(title, lead) {
+  return '<a class="back" href="data.html">‹ M&amp;A 데이터</a><h1>' + title + '</h1><p class="lead">' + lead + '</p>';
+}
+function empty(title, lead) {
+  view.innerHTML = head(title, lead) + '<div class="dempty">📊 데이터를 집계하고 있어요.<br>공시 원문 집계가 끝나면 이곳에 표시됩니다.</div>';
+}
+function coverNote(d, lines) {
+  return '<div class="dnote"><b>집계 기준 · 유의사항</b><br>' + lines.join("<br>") +
+    (d.complete === false ? '<br>※ 이번 집계는 시간 제한으로 일부 구간이 빠졌을 수 있습니다.' : "") +
+    '<br>데이터 출처: 금융감독원 전자공시시스템(DART) 공시 원문 · 기간 ' + fmtDate(d.since) + ' ~ ' + fmtDate(d.updated) + '</div>';
+}
+
+function renderActive(d) {
+  const T = "우리나라에서 가장 M&A를 활발하게 한 기업은?";
+  const L = "최근 5년간 타법인 주식 및 출자증권 취득을 가장 많이 결정한 기업 TOP 10 (공시 건수 기준)";
+  const list = d.active && d.active.top10;
+  if (!list || !list.length) return empty(T, L);
+  const max = list[0].count;
+  const years = Object.keys(list[0].by_year || {});
+  let html = head(T, L);
+  html += list.map((r, i) => {
+    const by = Object.entries(r.by_year || {}).map(([y, n]) => y + "년 " + n + "건").join(" · ");
+    const tg = (r.top_targets || []).length
+      ? '<div class="dsub">주요 취득 대상: ' + r.top_targets.map(t => escHtml(t.name) + " (" + fmtWon(t.amount) + ")").join(", ") + '</div>' : "";
+    return '<div class="drow"><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
+      '<div class="dinfo"><div class="dname">' + escHtml(r.corp_name) + '</div>' +
+      '<div class="dsub">' + by + '</div>' + tg +
+      '<div class="dbar"><i style="width:' + Math.round(r.count / max * 100) + '%"></i></div></div>' +
+      '<div class="dcount">' + r.count + '<small>건</small></div></div>';
+  }).join("");
+  html += coverNote(d, [
+    "· ‘인수’는 <b>타법인 주식 및 출자증권 취득결정</b> 공시 건수입니다. 지분 소액 취득·출자·계열사 증자 참여가 함께 포함될 수 있어, 모두 경영권 인수는 아닙니다.",
+    "· 종속회사 주요경영사항 공시와 정정공시는 제외했습니다.",
+    "· 주요 취득 대상·금액은 공시 상세 내역에서 확인되는 건만 표시합니다."]);
+  view.innerHTML = html;
+}
+
+function renderExpensive(d) {
+  const T = "최근 5년 간 가장 비싸게 매각한 기업은?";
+  const L = "최근 5년간 공시된 타법인 지분 매각·사업 양도 중 거래금액이 큰 순서 (매각 결정 공시 기준)";
+  const list = d.expensive;
+  if (!list || !list.length) return empty(T, L);
+  const top = list[0];
+  let html = head(T, L);
+  html += '<div class="dnote" style="background:var(--accent-soft);color:var(--text);margin:0 0 8px"><b>1위 · ' + escHtml(top.corp_name) + '</b>이(가) ' +
+    escHtml(top.target || "-") + (top.buyer ? ' 관련 거래를 <b>' + escHtml(top.buyer) + '</b>에 ' : ' 거래를 ') +
+    '<b>' + fmtWon(top.amount) + '</b>에 매각하기로 결정했습니다 (' + fmtDate(top.date) + ' 공시).</div>';
+  html += list.slice(0, 10).map((r, i) =>
+    '<div class="drow"><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
+    '<div class="dinfo"><div class="dname">' + escHtml(r.corp_name) + '</div>' +
+    '<div class="dsub">' + escHtml(r.type) + ' · 대상: ' + escHtml(r.target || "-") + (r.buyer ? ' · 상대방: ' + escHtml(r.buyer) : "") +
+    (r.stake_after ? ' · 매각 후 지분율 ' + escHtml(r.stake_after) + '%' : "") + '</div>' +
+    '<div class="dsub">공시일 ' + fmtDate(r.date) + '</div>' +
+    '<div class="dsrc"><a target="_blank" rel="noopener" href="' + dartLink(r.rcept_no) + '">공시 원문 보기 ›</a></div></div>' +
+    '<div class="dcount">' + fmtWon(r.amount) + '</div></div>'
+  ).join("");
+  html += coverNote(d, [
+    "· 처분(매각)·양도 <b>결정 공시</b>의 거래금액 기준이며, 실제 계약 체결·종결 시점과 금액은 다를 수 있습니다.",
+    "· 금융위 소관 주요사항보고서 상세 내역에서 확인되는 건만 집계합니다. 거래소 공시 건이나 비상장사 간 거래는 포함되지 않을 수 있습니다.",
+    "· 같은 딜의 정정·중복 공시는 한 건으로 합쳤습니다."]);
+  view.innerHTML = html;
+}
+
+fetch("ma_stats.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
+  if (!d) return id === "active" ? renderActive({}) : renderExpensive({});
+  id === "active" ? renderActive(d) : renderExpensive(d);
+});
+</script>
+</body>
+</html>

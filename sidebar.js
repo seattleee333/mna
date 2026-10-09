@@ -11,7 +11,8 @@ function renderSidebar(active) {
   el.innerHTML =
     '<a href="deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
     '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
-    '<a href="sell.html" class="' + (active === "sell" ? "on" : "") + '">매각하기</a>';
+    '<a href="data.html" class="' + (active === "data" ? "on" : "") + '">M&amp;A 데이터</a>' +
+    '<a href="sell.html" class="nav-cta' + (active === "sell" ? " on" : "") + '">매각하기</a>';
 }
 
 // 오른쪽 패널: M&A 인기뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역).
@@ -111,6 +112,7 @@ function renderFooter() {
     <nav class="fnav">
       <a href="deals.html">딜클로징 리스트</a>
       <a href="listings.html">매물·인수희망</a>
+      <a href="data.html">M&amp;A 데이터</a>
       <a href="sell.html">매각하기</a>
       <a href="#">공지사항</a>
       <a href="#">자주 묻는 질문</a>

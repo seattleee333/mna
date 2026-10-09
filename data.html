@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&A 데이터 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<div class="layout">
+  <main>
+    <div class="data-head">
+      <h1>M&amp;A 데이터</h1>
+      <p>공시 원문(금융감독원 전자공시)을 직접 집계한 M&amp;A 데이터 분석 콘텐츠입니다.</p>
+    </div>
+    <div id="dataList"></div>
+  </main>
+  <aside class="news-panel" id="newsPanel"></aside>
+</div>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("data");
+renderNewsPanel();
+
+const CONTENTS = [
+  { id: "active", img: "assets/data-1.svg", tag: "인수 랭킹",
+    title: "우리나라에서 가장 M&A를 활발하게 한 기업은?",
+    desc: "최근 5년간 타법인 주식·출자증권 취득을 가장 많이 결정한 기업 TOP 10을 공시 원문으로 집계했습니다." },
+  { id: "expensive", img: "assets/data-2.svg", tag: "매각 랭킹",
+    title: "최근 5년 간 가장 비싸게 매각한 기업은?",
+    desc: "최근 5년간 공시된 지분·사업 매각 중 거래금액이 가장 컸던 딜은 무엇이었는지 확인해 보세요." },
+];
+fetch("ma_stats.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
+  let date = "집계 준비 중";
+  if (d && d.updated) date = d.updated.slice(0, 4) + "." + d.updated.slice(4, 6) + "." + d.updated.slice(6, 8) + " 업데이트";
+  document.getElementById("dataList").innerHTML = CONTENTS.map(c =>
+    '<a class="dcard" href="data-view.html?id=' + c.id + '">' +
+      '<div class="dcard-thumb"><img src="' + c.img + '" alt=""></div>' +
+      '<div class="dcard-body"><span class="dtag">' + c.tag + '</span>' +
+      '<div class="dcard-title">' + c.title + '</div>' +
+      '<div class="dcard-desc">' + c.desc + '</div>' +
+      '<div class="dcard-meta">ALL ABOUT M&amp;A 리서치 · ' + date + '</div></div></a>'
+  ).join("");
+});
+</script>
+</body>
+</html>

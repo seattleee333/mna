@@ -329,3 +329,49 @@ main { flex:1; min-width:0; max-width:780px; }
 .auth-btn { white-space:nowrap; }
 @media (max-width:680px) { .auth-sub { display:none; } .auth-box { gap:6px; } }
 @media (max-width:680px) { .top-nav { flex:1; min-width:0; overflow-x:auto; scrollbar-width:none; } .top-nav::-webkit-scrollbar { display:none; } .top-nav a { white-space:nowrap; padding:8px 10px; } .brand { font-size:15px; } }
+
+/* ── 상단 메뉴: 매각하기 노랑 강조 버튼 ───────────────── */
+.top-nav a.nav-cta { background:#ffd54a; color:#3a2d00; margin-left:6px; font-weight:800; }
+.top-nav a.nav-cta:hover { background:#ffca1f; color:#3a2d00; }
+.top-nav a.nav-cta.on { background:#ffc400; color:#3a2d00; }
+
+/* ── M&A 데이터 콘텐츠 목록 ─────────────────────────── */
+.data-head { padding:8px 4px 18px; }
+.data-head h1 { margin:0 0 6px; font-size:24px; letter-spacing:-.01em; }
+.data-head p { margin:0; font-size:14.5px; color:var(--sub); }
+.dcard { display:flex; gap:22px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+         padding:16px; margin-bottom:16px; text-decoration:none; color:inherit; box-shadow:var(--shadow);
+         transition:box-shadow .15s, transform .15s; }
+.dcard:hover { box-shadow:var(--shadow-hover); transform:translateY(-2px); }
+.dcard-thumb { flex:0 0 300px; height:180px; border-radius:10px; overflow:hidden; background:var(--bg); }
+.dcard-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+.dcard-body { flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:8px; }
+.dtag { align-self:flex-start; font-size:12px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+        padding:3px 9px; border-radius:6px; }
+.dcard-title { font-size:20px; font-weight:800; letter-spacing:-.01em; line-height:1.35; }
+.dcard-desc { font-size:14px; color:var(--sub); line-height:1.55; }
+.dcard-meta { font-size:12.5px; color:var(--faint); margin-top:4px; }
+@media (max-width:680px) { .dcard { flex-direction:column; gap:12px; } .dcard-thumb { flex:none; width:100%; height:170px; } .dcard-title { font-size:17px; } }
+
+/* ── M&A 데이터 상세 ────────────────────────────────── */
+.dview { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:26px 26px 22px; box-shadow:var(--shadow); }
+.dview .back { font-size:13px; color:var(--sub); text-decoration:none; }
+.dview h1 { margin:10px 0 8px; font-size:24px; line-height:1.35; letter-spacing:-.01em; }
+.dview .lead { font-size:14.5px; color:var(--sub); line-height:1.6; margin:0 0 18px; }
+.drow { display:flex; align-items:center; gap:14px; padding:14px 6px; border-top:1px solid var(--line); }
+.drow:first-of-type { border-top:0; }
+.drank { flex:0 0 30px; font-size:20px; font-weight:800; color:var(--accent); text-align:center; }
+.drank.top { color:#e0a100; }
+.dinfo { flex:1; min-width:0; }
+.dname { font-weight:800; font-size:16px; display:flex; align-items:center; gap:8px; }
+.dsub { font-size:12.5px; color:var(--sub); margin-top:3px; line-height:1.5; }
+.dbar { height:7px; border-radius:4px; background:var(--accent-soft); margin-top:8px; overflow:hidden; }
+.dbar i { display:block; height:100%; background:var(--accent); border-radius:4px; }
+.dcount { flex:0 0 auto; text-align:right; font-size:20px; font-weight:800; }
+.dcount small { font-size:12px; font-weight:600; color:var(--sub); margin-left:2px; }
+.dsrc { margin-top:6px; font-size:12px; }
+.dsrc a { color:var(--accent); text-decoration:none; }
+.dnote { margin-top:20px; padding:14px 16px; background:var(--bg); border-radius:10px; font-size:12.5px; color:var(--sub); line-height:1.65; }
+.dnote b { color:var(--text); }
+.dempty { padding:40px 10px; text-align:center; color:var(--sub); font-size:14.5px; }
+.dtabs { display:flex; gap:6px; margin:0 0 6px; }
