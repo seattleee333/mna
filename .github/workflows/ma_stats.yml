@@ -3,7 +3,7 @@ name: M&A 통계 집계 (DART 5년)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 20 1 * *"   # 매월 1일 05:00 KST
+    - cron: "0 20 * * 1"   # 매주 화요일 05:00 KST (이어하기 캐시로 증분 갱신)
 
 permissions:
   contents: write

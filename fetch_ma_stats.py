@@ -32,6 +32,7 @@ BUDGET = 110 * 60          # 전체 실행 시간 예산(초)
 START = time.time()
 WORKERS = 4
 PARSER_VERSION = 1
+USE_DOC = os.environ.get("MA_USE_DOC") == "1"   # 원문 파서 검증 전에는 순위에 쓰지 않는다(로그 점검만)
 
 LIST_TYPES = ["B001", "I001"]   # 주요사항보고서(금융위), 수시공시(거래소)
 
@@ -322,7 +323,9 @@ def main():
                 if tgt and amt and row.get("rcept_no", "")[:8] >= since:
                     targets[tgt] = max(targets.get(tgt, 0), amt)
             time.sleep(0.1)
-        for f in mine:      # 상세 API에 없는(거래소 접수) 건은 공시 원문에서 읽는다
+        r["recent"] = [{"date": f["date"], "rcept_no": f["rcept_no"]}
+                       for f in sorted(mine, key=lambda x: x["date"], reverse=True)[:3]]
+        for f in (mine if USE_DOC else []):      # 상세 API에 없는(거래소 접수) 건은 공시 원문에서 읽는다
             if f["rcept_no"] in api_seen:
                 continue
             info = doc_info(cache, f)
@@ -365,7 +368,7 @@ def main():
             time.sleep(0.1)
     n_api = len(deals)
     n_doc = 0
-    for f in sells:     # 상세 API에 없는(거래소 접수) 건은 공시 원문에서 읽는다
+    for f in (sells if USE_DOC else []):     # 상세 API에 없는(거래소 접수) 건은 공시 원문에서 읽는다
         if f["rcept_no"] in deals:
             continue
         if time.time() - START > BUDGET + 40 * 60:
@@ -381,15 +384,20 @@ def main():
                 "buyer": info.get("buyer"), "amount": info["amount"], "stake_after": None,
                 "type": "타법인 지분 매각" if f["kind"] == "disp" else "사업(영업) 양도"}
     save_cache(cache)
+    if not USE_DOC:     # 원문 서비스 상태·구조 점검용 샘플만 로그에 남긴다
+        for kind in ("disp", "biz_out", "acq"):
+            for f in sorted([x for x in rows if x["kind"] == kind], key=lambda x: x["date"], reverse=True)[:1]:
+                doc_info(cache, f)
     uniq = {}
     for d in deals.values():      # 같은 딜의 중복(정정 등) 제거
         k = (d["corp_code"], d["target"], d["amount"])
         if k not in uniq:
             uniq[k] = d
     expensive = sorted(uniq.values(), key=lambda x: -x["amount"])[:20]
-    log(f"매각 후보 {len(sells)}건 → API {n_api}건 + 원문 조회 {n_doc}건, 금액 확인 딜 {len(uniq)}건")
+    log(f"매각 후보 {len(sells)}건 → 상세 API로 금액 확인 {n_api}건 + 원문 조회 {n_doc}건, 금액 확인 딜 {len(uniq)}건")
 
     out = {
+        "doc_used": USE_DOC,
         "updated": today.strftime("%Y%m%d"), "since": since, "complete": complete,
         "totals": {"acq_filings": len(acq), "disp_filings": sum(1 for f in rows if f["kind"] == "disp"),
                    "biz_out_filings": sum(1 for f in rows if f["kind"] == "biz_out")},

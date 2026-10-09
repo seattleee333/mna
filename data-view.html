@@ -44,7 +44,7 @@ function empty(title, lead) {
 function coverNote(d, lines) {
   return '<div class="dnote"><b>집계 기준 · 유의사항</b><br>' + lines.join("<br>") +
     (d.complete === false ? '<br>※ 이번 집계는 시간 제한으로 일부 구간이 빠졌을 수 있습니다.' : "") +
-    '<br>데이터 출처: 금융감독원 전자공시시스템(DART) 공시 원문 · 기간 ' + fmtDate(d.since) + ' ~ ' + fmtDate(d.updated) + '</div>';
+    '<br>데이터 출처: 금융감독원 전자공시시스템 공시 원문 · 기간 ' + fmtDate(d.since) + ' ~ ' + fmtDate(d.updated) + '</div>';
 }
 
 function renderActive(d) {
@@ -59,9 +59,11 @@ function renderActive(d) {
     const by = Object.entries(r.by_year || {}).map(([y, n]) => y + "년 " + n + "건").join(" · ");
     const tg = (r.top_targets || []).length
       ? '<div class="dsub">주요 취득 대상: ' + r.top_targets.map(t => escHtml(t.name) + " (" + fmtWon(t.amount) + ")").join(", ") + '</div>' : "";
+    const rc = (r.recent || []).length
+      ? '<div class="dsrc">최근 공시: ' + r.recent.map(x => '<a target="_blank" rel="noopener" href="' + dartLink(x.rcept_no) + '">' + fmtDate(x.date) + ' ›</a>').join(" · ") + '</div>' : "";
     return '<div class="drow"><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
       '<div class="dinfo"><div class="dname">' + escHtml(r.corp_name) + '</div>' +
-      '<div class="dsub">' + by + '</div>' + tg +
+      '<div class="dsub">' + by + '</div>' + tg + rc +
       '<div class="dbar"><i style="width:' + Math.round(r.count / max * 100) + '%"></i></div></div>' +
       '<div class="dcount">' + r.count + '<small>건</small></div></div>';
   }).join("");
@@ -93,7 +95,7 @@ function renderExpensive(d) {
   ).join("");
   html += coverNote(d, [
     "· 처분(매각)·양도 <b>결정 공시</b>의 거래금액 기준이며, 실제 계약 체결·종결 시점과 금액은 다를 수 있습니다.",
-    "· 금융위 소관 주요사항보고서 상세 내역에서 확인되는 건만 집계합니다. 거래소 공시 건이나 비상장사 간 거래는 포함되지 않을 수 있습니다.",
+    "· 주요사항보고서 상세 공시에서 거래금액이 확인되는 건만 집계합니다. 거래소 접수 공시 등 금액이 별도 확인되지 않는 건은 제외되어, 실제 순위와 차이가 있을 수 있습니다.",
     "· 같은 딜의 정정·중복 공시는 한 건으로 합쳤습니다."]);
   view.innerHTML = html;
 }
