@@ -33,14 +33,22 @@
           <div class="type-grid" id="typeGrid"></div>
         </div>
       </div>
+      <div class="market-seg" id="marketSeg" role="tablist">
+        <button type="button" class="on" data-m="kr">국내</button>
+        <button type="button" data-m="us">미국</button>
+      </div>
     </div>
-    <div class="toggle-row">
+    <div id="usSoon" class="us-soon" hidden>
+      <b>미국 M&amp;A 딜은 준비 중입니다.</b>
+      <p>미국 증권거래위원회(SEC) 공시를 바탕으로, 누가 누구를 얼마에 인수했는지 한글로 정리해 보여드릴 예정이에요.</p>
+    </div>
+    <div id="krWrap"><div class="toggle-row">
       <input type="checkbox" id="showMinor">
       <label for="showMinor">정정·자회사 공시 등 상세정보 없는 공시도 표시</label>
     </div>
     <div class="notice-line">상장사 딜만 공지되어있습니다</div>
     <div id="list"></div>
-    <div id="pageControls" class="page-controls"></div>
+    <div id="pageControls" class="page-controls"></div></div>
     <footer>본 페이지는 DART 공시를 자동 분류·요약한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
   </main>
   <aside class="news-panel" id="newsPanel"></aside>
@@ -52,6 +60,19 @@
 <script>
 renderSidebar("daily");
 renderNewsPanel();
+
+document.getElementById("marketSeg").addEventListener("click", function (e) {
+  const b = e.target.closest("button[data-m]");
+  if (!b) return;
+  this.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+  const us = b.dataset.m === "us";
+  document.getElementById("usSoon").hidden = !us;
+  document.getElementById("krWrap").hidden = us;
+  document.querySelector(".controls").hidden = us;
+  document.getElementById("chipDropdown").hidden = us;
+  document.querySelector("main > footer").hidden = us;
+  document.querySelector('#chips .chip[data-c="전체"]').hidden = us;
+});
 
 let deals = [];
 let selectedCats = new Set(); // 비어있으면 "전체" (복수 선택 가능)
