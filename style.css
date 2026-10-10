@@ -375,3 +375,6 @@ main { flex:1; min-width:0; max-width:780px; }
 .dnote b { color:var(--text); }
 .dempty { padding:40px 10px; text-align:center; color:var(--sub); font-size:14.5px; }
 .dtabs { display:flex; gap:6px; margin:0 0 6px; }
+
+.drow.hid { display:none; }
+.drow.mini { padding:10px 6px; }

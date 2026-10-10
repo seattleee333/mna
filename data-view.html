@@ -68,11 +68,29 @@ function renderActive(d) {
       '<div class="dbar"><i style="width:' + Math.round(r.count / max * 100) + '%"></i></div></div>' +
       '<div class="dcount">' + r.count + '<small>건</small></div></div>';
   }).join("");
+  const more = (d.active.next || []);
+  if (more.length) {
+    html += '<h2 style="font-size:16px;margin:26px 0 6px">11위 ~ ' + (10 + more.length) + '위</h2><div id="moreList">' + more.map((r, i) => {
+      const by = Object.entries(r.by_year || {}).map(([y, n]) => y.slice(2) + "년 " + n).join(" · ");
+      const rc = (r.recent || [])[0] ? ' <a target="_blank" rel="noopener" href="' + dartLink(r.recent[0].rcept_no) + '" style="color:var(--accent);text-decoration:none">최근 공시 ›</a>' : "";
+      return '<div class="drow mini' + (i >= 10 ? ' hid' : '') + '"><div class="drank">' + (i + 11) + '</div>' +
+        '<div class="dinfo"><div class="dname" style="font-size:15px">' + escHtml(r.corp_name) + '</div><div class="dsub">' + by + rc + '</div></div>' +
+        '<div class="dcount" style="font-size:17px">' + r.count + '<small>건</small></div></div>';
+    }).join("") + '</div>' +
+    (more.length > 10 ? '<button type="button" id="moreBtn" class="auth-btn" style="width:100%;margin-top:10px;padding:10px">더보기 ▾</button>' : "");
+  }
   html += coverNote(d, [
+    "· 같은 건수인 기업은 가나다순으로 나열했습니다. 50위 아래에도 같은 건수(6건)의 기업이 더 있습니다.",
     "· ‘인수’는 <b>타법인 주식 및 출자증권 취득결정</b> 공시 건수입니다. 지분 소액 취득·출자·계열사 증자 참여가 함께 포함될 수 있어, 모두 경영권 인수는 아닙니다.",
     "· 종속회사 주요경영사항 공시와 정정공시는 제외했습니다.",
     "· 주요 취득 대상·금액은 공시 상세 내역에서 확인되는 건만 표시합니다."]);
   view.innerHTML = html;
+  const btn = document.getElementById("moreBtn");
+  if (btn) btn.onclick = () => {
+    const hid = document.querySelectorAll("#moreList .hid");
+    hid.forEach((e, i) => { if (i < 10) e.classList.remove("hid"); });
+    if (hid.length <= 10) btn.remove();
+  };
 }
 
 function renderExpensive(d) {

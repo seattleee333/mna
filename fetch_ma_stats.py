@@ -308,7 +308,7 @@ def main():
     by_year = defaultdict(Counter)
     for f in acq:
         by_year[f["corp_code"]][f["date"][:4]] += 1
-    order = sorted(cnt.items(), key=lambda x: (-x[1], names[x[0]][0]))[:30]
+    order = sorted(cnt.items(), key=lambda x: (-x[1], names[x[0]][0]))[:50]
     ranking = [{"corp_code": c, "corp_name": names[c][0], "stock_code": names[c][1], "count": n,
                 "by_year": dict(sorted(by_year[c].items()))} for c, n in order]
     top10 = ranking[:10]
@@ -401,7 +401,7 @@ def main():
         "updated": today.strftime("%Y%m%d"), "since": since, "complete": complete,
         "totals": {"acq_filings": len(acq), "disp_filings": sum(1 for f in rows if f["kind"] == "disp"),
                    "biz_out_filings": sum(1 for f in rows if f["kind"] == "biz_out")},
-        "active": {"top10": top10, "next": [{k: v for k, v in r.items() if k != "top_targets"} for r in ranking[10:30]]},
+        "active": {"top10": top10, "next": [{k: v for k, v in r.items() if k != "top_targets"} for r in ranking[10:50]]},
         "expensive": expensive,
     }
     with open(OUT, "w", encoding="utf-8") as f:
