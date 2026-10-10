@@ -168,7 +168,7 @@ def main():
             continue
         log(f"  {d} 8-K {len(res)}건")
         filings += res
-        if d < dt.date.today():
+        if res and d < dt.date.today():
             cache.setdefault("idx_done", {})[d.strftime("%Y%m%d")] = True
     new = [f for f in filings if f["acc"] not in seen][:MAX_FILINGS]
     log(f"새로 확인할 8-K {len(new)}건")
