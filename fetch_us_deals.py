@@ -64,7 +64,11 @@ def daily_8k(d):
     q = (d.month - 1) // 3 + 1
     r = get(f"https://www.sec.gov/Archives/edgar/daily-index/{d.year}/QTR{q}/form.{d.strftime('%Y%m%d')}.idx")
     if r is None or r.status_code != 200:
+        log(f"  인덱스 응답 {None if r is None else r.status_code}: " + ("" if r is None else r.text[:200].replace("\n", " ")))
         return None if (r is not None and r.status_code == 404) else []
+    if not getattr(daily_8k, "shown", False):
+        daily_8k.shown = True
+        log("  인덱스 샘플: " + " // ".join(r.text.splitlines()[:12])[:900])
     out = []
     for line in r.text.splitlines():
         m = re.match(r"^8-K\s+(.+?)\s+(\d{1,10})\s+(\d{8})\s+(edgar/data/\d+/(\d{10}-\d{2}-\d{6})\.txt)\s*$", line)
