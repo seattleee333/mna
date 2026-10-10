@@ -38,9 +38,11 @@
         <button type="button" data-m="us">미국</button>
       </div>
     </div>
-    <div id="usSoon" class="us-soon" hidden>
-      <b>미국 M&amp;A 딜은 준비 중입니다.</b>
-      <p>미국 증권거래위원회(SEC) 공시를 바탕으로, 누가 누구를 얼마에 인수했는지 한글로 정리해 보여드릴 예정이에요.</p>
+    <div id="usWrap" hidden>
+      <div class="notice-line" id="usNotice">미국 딜은 2026년 10월 공시분만 보여드려요 (미국 증권거래위원회 8-K 공시 기준)</div>
+      <div id="usSoon" class="us-soon" hidden></div>
+      <div id="usList"></div>
+      <footer>본 내용은 미국 증권거래위원회(SEC) 공시를 자동 분류·번역한 참고 자료이며, 정확한 내용은 원문 공시를 확인하세요.</footer>
     </div>
     <div id="krWrap"><div class="toggle-row">
       <input type="checkbox" id="showMinor">
@@ -66,13 +68,44 @@ document.getElementById("marketSeg").addEventListener("click", function (e) {
   if (!b) return;
   this.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
   const us = b.dataset.m === "us";
-  document.getElementById("usSoon").hidden = !us;
+  document.getElementById("usWrap").hidden = !us;
+  if (us) loadUs();
   document.getElementById("krWrap").hidden = us;
   document.querySelector(".controls").hidden = us;
   document.getElementById("chipDropdown").hidden = us;
   document.querySelector("main > footer").hidden = us;
   document.querySelector('#chips .chip[data-c="전체"]').hidden = us;
 });
+
+let usLoaded = false;
+function loadUs() {
+  if (usLoaded) return;
+  usLoaded = true;
+  const list = document.getElementById("usList"), soon = document.getElementById("usSoon");
+  fetch("us_deals.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
+    if (!d || !d.deals || !d.deals.length) {
+      soon.hidden = false;
+      soon.innerHTML = '<b>미국 딜을 모으는 중입니다.</b><p>수집이 끝나면 누가 누구를 얼마에 인수했는지 이곳에 정리됩니다.</p>';
+      return;
+    }
+    let html = "", last = "";
+    for (const x of d.deals) {
+      if (x.date !== last) { html += '<div class="day">' + fmtDate(x.date) + "</div>"; last = x.date; }
+      const main = x.summary_ko ||
+        (x.item === "2.01" ? esc(x.filer) + "이(가) 인수 또는 매각을 완료했다고 공시했습니다." : esc(x.filer) + "이(가) 인수 관련 계약을 체결했다고 공시했습니다.");
+      const facts = [];
+      if (x.acquirer) facts.push("인수: " + esc(x.acquirer));
+      if (x.target) facts.push("대상: " + esc(x.target));
+      if (x.amount) facts.push("금액: " + esc(x.amount));
+      if (x.stake) facts.push("지분: " + esc(x.stake));
+      html += '<div class="deal"><a target="_blank" rel="noopener" href="' + esc(x.url) + '"><div class="top"><span class="name">' + corpAvatar("", x.filer) +
+        '<span>' + esc(x.filer) + '</span></span><span class="tag">' + esc(x.kind || "M&A") + '</span></div>' +
+        '<div class="summary-line">' + (x.summary_ko ? esc(main) : main) + '</div>' +
+        (facts.length ? '<div class="title">' + facts.join(" · ") + '</div>' : '<div class="title">SEC 8-K Item ' + esc(x.item) + ' · 원문 보기</div>') + '</a></div>';
+    }
+    list.innerHTML = html;
+  });
+}
 
 let deals = [];
 let selectedCats = new Set(); // 비어있으면 "전체" (복수 선택 가능)

@@ -1,0 +1,42 @@
+name: 미국 M&A 딜 수집 (SEC)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 22 * * 1-5"   # 평일 07:30 KST (미국 전일 공시 반영)
+
+permissions:
+  contents: write
+
+jobs:
+  us:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: SEC 8-K 수집
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -u fetch_us_deals.py
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          for f in us_deals.json us_cache.json us_log.txt; do [ -f "$f" ] && git add "$f"; done
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update us_deals"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi
