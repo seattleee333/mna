@@ -393,7 +393,7 @@ def main():
         k = (d["corp_code"], d["target"], d["amount"])
         if k not in uniq:
             uniq[k] = d
-    expensive = sorted(uniq.values(), key=lambda x: -x["amount"])[:20]
+    expensive = sorted(uniq.values(), key=lambda x: -x["amount"])[:50]
     log(f"매각 후보 {len(sells)}건 → 상세 API로 금액 확인 {n_api}건 + 원문 조회 {n_doc}건, 금액 확인 딜 {len(uniq)}건")
 
     out = {

@@ -105,8 +105,8 @@ function renderExpensive(d) {
   html += '<div class="dnote" style="background:var(--accent-soft);color:var(--text);margin:0 0 8px"><b>1위 · ' + escHtml(top.corp_name) + '</b> — ' +
     (top.buyer ? '<b>' + escHtml(top.buyer) + '</b>에게 ' : '') + '‘' + escHtml(tidy(top.target)) + '’' + josa(tidy(top.target), "을", "를") + ' ' +
     '<b>' + fmtWon(top.amount) + '</b>에 ' + verb + '하기로 결정 (' + fmtDate(top.date) + ' 공시)</div>';
-  html += list.slice(0, 10).map((r, i) =>
-    '<div class="drow"><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
+  html += list.slice(0, 50).map((r, i) =>
+    '<div class="drow' + (i >= 10 ? ' hid' : '') + '" data-x><div class="drank' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</div>' +
     '<div class="dinfo"><div class="dname">' + escHtml(r.corp_name) + '</div>' +
     '<div class="dsub">' + escHtml(r.type) + ' · 대상: ' + escHtml(tidy(r.target)) + (r.buyer ? ' · 상대방: ' + escHtml(r.buyer) : "") +
     (r.stake_after ? ' · 매각 후 지분율 ' + escHtml(r.stake_after) + '%' : "") + '</div>' +
@@ -114,11 +114,18 @@ function renderExpensive(d) {
     '<div class="dsrc"><a target="_blank" rel="noopener" href="' + dartLink(r.rcept_no) + '">공시 원문 보기 ›</a></div></div>' +
     '<div class="dcount">' + fmtWon(r.amount) + '</div></div>'
   ).join("");
+  if (list.length > 10) html += '<button type="button" id="moreBtn2" class="auth-btn" style="width:100%;margin-top:10px;padding:10px">더보기 ▾</button>';
   html += coverNote(d, [
     "· 처분(매각)·양도 <b>결정 공시</b>의 거래금액 기준이며, 실제 계약 체결·종결 시점과 금액은 다를 수 있습니다.",
     "· 주요사항보고서 상세 공시에서 거래금액이 확인되는 건만 집계합니다. 거래소 접수 공시 등 금액이 별도 확인되지 않는 건은 제외되어, 실제 순위와 차이가 있을 수 있습니다.",
     "· 같은 딜의 정정·중복 공시는 한 건으로 합쳤습니다."]);
   view.innerHTML = html;
+  const btn = document.getElementById("moreBtn2");
+  if (btn) btn.onclick = () => {
+    const hid = document.querySelectorAll(".drow.hid");
+    hid.forEach((e, i) => { if (i < 10) e.classList.remove("hid"); });
+    if (hid.length <= 10) btn.remove();
+  };
 }
 
 fetch("ma_stats.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
