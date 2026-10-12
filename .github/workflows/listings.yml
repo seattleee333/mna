@@ -1,0 +1,55 @@
+name: 매물·인수희망 리스트 수집 (격주 화요일)
+
+on:
+  schedule:
+    - cron: "0 22 * * 1"   # 매주 월요일 22:00 UTC = 화요일 07:00 KST (아래에서 격주만 실행)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  listings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 격주 확인 (2026-10-13 화요일 기준 14일마다)
+        id: gate
+        run: |
+          base=$(date -d 2026-10-13 +%s)
+          now=$(TZ=Asia/Seoul date -d "$(TZ=Asia/Seoul date +%F)" +%s)
+          diff=$(( (now - base) / 86400 ))
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $(( diff % 14 )) -eq 0 ]; then
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "이번 주는 쉬는 주입니다 (격주)"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'yes'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'yes'
+        with:
+          python-version: "3.12"
+      - if: steps.gate.outputs.run == 'yes'
+        run: pip install requests beautifulsoup4
+      - name: 매물·인수희망 리스트 수집
+        if: steps.gate.outputs.run == 'yes'
+        run: python fetch_listings.py
+      - name: 결과 저장
+        if: steps.gate.outputs.run == 'yes'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          [ -f listings.json ] && git add listings.json
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update listings"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi
