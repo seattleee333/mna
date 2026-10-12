@@ -31,6 +31,19 @@ def fetch_query(q):
     return items
 
 
+# 스팸·도박 사이트가 뉴스 검색에 섞여 들어오는 것을 막는다.
+SPAM_RE = re.compile(r"(카지노|슬롯|토토|도박|바카라|먹튀|프리스핀|무료\s?플레이|사과게임|마작|포커|배팅|베팅|룰렛|casino|slot|betting|roughnecks)", re.I)
+# M&A와 관련 없는 기사는 제목에 아래 단어가 하나도 없다.
+MA_RE = re.compile(r"(M&A|M&amp;A|인수|합병|매각|매물|경영권|지분|공개매수|바이아웃|PEF|사모펀드|분리매각|통매각|엑시트|분할|팔고|팔았|팔기로)", re.I)
+
+
+def is_relevant(title, sources=(), link=""):
+    blob = " ".join([title, link] + list(sources))
+    if SPAM_RE.search(blob):
+        return False
+    return bool(MA_RE.search(title))
+
+
 def norm_title(t):
     t = re.sub(r"[\[\]\(\)『』“”\"'…·,\.!?]", "", t)
     t = re.sub(r"\s+", "", t)
@@ -53,7 +66,7 @@ def main():
     fresh = []
     for q in QUERIES:
         try:
-            fresh.extend(fetch_query(q))
+            fresh.extend(x for x in fetch_query(q) if is_relevant(x["title"], [x["source"]], x["link"]))
         except Exception as e:
             print(f"뉴스 조회 실패 ({q}): {e}")
 
@@ -106,9 +119,11 @@ def main():
             existing.append(new_e)
             existing_by_title[key] = new_e
 
-    # 365일 지난 항목은 자동 삭제
+    # 365일 지난 항목은 자동 삭제 (스팸·무관 기사는 과거 수집분까지 함께 제거)
     kept = []
     for e in existing:
+        if not is_relevant(e.get("title", ""), e.get("sources", []), e.get("link", "")):
+            continue
         try:
             seen = dt.datetime.strptime(e.get("first_seen", ""), "%Y%m%d")
         except ValueError:
