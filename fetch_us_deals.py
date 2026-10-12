@@ -120,7 +120,21 @@ def fallback(f, text, items):
         if a:
             amt = a.group(0).strip()
             break
-    return {"acquirer": None, "target": None, "amount": amt, "stake": None, "kind": None, "summary_ko": None}
+    return {"acquirer": None, "target": None, "amount": amt, "stake": None, "kind": None, "summary_ko": None,
+            "summary_en": key_sentence(text, items)}
+
+
+KEY_RE = re.compile(r"(acqui|merg|sold|sale of|purchase|dispos|divest|tender offer)", re.I)
+
+
+def key_sentence(text, items):
+    """공시 본문에서 인수·매각을 설명하는 핵심 문장 하나를 그대로 뽑는다(영문)."""
+    m = re.search(r"Item\s+(2\.01|1\.01)[^A-Za-z]{0,10}[A-Za-z ,\-]{0,90}", text)
+    body = text[m.end():] if m else text
+    for sent in re.split(r"(?<=[\.;])\s+(?=[A-Z])", body[:6000]):
+        if KEY_RE.search(sent) and len(sent) > 40:
+            return sent.strip()[:320]
+    return None
 
 
 PROMPT = """아래는 미국 SEC 8-K 공시(제출 회사: {filer}) 본문 일부다. M&A(인수·합병·지분/사업 매각) 건인지 판단해 JSON으로만 답하라.

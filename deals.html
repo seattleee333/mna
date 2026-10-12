@@ -91,7 +91,7 @@ function loadUs() {
     let html = "", last = "";
     for (const x of d.deals) {
       if (x.date !== last) { html += '<div class="day">' + fmtDate(x.date) + "</div>"; last = x.date; }
-      const main = x.summary_ko ||
+      const main = x.summary_ko || (x.summary_en ? esc(x.summary_en) : null) ||
         (x.item === "2.01" ? esc(x.filer) + "이(가) 인수 또는 매각을 완료했다고 공시했습니다." : esc(x.filer) + "이(가) 인수 관련 계약을 체결했다고 공시했습니다.");
       const facts = [];
       if (x.acquirer) facts.push("인수: " + esc(x.acquirer));
