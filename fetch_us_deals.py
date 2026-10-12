@@ -100,6 +100,11 @@ DEAL_RE = re.compile(r"(Agreement and Plan of Merger|Merger Agreement|Stock Purc
                      r"to be acquired|tender offer|acquisition of)", re.I)
 
 
+EXCL_RE = re.compile(r"(Equity Line|ELOC|Common Stock Purchase Agreement|Securities Purchase Agreement|Power Purchase Agreement|"
+                     r"Registration Rights Agreement|Credit Agreement|Loan Agreement|Note Purchase Agreement|Underwriting Agreement|"
+                     r"At[- ]the[- ]Market|Sales Agreement|Lease Agreement)", re.I)
+
+
 def body_text(raw):
     m = re.search(r"<TEXT>(.*?)(</TEXT>|$)", raw, re.S | re.I)
     t = m.group(1) if m else raw
@@ -112,13 +117,24 @@ def body_text(raw):
 AMT_RE = re.compile(r"\$\s?[\d][\d,\.]*\s?(?:million|billion|thousand)?", re.I)
 
 
+def good_amount(w):
+    for a in AMT_RE.finditer(w):
+        t = a.group(0).strip().rstrip(".,")
+        tail = w[a.end(): a.end() + 25].lower()
+        if "per share" in tail or "per unit" in tail:
+            continue
+        digits = re.sub(r"[^\d]", "", t.split(".")[0] if re.search(r"million|billion", t, re.I) else t)
+        if re.search(r"million|billion", t, re.I) or (digits and len(digits) >= 7):
+            return t
+    return None
+
+
 def fallback(f, text, items):
     amt = None
-    for m in re.finditer(r"(consideration|purchase price|aggregate|valued at|enterprise value)", text, re.I):
+    for m in re.finditer(r"(consideration|purchase price|aggregate|valued at|enterprise value|for approximately|for a total)", text, re.I):
         w = text[max(0, m.start() - 150): m.end() + 250]
-        a = AMT_RE.search(w)
-        if a:
-            amt = a.group(0).strip()
+        amt = good_amount(w)
+        if amt:
             break
     return {"acquirer": None, "target": None, "amount": amt, "stake": None, "kind": None, "summary_ko": None,
             "summary_en": key_sentence(text, items)}
@@ -132,7 +148,7 @@ def key_sentence(text, items):
     m = re.search(r"Item\s+(2\.01|1\.01)[^A-Za-z]{0,10}[A-Za-z ,\-]{0,90}", text)
     body = text[m.end():] if m else text
     for sent in re.split(r"(?<=[\.;])\s+(?=[A-Z])", body[:6000]):
-        if KEY_RE.search(sent) and len(sent) > 40:
+        if KEY_RE.search(sent) and len(sent) > 40 and "us-gaap" not in sent and not re.search(r"\d{10} (true|false)", sent):
             return sent.strip()[:320]
     return None
 
@@ -170,6 +186,8 @@ def main():
             cache = json.load(open(CACHE, encoding="utf-8"))
         except Exception:
             cache = {}
+    if cache.get("ver") != 2:       # 필터 규칙이 바뀌면 처음부터 다시 판정
+        cache = {"ver": 2}
     seen = cache.setdefault("seen", {})
     filings = []
     for d in days():
@@ -201,7 +219,7 @@ def main():
             seen[f["acc"]] = None
             continue
         text = body_text(head)
-        if not is201 and not DEAL_RE.search(text[:6000]):
+        if not is201 and (not DEAL_RE.search(text[:6000]) or EXCL_RE.search(text[:4000])):
             seen[f["acc"]] = None
             continue
         info = None
@@ -214,6 +232,9 @@ def main():
         if info is None:
             info = fallback(f, text, items)
             info["kind"] = "인수·매각 완료" if is201 else "계약 체결"
+        if not info.get("summary_ko") and not info.get("summary_en"):
+            seen[f["acc"]] = None
+            continue
         info.update({"filer": f["filer"], "cik": f["cik"], "date": f["date"], "acc": f["acc"],
                      "item": "2.01" if is201 else "1.01",
                      "url": f"https://www.sec.gov/Archives/{f['path']}"})
