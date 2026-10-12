@@ -1,5 +1,5 @@
 {
- "updated": "20261012",
+ "updated": "20261013",
  "note": "최근 사업연도 재무제표(DART)와 현재 시가총액(네이버 증권)으로 계산한 참고용 배수입니다. 25%/중앙값/75% 분위수를 보수/기본/낙관에 대응시킵니다.",
  "sectors": [
   {
@@ -20,15 +20,15 @@
    ],
    "stats": {
     "evEbitda": {
-     "down": 8.4,
-     "base": 12.3,
-     "up": 13.1,
-     "n": 6
+     "down": 7.0,
+     "base": 11.7,
+     "up": 12.9,
+     "n": 5
     },
     "per": {
-     "down": 13.4,
-     "base": 25.9,
-     "up": 29.2,
+     "down": 13.1,
+     "base": 24.7,
+     "up": 28.4,
      "n": 7
     }
    },
@@ -40,13 +40,11 @@
      "dart_name": "아모레퍼시픽",
      "year": 2025,
      "fs": "CFS",
-     "da_src": "xbrl",
-     "mcap_eok": 78322,
+     "da_why": "XBRL 다운로드 시간/용량 초과",
+     "mcap_eok": 76450,
      "mcap_src": "naver_mobile",
-     "ebitda_eok": 6039.0,
-     "ev_eok": 75639,
-     "evEbitda": 12.5,
-     "per": 30.5
+     "per": 29.7,
+     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과)"
     },
     {
      "name": "LG생활건강",
@@ -55,11 +53,11 @@
      "dart_name": "LG생활건강",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 39835,
+     "mcap_eok": 39011,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 4106.8,
-     "ev_eok": 29731,
-     "evEbitda": 7.2,
+     "ev_eok": 28907,
+     "evEbitda": 7.0,
      "reason": "지배주주순이익 없음/적자"
     },
     {
@@ -69,12 +67,12 @@
      "dart_name": "코스맥스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 34446,
+     "mcap_eok": 33368,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2699.4,
-     "ev_eok": 32637,
-     "evEbitda": 12.1,
-     "per": 28.0
+     "ev_eok": 31559,
+     "evEbitda": 11.7,
+     "per": 27.1
     },
     {
      "name": "한국콜마",
@@ -84,12 +82,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 32457,
+     "mcap_eok": 30946,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3437.2,
-     "ev_eok": 45732,
-     "evEbitda": 13.3,
-     "per": 25.9
+     "ev_eok": 44221,
+     "evEbitda": 12.9,
+     "per": 24.7
     },
     {
      "name": "에이피알",
@@ -98,12 +96,12 @@
      "dart_name": "에이피알",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 138147,
+     "mcap_eok": 129349,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3958.0,
-     "ev_eok": 137611,
-     "evEbitda": 34.8,
-     "per": 48.0
+     "ev_eok": 128813,
+     "evEbitda": 32.5,
+     "per": 44.9
     },
     {
      "name": "클리오",
@@ -113,12 +111,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 2194,
+     "mcap_eok": 2156,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 191.8,
-     "ev_eok": 794,
-     "evEbitda": 4.1,
-     "per": 16.2
+     "ev_eok": 756,
+     "evEbitda": 3.9,
+     "per": 15.9
     },
     {
      "name": "토니모리",
@@ -128,9 +126,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 1180,
+     "mcap_eok": 1137,
      "mcap_src": "naver_mobile",
-     "per": 10.6,
+     "per": 10.2,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     },
     {
@@ -141,9 +139,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL에 상각비 태그 없음",
-     "mcap_eok": 1341,
+     "mcap_eok": 1308,
      "mcap_src": "naver_mobile",
-     "per": 6.1,
+     "per": 6.0,
      "reason": "감가상각비 미식별(XBRL에 상각비 태그 없음)"
     }
    ]
@@ -180,12 +178,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 8159,
+     "mcap_eok": 8494,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1501.9,
-     "ev_eok": 8815,
-     "evEbitda": 5.9,
-     "per": 23.6
+     "ev_eok": 9150,
+     "evEbitda": 6.1,
+     "per": 24.5
     },
     {
      "name": "연우",
@@ -213,11 +211,11 @@
      "dart_name": "태림포장",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 1072,
+     "mcap_eok": 997,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 288.2,
-     "ev_eok": 3638,
-     "evEbitda": 12.6,
+     "ev_eok": 3563,
+     "evEbitda": 12.4,
      "reason": "지배주주순이익 없음/적자"
     },
     {
@@ -228,9 +226,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 실패(BadZipFile)",
-     "mcap_eok": 1697,
+     "mcap_eok": 1673,
      "mcap_src": "naver_mobile",
-     "per": 7.6,
+     "per": 7.5,
      "reason": "감가상각비 미식별(XBRL 다운로드 실패(BadZipFile))"
     }
    ]
@@ -260,11 +258,11 @@
      "dart_name": "태림포장",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 1072,
+     "mcap_eok": 997,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 288.2,
-     "ev_eok": 3638,
-     "evEbitda": 12.6,
+     "ev_eok": 3563,
+     "evEbitda": 12.4,
      "reason": "지배주주순이익 없음/적자"
     },
     {
@@ -275,9 +273,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 실패(BadZipFile)",
-     "mcap_eok": 1697,
+     "mcap_eok": 1673,
      "mcap_src": "naver_mobile",
-     "per": 7.6,
+     "per": 7.5,
      "reason": "감가상각비 미식별(XBRL 다운로드 실패(BadZipFile))"
     },
     {
@@ -288,12 +286,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 3615,
+     "mcap_eok": 3651,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 489.8,
-     "ev_eok": 3859,
-     "evEbitda": 7.9,
-     "per": 15.9
+     "ev_eok": 3895,
+     "evEbitda": 8.0,
+     "per": 16.0
     }
    ]
   },
@@ -316,15 +314,15 @@
    ],
    "stats": {
     "evEbitda": {
-     "down": 4.6,
-     "base": 4.7,
+     "down": 4.7,
+     "base": 4.8,
      "up": 5.5,
      "n": 5
     },
     "per": {
      "down": 15.2,
      "base": 20.4,
-     "up": 23.9,
+     "up": 24.2,
      "n": 6
     }
    },
@@ -337,12 +335,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 23996,
+     "mcap_eok": 24300,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3113.1,
-     "ev_eok": 14661,
-     "evEbitda": 4.7,
-     "per": 14.1
+     "ev_eok": 14965,
+     "evEbitda": 4.8,
+     "per": 14.3
     },
     {
      "name": "오리온",
@@ -351,12 +349,12 @@
      "dart_name": "오리온",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 41149,
+     "mcap_eok": 41663,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 7228.7,
-     "ev_eok": 39426,
+     "ev_eok": 39940,
      "evEbitda": 5.5,
-     "per": 10.8
+     "per": 10.9
     },
     {
      "name": "CJ제일제당",
@@ -366,7 +364,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 27489,
+     "mcap_eok": 27308,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과); 지배주주순이익 없음/적자"
     },
@@ -378,12 +376,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 87760,
+     "mcap_eok": 89191,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 5876.9,
-     "ev_eok": 89167,
-     "evEbitda": 15.2,
-     "per": 22.5
+     "ev_eok": 90598,
+     "evEbitda": 15.4,
+     "per": 22.9
     },
     {
      "name": "풀무원",
@@ -393,9 +391,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 3320,
+     "mcap_eok": 3225,
      "mcap_src": "naver_mobile",
-     "per": 18.3,
+     "per": 17.8,
      "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과)"
     },
     {
@@ -406,12 +404,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 12484,
+     "mcap_eok": 12625,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3929.2,
-     "ev_eok": 18253,
-     "evEbitda": 4.6,
-     "per": 24.4
+     "ev_eok": 18394,
+     "evEbitda": 4.7,
+     "per": 24.7
     },
     {
      "name": "하이트진로",
@@ -420,12 +418,12 @@
      "dart_name": "하이트진로",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 10345,
+     "mcap_eok": 10471,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3197.8,
-     "ev_eok": 8119,
-     "evEbitda": 2.5,
-     "per": 24.9
+     "ev_eok": 8245,
+     "evEbitda": 2.6,
+     "per": 25.2
     }
    ]
   },
@@ -447,15 +445,15 @@
    ],
    "stats": {
     "evEbitda": {
-     "down": 7.4,
-     "base": 9.6,
-     "up": 23.9,
-     "n": 3
+     "down": 7.8,
+     "base": 22.8,
+     "up": 39.5,
+     "n": 4
     },
     "per": {
-     "down": 37.5,
-     "base": 51.4,
-     "up": 54.3,
+     "down": 34.3,
+     "base": 48.0,
+     "up": 51.4,
      "n": 3
     }
    },
@@ -468,11 +466,11 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 1164475,
+     "mcap_eok": 1115177,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 18380.1,
-     "ev_eok": 1162184,
-     "reason": "EV/EBITDA 범위 밖(63.2); PER 범위 밖(131.0)"
+     "ev_eok": 1112886,
+     "reason": "EV/EBITDA 범위 밖(60.5); PER 범위 밖(125.5)"
     },
     {
      "name": "이수페타시스",
@@ -482,12 +480,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 91762,
+     "mcap_eok": 88018,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2363.8,
-     "ev_eok": 90141,
-     "evEbitda": 38.1,
-     "per": 57.2
+     "ev_eok": 86397,
+     "evEbitda": 36.6,
+     "per": 54.8
     },
     {
      "name": "해성디에스",
@@ -497,26 +495,27 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 11152,
+     "mcap_eok": 10421,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1048.8,
-     "ev_eok": 10069,
-     "evEbitda": 9.6,
-     "per": 51.4
+     "ev_eok": 9338,
+     "evEbitda": 8.9,
+     "per": 48.0
     },
     {
      "name": "대덕전자",
      "code": "353200",
-     "ok": false,
+     "ok": true,
      "dart_name": "대덕전자",
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 77881,
+     "mcap_eok": 71655,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1495.7,
-     "ev_eok": 77954,
-     "reason": "EV/EBITDA 범위 밖(52.1); PER 범위 밖(163.6)"
+     "ev_eok": 71728,
+     "evEbitda": 48.0,
+     "reason": "PER 범위 밖(150.5)"
     },
     {
      "name": "비에이치",
@@ -526,12 +525,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 7299,
+     "mcap_eok": 6402,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1178.3,
-     "ev_eok": 6141,
-     "evEbitda": 5.2,
-     "per": 23.5
+     "ev_eok": 5244,
+     "evEbitda": 4.5,
+     "per": 20.6
     }
    ]
   },
@@ -564,11 +563,11 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 51475,
+     "mcap_eok": 50133,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 7.4,
-     "ev_eok": 51473,
-     "reason": "EV/EBITDA 범위 밖(6941.2); PER 범위 밖(18195.5)"
+     "ev_eok": 50131,
+     "reason": "EV/EBITDA 범위 밖(6760.2); PER 범위 밖(17721.2)"
     },
     {
      "name": "두산에너빌리티",
@@ -578,9 +577,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 491310,
+     "mcap_eok": 455439,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과); PER 범위 밖(579.6)"
+     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과); PER 범위 밖(537.3)"
     },
     {
      "name": "한화에어로스페이스",
@@ -590,9 +589,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 실패(BadZipFile)",
-     "mcap_eok": 466133,
+     "mcap_eok": 442414,
      "mcap_src": "naver_mobile",
-     "per": 33.2,
+     "per": 31.5,
      "reason": "감가상각비 미식별(XBRL 다운로드 실패(BadZipFile))"
     },
     {
@@ -603,10 +602,10 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 44920,
+     "mcap_eok": 41096,
      "mcap_src": "naver_mobile",
      "ebitda_eok": -522.5,
-     "ev_eok": 43109,
+     "ev_eok": 39285,
      "reason": "EBITDA 또는 EV가 0 이하; 지배주주순이익 없음/적자"
     },
     {
@@ -616,13 +615,11 @@
      "dart_name": "현대위아",
      "year": 2025,
      "fs": "CFS",
-     "da_src": "xbrl",
-     "mcap_eok": 13869,
+     "da_why": "XBRL 다운로드 시간/용량 초과",
+     "mcap_eok": 13502,
      "mcap_src": "naver_mobile",
-     "ebitda_eok": 4779.1,
-     "ev_eok": 19479,
-     "evEbitda": 4.1,
-     "per": 34.7
+     "per": 33.8,
+     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과)"
     }
    ]
   },
@@ -641,16 +638,11 @@
     "전장"
    ],
    "stats": {
-    "evEbitda": {
-     "down": 3.9,
-     "base": 4.2,
-     "up": 4.8,
-     "n": 4
-    },
+    "evEbitda": null,
     "per": {
-     "down": 7.5,
-     "base": 8.8,
-     "up": 20.8,
+     "down": 7.2,
+     "base": 8.6,
+     "up": 19.8,
      "n": 5
     }
    },
@@ -663,12 +655,12 @@
      "year": 2025,
      "fs": "CFS",
      "da_src": "xbrl",
-     "mcap_eok": 323354,
+     "mcap_eok": 316168,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 45253.2,
-     "ev_eok": 276379,
-     "evEbitda": 6.1,
-     "per": 8.8
+     "ev_eok": 269193,
+     "evEbitda": 5.9,
+     "per": 8.6
     },
     {
      "name": "HL만도",
@@ -678,9 +670,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 20825,
+     "mcap_eok": 19839,
      "mcap_src": "naver_mobile",
-     "per": 20.8,
+     "per": 19.8,
      "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과)"
     },
     {
@@ -690,12 +682,12 @@
      "dart_name": "에스엘",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 23224,
+     "mcap_eok": 22249,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 5700.1,
-     "ev_eok": 19519,
-     "evEbitda": 3.4,
-     "per": 7.5
+     "ev_eok": 18544,
+     "evEbitda": 3.3,
+     "per": 7.2
     },
     {
      "name": "화신",
@@ -704,13 +696,11 @@
      "dart_name": "화신",
      "year": 2025,
      "fs": "CFS",
-     "da_src": "xbrl",
-     "mcap_eok": 2602,
+     "da_why": "시간 예산 초과",
+     "mcap_eok": 2500,
      "mcap_src": "naver_mobile",
-     "ebitda_eok": 1706.8,
-     "ev_eok": 7379,
-     "evEbitda": 4.3,
-     "per": 3.9
+     "per": 3.7,
+     "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
      "name": "현대위아",
@@ -719,13 +709,11 @@
      "dart_name": "현대위아",
      "year": 2025,
      "fs": "CFS",
-     "da_src": "xbrl",
-     "mcap_eok": 13869,
+     "da_why": "XBRL 다운로드 시간/용량 초과",
+     "mcap_eok": 13502,
      "mcap_src": "naver_mobile",
-     "ebitda_eok": 4779.1,
-     "ev_eok": 19479,
-     "evEbitda": 4.1,
-     "per": 34.7
+     "per": 33.8,
+     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과)"
     }
    ]
   },
@@ -747,9 +735,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 14.7,
-     "base": 19.5,
-     "up": 31.6,
+     "down": 14.4,
+     "base": 19.0,
+     "up": 30.4,
      "n": 3
     }
    },
@@ -761,10 +749,10 @@
      "dart_name": "LG화학",
      "year": 2025,
      "fs": "CFS",
-     "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 198717,
+     "da_why": "시간 예산 초과",
+     "mcap_eok": 183893,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과); 지배주주순이익 없음/적자"
+     "reason": "감가상각비 미식별(시간 예산 초과); 지배주주순이익 없음/적자"
     },
     {
      "name": "롯데케미칼",
@@ -773,10 +761,10 @@
      "dart_name": "롯데케미칼",
      "year": 2025,
      "fs": "CFS",
-     "da_why": "XBRL 다운로드 시간/용량 초과",
-     "mcap_eok": 25280,
+     "da_why": "시간 예산 초과",
+     "mcap_eok": 24639,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(XBRL 다운로드 시간/용량 초과); 지배주주순이익 없음/적자"
+     "reason": "감가상각비 미식별(시간 예산 초과); 지배주주순이익 없음/적자"
     },
     {
      "name": "금호석유화학",
@@ -786,9 +774,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 28855,
+     "mcap_eok": 28604,
      "mcap_src": "naver_mobile",
-     "per": 9.9,
+     "per": 9.8,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -798,12 +786,12 @@
      "dart_name": "한솔케미칼",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 28766,
+     "mcap_eok": 27957,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 2102.7,
-     "ev_eok": 31030,
-     "evEbitda": 14.8,
-     "per": 19.5
+     "ev_eok": 30221,
+     "evEbitda": 14.4,
+     "per": 19.0
     },
     {
      "name": "코오롱인더스트리",
@@ -812,12 +800,12 @@
      "dart_name": "코오롱인더",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 16680,
+     "mcap_eok": 15991,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3684.6,
-     "ev_eok": 14320,
-     "evEbitda": 3.9,
-     "per": 43.6
+     "ev_eok": 13631,
+     "evEbitda": 3.7,
+     "per": 41.8
     }
    ]
   },
@@ -839,9 +827,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 9.8,
-     "base": 19.4,
-     "up": 30.1,
+     "down": 9.4,
+     "base": 18.8,
+     "up": 29.3,
      "n": 4
     }
    },
@@ -853,12 +841,12 @@
      "dart_name": "POSCO홀딩스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 242083,
+     "mcap_eok": 236140,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 59862.9,
-     "ev_eok": 522980,
-     "evEbitda": 8.7,
-     "per": 36.8
+     "ev_eok": 517037,
+     "evEbitda": 8.6,
+     "per": 35.9
     },
     {
      "name": "현대제철",
@@ -868,9 +856,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 37432,
+     "mcap_eok": 36564,
      "mcap_src": "naver_mobile",
-     "per": 6.4,
+     "per": 6.2,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -881,9 +869,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 215409,
+     "mcap_eok": 209773,
      "mcap_src": "naver_mobile",
-     "per": 27.8,
+     "per": 27.1,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -893,12 +881,12 @@
      "dart_name": "풍산",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 18468,
+     "mcap_eok": 17908,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3877.4,
-     "ev_eok": 26739,
-     "evEbitda": 6.9,
-     "per": 10.9
+     "ev_eok": 26179,
+     "evEbitda": 6.8,
+     "per": 10.5
     }
    ]
   },
@@ -919,9 +907,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 10.2,
-     "base": 16.9,
-     "up": 25.8,
+     "down": 10.1,
+     "base": 16.6,
+     "up": 25.1,
      "n": 4
     }
    },
@@ -933,12 +921,12 @@
      "dart_name": "유한양행",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 53960,
+     "mcap_eok": 52635,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1735.3,
-     "ev_eok": 54107,
-     "evEbitda": 31.2,
-     "per": 22.2
+     "ev_eok": 52782,
+     "evEbitda": 30.4,
+     "per": 21.7
     },
     {
      "name": "한미약품",
@@ -947,12 +935,12 @@
      "dart_name": "한미약품",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 61749,
+     "mcap_eok": 59763,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 3566.1,
-     "ev_eok": 66646,
-     "evEbitda": 18.7,
-     "per": 36.4
+     "ev_eok": 64660,
+     "evEbitda": 18.1,
+     "per": 35.2
     },
     {
      "name": "종근당",
@@ -962,9 +950,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 9027,
+     "mcap_eok": 8944,
      "mcap_src": "naver_mobile",
-     "per": 11.6,
+     "per": 11.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -975,9 +963,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 12583,
+     "mcap_eok": 12062,
      "mcap_src": "naver_mobile",
-     "per": 6.0,
+     "per": 5.8,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -988,7 +976,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 14959,
+     "mcap_eok": 14947,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(시간 예산 초과); 지배주주순이익 없음/적자"
     }
@@ -1010,9 +998,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 18.8,
-     "base": 22.7,
-     "up": 25.3,
+     "down": 18.4,
+     "base": 22.1,
+     "up": 24.4,
      "n": 3
     }
    },
@@ -1035,9 +1023,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 3462,
+     "mcap_eok": 3320,
      "mcap_src": "naver_mobile",
-     "per": 27.9,
+     "per": 26.7,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1048,9 +1036,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 6943,
+     "mcap_eok": 6781,
      "mcap_src": "naver_mobile",
-     "per": 22.7,
+     "per": 22.1,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1060,12 +1048,12 @@
      "dart_name": "클래시스",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 19636,
+     "mcap_eok": 19212,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1852.4,
-     "ev_eok": 18420,
-     "evEbitda": 9.9,
-     "per": 14.9
+     "ev_eok": 17996,
+     "evEbitda": 9.7,
+     "per": 14.6
     }
    ]
   },
@@ -1087,9 +1075,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 23.4,
-     "base": 26.7,
-     "up": 39.5,
+     "down": 22.9,
+     "base": 26.0,
+     "up": 38.0,
      "n": 3
     }
    },
@@ -1102,9 +1090,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 151738,
+     "mcap_eok": 149417,
      "mcap_src": "naver_mobile",
-     "per": 20.0,
+     "per": 19.7,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1124,9 +1112,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 2655,
+     "mcap_eok": 2587,
      "mcap_src": "naver_mobile",
-     "per": 26.7,
+     "per": 26.0,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1137,9 +1125,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 99549,
+     "mcap_eok": 95435,
      "mcap_src": "naver_mobile",
-     "per": 52.2,
+     "per": 50.1,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     }
    ]
@@ -1160,9 +1148,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 12.4,
+     "down": 12.5,
      "base": 12.5,
-     "up": 13.2,
+     "up": 12.8,
      "n": 3
     }
    },
@@ -1175,9 +1163,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 85680,
+     "mcap_eok": 86185,
      "mcap_src": "naver_mobile",
-     "per": 12.4,
+     "per": 12.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1187,12 +1175,12 @@
      "dart_name": "NC",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 48043,
+     "mcap_eok": 45027,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1116.7,
-     "ev_eok": 30335,
-     "evEbitda": 27.2,
-     "per": 13.9
+     "ev_eok": 27319,
+     "evEbitda": 24.5,
+     "per": 13.0
     },
     {
      "name": "넷마블",
@@ -1202,7 +1190,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 28024,
+     "mcap_eok": 28066,
      "mcap_src": "naver_mobile",
      "per": 12.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
@@ -1224,9 +1212,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 8.4,
-     "base": 10.4,
-     "up": 15.7,
+     "down": 8.6,
+     "base": 10.7,
+     "up": 15.8,
      "n": 3
     }
    },
@@ -1239,9 +1227,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 21651,
+     "mcap_eok": 22157,
      "mcap_src": "naver_mobile",
-     "per": 10.4,
+     "per": 10.7,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1252,9 +1240,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 7132,
+     "mcap_eok": 7192,
      "mcap_src": "naver_mobile",
-     "per": 6.5,
+     "per": 6.6,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1265,9 +1253,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 1418,
+     "mcap_eok": 1406,
      "mcap_src": "naver_mobile",
-     "per": 21.0,
+     "per": 20.8,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1297,8 +1285,8 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 12.7,
-     "base": 14.3,
+     "down": 13.0,
+     "base": 14.6,
      "up": 27.9,
      "n": 3
     }
@@ -1312,9 +1300,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 19427,
+     "mcap_eok": 19869,
      "mcap_src": "naver_mobile",
-     "per": 14.3,
+     "per": 14.6,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1325,9 +1313,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 21709,
+     "mcap_eok": 22210,
      "mcap_src": "naver_mobile",
-     "per": 11.1,
+     "per": 11.4,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1338,9 +1326,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 18017,
+     "mcap_eok": 17892,
      "mcap_src": "naver_mobile",
-     "per": 41.5,
+     "per": 41.2,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     }
    ]
@@ -1371,9 +1359,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 137400,
+     "mcap_eok": 136050,
      "mcap_src": "naver_mobile",
-     "per": 7.9,
+     "per": 7.8,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1384,7 +1372,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 2660,
+     "mcap_eok": 2657,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(시간 예산 초과); 지배주주순이익 없음/적자"
     },
@@ -1396,9 +1384,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 15923,
+     "mcap_eok": 15832,
      "mcap_src": "naver_mobile",
-     "per": 6.6,
+     "per": 6.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     }
    ]
@@ -1420,9 +1408,9 @@
    "stats": {
     "evEbitda": null,
     "per": {
-     "down": 15.3,
-     "base": 29.1,
-     "up": 30.4,
+     "down": 14.5,
+     "base": 27.5,
+     "up": 28.5,
      "n": 3
     }
    },
@@ -1435,9 +1423,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 118371,
+     "mcap_eok": 110131,
      "mcap_src": "naver_mobile",
-     "per": 31.7,
+     "per": 29.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1448,9 +1436,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 27215,
+     "mcap_eok": 25674,
      "mcap_src": "naver_mobile",
-     "per": 29.1,
+     "per": 27.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1460,10 +1448,10 @@
      "dart_name": "케이씨씨",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 39270,
+     "mcap_eok": 38754,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 8873.8,
-     "ev_eok": 56095,
+     "ev_eok": 55579,
      "evEbitda": 6.3,
      "per": 1.5
     }
@@ -1486,8 +1474,8 @@
     "evEbitda": null,
     "per": {
      "down": 6.3,
-     "base": 6.4,
-     "up": 8.1,
+     "base": 6.6,
+     "up": 8.3,
      "n": 3
     }
    },
@@ -1500,9 +1488,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 31373,
+     "mcap_eok": 32303,
      "mcap_src": "naver_mobile",
-     "per": 6.4,
+     "per": 6.6,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1513,9 +1501,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 3528,
+     "mcap_eok": 3480,
      "mcap_src": "naver_mobile",
-     "per": 6.2,
+     "per": 6.1,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1526,9 +1514,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 20308,
+     "mcap_eok": 20785,
      "mcap_src": "naver_mobile",
-     "per": 9.8,
+     "per": 10.0,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     }
    ]
@@ -1557,9 +1545,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 9531,
+     "mcap_eok": 9508,
      "mcap_src": "naver_mobile",
-     "per": 20.6,
+     "per": 20.5,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1570,9 +1558,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 1118,
+     "mcap_eok": 1136,
      "mcap_src": "naver_mobile",
-     "per": 15.1,
+     "per": 15.3,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
@@ -1600,7 +1588,12 @@
    ],
    "stats": {
     "evEbitda": null,
-    "per": null
+    "per": {
+     "down": 34.2,
+     "base": 40.2,
+     "up": 67.7,
+     "n": 3
+    }
    },
    "peers": [
     {
@@ -1611,23 +1604,24 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 218806,
+     "mcap_eok": 206911,
      "mcap_src": "naver_mobile",
-     "per": 29.9,
+     "per": 28.2,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     },
     {
      "name": "LS ELECTRIC",
      "code": "010120",
-     "ok": false,
+     "ok": true,
      "dart_name": "엘에스일렉트릭",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 295800,
+     "mcap_eok": 272850,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 5587.2,
-     "ev_eok": 302784,
-     "reason": "EV/EBITDA 범위 밖(54.2); PER 범위 밖(103.2)"
+     "ev_eok": 279834,
+     "per": 95.2,
+     "reason": "EV/EBITDA 범위 밖(50.1)"
     },
     {
      "name": "효성중공업",
@@ -1637,9 +1631,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 234419,
+     "mcap_eok": 208870,
      "mcap_src": "naver_mobile",
-     "per": 45.1,
+     "per": 40.2,
      "reason": "감가상각비 미식별(시간 예산 초과)"
     }
    ]
@@ -1667,10 +1661,10 @@
      "dart_name": "엘앤에프",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 47033,
+     "mcap_eok": 43656,
      "mcap_src": "naver_mobile",
      "ebitda_eok": -715.5,
-     "ev_eok": 56587,
+     "ev_eok": 53210,
      "reason": "EBITDA 또는 EV가 0 이하; 지배주주순이익 없음/적자"
     },
     {
@@ -1681,9 +1675,9 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 123755,
+     "mcap_eok": 113288,
      "mcap_src": "naver_mobile",
-     "reason": "감가상각비 미식별(시간 예산 초과); PER 범위 밖(357.3)"
+     "reason": "감가상각비 미식별(시간 예산 초과); PER 범위 밖(327.1)"
     }
    ]
   },
@@ -1711,10 +1705,10 @@
      "dart_name": "메가스터디교육",
      "year": 2025,
      "fs": "CFS",
-     "mcap_eok": 4011,
+     "mcap_eok": 4001,
      "mcap_src": "naver_mobile",
      "ebitda_eok": 1943.5,
-     "ev_eok": 3720,
+     "ev_eok": 3710,
      "evEbitda": 1.9,
      "per": 4.7
     },
@@ -1726,7 +1720,7 @@
      "year": 2025,
      "fs": "CFS",
      "da_why": "시간 예산 초과",
-     "mcap_eok": 661,
+     "mcap_eok": 650,
      "mcap_src": "naver_mobile",
      "reason": "감가상각비 미식별(시간 예산 초과); 지배주주순이익 없음/적자"
     }
