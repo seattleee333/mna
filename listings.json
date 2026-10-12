@@ -178,57 +178,5 @@
   "revenue": "250",
   "feature": "핀테크社",
   "ind_v": 2
- },
- {
-  "outlet": "매일경제",
-  "article_title": "[M&A 매물장터] 연매출 170억 건축용 유리 가공사 매물로",
-  "article_link": "https://stock.mk.co.kr/news/view/1173089",
-  "pubDate": "Mon, 12 Oct 2026 08:36:07 GMT",
-  "type": "sell",
-  "industry": "외식 프랜차이즈사",
-  "label": "B사",
-  "ind_v": 2,
-  "revenue": "50억원",
-  "feature": "연매출 50억원의 외식 프랜차이즈사 B사도 매물로 나왔다."
- },
- {
-  "outlet": "매일경제",
-  "article_title": "[M&A 매물장터] 연매출 170억 건축용 유리 가공사 매물로",
-  "article_link": "https://stock.mk.co.kr/news/view/1173089",
-  "pubDate": "Mon, 12 Oct 2026 08:36:07 GMT",
-  "type": "sell",
-  "industry": "유학 중개업체",
-  "label": "C사",
-  "ind_v": 2,
-  "revenue": "35억원",
-  "feature": "연매출 35억원의 유학 중개업체 C사도 인수자를 찾고 있다."
- },
- {
-  "outlet": "매일경제",
-  "article_title": "[M&A 매물장터] 연매출 170억 건축용 유리 가공사 매물로",
-  "article_link": "https://stock.mk.co.kr/news/view/1173089",
-  "pubDate": "Mon, 12 Oct 2026 08:36:07 GMT",
-  "type": "buy",
-  "form": "",
-  "industry": "",
-  "label": "D사",
-  "ind_v": 2,
-  "target_industry": "자사 사업 관련 프랜차이즈사",
-  "feature": "식품 분야 외감 기업 D사는 자사 사업 관련 프랜차이즈사 인수를 추진하고 있다. 한우 고기 전문점, 카페 등을 우선순위로 검토하고 있으며 희망 인수 금액은 300억원이다.",
-  "budget": "300억원"
- },
- {
-  "outlet": "매일경제",
-  "article_title": "[M&A 매물장터] 연매출 170억 건축용 유리 가공사 매물로",
-  "article_link": "https://stock.mk.co.kr/news/view/1173089",
-  "pubDate": "Mon, 12 Oct 2026 08:36:07 GMT",
-  "type": "buy",
-  "form": "",
-  "industry": "",
-  "label": "F사",
-  "ind_v": 2,
-  "target_industry": "판금 캐비닛, 가스 감지기, 센서 업체 또는 배터리 리사이클 관련 기업",
-  "feature": "반도체·디스플레이 관련 설비를 제조·공급하는 외감사 F사는 판금 캐비닛, 가스 감지기, 센서 업체 또는 배터리 리사이클 관련 기업 인수를 검토하고 있다. 희망 인수 금액은 100억원이다.",
-  "budget": "100억원"
  }
 ]
