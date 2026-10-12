@@ -1,16 +1,12 @@
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-01 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-02 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-05 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-06 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-07 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-08 8-K 0건
-  인덱스 응답 403: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-T
-  2026-10-09 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 0건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 1, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-K/A            Financial Agency Group                                        2014151     20261001    edgar/data/2014151/0002014151-26-000003.txt                                                
+  2026-10-01 8-K 259건
+  2026-10-02 8-K 192건
+  2026-10-05 8-K 213건
+  2026-10-06 8-K 245건
+  2026-10-07 8-K 135건
+  2026-10-08 8-K 158건
+  2026-10-09 8-K 156건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>KJYVX6F585WGSWYV</RequestId><HostId>0QFMRB/fmyesF1z+BMeDp8bMt8lgcU1mdm7ggXfamX2W00/dpt
+  2026-10-12 8-K 0건
+새로 확인할 8-K 1358건
+저장: 딜 127건 (이번 신규 131건, LLM 0건)
