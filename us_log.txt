@@ -1,6 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>N70BP0CWCKC6Q7SK</RequestId><HostId>CRqi94TVszKzSuDBcrHCSVe1CEzplZFUEKZK4kT/vWmMcs1z3W
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>4TC107DR1VHYC19K</RequestId><HostId>xSyR+vECnC3h4bvTUoYXPdxyu2czFomKQkEfMsf20Oca3wlALk
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>N70FQWRP3D2AFFRB</RequestId><HostId>nYMgk4ECOsMjx6grokzRGRUTvd/ycVY3Fd0dPGxMCnYCrQmtIb
-  2026-10-13 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 108건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 13, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              Cahero Korva Holding LLC                                      2159554     20261013    edgar/data/2159554/0002159554-26-000001.txt                                                
+  2026-10-13 8-K 253건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>4TC3W87KYPATZ1Q4</RequestId><HostId>2kyi5MqiahhEm1mT6TEooGtjY/OCuql0sKjwwchBYeI4uxgj4I
+  2026-10-14 8-K 0건
+새로 확인할 8-K 253건
+저장: 딜 125건 (이번 신규 17건, LLM 0건)
