@@ -33,7 +33,7 @@ BUDGET = 150 * 60
 WORKERS = 5
 SEEDS = ["광명전기", "지투파워", "이에스아이"]            # 업종코드 확인용 대표 회사
 FORCE_CODES = [c for c in os.environ.get("INDUTY_CODES", "").split(",") if c.strip()]
-KEYWORD_RE = re.compile(r"배전반|자동제어반|수배전|분전반|제어반")
+KEYWORD_RE = re.compile(r"배전반|자동제어반|수배전|분전반|배전|제어반")
 EVENT_RE = re.compile(r"최대주주|주식양수도|유상증자|제3자배정|합병|분할|영업양수|영업양도|경영권|지분양수|지분양도")
 TODAY = dt.date.today()
 SINCE = dt.date(TODAY.year - 5, TODAY.month, TODAY.day).strftime("%Y%m%d")
@@ -235,10 +235,8 @@ def main():
         for r in rows:
             slim.append({k2: r.get(k2) for k2 in (
                 "rcept_no", "corp_code", "corp_name", "iscmp_cmpnm", "iscmp_nation", "iscmp_rp", "iscmp_cpt",
-                "inhdtl_stkcnt", "inhdtl_inhprc", "inhdtl_tast", "atinh_owshares", "atinh_eqrt", "inh_pp",
+                "iscmp_mbsn", "inhdtl_stkcnt", "inhdtl_inhprc", "inhdtl_tast", "atinh_owshares", "atinh_eqrt", "inh_pp",
                 "inh_prd", "dlptn_cmpnm", "dlptn_mbsn", "dlptn_rl_cmpn", "inh_bd")})
-            if len(slim) == 1:
-                log(f"[샘플 취득 필드] {sorted(rows[0].keys())}")
         with _lock:
             cache["acq"][k] = slim
 
