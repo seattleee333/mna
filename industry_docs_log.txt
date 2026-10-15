@@ -1,0 +1,12 @@
+A) 취득공시 원문 읽기 2372건 (이미 완료 0)
+  진행 300건, 후보 0건
+  진행 600건, 후보 0건
+  진행 900건, 후보 0건
+  진행 1200건, 후보 0건
+  진행 1500건, 후보 0건
+  진행 1800건, 후보 0건
+  진행 2100건, 후보 3건
+B) 대상 회사 공시 원문 65건
+원문 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>
+원문 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><result><status>014</status><message>파일이 존재하지 않습니다.</message></result>
+완료: 취득 후보 3건, 이벤트 원문 63건, 원문 오류 2
