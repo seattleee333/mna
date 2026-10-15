@@ -358,7 +358,7 @@ def main():
     deals.sort(key=lambda x: x["date"], reverse=True)
     latest = {}
     for cc in ind_corps:
-        for y in (TODAY.year - 2, TODAY.year - 1):
+        for y in range(TODAY.year - 6, TODAY.year):
             latest[f"{cc}|{y}"] = fin(cache, cc, y)
     save_cache(cache)
 
