@@ -1,0 +1,39 @@
+name: 업종 M&A 원문 보강 (DART)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  industry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: 원문 읽기
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u fetch_industry_docs.py
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          for f in industry_docs.json industry_docs_cache.json industry_docs_log.txt; do [ -f "$f" ] && git add "$f"; done
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update industry docs"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi
