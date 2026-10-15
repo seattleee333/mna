@@ -356,11 +356,16 @@ def main():
     for d in deals:
         d["fin"] = cache["fin"].get(f"{d['target_cc']}|{int(d['date'][:4]) - 1}") if d.get("target_cc") else None
     deals.sort(key=lambda x: x["date"], reverse=True)
+    latest = {}
+    for cc in ind_corps:
+        for y in (TODAY.year - 2, TODAY.year - 1):
+            latest[f"{cc}|{y}"] = fin(cache, cc, y)
+    save_cache(cache)
 
     out = {"updated": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "since": SINCE, "induty_codes": sorted(codes),
            "companies": [{"corp_code": cc, "name": v["name"], "induty": v["induty"], "stock": v["stock"]}
                          for cc, v in ind_corps.items()],
-           "deals": deals,
+           "deals": deals, "fin_by_year": latest,
            "filings": {ind_corps[cc]["name"]: o["filings"] for cc, o in events_filings.items()}}
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
