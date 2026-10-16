@@ -58,7 +58,8 @@ def find_reports():
                     cc = it["corp_code"]
                     if cc not in best or it["rcept_no"] > best[cc]["rcept_no"]:
                         best[cc] = {"corp_code": cc, "name": it["corp_name"], "code": it["stock_code"].strip(),
-                                    "rcept_no": it["rcept_no"], "report_nm": nm.strip(), "date": it["rcept_dt"]}
+                                    "rcept_no": it["rcept_no"], "report_nm": nm.strip(), "date": it["rcept_dt"],
+                                        "cls": {"Y": "유가증권", "K": "코스닥", "N": "코넥스"}.get(it.get("corp_cls"), it.get("corp_cls"))}
             if page >= int(d.get("total_page", 1)):
                 break
             page += 1
@@ -179,6 +180,29 @@ def eok(v):
     return None if v is None else round(v / 1e8, 1)
 
 
+def write_xlsx(rows):
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment
+    wb = Workbook(write_only=False)
+    ws = wb.active
+    ws.title = "사업보고서 프로필"
+    heads = [k for k in rows[0].keys() if k not in ("사업의 개요", "주요 제품 및 서비스", "원재료 및 생산설비", "매출 및 수주상황")]
+    heads += ["사업의 개요", "주요 제품 및 서비스", "원재료 및 생산설비", "매출 및 수주상황"]
+    ws.append(heads)
+    bad = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+    for r in rows:
+        ws.append([bad.sub("", v) if isinstance(v, str) else v for v in (r.get(h) for h in heads)])
+    for c in ws[1]:
+        c.font = Font(bold=True, color="FFFFFF"); c.fill = PatternFill("solid", fgColor="1F3A5F")
+        c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    ws.freeze_panes = "C2"
+    for i, h in enumerate(heads, 1):
+        w = 60 if h in ("사업의 개요", "주요 제품 및 서비스", "원재료 및 생산설비", "매출 및 수주상황") else (30 if h in ("보고서", "공시링크") else 12)
+        ws.column_dimensions[ws.cell(1, i).column_letter].width = w
+    ws.auto_filter.ref = ws.dimensions
+    wb.save("company_profiles.xlsx")
+
+
 def main():
     reps = find_reports()
     log(f"{FY}년 12월 결산 사업보고서 제출 상장사 {len(reps)}곳")
@@ -213,7 +237,7 @@ def main():
     for cc, r in sorted(reps.items(), key=lambda x: x[1]["code"]):
         sec = cache.get(r["rcept_no"], {})
         f = fin.get(cc, {})
-        row = {"종목코드": r["code"], "회사명": r["name"], "사업연도": FY, "접수일": r["date"], "보고서": r["report_nm"],
+        row = {"종목코드": r["code"], "회사명": r["name"], "시장": r.get("cls"), "사업연도": FY, "접수일": r["date"], "보고서": r["report_nm"],
                "공시링크": f"https://dart.fss.or.kr/dsaf001/main.do?rcpNo={r['rcept_no']}",
                "사업의 개요": sec.get("overview"), "주요 제품 및 서비스": sec.get("products"),
                "원재료 및 생산설비": sec.get("materials"), "매출 및 수주상황": sec.get("sales"),
@@ -230,6 +254,8 @@ def main():
             for row in rows:
                 fh.write(json.dumps(row, ensure_ascii=False) + "\n")
         json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    if not PILOT:
+        write_xlsx(rows)
     ok = sum(1 for r in rows if r["사업의 개요"])
     log(f"완료: {len(rows)}곳 / 본문 추출 성공 {ok}곳 / 재무 {sum(1 for r in rows if r['재무구분'])}곳")
 
