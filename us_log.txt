@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>72NRCQAST57F6QSS</RequestId><HostId>52sQawQ77bHIMpqq2C1CVwZYQyVXko+QIf7eEW7TIcdj9Q8HoD
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>FJTPEZV32KC7PZF6</RequestId><HostId>wVEBPzO/p7N3dDM7fdUKMSqqBWh3Vy6aVQ4JiSLoCzvSGZpTA7
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 14, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Energea Portfolio 2 LP                                        1811470     20250715    edgar/data/1811470/0001811470-25-000023.txt                                                
-  2026-10-14 8-K 177건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>ZRJ2D0AZJ2TTM4M9</RequestId><HostId>EC7/cfFxZOIAt5bV08PWm4YkqaOnTC5GxTKXklFxZNW7ATrG35
-  2026-10-15 8-K 0건
-새로 확인할 8-K 177건
-저장: 딜 138건 (이번 신규 13건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 15, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Bequest Bonds I Inc                                           2016678     20261015    edgar/data/2016678/0001213900-26-109708.txt                                                
+  2026-10-15 8-K 218건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>W9NVH804QTJD201J</RequestId><HostId>vEGVN69RRxFtwo47ERa8hmiG0lO6ZOc+nSr8th/IqHZdD45kDd
+  2026-10-16 8-K 0건
+새로 확인할 8-K 218건
+저장: 딜 146건 (이번 신규 8건, LLM 0건)
