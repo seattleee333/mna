@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          for f in profiles_pilot.json company_profiles.xlsx profiles_log.txt; do [ -f "$f" ] && git add "$f"; done
+          for f in profiles_pilot.json company_profiles.xlsx profiles_cache.json profiles_log.txt; do [ -f "$f" ] && git add "$f"; done
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else

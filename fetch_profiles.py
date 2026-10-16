@@ -230,8 +230,12 @@ def main():
             log("   추출: " + str({k: v for k, v in sec.items() if k.endswith('_len')}))
         with _lock:
             cache[r["rcept_no"]] = sec
+            first["saved"] = first.get("saved", 0) + 1
+            if first["saved"] % 150 == 0 and not PILOT:
+                json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+                log(f"  진행: 신규 {first['saved']}건 처리")
 
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         list(ex.map(work, reps.values()))
     rows = []
     for cc, r in sorted(reps.items(), key=lambda x: x[1]["code"]):

@@ -1,4 +1,3 @@
 __pycache__/
 *.pyc
 company_profiles.jsonl
-profiles_cache.json
