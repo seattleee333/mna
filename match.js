@@ -13,8 +13,8 @@
     sd: { label: "유사 기업", desc: "내가 지목한 회사와 사업이 비슷함" }
   };
   const WEIGHT = { h: 1.0, v: 0.6, cu: 0.7, cap: 0.5, sd: 0.8 };
-  const MIN = { h: 0.10, vb: 0.09, vf: 0.09, cu: 0.09, cap: 0.10, sd: 0.25 };
-  const EV_MIN = 4.0;            // 근거 문장으로 인정하는 최소 일치 점수(희소한 단어일수록 큼)
+  const MIN = { h: 0.15, vb: 0.12, vf: 0.12, cu: 0.09, cap: 0.10, sd: 0.25 };
+  const EV_MIN = 3.0;           // 근거 문장으로 인정하는 최소 일치 점수(희소한 단어일수록 큼)
 
   // 업종·고객 산업 선택칸 (고르면 관련 단어가 검색에 함께 쓰인다)
   const INDUSTRIES = {
@@ -27,6 +27,7 @@
     "자동차·부품": ["자동차", "자동차부품", "완성차", "전기차"],
     "2차전지": ["2차전지", "이차전지", "배터리", "양극재", "음극재"],
     "반도체·디스플레이": ["반도체", "웨이퍼", "디스플레이", "OLED", "패널"],
+    "전자부품·PCB": ["PCB", "인쇄회로기판", "반도체기판", "패키지기판", "FPCB", "수동소자", "전자부품"],
     "전기·전력·에너지": ["전력", "전기", "배전반", "변압기", "태양광", "신재생", "ESS"],
     "로봇·자동화·기계": ["로봇", "자동화", "스마트팩토리", "기계", "설비"],
     "건설·건자재": ["건설", "시공", "건축", "토목", "건자재"],
@@ -57,21 +58,25 @@
     ["식품", "가공식품", "제과", "간편식"], ["사료", "축산", "양계"], ["유통", "편의점", "리테일"],
     ["광고", "마케팅", "미디어"], ["환경", "폐기물", "수처리", "재활용"], ["디스플레이", "OLED", "패널"],
     ["통신", "5G", "네트워크"], ["항공", "우주", "위성", "드론"], ["청소", "세정", "클리닝"], ["펫", "반려동물", "애견"],
-    ["여행", "관광", "호텔", "리조트"], ["외식", "프랜차이즈", "음식점"], ["교육", "에듀테크", "학원"]
+    ["여행", "관광", "호텔", "리조트"], ["외식", "프랜차이즈", "음식점"], ["교육", "에듀테크", "학원"],
+    // 전자부품·PCB
+    ["PCB", "인쇄회로기판", "회로기판", "기판"], ["적층", "다층", "빌드업", "MLB"], ["PKG", "패키지", "패키징", "PACKAGE", "SUBSTRATE"],
+    ["FC-BGA", "BGA", "FCBGA", "패키지기판", "반도체기판"], ["HDI", "고밀도", "고다층"], ["FPCB", "연성인쇄회로기판", "연성회로"],
+    ["소캠", "SOCAMM", "메모리모듈"], ["리드프레임", "LEADFRAME", "반도체패키지"], ["MLCC", "적층세라믹", "수동소자", "인덕터", "저항기"]
   ];
   let IDX = null, CV = null;
 
   function tok(text) {
     const out = [];
     (String(text).match(HANGUL) || []).forEach(function (w) { for (let i = 0; i < w.length - 1; i++) out.push(w.substr(i, 2)); });
-    (String(text).match(ALNUM) || []).forEach(function (w) { out.push(w); });
+    (String(text).replace(/[a-z]+/g, function (m) { return m.toUpperCase(); }).match(ALNUM) || []).forEach(function (w) { out.push(w); });
     return out;
   }
   // 입력 문장 + (선택칸 단어, 유사어)를 가중치 맵으로 만든다. 직접 쓴 단어 1.0, 덧붙인 단어 0.6
   function expandTerms(text, bag) {
-    const extra = [], low = String(text);
+    const extra = [], low = String(text).toUpperCase();
     SYN.forEach(function (g) {
-      if (g.some(function (t) { return low.indexOf(t) >= 0; })) g.forEach(function (t) { if (low.indexOf(t) < 0) extra.push(t); });
+      if (g.some(function (t) { return low.indexOf(t.toUpperCase()) >= 0; })) g.forEach(function (t) { if (low.indexOf(t.toUpperCase()) < 0) extra.push(t); });
     });
     return extra.concat(bag || []);
   }
@@ -141,7 +146,8 @@
   function bagOf(names) { let b = []; (names || []).forEach(function (n) { b = b.concat(INDUSTRIES[n] || []); }); return b; }
 
   // 입력 → 후보 목록 (최대 80곳)
-  function run(inp) {
+  function run(inp, opt) {
+    const wide = !!(opt && opt.wide), mf = wide ? 0.6 : 1;      // 넓게 보기: 기준을 낮춰 관련도가 낮은 후보까지 포함
     const bagI = bagOf(inp.industries), bagC = bagOf(inp.custIndustries);
     const prodText = inp.products + "\n" + inp.tech;           // 사업을 설명하는 글
     // 업종·고객 산업 선택칸은 보조 신호(비중 낮게). 직접 쓴 제품 설명이 중심이 되게 한다.
@@ -166,24 +172,48 @@
     if (bagPV.size) { const q4 = new Map(qP); addInto(q4, bagPV, 0.25); qP = norm(q4); }
 
     const qmP = tokWeights(prodAll, bagI), qmM = tokWeights(inp.materials, []), qmC = tokWeights(inp.customers, bagC), qmT = tokWeights(inp.tech + "\n" + inp.issues, []);
+    // 고객사 이름은 글자 조각이 아니라 이름 전체가 후보 공시 문장에 나올 때만 '같은 고객'으로 친다
+    const cnames = (inp.customers || "").split(/[,\n;·\/]|\s및\s|\s등(?:\s|$)/).map(function (s) { return s.trim(); }).filter(function (s) { return s.length >= 2 && s.length <= 20; });
+    const cnUp = cnames.map(function (n) { return n.replace(/\s+/g, "").toUpperCase(); });
+    function custHits(c, v) {
+      const all = (c.e.S || []).concat(c.e.P || []);
+      let sub = 0, vec = 0; const sents = [];
+      cnUp.forEach(function (nm, j) {
+        const sh = all.filter(function (s) { return s.replace(/\s+/g, "").toUpperCase().indexOf(nm) >= 0; });
+        if (sh.length) { sub++; sents.push({ s: sh[0], name: cnames[j] }); return; }
+        const tk = tok(cnames[j]);
+        if (nm.length >= 4 && tk.length >= 3 && tk.every(function (t) { const i = IDX.vid.get(t); return i !== undefined && (v.S.has(i) || v.P.has(i) || v.M.has(i)); })) vec++;
+      });
+      return { sub: sub, vec: vec, sents: sents };
+    }
     const out = [];
     IDX.c.forEach(function (c, k) {
       const v = CV[k], isSeed = seeds.indexOf(k) >= 0;
-      const s = { h: dot(qP, v.P), vb: dot(qP, v.M), vf: dot(qM, v.P), cu: dot(qC, v.S) + 0.5 * dot(qC, v.P), cap: dot(qT, v.P), sd: seeds.length ? dot(seedVec, v.P) : 0 };
+      const ch = custHits(c, v);
+      // 여러 사업을 하는 회사는 벡터가 퍼져 있어 코사인이 낮아지므로, '내 단어가 얼마나 들어 있나(포함률)'도 함께 본다
+      const cov = function (q, c) { let a = 0, b = 0; q.forEach(function (w, i) { b += w; if (c.has(i)) a += w; }); return b ? a / b : 0; };
+      const s = { h: dot(qP, v.P) + 0.4 * cov(qP, v.P), vb: dot(qP, v.M) + 0.2 * cov(qP, v.M), vf: dot(qM, v.P) + 0.2 * cov(qM, v.P), cu: 0.3 * (dot(qC, v.S) + 0.5 * dot(qC, v.P)) + 0.22 * ch.sub + 0.08 * ch.vec, cap: dot(qT, v.P), sd: seeds.length ? dot(seedVec, v.P) : 0 };
+      s.ch = ch;
       const score = WEIGHT.h * s.h + WEIGHT.v * Math.max(s.vb, s.vf) + WEIGHT.cu * s.cu + WEIGHT.cap * s.cap + WEIGHT.sd * s.sd + (isSeed ? 0.15 : 0);
       if (score < 0.05 && !isSeed) return;
       out.push({ k: k, c: c, s: s, score: score, seed: isSeed });
     });
     out.sort(function (a, b) { return b.score - a.score; });
+    window.MNA_MATCH_LAST = out;   // 점검용(개발자 도구에서 점수 확인)
     let res = [];
-    for (let i = 0; i < out.length && res.length < 80; i++) {
+    for (let i = 0; i < out.length && res.length < (wide ? 150 : 80); i++) {
       const o = out[i], c = o.c, reasons = [];
       const spec = [
         ["h", prodAll, bagI, qmP, c.e.P], ["vb", prodAll, bagI, qmP, c.e.M], ["vf", inp.materials, [], qmM, c.e.P],
         ["cu", inp.customers, bagC, qmC, (c.e.S || []).concat(c.e.P || [])], ["cap", inp.tech + "\n" + inp.issues, [], qmT, c.e.P]
       ];
       spec.forEach(function (sp) {
-        const t = sp[0]; if (o.s[t] < MIN[t]) return;
+        const t = sp[0]; if (o.s[t] < MIN[t] * mf) return;
+        if (t === "cu" && !o.s.ch.sub && o.s.cu < 0.14 * mf) return;   // 고객 이름이 직접 나오지 않으면 점수가 충분히 높을 때만
+        if (t === "cu" && o.s.ch.sents.length) {         // 고객 이름이 직접 나온 문장을 우선 근거로
+          reasons.push({ t: t, ev: o.s.ch.sents.slice(0, 2).map(function (x) { return { co: hi(x.s, x.name, []), me: x.name }; }), val: o.s[t] });
+          return;
+        }
         const ev = bestSentences(sp[4] || [], sp[3], 2);
         if (!ev.length) return;                       // 근거 문장이 없는 유형은 이유로 쓰지 않는다
         reasons.push({ t: t, ev: ev.map(function (e) { return { co: hi(e.s, sp[1], sp[2]), me: userQuote(sp[1], e.s) }; }), val: o.s[t] });
@@ -195,7 +225,7 @@
     }
     if (res.length) {
       const top = res[0].score;
-      res = res.filter(function (r) { return r.seed || r.score / top >= 0.25; });
+      res = res.filter(function (r) { return r.seed || r.score / top >= (wide ? 0.1 : 0.25); });
       res.forEach(function (r) { const x = r.score / top; r.grade = x >= 0.6 ? "상" : (x >= 0.35 ? "중" : "하"); });
     }
     return res;

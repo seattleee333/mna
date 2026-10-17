@@ -83,6 +83,7 @@
 
     <section id="result" hidden>
       <div class="mt-sum" id="sum"></div>
+      <label class="mt-wide"><input type="checkbox" id="wideChk"> 관련도가 낮은 후보까지 넓게 보기 <span class="mt-h">(후보가 적거나, 예상한 회사가 안 보일 때)</span></label>
       <div class="mt-excl" id="exclBar">
         <input type="text" id="exclIn" placeholder="결과에서 뺄 회사명을 입력하고 Enter (경쟁사·이미 접촉한 곳)">
         <div class="mt-excl-chips" id="exclChips"></div>
@@ -166,7 +167,7 @@ renderNewsPanel();
     $("runBtn").disabled = true; $("runBtn").textContent = "찾는 중…";
     M.load().then(function () {
       setTimeout(function () {
-        results = M.run(lastInput); excluded.clear(); tab = "all";
+        results = M.run(lastInput, { wide: $("wideChk").checked }); excluded.clear(); tab = "all";
         $("result").hidden = false;
         redraw();
         $("result").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -238,6 +239,7 @@ renderNewsPanel();
     $("moreBtn").hidden = shown >= list.length;
   }
   $("moreBtn").addEventListener("click", function () { render(PAGE); });
+  $("wideChk").addEventListener("change", function () { if (lastInput) { results = M.run(lastInput, { wide: this.checked }); tab = "all"; redraw(); } });
   $("tabs").addEventListener("click", function (e) { const b = e.target.closest("button[data-tab]"); if (b) { tab = b.dataset.tab; redraw(); } });
   $("exclChips").addEventListener("click", function (e) { const b = e.target.closest("button[data-undo]"); if (b) { excluded.delete(b.dataset.undo); redraw(); } });
   $("exclIn").addEventListener("keydown", function (e) {

@@ -13,7 +13,8 @@ MA = "ma_cache.json"
 EXTRA = "dart_extra_cache.json"
 OUT = "match_index.json"
 K = {"P": 80, "M": 40, "S": 40}          # 영역별 저장 항목 수
-NSENT = {"P": 7, "M": 3, "S": 3}         # 영역별 근거 문장 수
+NSENT = {"P": 7, "M": 3, "S": 3}
+IDF_CAP = 4.5         # 영역별 근거 문장 수
 HANGUL = re.compile(r"[가-힣]{2,}")
 ALNUM = re.compile(r"(?<![A-Za-z0-9])[A-Z][A-Z0-9&\-]{1,7}(?![A-Za-z0-9])")   # match.js 와 동일 규칙
 
@@ -22,7 +23,7 @@ def tokens(text):
     out = []
     for w in HANGUL.findall(text):
         out.extend(w[i:i + 2] for i in range(len(w) - 1))
-    out.extend(ALNUM.findall(text))
+    out.extend(ALNUM.findall(re.sub(r"[a-z]+", lambda m: m.group().upper(), text)))
     return out
 
 
@@ -80,7 +81,8 @@ def main():
     # 너무 흔하거나(35% 초과) 한 번만 나온 토큰은 제외
     vocab = sorted(t for t, d in df.items() if 2 <= d <= 0.35 * N)
     vid = {t: i for i, t in enumerate(vocab)}
-    idf = [round(math.log(N / df[t]), 2) for t in vocab]
+    # idf 상한: 한두 회사에만 나오는 희귀 조각(오타·붙여쓰기 잔재)이 핵심 업무 용어를 밀어내지 않게 한다
+    idf = [round(min(math.log(N / df[t]), IDF_CAP), 2) for t in vocab]
 
     # 5년 인수 이력
     acq = collections.defaultdict(list)
