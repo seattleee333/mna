@@ -72,7 +72,7 @@ def get_holders(cc):
         if (r.get("stock_knd") or "").strip() not in ("보통주", "의결권 있는 주식", ""):
             continue
         rt = fnum(r.get("trmend_posesn_stock_qota_rt"))
-        if rt is None:
+        if rt is None or (r.get("nm") or "").strip() in ("계", "합계", "소계", "-"):
             continue
         rows.append({"name": (r.get("nm") or "").strip(), "rel": (r.get("relate") or "").strip(), "rate": rt})
     rows.sort(key=lambda x: -x["rate"])
@@ -88,7 +88,7 @@ def get_invest(cc):
     rows = []
     for r in d.get("list", []):
         nm = (r.get("inv_prm") or "").strip()
-        if not nm or nm in ("합계", "소계", "계"):
+        if not nm or nm in ("합계", "소계", "계", "-"):
             continue
         rt = fnum(r.get("trmend_blce_qota_rt"))
         rows.append({"name": nm, "purpose": (r.get("invstmnt_purps") or "").strip(), "first": (r.get("frst_acqs_de") or "").strip(),
