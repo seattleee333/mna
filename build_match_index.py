@@ -57,8 +57,9 @@ def main():
 
     def inv_names(x):
         rows_ = (x or {}).get("invest", {}).get("rows", [])
-        subs = [r_["name"] for r_ in rows_ if r_.get("sub")]
-        others = [r_["name"] for r_ in rows_ if not r_.get("sub") and (r_.get("rate") or 0) >= 20]
+        clean = lambda s: " ".join(str(s).split())
+        subs = [clean(r_["name"]) for r_ in rows_ if r_.get("sub")]
+        others = [clean(r_["name"]) for r_ in rows_ if not r_.get("sub") and (r_.get("rate") or 0) >= 20]
         return subs, others
 
     comps = []
@@ -132,7 +133,7 @@ def main():
             if subs or others:
                 names = (subs + others)[:12]
                 e["P"].append(("종속회사: " if subs else "출자회사: ") + ", ".join(names))
-            hold = [[h_["name"], h_["rate"]] for h_ in x.get("holders", {}).get("rows", [])[:3] if h_.get("rate")]
+            hold = [[" ".join(str(h_["name"]).split()), h_["rate"]] for h_ in x.get("holders", {}).get("rows", [])[:3] if h_.get("rate")]
             if hold:
                 item["h"] = hold
             if subs:
