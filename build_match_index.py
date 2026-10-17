@@ -10,6 +10,7 @@ import openpyxl
 
 SRC = "company_profiles.xlsx"
 MA = "ma_cache.json"
+EXTRA = "dart_extra_cache.json"
 OUT = "match_index.json"
 K = {"P": 80, "M": 40, "S": 40}          # 영역별 저장 항목 수
 NSENT = {"P": 7, "M": 3, "S": 3}         # 영역별 근거 문장 수
@@ -47,17 +48,32 @@ def main():
     ix = {h: i for i, h in enumerate(H)}
     g = lambda r, k: r[ix[k]] if k in ix and r[ix[k]] is not None else ""
 
+    # DART 추가 수집(fetch_dart_extra.py) 결과가 있으면 합친다: 최대주주·종속/출자회사·IR·경영진단 문구
+    try:
+        extra = json.load(open(EXTRA, encoding="utf-8"))
+    except Exception:
+        extra = {}
+
+    def inv_names(x):
+        rows_ = (x or {}).get("invest", {}).get("rows", [])
+        subs = [r_["name"] for r_ in rows_ if r_.get("sub")]
+        others = [r_["name"] for r_ in rows_ if not r_.get("sub") and (r_.get("rate") or 0) >= 20]
+        return subs, others
+
     comps = []
     for r in rows[1:]:
         P = f"{g(r, '사업의 개요')}\n{g(r, '주요 제품 및 서비스')}"
         M = str(g(r, "원재료 및 생산설비"))
         S = str(g(r, "매출 및 수주상황"))
-        comps.append({"r": r, "txt": {"P": P, "M": M, "S": S}})
+        comps.append({"r": r, "txt": {"P": P, "M": M, "S": S}, "x": extra.get(str(g(r, "종목코드")).zfill(6))})
 
     # 문서 빈도 (영역 구분 없이 회사 단위)
     df = collections.Counter()
     for c in comps:
         c["tf"] = {k: collections.Counter(tokens(v)) for k, v in c["txt"].items()}
+        subs, others = inv_names(c["x"])
+        if subs or others:   # 자회사·출자회사 이름도 사업을 알려 주는 단서(예: ○○뷰티, ○○패키지)
+            c["tf"]["P"].update(tokens(" ".join(subs + others)))
         for t in set().union(*[set(x) for x in c["tf"].values()]):
             df[t] += 1
     N = len(comps)
@@ -108,6 +124,24 @@ def main():
                     scored.append((sc, s))
             scored.sort(key=lambda x: -x[0])
             e[key] = [s for _, s in scored[:NSENT[key]]]
+        x = c["x"]
+        if x:
+            subs, others = inv_names(x)
+            if subs or others:
+                names = (subs + others)[:12]
+                e["P"].append(("종속회사: " if subs else "출자회사: ") + ", ".join(names))
+            hold = [[h_["name"], h_["rate"]] for h_ in x.get("holders", {}).get("rows", [])[:3] if h_.get("rate")]
+            if hold:
+                item["h"] = hold
+            if subs:
+                item["sub"] = subs[:10]
+            co = x.get("company", {})
+            if co.get("phn_no") or co.get("ir_url") or co.get("hm_url"):
+                item["ir"] = {"p": co.get("phn_no", ""), "u": co.get("ir_url") or co.get("hm_url", "")}
+            if co.get("induty_code"):
+                item["ic"] = co["induty_code"]
+            if x.get("mda", {}).get("sents"):
+                item["mda"] = [s[:220] for s in x["mda"]["sents"][:2]]
         item["e"] = e
         out.append(item)
 
