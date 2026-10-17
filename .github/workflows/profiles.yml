@@ -26,12 +26,15 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           PILOT: ${{ github.event.inputs.pilot }}
         run: python -u fetch_profiles.py
+      - name: AI 매칭 색인 생성
+        if: ${{ github.event.inputs.pilot == '' }}
+        run: python -u build_match_index.py
       - name: 결과 저장
         if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          for f in profiles_pilot.json company_profiles.xlsx profiles_cache.json profiles_log.txt; do [ -f "$f" ] && git add "$f"; done
+          for f in profiles_pilot.json company_profiles.xlsx profiles_cache.json profiles_log.txt match_index.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else

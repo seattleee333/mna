@@ -28,12 +28,12 @@
         <div class="sell-card-warn">⚠️ 간이평가이며 단순 입력 기반 추정치라, 실제와 차이가 있을 수 있어요.</div>
         <span class="sell-card-badge new">회원 전용</span>
       </a>
-      <a class="sell-card" href="#" id="matchingCard">
+      <a class="sell-card" href="match.html" id="matchingCard">
         <div class="sell-card-icon">🤝</div>
         <div class="sell-card-title">AI 매칭하기</div>
-        <div class="sell-card-desc">매도 희망 정보를 입력하면, 시너지가 기대되는 인수 후보 기업을 AI가 찾아드립니다.</div>
-        <span class="sell-card-badge">준비 중</span>
-        <div class="sell-card-price">유료 서비스 · 1회 매칭당 <b>10,000원</b></div>
+        <div class="sell-card-desc">매도 희망 정보를 입력하면, 시너지가 기대되는 인수 후보 상장사를 공시 근거와 함께 찾아드립니다.</div>
+        <span class="sell-card-badge new">무료 베타</span>
+        <div class="sell-card-price">현재 무료 · 입력 내용은 서버에 저장되지 않아요</div>
       </a>
     </div>
 
@@ -53,7 +53,7 @@
     </div>
 
     <div class="sell-notice">
-      ‘AI 매칭하기’는 현재 설계 중이며, 오픈 후 <b>1회 실행당 10,000원</b>의 유료 서비스로 제공될 예정입니다. 결제 전에 금액을 다시 안내해 드립니다.
+      ‘AI 매칭하기’는 무료 베타로 운영 중입니다. 추후 AI 분석이 추가되면 유료 기능이 생길 수 있으며, 결제 전에 금액을 먼저 안내해 드립니다.
     </div>
   </main>
   <aside class="news-panel" id="newsPanel"></aside>
@@ -66,10 +66,6 @@
 renderSidebar("sell");
 renderNewsPanel();
 
-document.getElementById("matchingCard").addEventListener("click", function (e) {
-  e.preventDefault();
-  alert("‘AI 매칭하기’ 기능은 준비 중입니다. 곧 만나보실 수 있어요!");
-});
 </script>
 </body>
 </html>

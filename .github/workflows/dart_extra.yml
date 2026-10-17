@@ -1,0 +1,46 @@
+---
+name: DART 추가 수집 (업종·주주·출자·MD&A)
+
+on:
+  workflow_dispatch:
+    inputs:
+      pilot:
+        description: "시범 실행할 회사명(쉼표 구분). 비우면 전체(이어하기)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests openpyxl
+      - name: 추가 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          PILOT: ${{ github.event.inputs.pilot }}
+        run: python -u fetch_dart_extra.py
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          for f in dart_extra_pilot.json dart_extra_cache.json dart_extra_log.txt; do [ -f "$f" ] && git add "$f"; done
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update dart extra"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi

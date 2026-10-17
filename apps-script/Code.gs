@@ -11,6 +11,7 @@ var HEADERS = ['가입일시', '최근로그인', '로그인횟수', '로그인�
 function doPost(e) {
   try {
     var req = JSON.parse(e.postData.contents);
+    if (req.action === 'match_request') return json_(saveMatchRequest_(req));
     if (req.action !== 'login') throw new Error('지원하지 않는 요청');
     var who = verify_(req);
     var row = upsert_(who);
@@ -55,6 +56,25 @@ function verify_(req) {
     return { provider: 'naver', id: String(r.id), name: r.name || r.nickname || '', email: r.email || '' };
   }
   throw new Error('지원하지 않는 로그인 방식');
+}
+
+// AI 매칭 '연결 요청' 접수 → 비공개 구글시트의 '매칭요청' 탭에 저장 (매도 기업 정보는 이 시트에만 쌓인다)
+var REQ_SHEET = '매칭요청';
+var REQ_HEADERS = ['접수일시', '유형', '후보기업', '등급', '기업명', '담당자', '연락처', '전달말', '제품·서비스', '고객', '기술·인증', '원재료', '이슈', '매출(억)', '상태'];
+function saveMatchRequest_(req) {
+  var s = function (v, n) { return safe_(String(v || '').slice(0, n || 300)); };
+  if (!req.company || !req.name || !req.contact) throw new Error('필수 항목 누락');
+  var inp = req.input || {};
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sh = ss.getSheetByName(REQ_SHEET) || ss.insertSheet(REQ_SHEET);
+    if (sh.getLastRow() === 0) { sh.appendRow(REQ_HEADERS); sh.setFrozenRows(1); }
+    var now = Utilities.formatDate(new Date(), 'Asia/Seoul', 'yyyy-MM-dd HH:mm:ss');
+    sh.appendRow([now, req.mode === 'direct' ? '직접 매각 요청(NDA)' : 'ALL ABOUT M&A 연결', s(req.candidate, 80), s(req.grade, 4), s(req.company, 80), s(req.name, 40), s(req.contact, 100),
+      s(req.memo, 500), s(inp.products, 600), s(inp.customers, 400), s(inp.tech, 400), s(inp.materials, 400), s(inp.issues, 400), s(inp.rev, 20), '접수']);
+    return { ok: true };
+  } finally { lock.releaseLock(); }
 }
 
 // 시트에서 수식으로 해석되지 않도록 앞에 ' 를 붙인다

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 매칭하기 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="match.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<div class="layout">
+  <main class="mt-main">
+    <div class="sell-hero">
+      <h1>AI 매칭하기 <span class="mt-beta">무료 베타</span></h1>
+      <p>우리 기업 정보를 입력하면, 사업 시너지가 기대되는 상장사를 공시 문장 근거와 함께 찾아드려요.</p>
+    </div>
+
+    <section class="mt-card" id="formCard">
+      <div class="mt-privacy">🔒 입력한 내용은 <b>이 브라우저 안에서만 계산</b>되고 서버에 저장되지 않아요. ‘연결 요청’을 누를 때만 접수돼요.</div>
+      <form id="mtForm" autocomplete="off">
+        <label class="mt-f">
+          <span class="mt-l">① 우리 회사가 만들거나 파는 것 <em>필수</em></span>
+          <textarea name="products" rows="3" required placeholder="예) 고압·저압 배전반 제조, 수변전 설비 공급"></textarea>
+          <span class="mt-h">제품·서비스 이름을 구체적으로 적을수록 정확해요.</span>
+        </label>
+        <label class="mt-f">
+          <span class="mt-l">② 주요 고객·납품처</span>
+          <textarea name="customers" rows="2" placeholder="예) 대형 건설사, 지하철·공공기관, 데이터센터"></textarea>
+        </label>
+        <label class="mt-f">
+          <span class="mt-l">③ 보유 기술·인증·특허</span>
+          <textarea name="tech" rows="2" placeholder="예) 내진·내아크 형식시험, 조달우수제품, 상태진단 특허"></textarea>
+        </label>
+        <label class="mt-f">
+          <span class="mt-l">④ 주요 원재료·부품·공급처</span>
+          <textarea name="materials" rows="2" placeholder="예) 차단기, 변압기, 동 부스바"></textarea>
+        </label>
+        <label class="mt-f">
+          <span class="mt-l">⑤ 최근 성장 이슈</span>
+          <textarea name="issues" rows="2" placeholder="예) 데이터센터 수주, 원전 인증 취득 예정, 해외 규격 개발"></textarea>
+        </label>
+        <div class="mt-row">
+          <label class="mt-f"><span class="mt-l">매출(억원, 선택)</span><input name="rev" type="number" min="0" step="0.1" placeholder="예) 98"></label>
+          <label class="mt-f"><span class="mt-l">제외할 회사(쉼표로 구분)</span><input name="exclude" type="text" placeholder="예) 경쟁사, 이미 접촉한 곳"></label>
+        </div>
+        <div class="mt-actions">
+          <button type="submit" class="mt-btn primary" id="runBtn">후보 찾기</button>
+          <button type="button" class="mt-btn" id="sampleBtn">예시 채우기</button>
+          <span class="mt-h" id="idxInfo">색인 불러오는 중…</span>
+        </div>
+      </form>
+    </section>
+
+    <section id="result" hidden>
+      <div class="mt-sum" id="sum"></div>
+      <div id="cards"></div>
+      <button type="button" class="np-more" id="moreBtn" hidden>더보기 ▾</button>
+      <div class="mt-foot">
+        • 후보는 <b>사업 시너지만으로</b> 골랐어요. 재무·최대주주·계열은 걸러내는 기준이 아니라 카드의 ‘확인 필요’ 칸에 참고로만 보여요.<br>
+        • 등급(상/중/하)은 이번 검색 결과 안에서의 상대적 적합도이며, 인수 의사를 뜻하지 않아요. 근거 문장은 최신 사업보고서(2025 사업연도)에서 가져왔어요.<br>
+        • 무료 베타는 입력 문장과 공시 문장의 단어 일치도를 계산하는 방식이라, 표현이 다르면 놓칠 수 있어요. 제품명을 여러 표현으로 적어 보세요.
+      </div>
+    </section>
+  </main>
+  <aside class="news-panel" id="newsPanel"></aside>
+</div>
+
+<div class="mt-modal" id="reqModal" hidden>
+  <div class="mt-modal-box" role="dialog" aria-modal="true" aria-labelledby="reqTitle">
+    <h3 id="reqTitle"></h3>
+    <p class="mt-h" id="reqDesc"></p>
+    <label class="mt-f"><span class="mt-l">기업명 <em>필수</em></span><input id="rqCompany" type="text" maxlength="60"></label>
+    <label class="mt-f"><span class="mt-l">담당자 이름 <em>필수</em></span><input id="rqName" type="text" maxlength="30"></label>
+    <label class="mt-f"><span class="mt-l">연락처(전화 또는 이메일) <em>필수</em></span><input id="rqContact" type="text" maxlength="80"></label>
+    <label class="mt-f"><span class="mt-l">전달할 말(선택)</span><textarea id="rqMemo" rows="2" maxlength="500"></textarea></label>
+    <label class="mt-agree"><input type="checkbox" id="rqAgree"> 위 정보와 앞서 입력한 사업 내용이 연결 요청 목적으로 접수되는 것에 동의합니다.</label>
+    <div class="mt-actions">
+      <button type="button" class="mt-btn primary" id="rqSend">요청 보내기</button>
+      <button type="button" class="mt-btn" id="rqCancel">취소</button>
+    </div>
+    <div class="mt-msg" id="rqMsg"></div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script src="match.js"></script>
+<script>
+renderSidebar("sell");
+renderNewsPanel();
+
+(function () {
+  const M = window.MNA_MATCH, C = window.MNA_CONFIG || {}, esc = M.esc;
+  const $ = function (id) { return document.getElementById(id); };
+  const form = $("mtForm");
+  let results = [], shown = 0, lastInput = null, reqCtx = null;
+
+  M.load().then(function () { $("idxInfo").textContent = "상장사 " + M.count().toLocaleString() + "곳 · " + M.built() + " 기준"; })
+    .catch(function (e) { $("idxInfo").textContent = String(e.message || e); });
+
+  $("sampleBtn").addEventListener("click", function () {
+    form.products.value = "산업용 로봇과 자동화 설비에 들어가는 정밀 감속기와 모터 부품을 설계·제조합니다.";
+    form.customers.value = "자동차 부품사, 반도체 장비 제조사, 물류 자동화 업체";
+    form.tech.value = "정밀 가공 기술 특허, ISO 품질 인증";
+    form.materials.value = "알루미늄 소재, 베어링, 구리 코일";
+    form.issues.value = "해외 수출 확대, 신규 로봇 모델 개발";
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const g = function (n) { return (form[n].value || "").trim(); };
+    lastInput = { products: g("products"), customers: g("customers"), tech: g("tech"), materials: g("materials"), issues: g("issues"), exclude: g("exclude"), rev: parseFloat(g("rev")) || 0 };
+    if (!lastInput.products) return;
+    $("runBtn").disabled = true; $("runBtn").textContent = "찾는 중…";
+    M.load().then(function () {
+      setTimeout(function () {
+        results = M.run(lastInput); shown = 0;
+        $("cards").innerHTML = ""; render(10);
+        $("result").hidden = false;
+        $("sum").innerHTML = results.length
+          ? "시너지 후보 <b>" + results.length + "곳</b>을 찾았어요. 근거 문장이 있는 곳만 보여드려요."
+          : "근거가 확인되는 후보를 찾지 못했어요. 제품·서비스를 더 구체적으로(여러 표현으로) 적어 보세요.";
+        $("result").scrollIntoView({ behavior: "smooth", block: "start" });
+        $("runBtn").disabled = false; $("runBtn").textContent = "후보 찾기";
+      }, 30);
+    }).catch(function (err) { alert(err.message || err); $("runBtn").disabled = false; $("runBtn").textContent = "후보 찾기"; });
+  });
+
+  function render(n) {
+    const T = M.TYPES;
+    results.slice(shown, shown + n).forEach(function (r, i) {
+      const c = r.c, no = shown + i + 1;
+      const chips = r.reasons.map(function (x) { return '<span class="mt-chip t-' + x.t + '">' + T[x.t].label + "</span>"; }).join("");
+      const why = r.reasons.map(function (x) {
+        return '<div class="mt-why"><div class="mt-why-t">' + T[x.t].label + ' <span>· ' + T[x.t].desc + "</span></div>" +
+          x.ev.map(function (e) {
+            return '<div class="mt-q"><div class="mt-q-co">' + e.co + "</div>" + (e.me ? '<div class="mt-q-me">내 입력: “' + esc(e.me) + "”</div>" : "") + "</div>";
+          }).join("") + "</div>";
+      }).join("");
+      const chk = M.checks(c, lastInput).map(function (x) {
+        return '<li class="' + x[0] + '">' + (x[0] === "warn" ? "⚠️ " : x[0] === "ok" ? "✅ " : "ℹ️ ") + esc(x[1]) + "</li>";
+      }).join("");
+      const f = c.f;
+      const el = document.createElement("article");
+      el.className = "mt-res";
+      el.innerHTML =
+        '<div class="mt-res-h"><div class="mt-rank">' + no + '</div><div class="mt-res-name"><b>' + esc(c.n) + '</b><span>' + esc(c.m) + " · " + esc(c.c) +
+        '</span></div><div class="mt-grade g-' + (r.grade === "상" ? "hi" : r.grade === "중" ? "mid" : "lo") + '">' + r.grade + '</div></div>' +
+        '<div class="mt-chips">' + chips + "</div>" +
+        '<div class="mt-fin">2025 매출 ' + M.won(f[0]) + "억 · 영업이익 " + M.won(f[1]) + "억 · 자본 " + M.won(f[2]) + "억 (" + esc(c.fs || "") + ")</div>" +
+        '<div class="mt-why-box"><div class="mt-box-t">시너지 이유 · 공시 근거</div>' + why + "</div>" +
+        '<div class="mt-check"><div class="mt-box-t">확인 필요</div><ul>' + chk + "</ul>" +
+        '<a class="mt-link" target="_blank" rel="noopener" href="https://finance.naver.com/item/main.naver?code=' + esc(c.c) + '">종목 정보 보기 ↗</a></div>' +
+        '<div class="mt-req"><button type="button" class="mt-btn primary" data-m="broker" data-i="' + (shown + i) + '">ALL ABOUT M&amp;A에 연결 요청</button>' +
+        '<button type="button" class="mt-btn" data-m="direct" data-i="' + (shown + i) + '">직접 매각 요청 (NDA 후 열람)</button></div>';
+      $("cards").appendChild(el);
+    });
+    shown = Math.min(results.length, shown + n);
+    $("moreBtn").hidden = shown >= results.length;
+  }
+  $("moreBtn").addEventListener("click", function () { render(10); });
+
+  // 연결 요청
+  $("cards").addEventListener("click", function (e) {
+    const b = e.target.closest("button[data-m]"); if (!b) return;
+    const r = results[+b.dataset.i], mode = b.dataset.m;
+    reqCtx = { mode: mode, r: r };
+    $("reqTitle").textContent = r.c.n + (mode === "broker" ? " — ALL ABOUT M&A에 연결 요청" : " — 담당자에게 직접 매각 요청");
+    $("reqDesc").textContent = mode === "broker"
+      ? "ALL ABOUT M&A가 먼저 연락드려 상담 후, 해당 기업 인수 담당자와의 연결을 도와드려요."
+      : "요청하시면 NDA(비밀유지계약) 체결 후 인수 담당자가 기업명과 사업 내용을 열람할 수 있게 됩니다.";
+    const u = window.MNA_AUTH && MNA_AUTH.user && MNA_AUTH.user();
+    if (u) { if (!$("rqName").value) $("rqName").value = u.name || ""; if (!$("rqContact").value) $("rqContact").value = u.email || ""; }
+    $("rqMsg").textContent = ""; $("reqModal").hidden = false;
+  });
+  $("rqCancel").addEventListener("click", function () { $("reqModal").hidden = true; });
+  $("rqSend").addEventListener("click", function () {
+    const v = function (id) { return $(id).value.trim(); };
+    const msg = $("rqMsg");
+    if (!v("rqCompany") || !v("rqName") || !v("rqContact")) { msg.textContent = "기업명·이름·연락처를 입력해 주세요."; return; }
+    if (!$("rqAgree").checked) { msg.textContent = "접수 동의에 체크해 주세요."; return; }
+    if (!C.appsScriptUrl) { msg.textContent = "요청 접수 연결이 아직 설정되지 않았어요(관리자: config.js의 appsScriptUrl 설정 필요)."; return; }
+    const payload = { action: "match_request", mode: reqCtx.mode, candidate: reqCtx.r.c.n + " (" + reqCtx.r.c.c + ")", grade: reqCtx.r.grade,
+      company: v("rqCompany"), name: v("rqName"), contact: v("rqContact"), memo: v("rqMemo"), input: lastInput };
+    $("rqSend").disabled = true; msg.textContent = "보내는 중…";
+    fetch(C.appsScriptUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.ok) throw new Error(j.error || "접수 실패"); msg.textContent = "접수되었어요. 확인 후 연락드릴게요."; })
+      .catch(function (err) { msg.textContent = "접수에 실패했어요: " + (err.message || err); })
+      .then(function () { $("rqSend").disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
