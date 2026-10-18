@@ -82,3 +82,41 @@
 .mt-mda p { font-size:12.8px; color:var(--sub); line-height:1.6; margin:0 0 6px; }
 .mt-btn.ghost { border-color:transparent; color:var(--faint); }
 @media (max-width:700px) { .mt-grid { grid-template-columns:repeat(2,1fr); } }
+
+/* v3: 업종 검색 선택, 티어, 재무 구분, M&A 사례 */
+.mt-pick { position:relative; }
+.mt-pick > input { width:100%; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; font-size:14px; background:#fff; }
+.mt-pick > input:focus { outline:2px solid var(--accent-soft); border-color:var(--accent); }
+.mt-pick-list { position:absolute; left:0; right:0; top:100%; z-index:30; background:#fff; border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow-hover); max-height:300px; overflow:auto; margin-top:4px; }
+.mt-pick-list[hidden] { display:none; }
+.mt-pick-opt { display:block; width:100%; text-align:left; border:0; background:none; padding:9px 12px; font:inherit; font-size:13.5px; cursor:pointer; border-bottom:1px solid var(--bg); }
+.mt-pick-opt:hover { background:var(--accent-soft); }
+.mt-pick-none { padding:10px 12px; font-size:13px; color:var(--faint); }
+.mt-pick-sel { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.mt-xchip.on { background:var(--accent-soft); color:var(--accent-dark); font-weight:600; }
+.mt-btn.small { padding:6px 12px; font-size:12.5px; margin-top:8px; }
+.mt-anchor { font-size:12.8px; color:var(--sub); margin:-6px 2px 12px; }
+.mt-ctl { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; margin:0 2px 12px; font-size:13px; }
+.mt-wide { font-size:13px; color:var(--text); cursor:pointer; }
+.mt-wide select { font:inherit; font-size:13px; border:1px solid var(--line); border-radius:8px; padding:4px 8px; margin-left:4px; }
+.cases-btn { margin-bottom:12px; }
+.mt-cases { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:14px; }
+.mt-cases-h input { display:block; width:100%; margin-top:8px; border:1px solid var(--line); border-radius:8px; padding:7px 10px; font:inherit; font-size:13px; }
+.mt-case { border-top:1px solid var(--line); padding:10px 0; }
+.mt-case-top { font-size:14px; line-height:1.7; }
+.mt-case-d { color:var(--faint); font-size:12.5px; margin-right:4px; }
+.mt-case-sub { font-size:12.8px; color:var(--sub); margin-top:2px; }
+.mt-case-p { font-size:12.5px; color:var(--sub); margin-top:2px; }
+.mt-tier { font-size:12.5px; font-weight:800; padding:5px 12px; border-radius:999px; }
+.mt-tier.t1 { background:var(--buy-soft); color:var(--buy); }
+.mt-tier.t2 { background:var(--accent-soft); color:var(--accent); }
+.mt-tier.t3 { background:var(--bg); color:var(--sub); }
+.mt-finrow { margin:10px 0 2px; display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; }
+.mt-fin { font-size:12px; font-weight:700; padding:3px 9px; border-radius:6px; }
+.mt-fin.ok { background:var(--buy-soft); color:var(--buy); }
+.mt-fin.no { background:#fff6e5; color:#8a4b00; }
+.mt-fin.na { background:var(--bg); color:var(--sub); }
+.mt-ic { font-size:12px; color:var(--faint); }
+.mt-chip.t-ic { background:#e8f4fd; color:#0b6cad; }
+.mt-chip.t-af { background:#f1f1f1; color:#555; }
+.mt-res.tier3 { opacity:.96; }

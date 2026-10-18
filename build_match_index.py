@@ -148,6 +148,39 @@ def main():
         item["e"] = e
         out.append(item)
 
+    # 계열 연결: 출자·주요주주 명단에 다른 상장사가 있으면 서로 이어 둔다 (모회사/자회사/지분 보유 관계)
+    def nn(s):
+        s = re.sub(r"\((?:해외\s*)?(?:비)?상장\)", "", str(s))
+        s = re.sub(r"㈜|\(주\)|주식회사|유한회사|\s|[.,·&\-]", "", s)
+        return s.upper()
+    by_name = collections.defaultdict(list)
+    for it in out:
+        by_name[nn(it["n"])].append(it["c"])
+    by_name = {k: v[0] for k, v in by_name.items() if len(v) == 1 and len(k) >= 2}
+    edges = collections.defaultdict(dict)       # 코드 -> {상대코드: [관계, 지분%]}
+    for c in comps:
+        x = c["x"]
+        if not x:
+            continue
+        me = str(g(c["r"], "종목코드")).zfill(6)
+        for r_ in x.get("invest", {}).get("rows", []):      # 내가 출자한 회사
+            o = by_name.get(nn(r_.get("name", "")))
+            if o and o != me and (r_.get("rate") or 0) >= 20:
+                edges[me].setdefault(o, ["자회사·출자", r_["rate"]])
+                edges[o].setdefault(me, ["모회사·주주", r_["rate"]])
+        for r_ in x.get("holders", {}).get("rows", []):     # 나의 주요주주(법인)
+            o = by_name.get(nn(r_.get("name", "")))
+            if o and o != me and (r_.get("rate") or 0) >= 15:
+                edges[me].setdefault(o, ["모회사·주주", r_["rate"]])
+                edges[o].setdefault(me, ["자회사·출자", r_["rate"]])
+    n_af = 0
+    for it in out:
+        ed = edges.get(it["c"])
+        if ed:
+            it["af"] = [[k, v[0], v[1]] for k, v in sorted(ed.items(), key=lambda kv: -kv[1][1])[:6]]
+            n_af += 1
+    print(f"계열 연결이 있는 회사 {n_af}곳")
+
     json.dump({"v": 1, "built": dt.date.today().isoformat(), "vocab": vocab, "idf": idf, "c": out},
               open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"{OUT}: 회사 {len(out)}곳, 어휘 {len(vocab)}개")
