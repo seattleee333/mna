@@ -1428,7 +1428,11 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 4
+  "detail_attempts": 5,
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "코오롱모빌리티그룹이 유상증자를 결정했습니다.",
+  "summary_src": "title"
  },
  {
   "rcept_no": "20261014000342",
