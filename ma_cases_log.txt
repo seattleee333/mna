@@ -1,0 +1,7 @@
+취득 공시 2355건
+API 응답 키: adt_a_atn,atinh_eqrt,atinh_owstkcnt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dl_pym,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,inh_pp,inh_prd,inhdtl_ecpt,inhdtl_ecpt_vs,inhdtl_inhprc,inhdtl_stkcnt,inhdtl_tast,inhdtl_tast_vs,iscmp_bdlst_sf_atn,iscmp_cmpnm,iscmp_cpt,iscmp_mbsn,iscmp_nt,iscmp_rl_cmpn,iscmp_rp,iscmp_tisstk,l6m_tpa_nstkaq_atn,n6m_tpai_plann,od_a_at_b,od_a_at_t,popt_ctr_atn,popt_ctr_cn,rcept_no
+API 응답 키: adt_a_atn,atinh_eqrt,atinh_owstkcnt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dl_pym,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,inh_pp,inh_prd,inhdtl_ecpt,inhdtl_ecpt_vs,inhdtl_inhprc,inhdtl_stkcnt,inhdtl_tast,inhdtl_tast_vs,iscmp_bdlst_sf_atn,iscmp_cmpnm,iscmp_cpt,iscmp_mbsn,iscmp_nt,iscmp_rl_cmpn,iscmp_rp,iscmp_tisstk,l6m_tpa_nstkaq_atn,n6m_tpai_plann,od_a_at_b,od_a_at_t,popt_ctr_atn,popt_ctr_cn,rcept_no
+API 호출 1778회 → 사례 125건
+상세 API에 없는 공시 2355건 중 원문 확인 2355건
+원문 확인 2355건 → 총 사례 2466건
+저장 ma_cases.json: 2460건 (433KB)
