@@ -37,9 +37,18 @@ SPAM_RE = re.compile(r"(카지노|슬롯|토토|도박|바카라|먹튀|프리�
 MA_RE = re.compile(r"(M&A|M&amp;A|인수|합병|매각|매물|경영권|지분|공개매수|바이아웃|PEF|사모펀드|분리매각|통매각|엑시트|분할|팔고|팔았|팔기로)", re.I)
 
 
+def is_topic_page(title):
+    """'인수합병 - TradingView' 처럼 기사가 아니라 검색어(주제) 페이지인 경우: 출처를 뗀 제목이 검색어 그대로이거나 너무 짧다."""
+    head = re.sub(r"\s+[-–|]\s+[^-–|]{1,30}$", "", title.strip())
+    h = re.sub(r"\s+", "", head)
+    return len(h) <= 8 or h in {re.sub(r"\s+", "", q) for q in QUERIES}
+
+
 def is_relevant(title, sources=(), link=""):
     blob = " ".join([title, link] + list(sources))
     if SPAM_RE.search(blob):
+        return False
+    if is_topic_page(title):
         return False
     return bool(MA_RE.search(title))
 
@@ -59,6 +68,7 @@ def main():
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as f:
             existing = json.load(f)
+    existing = [e for e in existing if not is_topic_page(e.get("title", ""))]   # 이미 저장된 주제 페이지도 정리
 
     now = dt.datetime.utcnow() + dt.timedelta(hours=9)  # 한국 시간
     cutoff = now - dt.timedelta(days=KEEP_DAYS)
