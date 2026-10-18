@@ -388,8 +388,8 @@ def extract_from_raw_doc(raw_html, corp_name, direction_hint):
             break
 
     amount = None
-    for label in ["처분금액", "취득금액"]:
-        m = re.search(label + r"\s*\(원\)\s*([\d,]+)", text)
+    for label in ["처분금액", "취득금액", "양수금액", "양도금액"]:
+        m = re.search(label + r"\s*\(원\)\s*(?:\(A\)\s*)?([\d,]+)", text)
         if m:
             amount = parse_amount(m.group(1))
             break
@@ -399,7 +399,7 @@ def extract_from_raw_doc(raw_html, corp_name, direction_hint):
 
     # 취득/처분 후 지분율 (표준 서식: '취득후 소유주식수 및 지분비율 ... 지분비율(%) 35.2')
     note = None
-    m = re.search(r"(?:취득|처분)\s*후\s*소유주식수\s*및\s*지분비율.{0,80}?지분비율\s*\(%\)\s*([\d.,]+)", text)
+    m = re.search(r"(?:취득|처분|양수|양도)\s*후\s*소유주식수\s*및\s*지분비율.{0,80}?지분비율\s*\(%\)\s*([\d.,]+)", text)
     if m:
         note = f"{'처분' if direction_hint == '양도' else '인수'} 후 지분율 {m.group(1)}%"
 

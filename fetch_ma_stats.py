@@ -75,12 +75,15 @@ def classify(report_nm):
         return None
     if "정정" in t:        # [기재정정], [첨부정정] 등 원 공시와 중복
         return None
-    if "타법인주식및출자증권취득결정" in t:
+    # 같은 서식(타법인 주식 및 출자증권 취득/처분)이 '취득결정'·'양수결정', '처분결정'·'양도결정' 두 가지 제목으로 접수된다
+    if "타법인주식및출자증권취득결정" in t or "타법인주식및출자증권양수결정" in t:
         return "acq"
-    if "타법인주식및출자증권처분결정" in t:
+    if "타법인주식및출자증권처분결정" in t or "타법인주식및출자증권양도결정" in t:
         return "disp"
     if "영업양도결정" in t:
         return "biz_out"
+    if "영업양수결정" in t:
+        return "biz_in"
     return None
 
 
@@ -119,7 +122,14 @@ def scan_window(bgn, end, ty):
     return found, pages
 
 
+CLS_VER = 2     # 분류 규칙을 바꾸면 올려서 과거 구간을 다시 읽는다 (2: '양수결정'·'양도결정'·'영업양수결정' 추가)
+
+
 def scan_filings(cache):
+    if cache.get("cls_ver") != CLS_VER:
+        log(f"분류 규칙 변경(v{cache.get('cls_ver')}→v{CLS_VER}): 5년치 목록을 다시 읽습니다")
+        cache["done"] = {}
+        cache["cls_ver"] = CLS_VER
     done = cache.setdefault("done", {})
     filings = cache.setdefault("filings", {})
     tasks = []

@@ -1,0 +1,39 @@
+name: 공시 제목 점검 (M&A 관련 제목 유형)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: 제목 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u scan_titles.py
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          [ -f titles_scan.txt ] && git add titles_scan.txt
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "titles scan"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi
