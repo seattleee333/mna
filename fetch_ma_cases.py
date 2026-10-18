@@ -13,7 +13,7 @@ MA = "ma_cache.json"
 OUT = "ma_cases.json"
 LOG = "ma_cases_log.txt"
 YEARS = 5
-MAX_DOCS = int(os.environ.get("MAX_DOCS", "2500"))
+MAX_DOCS = int(os.environ.get("MAX_DOCS", "3300"))
 BUDGET = int(os.environ.get("BUDGET_MIN", "100")) * 60
 START = time.time()
 _lock = threading.Lock()
@@ -42,27 +42,36 @@ def main():
     ma = json.load(open(MA, encoding="utf-8"))
     since = (dt.date.today().replace(year=dt.date.today().year - YEARS)).strftime("%Y%m%d")
     acq = [f for f in ma["filings"].values() if f["kind"] == "acq" and f["date"] >= since]
-    log(f"취득 공시 {len(acq)}건")
-    names = {f["corp_code"]: (f["corp_name"], f["stock_code"]) for f in acq}
-    pairs = sorted({(f["corp_code"], f["date"][:4]) for f in acq})
+    biz = [f for f in ma["filings"].values() if f["kind"] == "biz_in" and f["date"] >= since]
+    log(f"취득 공시 {len(acq)}건, 영업양수 공시 {len(biz)}건")
+    names = {f["corp_code"]: (f["corp_name"], f["stock_code"]) for f in acq + biz}
+    pairs = sorted({(f["corp_code"], f["date"][:4], "stake") for f in acq} | {(f["corp_code"], f["date"][:4], "biz") for f in biz})
     cases, covered = [], set()
 
     def api_pair(p):
-        cc, y = p
+        cc, y, kind = p
         if time.time() - START > BUDGET:
             return
-        d = fp.call("otcprStkInvscrInhDecsn.json", {"corp_code": cc, "bgn_de": f"{y}0101", "end_de": f"{y}1231"})
+        ep = "otcprStkInvscrInhDecsn.json" if kind == "stake" else "bsnInhDecsn.json"
+        d = fp.call(ep, {"corp_code": cc, "bgn_de": f"{y}0101", "end_de": f"{y}1231"})
         with _lock:
             _n["api"] += 1
         if not d or d.get("status") != "000":
             return
         for r in d.get("list", []):
             with _lock:
-                if KEYS_LOGGED[0] < 2:
+                if KEYS_LOGGED[0] < 4:
                     KEYS_LOGGED[0] += 1
-                    log("API 응답 키: " + ",".join(sorted(r.keys())))
+                    log(f"API({kind}) 응답 키: " + ",".join(sorted(r.keys())))
                 covered.add(r.get("rcept_no"))
-                cases.append({
+                if kind == "biz":      # 영업양수결정: 대상은 '양수하는 영업'
+                    cases.append({
+                        "d": (r.get("rcept_no") or "")[:8], "b": names[cc][0], "bc": names[cc][1], "k": "biz",
+                        "t": clip(r.get("inh_bsn"), 60), "tb": clip(r.get("inh_bsn"), 120),
+                        "a": oku(r.get("inh_prc")), "s": None, "p": clip(r.get("inh_pp"), 160), "cp": clip(r.get("dlptn_cmpnm"), 60),
+                        "n": None, "r": r.get("rcept_no"), "src": "api"})
+                    continue
+                cases.append({"k": "stake",
                     "d": (r.get("rcept_no") or "")[:8], "b": names[cc][0], "bc": names[cc][1],
                     "t": clip(r.get("iscmp_cmpnm"), 60), "tb": clip(r.get("iscmp_mbsn"), 120),
                     "a": oku(r.get("inhdtl_inhprc")), "s": clip(r.get("atinh_eqrt"), 12),
@@ -96,12 +105,14 @@ def main():
         m = re.search(r"(?:취득|양수)\s*목적\s*[:：]?\s*(.{5,200}?)\s+(?:취득\s*예정|양수\s*예정|이사회|결정일|취득\s*가액|거래상대방)", text)
         if m:
             pp = clip(m.group(1), 160)
+        m = re.search(r"([\d.,]+)\s*%", x.get("note") or "")
+        sp = m.group(1).replace(",", "") if m else None
         with _lock:
             _n["tb"] = _n.get("tb", 0) + (1 if tb else 0); _n["pp"] = _n.get("pp", 0) + (1 if pp else 0)
         with _lock:
             cases.append({"d": f["date"], "b": f["corp_name"], "bc": f["stock_code"], "t": clip(x["target"], 60), "tb": tb,
-                          "a": oku(x["amount"]), "s": None, "p": pp, "cp": clip(x.get("seller"), 60), "n": None,
-                          "r": f["rcept_no"], "src": "doc"})
+                          "a": oku(x["amount"]), "s": sp, "p": pp, "cp": clip(x.get("seller"), 60), "n": None,
+                          "r": f["rcept_no"], "src": "doc", "k": "stake"})
         time.sleep(0.05)
 
     with ThreadPoolExecutor(max_workers=4) as ex:
