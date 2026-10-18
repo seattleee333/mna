@@ -4,7 +4,7 @@
 - 2순위: 상세 API에 없는 건(거래소 접수 등)은 공시 원문에서 대상회사·금액을 읽는다 (fetch_deals 의 파서 재사용)
 환경변수: DART_API_KEY, MAX_DOCS(기본 2500), BUDGET_MIN(기본 100)
 """
-import os, json, time, threading, datetime as dt
+import os, re, json, time, threading, datetime as dt
 from concurrent.futures import ThreadPoolExecutor
 import fetch_profiles as fp
 import fetch_deals as fd
@@ -64,10 +64,10 @@ def main():
                 covered.add(r.get("rcept_no"))
                 cases.append({
                     "d": (r.get("rcept_no") or "")[:8], "b": names[cc][0], "bc": names[cc][1],
-                    "t": clip(r.get("iscmp_cmpnm"), 60), "tb": clip(r.get("iscmp_main_bsn"), 120),
+                    "t": clip(r.get("iscmp_cmpnm"), 60), "tb": clip(r.get("iscmp_mbsn"), 120),
                     "a": oku(r.get("inhdtl_inhprc")), "s": clip(r.get("atinh_eqrt"), 12),
                     "p": clip(r.get("inh_pp"), 160), "cp": clip(r.get("dlptn_cmpnm"), 60),
-                    "n": clip(r.get("iscmp_nation"), 12), "r": r.get("rcept_no"), "src": "api"})
+                    "n": clip(r.get("iscmp_nt"), 12), "r": r.get("rcept_no"), "src": "api"})
         time.sleep(0.05)
 
     with ThreadPoolExecutor(max_workers=4) as ex:
@@ -88,15 +88,25 @@ def main():
         x = fd.extract_from_raw_doc(html, f["corp_name"], "양수")
         if not x:
             return
+        text = fd.strip_tags(html)
+        tb = pp = None
+        m = re.search(r"주요\s*사업\s*[:：]?\s*(.{2,120}?)\s+(?:최근\s*사업연도|발행주식|회사와의|상장회사|당사와|자본금|대표자|\d)", text)
+        if m:
+            tb = clip(m.group(1), 120)
+        m = re.search(r"취득\s*목적\s*[:：]?\s*(.{5,200}?)\s+(?:취득\s*예정|이사회|결정일|취득\s*가액|거래상대방)", text)
+        if m:
+            pp = clip(m.group(1), 160)
         with _lock:
-            cases.append({"d": f["date"], "b": f["corp_name"], "bc": f["stock_code"], "t": clip(x["target"], 60), "tb": None,
-                          "a": oku(x["amount"]), "s": None, "p": None, "cp": clip(x.get("seller"), 60), "n": None,
+            _n["tb"] = _n.get("tb", 0) + (1 if tb else 0); _n["pp"] = _n.get("pp", 0) + (1 if pp else 0)
+        with _lock:
+            cases.append({"d": f["date"], "b": f["corp_name"], "bc": f["stock_code"], "t": clip(x["target"], 60), "tb": tb,
+                          "a": oku(x["amount"]), "s": None, "p": pp, "cp": clip(x.get("seller"), 60), "n": None,
                           "r": f["rcept_no"], "src": "doc"})
         time.sleep(0.05)
 
     with ThreadPoolExecutor(max_workers=4) as ex:
         list(ex.map(doc_one, rest))
-    log(f"원문 확인 {_n['doc']}건 → 총 사례 {len(cases)}건")
+    log(f"원문 확인 {_n['doc']}건 (주요사업 {_n.get('tb', 0)}건, 목적 {_n.get('pp', 0)}건 추출) → 총 사례 {len(cases)}건")
 
     seen, out = set(), []
     for c in sorted(cases, key=lambda x: x["d"], reverse=True):
