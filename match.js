@@ -12,6 +12,7 @@
     cap:{ label: "역량 보완", desc: "우리 기술·인증이 후보 사업에 쓰임" },
     sd: { label: "유사 기업", desc: "내가 지목한 회사와 사업이 비슷함" },
     ic: { label: "동일·인접 업종", desc: "DART 업종코드가 같거나 가까움" },
+    hs: { label: "인수 이력 일치", desc: "과거에 이 사업의 회사를 인수한 적이 있음" },
     af: { label: "계열 연결", desc: "지분 관계로 이어진 상장사" }
   };
   const TIERS = {
@@ -19,8 +20,9 @@
     2: { label: "2티어", desc: "밸류체인·인접 업종" },
     3: { label: "3티어", desc: "관련 산업·계열 연결" }
   };
-  const WEIGHT = { h: 1.0, v: 0.6, cu: 0.7, cap: 0.5, sd: 0.8 };
-  const MIN = { h: 0.15, vb: 0.12, vf: 0.12, cu: 0.09, cap: 0.10, sd: 0.25 };
+  const WEIGHT = { h: 1.0, v: 0.6, cu: 0.7, cap: 0.5, sd: 0.8, hs: 0.8 };
+  const MIN = { h: 0.15, vb: 0.12, vf: 0.12, cu: 0.09, cap: 0.10, sd: 0.25, hs: 0.18 };
+  window.MNA_W = WEIGHT; window.MNA_MIN = MIN;   // 점검·튜닝용(개발자 도구에서 가중치를 바꿔 볼 수 있음)
   const EV_MIN = 3.0;            // 근거 문장으로 인정하는 최소 일치 점수(희소한 단어일수록 큼)
 
   // 같은 뜻으로 쓰이는 말 (한쪽만 적어도 다른 표현을 쓰는 공시 문장까지 찾는다)
@@ -60,6 +62,7 @@
     "클라우드": ["정보서비스", "소프트웨어"], "데이터센터": ["정보서비스"], "장비": ["기계", "장비"], "부품": ["부품"], "소재": ["화학", "금속", "비금속"]
   };
   const GENERIC = /제조업|도매업|소매업|공급업|서비스업|기타|그 외|및|전문|일반|관련|가공|처리업|임대업|제품|용품|부분품/g;
+  let BYCODE = new Map(), BYBUYER = new Map();
   let IDX = null, CV = null, KSIC = null, KNAME = null, KCOUNT = {}, ICBY = null, CASES = null;
 
   function tok(text) {
@@ -100,6 +103,7 @@
     IDX = d;
     CV = d.c.map(function (c) { return { P: arrMap(c.P), M: arrMap(c.M), S: arrMap(c.S) }; });
     ICBY = new Map(d.c.map(function (c) { return [c.c, c.ic || ""]; }));
+    BYCODE = new Map(d.c.map(function (c) { return [c.c, c]; }));
     if (rs[1].ok) {
       KSIC = await rs[1].json();
       KNAME = new Map(KSIC.c);
@@ -193,11 +197,15 @@
     if (op !== null && op < 0) w.push("영업적자");
     if (eq !== null && eq <= 0) w.push("자본잠식");
     else if (eq && debt && debt / eq > 3) w.push("부채비율 " + Math.round(debt / eq * 100) + "%");
-    if (me.price && eq && me.price / eq > 0.5) w.push("희망 매각가가 자본의 " + Math.round(me.price / eq * 100) + "%");
-    if (me.rev && rev && rev < me.rev) w.push("매출이 매도 기업보다 작음");
+    if (me.price && eq && me.price / eq > 1) w.push("희망 매각가가 자본의 " + Math.round(me.price / eq * 100) + "%");
     return { ok: w.length === 0, why: w };
   }
 
+  const PROP_W = 0.10;
+  function propensity(c, opt) {
+    const a = Math.max(0, (c.a ? c.a[0] : 0) - (opt && opt.loo === c.c ? 1 : 0));
+    return Math.min(1, (a + 0.5 * (c.iv || 0)) / 6);
+  }
   // 입력 → 후보 목록
   function run(inp, opt) {
     const wide = !!(opt && opt.wide), mf = wide ? 0.6 : 1;      // 넓게 보기: 기준을 낮춰 관련도가 낮은 후보까지 포함
@@ -251,6 +259,8 @@
     // 여러 사업을 하는 회사는 벡터가 퍼져 있어 코사인이 낮아지므로, '내 단어가 얼마나 들어 있나(포함률)'도 함께 본다
     const cov = function (q, c) { let a = 0, b = 0; q.forEach(function (w, i) { b += w; if (c.has(i)) a += w; }); return b ? a / b : 0; };
     const codeScore = function (L) { return L >= 4 ? 0.30 : L === 3 ? 0.16 : L === 2 ? 0.05 : 0; };
+    const qHist = qvec(inp.products + (kw ? "\n" + kw : ""), []);
+    const dotAny = function (q, code, o) { const m = histMatch(code, q, o); return m ? m.hs : 0; };
     const out = [];
     IDX.c.forEach(function (c, k) {
       const v = CV[k], isSeed = seeds.indexOf(k) >= 0;
@@ -259,8 +269,15 @@
       const s = { h: dot(qP, v.P) + 0.4 * cov(qP, v.P), vb: dot(qP, v.M) + 0.2 * cov(qP, v.M), vf: dot(qM, v.P) + 0.2 * cov(qM, v.P),
         cu: 0.3 * (dot(qC, v.S) + 0.5 * dot(qC, v.P)) + 0.22 * ch.sub + 0.08 * ch.vec + (Lc >= 4 ? 0.2 : Lc === 3 ? 0.12 : 0),
         cap: dot(qT, v.P), sd: seeds.length ? dot(seedVec, v.P) : 0, ch: ch, L: L };
-      const score = WEIGHT.h * s.h + WEIGHT.v * Math.max(s.vb, s.vf) + WEIGHT.cu * s.cu + WEIGHT.cap * s.cap + WEIGHT.sd * s.sd + codeScore(L) + (isSeed ? 0.15 : 0);
-      if (score < (wide ? 0.03 : 0.05) && !isSeed) return;
+      let score = WEIGHT.h * s.h + WEIGHT.v * Math.max(s.vb, s.vf) + WEIGHT.cu * s.cu + WEIGHT.cap * s.cap + WEIGHT.sd * s.sd + codeScore(L) + (isSeed ? 0.15 : 0);
+      const histHit = BYBUYER.size && dotAny(qHist, c.c, opt) >= MIN.hs * mf;     // 과거 인수 이력이 비슷하면 사업 문장이 달라도 후보에 올린다
+      if (score < (wide ? 0.03 : 0.05) && !isSeed && !histHit) return;
+      // 인수 성향: 최근 5년 타법인 취득 공시 + 최근 경영참여·20%↑ 출자가 많을수록 실제 인수자일 가능성이 높다 (보조 신호, 약하게)
+      const hm = histMatch(c.c, qHist, opt);
+      s.hs = hm ? hm.hs : 0; s.hm = hm;
+      score += WEIGHT.hs * s.hs;
+      const prop = propensity(c, opt);
+      s.prop = prop; score += (window.MNA_TWEAK && window.MNA_TWEAK.prop !== undefined ? window.MNA_TWEAK.prop : PROP_W) * prop;
       out.push({ k: k, c: c, s: s, score: score, seed: isSeed });
     });
     out.sort(function (a, b) { return b.score - a.score; });
@@ -286,6 +303,12 @@
         reasons.push({ t: t, ev: ev.map(function (e) { return { co: hi(e.s, sp[1], sp[2]), me: userQuote(sp[1], e.s) }; }), val: o.s[t] });
       });
       if (o.s.sd >= MIN.sd && seeds.length) reasons.push({ t: "sd", ev: [], val: o.s.sd });
+      if (o.s.hm && o.s.hs >= MIN.hs * mf) {
+        reasons.push({ t: "hs", val: o.s.hs, ev: o.s.hm.top.filter(function (x) { return x.sim >= MIN.hs * mf * 0.8; }).map(function (x) {
+          const k = x.c, d = k.d.replace(/(\d{4})(\d\d)(\d\d)/, "$1-$2-$3");
+          return { co: "과거 인수 · " + d + " <b>" + esc(k.t || "") + "</b>" + (k.tb ? " (" + esc(k.tb) + ")" : "") + (k.a ? " — " + won(k.a) + "억원" : "") + (k.p ? " · 목적: " + esc(k.p) : ""), me: userQuote(prodAll, (k.tb || "") + " " + (k.t || "")) };
+        }) });
+      }
       // 업종코드가 같거나 가까우면 DART 업종 자체를 근거로 쓴다 (사업 문장이 달라도 놓치지 않기 위함)
       if (c.ic && (o.s.L >= 4 || (o.s.L === 3 && (reasons.length || o.score / topScore >= (wide ? 0.08 : 0.15))))) {
         const an = anchors.filter(function (a) { return pref(c.ic, a) === o.s.L; })[0] || anchors[0];
@@ -302,23 +325,10 @@
       res.forEach(function (r) {
         const rel = r.score / top, has = function (t) { return r.reasons.some(function (x) { return x.t === t; }); };
         const hasText = has("h"), other = has("vb") || has("vf") || has("cap") || has("sd") || (has("cu") && r.reasons.some(function (x) { return x.t === "cu" && x.val >= 0.2; }));
-        r.tier = (hasText && (r.L >= 4 || rel >= 0.55)) || r.L === 5 ? 1 : (hasText || other || r.L >= 4 ? 2 : 3);
+        const hsv = (r.reasons.filter(function (x) { return x.t === "hs"; })[0] || { val: 0 }).val;
+        r.tier = (hasText && (r.L >= 4 || rel >= 0.55)) || r.L === 5 || hsv >= 0.35 ? 1 : (hasText || other || r.L >= 4 || hsv >= 0.18 ? 2 : 3);
         r.grade = rel >= 0.6 ? "상" : (rel >= 0.35 ? "중" : "하");
       });
-      // 계열 연결: 상위 후보와 지분으로 이어진 상장사를 3티어로 덧붙인다 (예: 모회사·자회사·관계사)
-      const have = new Set(res.map(function (r) { return r.c.c; }));
-      const idxBy = new Map(IDX.c.map(function (c) { return [c.c, c]; }));
-      const add = [];
-      res.slice(0, 40).forEach(function (r) {
-        if (r.tier > 2 || !r.c.af) return;
-        r.c.af.forEach(function (e) {
-          const o2 = idxBy.get(e[0]); if (!o2 || have.has(o2.c)) return;
-          have.add(o2.c);
-          add.push({ c: o2, score: r.score * 0.35, tier: 3, grade: "하", seed: false, L: maxPref(o2.ic || "", anchors),
-            reasons: [{ t: "af", val: 0.2, ev: [{ co: esc(r.c.n) + "의 " + esc(e[1]) + ": <b>" + esc(o2.n) + "</b> (지분 " + e[2] + "%, DART 공시 기준)", me: null }] }] });
-        });
-      });
-      res = res.concat(add);
       res.forEach(function (r) { r.fin = finCheck(r.c, inp); });
       res.sort(function (a, b) { return (a.tier - b.tier) || (b.score - a.score); });
     }
@@ -336,11 +346,12 @@
     if (eq !== null && eq <= 0) out.push(["warn", "자본총계 0 이하 — 자본잠식 가능성"]);
     else if (eq && debt && debt / eq > 3) out.push(["warn", "부채비율 " + Math.round(debt / eq * 100) + "% — 재무 부담 확인"]);
     if (/홀딩스|지주|Holdings|HOLDINGS/.test(c.n)) out.push(["info", "지주사 — 실제 사업은 자회사에서 할 수 있어요. 자회사·계열사 사업을 확인하세요"]);
+    if (c.af && c.af.length) out.push(["info", "지분 관계 상장사: " + c.af.slice(0, 4).map(function (e) { const o = BYCODE.get(e[0]); return (o ? o.n : e[0]) + " (" + e[1] + " " + e[2] + "%)"; }).join(", ")]);
     if (c.h && c.h.length) out.push(["info", "최대주주: " + c.h.slice(0, 2).map(function (x) { return x[0] + " " + x[1] + "%"; }).join(", ") + " (DART)"]);
     if (c.sub && c.sub.length) out.push(["info", "종속회사(출자 50% 초과): " + c.sub.slice(0, 8).join(", ")]);
     else out.push(["info", "최대주주·계열·같은 사업의 계열사 보유 여부는 DART 공시로 확인이 필요해요"]);
-    if (me.rev && rev) { const r = rev / me.rev; if (r > 50) out.push(["info", "매도 기업 매출의 약 " + Math.round(r) + "배 규모 — 소규모 딜에 관심이 낮을 수 있어요"]); else if (r < 1) out.push(["warn", "매도 기업보다 매출이 작아요 — 인수 여력 확인"]); }
-    if (me.price && eq) { const p = me.price / eq * 100; out.push([p > 50 ? "warn" : "info", "희망 매각가는 후보 자본총계의 약 " + (p < 1 ? p.toFixed(1) : Math.round(p)) + "%"]); }
+    if (me.rev && rev) { const r = rev / me.rev; if (r > 50) out.push(["info", "매도 기업 매출의 약 " + Math.round(r) + "배 규모 — 소규모 딜에 관심이 낮을 수 있어요"]); else if (r < 1) out.push(["info", "매도 기업보다 매출이 작아요 (규모 차이 확인)"]); }
+    if (me.price && eq) { const p = me.price / eq * 100; out.push([p > 100 ? "warn" : "info", "희망 매각가는 후보 자본총계의 약 " + (p < 1 ? p.toFixed(1) : Math.round(p)) + "%"]); }
     if (me.op !== undefined && me.op !== null && me.rev && rev && op !== null) {
       const a = pct(me.op, me.rev), b = pct(op, rev);
       if (a !== null && b !== null) out.push(["info", "영업이익률: 매도 기업 " + a + "% vs 후보 " + b + "%"]);
@@ -360,7 +371,39 @@
       if (!r.ok) throw new Error("none");
       const d = await r.json(); CASES = d.cases || [];
     } catch (e) { CASES = []; }
+    prepCases();
     return CASES;
+  }
+  // 사례마다 '대상 회사 사업' 벡터를 만들고, 계열사·해외 법인 출자성 건을 표시한다. 인수사별로 묶어 '인수 이력 일치' 계산에 쓴다.
+  const normName = function (x) { return String(x || "").replace(/㈜|\(주\)|주식회사|\(.*?\)|\s|[.,·&\-]/g, "").toUpperCase(); };
+  function prepCases() {
+    BYBUYER = new Map();
+    if (!IDX || !CASES) return;
+    const subOf = new Map(IDX.c.map(function (c) { return [c.c, { name: normName(c.n), subs: new Set((c.sub || []).map(normName)) }]; }));
+    CASES.forEach(function (c, i) {
+      const me = subOf.get(c.bc), tn = normName(c.t);
+      c._intra = !!(me && (me.subs.has(tn) || (me.name.length >= 3 && tn.indexOf(me.name.slice(0, 3)) === 0) || !/[가-힣]/.test(c.t || "")));
+      c._i = i;
+      const cnt = new Map();
+      tok((c.t || "") + " " + (c.tb || "") + " " + (c.tb || "") + " " + (c.p || "")).forEach(function (t) { const k = IDX.vid.get(t); if (k !== undefined) cnt.set(k, (cnt.get(k) || 0) + 1); });
+      const v = new Map(); let sq = 0;
+      cnt.forEach(function (n, k) { const w = (1 + Math.log(n)) * IDX.idf[k]; v.set(k, w); sq += w * w; });
+      sq = Math.sqrt(sq) || 1; v.forEach(function (w, k) { v.set(k, w / sq); });
+      c._v = v;
+      if (!c._intra && c.bc) { if (!BYBUYER.has(c.bc)) BYBUYER.set(c.bc, []); BYBUYER.get(c.bc).push(c); }
+    });
+  }
+  // 이 회사가 과거에 인수한 회사들 중 내 사업과 가장 비슷한 것 (시험용 opt.looCase 는 정답 사례를 빼고 계산)
+  function histMatch(code, q, opt) {
+    const list = BYBUYER.get(code); if (!list) return null;
+    let best = 0; const top = [];
+    list.forEach(function (c) {
+      if (opt && opt.looCase && opt.looCase.r === c.r && opt.looCase.t === c.t) return;
+      const sim = dot(q, c._v); if (sim <= 0.02) return;
+      top.push({ c: c, sim: sim });
+    });
+    top.sort(function (a, b) { return b.sim - a.sim; });
+    return top.length ? { hs: top[0].sim, top: top.slice(0, 2) } : null;
   }
   // 같은 업종 회사가 인수했거나(인수사 업종), 대상 회사 사업 설명이 내 제품과 겹치는 사례
   function relatedCases(res, inp) {
@@ -382,6 +425,7 @@
   }
 
   window.MNA_MATCH = { load: load, run: run, checks: checks, finCheck: finCheck, TYPES: TYPES, TIERS: TIERS, esc: esc, won: won, pct: pct,
+    reprep: prepCases, cases: function () { return CASES; },
     searchKsic: searchKsic, ksicLabel: ksicLabel, ksicNameOf: ksicNameOf, loadCases: loadCases, relatedCases: relatedCases,
     names: function () { return IDX ? IDX.c.map(function (c) { return { n: c.n, c: c.c, m: c.m }; }) : []; },
     count: function () { return IDX ? IDX.c.length : 0; }, built: function () { return IDX ? IDX.built : ""; } };

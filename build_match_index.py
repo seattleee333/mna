@@ -136,6 +136,12 @@ def main():
             hold = [[" ".join(str(h_["name"]).split()), h_["rate"]] for h_ in x.get("holders", {}).get("rows", [])[:3] if h_.get("rate")]
             if hold:
                 item["h"] = hold
+            # 인수 성향 신호: 최근(2022년 이후) 경영참여·20% 이상 지분 출자 건수 (타법인 출자현황 기준)
+            rows_ = x.get("invest", {}).get("rows", [])
+            iv = [r_ for r_ in rows_ if ((r_.get("purpose") or "") == "경영참여" or (r_.get("rate") or 0) >= 20)
+                  and re.match(r"^(20(2[2-9]))", str(r_.get("first") or ""))]
+            if iv:
+                item["iv"] = len(iv)
             if subs:
                 item["sub"] = subs[:10]
             co = x.get("company", {})

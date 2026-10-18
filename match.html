@@ -266,7 +266,7 @@ renderNewsPanel();
     lastInput = currentInput();
     if (!lastInput.products) return;
     $("runBtn").disabled = true; $("runBtn").textContent = "찾는 중…";
-    M.load().then(function () {
+    M.load().then(function () { return M.loadCases(); }).then(function () {
       setTimeout(function () {
         runSearch();
         $("result").scrollIntoView({ behavior: "smooth", block: "start" });
