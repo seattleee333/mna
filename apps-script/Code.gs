@@ -12,6 +12,7 @@ function doPost(e) {
   try {
     var req = JSON.parse(e.postData.contents);
     if (req.action === 'match_request') return json_(saveMatchRequest_(req));
+    if (req.action === 'needs_codes') return json_(needsCodes_());
     if (req.action !== 'login') throw new Error('지원하지 않는 요청');
     var who = verify_(req);
     var row = upsert_(who);
@@ -75,6 +76,23 @@ function saveMatchRequest_(req) {
       s(req.memo, 500), s(inp.products, 600), s(inp.customers, 400), s(inp.tech, 400), s(inp.materials, 400), s(inp.issues, 400), s(inp.rev, 20), '접수']);
     return { ok: true };
   } finally { lock.releaseLock(); }
+}
+
+// 인수 니즈가 있는 상장사의 '종목코드'만 돌려준다 (니즈 내용은 공개하지 않음).
+// 비공개 구글시트에 '인수니즈' 탭을 만들고 1행에 '종목코드' 열을 두면 된다.
+function needsCodes_() {
+  var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('인수니즈');
+  if (!sh || sh.getLastRow() < 2) return { ok: true, codes: [] };
+  var head = sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0];
+  var ci = head.indexOf('종목코드');
+  if (ci < 0) return { ok: true, codes: [] };
+  var vals = sh.getRange(2, ci + 1, sh.getLastRow() - 1, 1).getValues(), seen = {};
+  vals.forEach(function (r) {
+    var c = String(r[0] || '').replace(/'/g, '').trim();
+    if (/^\d+$/.test(c)) c = ('000000' + c).slice(-6);
+    if (c) seen[c.toUpperCase()] = 1;
+  });
+  return { ok: true, codes: Object.keys(seen) };
 }
 
 // 시트에서 수식으로 해석되지 않도록 앞에 ' 를 붙인다

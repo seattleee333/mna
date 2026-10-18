@@ -101,16 +101,27 @@
     </section>
 
     <section id="result" hidden>
-      <div class="mt-sum" id="sum"></div>
-      <div class="mt-anchor" id="anchorInfo"></div>
-      <div class="mt-ctl">
-        <label class="mt-wide"><input type="checkbox" id="finChk"> <b>재무 조건 미충족 후보도 보기</b> <span class="mt-h" id="finInfo"></span></label>
-        <label class="mt-wide"><input type="checkbox" id="wideChk"> 관련도가 낮은 후보까지 넓게 보기</label>
-        <label class="mt-wide">정렬
-          <select id="sortSel"><option value="syn">시너지(티어) 순</option><option value="opm">영업이익률 높은 순</option><option value="rev">매출 큰 순</option><option value="eq">자본 큰 순</option></select>
-        </label>
+      <div class="mt-panel" id="ctlPanel">
+        <div class="mt-panel-top">
+          <div class="mt-big"><b id="bigN">0</b><span>곳</span><em>시너지 후보</em></div>
+          <div class="mt-tiersum" id="tierSum"></div>
+        </div>
+        <div class="mt-sum" id="sum"></div>
+        <div class="mt-anchor" id="anchorInfo"></div>
+        <div class="mt-needs" id="needsBox" hidden></div>
+        <div class="mt-seg" id="finSeg">
+          <button type="button" class="on" data-fin="0"><i>✅</i><span><b>재무 반영 추천 리스트</b><small>영업적자·자본잠식·부채과다·인수여력 부족 후보를 뺀 리스트</small></span></button>
+          <button type="button" data-fin="1"><i>📋</i><span><b>재무 무관 전체 리스트</b><small id="finInfo">재무와 관계없이 시너지 후보 전체</small></span></button>
+        </div>
+        <input type="checkbox" id="finChk" hidden>
+        <div class="mt-opts">
+          <label class="mt-switch"><input type="checkbox" id="wideChk"><span class="mt-sw"></span><span>관련도가 낮은 후보까지 넓게 보기</span></label>
+          <label class="mt-sortl">정렬
+            <select id="sortSel"><option value="syn">시너지(티어) 순</option><option value="opm">영업이익률 높은 순</option><option value="rev">매출 큰 순</option><option value="eq">자본 큰 순</option></select>
+          </label>
+        </div>
       </div>
-      <button type="button" class="mt-btn cases-btn" id="casesBtn">📚 업계 M&amp;A 사례 보기</button>
+      <button type="button" class="mt-btn cases-btn" id="casesBtn">📚 업계 M&amp;A 사례 펼쳐보기 <span id="casesArrow">▾</span></button>
       <div class="mt-cases" id="casesBox" hidden></div>
       <div class="mt-excl" id="exclBar">
         <input type="text" id="exclIn" placeholder="결과에서 뺄 회사명을 입력하고 Enter (경쟁사·이미 접촉한 곳)">
@@ -159,6 +170,7 @@ renderNewsPanel();
   const M = window.MNA_MATCH, C = window.MNA_CONFIG || {}, esc = M.esc, T = M.TYPES, TI = M.TIERS;
   const $ = function (id) { return document.getElementById(id); };
   const form = $("mtForm");
+  let NEEDS = null;                       // 인수 니즈가 확인된 종목코드(비공개 시트에서 코드만 받아옴 — 설정 전에는 null)
   let results = [], shown = 0, lastInput = null, reqCtx = null, tab = "all", tierTab = 0, casesOpen = false;
   const excluded = new Map();                 // 종목코드 → 회사명
   const sel = { ind: [], cust: [] };
@@ -219,6 +231,12 @@ renderNewsPanel();
 
   M.load().then(function () {
     NAMES = M.names();
+    if (C.appsScriptUrl) {
+      fetch(C.appsScriptUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "needs_codes" }) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) { if (j && j.ok && Array.isArray(j.codes) && j.codes.length) { NEEDS = new Set(j.codes); if (results.length) redraw(); } })
+        .catch(function () {});
+    }
     $("idxInfo").textContent = "상장사 " + M.count().toLocaleString() + "곳 · " + M.built() + " 기준";
   }).catch(function (e) { $("idxInfo").textContent = String(e.message || e); });
 
@@ -258,6 +276,7 @@ renderNewsPanel();
   });
   $("wideChk").addEventListener("change", function () { if (lastInput) runSearch(); });
   $("finChk").addEventListener("change", function () { redraw(); });
+  $("finSeg").addEventListener("click", function (e) { const b = e.target.closest("button[data-fin]"); if (!b) return; $("finChk").checked = b.dataset.fin === "1"; redraw(); });
   $("sortSel").addEventListener("change", function () { redraw(); });
 
   // 보이는 목록: 제외한 회사 빼고 → 재무 반영(기본)/재무 무관 전체 → 티어·유형 탭 → 정렬
@@ -276,10 +295,17 @@ renderNewsPanel();
     const base = pool(), shownBase = base.filter(finVisible);
     const tc = { 1: 0, 2: 0, 3: 0 }; shownBase.forEach(function (r) { tc[r.tier]++; });
     const hiddenFin = base.length - shownBase.length;
-    $("sum").innerHTML = results.length
-      ? "시너지 후보 <b>" + shownBase.length + "곳</b> <span class='mt-h'>(1티어 " + tc[1] + " · 2티어 " + tc[2] + " · 3티어 " + tc[3] + ")</span>"
-      : "근거가 확인되는 후보를 찾지 못했어요. 제품·서비스를 더 구체적으로(여러 표현으로) 적거나, 업종·고객 산업을 선택해 보세요.";
-    $("finInfo").textContent = hiddenFin > 0 && !$("finChk").checked ? "(숨겨진 후보 " + hiddenFin + "곳: 영업적자·자본잠식·부채과다·인수여력 부족 등)" : "";
+    $("bigN").textContent = shownBase.length;
+    $("tierSum").innerHTML = results.length ? [1, 2, 3].map(function (k) { return '<span class="mt-tp t' + k + '"><b>' + tc[k] + "</b><small>" + TI[k].label + "</small></span>"; }).join("") : "";
+    $("sum").innerHTML = results.length ? "" : "근거가 확인되는 후보를 찾지 못했어요. 제품·서비스를 더 구체적으로(여러 표현으로) 적거나, 업종·고객 산업을 선택해 보세요.";
+    $("ctlPanel").classList.toggle("empty", !results.length);
+    $("finInfo").textContent = hiddenFin > 0 && !$("finChk").checked ? "재무 미충족 " + hiddenFin + "곳까지 포함해 전체 보기" : "재무와 관계없이 시너지 후보 전체";
+    Array.prototype.forEach.call($("finSeg").querySelectorAll("button"), function (b) { b.classList.toggle("on", (b.dataset.fin === "1") === $("finChk").checked); });
+    if (NEEDS) {
+      const k = shownBase.filter(function (r) { return NEEDS.has(r.c.c); }).length;
+      $("needsBox").hidden = !results.length;
+      $("needsBox").innerHTML = "시너지 후보 " + shownBase.length + "곳 중 <b>" + k + "곳</b>은 인수 니즈가 확인된 회사입니다.<span>매도 회사로 등록하시면, 조건에 따라 인수 기업의 니즈를 확인할 수 있습니다.</span>";
+    } else $("needsBox").hidden = true;
     const an = results.anchors || [];
     $("anchorInfo").innerHTML = an.length ? "기준 업종" + (results.auto ? "(자동 추정)" : "") + ": " + an.slice(0, 4).map(function (a) { return "<b>" + esc(M.ksicLabel(a)) + "</b>"; }).join(" · ") : "";
     $("exclBar").hidden = !results.length; $("casesBtn").hidden = !results.length; drawExcl();
@@ -321,14 +347,15 @@ renderNewsPanel();
       el.className = "mt-res tier" + r.tier;
       el.innerHTML =
         '<div class="mt-res-h"><div class="mt-rank">' + no + '</div><div class="mt-res-name"><b>' + esc(c.n) + '</b><span>' + esc(c.m) + " · " + esc(c.c) +
-        '</span></div><div class="mt-tier t' + r.tier + '">' + TI[r.tier].label + '</div></div>' +
+        '</span></div><div class="mt-tier t' + r.tier + '">' + TI[r.tier].label + '</div></div>' + (NEEDS && NEEDS.has(c.c) ? '<div class="mt-needbadge">🎯 인수 니즈 확인된 회사</div>' : "") +
         '<div class="mt-chips">' + chips + "</div><div class='mt-finrow'>" + finB + (c.ic ? ' <span class="mt-ic">' + esc(M.ksicLabel(c.ic)) + "</span>" : "") + "</div>" + cmp +
+        '<button type="button" class="mt-fold" data-fold="1">시너지 이유 · 확인 필요 펼쳐보기 <span>▾</span></button><div class="mt-more" hidden>' +
         '<div class="mt-why-box"><div class="mt-box-t">시너지 이유 · 공시 근거</div>' + why + "</div>" + mda +
         '<div class="mt-check"><div class="mt-box-t">확인 필요</div><ul>' + chk + "</ul>" + ir +
         '<a class="mt-link" target="_blank" rel="noopener" href="https://finance.naver.com/item/main.naver?code=' + esc(c.c) + '">종목 정보 보기 ↗</a></div>' +
         '<div class="mt-req"><button type="button" class="mt-btn primary" data-m="broker" data-code="' + esc(c.c) + '">ALL ABOUT M&amp;A에 연결 요청</button>' +
         '<button type="button" class="mt-btn" data-m="direct" data-code="' + esc(c.c) + '">직접 매각 요청 (NDA 후 열람)</button>' +
-        '<button type="button" class="mt-btn ghost" data-excl="' + esc(c.c) + '">이 회사 제외</button></div>';
+        '<button type="button" class="mt-btn ghost" data-excl="' + esc(c.c) + '">이 회사 제외</button></div></div>';
       $("cards").appendChild(el);
     });
     shown = Math.min(list.length, shown + n);
@@ -351,30 +378,41 @@ renderNewsPanel();
     const showIntra = !!($("caseIntra") && $("caseIntra").checked);
     const nIntra = list.filter(function (x) { return x.intra; }).length;
     const rows = list.filter(function (x) { return (showIntra || !x.intra) && (!q || [x.c.b, x.c.t, x.c.tb, x.c.p].join(" ").toLowerCase().indexOf(q) >= 0); });
-    const cnt = box._shown || 40;
+    const PER = 10, pages = Math.max(1, Math.ceil(rows.length / PER)); box._page = Math.min(box._page || 0, pages - 1); const pg = box._page;
     box.innerHTML = '<div class="mt-cases-h"><b>업계 M&amp;A 사례</b> <span class="mt-h">최근 5년 상장사의 타법인 지분 취득 공시 중, 같은 업종 기업이 인수했거나 대상 회사 사업이 내 제품과 겹치는 건 · ' + rows.length + '건</span>' +
       '<label class="mt-wide" style="display:block;margin-top:6px"><input type="checkbox" id="caseIntra"' + (showIntra ? " checked" : "") + '> 계열사·해외 법인 출자성 건도 보기 (' + nIntra + '건)</label>' +
       '<input type="text" id="caseQ" placeholder="회사·사업으로 거르기" value="' + esc(q) + '"></div>' +
-      (list.length ? '<div class="mt-case-list">' + rows.slice(0, cnt).map(function (x) {
+      (list.length ? '<div class="mt-case-list">' + rows.slice(pg * PER, pg * PER + PER).map(function (x) {
         const c = x.c, d = c.d.replace(/(\d{4})(\d\d)(\d\d)/, "$1-$2-$3");
         return '<div class="mt-case"><div class="mt-case-top"><span class="mt-case-d">' + d + "</span> <b>" + esc(c.b) + "</b> → <b>" + esc(c.t || "-") + "</b>" +
           (x.byTarget ? ' <span class="mt-chip t-h">대상 사업 유사</span>' : "") + (x.byBuyer ? ' <span class="mt-chip t-ic">인수사 동종</span>' : "") + "</div>" +
           '<div class="mt-case-sub">' + (c.tb ? esc(c.tb) + " · " : "") + (c.a ? "취득금액 " + M.won(c.a) + "억원" : "금액 미공시") + (c.s ? " · 지분 " + esc(c.s) + "%" : "") + (c.cp ? " · 거래상대방 " + esc(c.cp) : "") + "</div>" +
           (c.p ? '<div class="mt-case-p">목적: ' + esc(c.p) + "</div>" : "") +
           '<a class="mt-link" target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(c.r) + '">DART 공시 보기 ↗</a></div>';
-      }).join("") + "</div>" + (rows.length > cnt ? '<button type="button" class="np-more" id="caseMore">더보기 (' + (rows.length - cnt) + "건 남음) ▾</button>" : "") :
+      }).join("") + "</div>" + pager(pg, pages) :
         '<div class="mt-h" style="padding:8px 2px">조건에 맞는 사례가 없거나, 사례 데이터가 아직 준비되지 않았어요.</div>');
-    const qi = $("caseQ"); if (qi) { qi.addEventListener("input", function () { box._shown = 40; drawCases(); qi.focus(); qi.setSelectionRange(qi.value.length, qi.value.length); }); }
-    const ci = $("caseIntra"); if (ci) ci.addEventListener("change", function () { box._shown = 40; drawCases(); });
-    const mb = $("caseMore"); if (mb) mb.addEventListener("click", function () { box._shown = cnt + 40; drawCases(); });
+    const qi = $("caseQ"); if (qi) { qi.addEventListener("input", function () { box._page = 0; drawCases(); qi.focus(); qi.setSelectionRange(qi.value.length, qi.value.length); }); }
+    const ci = $("caseIntra"); if (ci) ci.addEventListener("change", function () { box._page = 0; drawCases(); });
+    Array.prototype.forEach.call(box.querySelectorAll("[data-p]"), function (b) { b.addEventListener("click", function () { box._page = +b.dataset.p; drawCases(); box.scrollIntoView({ block: "start" }); }); });
+  }
+  function pager(pg, pages) {
+    if (pages <= 1) return "";
+    const nums = []; for (let i = Math.max(0, pg - 3); i <= Math.min(pages - 1, pg + 3); i++) nums.push(i);
+    return '<div class="mt-pager"><button type="button" data-p="' + Math.max(0, pg - 1) + '"' + (pg === 0 ? " disabled" : "") + '>‹</button>' +
+      (nums[0] > 0 ? '<button type="button" data-p="0">1</button><span>…</span>' : "") +
+      nums.map(function (i) { return '<button type="button" data-p="' + i + '"' + (i === pg ? ' class="on"' : "") + ">" + (i + 1) + "</button>"; }).join("") +
+      (nums[nums.length - 1] < pages - 1 ? '<span>…</span><button type="button" data-p="' + (pages - 1) + '">' + pages + "</button>" : "") +
+      '<button type="button" data-p="' + Math.min(pages - 1, pg + 1) + '"' + (pg === pages - 1 ? " disabled" : "") + ">›</button></div>";
   }
   $("casesBtn").addEventListener("click", function () {
-    casesOpen = !casesOpen; $("casesBox").hidden = !casesOpen;
+    casesOpen = !casesOpen; $("casesBox").hidden = !casesOpen; $("casesArrow").textContent = casesOpen ? "▴" : "▾"; if (casesOpen) $("casesBox")._page = 0;
     if (casesOpen) { $("casesBox").innerHTML = '<div class="mt-h">불러오는 중…</div>'; M.loadCases().then(drawCases); }
   });
 
   // 카드 버튼: 제외 / 연결 요청
   $("cards").addEventListener("click", function (e) {
+    const fd = e.target.closest("button[data-fold]");
+    if (fd) { const m = fd.nextElementSibling; m.hidden = !m.hidden; fd.classList.toggle("open", !m.hidden); fd.firstChild.textContent = m.hidden ? "시너지 이유 · 확인 필요 펼쳐보기 " : "접기 "; fd.querySelector("span").textContent = m.hidden ? "▾" : "▴"; return; }
     const x = e.target.closest("button[data-excl]");
     if (x) { const r = results.find(function (z) { return z.c.c === x.dataset.excl; }); excluded.set(x.dataset.excl, r ? r.c.n : x.dataset.excl); redraw(); return; }
     const b = e.target.closest("button[data-m]"); if (!b) return;
