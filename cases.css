@@ -44,3 +44,10 @@
 .cs-foot { font-size:12px; color:var(--faint); line-height:1.7; margin:0 4px 40px; }
 .cs-empty { padding:40px 0; text-align:center; color:var(--faint); font-size:14px; }
 @media (max-width:700px) { .cs-l { flex-basis:100%; } .cs-ctl input[type=text] { width:100%; } }
+
+.cs-ind { display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; }
+.cs-sel { display:inline-flex; flex-direction:column; gap:3px; font-size:12px; color:var(--sub); }
+.cs-sel span { font-weight:600; }
+.cs-sel select { width:290px; max-width:100%; }
+.cs-arrow { color:var(--faint); font-size:16px; padding-top:16px; }
+@media (max-width:640px) { .cs-sel { width:100%; } .cs-sel select { width:100%; } .cs-arrow { display:none; } }

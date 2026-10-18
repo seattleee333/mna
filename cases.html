@@ -30,10 +30,11 @@
         <button type="button" class="cs-chip" data-range="0">5년 전체</button>
       </div></div>
       <div class="cs-row"><div class="cs-l">M&amp;A 종류</div><div class="cs-ctl" id="typeChips"></div></div>
-      <div class="cs-row"><div class="cs-l">산업</div><div class="cs-ctl">
-        <select id="ind"><option value="">전체 산업</option></select>
-        <label class="cs-radio"><input type="radio" name="indMode" value="buyer" checked> 인수 회사 업종</label>
-        <label class="cs-radio"><input type="radio" name="indMode" value="target"> 대상 회사 업종(추정)</label>
+      <div class="cs-row"><div class="cs-l">산업</div><div class="cs-ctl cs-ind">
+        <label class="cs-sel"><span>인수 회사 업종</span> <select id="ind"><option value="">전체 산업</option></select></label>
+        <span class="cs-arrow">→</span>
+        <label class="cs-sel"><span>매도(대상) 회사 업종</span> <select id="indT"><option value="">전체 산업</option></select></label>
+        <span class="mt-h" style="font-size:12.5px;color:var(--faint)">두 칸을 함께 고르면 둘 다 맞는 사례만 보여요</span>
       </div></div>
       <div class="cs-row"><div class="cs-l">금액(억원)</div><div class="cs-ctl">
         <input type="number" id="aMin" min="0" placeholder="최소"> <span class="sep">~</span> <input type="number" id="aMax" min="0" placeholder="최대">
@@ -65,7 +66,8 @@
     <div class="cs-foot">
       • 출처: 금융감독원 전자공시(DART) 주요사항보고서·거래소 공시의 ‘타법인 주식 및 출자증권 취득(양수)결정’, ‘영업양수결정’. 정정·종속회사 공시는 제외했어요.<br>
       • <b>그룹사 내 거래</b>는 대상이 인수 회사의 종속회사 명단에 있거나, 상호가 같은 그룹 이름(예: 현대·한화·롯데)으로 시작하는 건을 자동 표시한 것이라 일부 틀릴 수 있어요.<br>
-      • 산업은 DART 업종코드(KSIC 10차)의 중분류예요. 대상 회사는 대부분 비상장이라 사업 설명과 가장 비슷한 상장사의 업종으로 추정했습니다.<br>
+      • 산업은 DART 업종코드(KSIC 10차)의 중분류예요. <b>인수 회사 업종</b>은 상장사의 실제 업종코드예요.<br>
+      • <b>매도(대상) 회사 업종</b>은 대부분 비상장이라 코드가 없어서 이렇게 판정했어요: ① 대상이 상장사면 그 회사의 실제 업종, ② 공시의 ‘대상 회사 주요사업’ 문구에서 키워드로 분류, ③ 표준산업분류 항목 이름과 비교, ④ 사업 설명이 비슷한 상장사의 업종으로 추정. 카드에 판정 방식이 표시되고, 사업 정보가 공시에 없는 건은 업종이 비어 있어 업종으로 고르면 보이지 않아요.<br>
       • 지분율·사업·목적은 공시에서 읽힌 건만 표시돼요. 비어 있으면 DART 공시 링크에서 확인하세요.
     </div>
   </main>
@@ -85,7 +87,7 @@ renderNewsPanel();
   const PER = 20;
   const TYPES = ["경영권 인수(50%↑)", "지분 투자(50% 미만)", "지분 취득(지분율 미확인)", "영업양수"];
   const state = { types: new Set(), grp: "all", page: 0 };
-  let DATA = [], KSIC = null;
+  let DATA = [], KSIC = null; const ILAB = {};
 
   const fmtD = function (d) { return d.slice(0, 4) + "-" + d.slice(4, 6) + "-" + d.slice(6, 8); };
   const won = function (a) { return a >= 10000 ? (a / 10000).toLocaleString(undefined, { maximumFractionDigits: 1 }) + "조원" : a.toLocaleString(undefined, { maximumFractionDigits: 1 }) + "억원"; };
@@ -116,11 +118,10 @@ renderNewsPanel();
   document.querySelectorAll("[data-amt]").forEach(function (b) {
     b.addEventListener("click", function () { const p = b.dataset.amt.split(","); $("aMin").value = p[0]; $("aMax").value = p[1] || ""; $("aNone").checked = false; state.page = 0; draw(); });
   });
-  ["dFrom", "dTo", "aMin", "aMax", "aNone", "ind", "qName", "qKw", "exForeign", "sort"].forEach(function (id) { $(id).addEventListener("input", function () { state.page = 0; draw(); }); });
-  document.querySelectorAll("input[name=indMode]").forEach(function (r) { r.addEventListener("change", function () { state.page = 0; draw(); }); });
+  ["dFrom", "dTo", "aMin", "aMax", "aNone", "ind", "indT", "qName", "qKw", "exForeign", "sort"].forEach(function (id) { $(id).addEventListener("input", function () { state.page = 0; draw(); }); });
   $("reset").addEventListener("click", function () {
     ["dFrom", "dTo", "aMin", "aMax", "qName", "qKw"].forEach(function (id) { $(id).value = ""; });
-    $("ind").value = ""; $("aNone").checked = true; $("exForeign").checked = false; state.types.clear(); state.grp = "all"; state.page = 0;
+    $("ind").value = ""; $("indT").value = ""; $("aNone").checked = true; $("exForeign").checked = false; state.types.clear(); state.grp = "all"; state.page = 0;
     Array.prototype.forEach.call($("typeChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", !x.dataset.type); });
     Array.prototype.forEach.call($("grpChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", x.dataset.grp === "all"); });
     draw();
@@ -129,13 +130,14 @@ renderNewsPanel();
   function filtered() {
     const from = $("dFrom").value.replace(/-/g, ""), to = $("dTo").value.replace(/-/g, "");
     const aMin = $("aMin").value === "" ? null : +$("aMin").value, aMax = $("aMax").value === "" ? null : +$("aMax").value;
-    const noAmt = $("aNone").checked, ind = $("ind").value, mode = document.querySelector("input[name=indMode]:checked").value;
+    const noAmt = $("aNone").checked, ind = $("ind").value, indT = $("indT").value;
     const qn = $("qName").value.trim().toLowerCase(), qk = $("qKw").value.trim().toLowerCase(), exF = $("exForeign").checked;
     let list = DATA.filter(function (c) {
       if (from && c.d < from) return false;
       if (to && c.d > to) return false;
       if (state.types.size && !state.types.has(c.ty)) return false;
-      if (ind && (mode === "buyer" ? c.bi : c.ti) !== ind) return false;
+      if (ind && c.bi !== ind) return false;
+      if (indT && c.ti !== indT) return false;
       if (aMin !== null || aMax !== null) {
         if (c.a == null) { if (!noAmt) return false; }
         else if ((aMin !== null && c.a < aMin) || (aMax !== null && c.a > aMax)) return false;
@@ -165,7 +167,8 @@ renderNewsPanel();
     const rows = list.slice(state.page * PER, state.page * PER + PER);
     $("list").innerHTML = rows.length ? rows.map(function (c) {
       const g = c.g ? '<span class="cs-tag grp" title="' + (c.g === "sub" ? "대상이 인수 회사의 종속회사 명단에 있어요" : "상호가 같은 그룹 이름으로 시작해 계열로 추정했어요") + '">🏢 그룹사 내 거래' + (c.g === "sub" ? "" : " (추정)") + "</span>" : "";
-      const info = [c.tb ? esc(c.tb) : "", c.a != null ? '<span class="cs-amt">' + won(c.a) + "</span>" : "금액 미공시", c.s ? "지분 " + esc(c.s) + "%" : "", c.cp ? "거래상대방 " + esc(c.cp) : ""].filter(Boolean).join(" · ");
+      const tiTxt = c.ti && ILAB[c.ti] ? "대상 업종 " + esc(ILAB[c.ti]) + (c.tq === "x" ? "" : " (" + (c.tq === "r" ? "문구 분류" : "추정") + ")") : "";
+      const info = [c.tb ? esc(c.tb) : "", tiTxt, c.a != null ? '<span class="cs-amt">' + won(c.a) + "</span>" : "금액 미공시", c.s ? "지분 " + esc(c.s) + "%" : "", c.cp ? "거래상대방 " + esc(c.cp) : ""].filter(Boolean).join(" · ");
       return '<div class="cs-item' + (c.g ? " grp" : "") + '"><div class="cs-top"><span class="cs-date">' + fmtD(c.d) + '</span><span class="cs-tag' + (c.ty.indexOf("경영권") === 0 ? " ctl" : "") + '">' + esc(c.ty) + "</span>" + g + (c.f ? '<span class="cs-tag for">해외 법인</span>' : "") + "</div>" +
         '<div class="cs-deal"><b>' + esc(c.b) + "</b> → <b>" + esc(c.t || "-") + "</b></div>" +
         '<div class="cs-sub">' + info + "</div>" + (c.p ? '<div class="cs-p">목적: ' + esc(c.p) + "</div>" : "") +
@@ -196,9 +199,11 @@ renderNewsPanel();
     if (KSIC) {   // 산업 선택: 대분류별로 묶은 중분류(2자리)
       const groups = {};
       KSIC.c.filter(function (r) { return r[0].length === 2; }).forEach(function (r) { const L = KSIC.sec[r[0]] || "?"; (groups[L] = groups[L] || []).push(r); });
-      $("ind").innerHTML = '<option value="">전체 산업</option>' + Object.keys(groups).sort().map(function (L) {
+      const opts = '<option value="">전체 산업</option>' + Object.keys(groups).sort().map(function (L) {
         return '<optgroup label="' + esc(L + " · " + (KSIC.secname[L] || "")) + '">' + groups[L].map(function (r) { return '<option value="' + r[0] + '">' + esc(r[1]) + " (" + r[0] + ")</option>"; }).join("") + "</optgroup>";
       }).join("");
+      $("ind").innerHTML = opts; $("indT").innerHTML = opts;
+      KSIC.c.forEach(function (r) { if (r[0].length === 2) ILAB[r[0]] = r[1]; });
     }
     draw();
   });
