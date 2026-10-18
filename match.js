@@ -366,11 +366,16 @@
   function relatedCases(res, inp) {
     const anchors = res.anchors || [], qm = res.qmP || new Map();
     const out = [];
+    const nn = function (x) { return String(x || "").replace(/㈜|\(주\)|주식회사|\(.*?\)|\s|[.,·&\-]/g, "").toUpperCase(); };
+    const subOf = new Map(IDX.c.map(function (c) { return [c.c, { name: nn(c.n), subs: new Set((c.sub || []).map(nn)) }]; }));
     (CASES || []).forEach(function (c) {
+      const me = subOf.get(c.bc), tn = nn(c.t);
+      // 자기 계열사·해외 법인 출자성 건(대상 이름이 영문뿐이거나 자기 상호로 시작 — 해외 자회사 증자 등이 많아요)은 기본으로 숨긴다
+      const intra = !!(me && (me.subs.has(tn) || (me.name.length >= 3 && tn.indexOf(me.name.slice(0, 3)) === 0) || !/[가-힣]/.test(c.t || "")));
       const L = maxPref(ICBY.get(c.bc) || "", anchors);
       const sc = ovl(tok((c.t || "") + " " + (c.tb || "") + " " + (c.p || "")), qm);
       const byBuyer = L >= 3, byTarget = sc >= EV_MIN;
-      if (byBuyer || byTarget) out.push({ c: c, byBuyer: byBuyer, byTarget: byTarget, w: (byTarget ? 2 : 0) + (L >= 4 ? 1 : byBuyer ? 0.5 : 0) });
+      if (byBuyer || byTarget) out.push({ c: c, intra: intra, byBuyer: byBuyer, byTarget: byTarget, w: (byTarget ? 2 : 0) + (L >= 4 ? 1 : byBuyer ? 0.5 : 0) });
     });
     out.sort(function (a, b) { return (b.c.d > a.c.d ? 1 : b.c.d < a.c.d ? -1 : 0); });
     return out;

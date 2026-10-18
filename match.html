@@ -348,9 +348,12 @@ renderNewsPanel();
   function drawCases() {
     const box = $("casesBox"), list = M.relatedCases(results, lastInput);
     const q = ($("caseQ") && $("caseQ").value || "").trim().toLowerCase();
-    const rows = list.filter(function (x) { return !q || [x.c.b, x.c.t, x.c.tb, x.c.p].join(" ").toLowerCase().indexOf(q) >= 0; });
+    const showIntra = !!($("caseIntra") && $("caseIntra").checked);
+    const nIntra = list.filter(function (x) { return x.intra; }).length;
+    const rows = list.filter(function (x) { return (showIntra || !x.intra) && (!q || [x.c.b, x.c.t, x.c.tb, x.c.p].join(" ").toLowerCase().indexOf(q) >= 0); });
     const cnt = box._shown || 40;
-    box.innerHTML = '<div class="mt-cases-h"><b>업계 M&amp;A 사례</b> <span class="mt-h">최근 5년 상장사의 타법인 지분 취득 공시 중, 같은 업종 기업이 인수했거나 대상 회사 사업이 내 제품과 겹치는 건 · 총 ' + list.length + '건</span>' +
+    box.innerHTML = '<div class="mt-cases-h"><b>업계 M&amp;A 사례</b> <span class="mt-h">최근 5년 상장사의 타법인 지분 취득 공시 중, 같은 업종 기업이 인수했거나 대상 회사 사업이 내 제품과 겹치는 건 · ' + rows.length + '건</span>' +
+      '<label class="mt-wide" style="display:block;margin-top:6px"><input type="checkbox" id="caseIntra"' + (showIntra ? " checked" : "") + '> 계열사·해외 법인 출자성 건도 보기 (' + nIntra + '건)</label>' +
       '<input type="text" id="caseQ" placeholder="회사·사업으로 거르기" value="' + esc(q) + '"></div>' +
       (list.length ? '<div class="mt-case-list">' + rows.slice(0, cnt).map(function (x) {
         const c = x.c, d = c.d.replace(/(\d{4})(\d\d)(\d\d)/, "$1-$2-$3");
@@ -362,6 +365,7 @@ renderNewsPanel();
       }).join("") + "</div>" + (rows.length > cnt ? '<button type="button" class="np-more" id="caseMore">더보기 (' + (rows.length - cnt) + "건 남음) ▾</button>" : "") :
         '<div class="mt-h" style="padding:8px 2px">조건에 맞는 사례가 없거나, 사례 데이터가 아직 준비되지 않았어요.</div>');
     const qi = $("caseQ"); if (qi) { qi.addEventListener("input", function () { box._shown = 40; drawCases(); qi.focus(); qi.setSelectionRange(qi.value.length, qi.value.length); }); }
+    const ci = $("caseIntra"); if (ci) ci.addEventListener("change", function () { box._shown = 40; drawCases(); });
     const mb = $("caseMore"); if (mb) mb.addEventListener("click", function () { box._shown = cnt + 40; drawCases(); });
   }
   $("casesBtn").addEventListener("click", function () {
