@@ -37,12 +37,15 @@ const CONTENTS = [
   { id: "expensive", img: "assets/data-2.svg", tag: "매각 랭킹",
     title: "최근 5년 간 가장 비싸게 매각한 기업은?",
     desc: "최근 5년간 공시된 지분·사업 매각 중 거래금액이 가장 컸던 딜은 무엇이었는지 확인해 보세요." },
+  { id: "cases", href: "cases.html", img: "assets/data-3.svg", tag: "인수 사례",
+    title: "최근 5년 인수 사례 전체 리스트",
+    desc: "상장사가 공시한 타법인 지분 취득·영업 양수 사례를 기간·종류·산업·금액·회사명으로 검색하세요. 그룹사 내 거래는 따로 표시돼요." },
 ];
 fetch("ma_stats.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
   let date = "집계 준비 중";
   if (d && d.updated) date = d.updated.slice(0, 4) + "." + d.updated.slice(4, 6) + "." + d.updated.slice(6, 8) + " 업데이트";
   document.getElementById("dataList").innerHTML = CONTENTS.map(c =>
-    '<a class="dcard" href="data-view.html?id=' + c.id + '">' +
+    '<a class="dcard" href="' + (c.href || ("data-view.html?id=" + c.id)) + '">' +
       '<div class="dcard-thumb"><img src="' + c.img + '" alt=""></div>' +
       '<div class="dcard-body"><span class="dtag">' + c.tag + '</span>' +
       '<div class="dcard-title">' + c.title + '</div>' +

@@ -1,0 +1,46 @@
+/* 5년 인수 사례 리스트 (cases.html) */
+.cs-main { max-width:900px; }
+.cs-back { display:inline-block; font-size:13.5px; color:var(--sub); text-decoration:none; margin:0 0 10px 4px; }
+.cs-head h1 { margin:0 0 6px; font-size:24px; letter-spacing:-.01em; }
+.cs-head p { margin:0 0 16px; font-size:14px; color:var(--sub); line-height:1.6; }
+.cs-filter { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px 20px; margin-bottom:16px; }
+.cs-row { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; padding:8px 0; border-bottom:1px solid var(--bg); }
+.cs-row:last-child { border-bottom:0; }
+.cs-l { flex:0 0 92px; font-size:13px; font-weight:800; color:var(--text); }
+.cs-ctl { display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; flex:1; min-width:0; }
+.cs-ctl input[type=date], .cs-ctl input[type=number], .cs-ctl input[type=text], .cs-ctl select { font:inherit; font-size:13.5px; border:1px solid var(--line); border-radius:9px; padding:7px 10px; background:#fff; color:var(--text); }
+.cs-ctl input[type=number] { width:110px; }
+.cs-ctl input[type=text] { width:200px; }
+.cs-ctl select { max-width:100%; }
+.cs-ctl .sep { color:var(--faint); }
+.cs-chip { border:1px solid var(--line); background:#fff; color:var(--sub); border-radius:999px; padding:6px 13px; font:inherit; font-size:12.8px; font-weight:700; cursor:pointer; }
+.cs-chip:hover { border-color:#d5dbe6; color:var(--text); }
+.cs-chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.cs-radio { display:inline-flex; align-items:center; gap:4px; font-size:13px; color:var(--sub); cursor:pointer; }
+.cs-actions { display:flex; align-items:center; gap:10px; margin-top:10px; }
+.cs-reset { border:1px solid var(--line); background:#fff; border-radius:9px; padding:7px 14px; font:inherit; font-size:13px; font-weight:700; cursor:pointer; color:var(--sub); }
+.cs-sum { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 14px; margin:4px 4px 10px; }
+.cs-sum b { font-size:18px; }
+.cs-sum span { font-size:13px; color:var(--sub); }
+.cs-sum select { font:inherit; font-size:13px; border:1px solid var(--line); border-radius:9px; padding:6px 10px; background:#fff; }
+.cs-item { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 18px; margin-bottom:10px; }
+.cs-item.grp { background:#fbfaf3; border-color:#efe6bd; }
+.cs-top { display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; }
+.cs-date { font-size:12.5px; color:var(--faint); margin-right:2px; }
+.cs-deal { font-size:15.5px; margin:6px 0 2px; line-height:1.5; }
+.cs-deal b { font-weight:800; }
+.cs-sub { font-size:13px; color:var(--sub); line-height:1.6; }
+.cs-p { font-size:12.8px; color:var(--sub); margin-top:2px; }
+.cs-tag { font-size:11.5px; font-weight:800; padding:3px 9px; border-radius:6px; background:var(--accent-soft); color:var(--accent-dark); }
+.cs-tag.ctl { background:#e8f7ee; color:var(--buy); }
+.cs-tag.grp { background:#fff3cd; color:#8a5a00; }
+.cs-tag.for { background:#eef0f4; color:var(--sub); }
+.cs-amt { font-weight:800; color:var(--text); }
+.cs-link { display:inline-block; margin-top:4px; font-size:12.5px; color:var(--accent); text-decoration:none; font-weight:700; }
+.cs-pager { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:6px; margin:16px 0 30px; }
+.cs-pager button { min-width:36px; height:36px; border:1px solid var(--line); background:#fff; border-radius:9px; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
+.cs-pager button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.cs-pager button:disabled { opacity:.4; cursor:default; }
+.cs-foot { font-size:12px; color:var(--faint); line-height:1.7; margin:0 4px 40px; }
+.cs-empty { padding:40px 0; text-align:center; color:var(--faint); font-size:14px; }
+@media (max-width:700px) { .cs-l { flex-basis:100%; } .cs-ctl input[type=text] { width:100%; } }
