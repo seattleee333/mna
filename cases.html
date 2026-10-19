@@ -23,6 +23,7 @@
     </div>
 
     <section class="cs-filter" id="filter">
+      <div class="cs-fhead"><b>검색 조건</b><span class="cs-asof" id="asOf"></span><button type="button" class="cs-reset" id="reset">↺ 필터 초기화</button></div>
       <div class="cs-row"><div class="cs-l">기간</div><div class="cs-ctl">
         <input type="date" id="dFrom"> <span class="sep">~</span> <input type="date" id="dTo">
         <button type="button" class="cs-chip" data-range="1">최근 1년</button>
@@ -30,11 +31,19 @@
         <button type="button" class="cs-chip" data-range="0">5년 전체</button>
       </div></div>
       <div class="cs-row"><div class="cs-l">M&amp;A 종류</div><div class="cs-ctl" id="typeChips"></div></div>
-      <div class="cs-row"><div class="cs-l">산업</div><div class="cs-ctl cs-ind">
-        <label class="cs-sel"><span>인수 회사 업종</span> <select id="ind"><option value="">전체 산업</option></select></label>
+      <div class="cs-row cs-rowtop"><div class="cs-l">산업</div><div class="cs-ctl cs-ind">
+        <div class="cs-isel">
+          <span class="cs-ilab">인수 회사 업종</span>
+          <div class="cs-ipick"><input type="text" class="cs-isearch" id="indQ" placeholder="업종 검색 (예: PCB, 광고, 화장품)" autocomplete="off"><div class="cs-ilist" id="indL" hidden></div></div>
+          <select id="ind"><option value="">전체 산업</option></select>
+        </div>
         <span class="cs-arrow">→</span>
-        <label class="cs-sel"><span>매도(대상) 회사 업종</span> <select id="indT"><option value="">전체 산업</option></select></label>
-        <span class="mt-h" style="font-size:12.5px;color:var(--faint)">두 칸을 함께 고르면 둘 다 맞는 사례만 보여요</span>
+        <div class="cs-isel">
+          <span class="cs-ilab">매도(대상) 회사 업종</span>
+          <div class="cs-ipick"><input type="text" class="cs-isearch" id="indTQ" placeholder="업종 검색 (예: PCB, 광고, 화장품)" autocomplete="off"><div class="cs-ilist" id="indTL" hidden></div></div>
+          <select id="indT"><option value="">전체 산업</option></select>
+        </div>
+        <div class="cs-ihint">업종은 검색하거나 목록에서 고를 수 있어요. 두 칸을 함께 고르면 둘 다 맞는 사례만 보여요.</div>
       </div></div>
       <div class="cs-row"><div class="cs-l">금액(억원)</div><div class="cs-ctl">
         <input type="number" id="aMin" min="0" placeholder="최소"> <span class="sep">~</span> <input type="number" id="aMax" min="0" placeholder="최대">
@@ -54,19 +63,24 @@
         <button type="button" class="cs-chip" data-grp="only">그룹사 내 거래만</button>
         <label class="cs-radio"><input type="checkbox" id="exForeign"> 해외 법인 대상 제외</label>
       </div></div>
-      <div class="cs-actions"><button type="button" class="cs-reset" id="reset">필터 초기화</button><span class="mt-h" id="loadInfo" style="font-size:12.5px;color:var(--faint)">불러오는 중…</span></div>
+      <div class="cs-actions"><button type="button" class="cs-search" id="go">🔍 검색</button><span id="loadInfo" class="cs-admin"></span></div>
     </section>
 
-    <div class="cs-sum" id="sum">
-      <div><b id="cnt">0</b><b>건</b> <span id="amtSum"></span></div>
-      <label><span>정렬</span> <select id="sort"><option value="d">최신순</option><option value="ad">금액 큰 순</option><option value="aa">금액 작은 순</option><option value="do">오래된 순</option></select></label>
+    <div class="cs-hint" id="hint">조건을 고른 뒤 <b>검색</b>을 눌러 주세요. 조건 없이 눌러도 전체 사례가 나와요.</div>
+
+    <div id="results" hidden>
+      <div class="cs-sum" id="sum">
+        <div><b id="cnt">0</b><b>건</b> <span id="amtSum"></span></div>
+        <label><span>정렬</span> <select id="sort"><option value="d">최신순</option><option value="ad">금액 큰 순</option><option value="aa">금액 작은 순</option><option value="do">오래된 순</option></select></label>
+      </div>
+      <div id="list"></div>
+      <div class="cs-pager" id="pager"></div>
     </div>
-    <div id="list"></div>
-    <div class="cs-pager" id="pager"></div>
+
     <div class="cs-foot">
       • 출처: 금융감독원 전자공시(DART) 주요사항보고서·거래소 공시의 ‘타법인 주식 및 출자증권 취득(양수)결정’, ‘영업양수결정’. 정정·종속회사 공시는 제외했어요.<br>
       • <b>그룹사 내 거래</b>는 대상이 인수 회사의 종속회사 명단에 있거나, 상호가 같은 그룹 이름(예: 현대·한화·롯데)으로 시작하는 건을 자동 표시한 것이라 일부 틀릴 수 있어요.<br>
-      • 산업은 DART 업종코드(KSIC 10차)의 중분류예요. <b>인수 회사 업종</b>은 상장사의 실제 업종코드예요.<br>
+      • 산업은 DART 업종코드(KSIC 10차)의 중분류예요. <b>인수 회사 업종</b>은 상장사의 실제 업종코드예요. 업종을 검색하면 해당 업종이 속한 중분류로 찾아요.<br>
       • <b>매도(대상) 회사 업종</b>은 대부분 비상장이라 코드가 없어서 이렇게 판정했어요: ① 대상이 상장사면 그 회사의 실제 업종, ② 공시의 ‘대상 회사 주요사업’ 문구에서 키워드로 분류, ③ 표준산업분류 항목 이름과 비교, ④ 사업 설명이 비슷한 상장사의 업종으로 추정. 카드에 판정 방식이 표시되고, 사업 정보가 공시에 없는 건은 업종이 비어 있어 업종으로 고르면 보이지 않아요.<br>
       • 지분율·사업·목적은 공시에서 읽힌 건만 표시돼요. 비어 있으면 DART 공시 링크에서 확인하세요.
     </div>
@@ -86,67 +100,121 @@ renderNewsPanel();
   const esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   const PER = 20;
   const TYPES = ["경영권 인수(50%↑)", "지분 투자(50% 미만)", "지분 취득(지분율 미확인)", "영업양수"];
-  const state = { types: new Set(), grp: "all", page: 0 };
-  let DATA = [], KSIC = null; const ILAB = {};
+  const state = { types: new Set(), grp: "all", page: 0, searched: false, applied: null };
+  let DATA = [], KSIC = null, DMIN = "", DMAX = ""; const ILAB = {};
 
   const fmtD = function (d) { return d.slice(0, 4) + "-" + d.slice(4, 6) + "-" + d.slice(6, 8); };
   const won = function (a) { return a >= 10000 ? (a / 10000).toLocaleString(undefined, { maximumFractionDigits: 1 }) + "조원" : a.toLocaleString(undefined, { maximumFractionDigits: 1 }) + "억원"; };
   const iso = function (d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
+  const isoOf = function (s) { return s.slice(0, 4) + "-" + s.slice(4, 6) + "-" + s.slice(6, 8); };
 
-  // 종류 칩
+  // 관리자 표시: 주소 끝에 ?admin=1 을 한 번 붙여 열면 이 브라우저에서만 '총 건수'가 보인다 (보안 기능이 아니라 화면 표시 구분)
+  try { const q = new URLSearchParams(location.search); if (q.get("admin") === "1") localStorage.setItem("mnaAdmin", "1"); if (q.get("admin") === "0") localStorage.removeItem("mnaAdmin"); } catch (e) {}
+  const isAdmin = function () { try { return localStorage.getItem("mnaAdmin") === "1"; } catch (e) { return false; } };
+
+  // ── 칩: 눌러서 조건만 바꾸고, 결과는 [검색]을 눌러야 나온다 ──
   $("typeChips").innerHTML = '<button type="button" class="cs-chip on" data-type="">전체</button>' + TYPES.map(function (t) { return '<button type="button" class="cs-chip" data-type="' + esc(t) + '">' + esc(t) + "</button>"; }).join("");
   $("typeChips").addEventListener("click", function (e) {
     const b = e.target.closest("button[data-type]"); if (!b) return;
     const t = b.dataset.type;
     if (!t) state.types.clear(); else if (state.types.has(t)) state.types.delete(t); else state.types.add(t);
     Array.prototype.forEach.call($("typeChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", x.dataset.type ? state.types.has(x.dataset.type) : state.types.size === 0); });
-    state.page = 0; draw();
   });
   $("grpChips").addEventListener("click", function (e) {
     const b = e.target.closest("button[data-grp]"); if (!b) return;
     state.grp = b.dataset.grp;
     Array.prototype.forEach.call($("grpChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", x.dataset.grp === state.grp); });
-    state.page = 0; draw();
   });
+  function markRange(y) { document.querySelectorAll("[data-range]").forEach(function (x) { x.classList.toggle("on", x.dataset.range === String(y)); }); }
   document.querySelectorAll("[data-range]").forEach(function (b) {
     b.addEventListener("click", function () {
       const y = +b.dataset.range, to = new Date();
-      $("dTo").value = y ? iso(to) : ""; $("dFrom").value = y ? iso(new Date(to.getFullYear() - y, to.getMonth(), to.getDate())) : "";
-      state.page = 0; draw();
+      if (y) { $("dTo").value = iso(to); $("dFrom").value = iso(new Date(to.getFullYear() - y, to.getMonth(), to.getDate())); }
+      else { $("dFrom").value = DMIN ? isoOf(DMIN) : ""; $("dTo").value = DMAX ? isoOf(DMAX) : ""; }   // 5년 전체: 데이터가 있는 처음~끝 날짜를 채운다
+      markRange(y);
     });
   });
+  ["dFrom", "dTo"].forEach(function (id) { $(id).addEventListener("input", function () { markRange("none"); }); });
   document.querySelectorAll("[data-amt]").forEach(function (b) {
-    b.addEventListener("click", function () { const p = b.dataset.amt.split(","); $("aMin").value = p[0]; $("aMax").value = p[1] || ""; $("aNone").checked = false; state.page = 0; draw(); });
+    b.addEventListener("click", function () {
+      const p = b.dataset.amt.split(","); $("aMin").value = p[0]; $("aMax").value = p[1] || ""; $("aNone").checked = false;
+      document.querySelectorAll("[data-amt]").forEach(function (x) { x.classList.toggle("on", x === b); });
+    });
   });
-  ["dFrom", "dTo", "aMin", "aMax", "aNone", "ind", "indT", "qName", "qKw", "exForeign", "sort"].forEach(function (id) { $(id).addEventListener("input", function () { state.page = 0; draw(); }); });
-  $("reset").addEventListener("click", function () {
-    ["dFrom", "dTo", "aMin", "aMax", "qName", "qKw"].forEach(function (id) { $(id).value = ""; });
-    $("ind").value = ""; $("indT").value = ""; $("aNone").checked = true; $("exForeign").checked = false; state.types.clear(); state.grp = "all"; state.page = 0;
-    Array.prototype.forEach.call($("typeChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", !x.dataset.type); });
-    Array.prototype.forEach.call($("grpChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", x.dataset.grp === "all"); });
-    draw();
-  });
+  ["aMin", "aMax"].forEach(function (id) { $(id).addEventListener("input", function () { document.querySelectorAll("[data-amt]").forEach(function (x) { x.classList.remove("on"); }); }); });
 
+  // ── 업종 검색: 입력하면 아래에 목록이 뜨고, 고르면 해당 중분류가 선택된다 ──
+  const ALIAS = {
+    "pcb": ["인쇄회로기판"], "hdi": ["인쇄회로기판"], "회로": ["인쇄회로기판", "전자집적회로"], "기판": ["인쇄회로기판", "반도체"], "반도체": ["반도체", "전자집적회로"],
+    "배터리": ["축전지", "전지"], "2차전지": ["축전지"], "화장품": ["화장품"], "용기": ["용기", "포장"], "유리": ["유리"], "배전반": ["배전반"], "변압기": ["변압기"],
+    "디스플레이": ["디스플레이", "표시장치"], "자동차": ["자동차"], "제약": ["의약품"], "바이오": ["의약품", "연구개발"], "의료": ["의료"], "소프트웨어": ["소프트웨어"], "sw": ["소프트웨어"],
+    "게임": ["게임"], "로봇": ["로봇", "일반 목적용 기계"], "철강": ["철강", "제강", "압연"], "건설": ["건설", "건축"], "식품": ["식품", "음료"], "의류": ["의복", "섬유"], "패션": ["의복", "섬유"],
+    "물류": ["운송", "창고"], "택배": ["택배", "운송"], "태양광": ["태양", "발전", "전지"], "원전": ["원자력", "발전"], "화학": ["화학"], "플라스틱": ["플라스틱"], "광고": ["광고"],
+    "교육": ["교육"], "여행": ["여행"], "호텔": ["숙박"], "외식": ["음식점"], "유통": ["도매", "소매"], "이커머스": ["전자상거래", "소매"], "엔터": ["영화", "방송", "출판"],
+    "방산": ["무기", "항공"], "조선": ["선박"], "금융": ["금융", "은행", "보험"], "증권": ["증권"], "보험": ["보험"], "부동산": ["부동산"], "리츠": ["부동산"], "통신": ["통신"], "ai": ["소프트웨어", "정보서비스"],
+    "클라우드": ["정보서비스", "소프트웨어"], "데이터센터": ["정보서비스"], "ess": ["축전지"], "led": ["발광", "조명"], "전자부품": ["전자부품"], "장비": ["기계", "장비"], "소재": ["화학", "금속", "비금속"]
+  };
+  function searchKsic(q) {
+    if (!KSIC) return [];
+    q = String(q || "").trim().toLowerCase(); if (!q) return [];
+    const terms = [q];
+    Object.keys(ALIAS).forEach(function (k) { if (q.indexOf(k) >= 0) ALIAS[k].forEach(function (t) { terms.push(t.toLowerCase()); }); });
+    q.split(/\s+/).filter(function (w) { return w.length >= 2 && w !== q; }).forEach(function (w) { terms.push(w); });
+    const isNum = /^\d+$/.test(q), rows = [];
+    KSIC.c.forEach(function (r) {
+      const code = r[0], name = r[1]; if (code.length < 2) return;
+      const nl = name.toLowerCase(); let s = 0;
+      if (isNum && code.indexOf(q) === 0) s = 6;
+      terms.forEach(function (t, i) { if (nl.indexOf(t) >= 0) s += i === 0 ? 4 : 2; });
+      if (s > 0) rows.push({ code: code, name: name, s: s });
+    });
+    rows.sort(function (a, b) { return (b.s - a.s) || (a.code.length - b.code.length); });
+    return rows.slice(0, 10);
+  }
+  function indPicker(qId, listId, selId) {
+    const inp = $(qId), list = $(listId), sel = $(selId);
+    function pick(r) { sel.value = r.code.slice(0, 2); inp.value = r.name + " (" + (KSIC.sec[r.code.slice(0, 2)] || "") + r.code + ")"; list.hidden = true; }
+    function show() {
+      const q = inp.value.trim(); if (!q) { list.hidden = true; return; }
+      const rows = searchKsic(q);
+      list.innerHTML = rows.length ? rows.map(function (r, i) {
+        const div = r.code.slice(0, 2), L = KSIC.sec[div] || "";
+        return '<button type="button" class="cs-iopt" data-i="' + i + '">' + esc(r.name) + ' <span>· ' + esc(L + r.code) + (r.code.length > 2 ? " → 중분류 " + esc(ILAB[div] || div) : "") + "</span></button>";
+      }).join("") : '<div class="cs-inone">검색 결과가 없어요</div>';
+      list._rows = rows; list.hidden = false;
+    }
+    inp.addEventListener("input", show); inp.addEventListener("focus", show);
+    inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); e.stopPropagation(); if (list._rows && list._rows[0] && !list.hidden) pick(list._rows[0]); } });
+    list.addEventListener("mousedown", function (e) { e.preventDefault(); });
+    list.addEventListener("click", function (e) { const b = e.target.closest("[data-i]"); if (b) pick(list._rows[+b.dataset.i]); });
+    inp.addEventListener("blur", function () { setTimeout(function () { list.hidden = true; }, 150); });
+    sel.addEventListener("change", function () { inp.value = ""; });
+  }
+
+  // ── 검색 ──
+  function readFilters() {
+    const nz = function (id) { return $(id).value === "" ? null : +$(id).value; };
+    return { from: $("dFrom").value.replace(/-/g, ""), to: $("dTo").value.replace(/-/g, ""), types: new Set(state.types), grp: state.grp,
+      ind: $("ind").value, indT: $("indT").value, aMin: nz("aMin"), aMax: nz("aMax"), noAmt: $("aNone").checked,
+      qn: $("qName").value.trim().toLowerCase(), qk: $("qKw").value.trim().toLowerCase(), exF: $("exForeign").checked };
+  }
   function filtered() {
-    const from = $("dFrom").value.replace(/-/g, ""), to = $("dTo").value.replace(/-/g, "");
-    const aMin = $("aMin").value === "" ? null : +$("aMin").value, aMax = $("aMax").value === "" ? null : +$("aMax").value;
-    const noAmt = $("aNone").checked, ind = $("ind").value, indT = $("indT").value;
-    const qn = $("qName").value.trim().toLowerCase(), qk = $("qKw").value.trim().toLowerCase(), exF = $("exForeign").checked;
+    const f = state.applied;
     let list = DATA.filter(function (c) {
-      if (from && c.d < from) return false;
-      if (to && c.d > to) return false;
-      if (state.types.size && !state.types.has(c.ty)) return false;
-      if (ind && c.bi !== ind) return false;
-      if (indT && c.ti !== indT) return false;
-      if (aMin !== null || aMax !== null) {
-        if (c.a == null) { if (!noAmt) return false; }
-        else if ((aMin !== null && c.a < aMin) || (aMax !== null && c.a > aMax)) return false;
-      } else if (c.a == null && !noAmt) return false;
-      if (state.grp === "ex" && c.g) return false;
-      if (state.grp === "only" && !c.g) return false;
-      if (exF && c.f) return false;
-      if (qn && (c.b + " " + (c.t || "") + " " + (c.cp || "")).toLowerCase().indexOf(qn) < 0) return false;
-      if (qk && ((c.tb || "") + " " + (c.p || "") + " " + (c.t || "")).toLowerCase().indexOf(qk) < 0) return false;
+      if (f.from && c.d < f.from) return false;
+      if (f.to && c.d > f.to) return false;
+      if (f.types.size && !f.types.has(c.ty)) return false;
+      if (f.ind && c.bi !== f.ind) return false;
+      if (f.indT && c.ti !== f.indT) return false;
+      if (f.aMin !== null || f.aMax !== null) {
+        if (c.a == null) { if (!f.noAmt) return false; }
+        else if ((f.aMin !== null && c.a < f.aMin) || (f.aMax !== null && c.a > f.aMax)) return false;
+      } else if (c.a == null && !f.noAmt) return false;
+      if (f.grp === "ex" && c.g) return false;
+      if (f.grp === "only" && !c.g) return false;
+      if (f.exF && c.f) return false;
+      if (f.qn && (c.b + " " + (c.t || "") + " " + (c.cp || "")).toLowerCase().indexOf(f.qn) < 0) return false;
+      if (f.qk && ((c.tb || "") + " " + (c.p || "") + " " + (c.t || "")).toLowerCase().indexOf(f.qk) < 0) return false;
       return true;
     });
     const s = $("sort").value;
@@ -156,7 +224,6 @@ renderNewsPanel();
     else if (s === "do") list.sort(function (a, b) { return a.d < b.d ? -1 : 1; });
     return list;
   }
-
   function draw() {
     const list = filtered();
     const sum = list.reduce(function (s, c) { return s + (c.a || 0); }, 0), withAmt = list.filter(function (c) { return c.a != null; }).length;
@@ -174,7 +241,6 @@ renderNewsPanel();
         '<div class="cs-sub">' + info + "</div>" + (c.p ? '<div class="cs-p">목적: ' + esc(c.p) + "</div>" : "") +
         '<a class="cs-link" target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(c.r) + '">DART 공시 보기 ↗</a></div>';
     }).join("") : '<div class="cs-empty">조건에 맞는 사례가 없어요. 필터를 줄여 보세요.</div>';
-    // 페이지
     let h = "";
     if (pages > 1) {
       const nums = []; for (let i = Math.max(0, state.page - 3); i <= Math.min(pages - 1, state.page + 3); i++) nums.push(i);
@@ -186,16 +252,39 @@ renderNewsPanel();
     }
     $("pager").innerHTML = h;
   }
-  $("pager").addEventListener("click", function (e) { const b = e.target.closest("button[data-p]"); if (!b) return; state.page = +b.dataset.p; draw(); window.scrollTo({ top: $("sum").offsetTop - 80, behavior: "smooth" }); });
+  function search() {
+    if (!DATA.length) return;
+    state.applied = readFilters(); state.page = 0; state.searched = true;
+    $("hint").hidden = true; $("results").hidden = false;
+    draw();
+    $("results").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  $("go").addEventListener("click", search);
+  document.querySelectorAll("#filter input[type=text], #filter input[type=number], #filter input[type=date]").forEach(function (el) {
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.defaultPrevented) { e.preventDefault(); search(); } });
+  });
+  $("sort").addEventListener("input", function () { if (state.searched) { state.page = 0; draw(); } });
+  $("pager").addEventListener("click", function (e) { const b = e.target.closest("button[data-p]"); if (!b) return; state.page = +b.dataset.p; draw(); window.scrollTo({ top: $("results").offsetTop - 80, behavior: "smooth" }); });
+  $("reset").addEventListener("click", function () {
+    ["dFrom", "dTo", "aMin", "aMax", "qName", "qKw", "indQ", "indTQ"].forEach(function (id) { $(id).value = ""; });
+    $("ind").value = ""; $("indT").value = ""; $("aNone").checked = true; $("exForeign").checked = false; state.types.clear(); state.grp = "all";
+    document.querySelectorAll("[data-range],[data-amt]").forEach(function (x) { x.classList.remove("on"); });
+    Array.prototype.forEach.call($("typeChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", !x.dataset.type); });
+    Array.prototype.forEach.call($("grpChips").querySelectorAll("button"), function (x) { x.classList.toggle("on", x.dataset.grp === "all"); });
+    state.searched = false; $("results").hidden = true; $("hint").hidden = false;
+  });
 
   Promise.all([
     fetch("ma_cases_view.json?t=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }),
     fetch("ksic.json?v=1").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
   ]).then(function (res) {
     const d = res[0]; KSIC = res[1];
-    if (!d) { $("loadInfo").textContent = "사례 데이터를 불러오지 못했어요."; return; }
+    if (!d) { $("hint").textContent = "사례 데이터를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요."; return; }
     DATA = d.cases || [];
-    $("loadInfo").textContent = "총 " + DATA.length.toLocaleString() + "건 · " + (d.updated || "") + " 갱신";
+    DATA.forEach(function (c) { if (!DMIN || c.d < DMIN) DMIN = c.d; if (!DMAX || c.d > DMAX) DMAX = c.d; });
+    const u = String(d.updated || "").replace(/-/g, "");
+    $("asOf").textContent = u.length === 8 ? u.slice(0, 4) + "." + u.slice(4, 6) + "." + u.slice(6, 8) + " 기준" : "";
+    if (isAdmin()) $("loadInfo").textContent = "관리자 표시 · 총 " + DATA.length.toLocaleString() + "건";
     if (KSIC) {   // 산업 선택: 대분류별로 묶은 중분류(2자리)
       const groups = {};
       KSIC.c.filter(function (r) { return r[0].length === 2; }).forEach(function (r) { const L = KSIC.sec[r[0]] || "?"; (groups[L] = groups[L] || []).push(r); });
@@ -204,8 +293,8 @@ renderNewsPanel();
       }).join("");
       $("ind").innerHTML = opts; $("indT").innerHTML = opts;
       KSIC.c.forEach(function (r) { if (r[0].length === 2) ILAB[r[0]] = r[1]; });
+      indPicker("indQ", "indL", "ind"); indPicker("indTQ", "indTL", "indT");
     }
-    draw();
   });
 })();
 </script>

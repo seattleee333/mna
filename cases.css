@@ -51,3 +51,32 @@
 .cs-sel select { width:290px; max-width:100%; }
 .cs-arrow { color:var(--faint); font-size:16px; padding-top:16px; }
 @media (max-width:640px) { .cs-sel { width:100%; } .cs-sel select { width:100%; } .cs-arrow { display:none; } }
+
+/* v2: 검색 버튼·초기화 위치·업종 검색 */
+.cs-fhead { display:flex; align-items:center; justify-content:space-between; gap:10px; padding-bottom:10px; margin-bottom:2px; border-bottom:1px solid var(--line); }
+.cs-fhead b { font-size:15px; }
+.cs-asof { margin-left:auto; margin-right:6px; font-size:12.5px; color:var(--faint); }
+.cs-reset { border:1px solid var(--line); background:#fff; border-radius:9px; padding:6px 12px; font:inherit; font-size:12.5px; font-weight:700; cursor:pointer; color:var(--sub); }
+.cs-reset:hover { border-color:var(--accent); color:var(--accent); }
+.cs-actions { display:flex; align-items:center; gap:12px; margin-top:14px; }
+.cs-search { border:0; background:linear-gradient(135deg,var(--accent),#6d5bf0); color:#fff; border-radius:12px; padding:12px 34px; font:inherit; font-size:15px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px -8px rgba(52,87,224,.6); }
+.cs-search:hover { filter:brightness(1.06); }
+.cs-admin { font-size:12px; color:#b45309; }
+.cs-hint { text-align:center; color:var(--sub); font-size:14px; padding:26px 10px; background:var(--card); border:1px dashed var(--line); border-radius:var(--radius); margin-bottom:16px; }
+.cs-hint[hidden] { display:none; }
+.cs-rowtop { align-items:flex-start; }
+.cs-ind { align-items:flex-start; }
+.cs-isel { display:flex; flex-direction:column; gap:6px; flex:1; min-width:230px; }
+.cs-ilab { font-size:12px; font-weight:700; color:var(--faint); }
+.cs-ipick { position:relative; }
+.cs-isearch { width:100%; font:inherit; font-size:13.5px; border:1px solid var(--line); border-radius:9px; padding:8px 10px; background:#fff; }
+.cs-isearch:focus { outline:2px solid var(--accent-soft); border-color:var(--accent); }
+.cs-ilist { position:absolute; left:0; right:0; top:100%; z-index:40; margin-top:4px; background:#fff; border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow-hover); max-height:280px; overflow:auto; }
+.cs-ilist[hidden] { display:none; }
+.cs-iopt { display:block; width:100%; text-align:left; border:0; background:none; padding:9px 12px; font:inherit; font-size:13px; cursor:pointer; border-bottom:1px solid var(--bg); }
+.cs-iopt:hover { background:var(--accent-soft); }
+.cs-iopt span { color:var(--faint); font-size:12px; }
+.cs-inone { padding:10px 12px; font-size:13px; color:var(--faint); }
+.cs-arrow { align-self:center; color:var(--faint); padding-top:18px; }
+.cs-ihint { flex-basis:100%; font-size:12.5px; color:var(--faint); }
+.cs-ctl .cs-chip[data-range].on, .cs-ctl .cs-chip[data-amt].on { background:var(--accent); border-color:var(--accent); color:#fff; }
