@@ -2,7 +2,7 @@ name: DART M&A 수집
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # 매일 한국시간 오전 7시
+    - cron: "7 20 * * *"   # 매일 한국시간 오전 5시 7분 (정각은 GitHub가 몰려서 지연되므로 7분 어긋나게)
   workflow_dispatch:
     inputs:
       days:
