@@ -1,12 +1,12 @@
 {
  "doc_used": false,
- "updated": "20261018",
- "since": "20211018",
+ "updated": "20261019",
+ "since": "20211019",
  "complete": true,
  "totals": {
-  "acq_filings": 2815,
-  "disp_filings": 876,
-  "biz_out_filings": 36
+  "acq_filings": 2816,
+  "disp_filings": 877,
+  "biz_out_filings": 37
  },
  "active": {
   "top10": [
