@@ -80,3 +80,5 @@
 .cs-arrow { align-self:center; color:var(--faint); padding-top:18px; }
 .cs-ihint { flex-basis:100%; font-size:12.5px; color:var(--faint); }
 .cs-ctl .cs-chip[data-range].on, .cs-ctl .cs-chip[data-amt].on { background:var(--accent); border-color:var(--accent); color:#fff; }
+
+.cs-head p.cs-note { margin:-10px 0 16px; font-size:12px; color:var(--sub); opacity:.8; }
