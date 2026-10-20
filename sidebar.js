@@ -11,6 +11,7 @@ function renderSidebar(active) {
   el.innerHTML =
     '<a href="deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
     '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
+    '<a href="cases.html" class="' + (active === "cases" ? "on" : "") + '">5년 인수 사례</a>' +
     '<a href="data.html" class="' + (active === "data" ? "on" : "") + '">M&amp;A 데이터</a>' +
     '<a href="sell.html" class="nav-cta' + (active === "sell" ? " on" : "") + '">매각하기</a>';
 }
@@ -112,6 +113,7 @@ function renderFooter() {
     <nav class="fnav">
       <a href="deals.html">딜클로징 리스트</a>
       <a href="listings.html">매물·인수희망</a>
+      <a href="cases.html">5년 인수 사례</a>
       <a href="data.html">M&amp;A 데이터</a>
       <a href="sell.html">매각하기</a>
       <a href="#">공지사항</a>
