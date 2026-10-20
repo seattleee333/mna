@@ -1,9 +1,9 @@
-취득 공시 2815건, 영업양수 공시 41건
+취득 공시 2812건, 영업양수 공시 41건
 API(biz) 응답 키: absn_inh_atn,adt_a_atn,aprskh_ctref,aprskh_lmt,aprskh_plnprc,aprskh_pym_plpd_mth,ast_cmp_all,ast_inh_bsn,ast_rt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dbt_cmp_all,dbt_inh_bsn,dbt_rt,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,gmtsck_prd,gmtsck_spd_atn,inh_af,inh_bsn,inh_bsn_mc,inh_pp,inh_prc,inh_prd_ctr_cnsd,inh_prd_inh_std,inh_pym,n6m_tpai_plann,od_a_at_b,od_a_at_t,otcpr_bdlst_sf_atn,popt_ctr_atn,popt_ctr_cn,rcept_no,sl_cmp_all,sl_inh_bsn,sl_rt
 API(stake) 응답 키: adt_a_atn,atinh_eqrt,atinh_owstkcnt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dl_pym,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,inh_pp,inh_prd,inhdtl_ecpt,inhdtl_ecpt_vs,inhdtl_inhprc,inhdtl_stkcnt,inhdtl_tast,inhdtl_tast_vs,iscmp_bdlst_sf_atn,iscmp_cmpnm,iscmp_cpt,iscmp_mbsn,iscmp_nt,iscmp_rl_cmpn,iscmp_rp,iscmp_tisstk,l6m_tpa_nstkaq_atn,n6m_tpai_plann,od_a_at_b,od_a_at_t,popt_ctr_atn,popt_ctr_cn,rcept_no
 API(stake) 응답 키: adt_a_atn,atinh_eqrt,atinh_owstkcnt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dl_pym,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,inh_pp,inh_prd,inhdtl_ecpt,inhdtl_ecpt_vs,inhdtl_inhprc,inhdtl_stkcnt,inhdtl_tast,inhdtl_tast_vs,iscmp_bdlst_sf_atn,iscmp_cmpnm,iscmp_cpt,iscmp_mbsn,iscmp_nt,iscmp_rl_cmpn,iscmp_rp,iscmp_tisstk,l6m_tpa_nstkaq_atn,n6m_tpai_plann,od_a_at_b,od_a_at_t,popt_ctr_atn,popt_ctr_cn,rcept_no
 API(stake) 응답 키: adt_a_atn,atinh_eqrt,atinh_owstkcnt,bddd,bdlst_atn,corp_cls,corp_code,corp_name,dl_pym,dlptn_cmpnm,dlptn_cpt,dlptn_hoadd,dlptn_mbsn,dlptn_rl_cmpn,exevl_atn,exevl_bs_rs,exevl_intn,exevl_op,exevl_pd,ftc_stt_atn,inh_pp,inh_prd,inhdtl_ecpt,inhdtl_ecpt_vs,inhdtl_inhprc,inhdtl_stkcnt,inhdtl_tast,inhdtl_tast_vs,iscmp_bdlst_sf_atn,iscmp_cmpnm,iscmp_cpt,iscmp_mbsn,iscmp_nt,iscmp_rl_cmpn,iscmp_rp,iscmp_tisstk,l6m_tpa_nstkaq_atn,n6m_tpai_plann,od_a_at_b,od_a_at_t,popt_ctr_atn,popt_ctr_cn,rcept_no
-API 호출 2129회 → 사례 490건
-상세 API에 없는 공시 2573건 중 원문 확인 2573건
-원문 확인 2573건 (주요사업 1382건, 목적 7건 추출) → 총 사례 3037건
+API 호출 2127회 → 사례 490건
+상세 API에 없는 공시 2572건 중 원문 확인 2572건
+원문 확인 2572건 (주요사업 1382건, 목적 7건 추출) → 총 사례 3037건
 저장 ma_cases.json: 3017건 (663KB)
