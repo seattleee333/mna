@@ -2,7 +2,11 @@ name: DART M&A 수집
 
 on:
   schedule:
-    - cron: "7 20 * * *"   # 매일 한국시간 오전 5시 7분 (정각은 GitHub가 몰려서 지연되므로 7분 어긋나게)
+    # GitHub 예약 실행은 몰리는 시간대에 몇 시간씩 밀리거나 건너뛰는 일이 있어, 같은 작업을 세 번 예약해 둔다.
+    # 이미 수집된 내용이면 변경이 없어 아무것도 저장하지 않는다.
+    - cron: "7 20 * * *"    # 한국시간 05:07
+    - cron: "37 21 * * *"   # 한국시간 06:37 (예비)
+    - cron: "17 23 * * *"   # 한국시간 08:17 (예비)
   workflow_dispatch:
     inputs:
       days:
@@ -11,6 +15,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily-collect
+  cancel-in-progress: false
 
 jobs:
   fetch:
