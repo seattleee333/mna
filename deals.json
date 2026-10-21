@@ -1,5 +1,25 @@
 [
  {
+  "rcept_no": "20261021000052",
+  "date": "20261021",
+  "corp_code": "00101433",
+  "corp_name": "경농",
+  "stock_code": "002100",
+  "market": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "category": "합병",
+  "kind": "merger",
+  "direction": null,
+  "buyer": "경농",
+  "seller": "글로벌아그로 주식회사",
+  "target": "글로벌아그로 주식회사",
+  "amount": null,
+  "note": "합병비율 1 : 0",
+  "summary": "경농이 글로벌아그로를 흡수합병합니다.",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261020900581",
   "date": "20261020",
   "corp_code": "00579971",
@@ -492,7 +512,7 @@
   "market": "Y",
   "report_nm": "영업양도결정",
   "category": "영업양수도",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261019800002",
@@ -681,7 +701,7 @@
   "market": "Y",
   "report_nm": "특수관계인으로부터영업양수",
   "category": "영업양수도",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261019000120",
@@ -712,7 +732,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261016900874",
@@ -2143,7 +2163,7 @@
   "market": "E",
   "report_nm": "유상증자결정",
   "category": "유상증자",
-  "detail_attempts": 3,
+  "detail_attempts": 4,
   "detail_done": true,
   "fix_v": 6
  },
