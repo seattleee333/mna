@@ -1,8 +1,10 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>83SS3QEKQWD5B6ZM</RequestId><HostId>crkehkZdIIxH/71Q6MD4nRB/Dfc9pKKzEQeKWVpeFIYgzuEhDm
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EPSR06ANNK4J6E</RequestId><HostId>BdsPgMQSBey4SdcFzW6rBCwj7OepXBRcM1OUMAodlJhbgJEwb1
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 16, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A/A            Modern Screen Media, Inc.                                     2096421     20261016    edgar/data/2096421/0001493152-26-047361.txt                                                
-  2026-10-16 8-K 176건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>83SRAAHH45WNF5AC</RequestId><HostId>JOWi/prO+JNeuDLtBYj86T95YPc8b6LXYKQYqh0f1a+8jVNbZ1
-  2026-10-19 8-K 0건
-새로 확인할 8-K 176건
-저장: 딜 151건 (이번 신규 5건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 19, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Ark7 Properties Advance LLC                                   2025051     20261019    edgar/data/2025051/0002025051-26-000007.txt                                                
+  2026-10-19 8-K 198건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EKYADE99XNC178</RequestId><HostId>9VJK1VGQEe8pzwVoEYApwepzbdxfDouIcnkgBYPobQLq8hGoOq
+  2026-10-20 8-K 0건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EPKDNAQ3091WHF</RequestId><HostId>IguRVL6ocOUClZLN6kJoV2ba1Z8VK4VS9q3mtSl5vyM4K6nkHT
+  2026-10-21 8-K 0건
+새로 확인할 8-K 198건
+저장: 딜 170건 (이번 신규 19건, LLM 0건)
