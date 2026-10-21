@@ -1,10 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EPSR06ANNK4J6E</RequestId><HostId>BdsPgMQSBey4SdcFzW6rBCwj7OepXBRcM1OUMAodlJhbgJEwb1
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CYFVS6GWFNPB27P0</RequestId><HostId>4VaFGfxdrGQ7SUF+8nGkehO6wcN7MXxr0/TuSpJ7tm1c7sTVvo
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 19, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Ark7 Properties Advance LLC                                   2025051     20261019    edgar/data/2025051/0002025051-26-000007.txt                                                
-  2026-10-19 8-K 198건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EKYADE99XNC178</RequestId><HostId>9VJK1VGQEe8pzwVoEYApwepzbdxfDouIcnkgBYPobQLq8hGoOq
-  2026-10-20 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>18EPKDNAQ3091WHF</RequestId><HostId>IguRVL6ocOUClZLN6kJoV2ba1Z8VK4VS9q3mtSl5vyM4K6nkHT
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 20, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              Masterworks Vault 3, LLC                                      1983146     20261020    edgar/data/1983146/0001493152-26-047712.txt                                                
+  2026-10-20 8-K 221건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>VJ0TF1EMTP0048C4</RequestId><HostId>KQinaVVBkti/gXiSs7HHh/yHGcifRLYoZoEcJkwo08DKkw5fjP
   2026-10-21 8-K 0건
-새로 확인할 8-K 198건
-저장: 딜 170건 (이번 신규 19건, LLM 0건)
+새로 확인할 8-K 221건
+저장: 딜 183건 (이번 신규 14건, LLM 0건)
