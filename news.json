@@ -20,6 +20,7 @@
    "데일리안",
    "매일일보",
    "서울경제",
+   "세계비즈",
    "스페셜타임스",
    "엠투데이",
    "연합뉴스",
@@ -33,7 +34,7 @@
    "한스경제",
    "화이트페이퍼"
   ],
-  "outlet_count": 29,
+  "outlet_count": 30,
   "first_seen": "20261021",
   "last_seen": "20261022"
  },
@@ -399,6 +400,17 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261022",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "'중앙일보 인수' CJ그룹, 다우키움과 컨소시엄 검토 중 - CBC뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xeXJmREtFQ29TWXIzTjFNU0xsRW81SkhmeTIzTDNkeXNfb2V5RXdEVHpzTUhreHV1RjRNS0JONTRxb25uNFQ5VzRKbGxmREFkSlNWVzF5dWNTeEpZRVc0cWFZWloxeXBw?oc=5",
+  "sources": [
+   "CBC뉴스",
+   "MBC 뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261018",
   "last_seen": "20261022"
  },
  {
@@ -1752,6 +1764,76 @@
   "last_seen": "20261022"
  },
  {
+  "title": "Platinum Equity, 이탈리아 장비 제조업체 Trime 경영권 인수 추진 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKS284RjdldHdFeWg3N2VlcXpBQ0FCLTBKZFpNbm1lUC13RWtEUUcxV2NlcnViN1M3MHRacnpQR3AyVTJweUZJSnE3Q01zUGd4NTZmaElHX0pvQWZEblNiOEJZN3lHbWZ4a3c2c3FqaEg?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261020",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "다임 커머셜 뱅크셰어스, ES 뱅크셰어스 인수 계약 체결…약 5800만 달러 규모 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0WXdQcUgwVWlyS09LaFNoRGN0TWlWanY1N2lJZm5PUk5SbTFpQ2pmNGMxRFJqMkRNX2VIV0tZai1fQWpZLXBjbVJsT3F5SVNGbVE2d1NET0hYaUUtWUhwNE9nR0hkVVRLTlkwWTBmY3BjdlE?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261021",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "다우키움·CJ 이어 신세계까지...중앙일보 인수 '3자 연합' 윤곽 - 금융소비자뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hY082NEtUWmZXaEQ4eXNqcnBxbVRUdzJGMXVpczhkXzRIZlZTZ1BuQzQtMGd0SEtWQTlUa0JCeTlfbXhmX3hJY2w5YXNxSkZXQ29Gc2lTT01kX3MzaS1WS0xEWmZnbGdDNkE?oc=5",
+  "sources": [
+   "금융소비자뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261021",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "[2026 M&A 포럼] “국민성장펀드…블라인드만 8조, 민간 출자 마중물 성과” - 블로그",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iTkpwUlhPX2VhdVVDUTVZbjBGNVNUTTFNMGlTM1d4dEo5dVVzR2YtenpkczdseE9USmZQUXdqN2tJMVNSQ0lRcXdwX2ptZWhiazlWZ2s0MVBSRnI3UUp0RTRXLVN3TVpleFdBNGY0SVN5Mzg2X0d1MFV4THYzOWM?oc=5",
+  "sources": [
+   "블로그"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261022",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "[2026 M&A 포럼] \"AI 인프라 전환 가속…하드웨어 자립으로 소버린 AI 완성\" - 블로그",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxWm5NVEVwZ2JvQ29ReUVfUkVxZmEyM2JDQ2dyVmNDeGFxY1RsSU4wRnE3eExMeGNXZ0pIdjVQRjBLb3pBbGk1SlNSY3gzZmdvTjFKN0V4U3ViZw?oc=5",
+  "sources": [
+   "블로그"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261022",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "SK하이닉스, 솔리다임 상장 앞두고 '3% 지분 매각'…외국인 이탈에 주주권 논쟁도 - 조세일보",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE15X2xsUVZzNFVld3VlbllQYXlyeTNoeUNTSGFCenhRRU9FbUlaWDU5MUVWQUNieVJRN25iWnk0LXBHNnRLQW85TnJQMmJWdVhwN1Vmb19idVlPYjIxTG9V?oc=5",
+  "sources": [
+   "조세일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261022",
+  "last_seen": "20261022"
+ },
+ {
+  "title": "롯데카드 세 번째 매각 시도…우리금융 거론되는 이유 - 뉴스드림",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE52VGsybWE0djdWSm56cW4xQjhHSjFkWnVaTnp0MC15YmRwOVhoVDVkLXFFOHhGRHdVN0ZHWVp1NTRGdkxhR3BHMk5uMXE4NWVSc0NIOUVpc1M4bTZPdVl1Q1NVRWt4MWt5cE1v0gFuQVVfeXFMUDRoSXcyMEt5SUtmVnNKM2JEZ0lsOFkySGxsdVRSZnRfUGRsSkVQVU56Tk5SSDRObFcyTnlUdzlvVHU4eUxZejV2cktENXU3TmxzRTZRQXlGSVBORTRfeVRCb0toemFMUjBhZ2JnckE?oc=5",
+  "sources": [
+   "뉴스드림"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261022",
+  "last_seen": "20261022"
+ },
+ {
   "title": "수은 행장 \"KAI 지분 매각 계획 없어\"…KAI 대표 \"독과점 문제\"(종합2보) - 연합뉴스",
   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ibElxdFphYkZQSFBoRWhIWjZWa2FtOFRILTUzUkdZZWFZNkk2UVVqakFMVVFBNnpmN3hHOHJqd1RfQXpsTW5jRDlsZl9aTWlRd3RWVlE1cUNJaHfSAWBBVV95cUxNVzZHM2l2cVVpVFZVV3QwWnNZemVyLVc4WjRjaVZKZnBTMDVhUnFrNENVNE5KeHVVOUl1OEpBSXl3dE1vZW5oRG1oWDdoeGZXVFM2VHFrXzRFbDFVdzlMRDc?oc=5",
   "sources": [
@@ -2156,16 +2238,6 @@
   "last_seen": "20261021"
  },
  {
-  "title": "Platinum Equity, 이탈리아 장비 제조업체 Trime 경영권 인수 추진 - Investing.com 한국어",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKS284RjdldHdFeWg3N2VlcXpBQ0FCLTBKZFpNbm1lUC13RWtEUUcxV2NlcnViN1M3MHRacnpQR3AyVTJweUZJSnE3Q01zUGd4NTZmaElHX0pvQWZEblNiOEJZN3lHbWZ4a3c2c3FqaEg?oc=5",
-  "sources": [
-   "Investing.com 한국어"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261020",
-  "last_seen": "20261021"
- },
- {
   "title": "다우키움과 CJ의 파격 행보: 중앙일보 5천억 인수전 승자는 누구? - 공감신문",
   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxRVY1S0hfZ2ROLWFYUjltQWc4SUZ2cGRMakEwajl6dGlSRXg2eWlGSHpvNkVlV3BmdVFRaENpZkpaaU83OWpTQ18zS2p5bUdsNHBFY3VpOWw3T05fbUVPUDVydU5Fa0hh?oc=5",
   "sources": [
@@ -2336,16 +2408,6 @@
   "last_seen": "20261021"
  },
  {
-  "title": "다임 커머셜 뱅크셰어스, ES 뱅크셰어스 인수 계약 체결…약 5800만 달러 규모 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0WXdQcUgwVWlyS09LaFNoRGN0TWlWanY1N2lJZm5PUk5SbTFpQ2pmNGMxRFJqMkRNX2VIV0tZai1fQWpZLXBjbVJsT3F5SVNGbVE2d1NET0hYaUUtWUhwNE9nR0hkVVRLTlkwWTBmY3BjdlE?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261021",
-  "last_seen": "20261021"
- },
- {
   "title": "세일즈포스, 고객경험 플랫폼 '브레이즈' 80억 달러에 현금 인수 - 데이터투자",
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KSkh6V3NiSUthRUIxek5VWFVKOVlqdWVRanY5MXlZWWxkdDdRUUlfcTRWODdJVlRKZFRQZHl0MFd5bmZIRE15Ri1IM1R6cjV4c0YwclYyQlUwZmZJWDhYNEtRaGxkbUhIeG5jUUtGQXRoc2c?oc=5",
   "sources": [
@@ -2360,16 +2422,6 @@
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11TDVvNzN4TUF3MEJaUDliMU1YMkstYXE1RThDRHVacEtlQ2FRNXJWX1ltVW56WEJKdGQxVWdSWUhZWWpFVHRkNWFaelY0b0wzdmZwX0k4T2pEN2J3V3Q4aDBFVlRTZVVCWGVEbVVTbktwSUk?oc=5",
   "sources": [
    "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261021",
-  "last_seen": "20261021"
- },
- {
-  "title": "다우키움·CJ 이어 신세계까지...중앙일보 인수 '3자 연합' 윤곽 - 금융소비자뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hY082NEtUWmZXaEQ4eXNqcnBxbVRUdzJGMXVpczhkXzRIZlZTZ1BuQzQtMGd0SEtWQTlUa0JCeTlfbXhmX3hJY2w5YXNxSkZXQ29Gc2lTT01kX3MzaS1WS0xEWmZnbGdDNkE?oc=5",
-  "sources": [
-   "금융소비자뉴스"
   ],
   "outlet_count": 1,
   "first_seen": "20261021",
@@ -3382,16 +3434,6 @@
   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRjl5M0RIUktsV0RHajhZZDNaNGxzdE5lLVNYTWstLVRNTUxpQi0tMzNIa1BKSU5ydFhJQ1VuVEt3ZmYtM2VZeThoSXZqSjY4S1VpWk5CeFRsal84SGJSLUZkWWl5X1BGa0tzRzRfdzFndTdIdl90UVlac2t3Y3JDNUV2N0ZCbWZ6?oc=5",
   "sources": [
    "글로벌이코노믹"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261018",
-  "last_seen": "20261019"
- },
- {
-  "title": "'중앙일보 인수' CJ그룹, 다우키움과 컨소시엄 검토 중 - CBC뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xeXJmREtFQ29TWXIzTjFNU0xsRW81SkhmeTIzTDNkeXNfb2V5RXdEVHpzTUhreHV1RjRNS0JONTRxb25uNFQ5VzRKbGxmREFkSlNWVzF5dWNTeEpZRVc0cWFZWloxeXBw?oc=5",
-  "sources": [
-   "CBC뉴스"
   ],
   "outlet_count": 1,
   "first_seen": "20261018",

@@ -8,8 +8,10 @@
   "market": "Y",
   "report_nm": "[기재정정]공개매수설명서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "한화머시너리앤서비스홀딩스가 공개매수를 진행합니다.",
   "summary_src": "title"
  },
@@ -22,8 +24,10 @@
   "market": "Y",
   "report_nm": "[기재정정]공개매수신고서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "한화머시너리앤서비스홀딩스가 공개매수를 신고했습니다.",
   "summary_src": "title"
  },
@@ -78,8 +82,10 @@
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "파버나인이 최대주주 변경을 수반하는 주식담보제공 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -92,8 +98,10 @@
   "market": "K",
   "report_nm": "최대주주변경을수반하는주식양수도계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "폴라리스AI가 최대주주 변경을 수반하는 주식양수도 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -106,8 +114,10 @@
   "market": "K",
   "report_nm": "경영권변경등에관한계약체결",
   "category": "경영권 변경 계약",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "폴라리스우노가 경영권 변경을 위한 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -120,8 +130,10 @@
   "market": "K",
   "report_nm": "[기재정정]최대주주변경을수반하는주식양수도계약체결",
   "category": "최대주주 변경",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "다보링크가 최대주주 변경을 수반하는 주식양수도 계약을 체결했습니다.",
   "summary_src": "title"
  },
@@ -866,11 +878,9 @@
   "market": "Y",
   "report_nm": "영업양도결정",
   "category": "영업양수도",
-  "detail_attempts": 5,
-  "no_detail_api": true,
+  "detail_attempts": 1,
   "detail_done": true,
-  "summary": "현대위아가 영업 양도를 결정했습니다.",
-  "summary_src": "title"
+  "fix_v": 6
  },
  {
   "rcept_no": "20261019800002",
@@ -1059,11 +1069,9 @@
   "market": "Y",
   "report_nm": "특수관계인으로부터영업양수",
   "category": "영업양수도",
-  "detail_attempts": 5,
-  "no_detail_api": true,
+  "detail_attempts": 1,
   "detail_done": true,
-  "summary": "현대로템이 영업 양수를 결정했습니다.",
-  "summary_src": "title"
+  "fix_v": 6
  },
  {
   "rcept_no": "20261019000120",
@@ -1094,11 +1102,9 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 5,
-  "no_detail_api": true,
+  "detail_attempts": 1,
   "detail_done": true,
-  "summary": "현대위아가 영업 양도를 결정했습니다.",
-  "summary_src": "title"
+  "fix_v": 6
  },
  {
   "rcept_no": "20261016900874",
