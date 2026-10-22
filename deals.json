@@ -878,7 +878,7 @@
   "market": "Y",
   "report_nm": "영업양도결정",
   "category": "영업양수도",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
   "fix_v": 6
  },
@@ -1069,7 +1069,7 @@
   "market": "Y",
   "report_nm": "특수관계인으로부터영업양수",
   "category": "영업양수도",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
   "fix_v": 6
  },
@@ -1102,7 +1102,7 @@
   "market": "Y",
   "report_nm": "특수관계인에대한영업양도",
   "category": "영업양수도",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
   "fix_v": 6
  },
