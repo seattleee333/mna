@@ -47,10 +47,11 @@
    "머니투데이",
    "법률신문",
    "세정일보",
+   "아시아경제",
    "아주경제",
    "중앙일보"
   ],
-  "outlet_count": 7,
+  "outlet_count": 8,
   "first_seen": "20261022",
   "last_seen": "20261023"
  },
@@ -294,6 +295,17 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261023",
+  "last_seen": "20261023"
+ },
+ {
+  "title": "스페이스X가 테슬라 삼키나…머스크 합병 구상에 주주 셈법은 - 이데일리TV",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1QZ0lDQ0E4bU1Nb2d2bjFCajRnMjRrTmV5S3BOeWZMRE13UEFfbmdMMkZFREhIOHVyTHVaMi1QTi1ZV0twblFSSXlzNl9MdnVvOXJnME1CajV5YjNiRmtiY3VDTVB1NkcwcjROM3gzeWVFdGRjZkEyWDRWaw?oc=5",
+  "sources": [
+   "이데일리",
+   "이데일리TV"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261022",
   "last_seen": "20261023"
  },
  {
@@ -1557,6 +1569,16 @@
   "last_seen": "20261023"
  },
  {
+  "title": "LXP Industrial Trust, 합병 앞두고 추가 공시 발표 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE03SDZLeVBRbE5CTkg5V1h3Njd0R2hsQl8ybU1FaG9JbVY3a3BFNGdTVEJwYnNHcldSMHVHOWwxT2piOVB1bW5NMkpNY09qUWYwLUpZQWNNLWNZb2l4NTNEcTNfcHJXbmdTWDZnMThDTQ?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261023",
+  "last_seen": "20261023"
+ },
+ {
   "title": "중앙일보 M&A 우선협상대상자에 ‘다우·CJ 컨소시엄’ - 문화일보",
   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBnZkRqTk9qdzRLaUJhMm4xVXpUUzYzLWFwY0t3TF9qaGxZSENVeVY5VDIwRmw4LUh3bldueGtIZWxzRUx6WWNyZnVVcU5IQ1Yt?oc=5",
   "sources": [
@@ -2529,16 +2551,6 @@
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4wcTN0NXNheGRQYXhZZ1FnSjhxQ3J4MHN5OXhFWFExTzFJSjZGa0pCbWFBUTZkNHI4cGxneEtYWVExS1lCNE5DVlRZNXRaRy1nWXllOWUxVVA0SWJQb2NKMXFTUndick10Nk02djFwS0xWMzg?oc=5",
   "sources": [
    "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261022",
-  "last_seen": "20261022"
- },
- {
-  "title": "스페이스X가 테슬라 삼키나…머스크 합병 구상에 주주 셈법은 - 이데일리TV",
-  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1QZ0lDQ0E4bU1Nb2d2bjFCajRnMjRrTmV5S3BOeWZMRE13UEFfbmdMMkZFREhIOHVyTHVaMi1QTi1ZV0twblFSSXlzNl9MdnVvOXJnME1CajV5YjNiRmtiY3VDTVB1NkcwcjROM3gzeWVFdGRjZkEyWDRWaw?oc=5",
-  "sources": [
-   "이데일리TV"
   ],
   "outlet_count": 1,
   "first_seen": "20261022",
