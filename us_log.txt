@@ -1,8 +1,10 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>C39XKWNEAKWN2YFS</RequestId><HostId>w3pxIYbYXxtaHFlsYDBSuDgmigu+aojrhxykzS4QBZY5nkZQoZ
+  인덱스 응답 None: 
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>C39M2QXQ23J34MHF</RequestId><HostId>oyNnIH5Scq5Mn4Px+iyLg6n8aaQ3lwpIROuoRE27NLTqvDPwbS
-  2026-10-21 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>EYQ7QAV6RP5EPPD9</RequestId><HostId>GOjHzJIo7M9DfKSa2xu5e/p17syvYgNcH0AqiG4G9wwU54FPFr
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 21, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              EPILOG IMAGING SYSTEMS INC.                                   1783128     20261021    edgar/data/1783128/0001477932-26-006383.txt                                                
+  2026-10-21 8-K 269건
+  인덱스 응답 None: 
   2026-10-22 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 183건 (이번 신규 0건, LLM 0건)
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>D9PCJMYXYXEPBG85</RequestId><HostId>boscxfdKc3Txa/+mTn1Ex0t7A/hmA6kEcf6QNQ5nCIwWRBwXZb
+  2026-10-23 8-K 0건
+새로 확인할 8-K 269건
+저장: 딜 193건 (이번 신규 10건, LLM 0건)
