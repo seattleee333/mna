@@ -1,10 +1,8 @@
-  인덱스 응답 None: 
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>DRSC61PA4P57DWX6</RequestId><HostId>VB2WvY3XC/p1PlZAex13thH47T7Fxbc5uwTR9W7XS9zeaP8nYe
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 21, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              EPILOG IMAGING SYSTEMS INC.                                   1783128     20261021    edgar/data/1783128/0001477932-26-006383.txt                                                
-  2026-10-21 8-K 269건
-  인덱스 응답 None: 
-  2026-10-22 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>D9PCJMYXYXEPBG85</RequestId><HostId>boscxfdKc3Txa/+mTn1Ex0t7A/hmA6kEcf6QNQ5nCIwWRBwXZb
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 22, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          WINNERS, INC.                                                 1587603     20261022    edgar/data/1587603/0001493152-26-048008.txt                                                
+  2026-10-22 8-K 304건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>DRSD00DWCRYPX0A8</RequestId><HostId>ieSvPaNEbg/QXU76vHvLg7b2kv6gf3LdT1zgIDWTjql7Pg3O3a
   2026-10-23 8-K 0건
-새로 확인할 8-K 269건
-저장: 딜 193건 (이번 신규 10건, LLM 0건)
+새로 확인할 8-K 304건
+저장: 딜 205건 (이번 신규 12건, LLM 0건)
