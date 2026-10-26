@@ -2,6 +2,13 @@ name: 미국 M&A 딜 수집 (SEC)
 
 on:
   workflow_dispatch:
+    inputs:
+      since:
+        description: "수집 시작일 YYYYMMDD (비우면 기본값)"
+        default: ""
+      backfill:
+        description: "과거 구간을 SEC 전문검색으로 모으기(1 = 켜기)"
+        default: ""
   schedule:
     - cron: "30 22 * * 1-5"   # 평일 07:30 KST (미국 전일 공시 반영)
 
@@ -22,6 +29,9 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          US_SINCE: ${{ github.event.inputs.since }}
+          US_BACKFILL: ${{ github.event.inputs.backfill }}
+          US_MAX: ${{ github.event.inputs.backfill == '1' && '6000' || '4000' }}
         run: python -u fetch_us_deals.py
       - name: 결과 저장
         if: always()

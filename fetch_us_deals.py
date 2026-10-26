@@ -10,11 +10,11 @@ import os, re, json, time, html as htmllib, datetime as dt
 import requests
 
 UA = os.environ.get("SEC_USER_AGENT") or "ALL-ABOUT-MNA/1.0 (https://github.com/seattleee333/mna)"
-SINCE = os.environ.get("US_SINCE", "20261001")
+SINCE = os.environ.get("US_SINCE") or "20261001"
 OUT, CACHE = "us_deals.json", "us_cache.json"
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = os.environ.get("US_MODEL", "claude-haiku-4-5-20251001")
-MAX_FILINGS = 4000
+MAX_FILINGS = int(os.environ.get("US_MAX", "4000"))
 MAX_LLM = 250
 START = time.time()
 BUDGET = 80 * 60
@@ -179,6 +179,51 @@ def llm(f, text):
         return None
 
 
+# ── 올해 전체(과거 구간) 수집: 일별 인덱스를 전부 읽는 대신 SEC 전문검색(efts)으로 후보만 모은다 ──
+EFTS_QUERIES = ['"Completion of Acquisition or Disposition of Assets"', '"Item 2.01"',
+                '"Agreement and Plan of Merger"', '"Stock Purchase Agreement"', '"Asset Purchase Agreement"',
+                '"Merger Agreement"', '"Membership Interest Purchase Agreement"', '"Share Purchase Agreement"']
+
+
+def efts_candidates(since):
+    """since(YYYYMMDD)부터 오늘까지 8-K 중 Item 2.01·1.01 이 있는 건을 월별로 모은다."""
+    out = {}
+    d = dt.datetime.strptime(since, "%Y%m%d").date().replace(day=1)
+    start_day = dt.datetime.strptime(since, "%Y%m%d").date()
+    today = dt.date.today()
+    while d <= today:
+        nxt = (d.replace(day=28) + dt.timedelta(days=4)).replace(day=1)
+        a, b = max(d, start_day), min(nxt - dt.timedelta(days=1), today)
+        for q in EFTS_QUERIES:
+            frm = 0
+            while frm < 2000 and time.time() - START < BUDGET:
+                r = get("https://efts.sec.gov/LATEST/search-index", params={
+                    "q": q, "forms": "8-K", "dateRange": "custom", "startdt": a.isoformat(), "enddt": b.isoformat(), "from": frm})
+                if r is None or r.status_code != 200:
+                    log(f"  efts 응답 {None if r is None else r.status_code} ({q} {a}~{b} from={frm})")
+                    break
+                hits = (r.json().get("hits") or {}).get("hits") or []
+                for h in hits:
+                    src = h.get("_source") or {}
+                    items = src.get("items") or []
+                    if "2.01" not in items and "1.01" not in items:
+                        continue
+                    adsh = src.get("adsh") or ""
+                    ciks = src.get("ciks") or []
+                    if not adsh or not ciks:
+                        continue
+                    name = re.sub(r"\s*\(CIK[^)]*\)|\s*\([A-Z.\-, ]{1,12}\)", "", (src.get("display_names") or [""])[0]).strip()
+                    cik = str(int(ciks[0]))
+                    out[adsh] = {"filer": name, "cik": cik, "date": (src.get("file_date") or "").replace("-", ""),
+                                 "path": f"edgar/data/{cik}/{adsh}.txt", "acc": adsh}
+                if len(hits) < 100:
+                    break
+                frm += 100
+        log(f"  {a}~{b}: 누적 후보 {len(out)}건")
+        d = nxt
+    return list(out.values())
+
+
 def main():
     cache = {}
     if os.path.exists(CACHE):
@@ -190,7 +235,10 @@ def main():
         cache = {"ver": 2}
     seen = cache.setdefault("seen", {})
     filings = []
-    for d in days():
+    if os.environ.get("US_BACKFILL") == "1":
+        filings = efts_candidates(SINCE)
+        log(f"전문검색 후보 {len(filings)}건")
+    for d in ([] if os.environ.get("US_BACKFILL") == "1" else days()):
         if d.strftime("%Y%m%d") < dt.date.today().strftime("%Y%m%d") and cache.get("idx_done", {}).get(d.strftime("%Y%m%d")):
             continue
         res = daily_8k(d)
@@ -244,7 +292,12 @@ def main():
             json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
     json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
     deals = sorted([v for v in seen.values() if v], key=lambda x: (x["date"], x["acc"]), reverse=True)
-    json.dump({"updated": dt.date.today().strftime("%Y%m%d"), "since": SINCE, "llm": bool(ANTHROPIC_KEY), "deals": deals},
+    old_since = SINCE
+    try:
+        old_since = min(SINCE, json.load(open(OUT, encoding="utf-8")).get("since") or SINCE)
+    except Exception:
+        pass
+    json.dump({"updated": dt.date.today().strftime("%Y%m%d"), "since": old_since, "llm": bool(ANTHROPIC_KEY), "deals": deals},
               open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     log(f"저장: 딜 {len(deals)}건 (이번 신규 {n_deal}건, LLM {n_llm}건)")
 
