@@ -387,3 +387,55 @@ main { flex:1; min-width:0; max-width:780px; }
 .us-soon b { color:var(--text); font-size:16px; }
 .us-soon p { margin:8px 0 0; font-size:14px; line-height:1.6; }
 [hidden] { display:none !important; }
+
+/* ── 미국 딜: 주요 딜 분석 탭 ───────────────────────── */
+.us-tabs { display:flex; gap:6px; margin:0 0 14px; border-bottom:1px solid var(--line); }
+.us-tabs button { border:0; background:transparent; padding:10px 14px; font-size:14.5px; font-weight:700; color:var(--sub);
+  cursor:pointer; font-family:inherit; border-bottom:2px solid transparent; margin-bottom:-1px; }
+.us-tabs button.on { color:var(--accent); border-bottom-color:var(--accent); }
+.us-month-row { display:flex; align-items:center; gap:10px; margin:0 0 12px; font-size:13.5px; color:var(--sub); }
+.us-month-row select { font:inherit; font-weight:700; padding:6px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--text); }
+.us-count { margin-left:auto; font-weight:700; color:var(--faint); }
+.dd-h { font-size:16px; font-weight:800; margin:26px 0 10px; display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; }
+.dd-h em { font-style:normal; font-size:12.5px; font-weight:600; color:var(--faint); }
+.dd-tbl { overflow-x:auto; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); }
+.dd-tbl table { border-collapse:collapse; width:100%; min-width:640px; font-size:12.5px; }
+.dd-tbl th, .dd-tbl td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.dd-tbl th { font-size:11.5px; color:var(--sub); font-weight:700; background:var(--bg); white-space:nowrap; }
+.dd-tbl td.nm { font-weight:700; white-space:nowrap; }
+.dd-tbl tr:last-child td { border-bottom:0; }
+.dd-gloss { margin:10px 0 0; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px 16px; font-size:13.5px; }
+.dd-gloss summary { cursor:pointer; font-weight:700; color:var(--accent-dark); }
+.dd-gloss ul { margin:10px 0 0; padding-left:18px; line-height:1.65; color:var(--sub); }
+.dd-gloss li { margin-bottom:4px; }
+.dd-gloss b { color:var(--text); }
+.dd { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow); }
+.dd header { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.dd h3 { margin:0; font-size:16px; font-weight:800; letter-spacing:-.01em; flex:1 1 auto; min-width:0; overflow-wrap:anywhere; }
+.dd-dt { font-size:12px; color:var(--faint); font-weight:700; }
+.dd-tag { font-size:11.5px; font-weight:700; border-radius:6px; padding:3px 9px; white-space:nowrap; }
+.dd-tag.a { background:var(--accent-soft); color:var(--accent); }
+.dd-tag.s { background:var(--sell-soft); color:var(--sell); }
+.dd-tag.m { background:var(--buy-soft); color:var(--buy); }
+.dd-price { margin:8px 0 2px; font-size:14px; font-weight:700; color:var(--accent-dark); }
+.dd dl { margin:8px 0 0; display:grid; grid-template-columns:78px minmax(0,1fr); gap:10px 12px; font-size:14px; line-height:1.65; }
+.dd dt { font-weight:800; color:var(--sub); font-size:12.5px; padding-top:2px; }
+.dd dd { margin:0; color:var(--text); overflow-wrap:anywhere; }
+.dd footer { margin-top:12px; padding-top:10px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; font-size:12.5px; color:var(--faint); }
+.dd footer a { color:var(--accent-dark); }
+.dd-chips { display:inline-flex; flex-wrap:wrap; gap:6px; }
+.dd-chip { background:var(--bg); color:var(--sub); border-radius:999px; padding:2px 10px; font-weight:700; font-size:12px; }
+.dd-src { margin-left:auto; }
+.dd-others { display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); }
+.dd-o { display:flex; gap:10px; padding:12px 16px; border-bottom:1px solid var(--line); align-items:flex-start; }
+.dd-o:last-child { border-bottom:0; }
+.dd-o b { font-size:14px; }
+.dd-o p { margin:2px 0 0; font-size:13.5px; color:var(--sub); line-height:1.6; overflow-wrap:anywhere; }
+.dd-am { font-size:12.5px; font-weight:700; color:var(--accent-dark); margin-left:4px; }
+.dd-ol a { color:var(--accent-dark); font-size:12px; }
+@media (max-width:560px) {
+  .dd dl { grid-template-columns:1fr; gap:2px; }
+  .dd dd { margin-bottom:8px; }
+  .dd-src { margin-left:0; }
+}
+.dd dd, .dd-o p, .dd-price { word-break:keep-all; }
