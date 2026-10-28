@@ -1,5 +1,19 @@
 [
  {
+  "rcept_no": "20261028000138",
+  "date": "20261028",
+  "corp_code": "00164788",
+  "corp_name": "현대모비스",
+  "stock_code": "012330",
+  "market": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "category": "분할",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "현대모비스가 회사분할을 결정했습니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261028000063",
   "date": "20261028",
   "corp_code": "00963000",
