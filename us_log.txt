@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>Q0DMTW3FGVWF5V87</RequestId><HostId>LgT7xDzTULLAocke8lbZ2UEm6QlSc5U4maj+pPIlQAejdESgYj
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN8E8NAN04B14YAQ</RequestId><HostId>403MxIQ+24TGbzEGMlNHIMFSysxRDBlXdCDpEKZAHq/N9yPIjr
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 26, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Green Rain Energy Holdings Inc.                               1084937     20261026    edgar/data/1084937/0001683168-26-008084.txt                                                
-  2026-10-26 8-K 235건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>HBS8DXRVHAKPBX5J</RequestId><HostId>h6kFoxqDYq1C0Jpl6DiUZvccPEOvv9LhSUR+PpJVVuSN9KeEiQ
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN8CTRBZN6N1EERE</RequestId><HostId>GZR9mlfnv7HIsA8Vd5qy5C+7Ptg/hQJ2ceoDvvP6UXjf6syPkO
   2026-10-27 8-K 0건
-새로 확인할 8-K 227건
-저장: 딜 2107건 (이번 신규 13건, LLM 0건)
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN80QTJRJHDE2GSS</RequestId><HostId>NSIOJpfOxK0GzDi0/DFVw3CH7PZ7z20EJiXAvDPePAqgNftN0I
+  2026-10-28 8-K 0건
+새로 확인할 8-K 0건
+저장: 딜 2107건 (이번 신규 0건, LLM 0건)
