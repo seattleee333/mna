@@ -1,5 +1,25 @@
 [
  {
+  "rcept_no": "20261028000063",
+  "date": "20261028",
+  "corp_code": "00963000",
+  "corp_name": "썬테크",
+  "stock_code": "217320",
+  "market": "N",
+  "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "kind": "capital",
+  "direction": null,
+  "buyer": null,
+  "seller": null,
+  "target": null,
+  "amount": 1499926610,
+  "note": "증자방식: 제3자배정증자",
+  "summary": "썬테크가 제3자배정증자 방식으로 15억원을 조달합니다.",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261027900674",
   "date": "20261027",
   "corp_code": "00104120",
