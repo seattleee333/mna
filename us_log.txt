@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN8E8NAN04B14YAQ</RequestId><HostId>403MxIQ+24TGbzEGMlNHIMFSysxRDBlXdCDpEKZAHq/N9yPIjr
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>XVSD4KBFYNKVRZHC</RequestId><HostId>UBA0Xj5cHaiUqHickx0PIRbLhGOjkhovfgjThslXRv6plT2IeB
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN8CTRBZN6N1EERE</RequestId><HostId>GZR9mlfnv7HIsA8Vd5qy5C+7Ptg/hQJ2ceoDvvP6UXjf6syPkO
-  2026-10-27 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>CN80QTJRJHDE2GSS</RequestId><HostId>NSIOJpfOxK0GzDi0/DFVw3CH7PZ7z20EJiXAvDPePAqgNftN0I
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 27, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Ark7 Properties Advance LLC                                   2025051     20261027    edgar/data/2025051/0002025051-26-000008.txt                                                
+  2026-10-27 8-K 322건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>4CR4DYYWG9F1K9TW</RequestId><HostId>j96+VOTISQQpSCuqgdwy6NVos8FgYRc/DXLICGRF4htMQF7Ozn
   2026-10-28 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2107건 (이번 신규 0건, LLM 0건)
+새로 확인할 8-K 322건
+저장: 딜 2123건 (이번 신규 16건, LLM 0건)
