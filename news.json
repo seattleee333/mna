@@ -11,6 +11,7 @@
    "뉴스1",
    "뉴스저널리즘",
    "더팩트",
+   "데일리머니",
    "데일리안",
    "데일리한국",
    "동아일보",
@@ -21,6 +22,7 @@
    "매일일보",
    "민주신문",
    "빅데이터뉴스",
+   "서울경제TV",
    "스마트투데이",
    "시사저널",
    "아시아경제",
@@ -40,7 +42,7 @@
    "포쓰저널",
    "현대경제신문"
   ],
-  "outlet_count": 36,
+  "outlet_count": 38,
   "first_seen": "20261029",
   "last_seen": "20261029"
  },
@@ -107,6 +109,7 @@
   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UZXRKSmplalh2bkY1NGlDalRPYzdKU1dwbzBROTY5VF9xOUw5bks3dnpFcFBMeTJkTENmZWNFOE12bXZIVy1oUFN3Ukh4Y1lZVy1NN2pJYnkzald0YWdHeUY3aGE3czVkYmJxdHpaSlZPQdIBckFVX3lxTE5UZXRKSmplalh2bkY1NGlDalRPYzdKU1dwbzBROTY5VF9xOUw5bks3dnpFcFBMeTJkTENmZWNFOE12bXZIVy1oUFN3Ukh4Y1lZVy1NN2pJYnkzald0YWdHeUY3aGE3czVkYmJxdHpaSlZPQQ?oc=5",
   "sources": [
    "글로벌경제신문",
+   "네이트",
    "뉴스1",
    "뉴스저널리즘",
    "뉴시스",
@@ -118,6 +121,7 @@
    "라이센스뉴스",
    "마이데일리",
    "매일일보",
+   "빅데이터뉴스",
    "워크투데이",
    "자본시장뉴스",
    "조선일보",
@@ -125,7 +129,7 @@
    "파이낸셜뉴스",
    "팝콘뉴스"
   ],
-  "outlet_count": 18,
+  "outlet_count": 20,
   "first_seen": "20261029",
   "last_seen": "20261029"
  },
@@ -174,6 +178,24 @@
   "last_seen": "20261029"
  },
  {
+  "title": "LG화학, LG엔솔 지분 2.5조 처분…자사주 3천억원 매입·소각 - 연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FTjkzOGVnMnotV3dSSWdwUmhXcFZUVGhnb19KLWtPZkdfWVp6ZVFWVjZ0YWZHcmFNbXptTW56NzFpVkpUWEtxckVYQXlzWFFrUjlFZkpQYVIwRjFPY0dlb9IBYEFVX3lxTE9FTjkzOGVnMnotV3dSSWdwUmhXcFZUVGhnb19KLWtPZkdfWVp6ZVFWVjZ0YWZHcmFNbXptTW56NzFpVkpUWEtxckVYQXlzWFFrUjlFZkpQYVIwRjFPY0dlbw?oc=5",
+  "sources": [
+   "CNB뉴스",
+   "더게이트",
+   "매일산업뉴스",
+   "미디어파인",
+   "아주경제",
+   "연합뉴스",
+   "워크투데이",
+   "한국면세뉴스",
+   "현대경제신문"
+  ],
+  "outlet_count": 9,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
   "title": "골프존홀딩스, MBK 골프존카운티 지분 매각 추진에 '법적 대응' 시사 - MTN 머니투데이방송",
   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ieHFGN3EtbmFQVktzR1llMWxxdXFCQktlNTlJRnF0TGZDLVVSN2hoNHNVWDBRM0NUQlkycnNfZW01a3V4TnRBRU5LUXBsSmZPeGJxWjIxNjFyYklJeFNR?oc=5",
   "sources": [
@@ -208,23 +230,6 @@
   "last_seen": "20261029"
  },
  {
-  "title": "LG화학, LG엔솔 지분 2.5조 처분…자사주 3천억원 매입·소각 - 연합뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FTjkzOGVnMnotV3dSSWdwUmhXcFZUVGhnb19KLWtPZkdfWVp6ZVFWVjZ0YWZHcmFNbXptTW56NzFpVkpUWEtxckVYQXlzWFFrUjlFZkpQYVIwRjFPY0dlb9IBYEFVX3lxTE9FTjkzOGVnMnotV3dSSWdwUmhXcFZUVGhnb19KLWtPZkdfWVp6ZVFWVjZ0YWZHcmFNbXptTW56NzFpVkpUWEtxckVYQXlzWFFrUjlFZkpQYVIwRjFPY0dlbw?oc=5",
-  "sources": [
-   "CNB뉴스",
-   "더게이트",
-   "매일산업뉴스",
-   "미디어파인",
-   "아주경제",
-   "연합뉴스",
-   "워크투데이",
-   "한국면세뉴스"
-  ],
-  "outlet_count": 8,
-  "first_seen": "20261029",
-  "last_seen": "20261029"
- },
- {
   "title": "아리바이오홀딩스, 그린플러스 경영권 인수…스마트팜·태양광 사업 확대 - 톱데일리",
   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tcFZ3VzMwcXBaTUw4cDFRRUdsWUZya25pZUV3WW1wVkJvZzEtMlVtc1hqajdUbm5HcUlxN0lkMkVobm8waVR4b1RsdjlMZDRi?oc=5",
   "sources": [
@@ -252,6 +257,21 @@
   ],
   "outlet_count": 6,
   "first_seen": "20261028",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "[특징주] LG엔솔, 최대주주 '지분 매각' 공시에 장 초반 7% 급락 - 연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yOTNrcmlWaU8xY09LUEZaaWhFVDFnUGhhLUNtZ0Zna1J5ZTJOdGRUWk52TVRfVkdSazhhbW1IZjVnM1pNUTlnSnRZRm5wZmJhS3VmTllRNnQydjTSAWBBVV95cUxPRGhuRnhuYjFYUkgyRGpwa2Fqc2dqU21BMG9KUDhlekl4SFBoNmxMZVZjQ1NRbUpINS1ZYldSaFJGaFdKdXpZOW9jTF9sMzNpRlNVSGozaVB2TzVGMTlYRnI?oc=5",
+  "sources": [
+   "Chosunbiz",
+   "아시아투데이",
+   "아이뉴스24",
+   "연합뉴스",
+   "전자신문",
+   "컨슈머타임스"
+  ],
+  "outlet_count": 6,
+  "first_seen": "20261029",
   "last_seen": "20261029"
  },
  {
@@ -319,6 +339,20 @@
    "미주중앙일보",
    "세계일보",
    "중앙일보"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "미래에셋, 日산코증권 50억엔에 인수 추진..日 재공략 - 파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Nd1haWXVRRnZEMXZOMUdPNzNZNldiSXplNWZLZ055bnE4eXdITFdHbUJ0b0lRclc0QW5OWXM1UjVXejFGMFJubEVHbzhyVnY0b0RxUDdLc0NNQQ?oc=5",
+  "sources": [
+   "더팩트",
+   "시사저널",
+   "중앙일보",
+   "쿠키뉴스",
+   "파이낸셜뉴스"
   ],
   "outlet_count": 5,
   "first_seen": "20261029",
@@ -446,24 +480,24 @@
   "last_seen": "20261029"
  },
  {
-  "title": "미래에셋, 日산코증권 50억엔에 인수 추진..日 재공략 - 파이낸셜뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Nd1haWXVRRnZEMXZOMUdPNzNZNldiSXplNWZLZ055bnE4eXdITFdHbUJ0b0lRclc0QW5OWXM1UjVXejFGMFJubEVHbzhyVnY0b0RxUDdLc0NNQQ?oc=5",
+  "title": "MBK 골프존카운티 매각 강행에 골프존홀딩스 '법적 대응' 예고 - 1코노미뉴스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ieTBPT0xWMXhXMkVCOTlkM3d5UlpZYjRLRWZGUmZ6bF9HVFNWWDhlcG5CZ3I3QXBiUS1ONlJPOEE3YmxkX3h3SWdVMlVCSXBTQlZBckp3aDlvSEpsMHl5RTJOcjZTdHlOTVRqVklmVTQ?oc=5",
   "sources": [
-   "더팩트",
-   "쿠키뉴스",
-   "파이낸셜뉴스"
+   "1코노미뉴스",
+   "중기이코노미",
+   "한국일보"
   ],
   "outlet_count": 3,
   "first_seen": "20261029",
   "last_seen": "20261029"
  },
  {
-  "title": "[특징주] LG엔솔, 최대주주 '지분 매각' 공시에 장 초반 7% 급락 - 연합뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yOTNrcmlWaU8xY09LUEZaaWhFVDFnUGhhLUNtZ0Zna1J5ZTJOdGRUWk52TVRfVkdSazhhbW1IZjVnM1pNUTlnSnRZRm5wZmJhS3VmTllRNnQydjTSAWBBVV95cUxPRGhuRnhuYjFYUkgyRGpwa2Fqc2dqU21BMG9KUDhlekl4SFBoNmxMZVZjQ1NRbUpINS1ZYldSaFJGaFdKdXpZOW9jTF9sMzNpRlNVSGozaVB2TzVGMTlYRnI?oc=5",
+  "title": "LG화학, LG엔솔 지분 팔아 2.5조 실탄 확보 - www.ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tRzlkeGtKZE9KODd2MWxqbFBfYTRJWHpKSHFnNVY3cnR4VkljU092YmhTMGJzTkN5SHNRZFUtaFZKVFBoX0p4TXZNUzNsZ3NRcmhOS1oxaHdMY0RLZmdOU0tmeEJUZ01f?oc=5",
   "sources": [
-   "Chosunbiz",
-   "아이뉴스24",
-   "연합뉴스"
+   "DealSite경제TV",
+   "www.ebn.co.kr",
+   "아주경제"
   ],
   "outlet_count": 3,
   "first_seen": "20261029",
@@ -695,6 +729,17 @@
   "sources": [
    "딜사이트",
    "연합뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "미래에셋증권, 日산코증권 인수… “해외 M&A 확대” - IT조선",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9GVTFia1d0REQzMjZQV3VXTUNRVkt3cG9oZExJOW9VNWFpOGJDdlplV0pPRkt3aHBsWkplM1FHb2FIelByWGc5azlIVlVkNkRUSmIzbVd3TmJzWmFkcnNJZ0dxYnFfMzRUT0t5bTJzbTjSAXRBVV95cUxNNFB3dFNNRUpBeldiNkRTcXU4QWVfeGV4dmEzdmtNVDdQX3V0anR1eUdoYjVXWjZ4YlVJZmRWWTRUQW1VQmY3TUhRVTE0aFAxVlRiWnhLSzhoUnZZLU1MX1AxSmtiR2dqTnFlZ0VjaXhqdjBzaQ?oc=5",
+  "sources": [
+   "IT조선",
+   "더팩트"
   ],
   "outlet_count": 2,
   "first_seen": "20261029",
@@ -1651,16 +1696,6 @@
   "last_seen": "20261029"
  },
  {
-  "title": "MBK 골프존카운티 매각 강행에 골프존홀딩스 '법적 대응' 예고 - 1코노미뉴스",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ieTBPT0xWMXhXMkVCOTlkM3d5UlpZYjRLRWZGUmZ6bF9HVFNWWDhlcG5CZ3I3QXBiUS1ONlJPOEE3YmxkX3h3SWdVMlVCSXBTQlZBckp3aDlvSEpsMHl5RTJOcjZTdHlOTVRqVklmVTQ?oc=5",
-  "sources": [
-   "1코노미뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261029",
-  "last_seen": "20261029"
- },
- {
   "title": "MBK는 매각 도장, 골프존홀딩스는 반대... 골프존카운티 ‘동반매도’ 충돌 - STN SPORTS",
   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aN2g4a2FhVHQtbTN0Uy11Y0FaLUsyVE9sZU1WLVdIWjBGdUNsNURGNy1HVXk0S3BvbmRWWmdSNDhUUTVzN1EzN2tQSDZDcTd2cmNvb1dWYXJiTXlsVksxbjliREUyWkJQUU1sTHVYNA?oc=5",
   "sources": [
@@ -2221,10 +2256,120 @@
   "last_seen": "20261029"
  },
  {
-  "title": "LG화학, LG엔솔 지분 팔아 2.5조 실탄 확보 - www.ebn.co.kr",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tRzlkeGtKZE9KODd2MWxqbFBfYTRJWHpKSHFnNVY3cnR4VkljU092YmhTMGJzTkN5SHNRZFUtaFZKVFBoX0p4TXZNUzNsZ3NRcmhOS1oxaHdMY0RLZmdOU0tmeEJUZ01f?oc=5",
+  "title": "[단독] \"혼자 크면 30년 걸려\"…로제AI, 내년 2500억 규모 M&A 추진 - 한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wOW5JSm03QjFrc1ZyYmZzYlJkQTRIcEdOaEN2Vml3Y1M0dlRfQVlKcmZTU0V1c1BPUmpIZkk1dXVFc2lNQ3RqNk40em9kSTRjU18ybDBjWXJEdw?oc=5",
   "sources": [
-   "www.ebn.co.kr"
+   "한국경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "데이팅앱 '골드스푼', 경영권 매각 추진…희망가 200억대 - 넘버스",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4dUNfdE96VHp6SEM2SnA5WWRRVmxHeGxXc0tycDdWWVpOMy11NnJyVGNRN3BRRFB3enVlSzJwVWxGZkREbW0zeHR6aFNGRk9IbFBuMi1LaEtHRWdPNWVwMkZiTGkwbE9RbXZ3?oc=5",
+  "sources": [
+   "넘버스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "박현주, 일본 증권사 인수로 현지 공략···미래에셋 글로벌 M&A 확장 - 스마트비즈",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHY3AtWHZ4LWRNekJSOTF0elZlUVM3dlNEcGdOSnViQ3VhNy1UVXkxUWlfOTJhVUtURnNfcWhOWFhlcHZ5dmJkZHhtbm1Ndi16VUlQZjlGQW5YWVhhRTByNGtDQnk2czFVYUFpVw?oc=5",
+  "sources": [
+   "스마트비즈"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "JYP엔터테인먼트, 日 투자기업의 적대적 인수 합병이 가능할까? [IZE 진단] - 아이즈(ize)",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5VWkpIR1lLXzhrbkZEd0FqWmxBYzNKN1YyeF9QOEgzUVpsbUxfcmpOaWJIMVIxNVRnSEtXWlhmaXd3Uy1VWk5zM2drX2daZF9EN2E5d2d4T0hpbzhsZVhPTVJmNzdScGRFdXfSAWpBVV95cUxOVVpKSEdZS184a25GRHdBalpsQWMzSjdWMnhfUDhIM1FabG1MX3JqTmliSDFSMTVUZ0hLV1pYZml3d1MtVVpOczNna19nWmRfRDdhOXdneE9IaW84bGVYT01SZjc3UnBkRXV3?oc=5",
+  "sources": [
+   "아이즈(ize)"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "미래에셋증권, 일본 산코증권 인수...미국 자회사 통해 100% 취득 - 디지털투데이",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wdDdpdmN6SHNDOXFWYkJLd3ZiTS1HOHo2bm9tYmJuZHdmZjlqXzdvbHlkT0xFem91dFAyOXRRZzctb1d0WWs5U3RWS1p1b0djTEFWNHk1cTdiOFNVZEVHLUdKRmZyanhHZWNVYW1aLThXV2s?oc=5",
+  "sources": [
+   "디지털투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "미래에셋증권, 산코증권 인수...日 진출 본격화 - 주간한국",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jdGdzR1BWQzZ3QjMxYTh2N0tyVFViMk1MMUpjc1BsNGJVUnFpYkJncmxoRjczZVI3cUgyTWg0UkRnNU9iejZHOGNEWG0tX0RmZHg1QjhVZGNiR0tBcHhHZ0NhWnpJUGZ1UTM2cm5DTW_SAXRBVV95cUxPMmx1Y1ZvOVVGblhpTmdKR1FOMmNjR2tXY3NfUnM1QkRxWWROLXFtakRoemtrY3lUZE1sVEU0MWhlT25IaFdQQnB1cmR6MXRIQ0FsckE4bFFYY0tQcFZBSVMwV0czUXVNVGRHZTliN0drQm9SQQ?oc=5",
+  "sources": [
+   "주간한국"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "MBK파트너스, 골프존홀딩스 주장 반박…\"골프존카운티 매각은 계약 따른 절차\" - 뉴시스",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3dGJFOEZuM3lkWDRBQlViTi1xWmxHVjJvcjZGekZxRXhMTEx0M3pKaWRvcDRxQTBkcV9KVzNPdkV4dG56MDQtSlVFZFJZaGhYUHNkR3l6SWNpcDRENWxzYnZ1U2FXd292U0hyVlBvU0lPVFBxT3BrNtIBeEFVX3lxTFA3dGJFOEZuM3lkWDRBQlViTi1xWmxHVjJvcjZGekZxRXhMTEx0M3pKaWRvcDRxQTBkcV9KVzNPdkV4dG56MDQtSlVFZFJZaGhYUHNkR3l6SWNpcDRENWxzYnZ1U2FXd292U0hyVlBvU0lPVFBxT3BrNg?oc=5",
+  "sources": [
+   "뉴시스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "골프존카운티 매각 잡음 진화나선 MBK “드래그얼롱은 골프존홀딩스가 동의한 것” - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zYi11Q01RcENyeUtydVZweHdveHBOMXNvNEllLXktcVB6ZE5oN0FhMHdmRDVVSVpNUVBzSDBwT2ZYOXAzWUZHQWhlbEtvaVBDZHc?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "[골프존홀딩스 상폐] 카운티 매각으로 수천억 유입 기대…'3차 공개매수' 가능성 - DealSite경제TV",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mTWx6QkJmZ05UcG5oaGlhMmVQT2d1SW05SUtGSS1WbldxZXIxUndZUVpYeW02cm9qVjItb2VremNjYjZsQnVVajdkWkhITVZtRFFWY3ln?oc=5",
+  "sources": [
+   "DealSite경제TV"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "그린플러스, 아리바이오홀딩스에 경영권 매각…잔여지분 풋옵션 6000원 - 넘버스",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA2ZHhpT0ZFSE1ta09FREo0VTVmdDY1aUlSMXRYWnJoYTdOUk9aYzBDRkYxek9fQV9FZXZUQzFmR2J4RlJ1OUJpbmZwc3dLeExtWWtkNW93R0VjX09QU0ltTllXN3A3UWxHMjBv?oc=5",
+  "sources": [
+   "넘버스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "\"적법절차\" \"일방적 매각\"…골프존카운티 매각 놓고 1·2대주주 공방 - 연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE15eFAyZkFseld2YW9NZEEtaGw0VGptRF92SDVEZkRwNkJOUExfT1c1cERtTWlwRkdkb3FJWGFDRzVxUTh4SlVTMlF0OXlnT005SGZmV1ZyUUJIS1HSAWBBVV95cUxNcldFdE5CUlZ5Rkxsdl9VcURiOVc3SXpGbFNXV3ZXLXk2S1AyTXZMUTFTSXRKX3BpZXhqUXRxRm9MZUF6eFRxWmt3REotTE9jbVN1dWUtV0V3ZzU0VXZSaV8?oc=5",
+  "sources": [
+   "연합뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261029",
+  "last_seen": "20261029"
+ },
+ {
+  "title": "모회사 LG화학 대규모 지분 매각…LG엔솔, 9% 하락세 [특징주] - 데일리안",
+  "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNM0lZVkdFTGpDQ0pVd3I1VlBXMjZ6QkJaa3ZNUC1Ra1BmMXhjRWVLa2dEYkF1TzVHeWVXeUNpN1pzZEthc1ExUVdITXFFbnJpTkpkRF9Ia0tUZl9HTFphLTF6bUtFbjVZNzIxR1Vwd0tKVkUtUVN0a2Y5UHMyT19sOVd2Qk9jeUpkVDNYTW1GdG04N0hKY1dXRmJCSUdPR3VEUzY5QlFSV2VydUY3dU1FbVFwXzN5UGRSNWI0N0t3V3JSUTRjbUdXWjdlNU9DUjFuYWFHZERWb3NrcVFFdWtnUEpoM2V3SVVKSUxfUURPUWkyRDhLdmd0dg?oc=5",
+  "sources": [
+   "데일리안"
   ],
   "outlet_count": 1,
   "first_seen": "20261029",

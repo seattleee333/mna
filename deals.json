@@ -1,5 +1,16 @@
 [
  {
+  "rcept_no": "20261029000183",
+  "date": "20261029",
+  "corp_code": "00127158",
+  "corp_name": "씨아이테크",
+  "stock_code": "004920",
+  "market": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "detail_attempts": 1
+ },
+ {
   "rcept_no": "20261029000027",
   "date": "20261029",
   "corp_code": "01326279",
@@ -636,7 +647,7 @@
   "market": "E",
   "report_nm": "회사합병결정",
   "category": "합병",
-  "detail_attempts": 3
+  "detail_attempts": 4
  },
  {
   "rcept_no": "20261028000138",
