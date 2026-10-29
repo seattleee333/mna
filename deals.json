@@ -1,5 +1,25 @@
 [
  {
+  "rcept_no": "20261029000027",
+  "date": "20261029",
+  "corp_code": "01326279",
+  "corp_name": "아이엘",
+  "stock_code": "307180",
+  "market": "K",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "category": "합병",
+  "kind": "merger",
+  "direction": null,
+  "buyer": "아이엘",
+  "seller": "(주)폴리니크케어",
+  "target": "(주)폴리니크케어",
+  "amount": null,
+  "note": "합병비율 1 : 0",
+  "summary": "아이엘이 폴리니크케어를 흡수합병합니다.",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261029000002",
   "date": "20261029",
   "corp_code": "00104120",
@@ -616,7 +636,7 @@
   "market": "E",
   "report_nm": "회사합병결정",
   "category": "합병",
-  "detail_attempts": 2
+  "detail_attempts": 3
  },
  {
   "rcept_no": "20261028000138",
