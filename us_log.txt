@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>QQF0YESHSB6GXR7G</RequestId><HostId>nC64lckai7k+D35qLPwuGoE4YLD43WDFjj1c6tjAo5IQrfyVsj
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>2CJBJTZFM1NBR2CV</RequestId><HostId>+OkGbdbIB5skVoU6h0smxBqFa2XFZatj7vsVecAw5mXute0yl9
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>QQFBKWK4E3Z9P1TP</RequestId><HostId>NJMt7P145E23SV+PxGEiT/14P8OHhWmsIHcI7rMsp5Zs8dTOFz
-  2026-10-28 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>1FR982RTPDWQ5FSK</RequestId><HostId>/+LtqdLGNC55S3BETjTQTKdZKPzsHqgFWmysZQEYA2OB3BLMGd
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 28, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              ZQ Platforms Inc.                                             2146072     20261028    edgar/data/2146072/0002146072-26-000009.txt                                                
+  2026-10-28 8-K 389건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>DKCNXG6DMN6J6D85</RequestId><HostId>BWXi1ypwoiCK4ZceKopNmjwqvoOeDDmHVNGeVWC/uBcWVbDkWH
   2026-10-29 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2123건 (이번 신규 0건, LLM 0건)
+새로 확인할 8-K 389건
+저장: 딜 2134건 (이번 신규 11건, LLM 0건)
