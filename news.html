@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>M&A 인기뉴스 · ALL ABOUT M&A</title>
+<title>M&A 최신뉴스 · ALL ABOUT M&A</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="home.css">
 </head>
@@ -16,8 +16,8 @@
 </header>
 <main class="home" style="max-width:860px">
   <section class="hcard">
-    <h2>🔥 M&amp;A 인기뉴스</h2>
-    <p class="sub">같은 이슈를 다룬 기사는 +N으로 묶었어요 · 제목을 누르면 기사 원문으로 이동해요</p>
+    <h2>🔥 M&amp;A 최신뉴스</h2>
+    <p class="sub">최근 기사가 위로 와요 · 같은 이슈를 다룬 기사는 +N으로 묶었어요 · 제목을 누르면 기사 원문으로 이동해요</p>
     <ul class="hlist" id="all"><li class="empty-s">불러오는 중...</li></ul>
     <button type="button" class="np-more" id="more" hidden>더보기 ▾</button>
   </section>
@@ -33,9 +33,10 @@ function draw() {
   el.innerHTML = rows.slice(0, shown).map((n, i) => {
     const src = n.sources && n.sources.length ? escHtml(n.sources[0]) : "";
     const cnt = n.outlet_count > 1 ? " +" + (n.outlet_count - 1) : "";
+    const when = fmtNewsTime(n.pub);
     return '<li><a target="_blank" rel="noopener" href="' + escHtml(n.link) + '"><span class="hrank">' + (i + 1) + '</span>' +
       '<span class="ht" style="white-space:normal">' + escHtml(String(n.title).replace(/\s+-\s+[^-]{1,20}$/, "")) + '</span>' +
-      '<span class="hmeta">' + src + cnt + '</span></a></li>';
+      '<span class="hmeta">' + (when ? when + ' · ' : '') + src + cnt + '</span></a></li>';
   }).join("");
   more.hidden = shown >= rows.length;
 }

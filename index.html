@@ -24,8 +24,8 @@
     </a>
 
     <section class="hcard">
-      <h2>🔥 M&amp;A 핫뉴스 TOP 7</h2>
-      <p class="sub">겹치지 않는 이슈만 · 많이 보도된 순 · <a class="more" href="news.html">전체보기</a></p>
+      <h2>🔥 M&amp;A 최신뉴스</h2>
+      <p class="sub">겹치지 않는 이슈만 · 최근 기사 순 · <a class="more" href="news.html">전체보기</a></p>
       <ul class="hlist" id="hot"><li class="empty-s">불러오는 중...</li></ul>
     </section>
 
@@ -110,7 +110,7 @@ get("news.json").then(list => {
   if (!list.length) { el.innerHTML = '<li class="empty-s">아직 수집된 뉴스가 없어요.</li>'; return; }
   el.innerHTML = pickDistinctNews(list, 7).map((n, i) =>
     '<li><a target="_blank" rel="noopener" href="' + esc(n.link) + '"><span class="hrank">' + (i + 1) + '</span>' +
-    '<span class="ht">' + esc(clean(n.title)) + '</span></a></li>').join("");
+    '<span class="ht">' + esc(clean(n.title)) + '</span>' + (fmtNewsTime(n.pub) ? '<span class="hmeta">' + fmtNewsTime(n.pub) + '</span>' : '') + '</a></li>').join("");
 });
 
 get("deals.json").then(list => {

@@ -4,6 +4,7 @@ import json
 import datetime as dt
 import xml.etree.ElementTree as ET
 from difflib import SequenceMatcher
+from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
 import requests
@@ -11,6 +12,21 @@ import requests
 OUT = "news.json"
 KEEP_DAYS = 365   # 전체 데이터 보관 기간 (검색/이력용)
 QUERIES = ["M&A", "인수합병", "경영권 인수", "지분 매각"]
+# 매일경제·한국경제 기사가 검색 결과 순위에 밀려 빠지지 않도록 매체별로 따로 한 번 더 검색한다.
+SITES = ["mk.co.kr", "hankyung.com"]
+SITE_QUERIES = ["M&A", "인수합병", "경영권 인수", "지분 매각", "매각 본입찰", "사모펀드 인수"]
+
+
+def to_kst_stamp(pub):
+    """RSS의 발행 시각(GMT)을 한국시간 'YYYYMMDDHHMM' 문자열로 바꾼다. 실패하면 빈 문자열."""
+    try:
+        d = parsedate_to_datetime(pub)
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=dt.timezone.utc)
+        d = d.astimezone(dt.timezone.utc) + dt.timedelta(hours=9)
+        return d.strftime("%Y%m%d%H%M")
+    except Exception:
+        return ""
 
 
 def fetch_query(q):
@@ -27,7 +43,7 @@ def fetch_query(q):
         src_el = it.find("source")
         source = src_el.text.strip() if src_el is not None and src_el.text else ""
         if title and link:
-            items.append({"title": title, "link": link, "pubDate": pub, "source": source})
+            items.append({"title": title, "link": link, "pubDate": pub, "pub": to_kst_stamp(pub), "source": source})
     return items
 
 
@@ -74,11 +90,25 @@ def main():
     cutoff = now - dt.timedelta(days=KEEP_DAYS)
 
     fresh = []
-    for q in QUERIES:
+    seen_links = set()
+    all_queries = list(QUERIES) + [f"{q} site:{s}" for s in SITES for q in SITE_QUERIES]
+    for q in all_queries:
         try:
-            fresh.extend(x for x in fetch_query(q) if is_relevant(x["title"], [x["source"]], x["link"]))
+            got = fetch_query(q)
         except Exception as e:
             print(f"뉴스 조회 실패 ({q}): {e}")
+            continue
+        n_ok = 0
+        for x in got:
+            if x["link"] in seen_links:
+                continue
+            if is_relevant(x["title"], [x["source"]], x["link"]):
+                seen_links.add(x["link"])
+                fresh.append(x)
+                n_ok += 1
+        print(f"  [{q}] {len(got)}건 중 M&A 관련 {n_ok}건")
+    for s_ in ("매일경제", "한국경제"):
+        print(f"  {s_} 기사 {sum(1 for x in fresh if x['source'].startswith(s_))}건")
 
     # 오늘 새로 가져온 기사들을 "같은 이슈"끼리 제목 유사도로 묶는다.
     # (별도 AI 호출 없이 문자열 유사도로 대체 - 완벽하지 않지만 무료로 동작)
@@ -99,9 +129,12 @@ def main():
 
     existing_by_title = {e["title"]: e for e in existing}
     for g in groups:
+        # 대표 기사는 같은 이슈 중 가장 최근에 나온 기사로 한다.
+        g["items"].sort(key=lambda x: x.get("pub", ""), reverse=True)
         rep = g["items"][0]
         sources = sorted(set(x["source"] for x in g["items"] if x["source"]))
         key = rep["title"]
+        g_pub = rep.get("pub", "")
 
         # 기존에 저장된 항목 중 제목이 비슷한 게 있으면 그 항목에 병합
         merged = existing_by_title.get(key)
@@ -117,6 +150,11 @@ def main():
             # 오늘도 계속 보도되고 있다는 뜻이므로 "마지막으로 보도된 날짜"를 갱신한다.
             # (first_seen은 최초 수집일 그대로 유지 — 이슈가 언제 시작됐는지 보존)
             merged["last_seen"] = now.strftime("%Y%m%d")
+            # 같은 이슈의 더 새로운 기사가 나왔으면 제목·링크·시각을 최신 기사로 바꿔 위로 올린다.
+            if g_pub and g_pub > merged.get("pub", merged.get("last_seen", "") + "0000"):
+                merged["pub"] = g_pub
+                merged["title"] = rep["title"]
+                merged["link"] = rep["link"]
         else:
             new_e = {
                 "title": rep["title"],
@@ -125,6 +163,7 @@ def main():
                 "outlet_count": len(sources) or 1,
                 "first_seen": now.strftime("%Y%m%d"),
                 "last_seen": now.strftime("%Y%m%d"),
+                "pub": g_pub or now.strftime("%Y%m%d%H%M"),
             }
             existing.append(new_e)
             existing_by_title[key] = new_e
@@ -143,15 +182,11 @@ def main():
             e.setdefault("last_seen", e.get("first_seen", ""))
             kept.append(e)
 
-    # 마지막으로 보도된 "날짜"를 1순위로, 그 날짜 안에서는 매체 수(인기)를 2순위로
-    # 정렬한다. 이렇게 하면 며칠 전부터 누적 보도된 이슈가 오늘자 새 뉴스를
-    # 영구적으로 밀어내지 못하고, 하루만 지나도 자연스럽게 순위에서 빠진다.
+    # 가장 최근에 나온 기사가 위로 오도록 "기사 발행 시각"(한국시간)으로 정렬한다.
+    # 발행 시각이 없는 예전 데이터는 마지막 보도 날짜의 0시로 보고, 같은 시각이면 매체 수가 많은 쪽이 먼저다.
     def sort_key(e):
-        try:
-            last = dt.datetime.strptime(e.get("last_seen", e.get("first_seen", "")), "%Y%m%d")
-        except ValueError:
-            last = cutoff
-        return (last, e.get("outlet_count", 1))
+        stamp = e.get("pub") or (e.get("last_seen", e.get("first_seen", "")) + "0000")
+        return (stamp, e.get("outlet_count", 1))
 
     kept.sort(key=sort_key, reverse=True)
 

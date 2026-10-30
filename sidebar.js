@@ -16,12 +16,12 @@ function renderSidebar(active) {
     '<a href="sell.html" class="nav-cta' + (active === "sell" ? " on" : "") + '">매각하기</a>';
 }
 
-// 오른쪽 패널: M&A 인기뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역).
+// 오른쪽 패널: M&A 최신뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역). 최근 기사가 위로 온다.
 function renderNewsPanel() {
   const el = document.getElementById("newsPanel");
   if (!el) return;
   el.innerHTML =
-    '<div class="news-panel-title">M&amp;A 인기뉴스<a class="np-all" href="news.html">전체보기 ›</a></div>' +
+    '<div class="news-panel-title">M&amp;A 최신뉴스<a class="np-all" href="news.html">전체보기 ›</a></div>' +
     '<div id="newsCardList" class="news-card-list">불러오는 중...</div>';
 
   fetch("news.json?t=" + Date.now())
@@ -36,12 +36,13 @@ function renderNewsPanel() {
       const rows = pickDistinctNews(data, 10);
       const html = rows.map((n, i) => {
         const source = n.sources && n.sources.length ? escHtml(n.sources[0]) : "";
+        const when = fmtNewsTime(n.pub);
         const countBadge = n.outlet_count > 1 ? '<span class="nc-count">+' + (n.outlet_count - 1) + '</span>' : "";
         return '<a class="news-card' + (i >= 5 ? ' extra' : '') + '" target="_blank" rel="noopener" href="' + escHtml(n.link) + '">' +
           '<span class="nc-rank">' + (i + 1) + '</span>' +
           '<span class="nc-body">' +
             '<span class="nc-title">' + escHtml(n.title) + '</span>' +
-            '<span class="nc-meta">' + source + countBadge + '</span>' +
+            '<span class="nc-meta">' + (when ? when + ' · ' : '') + source + countBadge + '</span>' +
           '</span>' +
           '</a>';
       }).join("");
@@ -56,6 +57,13 @@ function renderNewsPanel() {
       const list = document.getElementById("newsCardList");
       if (list) list.innerHTML = '<div class="side-empty">뉴스를 불러올 수 없습니다.</div>';
     });
+}
+
+// 기사 발행 시각('YYYYMMDDHHMM', 한국시간) → '10/30 14:20' 형태. 예전 데이터처럼 시각이 없으면 빈 문자열.
+function fmtNewsTime(p) {
+  if (!p || String(p).length < 12) return "";
+  p = String(p);
+  return parseInt(p.slice(4, 6), 10) + "/" + parseInt(p.slice(6, 8), 10) + " " + p.slice(8, 10) + ":" + p.slice(10, 12);
 }
 
 // 상단 오른쪽 로그인/로그아웃 표시
