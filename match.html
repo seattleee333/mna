@@ -36,7 +36,7 @@
           <span class="mt-h">우리 회사가 ‘파는 물건’의 이름만 적으면 정확도가 크게 올라가요. (고객·시장 이름은 아래 칸에)</span>
         </label>
         <div class="mt-f">
-          <span class="mt-l">② 우리 업종 <span class="mt-h">(검색해서 선택 · DART 산업분류, 여러 개 가능)</span></span>
+          <span class="mt-l">② 우리 업종 <span class="mt-h">(검색해서 선택 · 산업분류, 여러 개 가능)</span></span>
           <div class="mt-pick" id="indPick">
             <input type="text" placeholder="예) PCB, 인쇄회로기판, 반도체, 화장품 용기, 배전반">
             <div class="mt-pick-list" hidden></div>
@@ -134,7 +134,7 @@
       <div class="mt-foot">
         • <b>1티어</b>는 같은 사업·같은 업종의 직접 경쟁·동종, <b>2티어</b>는 밸류체인·인접 업종(기판→패키징 소재 등), <b>3티어</b>는 관련 산업·계열(지분) 연결이에요. 티어는 인수 의사나 가능성을 뜻하지 않아요.<br>
         • 후보는 <b>사업 시너지로만</b> 골랐어요. 재무는 ‘재무 반영 추천 리스트’(기본)와 ‘재무 무관 전체’(체크 시)를 나누는 데만 쓰고, 후보를 지우지 않아요.<br>
-        • 근거 문장은 최신 사업보고서(2025 사업연도), 업종은 DART 업종코드(KSIC 10차)예요. 무료 베타는 단어 일치도(유사어 포함) 방식이라 표현이 다르면 놓칠 수 있어요.
+        • 근거 문장은 최신 사업보고서(2025 사업연도), 업종은 한국표준산업분류(KSIC 10차) 업종코드예요. 무료 베타는 단어 일치도(유사어 포함) 방식이라 표현이 다르면 놓칠 수 있어요.
       </div>
     </section>
   </main>
@@ -388,7 +388,7 @@ renderNewsPanel();
           (x.byTarget ? ' <span class="mt-chip t-h">대상 사업 유사</span>' : "") + (x.byBuyer ? ' <span class="mt-chip t-ic">인수사 동종</span>' : "") + "</div>" +
           '<div class="mt-case-sub">' + (c.tb ? esc(c.tb) + " · " : "") + (c.a ? "취득금액 " + M.won(c.a) + "억원" : "금액 미공시") + (c.s ? " · 지분 " + esc(c.s) + "%" : "") + (c.cp ? " · 거래상대방 " + esc(c.cp) : "") + "</div>" +
           (c.p ? '<div class="mt-case-p">목적: ' + esc(c.p) + "</div>" : "") +
-          '<a class="mt-link" target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(c.r) + '">DART 공시 보기 ↗</a></div>';
+          '<a class="mt-link" target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(c.r) + '">공시 원문 보기 ↗</a></div>';
       }).join("") + "</div>" + pager(pg, pages) :
         '<div class="mt-h" style="padding:8px 2px">조건에 맞는 사례가 없거나, 사례 데이터가 아직 준비되지 않았어요.</div>');
     const qi = $("caseQ"); if (qi) { qi.addEventListener("input", function () { box._page = 0; drawCases(); qi.focus(); qi.setSelectionRange(qi.value.length, qi.value.length); }); }

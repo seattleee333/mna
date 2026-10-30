@@ -45,7 +45,7 @@ function empty(title, lead) {
 function coverNote(d, lines) {
   return '<div class="dnote"><b>집계 기준 · 유의사항</b><br>' + lines.join("<br>") +
     (d.complete === false ? '<br>※ 이번 집계는 시간 제한으로 일부 구간이 빠졌을 수 있습니다.' : "") +
-    '<br>데이터 출처: 금융감독원 전자공시시스템 공시 원문 · 기간 ' + fmtDate(d.since) + ' ~ ' + fmtDate(d.updated) + '</div>';
+    '<br>데이터 출처: 공개자료 기반 · 기간 ' + fmtDate(d.since) + ' ~ ' + fmtDate(d.updated) + '</div>';
 }
 
 function renderActive(d) {

@@ -91,7 +91,7 @@ fetch("deals.json?t=" + Date.now())
       : (fallbackText
           ? '<div class="dt-summary">' + esc(fallbackText) + '</div>'
           : (d.no_detail_api
-              ? '<div class="dt-summary">이 공시는 DART 상세 공시 API에서 데이터를 제공하지 않는 유형입니다 (거래소 수시공시 등). 아래 "DART 원문 보기"에서 내용을 확인해주세요.</div>'
+              ? '<div class="dt-summary">이 공시는 상세 항목을 정리하지 못한 유형입니다 (거래소 수시공시 등). 아래 "원문 공시 보기"에서 내용을 확인해주세요.</div>'
               : '<div class="dt-summary">상세정보를 아직 확인하지 못했습니다. 다음 자동 수집 후 다시 확인해주세요.</div>'));
 
     const top =
@@ -110,7 +110,7 @@ fetch("deals.json?t=" + Date.now())
         '<div class="dr-row"><span>시장구분</span><b>' + esc(d.market || "-") + '</b></div>' +
         '<div class="dr-row"><span>종목코드</span><b>' + esc(d.stock_code || "-") + '</b></div>' +
         '<div class="dr-row"><span>공시명</span><b>' + esc(d.report_nm) + '</b></div>' +
-        '<div class="dr-row"><span>DART 원문</span><a target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(d.rcept_no) + '">원문 공시 보기 →</a></div>' +
+        '<div class="dr-row"><span>공시 원문</span><a target="_blank" rel="noopener" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(d.rcept_no) + '">원문 공시 보기 →</a></div>' +
       '</div>';
 
     box.innerHTML = top + raw;

@@ -325,7 +325,7 @@ def main():
             return cache[code]
         out = {"name": name, "code": code, "ok": False}
         if code not in corp_map:
-            out["reason"] = "DART 종목코드 없음"
+            out["reason"] = "종목코드 없음"
             cache[code] = out
             return out
         corp_code, dart_name = corp_map[code]
@@ -410,7 +410,7 @@ def main():
         print(f"{s['name']}: EV/EBITDA {st['evEbitda']} PER {st['per']} (유효 {len(ev_vals)}/{len(peers)})")
 
     out = {"updated": now.strftime("%Y%m%d"),
-           "note": "최근 사업연도 재무제표(DART)와 현재 시가총액(네이버 증권)으로 계산한 참고용 배수입니다. 25%/중앙값/75% 분위수를 보수/기본/낙관에 대응시킵니다.",
+           "note": "최근 사업연도 재무제표와 현재 시가총액(네이버 증권)으로 계산한 참고용 배수입니다. 25%/중앙값/75% 분위수를 보수/기본/낙관에 대응시킵니다.",
            "sectors": sectors_out, "debug": DEBUG}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)

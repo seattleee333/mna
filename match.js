@@ -11,7 +11,7 @@
     cu: { label: "고객 교차", desc: "같은 고객·고객 산업" },
     cap:{ label: "역량 보완", desc: "우리 기술·인증이 후보 사업에 쓰임" },
     sd: { label: "유사 기업", desc: "내가 지목한 회사와 사업이 비슷함" },
-    ic: { label: "동일·인접 업종", desc: "DART 업종코드가 같거나 가까움" },
+    ic: { label: "동일·인접 업종", desc: "업종코드가 같거나 가까움" },
     hs: { label: "인수 이력 일치", desc: "과거에 이 사업의 회사를 인수한 적이 있음" },
     af: { label: "계열 연결", desc: "지분 관계로 이어진 상장사" }
   };
@@ -46,7 +46,7 @@
     ["FC-BGA", "BGA", "FCBGA", "패키지기판", "반도체기판"], ["HDI", "고밀도", "고다층"], ["FPCB", "연성인쇄회로기판", "연성회로"],
     ["소캠", "SOCAMM", "메모리모듈"], ["리드프레임", "LEADFRAME", "반도체패키지"], ["MLCC", "적층세라믹", "수동소자", "인덕터", "저항기"]
   ];
-  // 업종 검색: 입력어 → DART(KSIC 10차) 업종명에서 찾을 말
+  // 업종 검색: 입력어 → KSIC 10차 업종명에서 찾을 말
   const ALIAS = {
     "pcb": ["인쇄회로기판"], "hdi": ["인쇄회로기판"], "회로": ["인쇄회로기판", "전자집적회로"], "기판": ["인쇄회로기판", "반도체"],
     "반도체": ["반도체", "전자집적회로"], "패키지": ["반도체", "포장"], "배터리": ["축전지", "일차전지"], "2차전지": ["축전지"], "ess": ["축전지"],
@@ -111,7 +111,7 @@
     }
   }
 
-  // ── DART 업종(KSIC 10차) ──
+  // ── 업종(KSIC 10차) ──
   function letterOf(code) { return KSIC && KSIC.sec ? (KSIC.sec[code.slice(0, 2)] || "") : ""; }
   function ksicLabel(code) { return (KNAME && KNAME.get(code) ? KNAME.get(code) : "") + " · " + letterOf(code) + code; }
   function ksicNameOf(code) {      // 정확히 없으면 가장 긴 앞부분 코드의 이름
@@ -309,10 +309,10 @@
           return { co: "과거 인수 · " + d + " <b>" + esc(k.t || "") + "</b>" + (k.tb ? " (" + esc(k.tb) + ")" : "") + (k.a ? " — " + won(k.a) + "억원" : "") + (k.p ? " · 목적: " + esc(k.p) : ""), me: userQuote(prodAll, (k.tb || "") + " " + (k.t || "")) };
         }) });
       }
-      // 업종코드가 같거나 가까우면 DART 업종 자체를 근거로 쓴다 (사업 문장이 달라도 놓치지 않기 위함)
+      // 업종코드가 같거나 가까우면 업종 자체를 근거로 쓴다 (사업 문장이 달라도 놓치지 않기 위함)
       if (c.ic && (o.s.L >= 4 || (o.s.L === 3 && (reasons.length || o.score / topScore >= (wide ? 0.08 : 0.15))))) {
         const an = anchors.filter(function (a) { return pref(c.ic, a) === o.s.L; })[0] || anchors[0];
-        reasons.push({ t: "ic", val: 0.1 * o.s.L, ev: [{ co: "DART 업종 " + esc(ksicLabel(c.ic)) + (o.s.L >= 4 ? " — 기준 업종과 같음" : " — 기준 업종과 인접(같은 소분류)"),
+        reasons.push({ t: "ic", val: 0.1 * o.s.L, ev: [{ co: "업종 " + esc(ksicLabel(c.ic)) + (o.s.L >= 4 ? " — 기준 업종과 같음" : " — 기준 업종과 인접(같은 소분류)"),
           me: (auto ? "자동 추정 업종 " : "기준 업종 ") + (an ? ksicLabel(an) : "") }] });
       }
       if (!reasons.length && !o.seed) continue;       // 근거가 하나도 없으면 후보에서 제외
@@ -347,9 +347,9 @@
     else if (eq && debt && debt / eq > 3) out.push(["warn", "부채비율 " + Math.round(debt / eq * 100) + "% — 재무 부담 확인"]);
     if (/홀딩스|지주|Holdings|HOLDINGS/.test(c.n)) out.push(["info", "지주사 — 실제 사업은 자회사에서 할 수 있어요. 자회사·계열사 사업을 확인하세요"]);
     if (c.af && c.af.length) out.push(["info", "지분 관계 상장사: " + c.af.slice(0, 4).map(function (e) { const o = BYCODE.get(e[0]); return (o ? o.n : e[0]) + " (" + e[1] + " " + e[2] + "%)"; }).join(", ")]);
-    if (c.h && c.h.length) out.push(["info", "최대주주: " + c.h.slice(0, 2).map(function (x) { return x[0] + " " + x[1] + "%"; }).join(", ") + " (DART)"]);
+    if (c.h && c.h.length) out.push(["info", "최대주주: " + c.h.slice(0, 2).map(function (x) { return x[0] + " " + x[1] + "%"; }).join(", ")]);
     if (c.sub && c.sub.length) out.push(["info", "종속회사(출자 50% 초과): " + c.sub.slice(0, 8).join(", ")]);
-    else out.push(["info", "최대주주·계열·같은 사업의 계열사 보유 여부는 DART 공시로 확인이 필요해요"]);
+    else out.push(["info", "최대주주·계열·같은 사업의 계열사 보유 여부는 공시 원문으로 확인이 필요해요"]);
     if (me.rev && rev) { const r = rev / me.rev; if (r > 50) out.push(["info", "매도 기업 매출의 약 " + Math.round(r) + "배 규모 — 소규모 딜에 관심이 낮을 수 있어요"]); else if (r < 1) out.push(["info", "매도 기업보다 매출이 작아요 (규모 차이 확인)"]); }
     if (me.price && eq) { const p = me.price / eq * 100; out.push([p > 100 ? "warn" : "info", "희망 매각가는 후보 자본총계의 약 " + (p < 1 ? p.toFixed(1) : Math.round(p)) + "%"]); }
     if (me.op !== undefined && me.op !== null && me.rev && rev && op !== null) {

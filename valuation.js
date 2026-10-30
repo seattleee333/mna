@@ -422,7 +422,7 @@
       (peers && peers.updated ? " (데이터 기준 " + peers.updated + ")" : "") + '</p>' +
       '<div class="tscroll"><table class="t"><thead><tr><th>회사</th><th>시가총액</th><th>EV/EBITDA</th><th>PER</th></tr></thead><tbody>';
     s.peers.forEach(function (p) {
-      var nm = esc(p.name) + (p.dart_name && p.dart_name.replace(/\s|\(주\)|주식회사/g, "") !== p.name.replace(/\s/g, "") ? ' <span class="peer-tag">(DART: ' + esc(p.dart_name) + ')</span>' : "");
+      var nm = esc(p.name) + (p.dart_name && p.dart_name.replace(/\s|\(주\)|주식회사/g, "") !== p.name.replace(/\s/g, "") ? ' <span class="peer-tag">(법인명: ' + esc(p.dart_name) + ')</span>' : "");
       t += '<tr><td>' + nm + '</td><td>' + (p.mcap_eok ? p.mcap_eok.toLocaleString("ko-KR") + "억" : "-") + '</td><td>' + (p.evEbitda ? p.evEbitda + "x" : "-") + '</td><td>' + (p.per ? p.per + "x" : "-") + '</td></tr>';
     });
     return t + '</tbody></table></div></div>';

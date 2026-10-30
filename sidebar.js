@@ -134,7 +134,7 @@ function renderFooter() {
       <span>문의·제휴: [contact@example.com]</span>
       <span>전화: [000-0000-0000]</span>
     </div>
-    <div class="fdisc">ALL ABOUT M&amp;A의 모든 정보는 DART 공시와 공개 보도를 자동 분류·요약한 참고 자료이며, 투자·거래 판단의 근거가 될 수 없습니다. 정확한 내용은 원문을 확인하세요.<br>
+    <div class="fdisc">ALL ABOUT M&amp;A의 모든 정보는 공개자료를 기반으로 자동 정리한 참고 자료이며, 투자·거래 판단의 근거가 될 수 없습니다. 정확한 내용은 원문을 확인하세요.<br>
       기업가치 간이평가 결과는 입력값과 시장 가정에 따른 추정치로, 실제 거래 가격과 다를 수 있습니다.</div>
     <div class="fcopy">Copyright © [회사명] All rights reserved.</div>
   </div>`;
