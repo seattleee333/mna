@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>2CJBJTZFM1NBR2CV</RequestId><HostId>+OkGbdbIB5skVoU6h0smxBqFa2XFZatj7vsVecAw5mXute0yl9
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9CN5S48HD9X09Z0A</RequestId><HostId>j72gR1KvUsnRcf6cj9N763JY7JcgZf2gAEz+5rbWf5PCAbO7kx
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 28, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              ZQ Platforms Inc.                                             2146072     20261028    edgar/data/2146072/0002146072-26-000009.txt                                                
-  2026-10-28 8-K 389건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>DKCNXG6DMN6J6D85</RequestId><HostId>BWXi1ypwoiCK4ZceKopNmjwqvoOeDDmHVNGeVWC/uBcWVbDkWH
-  2026-10-29 8-K 0건
-새로 확인할 8-K 389건
-저장: 딜 2134건 (이번 신규 11건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 29, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A/A            ENTERTAINMENT ARTS RESEARCH, INC.                             1083468     20261029    edgar/data/1083468/0001683168-26-008153.txt                                                
+  2026-10-29 8-K 487건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>8ED4M3M6826RSMBZ</RequestId><HostId>qn321hwScBTdG26puM3krR++CXeSWSmshDbqTCpe4Yb3poU23q
+  2026-10-30 8-K 0건
+새로 확인할 8-K 487건
+저장: 딜 2146건 (이번 신규 13건, LLM 0건)
