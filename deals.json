@@ -1325,7 +1325,7 @@
   "market": "E",
   "report_nm": "회사합병결정",
   "category": "합병",
-  "detail_attempts": 1,
+  "detail_attempts": 2,
   "detail_done": true,
   "fix_v": 6
  },
