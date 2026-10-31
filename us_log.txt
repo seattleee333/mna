@@ -1,6 +1,6 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>PGYPRQ6KJH1GT9Z8</RequestId><HostId>VZL8DI0y2awod1cGh2OKq2KNPhcBSDsTpxVgxi0QPRuDjCRi+h
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>V8X189RSZZEZPP14</RequestId><HostId>RzyuAZenRP5vrCn19XxV06T4usints4fAgEqHTihtPYf4gTPIo
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>PGYQJWTKWPX9DRZW</RequestId><HostId>lQ8xmxmULPVtz1Av4v/em+BmGXUfs68bJg3rVFhiQOO1kNaiib
-  2026-10-30 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2146건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Oct 30, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Medical Care Technologies Inc.                                1404593     20261030    edgar/data/1404593/0001099910-26-000293.txt                                                
+  2026-10-30 8-K 258건
+새로 확인할 8-K 258건
+저장: 딜 2158건 (이번 신규 12건, LLM 0건)
