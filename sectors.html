@@ -84,8 +84,10 @@ function multShort(s) {
   if (m.small) {
     out.push("<em>소형 흑자 상장사</em><br>EV/EBITDA " + m.small.ev_median + "배 · PER " + m.small.per_median + "배");
   } else if (m.peers && m.peers.length) {
-    var p = m.peers[0], per = rng(p.per), ev = rng(p.ev);
+    var p = m.peers.filter(function (x) { return x.ev || x.ebit || x.per; })[0] || m.peers[0];
+    var per = rng(p.per), ev = rng(p.ev), eb = rng(p.ebit);
     if (ev) out.push("EV/EBITDA " + ev.base + "배");
+    else if (eb) out.push("EV/EBIT " + eb.base + "배<em> (EBITDA 대용)</em>");
     if (per) out.push("PER " + per.base + "배");
     if (!out.length) return '<span class="sc-na">자료 부족</span>';
     return out.join("<br>");
@@ -150,6 +152,7 @@ function detailHtml(s) {
     if (m.peers) m.peers.forEach(function (p) {
       var bits = [];
       if (p.ev) bits.push("EV/EBITDA " + rangeTxt(p.ev, ""));
+      else if (p.ebit) bits.push("EV/EBIT " + rangeTxt(p.ebit, "") + " <em>(감가상각비 미반영, EBITDA보다 높게 나와요)</em>");
       if (p.per) bits.push("PER " + rangeTxt(p.per, ""));
       mult += '<div style="font-size:13px;line-height:1.7"><b>' + escHtml(p.name) + '</b> · ' + (bits.join(" · ") || "자료 부족") + '</div>';
     });

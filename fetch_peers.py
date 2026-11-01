@@ -14,6 +14,8 @@ import zipfile
 import datetime as dt
 import statistics
 import xml.etree.ElementTree as ET
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
@@ -23,7 +25,12 @@ SEED = "peers_seed.json"
 OUT = "peers.json"
 DEBUG = []
 START = time.time()
-BUDGET = 28 * 60  # XBRL 조회에 쓸 수 있는 총 시간(초)
+BUDGET = 70 * 60  # XBRL 조회에 쓸 수 있는 총 시간(초)
+DA_CACHE_FILE = "peers_da_cache.json"   # 감가상각비는 한 번 구하면 바뀌지 않으므로 저장해 두고 다음 실행에서 재사용
+WORKERS = 4
+PERMANENT_FAIL = ("XBRL에 상각비 태그 없음", "XBRL 상각비 태그 분류 실패", "XBRL 파일 없음", "XBRL 컨텍스트 없음",
+                  "XBRL 파싱 실패", "사업보고서 접수번호 없음", "XBRL 다운로드 실패(BadZipFile)")
+_lock = threading.Lock()
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
@@ -293,6 +300,26 @@ def fetch_mcap(code):
     return None, None
 
 
+DA_CACHE = {}
+
+
+def load_da_cache():
+    global DA_CACHE
+    try:
+        with open(DA_CACHE_FILE, encoding="utf-8") as f:
+            DA_CACHE = json.load(f)
+    except Exception:
+        DA_CACHE = {}
+
+
+def save_da_cache():
+    try:
+        with open(DA_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(DA_CACHE, f, ensure_ascii=False, indent=0)
+    except Exception as e:
+        print("감가상각비 캐시 저장 실패:", e)
+
+
 def quantiles(vals):
     vals = sorted(vals)
     n = len(vals)
@@ -318,6 +345,8 @@ def main():
     now = dt.datetime.utcnow() + dt.timedelta(hours=9)
     years = [now.year - 1, now.year - 2]
 
+    load_da_cache()
+    print(f"감가상각비 캐시 {len(DA_CACHE)}건")
     cache = {}  # 종목코드 -> 결과 (같은 종목이 여러 업종에 있을 수 있음)
 
     def compute(name, code):
@@ -342,16 +371,27 @@ def main():
             return out
         mt = extract_metrics(rows)
         out.update({"year": year, "fs": fs})
-        if mt["da"] is None and time.time() - START > BUDGET:
-            out["da_why"] = "시간 예산 초과"
-        elif mt["da"] is None:
-            print("  XBRL 조회:", name, flush=True)
-            xda, xwhy = da_from_xbrl(corp_code, year, fs)
-            if xda is not None:
-                mt["da"] = xda
-                out["da_src"] = "xbrl"
+        if mt["da"] is None:
+            ckey = f"{corp_code}|{year}|{fs}"
+            hit = DA_CACHE.get(ckey)
+            if hit and hit.get("da") is not None:
+                mt["da"] = hit["da"]
+                out["da_src"] = "cache"
+            elif hit and hit.get("why") in PERMANENT_FAIL:
+                out["da_why"] = hit["why"]
+            elif time.time() - START > BUDGET:
+                out["da_why"] = "시간 예산 초과"
             else:
-                out["da_why"] = xwhy
+                print("  XBRL 조회:", name, flush=True)
+                xda, xwhy = da_from_xbrl(corp_code, year, fs)
+                if xda is not None:
+                    mt["da"] = xda
+                    out["da_src"] = "xbrl"
+                else:
+                    out["da_why"] = xwhy
+                with _lock:
+                    DA_CACHE[ckey] = {"da": xda, "why": xwhy}
+                    save_da_cache()
         mcap, src = fetch_mcap(code)
         time.sleep(0.2)
         if not mcap:
@@ -361,11 +401,18 @@ def main():
         out["mcap_eok"] = round(mcap / 1e8)
         out["mcap_src"] = src
         reasons = []
+        ev = mcap + mt["debt"] - mt["cash"] + mt["nci"]
+        out["ev_eok"] = round(ev / 1e8)
+        if mt["op"] is not None:
+            out["op_eok"] = round(mt["op"] / 1e8, 1)
+            # EBITDA 를 못 구한 곳도 EV/영업이익(EV/EBIT)은 구할 수 있다. EBITDA보다 이익이 작아 배수가 더 크게 나오는 상한값이다.
+            if mt["op"] > 0 and ev > 0:
+                eve = ev / mt["op"]
+                if 0 < eve <= 60:
+                    out["evEbit"] = round(eve, 1)
         if mt["op"] is not None and mt["da"] is not None:
             ebitda = mt["op"] + mt["da"]
-            ev = mcap + mt["debt"] - mt["cash"] + mt["nci"]
             out["ebitda_eok"] = round(ebitda / 1e8, 1)
-            out["ev_eok"] = round(ev / 1e8)
             if ebitda > 0 and ev > 0:
                 mult = ev / ebitda
                 if 0 < mult <= 50:
@@ -384,12 +431,30 @@ def main():
                 reasons.append(f"PER 범위 밖({per:.1f})")
         else:
             reasons.append("지배주주순이익 없음/적자")
-        out["ok"] = "evEbitda" in out or "per" in out
+        out["ok"] = "evEbitda" in out or "evEbit" in out or "per" in out
         if reasons:
             out["reason"] = "; ".join(reasons)
         cache[code] = out
         time.sleep(0.2)
         return out
+
+    # 같은 종목은 한 번만, 여러 종목을 동시에 계산한다 (DART·네이버에 부담이 가지 않도록 4개씩).
+    uniq, seen = [], set()
+    for sec in seed["sectors"]:
+        for name, code in sec["peers"]:
+            if code not in seen:
+                seen.add(code)
+                uniq.append((name, code))
+
+    def safe(nc):
+        try:
+            compute(*nc)
+        except Exception as e:
+            cache[nc[1]] = {"name": nc[0], "code": nc[1], "ok": False, "reason": f"오류: {e}"}
+
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        list(ex.map(safe, uniq))
+    save_da_cache()
 
     sectors_out = []
     for s in seed["sectors"]:
@@ -401,13 +466,14 @@ def main():
                 peers.append({"name": name, "code": code, "ok": False, "reason": f"오류: {e}"})
         ev_vals = [p["evEbitda"] for p in peers if "evEbitda" in p]
         per_vals = [p["per"] for p in peers if "per" in p]
+        ebit_vals = [p["evEbit"] for p in peers if "evEbit" in p]
         sectors_out.append({
             "id": s["id"], "name": s["name"], "keywords": s["keywords"],
-            "stats": {"evEbitda": quantiles(ev_vals), "per": quantiles(per_vals)},
+            "stats": {"evEbitda": quantiles(ev_vals), "evEbit": quantiles(ebit_vals), "per": quantiles(per_vals)},
             "peers": peers,
         })
         st = sectors_out[-1]["stats"]
-        print(f"{s['name']}: EV/EBITDA {st['evEbitda']} PER {st['per']} (유효 {len(ev_vals)}/{len(peers)})")
+        print(f"{s['name']}: EV/EBITDA {st['evEbitda']} EV/EBIT {st['evEbit']} PER {st['per']} (유효 {len(ev_vals)}/{len(peers)})")
 
     out = {"updated": now.strftime("%Y%m%d"),
            "note": "최근 사업연도 재무제표와 현재 시가총액(네이버 증권)으로 계산한 참고용 배수입니다. 25%/중앙값/75% 분위수를 보수/기본/낙관에 대응시킵니다.",

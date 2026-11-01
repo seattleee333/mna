@@ -4,14 +4,23 @@ on:
   schedule:
     - cron: "0 18 1 * *"   # 매월 1일 03:00 KST (일요일 새벽이 아니라 월 1회)
   workflow_dispatch:
+  push:
+    # 수집 코드나 비교기업 목록을 고치면 바로 한 번 다시 계산한다.
+    paths:
+      - fetch_peers.py
+      - peers_seed.json
 
 permissions:
   contents: write
 
+concurrency:
+  group: peers-collect
+  cancel-in-progress: false
+
 jobs:
   peers:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,12 +31,16 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python fetch_peers.py
+      - name: 업종별 동향 집계
+        if: always()
+        continue-on-error: true
+        run: python build_sector_board.py
       - name: 결과 저장
         if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          [ -f peers.json ] && git add peers.json
+          for f in peers.json peers_da_cache.json sector_board.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else
