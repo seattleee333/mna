@@ -31,11 +31,16 @@ jobs:
       - name: M&A 뉴스 수집
         run: python fetch_news.py
 
+      - name: 업종별 동향 집계
+        continue-on-error: true
+        run: python build_sector_board.py
+
       - name: 결과 저장
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add news.json
+          [ -f sector_board.json ] && git add sector_board.json
           if git diff --staged --quiet; then
             echo "변경 사항 없음"
           else

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>업종별 M&A 동향 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="sectors.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">ALL ABOUT M&amp;A</a>
+    <nav class="top-nav" id="topNav"></nav>
+  </div>
+</header>
+<main class="sc-wrap">
+  <div class="sc-head">
+    <h1>업종별 M&amp;A 동향</h1>
+    <p>최근 5년간 상장사가 공시한 인수 건수와 최근 한 달 뉴스 흐름, 상장사 배수를 업종별로 모았어요. 업종을 누르면 최근 사례와 진행 중인 매각·인수 기사를 볼 수 있어요.</p>
+    <div class="sc-asof" id="asof"></div>
+  </div>
+
+  <div class="sc-tools">
+    <span class="lab">정렬</span>
+    <button type="button" class="sc-chip on" data-sort="n">인수 건수순</button>
+    <button type="button" class="sc-chip" data-sort="trend">최근 증가순</button>
+    <button type="button" class="sc-chip" data-sort="news">최근 뉴스순</button>
+    <label class="sc-chk"><input type="checkbox" id="showAsset"> 금융·부동산도 보기 (자산 거래 포함)</label>
+  </div>
+
+  <div class="sc-list" id="list">
+    <div class="sc-cols">
+      <div></div><div>업종</div><div>5년 인수 공시 · 연도별</div><div>최근 흐름</div><div>거래 중앙값</div><div>뉴스 (30일)</div><div>상장사 배수</div>
+    </div>
+    <div id="rows"><div class="sc-empty" style="padding:26px 18px">불러오는 중...</div></div>
+  </div>
+
+  <details class="sc-foot">
+    <summary>이 화면은 이렇게 집계했어요</summary>
+    <ul>
+      <li><b>인수 건수</b>: 상장사가 인수 회사로 공시한 타법인 지분 취득·영업 양수입니다. 같은 그룹 안의 거래는 뺐어요. 비상장사끼리의 거래나 사모펀드의 직접 거래는 공시되지 않아 포함되지 않아요.</li>
+      <li><b>업종</b>: 인수 대상 회사의 사업 내용으로 자동 판정한 추정값이에요. 판정하지 못한 건은 빠져 있어요.</li>
+      <li><b>최근 흐름</b>: 최근 2년 평균을 그 전 3년 평균과 비교했어요. 건수가 적은 업종은 표본이 적어 참고만 하세요.</li>
+      <li><b>뉴스</b>: 기사 제목의 키워드로 업종과 단계를 나눈 결과라 틀릴 수 있어요. 기사 원문은 각 매체에서 확인하세요.</li>
+      <li><b>배수</b>: 상장 비교기업의 최근 사업연도 실적과 현재 시가총액으로 계산한 참고값이에요. 비상장 기업은 규모·유동성 때문에 더 낮게 평가되는 경우가 많아요.</li>
+    </ul>
+  </details>
+</main>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="sidebar.js"></script>
+<script>
+renderSidebar("sectors");
+var DATA = null, sortKey = "n", showAsset = false, openId = null;
+var rowsEl = document.getElementById("rows");
+
+function fmtAmt(a) {
+  if (a == null) return "-";
+  if (a >= 10000) return (a / 10000).toFixed(a >= 100000 ? 0 : 1).replace(/\.0$/, "") + "조";
+  return Math.round(a).toLocaleString() + "억";
+}
+function fmtD(d) { d = String(d || ""); return d.length >= 8 ? d.slice(2, 4) + "." + d.slice(4, 6) + "." + d.slice(6, 8) : ""; }
+function trendOf(s) {
+  var y = s.dart.years, n = s.dart.n;
+  var recent = (y[3] + y[4]) / 2, base = (y[0] + y[1] + y[2]) / 3;
+  var ratio = (recent + 0.5) / (base + 0.5);
+  var label, cls = "";
+  if (n < 15) { label = "표본 적음"; }
+  else if (ratio >= 1.25) { label = "확대 ↑"; cls = "up"; }
+  else if (ratio <= 0.75) { label = "축소 ↓"; cls = "down"; }
+  else { label = "유지 →"; }
+  return { ratio: ratio, label: label, cls: cls, small: n < 15 };
+}
+function rng(o) {
+  if (!o) return null;
+  return { base: o.base, lo: o.down, hi: o.up, n: o.n };
+}
+function multShort(s) {
+  var m = s.mult;
+  if (!m) return '<span class="sc-na">준비 중</span>';
+  var out = [];
+  if (m.small) {
+    out.push("<em>소형 흑자 상장사</em><br>EV/EBITDA " + m.small.ev_median + "배 · PER " + m.small.per_median + "배");
+  } else if (m.peers && m.peers.length) {
+    var p = m.peers[0], per = rng(p.per), ev = rng(p.ev);
+    if (ev) out.push("EV/EBITDA " + ev.base + "배");
+    if (per) out.push("PER " + per.base + "배");
+    if (!out.length) return '<span class="sc-na">자료 부족</span>';
+    return out.join("<br>");
+  }
+  return out.join("") || '<span class="sc-na">자료 부족</span>';
+}
+function sorted() {
+  var list = DATA.sectors.filter(function (s) { return showAsset || s.kind === "op"; });
+  var key = {
+    n: function (s) { return s.dart.n; },
+    trend: function (s) { return trendOf(s).small ? -1 : trendOf(s).ratio; },
+    news: function (s) { return s.news.n; }
+  }[sortKey];
+  return list.slice().sort(function (a, b) { return key(b) - key(a); });
+}
+function barsHtml(years, h) {
+  var mx = Math.max.apply(null, years.concat([1]));
+  return years.map(function (v) { return '<i style="height:' + Math.max(2, Math.round(v / mx * h)) + 'px" title="' + v + '건"></i>'; }).join("");
+}
+function rowHtml(s, i) {
+  var t = trendOf(s), d = s.dart, n = s.news;
+  var live = n.live.length;
+  return '<div class="sc-item' + (openId === s.id ? " open" : "") + '" data-id="' + s.id + '">' +
+    '<div class="sc-row">' +
+      '<div class="sc-rank">' + (i + 1) + '</div>' +
+      '<div class="sc-name">' + escHtml(s.name) + (s.kind === "asset" ? '<small>펀드·자산 거래 포함</small>' : '') + '</div>' +
+      '<div class="sc-cnt"><b>' + d.n + '</b><span>건</span><div class="sc-bars">' + barsHtml(d.years, 30) + '</div></div>' +
+      '<div class="sc-tr"><span class="sc-trend ' + t.cls + '">' + t.label + '</span></div>' +
+      '<div class="sc-med">' + (d.median != null ? fmtAmt(d.median) : "-") + '</div>' +
+      '<div class="sc-news"><b>' + n.n + '</b>건' + (live ? '<small>진행 ' + live + '</small>' : '') + '</div>' +
+      '<div class="sc-mult">' + multShort(s) + '</div>' +
+    '</div>' +
+    '<div class="sc-detail">' + (openId === s.id ? detailHtml(s) : "") + '</div>' +
+  '</div>';
+}
+function rangeTxt(o, unit) {
+  if (!o) return "-";
+  return o.base + "배 <em>(" + o.down + "~" + o.up + ", " + o.n + "곳)</em>";
+}
+function detailHtml(s) {
+  var d = s.dart, n = s.news, W = DATA.windows;
+  var mx = Math.max.apply(null, d.years.concat([1]));
+  var yrs = d.years.map(function (v, i) {
+    return '<div><b>' + v + '</b><i style="height:' + Math.max(2, Math.round(v / mx * 56)) + 'px"></i>~' + W[i].to.slice(2, 4) + '.' + W[i].to.slice(4, 6) + '</div>';
+  }).join("");
+  var cases = d.recent.length ? d.recent.map(function (c) {
+    var url = c.r ? "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=" + encodeURIComponent(c.r) : "";
+    var body = '<span class="d">' + fmtD(c.d) + '</span><b>' + escHtml(c.b) + '</b> → ' + escHtml(c.t) +
+      (c.a != null ? ' <span class="amt">' + fmtAmt(c.a) + '</span>' : '');
+    return '<li>' + (url ? '<a target="_blank" rel="noopener" href="' + url + '">' + body + '</a>' : body) + '</li>';
+  }).join("") : '<li class="sc-empty">최근 사례가 없어요.</li>';
+  var live = n.live.length ? n.live.map(function (x) {
+    return '<li><span class="sc-stage s-' + escHtml(x.stage) + '">' + escHtml(x.stage) + '</span>' +
+      '<a target="_blank" rel="noopener" href="' + escHtml(x.link) + '">' + escHtml(x.title) + '</a>' +
+      '<div class="d">' + fmtNewsTime(x.pub) + (x.src ? " · " + escHtml(x.src) : "") + '</div></li>';
+  }).join("") : '<li class="sc-empty">최근 30일 동안 키워드로 잡힌 매각 추진·입찰 기사가 없어요.</li>';
+
+  var mult = "";
+  var m = s.mult;
+  if (m) {
+    mult += '<div class="sc-box" style="margin-top:14px"><h4>상장 비교기업 배수</h4>';
+    if (m.peers) m.peers.forEach(function (p) {
+      var bits = [];
+      if (p.ev) bits.push("EV/EBITDA " + rangeTxt(p.ev, ""));
+      if (p.per) bits.push("PER " + rangeTxt(p.per, ""));
+      mult += '<div style="font-size:13px;line-height:1.7"><b>' + escHtml(p.name) + '</b> · ' + (bits.join(" · ") || "자료 부족") + '</div>';
+    });
+    if (m.small) {
+      var sm = m.small;
+      mult += '<div style="font-size:13px;margin-top:8px"><b>소형 배전반 상장사 (흑자·영업이익률 5%↑)</b> · EV/EBITDA 중앙 ' + sm.ev_median + '배 (' + sm.ev_min + '~' + sm.ev_max + ') · PER 중앙 ' + sm.per_median + '배 (' + sm.per_min + '~' + sm.per_max + ')</div>' +
+        '<table class="sc-mtbl"><tr><th>회사</th><th>시총</th><th>PER</th><th>EV/EBITDA</th></tr>' +
+        sm.rows.map(function (r) {
+          return '<tr><td>' + escHtml(r.name) + '</td><td>' + r.mcap.toLocaleString() + '억</td><td>' + r.per + '배</td><td>' +
+            (r.ev_ebitda ? r.ev_ebitda + '배' : '≤ ' + r.ev_op + '배') + '</td></tr>';
+        }).join("") + '</table><div class="sc-note">' + escHtml(sm.note) + ' 비상장 소형사는 규모·유동성 때문에 이보다 낮게 평가되는 경우가 많아요.</div>';
+    }
+    mult += '</div>';
+  }
+  return '<div class="sc-dgrid">' +
+    '<div class="sc-box"><h4>연도별 인수 공시<span>' + d.n + '건 · 경영권 인수 ' + d.control + '건 · 해외 대상 ' + d.overseas + '건</span></h4><div class="sc-years">' + yrs + '</div></div>' +
+    '<div class="sc-box"><h4>최근 뉴스 흐름<span>30일 ' + n.n + '건</span></h4><div style="font-size:13px;color:var(--sub);line-height:1.7">' + stageTxt(n.stages) + '</div></div>' +
+    '<div class="sc-box"><h4>최근 인수 공시<span>제목을 누르면 공시 원문</span></h4><ul class="sc-case">' + cases + '</ul></div>' +
+    '<div class="sc-box"><h4>진행 중인 매각·인수 기사<span>최근 30일</span></h4><ul class="sc-live">' + live + '</ul></div>' +
+  '</div>' + mult;
+}
+function stageTxt(st) {
+  var order = ["추진", "입찰", "우선협상", "계약", "완료"];
+  var parts = order.filter(function (k) { return st[k]; }).map(function (k) { return k + " " + st[k] + "건"; });
+  var etc = st["기타"] || 0;
+  return (parts.length ? parts.join(" · ") + (etc ? " · " : "") : "") + (etc ? "그 외 기사 " + etc + "건" : (parts.length ? "" : "집계된 기사가 없어요."));
+}
+function draw() {
+  rowsEl.innerHTML = sorted().map(rowHtml).join("");
+  Array.prototype.forEach.call(rowsEl.querySelectorAll(".sc-row"), function (r) {
+    r.onclick = function () {
+      var id = r.parentNode.getAttribute("data-id");
+      openId = openId === id ? null : id;
+      draw();
+      if (openId) { var el = rowsEl.querySelector('[data-id="' + openId + '"]'); if (el && el.scrollIntoView) el.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+    };
+  });
+}
+Array.prototype.forEach.call(document.querySelectorAll(".sc-chip"), function (b) {
+  b.onclick = function () {
+    sortKey = b.getAttribute("data-sort");
+    Array.prototype.forEach.call(document.querySelectorAll(".sc-chip"), function (x) { x.classList.toggle("on", x === b); });
+    draw();
+  };
+});
+document.getElementById("showAsset").onchange = function () { showAsset = this.checked; draw(); };
+
+fetch("sector_board.json?t=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
+  if (!d) { rowsEl.innerHTML = '<div class="sc-empty" style="padding:26px 18px">데이터를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.</div>'; return; }
+  DATA = d;
+  var cc = d.coverage.cases, nc = d.coverage.news;
+  var w0 = d.windows[0].from, w4 = d.windows[4].to;
+  document.getElementById("asof").textContent =
+    "인수 공시 " + w0.slice(0, 4) + "." + w0.slice(4, 6) + " ~ " + w4.slice(0, 4) + "." + w4.slice(4, 6) +
+    " · 업종 판정 " + cc.classified.toLocaleString() + "/" + cc.ext.toLocaleString() + "건 · 뉴스 최근 " + nc.days + "일 " + nc.classified.toLocaleString() + "/" + nc.total.toLocaleString() + "건 분류 · 갱신 " + d.asof;
+  draw();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* 업종별 M&A 동향 */
+.sc-wrap { max-width:1080px; margin:0 auto; padding:28px 24px 0; }
+.sc-head h1 { margin:0; font-size:24px; font-weight:800; letter-spacing:-.02em; }
+.sc-head p { margin:8px 0 0; font-size:14px; color:var(--sub); line-height:1.6; word-break:keep-all; }
+.sc-asof { font-size:12px; color:var(--faint); margin-top:6px; }
+
+.sc-tools { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:20px 0 12px; }
+.sc-tools .lab { font-size:12.5px; color:var(--sub); font-weight:700; margin-right:2px; }
+.sc-chip { border:1px solid var(--line); background:var(--card); color:var(--sub); font-size:13px; font-weight:700;
+           padding:7px 13px; border-radius:99px; cursor:pointer; font-family:inherit; }
+.sc-chip.on { background:var(--accent-soft); color:var(--accent); border-color:#cfd8fb; }
+.sc-chk { margin-left:auto; font-size:13px; color:var(--sub); display:flex; gap:6px; align-items:center; cursor:pointer; }
+
+.sc-list { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; }
+.sc-cols, .sc-row { display:grid; grid-template-columns:36px minmax(150px,1.5fr) 150px 92px 86px 96px minmax(120px,1.1fr); gap:10px; align-items:center; padding:0 18px; }
+.sc-cols { font-size:11.5px; color:var(--faint); font-weight:700; padding-top:12px; padding-bottom:10px; border-bottom:1px solid var(--line); background:#fafbfc; }
+.sc-item { border-top:1px solid var(--line); }
+.sc-item:first-of-type { border-top:0; }
+.sc-row { min-height:64px; cursor:pointer; transition:background .12s; }
+.sc-row:hover { background:var(--bg); }
+.sc-rank { font-weight:800; color:var(--faint); font-style:italic; }
+.sc-item:nth-child(-n+3) .sc-rank { color:var(--accent); }
+.sc-name { font-weight:800; font-size:15px; line-height:1.35; word-break:keep-all; }
+.sc-name small { display:block; font-size:11.5px; font-weight:600; color:var(--faint); margin-top:2px; }
+.sc-cnt b { font-size:16px; font-weight:800; }
+.sc-cnt span { font-size:12px; color:var(--faint); margin-left:2px; }
+.sc-bars { display:flex; align-items:flex-end; gap:3px; height:30px; margin-top:4px; }
+.sc-bars i { flex:1; background:#cfd8fb; border-radius:2px 2px 0 0; min-height:2px; display:block; }
+.sc-bars i:last-child { background:var(--accent); }
+.sc-trend { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:99px; background:var(--bg); color:var(--sub); white-space:nowrap; }
+.sc-trend.up { background:#e8f6ee; color:#12804a; }
+.sc-trend.down { background:#fdeceb; color:#c0392b; }
+.sc-med { font-size:13.5px; font-weight:700; }
+.sc-news b { font-weight:800; }
+.sc-news small { display:block; font-size:11.5px; color:var(--accent); font-weight:700; margin-top:2px; }
+.sc-mult { font-size:12.5px; line-height:1.5; color:var(--text); }
+.sc-mult em { font-style:normal; color:var(--faint); }
+.sc-na { color:var(--faint); font-size:12.5px; }
+.sc-caret { display:none; }
+
+.sc-detail { display:none; padding:6px 18px 22px 64px; background:#fafbfc; border-top:1px dashed var(--line); }
+.sc-item.open .sc-detail { display:block; }
+.sc-item.open .sc-row { background:var(--accent-soft); }
+.sc-dgrid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:14px; }
+.sc-box h4 { margin:0 0 8px; font-size:13.5px; font-weight:800; }
+.sc-box h4 span { font-weight:600; color:var(--faint); font-size:12px; margin-left:6px; }
+.sc-years { display:flex; gap:8px; align-items:flex-end; height:84px; margin-bottom:6px; }
+.sc-years div { flex:1; text-align:center; font-size:11px; color:var(--faint); display:flex; flex-direction:column; justify-content:flex-end; height:100%; }
+.sc-years div i { display:block; background:#cfd8fb; border-radius:3px 3px 0 0; margin-top:3px; }
+.sc-years div:last-child i { background:var(--accent); }
+.sc-years div b { font-size:12px; color:var(--text); }
+.sc-case, .sc-live { list-style:none; margin:0; padding:0; }
+.sc-case li, .sc-live li { padding:8px 0; border-top:1px solid var(--line); font-size:13px; line-height:1.5; }
+.sc-case li:first-child, .sc-live li:first-child { border-top:0; }
+.sc-case .d, .sc-live .d { color:var(--faint); font-size:11.5px; margin-right:6px; }
+.sc-case .amt { color:var(--accent); font-weight:800; }
+.sc-case a, .sc-live a { color:inherit; text-decoration:none; }
+.sc-case a:hover, .sc-live a:hover { color:var(--accent); }
+.sc-stage { display:inline-block; font-size:11px; font-weight:800; padding:1px 7px; border-radius:6px; margin-right:6px; background:var(--bg); color:var(--sub); }
+.sc-stage.s-추진 { background:#fff4e0; color:#a15c00; }
+.sc-stage.s-입찰 { background:#e8eefc; color:#2542b8; }
+.sc-stage.s-우선협상 { background:#e8f6ee; color:#12804a; }
+.sc-empty { font-size:13px; color:var(--faint); padding:6px 0; }
+.sc-mtbl { width:100%; border-collapse:collapse; font-size:12.5px; margin-top:6px; }
+.sc-mtbl th, .sc-mtbl td { text-align:right; padding:6px 6px; border-top:1px solid var(--line); }
+.sc-mtbl th:first-child, .sc-mtbl td:first-child { text-align:left; }
+.sc-mtbl th { color:var(--faint); font-weight:700; border-top:0; }
+.sc-note { font-size:12px; color:var(--faint); line-height:1.6; margin-top:8px; word-break:keep-all; }
+.sc-foot { margin:18px 0 8px; font-size:12.5px; color:var(--sub); line-height:1.7; }
+.sc-foot summary { cursor:pointer; font-weight:800; color:var(--text); }
+.sc-foot li { margin:3px 0; }
+.sc-asset-h { margin:22px 2px 8px; font-size:13px; font-weight:800; color:var(--sub); }
+
+@media (max-width:860px) {
+  .sc-wrap { padding:18px 16px 0; }
+  .sc-cols { display:none; }
+  .sc-row { grid-template-columns:26px minmax(0,1fr) auto; grid-template-areas:"rank name cnt" "rank tr news"; row-gap:8px; padding:12px 14px; min-height:0; }
+  .sc-rank { grid-area:rank; align-self:start; padding-top:2px; }
+  .sc-name { grid-area:name; }
+  .sc-cnt { grid-area:cnt; text-align:right; }
+  .sc-tr { grid-area:tr; }
+  .sc-news { grid-area:news; text-align:right; font-size:12.5px; }
+  .sc-news small { display:inline; margin-left:6px; }
+  .sc-bars, .sc-med, .sc-mult { display:none; }
+  .sc-detail { padding:6px 14px 20px; }
+  .sc-dgrid { grid-template-columns:1fr; gap:10px; }
+  .sc-chk { margin-left:0; width:100%; }
+}
