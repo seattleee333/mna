@@ -30,8 +30,10 @@
   "market": "Y",
   "report_nm": "공개매수설명서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "한국철강이 공개매수를 진행합니다.",
   "summary_src": "title"
  },
@@ -44,8 +46,10 @@
   "market": "Y",
   "report_nm": "공개매수신고서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "한국철강이 공개매수를 신고했습니다.",
   "summary_src": "title"
  },
