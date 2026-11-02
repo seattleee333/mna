@@ -22,6 +22,28 @@
   "detail_done": true
  },
  {
+  "rcept_no": "20261102000048",
+  "date": "20261102",
+  "corp_code": "00677334",
+  "corp_name": "아하",
+  "stock_code": "102950",
+  "market": "N",
+  "report_nm": "합병등종료보고서(합병)",
+  "category": "합병",
+  "kind": "merger_done",
+  "direction": null,
+  "buyer": null,
+  "seller": "(주)아주테크",
+  "target": "(주)아주테크",
+  "amount": null,
+  "note": "합병기일 2026.10.31",
+  "source": "raw_document",
+  "raw_v": 3,
+  "summary": "아하가 아주테크를 흡수합병했습니다 (합병기일 2026.10.31).",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261102000002",
   "date": "20261102",
   "corp_code": "00687711",
