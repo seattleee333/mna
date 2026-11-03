@@ -25,8 +25,10 @@ WORKERS = 5
 DEBUG_FILE = "exec_pay_debug.txt"
 OUT = f"exec_pay_{YEAR}.json"
 
-RE_CEO = re.compile(r"대표|CEO", re.I)
-RE_TOP = re.compile(r"대표|CEO|회장|(?<!부)사장", re.I)
+RE_CEO = re.compile(r"(?<!부)대표|CEO", re.I)
+RE_TOP = re.compile(r"(?<!부)대표|CEO|회장|(?<!부)사장", re.I)
+# 이미 물러난 사람(전임·퇴직·사임·고문 등)은 퇴직금이 섞여 있어 현직 순위에서 뺀다. 이름·직위 칸 어디에 적혀 있어도 거른다.
+RE_FORMER = re.compile(r"前|\(전\)|전\s*\)|전임|퇴직|퇴임|사임|고문|자문|명예", re.I)
 
 _lock = threading.Lock()
 rows = []            # 5억원 이상 보수를 받은 모든 사람 (메모리에서만 사용)
@@ -77,13 +79,18 @@ def market_of(cls):
     return {"Y": "KOSPI", "K": "KOSDAQ"}.get(cls)
 
 
-def rank(items, market, regex):
-    pick = [x for x in items if market_of(x["cls"]) == market and regex.search(x["pos"])]
+def clean(t):
+    return re.sub(r"\s+", " ", t or "").strip()
+
+
+def rank(items, market, regex, former=False):
+    pick = [x for x in items if market_of(x["cls"]) == market and regex.search(x["pos"])
+            and bool(RE_FORMER.search(x["nm"] + " " + x["pos"])) == former]
     pick.sort(key=lambda x: -x["pay"])
     out = []
     for i, x in enumerate(pick[:TOP], 1):
         out.append({
-            "rank": i, "name": x["nm"], "company": x["co"], "stock": x["stock"], "pos": x["pos"],
+            "rank": i, "name": clean(x["nm"]), "company": x["co"], "stock": x["stock"], "pos": clean(x["pos"]),
             "pay_eok": round(x["pay"] / 1e8, 1),
             "excl_eok": round(x["excl"] / 1e8, 1) if x.get("excl") else None,
             "rcept": x["rcept"],
@@ -117,11 +124,12 @@ def main():
     for mk in ("KOSPI", "KOSDAQ"):
         res[mk.lower()], counts[mk] = rank(rows, mk, RE_CEO)
         res[mk.lower() + "_top"], counts[mk + "_top"] = rank(rows, mk, RE_TOP)
+        res[mk.lower() + "_former"], counts[mk + "_former"] = rank(rows, mk, RE_TOP, former=True)
     res["counts"] = counts
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(res, f, ensure_ascii=False, indent=1)
 
-    pos = Counter(x["pos"] for x in rows if market_of(x["cls"]))
+    pos = Counter(clean(x["pos"]) for x in rows if market_of(x["cls"]))
     with open(DEBUG_FILE, "w", encoding="utf-8") as f:
         f.write(f"year {YEAR}\n상장사 {len(todo)}\n상태 {dict(status)}\n5억원 이상 인원 {len(rows)}\n")
         f.write(f"cls {dict(Counter(x['cls'] for x in rows))}\n필드 {sample_keys}\n대표 순위 대상 {counts}\n")
