@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>2FATPT8HDNHBJPBC</RequestId><HostId>akRK27aV0UaxQPrNtiRdamLBysNofiSQ71lpjwUfX/GVki7M5D
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>FFG5NEWYZZV20KPQ</RequestId><HostId>Oh+aLzjki44Yp1DjGi28FOEQbwgPN3/4FMQcxNzY+JLwQBYfQy
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>2FARKM8VMQT08MXA</RequestId><HostId>J3kTPwHhxr2T9QXauvq9FaubmlTlzD5A26praTeJGp+BBeVWdb
-  2026-11-03 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>G2D65FDVQT909JAB</RequestId><HostId>WeyS3vLTonM5rX+B6lPz00QvpHmiJPqP0PeM7x8zh1JNu8MTdD
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 3, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              Nextchip Inc.                                                 2155037     20261103    edgar/data/2155037/0002155037-26-000001.txt                                                
+  2026-11-03 8-K 421건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>Z8JGTR3FNXAQYW1J</RequestId><HostId>WkeHyxUtr60bafFlkz1kLcwHxcvWiTjDUCcwT7CHu8zOYp2cbw
   2026-11-04 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2184건 (이번 신규 0건, LLM 0건)
+새로 확인할 8-K 421건
+저장: 딜 2192건 (이번 신규 8건, LLM 0건)
