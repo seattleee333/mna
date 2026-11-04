@@ -1,56 +1,150 @@
 [
  {
-  "title": "이글 뉴클리어 에너지, 노블 플레인스 우라늄 인수 추진…구속력 있는 의향서 체결 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1udlVzZTVzdDY0YVc5MURUY2ZCeG9SM0lwMEdWVEtNR2JVa05RMFZqTnpUZmxDTDY2MkFGUDdSV0w4WFRKMjNEd041WVh4V0Jvd0p2dVJTRy0xNUNiZU5ZUVlvVDA5SzJVc1RSOFdBVUkzYW8?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611042150"
- },
- {
-  "title": "어레이 테크놀러지스, 사상 최대 수주잔고와 쇼얼스 합병 추진에 매수세 유입 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmdXBTMEJ0ZVNOSU51bk9KSHJSR3NWcVNqMkt5R2FicVpZTndBSDdwOG1DT0NIb2g1YW5qTDZLSGNVb2lFYkVlZGZEbEhvd2prd0E?oc=5",
+  "title": "큐리그닥터페퍼, JDE 피츠 인수 효과로 3분기 매출 급증에 주목 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5FdXN2d0VxNml1MjFiYmJYUXpha0NqempXejJ1NHBxaXZQSXZXaXB0ZjMxa0RSLWR0QmNIWEM4MURPRXhNTXF0Nk1hMVYyNUxlVEE?oc=5",
   "sources": [
    "매일경제 마켓"
   ],
   "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611042150"
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050151"
  },
  {
-  "title": "SKT \"울산 AIDC 2029년 하반기 가동 목표\"…앤트로픽 지분 매각 가능성도 - MTN 머니투데이방송",
-  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhMVhDNVVlYjN1OGh5THVuXzV4WmZoRWp1OW1DbWpTc2FmNXRwbFFGWVJBZklPVWdkbGpLTUxiUTlhV0V3c3htMVEtcHZPYVRHeFhJdklibXVSVjl6aHJN?oc=5",
+  "title": "중앙일보 새 주인은 다우·CJ컨소시엄⋯ 5200억 신주인수계약 - 국민일보",
+  "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9OaFFhSjZQWXNsUkhjRldNRVVmZVRFaE5vNUpEMERxVm9LM1hvbUs4aFlwVWxFbFRvME1kTnpsdlV1aW1zUGxnTC02RXNiRXZxcDZ6UlhDYW4?oc=5",
   "sources": [
-   "MTN 머니투데이방송"
+   "MTN 머니투데이방송",
+   "SBS Biz",
+   "경향신문",
+   "국민일보",
+   "뉴스핌",
+   "뉴시스",
+   "동아일보",
+   "매일경제",
+   "매일경제 마켓",
+   "문화일보",
+   "생생비즈플러스",
+   "스포츠월드",
+   "아이뉴스24",
+   "연합뉴스",
+   "연합뉴스TV",
+   "이투데이",
+   "인베스트조선",
+   "재경일보",
+   "조선일보",
+   "쿠키뉴스",
+   "한국경제",
+   "한국기자협회",
+   "한국일보"
+  ],
+  "outlet_count": 23,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050120"
+ },
+ {
+  "title": "크레센트에너지, 디본 인수 부채 부담과 통합 리스크에 투자심리 위축 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XLTBJdnFRMHNzRnA4MGtmM0lkZVJKVk1aSFNMRUx3d2JkWmFZM2ZOaHN1NXFSRDVFU3NPUW41M1RrQS1LSUJaYnZPNlZTelhJaGc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050120"
+ },
+ {
+  "title": "모에브, 알제리 유전 3곳 지분 페르타미나에 매각 합의 - 토큰포스트",
+  "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ldFY0allwR2kzdWxkelJBbzB4NWZjZTVMTEJiUGU5cHJXMG0wVjA3UUlMQUdmZ18wamVrbXVVdFMtUnNyaWJSZnF6Yi1MYlZzbVlrSE5oNNIBXEFVX3lxTE03ZkYzUkRKWkdTTHF1MDRYd2VSLXIyU2Y2clZ2dHdVSllJZzNjdVU1SmFqYlpfTG1OOVktZmpJR1VqQnFRMmszS2RHSUJTaE9RVU83Q051c0d0MlVh?oc=5",
+  "sources": [
+   "토큰포스트"
   ],
   "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611042130"
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050101"
  },
  {
-  "title": "워크스포트, 첫 인수 추진..트럭 액세서리 사업 텀시트 체결 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5TRmdneXRNa19wRjYza295dmtnSHBVb0EzTnB4V1gtb3J3bm1hZjdXOXZkbW1XU1NkTklkY1RYWVZWdlAzT1N4OVZXeWpfQXlDWnc?oc=5",
+  "title": "팬아메리칸실버, 갤리온골드 지분 추가 취득으로 금 자원 확보 기대감 부각 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBkbmRWTzFqbnVxelZIdENFdFBaNE54dmNFcHN6bDJ4LXNBZEo0NklVcERyVTliMUJQSGlpdWpMT01nNjBVeEdQQm5KcEhadW8tTnc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050040"
+ },
+ {
+  "title": "‘머스크 합병’에 서학개미만 양도세 내는 이유는? - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMF9IWk81OXhoam85ZVBWMzRYczlmWnM1OUdyelAzcWR0Rm5qNmpYWThQUDhzV0p2UzdLRDl4X3NZaTVpUEFtdnlhaTFKY18xT2c3RkpGRXh5WnBtU3pJVEloX1pqS0xodVBQMGxnclFYQTBNcVRLMHl0QUNYVHdPX09yZnZpVWt10gGcAUFVX3lxTE96eHU0aWtRVVJjbDZLWTJEUGx3ZUhDdE1LdXcyejVuc0xfVUdJNzY1V1VkM29pNHBfT2hKb0NNcFFMNFJVR0NsNGdfdkdJdVN2dm8xcTVnN2lack8wNjJOY2t0OXpucUs1SEtpTF9mVmk2b3Q3QzZkMTJUSW5XYXRLeVl0UEwydVlEWFJNU1J1ZldPRFBtNUVqaHlqbw?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050035"
+ },
+ {
+  "title": "펭귄솔루션스, 크리 LED 사업 매각 발표 후 매출 감소 우려에 약세 흐름 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEZ1EtdHlvbHBJSXVid3M2Y0Uybk43R2gxaVdxa0U1MGVrR0paWEtzQ24tUU5COG5yUnN6Rmpua05JdnQyM3U3UmVZRG9pazBvV3c?oc=5",
   "sources": [
    "매일경제 마켓"
   ],
   "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611042119"
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050030"
  },
  {
-  "title": "중앙일보 새 주인에 다우·CJ컨소시엄…5200억원에 경영권 인수 - 뉴스인사이드",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBraFhJa2FodjVuSWRjTzR1cW5YUWxvRlFxXzVIdnJ6VGxqQWMzdG8xZGtXWWtnZkpUUTBjREJTbWxrVmdRWjAxeWxBRm5HVmp6MWRBSFJBcGJiWm5rVVEtdU10UVFMdFJZOGNneWZ3?oc=5",
+  "title": "리얼브로커리지, 합병 효과와 2027년 흑자전환 기대감에 주목 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE01Q0RvWHJreE11WHB3d1RnUW5wSFN4dHM5RVlra1Vva2hqeTVpYmR5aDI2b2ZJNDdiWGRyRGlkN0ktOEJzSThVN2NDNEtJaXJfdFE?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611050000"
+ },
+ {
+  "title": "숄스 테크놀러지스 그룹, 어레이와 합병..2027년 매출 22억~24억 달러 제시 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE42YVZrWXlBNVpxMko1Q1RVTlM5djZ5UFpoenotSGMxYnZMS3hLZWVoNEp3bEJGWmptQUtsZjJYN2MxTnFsTkFvWVNJcEtUckRaT3c?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611042326"
+ },
+ {
+  "title": "루멘텀, 마벨 피인수 후 핵심 고객사 이탈 우려 부각 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PQllsUWZJN0Z1UXRtZlN4SFQ3eEJTeC1Kbld3NUVCd1dIcTRRa3FKbWh1YmJkanBjWXpaeGxybHpFNGJuajBzckVISWVSb2c1aHc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611042321"
+ },
+ {
+  "title": "다우·CJ컨소시엄, 중앙일보 신주인수계약...5천2백억 규모 - YTN",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50S3RHOVRmRDVnVDRtWVJjd2hoX2x3czVLQ2w1UE5RYzBaOVJXUWo0RmNYVkJnbGk3ZGFmbU9ORTRzdk83OWNETzQzcG5FQ1FKNUpSQ1V2YXQ2QkltTDBPZjk3cjBqMVJOQUx3V3ZpTXpuODZNbkE?oc=5",
   "sources": [
    "KB Think",
    "MBC 뉴스",
    "MTN 머니투데이방송",
    "SBS Biz",
+   "TradingView",
+   "YTN",
+   "경제타임스",
    "경향신문",
    "국민일보",
    "뉴스인사이드",
@@ -60,6 +154,8 @@
    "매일경제",
    "매일경제 마켓",
    "문화일보",
+   "부산일보",
+   "비즈니스포스트",
    "생생비즈플러스",
    "아이뉴스24",
    "연합뉴스",
@@ -75,12 +171,103 @@
    "한국경제",
    "한국기자협회",
    "한국일보",
-   "한스경제"
+   "한스경제",
+   "헤럴드경제"
   ],
-  "outlet_count": 29,
+  "outlet_count": 35,
   "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611042057"
+  "last_seen": "20261105",
+  "pub": "202611042316"
+ },
+ {
+  "title": "캐스톨 마리타임, 자회사 통해 말로우 41% 인수..1억2600만 달러 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAwdEtoYVFxUG9fRXphR1J3aW5SX20wLTRNYjZVR3g1M2dwSFJCVzIzamdCS0pKNERBaERDdm5RV3pXUjlscC1zNndHZlAwU1RfVkE?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611042314"
+ },
+ {
+  "title": "럭스퍼 홀딩스, 윈처치 피인수안 주총 통과..주당 17.37달러 현금 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2cEZLMnhTRVZzUld3SFB1N3lCTGVIOEgtS0dVR2dFcy1FZmI1NHNXZkRMXzVkM3hObjdGbm0xU29UWmFid1Nqd3VRLW5tVGlNaXc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261030",
+  "last_seen": "20261105",
+  "pub": "202611042308"
+ },
+ {
+  "title": "뉴셀엑스, 마진돌 자산 REA 매각..마일스톤 최대 5500만 달러 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNbTBHUXE3aEtGWnAyQlNQQ3dnYXJsU3g3V0tRMFJ3bjQyUm1scWEyejRrVEI0c0FiTDB3aGNZdXVmbkh3OF9iOTZlWTFrOUtiS1E?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261030",
+  "last_seen": "20261105",
+  "pub": "202611042217"
+ },
+ {
+  "title": "NewcelX, Mazindol 자산을 REA에 매각…지분·성과급 수령 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBIa0FzcU1zM2JsZ1huTWhqZExQM2RUbEo0TUdaazFfV1g5M3ZYUm1HNE42dDBiVHFQVHhhMmJXS2xBM2wycHd0N2FacUNjVzZ0WXlzOFZTS0tfM3g5d0lXOW5DYUNlSlJKY1RnZ3FCZ0o?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611042205"
+ },
+ {
+  "title": "이글 뉴클리어 에너지, 노블 플레인스 우라늄 인수 추진…구속력 있는 의향서 체결 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1udlVzZTVzdDY0YVc5MURUY2ZCeG9SM0lwMEdWVEtNR2JVa05RMFZqTnpUZmxDTDY2MkFGUDdSV0w4WFRKMjNEd041WVh4V0Jvd0p2dVJTRy0xNUNiZU5ZUVlvVDA5SzJVc1RSOFdBVUkzYW8?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611042150"
+ },
+ {
+  "title": "어레이 테크놀러지스, 사상 최대 수주잔고와 쇼얼스 합병 추진에 매수세 유입 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmdXBTMEJ0ZVNOSU51bk9KSHJSR3NWcVNqMkt5R2FicVpZTndBSDdwOG1DT0NIb2g1YW5qTDZLSGNVb2lFYkVlZGZEbEhvd2prd0E?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611042150"
+ },
+ {
+  "title": "SKT \"울산 AIDC 2029년 하반기 가동 목표\"…앤트로픽 지분 매각 가능성도 - MTN 머니투데이방송",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhMVhDNVVlYjN1OGh5THVuXzV4WmZoRWp1OW1DbWpTc2FmNXRwbFFGWVJBZklPVWdkbGpLTUxiUTlhV0V3c3htMVEtcHZPYVRHeFhJdklibXVSVjl6aHJN?oc=5",
+  "sources": [
+   "MTN 머니투데이방송"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611042130"
+ },
+ {
+  "title": "워크스포트, 첫 인수 추진..트럭 액세서리 사업 텀시트 체결 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5TRmdneXRNa19wRjYza295dmtnSHBVb0EzTnB4V1gtb3J3bm1hZjdXOXZkbW1XU1NkTklkY1RYWVZWdlAzT1N4OVZXeWpfQXlDWnc?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611042119"
  },
  {
   "title": "GP-ACT III 애퀴지션, 드로나믹스와 합병 계약..기업가치 5억달러 - 매일경제 마켓",
@@ -91,7 +278,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611042047"
  },
  {
@@ -129,7 +316,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041942"
  },
  {
@@ -140,7 +327,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041926"
  },
  {
@@ -154,7 +341,7 @@
   ],
   "outlet_count": 4,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041920"
  },
  {
@@ -173,11 +360,12 @@
   "title": "DL케미칼, 카리플렉스 지분 100% 매각...글랜우드PE와 MOU 체결 - 아주경제",
   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE92TE0tU2ZVbmFtU0t6M1VuZUp6NWVLQzhOWEszamgxU0JMX2w4YTJZTjBKOWFSeWF6VGd6R2huVEdiTlRjdDFzbHVld295RFBHVlJlTHh0aUjSAVhBVV95cUxPdkxNLVNmVW5hbVNLejNVbmVKejVlS0M4TlhLM2poMVNCTF9sOGEyWU4wSjlhUnlhelRnekdoblRHYk5UY3Qxc2x1ZXdveURQR1ZSZUx4dGlI?oc=5",
   "sources": [
+   "매일경제 마켓",
    "아주경제"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041916"
  },
  {
@@ -192,7 +380,7 @@
   ],
   "outlet_count": 5,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041909"
  },
  {
@@ -214,7 +402,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041837"
  },
  {
@@ -226,7 +414,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041833"
  },
  {
@@ -237,8 +425,19 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041830"
+ },
+ {
+  "title": "중앙일보, 27년 만에 범삼성가 품으로… 5200억 신주인수계약 최종 체결 - 미디어오늘",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wb0xSdFphbjFZd2E4OE1BNlRDNnVqOUFwN2VXMWsyZTJQN1ZNMzRnVVJWX1MtZldNWjkyek44MnBzVkFIMk9tNVUtU0FaMjVzY2RzM08zWGdSMWJON0dkV2FHa1B6aEhMNTc2enlhZG0?oc=5",
+  "sources": [
+   "미디어오늘"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611041822"
  },
  {
   "title": "토종 PE의 자존심 글랜우드PE, 1.8兆 카리플렉스 인수 - 뉴스톱",
@@ -249,7 +448,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041818"
  },
  {
@@ -261,7 +460,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041812"
  },
  {
@@ -272,7 +471,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041807"
  },
  {
@@ -283,8 +482,20 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041801"
+ },
+ {
+  "title": "SK, 에코플랜트 공개매수로 100% 자회사 추진 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10V2MxUDlPdDZ2RW9KZm5OUmxNNU16NUl3cU1QQXZ2dlNTZVlDcWpTSjdHVHR5QnFNdHk2ZnJnNWlWLVBkWjY0ajlvV1d2Vl8wT0hyLU5n?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611041800"
  },
  {
   "title": "[컨콜]SKT, \"AIDC 투자에 외부 자금 활용…앤트로픽 지분 매각도 고려\" - 머니투데이 - 머니투데이",
@@ -294,7 +505,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041757"
  },
  {
@@ -316,7 +527,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041755"
  },
  {
@@ -327,8 +538,19 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041747"
+ },
+ {
+  "title": "SK㈜, SK에코플랜트 완전자회사 추진…1.4조원에 지분 25% 공개매수 - 서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TYnJaRUtzWG9neDF2RndWRWo0NVo5RGo4eFVEazllOWhQT2FIV1l1R3EyNzc3VWVfSUUyb3NqYU9Idm9BVnVHSlVJV2VpajQ3T0HSAVNBVV95cUxQTUREdUplMlIzakgyZUZvQXJoZzduM3RMTzhCbmFmRUNoTlI5V3BfMlBTSzVaQmsxZnA4U05FVktLWjhEblF6alNLZGUwcWxXRW5Mcw?oc=5",
+  "sources": [
+   "서울경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611041745"
  },
  {
   "title": "\"美민주당 승리, 신재생·헬스케어 수혜… AI株 분할매수를\" - 매일경제",
@@ -338,7 +560,18 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611041743"
+ },
+ {
+  "title": "기업분할 ㈜한화 순익 1조 … 현대百 영업익 30% 급증 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02VVpJNVc0M09yWDdzX2F1MVZzWWszYmdpUXlJNzFISm44NFBFS0N3bTcyUy1BblkzUjBYNExaVng1d2FMemdyMzFxUTEtT1JpSmc?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
   "pub": "202611041743"
  },
  {
@@ -350,7 +583,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041742"
  },
  {
@@ -361,7 +594,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041742"
  },
  {
@@ -372,18 +605,19 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041738"
  },
  {
   "title": "“기업이 합쳤는데 왜 세금 내라는 거냐”…테슬라·스페이스X 합병 가능성에 청원 - 매일경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iR3pEWnFOaWRzQW45V2Z0WG1hWDI4OXdQbGVsUWNONXo2WmYyQ3A1MGVCc0VRNTZfaHRsYlFHamJvS3BIVktfRDVwU0xuZmNvRmc?oc=5",
   "sources": [
-   "매일경제"
+   "매일경제",
+   "매일경제 마켓"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041731"
  },
  {
@@ -396,7 +630,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041727"
  },
  {
@@ -408,7 +642,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041726"
  },
  {
@@ -419,7 +653,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041723"
  },
  {
@@ -433,7 +667,7 @@
   ],
   "outlet_count": 4,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041721"
  },
  {
@@ -444,7 +678,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041721"
  },
  {
@@ -455,19 +689,8 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041721"
- },
- {
-  "title": "SK㈜, SK에코플랜트 주식 공개매수…상장 대신 완전자회사 편입 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE16Q3JKQlZmb0JuRloyQ05QdnZCdjVfelhyeTE1dnkzZXRSVlNMQ1V3UG9fQno5dXlxWldNRG9UR21tdnUwUjM2RkdReXJaV1lFdFE?oc=5",
-  "sources": [
-   "매일경제 마켓"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611041713"
  },
  {
   "title": "내달 고양창릉서 '지분적립형' 284가구 - 한국경제",
@@ -477,8 +700,19 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041710"
+ },
+ {
+  "title": "28년 만의 의무공개매수, '개미 보호'인가 '대주주 면죄부'인가…쟁점은 '누구 주식 먼저 사느냐' - 핀포인트뉴스",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBYVUgtNmc0bER4ZlJlXzRPQnU1V2tLS21vdUFkeXRkYU5IYU5rdGJpaGQwbllzcUZfZ3pPbXNELTROejhIQ3hjTFBPTGdZSGZNLThGa05sWUxKc0VDOWpzcDl5ZlVJYlBPQ0JqS29DX1J5bzjSAXdBVV95cUxOMFpnejFJOE8zVzkzZTNNdEczbUFQb1ozS1ZWd1hqS2h2TWVLNDZ2a1h0OF9hLV9mQWNtcVZHWlV1eTRGQU40X0ljbXlIMzI3VGZQLUY4WEZzd2wyU2tQZ2dlMzhKZUVIVnZiSHFMa3RUYUM1THdtMA?oc=5",
+  "sources": [
+   "핀포인트뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261105",
+  "last_seen": "20261105",
+  "pub": "202611041708"
  },
  {
   "title": "공개매수 흥행한 김동선…한화M&S 지분 5배로 늘렸다 - 매일경제",
@@ -488,7 +722,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041705"
  },
  {
@@ -510,7 +744,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041632"
  },
  {
@@ -521,7 +755,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041626"
  },
  {
@@ -532,7 +766,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041626"
  },
  {
@@ -554,7 +788,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041615"
  },
  {
@@ -565,7 +799,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041613"
  },
  {
@@ -580,7 +814,7 @@
   ],
   "outlet_count": 5,
   "first_seen": "20261029",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041611"
  },
  {
@@ -591,7 +825,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041611"
  },
  {
@@ -614,7 +848,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261023",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041604"
  },
  {
@@ -625,7 +859,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041548"
  },
  {
@@ -636,7 +870,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041545"
  },
  {
@@ -647,7 +881,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041537"
  },
  {
@@ -666,7 +900,7 @@
   ],
   "outlet_count": 9,
   "first_seen": "20261017",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041536"
  },
  {
@@ -682,7 +916,7 @@
   ],
   "outlet_count": 6,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041531"
  },
  {
@@ -693,7 +927,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041531"
  },
  {
@@ -706,7 +940,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041525"
  },
  {
@@ -717,7 +951,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041509"
  },
  {
@@ -728,7 +962,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041503"
  },
  {
@@ -750,7 +984,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041457"
  },
  {
@@ -761,7 +995,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041451"
  },
  {
@@ -772,7 +1006,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041451"
  },
  {
@@ -783,7 +1017,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041421"
  },
  {
@@ -807,7 +1041,7 @@
   ],
   "outlet_count": 14,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041419"
  },
  {
@@ -818,7 +1052,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041410"
  },
  {
@@ -830,7 +1064,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041409"
  },
  {
@@ -843,7 +1077,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261030",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041408"
  },
  {
@@ -854,7 +1088,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041354"
  },
  {
@@ -866,7 +1100,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041350"
  },
  {
@@ -879,7 +1113,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041349"
  },
  {
@@ -897,7 +1131,7 @@
   ],
   "outlet_count": 8,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041329"
  },
  {
@@ -909,7 +1143,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041324"
  },
  {
@@ -920,7 +1154,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041320"
  },
  {
@@ -932,7 +1166,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041312"
  },
  {
@@ -957,7 +1191,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041300"
  },
  {
@@ -968,7 +1202,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041255"
  },
  {
@@ -1002,7 +1236,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041206"
  },
  {
@@ -1013,7 +1247,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041200"
  },
  {
@@ -1024,7 +1258,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041157"
  },
  {
@@ -1035,7 +1269,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041153"
  },
  {
@@ -1046,7 +1280,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041134"
  },
  {
@@ -1058,7 +1292,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041127"
  },
  {
@@ -1113,7 +1347,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041123"
  },
  {
@@ -1124,7 +1358,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041121"
  },
  {
@@ -1135,7 +1369,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041114"
  },
  {
@@ -1159,7 +1393,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041101"
  },
  {
@@ -1170,7 +1404,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041100"
  },
  {
@@ -1192,7 +1426,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041046"
  },
  {
@@ -1216,7 +1450,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041041"
  },
  {
@@ -1227,7 +1461,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041032"
  },
  {
@@ -1238,7 +1472,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041026"
  },
  {
@@ -1249,7 +1483,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041024"
  },
  {
@@ -1260,7 +1494,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041023"
  },
  {
@@ -1282,7 +1516,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041018"
  },
  {
@@ -1293,7 +1527,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611041013"
  },
  {
@@ -1304,7 +1538,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040959"
  },
  {
@@ -1321,7 +1555,7 @@
   ],
   "outlet_count": 7,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040949"
  },
  {
@@ -1341,7 +1575,7 @@
   ],
   "outlet_count": 10,
   "first_seen": "20261030",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040947"
  },
  {
@@ -1352,7 +1586,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040946"
  },
  {
@@ -1394,7 +1628,7 @@
   ],
   "outlet_count": 21,
   "first_seen": "20261028",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040932"
  },
  {
@@ -1405,7 +1639,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040931"
  },
  {
@@ -1428,7 +1662,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040921"
  },
  {
@@ -1439,7 +1673,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040913"
  },
  {
@@ -1472,7 +1706,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040903"
  },
  {
@@ -1483,7 +1717,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040900"
  },
  {
@@ -1494,7 +1728,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040859"
  },
  {
@@ -1505,7 +1739,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040857"
  },
  {
@@ -1527,7 +1761,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040843"
  },
  {
@@ -1550,7 +1784,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040831"
  },
  {
@@ -1561,7 +1795,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040829"
  },
  {
@@ -1573,7 +1807,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040820"
  },
  {
@@ -1630,7 +1864,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040743"
  },
  {
@@ -1653,7 +1887,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040731"
  },
  {
@@ -1664,7 +1898,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040720"
  },
  {
@@ -1675,7 +1909,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040716"
  },
  {
@@ -1686,7 +1920,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040712"
  },
  {
@@ -1697,7 +1931,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040705"
  },
  {
@@ -1709,7 +1943,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040704"
  },
  {
@@ -1720,7 +1954,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040650"
  },
  {
@@ -1753,7 +1987,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040640"
  },
  {
@@ -1764,7 +1998,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040630"
  },
  {
@@ -1775,7 +2009,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040625"
  },
  {
@@ -1819,7 +2053,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040614"
  },
  {
@@ -1841,7 +2075,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040611"
  },
  {
@@ -1852,7 +2086,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040600"
  },
  {
@@ -1874,7 +2108,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040557"
  },
  {
@@ -1896,7 +2130,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040534"
  },
  {
@@ -1907,7 +2141,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040500"
  },
  {
@@ -1918,7 +2152,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040500"
  },
  {
@@ -1951,7 +2185,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261022",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040435"
  },
  {
@@ -1974,7 +2208,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040340"
  },
  {
@@ -1997,7 +2231,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040240"
  },
  {
@@ -2005,13 +2239,14 @@
   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE00c1dKXy1Ka0ZYTjhKaXJidXJtTVQ1YzZwZmZHdEc0UzBPTnZ4Yi0xekxOOEhvNnh0UWU3QW1iQ0FvYnRPVWJVUVBnWXo2WmdmWGhIMzQwRjdhSzdSRk96Nm9FNlF1dw?oc=5",
   "sources": [
    "FT스포츠",
+   "SBS 뉴스",
    "매일신문",
    "스포츠경향",
    "연합뉴스"
   ],
-  "outlet_count": 4,
+  "outlet_count": 5,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040153"
  },
  {
@@ -2034,7 +2269,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261023",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040116"
  },
  {
@@ -2046,7 +2281,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611040108"
  },
  {
@@ -2144,8 +2379,20 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032311"
+ },
+ {
+  "title": "옵파이, BNC 인수 인가신청 철회..연간 가이던스 유지 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yMXBvRzlWcFNpdkZYeVE4bUdmQkV5Z08wcUgzMFBjdzhQR2tjTE1KbXV6Y1hSSXpwa0JRYkU0ZjRHM2J2d1ZnVXJKUUZuUUlueVE?oc=5",
+  "sources": [
+   "데이터투자",
+   "매일경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261104",
+  "last_seen": "20261105",
+  "pub": "202611032302"
  },
  {
   "title": "스탠다드 바이오툴즈, 마이크로플루이딕스 사업 ARCHIMED에 매각 완료 - 매일경제 마켓",
@@ -2155,7 +2402,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032250"
  },
  {
@@ -2166,7 +2413,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032246"
  },
  {
@@ -2179,17 +2426,6 @@
   "first_seen": "20261104",
   "last_seen": "20261104",
   "pub": "202611032245"
- },
- {
-  "title": "옵파이, BNC 인수 승인 신청 철회…합병 계약은 유지 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3T3ktY1RiSnFPU1dCYWxkWUNFdTRPYmp0OTZsZTZKUXg0VGlSTWI0T1Frdi01X3o1MW00aEd0VWdJenluOXJZeDVIU2NsU3pCTmpXcUdFLWI5bkNMOWFETHB3YVhCYkdnQUFUTFJDQVJMQkk?oc=5",
-  "sources": [
-   "데이터투자"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261104",
-  "pub": "202611032238"
  },
  {
   "title": "인터내셔널 시웨이스, 브루턴 인수 완료…합병 대가로 보통주 약 110만 주 발행 예정 - 데이터투자",
@@ -2210,7 +2446,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032222"
  },
  {
@@ -2268,7 +2504,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032043"
  },
  {
@@ -2280,7 +2516,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261102",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032020"
  },
  {
@@ -2303,7 +2539,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611032007"
  },
  {
@@ -2314,7 +2550,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031952"
  },
  {
@@ -2325,7 +2561,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031920"
  },
  {
@@ -2349,7 +2585,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031910"
  },
  {
@@ -2371,7 +2607,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031858"
  },
  {
@@ -2382,7 +2618,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031842"
  },
  {
@@ -2415,7 +2651,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031807"
  },
  {
@@ -2426,7 +2662,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031800"
  },
  {
@@ -2448,7 +2684,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031754"
  },
  {
@@ -2460,7 +2696,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031743"
  },
  {
@@ -2471,7 +2707,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031737"
  },
  {
@@ -2494,7 +2730,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031734"
  },
  {
@@ -2505,7 +2741,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031730"
  },
  {
@@ -2516,7 +2752,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031729"
  },
  {
@@ -2538,7 +2774,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031701"
  },
  {
@@ -2571,7 +2807,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031650"
  },
  {
@@ -2582,7 +2818,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031644"
  },
  {
@@ -2608,7 +2844,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031640"
  },
  {
@@ -2632,7 +2868,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031639"
  },
  {
@@ -2649,12 +2885,13 @@
    "이투데이",
    "인더스트리뉴스",
    "주간한국",
+   "파이낸셜포스트",
    "프라임경제",
    "한국경제"
   ],
-  "outlet_count": 12,
+  "outlet_count": 13,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031637"
  },
  {
@@ -2668,7 +2905,7 @@
   ],
   "outlet_count": 4,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031636"
  },
  {
@@ -2679,7 +2916,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031636"
  },
  {
@@ -2690,7 +2927,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031636"
  },
  {
@@ -2735,7 +2972,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031620"
  },
  {
@@ -2779,7 +3016,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031601"
  },
  {
@@ -2790,7 +3027,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031559"
  },
  {
@@ -2858,7 +3095,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031529"
  },
  {
@@ -2870,7 +3107,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031527"
  },
  {
@@ -2883,7 +3120,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031522"
  },
  {
@@ -2927,7 +3164,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031511"
  },
  {
@@ -2938,7 +3175,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031500"
  },
  {
@@ -2949,7 +3186,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031458"
  },
  {
@@ -2960,7 +3197,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031457"
  },
  {
@@ -2983,7 +3220,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031434"
  },
  {
@@ -2994,7 +3231,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031432"
  },
  {
@@ -3061,7 +3298,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031400"
  },
  {
@@ -3074,7 +3311,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031319"
  },
  {
@@ -3085,7 +3322,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031313"
  },
  {
@@ -3096,7 +3333,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031312"
  },
  {
@@ -3118,7 +3355,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031204"
  },
  {
@@ -3129,7 +3366,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031202"
  },
  {
@@ -3141,7 +3378,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031151"
  },
  {
@@ -3163,19 +3400,19 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031148"
  },
  {
   "title": "[특징주] 삼아알미늄, 최대주주 도요알미늄 지분 매각…주가 13%대 급락 - 아주경제",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zdF9UbWRUZW9sdDBJMkRJUFZrSjZiOWF1cEJNbWNobzZHMmxxcDhuQlhqNXpDUkJtTERic1dYb2ltSFNhTlJTOGRVMVQxN3RWR2VPcG9UOGd3QdIBWEFVX3lxTE5rSVJtUzVXVkxJM2I2Z0s5ZlNJNVdNSENTWnNtWUhKVGdSLTlxMU40SnEzQ3V1bW94VEppUDRGck15NWQ0U2xZUlBtNGtfQ1pUV01wZU1vM0w?oc=5",
+  "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rSVJtUzVXVkxJM2I2Z0s5ZlNJNVdNSENTWnNtWUhKVGdSLTlxMU40SnEzQ3V1bW94VEppUDRGck15NWQ0U2xZUlBtNGtfQ1pUV01wZU1vM0zSAVhBVV95cUxOa0lSbVM1V1ZMSTNiNmdLOWZTSTVXTUhDU1pzbVlISlRnUi05cTFONEpxM0N1dW1veFRKaVA0RnJNeTVkNFNsWVJQbTRrX0NaVFdNcGVNbzNM?oc=5",
   "sources": [
    "아주경제"
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
-  "pub": "202611031146"
+  "last_seen": "20261105",
+  "pub": "202611031147"
  },
  {
   "title": "日 슈퍼 ‘라이프’(8194 JP), 알비스(7475 JP) 인수…매출 9800억엔 업계 1위 탈환 노린다 - 알파경제",
@@ -3198,7 +3435,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031135"
  },
  {
@@ -3210,7 +3447,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031133"
  },
  {
@@ -3233,7 +3470,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031128"
  },
  {
@@ -3276,7 +3513,7 @@
   ],
   "outlet_count": 5,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031119"
  },
  {
@@ -3299,7 +3536,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031110"
  },
  {
@@ -3321,7 +3558,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031044"
  },
  {
@@ -3332,7 +3569,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031040"
  },
  {
@@ -3365,7 +3602,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031023"
  },
  {
@@ -3376,7 +3613,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031015"
  },
  {
@@ -3420,7 +3657,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031003"
  },
  {
@@ -3431,7 +3668,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611031002"
  },
  {
@@ -3453,7 +3690,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030952"
  },
  {
@@ -3486,7 +3723,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030945"
  },
  {
@@ -3509,7 +3746,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030936"
  },
  {
@@ -3554,7 +3791,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030858"
  },
  {
@@ -3565,7 +3802,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030858"
  },
  {
@@ -3578,7 +3815,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261031",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030857"
  },
  {
@@ -3613,7 +3850,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030841"
  },
  {
@@ -3625,7 +3862,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030838"
  },
  {
@@ -3637,7 +3874,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030832"
  },
  {
@@ -3659,7 +3896,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030809"
  },
  {
@@ -3694,7 +3931,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030730"
  },
  {
@@ -3705,7 +3942,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030727"
  },
  {
@@ -3717,7 +3954,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261030",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030720"
  },
  {
@@ -3728,7 +3965,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261104",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030717"
  },
  {
@@ -3739,7 +3976,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030715"
  },
  {
@@ -3774,7 +4011,7 @@
   ],
   "outlet_count": 3,
   "first_seen": "20261014",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030700"
  },
  {
@@ -3818,7 +4055,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030658"
  },
  {
@@ -3829,7 +4066,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030657"
  },
  {
@@ -3884,7 +4121,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030634"
  },
  {
@@ -3974,8 +4211,20 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030614"
+ },
+ {
+  "title": "리오틴토 합병 무산 9개월… 글렌코어, '경영권 변동 대비' 지배구조 손질 - 글로벌이코노믹",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNczI1NzhNMHp0X1NtMXJZcVNsYnY3RXZzRi0xSUZtNi1tRjlWX09ZM2pGZElPc2FwSldBN1RSZDNqWU5nRWRDTnFhYmZvNm9VaElZNVZaY2ZVdTZIWHVZYld4R3NqbzJHc2RiT0k0NzNoTkFQRDNPSkJwUGtfRE93ZVlBa3pva28?oc=5",
+  "sources": [
+   "글로벌이코노믹",
+   "초이스스탁US"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261103",
+  "last_seen": "20261105",
+  "pub": "202611030600"
  },
  {
   "title": "[티맵 M&A] 국민 이동정보 8000억에 파는 SK…정보주권 국외유출 - 딜사이트",
@@ -3985,7 +4234,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030600"
  },
  {
@@ -3996,7 +4245,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030600"
  },
  {
@@ -4007,7 +4256,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030600"
  },
  {
@@ -4018,18 +4267,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
-  "pub": "202611030600"
- },
- {
-  "title": "리오틴토 합병 무산 9개월… 글렌코어, '경영권 변동 대비' 지배구조 손질 - 글로벌이코노믹",
-  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNczI1NzhNMHp0X1NtMXJZcVNsYnY3RXZzRi0xSUZtNi1tRjlWX09ZM2pGZElPc2FwSldBN1RSZDNqWU5nRWRDTnFhYmZvNm9VaElZNVZaY2ZVdTZIWHVZYld4R3NqbzJHc2RiT0k0NzNoTkFQRDNPSkJwUGtfRE93ZVlBa3pva28?oc=5",
-  "sources": [
-   "글로벌이코노믹"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030600"
  },
  {
@@ -4095,7 +4333,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261103",
-  "last_seen": "20261104",
+  "last_seen": "20261105",
   "pub": "202611030236"
  },
  {
@@ -10822,18 +11060,6 @@
   "pub": "202610292251"
  },
  {
-  "title": "ADT, 스라이브 홀딩스에 153억달러 피인수…주당 10달러 현금 - 매일경제",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNa3Rsa1M4XzUyVlFtcFJMUFZwU0FVc19Cd2F2OGdOSHBkZ1ZSOEdqbDEyRklGZUxiYUtMd2ZjcWF6QkRha1R3Vk9fUXVDc3hQVHc?oc=5",
-  "sources": [
-   "매일경제",
-   "매일경제 마켓"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261030",
-  "last_seen": "20261031",
-  "pub": "202610292225"
- },
- {
   "title": "INFLECTION POINT ACQUISI, 퀀텀스페이스 합병 S-4 효력..11월 20일 표결 - 매일경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mUkFsUXlSVjJ6SGstMXYycExyck9xOXRwd3JzYlhTTmsxbl9mVVhHMVhHRWxXNGtqUzRudXRBbGtOeWs5bjliN0xmQUJwR0hyYlE?oc=5",
   "sources": [
@@ -11099,17 +11325,6 @@
   "first_seen": "20261030",
   "last_seen": "20261031",
   "pub": "202610290521"
- },
- {
-  "title": "넥세라 테크놀로지스, 자회사 킵존AI 매각..최대 600만 달러 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5KaExkUVBSN1JyZW90NFJVN1pfczZ2WjFNeWJJdFQ2ZTdvZkh4TF9wWUlhTjJVR3AtMk8yQWpfUjJGYWVsalluaFhFSTJtRmt5akE?oc=5",
-  "sources": [
-   "매일경제 마켓"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261030",
-  "last_seen": "20261031",
-  "pub": "202610290502"
  },
  {
   "title": "르네상트, 커머셜홀딩 인수 합의에 신주 희석·통합 부담 부각 - 매일경제 마켓",
