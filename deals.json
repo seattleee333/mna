@@ -30,8 +30,10 @@
   "market": "K",
   "report_nm": "공개매수에관한의견표명서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "아이패밀리에스씨가 공개매수를 진행합니다.",
   "summary_src": "title"
  },
