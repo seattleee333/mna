@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WD4QAHZWXWN1SBY9</RequestId><HostId>BxWdyDb+Dw2jCtEy9z+DC64DnTkORFf+GxZHgphokk9b8uKjB9
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>T8Y0ACMAFTHHXA5Z</RequestId><HostId>1U9m1qdtkomdYRm3ruHO/cqq7UAwMNFHalF/HVC4onm7+cITLp
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 4, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A POS          Modern Mining Technology Corp.                                1898722     20261104    edgar/data/1898722/0001213900-26-115771.txt                                                
-  2026-11-04 8-K 588건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>8H95BAP3WC89SG74</RequestId><HostId>oGxBJCLaRPMXR91+DkM7l/eeBP2WNsF0IVVC8xeRuC0KiXsqml
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>T075QP6B70C4AZ8S</RequestId><HostId>KpLuzhAmHhE36+dzpn2R47YI+GwDhmHxc1u3gOP4CFFf07qlY5
   2026-11-05 8-K 0건
-새로 확인할 8-K 588건
-저장: 딜 2204건 (이번 신규 12건, LLM 0건)
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>T079C4ZM4CE43K0T</RequestId><HostId>pl6L/RrGIleKa1N4mG8pVd5wztJkqsWG1kyyZjJuMRtrVqxSxo
+  2026-11-06 8-K 0건
+새로 확인할 8-K 0건
+저장: 딜 2204건 (이번 신규 0건, LLM 0건)
