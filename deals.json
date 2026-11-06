@@ -22,6 +22,20 @@
   "detail_done": true
  },
  {
+  "rcept_no": "20261106000043",
+  "date": "20261106",
+  "corp_code": "00692254",
+  "corp_name": "아이패밀리에스씨",
+  "stock_code": "114840",
+  "market": "K",
+  "report_nm": "공개매수에관한의견표명서",
+  "category": "공개매수",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "아이패밀리에스씨가 공개매수를 진행합니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261106000003",
   "date": "20261106",
   "corp_code": "00545716",
@@ -30,8 +44,10 @@
   "market": "Y",
   "report_nm": "공개매수설명서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "롯데렌탈이 공개매수를 진행합니다.",
   "summary_src": "title"
  },
@@ -44,8 +60,10 @@
   "market": "Y",
   "report_nm": "공개매수신고서",
   "category": "공개매수",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "롯데렌탈이 공개매수를 신고했습니다.",
   "summary_src": "title"
  },
