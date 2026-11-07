@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘의 M&A · ALL ABOUT M&A</title>
+<meta name="description" content="매일 공시된 M&A 딜 가운데 가장 주목받은 한 건을 쉽게 정리해 드려요.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../home.css">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../index.html">ALL ABOUT M&amp;A</a><nav class="top-nav" id="topNav"></nav></div></header>
+<main class="post">
+  <h1>오늘의 M&amp;A</h1>
+  <p class="lead">매일 공시된 딜 가운데 가장 주목받은 한 건을 쉽게 풀어 드려요.</p>
+  <p class="post-note">공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다.</p>
+  <ul class="blog-list" id="list"><li><a href="#"><div class="bs">불러오는 중...</div></a></li></ul>
+</main>
+<script>window.MNA_BASE="../";</script>
+<script src="../config.js"></script>
+<script src="../auth.js"></script>
+<script src="../sidebar.js"></script>
+<script>
+renderSidebar("blog");
+fetch("posts.json?t=" + Date.now()).then(r => r.ok ? r.json() : []).then(list => {
+  const el = document.getElementById("list");
+  if (!list.length) { el.innerHTML = '<li><a href="#"><div class="bs">아직 올라온 글이 없어요.</div></a></li>'; return; }
+  el.innerHTML = list.map(p => '<li><a href="' + escHtml(p.file) + '"><div class="bd">' +
+    p.date.slice(0,4) + '.' + p.date.slice(4,6) + '.' + p.date.slice(6) + '</div><div class="bt">' + escHtml(p.title) +
+    '</div><div class="bs">' + escHtml(p.desc) + '</div></a></li>').join("");
+}).catch(() => { document.getElementById("list").innerHTML = '<li><a href="#"><div class="bs">목록을 불러올 수 없어요.</div></a></li>'; });
+</script>
+</body>
+</html>

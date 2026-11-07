@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>오늘 올릴 글 확인 · ALL ABOUT M&A</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blog/blog.css">
+<style>
+.tw { max-width:900px; margin:0 auto; padding:28px 20px 70px; }
+.tw h1 { font-size:24px; margin:0 0 6px; }
+.tw .sub { color:var(--sub); font-size:14px; margin:0 0 22px; }
+.box { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:18px; box-shadow:var(--shadow); }
+.box h2 { font-size:16px; margin:0 0 10px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.box textarea { width:100%; min-height:230px; border:1px solid var(--line); border-radius:10px; padding:12px; font:14.5px/1.65 inherit; font-family:inherit; resize:vertical; }
+.box textarea.sm { min-height:70px; }
+.btn { border:0; background:var(--accent); color:#fff; font-weight:700; font-size:14px; padding:8px 16px; border-radius:9px; cursor:pointer; text-decoration:none; white-space:nowrap; }
+.btn.ghost { background:var(--accent-soft); color:var(--accent); }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:12px; }
+.cards a { display:block; text-decoration:none; font-size:13px; text-align:center; color:var(--sub); }
+.cards img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; margin-bottom:4px; }
+.steps { font-size:14px; color:var(--sub); line-height:1.8; margin:0; padding-left:18px; }
+.warn { background:#fff8e6; border:1px solid #f3dfa2; color:#7a5b00; border-radius:10px; padding:10px 14px; font-size:13.5px; margin-bottom:18px; }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html">ALL ABOUT M&amp;A</a></div></header>
+<div class="tw" id="app">불러오는 중...</div>
+<script>
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function box(title, id, text, sm){
+  return '<div class="box"><h2>' + title + '<button class="btn" data-copy="' + id + '">복사</button></h2><textarea id="' + id + '"' + (sm ? ' class="sm"' : '') + '>' + esc(text) + '</textarea></div>';
+}
+fetch("daily/latest.json?t=" + Date.now()).then(r => { if(!r.ok) throw 0; return r.json(); }).then(d => {
+  if (!d.text) { document.getElementById("app").textContent = d.message || "오늘 올릴 글이 없어요."; return; }
+  const t = d.text, dt = d.date, ymd = dt.slice(0,4)+"."+dt.slice(4,6)+"."+dt.slice(6);
+  let imgs = "";
+  for (let i = 1; i <= 5; i++) imgs += '<a href="post/' + dt + '/card' + i + '.png" download="mna_' + dt + '_card' + i + '.png" target="_blank"><img src="post/' + dt + '/card' + i + '.png" alt="카드 ' + i + '">카드 ' + i + ' 저장</a>';
+  document.getElementById("app").innerHTML =
+    '<h1>오늘 올릴 글 · ' + ymd + '</h1>' +
+    '<p class="sub">' + esc(t.headline) + '</p>' +
+    '<div class="warn">올리기 전에 숫자·회사명이 맞는지 <a target="_blank" href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + esc(d.pick.rcept) + '">공시 원문</a>과 한 번 대조해 주세요. 마음에 안 들면 글을 고쳐서 올려도 돼요.</div>' +
+    '<div class="box"><h2>① 블로그 <a class="btn ghost" href="blog/' + dt + '.html" target="_blank">글 보기</a></h2><p class="sub" style="margin:0">사이트 블로그에는 자동으로 올라가 있어요. 네이버 블로그 등에 올리려면 글 보기 화면을 복사해 붙여 넣으세요.</p></div>' +
+    '<div class="box"><h2>② 인스타 카드 5장 (저장해서 순서대로 올리기)</h2><div class="cards">' + imgs + '</div></div>' +
+    box("인스타 본문", "ig", t.instagram) +
+    box("③ 링크드인 본문", "li", t.linkedin) +
+    box("링크드인 첫 댓글 (링크는 댓글에 붙이면 도달이 더 잘 돼요)", "lic", t.linkedin_comment, true) +
+    '<div class="box"><h2>올리는 순서</h2><ol class="steps"><li>공시 원문과 숫자 대조</li><li>링크드인: 본문 복사 → 새 글 쓰기에 붙여넣기 → 게시 → 첫 댓글로 링크 붙이기</li><li>인스타: 카드 1~5 저장 → 여러 장 게시 → 본문 붙여넣기</li></ol></div>';
+  document.querySelectorAll("[data-copy]").forEach(b => b.onclick = () => {
+    const ta = document.getElementById(b.dataset.copy); ta.select();
+    (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).catch(() => document.execCommand("copy"));
+    b.textContent = "복사됨 ✓"; setTimeout(() => b.textContent = "복사", 1500);
+  });
+}).catch(() => { document.getElementById("app").textContent = "오늘 자료를 불러오지 못했어요."; });
+</script>
+</body>
+</html>

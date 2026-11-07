@@ -4,17 +4,19 @@ function escHtml(s) {
 
 // 상단 내비게이션 메뉴
 function renderSidebar(active) {
+  const P = window.MNA_BASE || "";
   const el = document.getElementById("topNav");
   if (!el) return;
   renderAuthBox(el);
   renderFooter();
   el.innerHTML =
-    '<a href="deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
-    '<a href="listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
-    '<a href="cases.html" class="' + (active === "cases" ? "on" : "") + '">인수 사례</a>' +
-    '<a href="sectors.html" class="' + (active === "sectors" ? "on" : "") + '">업종별 동향</a>' +
-    '<a href="data.html" class="' + (active === "data" ? "on" : "") + '">M&amp;A 데이터</a>' +
-    '<a href="sell.html" class="nav-cta' + (active === "sell" ? " on" : "") + '">매각하기</a>';
+    '<a href="' + P + 'deals.html" class="' + (active === "daily" ? "on" : "") + '">딜클로징 리스트</a>' +
+    '<a href="' + P + 'listings.html" class="' + (active === "listings" ? "on" : "") + '">매물·인수희망 리스트</a>' +
+    '<a href="' + P + 'cases.html" class="' + (active === "cases" ? "on" : "") + '">인수 사례</a>' +
+    '<a href="' + P + 'sectors.html" class="' + (active === "sectors" ? "on" : "") + '">업종별 동향</a>' +
+    '<a href="' + P + 'blog/index.html" class="' + (active === "blog" ? "on" : "") + '">오늘의 M&amp;A</a>' +
+    '<a href="' + P + 'data.html" class="' + (active === "data" ? "on" : "") + '">M&amp;A 데이터</a>' +
+    '<a href="' + P + 'sell.html" class="nav-cta' + (active === "sell" ? " on" : "") + '">매각하기</a>';
 }
 
 // 오른쪽 패널: M&A 최신뉴스를 카드 형태로 표시한다 (메뉴와 분리된 영역). 최근 기사가 위로 온다.
@@ -114,18 +116,20 @@ function pickDistinctNews(list, limit) {
 
 // 모든 페이지 공통 푸터 (회사 정보는 이 한 곳에서만 수정)
 function renderFooter() {
+  const P = window.MNA_BASE || "";
   if (document.getElementById("contact")) return;
   const f = document.createElement("footer");
   f.className = "hfooter";
   f.id = "contact";
   f.innerHTML = `<div class="hfooter-in">
     <nav class="fnav">
-      <a href="deals.html">딜클로징 리스트</a>
-      <a href="listings.html">매물·인수희망</a>
-      <a href="cases.html">인수 사례</a>
-      <a href="sectors.html">업종별 동향</a>
-      <a href="data.html">M&amp;A 데이터</a>
-      <a href="sell.html">매각하기</a>
+      <a href="${P}deals.html">딜클로징 리스트</a>
+      <a href="${P}listings.html">매물·인수희망</a>
+      <a href="${P}cases.html">인수 사례</a>
+      <a href="${P}sectors.html">업종별 동향</a>
+      <a href="${P}blog/index.html">오늘의 M&amp;A</a>
+      <a href="${P}data.html">M&amp;A 데이터</a>
+      <a href="${P}sell.html">매각하기</a>
       <a href="#">공지사항</a>
       <a href="#">자주 묻는 질문</a>
       <a href="#">이용약관</a>

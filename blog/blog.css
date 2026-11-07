@@ -1,0 +1,29 @@
+.post { max-width:760px; margin:0 auto; padding:32px 20px 70px; line-height:1.75; }
+.post-meta { font-size:13.5px; color:var(--sub); margin:0 0 8px; }
+.post-meta a { color:var(--accent); text-decoration:none; font-weight:700; }
+.post h1 { font-size:28px; line-height:1.35; letter-spacing:-.02em; margin:0 0 14px; word-break:keep-all; }
+.post h2 { font-size:19px; margin:34px 0 10px; letter-spacing:-.01em; }
+.post p { margin:0 0 12px; word-break:keep-all; }
+.post .lead { font-size:17.5px; font-weight:600; }
+.post-tbl { width:100%; border-collapse:collapse; margin:18px 0 8px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+.post-tbl th, .post-tbl td { padding:12px 16px; text-align:left; border-bottom:1px solid var(--line); font-size:15px; }
+.post-tbl th { width:32%; color:var(--sub); font-weight:600; background:#fafbfc; }
+.post-tbl tr:last-child th, .post-tbl tr:last-child td { border-bottom:0; }
+.post-src a { display:inline-block; margin:0 8px 6px 0; font-size:14px; color:var(--accent); font-weight:700; }
+.post-list { list-style:none; margin:0 0 10px; padding:0; }
+.post-list li { padding:9px 0; border-top:1px solid var(--line); font-size:15px; }
+.post-list li:first-child { border-top:0; }
+.post-list a { text-decoration:none; font-weight:600; }
+.post-list a:hover { color:var(--accent); }
+.post-list span { color:var(--faint); font-size:12.5px; margin-left:6px; }
+.post-note { font-size:13px; color:var(--sub); }
+.post-cta { margin:32px 0 10px; padding:16px 18px; background:var(--accent-soft); border-radius:var(--radius); font-weight:700; }
+.post-cta a { color:var(--accent); text-decoration:none; }
+.blog-list { list-style:none; margin:0; padding:0; }
+.blog-list li { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); }
+.blog-list a { display:block; padding:18px 20px; text-decoration:none; }
+.blog-list .bd { font-size:12.5px; color:var(--faint); }
+.blog-list .bt { font-size:17px; font-weight:800; margin:4px 0 6px; line-height:1.4; word-break:keep-all; }
+.blog-list .bs { font-size:14px; color:var(--sub); line-height:1.55; word-break:keep-all; }
+.blog-list a:hover .bt { color:var(--accent); }
+@media (max-width:600px) { .post h1 { font-size:23px; } .post-tbl th { width:38%; } }
