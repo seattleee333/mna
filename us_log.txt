@@ -1,6 +1,6 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>R4HYA01ECXR0WH76</RequestId><HostId>Pso7dTfdBE9/XQW6Jot61ipwbCT05rcUIcytVbBnUErQT1Mtje
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>YC7FWP41Q08E6YSY</RequestId><HostId>ktNDKOM5fE7zBeMAXsRepq4VOjCmwvqs0+zrTdi+eSBHApGC8o
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>R4HG323G5AZ4A251</RequestId><HostId>Ab2k6C7gyN+VOB+kf+1ZOfjbwVxMHonzrc8KWZtzqxnPE3GMzG
-  2026-11-06 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2225건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 6, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A/A            Casa Shares Assets, LLC                                       1988874     20261106    edgar/data/1988874/0001493152-26-050468.txt                                                
+  2026-11-06 8-K 269건
+새로 확인할 8-K 269건
+저장: 딜 2236건 (이번 신규 11건, LLM 0건)
