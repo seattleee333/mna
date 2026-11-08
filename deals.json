@@ -1,5 +1,33 @@
 [
  {
+  "rcept_no": "20261109000002",
+  "date": "20261109",
+  "corp_code": "02042949",
+  "corp_name": "한화머시너리앤서비스홀딩스",
+  "stock_code": "0220W0",
+  "market": "Y",
+  "report_nm": "공개매수설명서",
+  "category": "공개매수",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "한화머시너리앤서비스홀딩스가 공개매수를 진행합니다.",
+  "summary_src": "title"
+ },
+ {
+  "rcept_no": "20261109000001",
+  "date": "20261109",
+  "corp_code": "02042949",
+  "corp_name": "한화머시너리앤서비스홀딩스",
+  "stock_code": "0220W0",
+  "market": "Y",
+  "report_nm": "공개매수신고서",
+  "category": "공개매수",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "한화머시너리앤서비스홀딩스가 공개매수를 신고했습니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261106901025",
   "date": "20261106",
   "corp_code": "00249441",
