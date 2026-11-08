@@ -1,0 +1,187 @@
+{
+ "date": "20261108",
+ "base_dates": [
+  "20261106",
+  "20261105"
+ ],
+ "pick": {
+  "score": 110,
+  "buyers": [
+   "삼성물산",
+   "삼성바이오로직스"
+  ],
+  "target": "PolyPeptide Group AG",
+  "amount": 2706163546103,
+  "cat": "타법인 주식 취득·처분",
+  "kind": "stake_in",
+  "date": "20261106",
+  "market": "Y",
+  "corp": "삼성물산",
+  "stock": "028260",
+  "rcept": "20261106800926",
+  "summary": "삼성물산이 PolyPeptide Group AG 지분을 2.71조원에 인수합니다.",
+  "rcepts": [
+   "20261106800926",
+   "20261106800008",
+   "20261106000001"
+  ],
+  "structured": true,
+  "news": [
+   {
+    "title": "삼성바이오로직스, 폴리펩타이드그룹 공개매수 마감… 응모 지분 90% 넘었다",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBaSkoyRVJrNkc1ZFFvVHlmeWdPXzdBWmJKN05JWkJCRFc4LXNrYlRFTjk0RXR3RnRPNXVxZzk3U3lJQjk0SGxpS0RJOHQ0TVFqZWlYdzRuLXljZU02OUZialRvaTJZdw?oc=5",
+    "src": "Chosunbiz",
+    "n": 33,
+    "pub": "202611041124"
+   },
+   {
+    "title": "삼성바이오로직스, 2조7000억 인수 순항…무리한 교섭 요구에 명분 잃어가는 노조",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBld0NqaU8xbDBfaDlpRU90VnJfUGZUckUxcHVMVzE4dU5jNUtZdHF0cU5OdUkyZTJfR21BZHg4b2JLc0EzbDg5WktfQ2hHZU1hajExS1pvYUxWSFJoX0pWVDQ3WEs?oc=5",
+    "src": "https://www.ppss.kr/",
+    "n": 2,
+    "pub": "202611050918"
+   }
+  ]
+ },
+ "others": [
+  {
+   "score": 96.0,
+   "buyers": [
+    "동아제약",
+    "동아에스티"
+   ],
+   "target": "디앤티홀딩컴퍼니",
+   "amount": 39872053969,
+   "cat": "타법인 주식 취득·처분",
+   "kind": "stake_out",
+   "date": "20261105",
+   "market": "Y",
+   "corp": "동아제약",
+   "stock": "000640",
+   "rcept": "20261105800409",
+   "summary": "동아제약이 보유 중이던 디앤티홀딩컴퍼니 지분을 399억원에 매각합니다.",
+   "rcepts": [
+    "20261105800409",
+    "20261105800408"
+   ],
+   "structured": true,
+   "news": [
+    {
+     "title": "정재훈 동아에스티 사장, 디앤티 지분 399억에 매각…2년 만에 4배",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vSWlYNnpYTnBxeEY3NWoybERRZFI5VEd5aEJSY25oQ3AtTDRnZFlDcGVhR0wwMUVtTlFBTGRtaEtCVjFRTjRlaTZDV0RGSXExbVJFc2dEaURxUncwZmY5aUYzQTdpSk3SAWtBVV95cUxOdFpqNHE2eVBhQXNCaVRYVlQ1VTdmdlgwamJZb1NPSEdlaktPckx2NXBWVGJwLTVVYXdrUUUzQ2JWOEFoRWdGejU1VU14VWRGd0JJb3U5QnNGUU82Undfb1BYQ2ZvbVFyU2R0SQ?oc=5",
+     "src": "CEO저널",
+     "n": 6,
+     "pub": "202611061058"
+    },
+    {
+     "title": "동아ST, 디앤티홀딩컴퍼니 지분 전량 처분 … 100억 투자해 399억 회수",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WeF9zNDFyQmVDZ0RrOVRJLTFkTFh4XzBwTGpERnlrRmhRYm5Xampnd3hJTlpnUmRZRVZ0eWRTcmF2SWlTM2tjNENSbnFTQXVrc2VNREF3c2tkT1FRSFpRTF8wekFBNDdUMHVuZGEteWJ6TmthWUs0Z3RXMNIBgAFBVV95cUxOMEEyaWZJNnkxb2NhM0czQ2wxelc2U0Jna21yM3JSRW5RWlF1MjZYbUY4MVZEN3BiQjZZQ3l6Z2hNUXdlZnozVkZEbHBXWmw1SDV6cWxrYUZyVUxjTmV0aUdCaXRZYVNPdUcxNWZramxHNy1aZlZmS0prRUhIdTgwZw?oc=5",
+     "src": "PRESS9",
+     "n": 4,
+     "pub": "202611051949"
+    },
+    {
+     "title": "동아에스티, 디앤티 지분 전량 매각…2년 만에 투자금 4배 회수 : 네이버 블로그",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVW84T0Nfa2JCNU5vOGM3c2psZ0ZwTnhwMGRiNW9KYUxKX0gxclJTUk40RFVXWDdJdzExWTNOUkhGcXBWeFNQQlg4RXdHdi03U2pCdndpbG1MNTZ4U3lyd1RaSUNRUTFjR3pfTFlRd3JPMnZ5X0h1UnA5UmlsSGZ4VmRHMU1rdkJuRXIyMlJLdw?oc=5",
+     "src": "Naver Blog",
+     "n": 1,
+     "pub": "202611061648"
+    }
+   ]
+  },
+  {
+   "score": 89.4,
+   "buyers": [
+    "루멘스바이오스"
+   ],
+   "target": "폴라리스우노",
+   "amount": 13775000000,
+   "cat": "타법인 주식 취득·처분",
+   "kind": "stake_in",
+   "date": "20261106",
+   "market": "K",
+   "corp": "루멘스바이오스",
+   "stock": "038060",
+   "rcept": "20261106901007",
+   "summary": "루멘스바이오스가 폴라리스우노 지분을 138억원에 인수합니다.",
+   "rcepts": [
+    "20261106901007",
+    "20261106900969"
+   ],
+   "structured": true,
+   "news": [
+    {
+     "title": "루멘스바이오스, 폴라리스우노 인수대금 지급구조 변경",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zcGpUQXBXcHlUWllKODEzZGRwemNsTklZbngzNUVOV2hnSU9YRDNxT0dlV2R6NThKcE5vTk5UejFzUmZwMjdqWjFyMk9takh1cFdPaXVZX0xTdE1H?oc=5",
+     "src": "Chosunbiz",
+     "n": 8,
+     "pub": "202611061837"
+    },
+    {
+     "title": "루멘스바이오스, 폴라리스우노 인수 조건 재편… 현금 줄이고 전환사채 200억 확대",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE01OTgwVFZwRTZJRWV0NXF3UE52ZUhKaS1CQnZxUDNWS1FiNzJOT1BkWVJMaHFtazRreUNKdXRvYWRGSTJ3dWlYdmlNdll6bFlfLVdKUG1HemtWU0dVdTBreEhGOEtpUXh0Z0HSAWpBVV95cUxNNTk4MFRWcEU2SUVldDVxd1BOdmVISmktQkJ2cVAzVktRYjcyTk9QZFlSTGhxbWs0a3lDSnV0b2FkRkkyd3VpWHZpTXZZemxZXy1XSlBtR3prVlNHVXUwa3hIRjhLaVF4dGdB?oc=5",
+     "src": "NBN미디어",
+     "n": 2,
+     "pub": "202611061837"
+    },
+    {
+     "title": "루멘스바이오스, 폴라리스우노 인수 CB 규모 200억으로 증액",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPeU1uaFVacFplMkpEU1ZIQzd2SUJYSXlncmhrUWZmeDMwU05NSUxPVzZBQkZMMUFLOWlIbkhta2hTLVpoTkJ3Tkw4WEpoTF9zd0kzblprNnhOQ0dHSEg1aVRnbjFkbm9aZDg4VGQ1Yk42MHhu?oc=5",
+     "src": "파이낸셜포스트",
+     "n": 1,
+     "pub": "202611061855"
+    }
+   ]
+  }
+ ],
+ "sector": {
+  "id": "bio",
+  "name": "의약·바이오",
+  "n": 97,
+  "years": [
+   23,
+   17,
+   16,
+   20,
+   21
+  ],
+  "label": "유지",
+  "median": 138,
+  "news30": 96
+ },
+ "news_top": [
+  {
+   "title": "최태원, SK㈜ 주식 9440억 매각 완료…이혼 소송 재산분할 대비",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xNmx0YmFyemJtVThOZDM0Q2dINU9EdE1Ob0pEQTZONGxTcGV1dUdVeVVFVTNzc1NfS0cxMGpfNzVOdXFKeDBMdS1vRlhjTkt6WmtOdmxhYnUxVF9fOFRNNURYVDBsM0tkSmRQeTJ30gFuQVVfeXFMT3E2bHRiYXJ6Ym1VOE5kMzRDZ0g1T0R0TU5vSkRBNk40bFNwZXV1R1V5VUVVM3NzU19LRzEwal83NU51cUp4MEx1LW9GWGNOS3paa052bGFidTFUX184VE01RFhUMGwzS2RKZFB5Mnc?oc=5",
+   "src": "Chosunbiz",
+   "n": 50
+  },
+  {
+   "title": "[컨콜] LG화학 \"엔솔 지분 매각 대금 20%, 주주환원\"",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQaXVlQW5IS2hFQXFtWDVZZmxEczBIZDlXYTdmX1ZVbjJaWThpUEFrT1MwOW9GVEd3cW9GbnowRWlJNXcyUXJRVHZadnYySi1vLU16N3NNOUMyT1YtdUllNnpUOWVLU1JyMEo1YkxLYUJySHUtUUtDd2NPTzVGSGN6MGF3NE9Cc1lQc3lrUUQ5Q0p4X3M0MEw4Z3AxTURKbzUxQVBHVEx5S2NfalNIeXBUeXh1YVVrRVc2ZjFfMXVHQlBpM2xuc1dwN2VETlc3Y3ZTM0dyWFhGRmE1VmhIdUhsbGdhRDBuWTV6ejFaV0dLcFhqbGktTGpV?oc=5",
+   "src": "CNB뉴스",
+   "n": 40
+  },
+  {
+   "title": "다우·CJ, 중앙일보 '5200억'에 인수…\"연내 워크아웃 졸업 추진\"",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84a0dGRE5GVWJlTFJYTEl4WTl6RmtWODZUbE1CM0NTT09ybkpyMWl2T0NFbUxDLUJDRmd2MUpXUm4xSUxRQmxnWWttMWo5QUFZUER0Szl3WWlJVEhaSkNLVEcxcnluSVk4ZlFnUGV3?oc=5",
+   "src": "Investing.com 한국어",
+   "n": 37
+  }
+ ],
+ "text": {
+  "headline": "삼성물산·삼성바이오로직스, PolyPeptide Group AG 지분 2.71조원 인수",
+  "short": "삼성물산과 삼성바이오로직스가 PolyPeptide Group AG 지분 취득을 공시했어요. 두 회사가 같은 금액(2.71조원)으로 공시했는데, 공동 취득인지 각자 취득인지는 공시 원문에서 확인해야 해요.",
+  "explain": "한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.",
+  "context": "의약·바이오 업종은 최근 5년간 상장사 인수 공시가 97건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 138억원이에요.",
+  "disp": "공시일 11/06",
+  "amount_text": "2.71조원",
+  "linkedin": "[오늘의 M&A] 삼성물산·삼성바이오로직스, PolyPeptide Group AG 지분 2.71조원 인수\n\n· 공시일 11/06 · 타법인 주식 취득·처분\n· 금액: 2.71조원\n\n삼성물산과 삼성바이오로직스가 PolyPeptide Group AG 지분 취득을 공시했어요. 두 회사가 같은 금액(2.71조원)으로 공시했는데, 공동 취득인지 각자 취득인지는 공시 원문에서 확인해야 해요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\n의약·바이오 업종은 최근 5년간 상장사 인수 공시가 97건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 138억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #의약바이오 #PolyPeptide",
+  "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
+  "instagram": "📌 오늘의 M&A · 11월 8일\n삼성물산·삼성바이오로직스, PolyPeptide Group AG 지분 2.71조원 인수\n\n삼성물산과 삼성바이오로직스가 PolyPeptide Group AG 지분 취득을 공시했어요. 두 회사가 같은 금액(2.71조원)으로 공시했는데, 공동 취득인지 각자 취득인지는 공시 원문에서 확인해야 해요.\n\n📊 의약·바이오 업종은 최근 5년간 상장사 인수 공시가 97건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 138억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #의약바이오 #PolyPeptide",
+  "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
+  "related": "- 삼성바이오로직스, 폴리펩타이드그룹 공개매수 마감… 응모 지분 90% 넘었다 (Chosunbiz)\n- 삼성바이오로직스, 2조7000억 인수 순항…무리한 교섭 요구에 명분 잃어가는 노조 (https://www.ppss.kr/)"
+ },
+ "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
+ "blog": "blog/20261108.html"
+}
