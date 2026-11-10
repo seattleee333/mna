@@ -18,6 +18,7 @@ ap.add_argument("--n", type=int, default=0, help="표본 수(0이면 전체)")
 ap.add_argument("--tweak", default="{}", help="window.MNA_TWEAK 로 넘길 설정(JSON)")
 ap.add_argument("--port", type=int, default=8765)
 ap.add_argument("--label", default="")
+ap.add_argument("--out", default="bench_last.json")
 args = ap.parse_args()
 
 JS = r"""
@@ -49,7 +50,7 @@ async ([tweak, n]) => {
       if (mode === "text") { const L = window.MNA_MATCH_LAST || []; const j = L.findIndex(x => x.c.c === c.bc); out.raw = j >= 0 ? j + 1 : 9999; out.pool = L.length;
         const o = j >= 0 ? L[j] : null; out.sig = o ? { h: +o.s.h.toFixed(3), v: +Math.max(o.s.vb, o.s.vf).toFixed(3), tr: +o.s.tr.toFixed(2), hs: +(o.s.hs||0).toFixed(2), L: o.s.L, cm: +o.s.capm.toFixed(2), sc: +o.score.toFixed(3), top: +L[0].score.toFixed(3) } : null; }
     }
-    rows.push({ b: c.b, t: c.t.split("\n")[0].slice(0, 20), tb: c.tb.replace(/\s+/g, " ").slice(0, 24), a: c.a, text: out.text, ind: out.ind, raw: out.raw, pool: out.pool, sig: out.sig });
+    rows.push({ bc: c.bc, ti: c.ti, b: c.b, t: c.t.split("\n")[0].slice(0, 20), tb: c.tb.replace(/\s+/g, " ").slice(0, 24), a: c.a, text: out.text, ind: out.ind, raw: out.raw, pool: out.pool, sig: out.sig });
   }
   return rows;
 }
@@ -78,4 +79,4 @@ print(f"[{args.label or args.tweak}]")
 print("  사업 설명만   :", summary([r["text"] for r in rows]))
 print("  +업종 선택   :", summary([r["ind"] for r in rows]))
 print("  (참고) 점수순 전체:", summary([r["raw"] for r in rows]))
-json.dump(rows, open("/tmp/claude-0/-home-claude/1707ad7e-b154-5dc6-a10e-eab5c9c23516/scratchpad/bench_last.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+json.dump(rows, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
