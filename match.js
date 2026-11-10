@@ -151,7 +151,8 @@
   // 인수 여력: (현금 + 차입 여력) ÷ 희망 매각가. 현금·EBITDA·차입금(c.k)이 없으면 자본·영업이익으로 대신 어림한다
   function firepower(c) {
     const k = c.k, f = c.f;
-    if (k && k[0] !== null) return Math.max(0, (k[0] || 0) + Math.max(0, 3 * Math.max(0, k[2] || 0) - (k[3] || 0)));
+    // 차입금이 많아도 인수금융·자산 담보로 살 수 있으므로 자본의 일부를 하한으로 둔다
+    if (k && k[0] !== null) return Math.max((k[0] || 0) + Math.max(0, 4 * Math.max(0, k[2] || 0) - (k[3] || 0)), 0.25 * Math.max(0, f[2] || 0));
     if (f[2] === null && f[1] === null) return null;
     return 0.3 * Math.max(0, f[2] || 0) + 2 * Math.max(0, f[1] || 0);
   }
@@ -161,7 +162,7 @@
     if (price > 0) {
       const fp = firepower(c);
       if (fp === null) m = 0.85;
-      else { r = fp / price; m = r >= 1.5 ? 1 : r >= 0.3 ? 0.7 + 0.3 * (r - 0.3) / 1.2 : 0.55; }
+      else { r = fp / price; m = r >= 1.5 ? 1 : r >= 0.3 ? 0.8 + 0.2 * (r - 0.3) / 1.2 : 0.7; }
     }
     if (me.rev && c.f[0] !== null && c.f[0] < 0.5 * me.rev) m *= 0.8;
     return { m: m, r: r };
@@ -451,7 +452,7 @@
     if (me.price) {
       const fp = firepower(c);
       if (fp !== null) {
-        const r = fp / me.price, basis = c.k && c.k[0] !== null ? "현금성 자산 + 차입 여력(EBITDA 3배 − 기존 차입금)" : "자본·영업이익으로 어림(현금 자료 없음)";
+        const r = fp / me.price, basis = c.k && c.k[0] !== null ? "현금성 자산 + 차입 여력(EBITDA 4배 − 기존 차입금, 최소 자본의 25%)" : "자본·영업이익으로 어림(현금 자료 없음)";
         out.push([r < 0.3 ? "warn" : r < 1 ? "info" : "ok", "인수 여력 약 " + won(Math.round(fp)) + "억원 — 희망 매각가의 " + (r < 10 ? r.toFixed(1) : Math.round(r)) + "배 · " + basis]);
       }
     }
