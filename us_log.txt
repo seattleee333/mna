@@ -1,8 +1,6 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>D5Y6B73PCPXWV8B9</RequestId><HostId>aQ6SlR5//6zO+++o8CXqxrlOrBleUDrJcGVL+6WUW6RTAhe1tE
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>YHPRAWH1E67NSZFG</RequestId><HostId>vBfvPEDYHkVW/fp8zXnSbfkXjDE1GI7lHNWGjlm5t+R4ydELlf
   2026-10-12 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 9, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              ARK7 AIDC I, LLC                                              2159048     20261109    edgar/data/2159048/0002159048-26-000002.txt                                                
-  2026-11-09 8-K 400건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>X1R81N9Y6CKRVBYF</RequestId><HostId>9BuuCbjeaAuDQ0o9RJ2FG+3E/FAxEbxtK3TglkofyRbp5UYB+d
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>YHPZ5H5X8H0DCZJN</RequestId><HostId>VwCashDUKioy+n1gksm5MH59U2VTsutpP25LRxDrMijD+OQnhG
   2026-11-10 8-K 0건
-새로 확인할 8-K 400건
-저장: 딜 2247건 (이번 신규 11건, LLM 0건)
+새로 확인할 8-K 0건
+저장: 딜 2247건 (이번 신규 0건, LLM 0건)
