@@ -13,7 +13,8 @@
     sd: { label: "유사 기업", desc: "내가 지목한 회사와 사업이 비슷함" },
     ic: { label: "동일·인접 업종", desc: "업종코드가 같거나 가까움" },
     hs: { label: "인수 이력 일치", desc: "과거에 이 사업의 회사를 인수한 적이 있음" },
-    af: { label: "계열 연결", desc: "지분 관계로 이어진 상장사" }
+    af: { label: "계열 연결", desc: "지분 관계로 이어진 상장사" },
+    tr: { label: "인수 업종 패턴", desc: "이 업종 회사를 실제로 많이 사 간 업종" }
   };
   const TIERS = {
     1: { label: "1티어", desc: "직접 경쟁·동종 사업" },
@@ -63,7 +64,8 @@
   };
   const GENERIC = /제조업|도매업|소매업|공급업|서비스업|기타|그 외|및|전문|일반|관련|가공|처리업|임대업|제품|용품|부분품/g;
   let BYCODE = new Map(), BYBUYER = new Map();
-  let IDX = null, CV = null, KSIC = null, KNAME = null, KCOUNT = {}, ICBY = null, CASES = null;
+  let IDX = null, CV = null, KSIC = null, KNAME = null, KCOUNT = {}, ICBY = null, CASES = null, TRANS = null;
+  const TW = function (k, d) { return window.MNA_TWEAK && window.MNA_TWEAK[k] !== undefined ? window.MNA_TWEAK[k] : d; };
 
   function tok(text) {
     const out = [];
@@ -96,7 +98,8 @@
 
   async function load() {
     if (IDX) return;
-    const rs = await Promise.all([fetch("match_index.json?v=" + (window.MATCH_V || "3")), fetch("ksic.json?v=1")]);
+    const rs = await Promise.all([fetch("match_index.json?v=" + (window.MATCH_V || "3")), fetch("ksic.json?v=1"),
+      fetch("ma_trans.json?v=" + (window.MATCH_V || "3")).catch(function () { return { ok: false }; })]);
     if (!rs[0].ok) throw new Error("색인을 불러오지 못했어요");
     const d = await rs[0].json();
     d.vid = new Map(d.vocab.map(function (t, i) { return [t, i]; }));
@@ -109,6 +112,59 @@
       KNAME = new Map(KSIC.c);
       d.c.forEach(function (c) { if (c.ic) for (let n = 2; n <= Math.min(5, c.ic.length); n++) { const k = c.ic.slice(0, n); KCOUNT[k] = (KCOUNT[k] || 0) + 1; } });
     }
+    if (rs[2] && rs[2].ok) { try { prepTrans((await rs[2].json()).rows || []); } catch (e) { TRANS = null; } }
+  }
+
+  // ── 업종 간 인수 패턴: 최근 5년 '대상 업종(중분류) → 인수한 회사 업종' 건수 ──
+  function prepTrans(rows) {
+    const T = { n: 0, t: {}, b2: {}, b3: {}, tb2: {}, tb3: {}, rows: rows };
+    rows.forEach(function (r) {
+      const ti = r[0], b3 = r[1], b2 = r[1].slice(0, 2);
+      T.n++; T.t[ti] = (T.t[ti] || 0) + 1; T.b2[b2] = (T.b2[b2] || 0) + 1; T.b3[b3] = (T.b3[b3] || 0) + 1;
+      T.tb2[ti + "|" + b2] = (T.tb2[ti + "|" + b2] || 0) + 1; T.tb3[ti + "|" + b3] = (T.tb3[ti + "|" + b3] || 0) + 1;
+    });
+    TRANS = T;
+  }
+  // 대상 업종 ti 를 인수한 사례 중 후보 업종(ic)이 차지하는 비중이 전체 평균보다 얼마나 높은가 (채점 때는 정답 사례를 뺀다)
+  function transOne(ti, ic, loo) {
+    if (!TRANS || !ti || !ic || ic.length < 2) return null;
+    const own = loo && loo.ti === ti ? 1 : 0;
+    const one = function (b, nb, ntb) {
+      const ownB = own && loo.b.indexOf(b) === 0 ? 1 : 0;
+      const n = TRANS.n - own, nt = (TRANS.t[ti] || 0) - own, cb = (nb[b] || 0) - ownB, ctb = (ntb[ti + "|" + b] || 0) - ownB;
+      if (nt < 3 || ctb <= 0 || cb <= 0) return { v: 0, k: ctb, nt: nt };
+      const prior = cb / n, p = (ctb + 0.5 * prior) / (nt + 0.5), lift = p / prior;
+      const conf = ctb / (ctb + 1.5);
+      return { v: conf * Math.max(0, Math.min(1, Math.log(lift) / Math.log(16))), k: ctb, nt: nt };
+    };
+    const a = one(ic.slice(0, 3), TRANS.b3, TRANS.tb3), b = one(ic.slice(0, 2), TRANS.b2, TRANS.tb2);
+    b.v *= 0.6;
+    const best = a.v >= b.v ? a : b;
+    best.lvl = best === a ? 3 : 2; best.ti = ti; best.b = ic.slice(0, best.lvl);
+    return best;
+  }
+  function transScore(tis, ic, loo) {
+    let best = null;
+    tis.forEach(function (ti) { const x = transOne(ti, ic, loo); if (x && (!best || x.v > best.v)) best = x; });
+    return best;
+  }
+  // 인수 여력: (현금 + 차입 여력) ÷ 희망 매각가. 현금·EBITDA·차입금(c.k)이 없으면 자본·영업이익으로 대신 어림한다
+  function firepower(c) {
+    const k = c.k, f = c.f;
+    if (k && k[0] !== null) return Math.max(0, (k[0] || 0) + Math.max(0, 3 * Math.max(0, k[2] || 0) - (k[3] || 0)));
+    if (f[2] === null && f[1] === null) return null;
+    return 0.3 * Math.max(0, f[2] || 0) + 2 * Math.max(0, f[1] || 0);
+  }
+  function capFactor(c, inp) {
+    const me = (inp && inp.fin) || {}, price = +me.price || 0;
+    let m = 1, r = null;
+    if (price > 0) {
+      const fp = firepower(c);
+      if (fp === null) m = 0.85;
+      else { r = fp / price; m = r >= 1.5 ? 1 : r >= 0.3 ? 0.7 + 0.3 * (r - 0.3) / 1.2 : 0.55; }
+    }
+    if (me.rev && c.f[0] !== null && c.f[0] < 0.5 * me.rev) m *= 0.8;
+    return { m: m, r: r };
   }
 
   // ── 업종(KSIC 10차) ──
@@ -210,13 +266,29 @@
   function run(inp, opt) {
     const wide = !!(opt && opt.wide), mf = wide ? 0.6 : 1;      // 넓게 보기: 기준을 낮춰 관련도가 낮은 후보까지 포함
     const picked = (inp.industries || []).map(function (s) { return s.code; });
-    const pickedC = (inp.custIndustries || []).map(function (s) { return s.code; });
-    const bagI = ksicTerms(inp.industries), bagC = ksicTerms(inp.custIndustries);
+    // 고객사로 적은 회사가 상장사면 그 회사 업종을 '고객 산업'으로 자동으로 본다 (고객 산업을 따로 고르지 않아도)
+    const custCo = new Set(), autoCust = [];
+    if (TW("autoCust", 1)) (inp.customers || "").split(/[,\n;·\/]|\s및\s|\s등(?:\s|$)/).forEach(function (nm) {
+      const key = normName(nm); if (key.length < 2) return;
+      const c = IDX.c.find(function (x) { return normName(x.n) === key; });
+      if (c) { custCo.add(c.c); if (c.ic && c.ic.length >= 4 && autoCust.indexOf(c.ic.slice(0, 4)) < 0) autoCust.push(c.ic.slice(0, 4)); }
+    });
+    const custSel = (inp.custIndustries || []).length ? inp.custIndustries
+      : autoCust.filter(function (k) { return !picked.some(function (p) { return pref(p, k) >= 3; }); }).map(function (k) { return { code: k, name: ksicNameOf(k) }; });
+    const pickedC = custSel.map(function (s) { return s.code; });
+    const bagI = ksicTerms(inp.industries), bagC = ksicTerms(custSel);
     const kw = (inp.keywords || "").trim();
     const prodAll = inp.products + (kw ? "\n" + kw : "");
     // 핵심 제품 키워드는 같은 글을 3번 넣어 비중을 키운다. 업종 선택은 보조 신호(비중 낮게)
     let qP = qvec(inp.products + (kw ? "\n" + kw + "\n" + kw + "\n" + kw : ""), []);
     const bagPV = bagI.length ? qvec("", bagI) : new Map(), bagCV = bagC.length ? qvec("", bagC) : new Map();
+    // 고객 산업(예: 화장품)으로 고른 말은 '고객'이지 '우리 제품'이 아니다 → 제품 비교에서 비중을 낮춘다 ("화장품 단상자"가 화장품 회사로 끌려가지 않게)
+    if (bagC.length && TW("custDown", 1)) {
+      const down = new Set(); qvec("", bagC).forEach(function (w, i) { down.add(i); });
+      tok(expandTerms(bagC.join(" "), []).join(" ")).forEach(function (t) { const i = IDX.vid.get(t); if (i !== undefined) down.add(i); });
+      const keep = qvec(bagI.join(" "), []);      // 매도 기업 업종에도 들어 있는 말은 그대로 둔다
+      const q5 = new Map(); qP.forEach(function (w, i) { q5.set(i, down.has(i) && !keep.has(i) ? w * 0.25 : w); }); qP = norm(q5);
+    }
     const qM = qvec(inp.materials, []), qT = qvec(inp.tech + "\n" + inp.issues, []);
     const qC = qvec(inp.customers, []); addInto(qC, bagCV, 0.45); norm(qC);
     // 1) 지목한 비슷한 회사들의 사업 벡터를 질의에 섞는다
@@ -228,7 +300,8 @@
     });
     if (seeds.length) { norm(seedVec); const q2 = new Map(qP); addInto(q2, seedVec, 0.5); qP = norm(q2); }
     // 2) 1차 점수로 상위 회사의 사업 벡터를 섞어 한 번 더 찾는다(표현이 달라도 같은 사업을 찾기 위함)
-    const first = IDX.c.map(function (c, k) { return [k, dot(qP, CV[k].P)]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 8);
+    const isCustSide = function (c) { return custCo.has(c.c) || !!(c.ic && pickedC.some(function (p) { return pref(c.ic, p) >= 3; })); };
+    const first = IDX.c.map(function (c, k) { return [k, isCustSide(c) ? 0 : dot(qP, CV[k].P)]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 8);
     if (first[0] && first[0][1] > 0.05) { const avg = new Map(); first.forEach(function (x) { addInto(avg, CV[x[0]].P, 1); }); norm(avg); const q3 = new Map(qP); addInto(q3, avg, 0.35); qP = norm(q3); }
     if (bagPV.size) { const q4 = new Map(qP); addInto(q4, bagPV, 0.25); qP = norm(q4); }
 
@@ -237,10 +310,18 @@
     seeds.forEach(function (k) { const ic = IDX.c[k].ic; if (ic) anchors.push(ic); });
     if (!picked.length) {
       const cnt = {};
+      // 고객사·고객 산업 회사는 매도 기업 업종 추정에서 뺀다
       first.forEach(function (x) { const ic = IDX.c[x[0]].ic; if (ic) { const k = ic.slice(0, Math.min(4, ic.length)); cnt[k] = (cnt[k] || 0) + 1; } });
       Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a]; }).slice(0, 2).forEach(function (k) { if (cnt[k] >= 2) { anchors.push(k); auto = true; } });
     }
 
+    // 매도 기업 업종(중분류): 직접 고른 업종 → 없으면 사업이 가장 비슷한 회사들의 업종
+    const tis = Array.from(new Set(picked.concat(anchors).map(function (a) { return String(a).slice(0, 2); }).filter(Boolean))).slice(0, 3);
+    const looT = opt && opt.looCase ? (function () {
+      const rr = TRANS ? TRANS.rows.filter(function (x) { return x[3] === opt.looCase.r || (x[2] === opt.looCase.bc && x[4] === normName(opt.looCase.t).slice(0, 20)); })[0] : null;
+      return rr ? { ti: rr[0], b: rr[1] } : null;
+    })() : null;
+    const wTr = TW("trans", 0.35), poolTr = TW("poolTr", 0.4), useCap = TW("cap", 1);
     const qmP = tokWeights(prodAll, bagI), qmM = tokWeights(inp.materials, []), qmC = tokWeights(inp.customers, bagC), qmT = tokWeights(inp.tech + "\n" + inp.issues, []);
     // 고객사 이름은 글자 조각이 아니라 이름 전체가 후보 공시 문장에 나올 때만 '같은 고객'으로 친다
     const cnames = (inp.customers || "").split(/[,\n;·\/]|\s및\s|\s등(?:\s|$)/).map(function (s) { return s.trim(); }).filter(function (s) { return s.length >= 2 && s.length <= 20; });
@@ -271,13 +352,19 @@
         cap: dot(qT, v.P), sd: seeds.length ? dot(seedVec, v.P) : 0, ch: ch, L: L };
       let score = WEIGHT.h * s.h + WEIGHT.v * Math.max(s.vb, s.vf) + WEIGHT.cu * s.cu + WEIGHT.cap * s.cap + WEIGHT.sd * s.sd + codeScore(L) + (isSeed ? 0.15 : 0);
       const histHit = BYBUYER.size && dotAny(qHist, c.c, opt) >= MIN.hs * mf;     // 과거 인수 이력이 비슷하면 사업 문장이 달라도 후보에 올린다
-      if (score < (wide ? 0.03 : 0.05) && !isSeed && !histHit) return;
+      const tr = wTr ? transScore(tis, c.ic || "", looT) : null;
+      s.tr = tr ? tr.v : 0; s.trx = tr;
+      score += wTr * s.tr;
+      const trHit = s.tr >= poolTr;                    // 이 업종 회사를 자주 사 간 업종이면 사업 문장이 달라도 후보에 올린다
+      if (score < (wide ? 0.03 : 0.05) && !isSeed && !histHit && !trHit) return;
       // 인수 성향: 최근 5년 타법인 취득 공시 + 최근 경영참여·20%↑ 출자가 많을수록 실제 인수자일 가능성이 높다 (보조 신호, 약하게)
       const hm = histMatch(c.c, qHist, opt);
       s.hs = hm ? hm.hs : 0; s.hm = hm;
       score += WEIGHT.hs * s.hs;
       const prop = propensity(c, opt);
-      s.prop = prop; score += (window.MNA_TWEAK && window.MNA_TWEAK.prop !== undefined ? window.MNA_TWEAK.prop : PROP_W) * prop;
+      s.prop = prop; score += TW("prop", PROP_W) * prop;
+      const cf = useCap ? capFactor(c, inp) : { m: 1, r: null };
+      s.capm = cf.m; s.capr = cf.r; score *= cf.m;
       out.push({ k: k, c: c, s: s, score: score, seed: isSeed });
     });
     out.sort(function (a, b) { return b.score - a.score; });
@@ -309,6 +396,11 @@
           return { co: "과거 인수 · " + d + " <b>" + esc(k.t || "") + "</b>" + (k.tb ? " (" + esc(k.tb) + ")" : "") + (k.a ? " — " + won(k.a) + "억원" : "") + (k.p ? " · 목적: " + esc(k.p) : ""), me: userQuote(prodAll, (k.tb || "") + " " + (k.t || "")) };
         }) });
       }
+      if (o.s.trx && o.s.tr >= 0.15) {
+        const x = o.s.trx;
+        reasons.push({ t: "tr", val: o.s.tr, ev: [{ co: "최근 5년 '" + esc(ksicNameOf(x.ti) || x.ti) + "' 회사 인수 " + x.nt + "건 중 " + x.k + "건을 '" + esc(ksicNameOf(x.b) || x.b) + "' 업종 상장사가 했어요",
+          me: "매도 기업 업종 " + esc(ksicNameOf(x.ti) || x.ti) }] });
+      }
       // 업종코드가 같거나 가까우면 업종 자체를 근거로 쓴다 (사업 문장이 달라도 놓치지 않기 위함)
       if (c.ic && (o.s.L >= 4 || (o.s.L === 3 && (reasons.length || o.score / topScore >= (wide ? 0.08 : 0.15))))) {
         const an = anchors.filter(function (a) { return pref(c.ic, a) === o.s.L; })[0] || anchors[0];
@@ -324,7 +416,7 @@
       res = res.filter(function (r) { return r.seed || r.L >= 4 || r.reasons.some(function (x) { return x.t === "ic"; }) || r.score / top >= (wide ? 0.1 : 0.2); });
       res.forEach(function (r) {
         const rel = r.score / top, has = function (t) { return r.reasons.some(function (x) { return x.t === t; }); };
-        const hasText = has("h"), other = has("vb") || has("vf") || has("cap") || has("sd") || (has("cu") && r.reasons.some(function (x) { return x.t === "cu" && x.val >= 0.2; }));
+        const hasText = has("h"), other = has("vb") || has("vf") || has("cap") || has("sd") || has("tr") || (has("cu") && r.reasons.some(function (x) { return x.t === "cu" && x.val >= 0.2; }));
         const hsv = (r.reasons.filter(function (x) { return x.t === "hs"; })[0] || { val: 0 }).val;
         r.tier = (hasText && (r.L >= 4 || rel >= 0.55)) || r.L === 5 || hsv >= 0.35 ? 1 : (hasText || other || r.L >= 4 || hsv >= 0.18 ? 2 : 3);
         r.grade = rel >= 0.6 ? "상" : (rel >= 0.35 ? "중" : "하");
@@ -355,6 +447,13 @@
     if (me.op !== undefined && me.op !== null && me.rev && rev && op !== null) {
       const a = pct(me.op, me.rev), b = pct(op, rev);
       if (a !== null && b !== null) out.push(["info", "영업이익률: 매도 기업 " + a + "% vs 후보 " + b + "%"]);
+    }
+    if (me.price) {
+      const fp = firepower(c);
+      if (fp !== null) {
+        const r = fp / me.price, basis = c.k && c.k[0] !== null ? "현금성 자산 + 차입 여력(EBITDA 3배 − 기존 차입금)" : "자본·영업이익으로 어림(현금 자료 없음)";
+        out.push([r < 0.3 ? "warn" : r < 1 ? "info" : "ok", "인수 여력 약 " + won(Math.round(fp)) + "억원 — 희망 매각가의 " + (r < 10 ? r.toFixed(1) : Math.round(r)) + "배 · " + basis]);
+      }
     }
     if (c.m === "코넥스") out.push(["info", "코넥스 상장사"]);
     if (c.a[0] > 0) out.push(["ok", "최근 5년 타법인 인수 공시 " + c.a[0] + "건 (최근 " + c.a[1].replace(/(\d{4})(\d\d)(\d\d)/, "$1-$2-$3") + ")"]);
@@ -398,7 +497,7 @@
     const list = BYBUYER.get(code); if (!list) return null;
     let best = 0; const top = [];
     list.forEach(function (c) {
-      if (opt && opt.looCase && opt.looCase.r === c.r && opt.looCase.t === c.t) return;
+      if (opt && opt.looCase && (opt.looCase.r === c.r || (opt.looCase.t && normName(opt.looCase.t) === normName(c.t)))) return;
       const sim = dot(q, c._v); if (sim <= 0.02) return;
       top.push({ c: c, sim: sim });
     });

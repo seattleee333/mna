@@ -1,0 +1,51 @@
+name: 인수 여력 재무 수집
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - fetch_cash.py
+      - .github/workflows/cash.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cash
+  cancel-in-progress: false
+
+jobs:
+  cash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests openpyxl beautifulsoup4
+      - name: 현금·영업현금흐름·EBITDA·차입금 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u fetch_cash.py
+      - name: 매칭 색인·업종 인수 패턴 다시 만들기
+        run: |
+          python -u build_trans.py
+          python -u build_match_index.py
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          for f in cash_cache.json match_index.json ma_trans.json; do [ -f "$f" ] && git add "$f"; done
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "update cash data and match index"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              git rebase origin/main
+              [ "$i" -eq 5 ] && exit 1
+            done
+          fi

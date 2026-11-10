@@ -11,6 +11,7 @@ import openpyxl
 SRC = "company_profiles.xlsx"
 MA = "ma_cache.json"
 EXTRA = "dart_extra_cache.json"
+CASH = "cash_cache.json"      # fetch_cash.py: [현금성자산, 영업현금흐름, EBITDA, 차입금](억원) — 인수 여력 점수용
 OUT = "match_index.json"
 K = {"P": 80, "M": 40, "S": 40}          # 영역별 저장 항목 수
 NSENT = {"P": 7, "M": 3, "S": 3}
@@ -85,6 +86,11 @@ def main():
     # idf 상한: 한두 회사에만 나오는 희귀 조각(오타·붙여쓰기 잔재)이 핵심 업무 용어를 밀어내지 않게 한다
     idf = [round(min(math.log(N / df[t]), IDF_CAP), 2) for t in vocab]
 
+    try:
+        cash = json.load(open(CASH, encoding="utf-8")).get("c", {})
+    except Exception:
+        cash = {}
+
     # 5년 인수 이력
     acq = collections.defaultdict(list)
     try:
@@ -108,6 +114,9 @@ def main():
             except (TypeError, ValueError):
                 return None
         item["f"] = [f("2025 매출액(억)"), f("2025 영업이익(억)"), f("2025 자본총계(억)"), f("2025 부채총계(억)"), f("2024 매출액(억)")]
+        k_ = cash.get(code)
+        if k_:
+            item["k"] = k_[:4]
         d = sorted(acq.get(code, []))
         item["a"] = [len(d), d[-1] if d else ""]
         e = {}
