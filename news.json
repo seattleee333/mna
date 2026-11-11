@@ -1,5 +1,16 @@
 [
  {
+  "title": "코어위브 CEO \"지분 매각계획 중단\"…깜짝실적에 20%대 주가폭등 - 연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ETldkSm4yMWFaWkRfOUJSZVV3WngtcUcwRHR3Rmo0RnJ6bzFKYnpyWGotYXl5bENadFRRSksyRWRReXVzOHBySl94NG12U29VS19PdGJmNkFEN2PSAWBBVV95cUxONUtocjdpWWlqSHFoZlBlQjhxZUQ2cFVBOGQzeXk0ZnhlQ05WdGEtSmF3QUoyOElRakYzSkk3NElHZ1AzRnB2NHJfTEJEc0dVZnlCaVZZUFgwd1QxV0NyS2c?oc=5",
+  "sources": [
+   "연합뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261112",
+  "last_seen": "20261112",
+  "pub": "202611120257"
+ },
+ {
   "title": "[단독] '백상예술대상' HLL중앙 인수전에 하이브·신세계 참전 - 한국경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwVzlwOHF5ZFpXRS1LdVN2djFCbVExU0s1aHJkOW9zV0RQV1A1a0s5Tnlsb2RwZi1QOFhITUlReVpybW1DNnBQaG5uX0Zsc3BIdUY4X2hQcjg0dw?oc=5",
   "sources": [
@@ -9,6 +20,17 @@
   "first_seen": "20261111",
   "last_seen": "20261112",
   "pub": "202611120134"
+ },
+ {
+  "title": "[앤트로픽 IPO] 창립자 1인당 잔여 지분 가치 25조원 이상 추정 - CBC뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xUmZrbERoZ1pVeTd0NmMxOFFEYTNzdVdya3o4X3VMRTNERnB2TkYzX2FsUHQ1MXIybXhTdEU4ZGpPRnFoRGpEaER5dUc5NHdXLXF6TmhnTHI3X184QU1JX0VId3E2TTQ4?oc=5",
+  "sources": [
+   "CBC뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261112",
+  "last_seen": "20261112",
+  "pub": "202611120100"
  },
  {
   "title": "[특징주] 씨엑스아이, 中 AI 기업 경영권 확보에 상한가…4595원 마감 - https://www.moneystorm.kr/",
@@ -30,6 +52,24 @@
   "first_seen": "20261112",
   "last_seen": "20261112",
   "pub": "202611112338"
+ },
+ {
+  "title": "삼성바이오로직스, 2.7조 유증 청약률 96.8%…폴리펩타이드그룹 인수 속도 - 메디컬투데이",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9fcGwzN2puTUgzQzhjX0pIZUswT3F5RWxiRC1jb0N0VHR3QUo0akh0eGdaUG4zOEU2bklYOF9PMl9uT2NkVkE3NHpSSVpnMW9YLXh4bnp4aDFSbGY0NDZPbUZCUU9rOFpSUm1XSg?oc=5",
+  "sources": [
+   "IT조선",
+   "디지털데일리",
+   "마이데일리",
+   "매일산업뉴스",
+   "메디컬투데이",
+   "비즈워치",
+   "신아일보",
+   "이투데이"
+  ],
+  "outlet_count": 8,
+  "first_seen": "20261111",
+  "last_seen": "20261112",
+  "pub": "202611112202"
  },
  {
   "title": "스포츠 투자 펀드·M&A 급증…구단 넘어 산업 생태계로 자본 이동 - 월드투데이",
@@ -367,12 +407,13 @@
   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Fak9HQXJmMG14N2o1UnVfQUU4MGFrYUkza3Z6X3pSSGlzYS1MbVF3N21DUUN1MUh6NHlVLUctWFh1TV9MTWFpaEpseUEyVnc1?oc=5",
   "sources": [
    "Chosunbiz",
+   "SBS Biz",
    "블루밍비트",
    "연합뉴스",
    "재경일보",
    "파이낸셜뉴스"
   ],
-  "outlet_count": 5,
+  "outlet_count": 6,
   "first_seen": "20261111",
   "last_seen": "20261112",
   "pub": "202611111452"
@@ -398,23 +439,6 @@
   "first_seen": "20261111",
   "last_seen": "20261112",
   "pub": "202611111422"
- },
- {
-  "title": "삼성바이오로직스, 유상증자 청약률 96.8%…폴리펩타이드 인수 속도 - 비즈워치",
-  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hcDgyQmZCdmQ0THRrSmpVNUwzQnloWnNaeDM0VE5nNGROa2VtZ1dTWXB1UmpsV3R3OWRGQTZKNkFEeWEwbUVwM2Z3N0M5ZmxrRHJRdE5YVEVBbnRLbU5JTGVZcVhkTGtUTkFUYjg4VQ?oc=5",
-  "sources": [
-   "IT조선",
-   "디지털데일리",
-   "마이데일리",
-   "매일산업뉴스",
-   "비즈워치",
-   "신아일보",
-   "이투데이"
-  ],
-  "outlet_count": 7,
-  "first_seen": "20261111",
-  "last_seen": "20261112",
-  "pub": "202611111414"
  },
  {
   "title": "한국금융지주, 미국 대체투자 운용사 설립 보도에 “M&A 검토 중…확정 사항 없다” - 톱스타뉴스",
@@ -611,16 +635,17 @@
   "pub": "202611111034"
  },
  {
-  "title": "'9조 원 주면 맨유 주인 된다?' 글레이저 가문, 구단 매각 절차 진행 중이라는 주장...공식 발표 없이 '물밑 작업' - Chosunbiz",
-  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQajRWTE1pSnA1TjZZRXVxRzZVdXhiMFUzeWE4SkE3VWxXRlpVNmRWcm9wSks3OUVRVUxxaW5LOHJBcllaV3RmenZ1RkplcnY0X3lRZjBOMDVmUFc0MmRRLThMYW5yZTFDMWxvRVJNeWRWbGdNTFBQRzlMZ19iVnFKd3RXNNIBlwFBVV95cUxNeFExQm42ZEFJcnBkWG5ZZVowdzVxS2JLenIyQ1JLakE3TW1zMDhQQVZKeEVPNWxXRDI1QTVCU01LNW5CWktyTWdIN1VLREJnNGdxOXZlc3loUmtPUElhSVVKbzJheC1QdjNTeHZlaHkyTFJIVEVZUzB3UU85Ykg0NEVFei15eGVoRmhwMjk1RmhMY0N2Y05B?oc=5",
+  "title": "'9조 원 주면 맨유 주인 된다?' 글레이저 가문, 구단 매각 절차 진행 중이라는 주장...공식 발표 없이 '물밑 작업' - 조선일보",
+  "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZk9fZkZGQVJOdHdhNEVrRklSSlE3NzNROXFxY083X2QtQjl1aWtfd20tSnZSemx1cHI2YlgwYy1sY1kxbG9pZG0wMWNuOTFWSXRFby16MjFFQm5qMEkzN3dnQlBBeWVUR1VTclhaYmRDMTBBTW8yMkdQMVB0bWJCSFVWeU9zMk1Takhz?oc=5",
   "sources": [
    "Chosunbiz",
-   "머니투데이"
+   "머니투데이",
+   "조선일보"
   ],
-  "outlet_count": 2,
+  "outlet_count": 3,
   "first_seen": "20261111",
   "last_seen": "20261112",
-  "pub": "202611111026"
+  "pub": "202611111027"
  },
  {
   "title": "엔젠바이오, 시공계약 확보한 태양광 기업 인수…새 수익축 육성 - 한국경제",
@@ -961,9 +986,10 @@
   "title": "인디펜던스 리얼티 트러, 센터스페이스 합병 주총 승인..찬성 88% - 매일경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45RGYxZFFZZTlfY1JXNUdCRUs2bjdwcEFORFlxYklZSlc2a1hVclRQZHloMnNNN1Z6N0FWeWdBbUIwTUdmQWMtZDlaclhMQ19lVVE?oc=5",
   "sources": [
-   "매일경제"
+   "매일경제",
+   "매일경제 마켓"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261111",
   "last_seen": "20261112",
   "pub": "202611110608"
@@ -1807,12 +1833,16 @@
   "title": "삼성화재, 英 캐노피우스 지분 80.6% 확보… 글로벌 경영권 인수 - 퍼블릭뉴스통신",
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EbWpFZS0tWWh6d1lDMGlzbWZ0dmxOUmwwWnp6bU95VkVNNDFHUF9UdlZyZmtCeFBfcjYxcHlXWDJMX3RQbU1GWWRSNF9mcDNTMnJ5ZzRxeXNkMEhKM3hxaVhsZ1RjTTB4dmow?oc=5",
   "sources": [
+   "딜북뉴스",
+   "매일산업뉴스",
+   "머니투데이",
    "문화저널21",
+   "스포츠조선",
    "퍼블릭뉴스통신"
   ],
-  "outlet_count": 2,
+  "outlet_count": 6,
   "first_seen": "20261110",
-  "last_seen": "20261111",
+  "last_seen": "20261112",
   "pub": "202611101456"
  },
  {
@@ -1835,7 +1865,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261110",
-  "last_seen": "20261111",
+  "last_seen": "20261112",
   "pub": "202611101428"
  },
  {
@@ -1919,7 +1949,7 @@
   ],
   "outlet_count": 2,
   "first_seen": "20261110",
-  "last_seen": "20261111",
+  "last_seen": "20261112",
   "pub": "202611101305"
  },
  {
