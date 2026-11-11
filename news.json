@@ -1,25 +1,315 @@
 [
  {
-  "title": "누란 와이어리스, 1000만 달러 비전환 신용한도 확보…ATM 매각 없어 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02SW1CTVczTGYybXhiY0RLWlVXU3d4Szk1YkduVjdla2JLaFJpS044OEdzSzd5TWpJNjZha0pGS0xCWlgyYXVCS2gxYkQzTFByR0E?oc=5",
+  "title": "\"삼성화재, 캐노피우스 인수→글로벌 이익기여도↑…목표가 80만원\" - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1eXV1T245X2lwZE9FZXZRRHh1a0J5alhlTzNNZXNfVElLUGYzczZaT0hYYXVDbzlxX0FzWTlIQm1QMDlGRXZnbVB6VU16dTZWMDcxNkhBVWY5dkNOSGxPcGZqdWFuRUNm0gFuQVVfeXFMUGhpQnhKODIxMV9qSERFdFhGMnBVSlJjRW1VQjhpYzVqeF9tMUIzcnEwTHVqVDhpNUVKQUNUQy1VbEhtREtTRDgtSFBBWjBTRHBDRkdudm9zWl94MnQ5Z3ZSRkF5enZ2RURjbzZxOHc?oc=5",
   "sources": [
-   "매일경제 마켓"
+   "www.ebn.co.kr",
+   "매일경제",
+   "매일경제 마켓",
+   "머니투데이",
+   "미디어파인",
+   "뷰어스",
+   "연합뉴스",
+   "열린뉴스통신",
+   "이슈에디코",
+   "재경일보",
+   "진일보 | 전남일보",
+   "팍스경제TV",
+   "한국일보"
   ],
-  "outlet_count": 1,
-  "first_seen": "20261111",
+  "outlet_count": 13,
+  "first_seen": "20261109",
   "last_seen": "20261111",
-  "pub": "202611110311"
+  "pub": "202611110858"
  },
  {
-  "title": "스텔란티스, 브램턴 공장 로셸에 매각..방산 협력 추진 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFByWk5TMmRuczN5cXpkUm43T2tPV3ZJYUEtcFBwSmI3TS1UbFd6T1RLTWFVZnNWZzNPWEVNOFpWLTI0UVVGQU9hMmtWMDdRMDJRa0E?oc=5",
+  "title": "앤트로픽 창립자 7명, IPO 공모서 1인당 500억원 지분매각 - 파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lTldaT1FsU0JSUlhlcGNvc0V0OUJEamduTTdfeGRQZDIxMkNHMy11a1hzVkRCUWNNZGRvQzZILXlEUTI3OFpPd18zR0Q0djNhbGEwUUlyMjZJQQ?oc=5",
+  "sources": [
+   "파이낸셜뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110834"
+ },
+ {
+  "title": "한진칼 최대주주 호반, 경영권 못 잡아도 남는 장사 - 데이터뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GSDZ5cS0zX01FaGVfV1hEdHdka3Z3UW82bTlKcEc0LTRaMkw3SlV6ZlhGcU95dFptMGRyOUpaRnFTTzFDYkxCTmI5OTFZa0ZZQmkzb09PWlVqX3lEWGpR?oc=5",
+  "sources": [
+   "데이터뉴스",
+   "빅데이터뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261108",
+  "last_seen": "20261111",
+  "pub": "202611110832"
+ },
+ {
+  "title": "[모닝 리포트] \"삼성화재, 캐노피우스 인수로 ROE 개선 기대\" - 뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBSd0R6cmpXcGd1cXlQSkVnejNxaXcwQjNlSUxkMmdZSlR3MXFCRFdvWmtFQ3FWM1hfYm56QzJlUXQyeWdZME5BVGdaWVhLRWZuNGc3TDQtMktnNGMx?oc=5",
+  "sources": [
+   "뉴스핌"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110832"
+ },
+ {
+  "title": "삼성화재, 캐노피우스 경영권 확보…목표가 80만원 유지-LS - 이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON0h1R1NlRGd4MElJeU9GQ2tNcl9fcW5MSURIOXNWRVJZUzVYcFA0b0hfcFdKbnFpaHBSYlVDc2R6NGpyWjQtWmdPVUttRnFaUllZejBUakFZRzFWaU8wZWhST0VZbTFnWGVVX0RmaUdXZjZKVHpobU0ydTZQQXV1Sg?oc=5",
+  "sources": [
+   "www.dt.co.kr",
+   "뉴데일리",
+   "뉴스1",
+   "뉴시스",
+   "이데일리",
+   "코리아데일리",
+   "코리아리포트",
+   "포인트데일리"
+  ],
+  "outlet_count": 8,
+  "first_seen": "20261110",
+  "last_seen": "20261111",
+  "pub": "202611110817"
+ },
+ {
+  "title": "IRON HORSE ACQUISITION I, 일렉트라AI 합병 S-4 수정서 제출..내년 1분기 목표 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kTkd6d3k0clpHVFZPbHVHLWdqaHNkZDdfUktjMmpPcDRJYjZMT2Q0RjdXVFJvandWcUVyYWQwZkRRSjdFREhRYkllVFJJckQ0bWc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261103",
+  "last_seen": "20261111",
+  "pub": "202611110727"
+ },
+ {
+  "title": "하이드로팜 홀딩스, 1756만 주 재매각 S-1 제출…나스닥 주주지분 요건 회복 확인 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5oeVg2QXlKWXRZaFp0d0JYWG53RGwtNDh5NHhOX1BFOVRrRGtSeWRKYTJ6N1VpNk1ZZTN3dzdXY0ZLNGtEZVp4YWM5RlUyZTY1SVJzM3lRdTBuTHdNSk5jN3NSbHltUEFaa0VyMFF4ZjVXT0U?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110726"
+ },
+ {
+  "title": "유프락시아 파마슈티컬스, 제프리스와 공개시장 주식매각 계약..수수료 3% - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZQ0JOVzFtM2pNNDlnd2l5Y0YxRWJXQnFMZ1h0bDJoZURYZEUzLXJFSDRNalFoejEtRXdhbmFiWG9rUDlCZU1nVFY5dXlMeFBMdEE?oc=5",
   "sources": [
    "매일경제 마켓"
   ],
   "outlet_count": 1,
   "first_seen": "20261111",
   "last_seen": "20261111",
-  "pub": "202611110055"
+  "pub": "202611110726"
+ },
+ {
+  "title": "아이언 호스 애퀴지션 II 합병 상대 일렉트라 AI, 상반기 매출 88.87% 감소·계속기업 불확실성 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9TZUhyRFZoblRBMU5QNEdyU3NOSWZUaS0zNzNDZmliUGxla1JtazZ0ejBWY2wxZEd2YWkwd2FaN2V1N2hFVkxCbFZiSllrZ2E4WkhOUVlndzhSNjRqU0FtZHVaSG9ZUVFlN2V3d2FlX25aUkk?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261010",
+  "last_seen": "20261111",
+  "pub": "202611110723"
+ },
+ {
+  "title": "랠리바이오, 1대2 액면병합 20일 발효..아벤조 합병 속도 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Td0ExLTdhWEZ5c0xKMTd3MlNLckhtOEVGNUVxVmRqeEdXazZxWnJWQ2pwZFlzN2NvRHlmWExqblMzck9RNzhpX1VpNTM3RlBpaHc?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110723"
+ },
+ {
+  "title": "퍼마파이프 인터내셔널, 인도 코팅 합작법인 지분 51% 인수 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zNFVCZUZIQnZNLUt5N0dmbkM4SWhBZjZzbG5NYm1qMWlzX29tMUFTT25wVVZfMkMzclRlMWowVWsxVWM1bnlPQlB5cDhuWGxDM2c?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110715"
+ },
+ {
+  "title": "삼성화재 2.3조·DB손보 2.3조…보험사 해외 M&A 판 커진다 - 파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VbmZLVUYyWW9HQjI2OFBUaEI5MmJHcmMzcmFPODRicHg4bGg4U2duSGwxdklfRnBmSzRtRXJTSmtaSzRrMTRfbS0tSlpSQXJyT3VXdlQ1aHNKdw?oc=5",
+  "sources": [
+   "파이낸셜뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110715"
+ },
+ {
+  "title": "인메드 파마슈티컬스, 멘타리 합병 완료..현금 4억7800만 달러 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RX01nT1AwenA4ZnROVDE5TGtPZ3FqZ1ozU1diM2QwaHh4N2xMMVZDZm91blMyMGdxWVdzVWFMalljLWpTTmVYUi1RTERHS1JCV0E?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261107",
+  "last_seen": "20261111",
+  "pub": "202611110701"
+ },
+ {
+  "title": "아크록, 마이크로그리드 기업 하이볼트 최대 4억 5000만 달러에 인수 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VSUF4Z01Eb1B4Q0JBM1hHTUZuZXV1WjhnZkgzaGRQVEVtRzczTDBadEpvMmdVUUpoZTNaWXJrUjU1REVZTTBJRGF0Ny1FbGVsQ2tSZ2FHRlhBaW1sZ3k4RjlTY3FLemlVNnM2YVAyZHZEam8?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110635"
+ },
+ {
+  "title": "넥스트큐어, 3분기 순손실 685만 달러..합병 약정 8억 달러 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ET1k4UTFLRGVqaWhpdVNCOEFneE9FQVlwaDROdkYwQ3NrcnNNVlFJMUljQkVZSGdocGdORjkyRWFLMTJBMmNIbTFSUnZVcEJXM0E?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110635"
+ },
+ {
+  "title": "젠 레스토랑 그룹, 3분기 매출 4870만 달러 3%↓·47개 매장 매각 추진 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84blh4cEJzdE45Q1ctWnBybUpaTjREQ296YzNBOHRCM3VzT25MTzhSRU1WY29SNHlJVERNaEtaLUVwQjVJZUwta0hfT0gtMWlTX1E?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261106",
+  "last_seen": "20261111",
+  "pub": "202611110633"
+ },
+ {
+  "title": "어질리티 로보틱스, PIPE 주식 2010만 주 재매각 S-1 등록…전체 지분 8% 규모 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZMldpWWxac1BFYm8zT3luRzRiV2xjUmc2LXNmUHZ6Ynd1WkFvNVA5Wk9hZlF4MUhuZHoxTlFfdFJpV21HcWtiSldNanRPckFscWZqWHQ1aVBTRjBDV1EzeENMSXBIZ3pRY0RVamJqSGd0Q00?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110626"
+ },
+ {
+  "title": "마벨 테크놀로지 CEO, 루멘텀 합병 발표 후 주가 변동성에 임직원 서한 보내 - 데이터투자",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZHJxb1ktLWlnbzNkaTVKczI3V3Q0cGdlbHBneWlkYWdzWThuQS13SVhGOUtUSkdQWGthYkF0NDFNamhMX0lvU2ZnU29aSG9DMWtFWjY1SnhWOEM4R2dzMHpOY0tHQnlMN2lCRTM5Tk5rRFU?oc=5",
+  "sources": [
+   "데이터투자"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110615"
+ },
+ {
+  "title": "인디펜던스 리얼티 트러, 센터스페이스 합병 주총 승인..찬성 88% - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45RGYxZFFZZTlfY1JXNUdCRUs2bjdwcEFORFlxYklZSlc2a1hVclRQZHloMnNNN1Z6N0FWeWdBbUIwTUdmQWMtZDlaclhMQ19lVVE?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110608"
+ },
+ {
+  "title": "Scopien Technologies, Cannabis Strategic 경영권 인수 - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80WnlkekhxYjN1ZDhiS2ctLWRmdHp4Zl85TWxmVVFLRGN1QnhJNEk3S2lUYjYtMHRSYl9ETUJoYnFRZG5US1REczBsUjV4cWlxUldkN29OdFpreFBMREVpZXQwdGFkbkplVHNmZVdwNko?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110606"
+ },
+ {
+  "title": "오스코텍 경영권 갈등 격화…이사회 진입하려는 창업주 장남, 기존 이사진은 반발 - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaFpEYUlScDRlRWFEbFhWcVIxeExiWTFQSzNKMXY0Mk95LU9aZzRWZHIwSVUxMUtxQ0V4REUwMDhLLXZYVUpSbnU0Z2E4MTQtM1JKR29wNVR4MFBPbXVDb2RZUmhDUmpYT1RKOWVjd0traGE2UllDTlJZd2lmOTZwbllRRE5abTDSAZsBQVVfeXFMTnpIdzV0Zm1GRHlxN1F0dE1BcC1xeklFMndXanJfeFBKc0d3Zk5OQlNBNTJyOUhmM0VoYVZ0Q3JLM0pPZk1Cbk0waU9VajlIalZUZmJfeS1pT3N6U2dfUEVpcmFYSUl5RDdXVEc5bU1FZnBwOVFSdFpHTERlVnFjVm9BM1lRSkR1dm9Fb2dYOUtxMG94eWk2VElkSU0?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110600"
+ },
+ {
+  "title": "[바이오e종목] “조카 창업 후원한 삼촌”...씨젠 오너가 380억 지분 매각 예고에 급락 - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGYzc2xJOFdsYXdyNDVWQ0hzTFlFdkZPR0hXZWt6UDBCSUEzMDhFY1ZKeTR0c2NZSlpaOC1oNk5vVVNDd3drMVZ0X25kMEV5d25WRGd1Vm9KNE5MNDN1ckpBRHcxY2UyMXVnMFRTd2k4anZ0SkY0ZVloZ21sbllSS3MzS2RocmvSAZsBQVVfeXFMTkgxTThUU05aV3dLMS00b09WcXVLLUpyRXhHcjFja1dNVUlHRVZVdWxyOVB2dFVMNHhSYXJOUXNkallQLWJJM3g3UGR1T3NqTTN2TWdPT0lVRGZVejdlbXRNems5dUNzNkk1MHZsYk1SdXFQT3FOTHhWblN1TF9xOUI2TFlpQ00yc3FGVVdmUWdGYkpDQ0JzeC1sTW8?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110600"
+ },
+ {
+  "title": "[목멱칼럼]의무공개매수제, 주주 보호·M&A 활력 균형점 찾아야 - 이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcF90OTZvbkIzSW9NZ1A1YWwzN3V0UnpsTFBOeXNibVFFdUNXVmFCTG0yMnYtQXJhNnJYREE3czlJTHNXRVQxc3k0N2t3NmkxaENFS1JhTlMtdHlzd3JGRUNGbzlrbTFPRkN6QXdvRzdMV0x5NjZMVXhiRDNUVFg5Tw?oc=5",
+  "sources": [
+   "뉴스핌",
+   "이데일리"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261104",
+  "last_seen": "20261111",
+  "pub": "202611110500"
+ },
+ {
+  "title": "합병은 5건, 짝 못 찾아 상폐 26곳…스팩 시장 위축 - 이투데이",
+  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qenl0NFh1M2J4d1V3dUVyMk1HVmZ2R3lnVkRtYkNwNmk1akhwelBfWkZ0WmJiVzRGSWtHMFYxaENhazhabWZJZGtvdmZrbjVvMThzQQ?oc=5",
+  "sources": [
+   "이투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110500"
+ },
+ {
+  "title": "누란 와이어리스, 1000만 달러 비전환 신용한도 확보…ATM 매각 없어 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WbVBqUU9SRl9jUW13WFNHUEFvQzA5a3RMNlAzdW03ZkhVUHlZa18tVWhBUWgzLThkVlBWZWp5ZFB6RUZSY2c?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110312"
+ },
+ {
+  "title": "스텔란티스, 브램턴 공장 로셸에 매각..방산 협력 추진 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE83QUY3blh6YkZCaTBaZ1hLS1ltMTVCTk5BRU1rLWs2ZHZvU1I4TnVfdVJRalYyaGJ5UG84WjlZQ0h5Y1BXa0JsbzNJTFBpdE5VMlE?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611110056"
  },
  {
   "title": "삼성화재, 2.3조원 들여 英 보험사 인수 - 조선일보",
@@ -325,31 +615,23 @@
    "ER 이코노믹리뷰",
    "뉴데일리",
    "뉴스핌",
+   "뉴시스",
    "뉴시안",
+   "뷰어스",
    "비즈워치",
    "생생비즈플러스",
    "시사포커스",
    "시장경제신문",
    "지디넷코리아",
+   "진일보 | 전남일보",
    "팝콘뉴스",
+   "퍼블릭뉴스통신",
    "포인트데일리"
   ],
-  "outlet_count": 11,
+  "outlet_count": 15,
   "first_seen": "20261110",
   "last_seen": "20261111",
   "pub": "202611102040"
- },
- {
-  "title": "BHAV ACQUISITION CORP, 네미와 4억 달러 합병 계약..내년 1분기 종결 목표 - 매일경제",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3WGt6d1pYWTZKZjRYVDlLSWhEY3V1QkFDWnY2a3pqS25WQnBDaTlNdlFTRE1HRkdCR0hicFRGU00xeE5vVjVEUExnRmRIVXZHcXc?oc=5",
-  "sources": [
-   "매일경제",
-   "매일경제 마켓"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261103",
-  "last_seen": "20261111",
-  "pub": "202611102004"
  },
  {
   "title": "[베트남 특징주] 마산그룹, 日 소지츠그룹에 자회사 지분 매각 추진 - 뉴스핌",
@@ -622,7 +904,7 @@
   ],
   "outlet_count": 16,
   "first_seen": "20261109",
-  "last_seen": "20261110",
+  "last_seen": "20261111",
   "pub": "202611101655"
  },
  {
@@ -745,29 +1027,6 @@
   "first_seen": "20261110",
   "last_seen": "20261111",
   "pub": "202611101439"
- },
- {
-  "title": "삼성화재, 캐노피우스 경영권 확보…글로벌 영토 확장 본격화 - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmVzBXVkNsY09zc0Rwb003ZGk5d2FnWlhNcVZ0NUFNeGRsNXNLaml5VXVnWDVNVFdFZHRpYUNZbUxneUpCeUJ4aUxrWU1UUlNoMXNsU25rOGVud25ucHhZckVXdUtyZ3VfdG9uZTFCUlrSAXBBVV95cUxQZlcwV1ZDbGNPc3NEcG9NN2RpOXdhZ1pYTXFWdDVBTXhkbDVzS2ppeVV1Z1g1TVRXRWR0aWFDWW1MZ3lKQnlCeGlMa1lNVFJTaDFzbFNuazhlbndubnB4WXJFV3VLcmd1X3RvbmUxQlJa?oc=5",
-  "sources": [
-   "www.ebn.co.kr",
-   "매일경제",
-   "매일경제 마켓",
-   "머니투데이",
-   "미디어파인",
-   "뷰어스",
-   "연합뉴스",
-   "열린뉴스통신",
-   "이슈에디코",
-   "재경일보",
-   "진일보 | 전남일보",
-   "팍스경제TV",
-   "한국일보"
-  ],
-  "outlet_count": 13,
-  "first_seen": "20261109",
-  "last_seen": "20261111",
-  "pub": "202611101437"
  },
  {
   "title": "삼성화재 2.26조원 쏟아붓고 英 특수보험사 경영권 확보 - 한국신용신문",
@@ -1018,7 +1277,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261110",
-  "last_seen": "20261110",
+  "last_seen": "20261111",
   "pub": "202611101102"
  },
  {
@@ -1150,23 +1409,6 @@
   "first_seen": "20261109",
   "last_seen": "20261110",
   "pub": "202611100939"
- },
- {
-  "title": "삼성화재, 영국 캐노피우스 경영권 확보…2조2647억원 투자 - 코리아데일리",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPam11T0ZHUS13Xzh1TG5QMjRlR1RyeGlnYkpJQ0VKX2J6TXpOVU5zTWpWa19VX2VNOHFkb1hZUzFveE5KaG52OGt6NnJRUUxMRmxrSS04TFlpQjRaVUlqZXpxaVdXaWdRMHFxM01UcHA?oc=5",
-  "sources": [
-   "www.dt.co.kr",
-   "뉴데일리",
-   "뉴스1",
-   "뉴시스",
-   "코리아데일리",
-   "코리아리포트",
-   "포인트데일리"
-  ],
-  "outlet_count": 7,
-  "first_seen": "20261110",
-  "last_seen": "20261110",
-  "pub": "202611100938"
  },
  {
   "title": "ICGN, 韓 의무공개매수제도 보완 촉구…“50%+1주로는 투자자 보호 한계” - 글로벌이코노믹",
@@ -1305,9 +1547,10 @@
   "title": "삼성화재, 英 보험사 경영권 확보 나서 - PRESS9",
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Ub19jSHFYQ2xNRW9weFFfSWJZQXJPUE5nNUFGem9kU3NhaU45ZW50dmxMMENNNGpnZ2l3eldFa0M4SEh6YTNyQnZNZ0tOQlZDYmgza3VMbnJZTFVzaFhQX19ob0g?oc=5",
   "sources": [
-   "PRESS9"
+   "PRESS9",
+   "매일경제"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261110",
   "last_seen": "20261111",
   "pub": "202611100822"
@@ -1361,9 +1604,10 @@
   "title": "더블다운 인터랙티브, 모회사 ADS당 16.25달러 공개매수·상장폐지 추진 - 매일경제 마켓",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RcFFKRDNJWmRTa3hXRks0VS1lU1NQZHJzX3ZmeFJ0dEl3OHVMZURhNkRvZWlvbGt5RGkzRUhBbzBERnhCaE5MbEVIaDRfNmtOcUE?oc=5",
   "sources": [
+   "매일경제",
    "매일경제 마켓"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261110",
   "last_seen": "20261111",
   "pub": "202611100722"
@@ -1719,18 +1963,6 @@
   "first_seen": "20261027",
   "last_seen": "20261110",
   "pub": "202611092237"
- },
- {
-  "title": "인메드 파마슈티컬스, 멘타리 합병 완료..4억9000만 달러 조달 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BdlBOclhlaW1hTWpULVhoX2VicHdVZWNVdlZwblVqUmRiTU9OTlNObFBwbU1UTFlSVkhxdTZKUFZJazR2QkdoNlZlUUYtY3lqZHc?oc=5",
-  "sources": [
-   "매일경제",
-   "매일경제 마켓"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261107",
-  "last_seen": "20261110",
-  "pub": "202611092210"
  },
  {
   "title": "CNH 인더스트리얼, 건설장비 사업 지분 70% 매각…합작법인 설립 - 데이터투자",
@@ -2196,7 +2428,7 @@
   ],
   "outlet_count": 4,
   "first_seen": "20261104",
-  "last_seen": "20261110",
+  "last_seen": "20261111",
   "pub": "202611091654"
  },
  {
@@ -3418,17 +3650,6 @@
   "pub": "202611080906"
  },
  {
-  "title": "호반, 한진칼 최대주주 됐지만…경영권 확보는 '산 넘어 산' - 빅데이터뉴스",
-  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5jWnAxR2duQnQ1OU01WEN5XzI4emxsemQ0cURfZGw2bkVFSG9pR1djbEQ2dmVDdlhLOTZvdFIyWWo4X1RNMHRXdzk1N2s1NFc3STlCVUNLYXc5V1czWXlJdEEzbm5yUU5LVjE1X25pRUozTVN5TEJERWNsTno?oc=5",
-  "sources": [
-   "빅데이터뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261108",
-  "last_seen": "20261110",
-  "pub": "202611080900"
- },
- {
   "title": "최대주주 오른 호반, 반격 나선 조원태…한진칼 지분 쟁탈전 [헤비급브리핑] - 디지털데일리",
   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE82dUg4aVBEZXJzbk9LNE5rVkpOZ05Xcl9TamhiYkNTZzhsNmlIbkh4NzJEdnkxampUWXZ5UFdhY1NISnYwNTFmWktIbDZWTkhfRGkwaUEyakpGdWpCZ1g4dGhHYUw?oc=5",
   "sources": [
@@ -4161,17 +4382,6 @@
   "first_seen": "20261107",
   "last_seen": "20261108",
   "pub": "202611062131"
- },
- {
-  "title": "실바모, 3분기 매출 6억4500만 달러..유럽 매각 추진 - 매일경제",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yaUZHb0RaUTFEeVg0dnJzeDVLWVRVTHZHYmx5enU0T1dGS3BJYkN1UmdNQzVCdEV5VmZpRlI3a0hKYmtISnA4SGtoMzhETVJMc2c?oc=5",
-  "sources": [
-   "매일경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261106",
-  "last_seen": "20261108",
-  "pub": "202611062126"
  },
  {
   "title": "중국, 소프트뱅크의 ABB 로봇 사업 인수 막았다…공장 데이터 유출 우려 - Martin Cid Magazine",
@@ -9112,17 +9322,6 @@
   "first_seen": "20261105",
   "last_seen": "20261106",
   "pub": "202611041005"
- },
- {
-  "title": "의무공개매수제 논란 재점화…주주보호·M&A 활성화 절충점 찾나 - 뉴스핌",
-  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81VkhWRmFLNFhsTmxqaXB5Yy1sOXJvbzE4NGdldjlmcHFYSklqUUpIbG9tTkRjZGRDR0VMRGd4WTc2VnVGWEJZNGFyWmZwWEhnNGIxR0hKTUFMWEN6?oc=5",
-  "sources": [
-   "뉴스핌"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261106",
-  "pub": "202611040959"
  },
  {
   "title": "삼성생명, 에스원 지분 135억원 매각…금산법 위반 우려 해소 By 알파경제 alphabiz - Investing.com 한국어",
@@ -32009,16 +32208,6 @@
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wQnZGTmktcGk5VXV6LWUyRmk0bkxWM1VzbU01ZzlWYmgzdVZESWVCeDE3MncyN1hYQUZ3ck5KX1RjNkRkcmd2dEgycWRVaUlNejFLUHJn?oc=5",
   "sources": [
    "DealSite경제TV"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261010",
-  "last_seen": "20261011"
- },
- {
-  "title": "아이언 호스 애퀴지션 II, 합병 상대 일렉트라 AI 투자자 설명자료 공개…최대 상환 가정 시 일렉트라 주주 지분 65.8% - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGV0NDdmkwajU3ZmJLT0VCbEw5SERtY1ItZ0JyOEJ4OHJINldHWUYzUzVrRW5QRzhvSk9CNU9tc29NQnZoMTluTFZrLXVLakhEeUxFQ0tZeWhZQzFkMkFYdGx4VWQxTl8tOEl2U010d0dsWnc?oc=5",
-  "sources": [
-   "데이터투자"
   ],
   "outlet_count": 1,
   "first_seen": "20261010",
