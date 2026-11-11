@@ -1,25 +1,39 @@
 [
  {
-  "title": "삼성바이오로직스, 2.7조 유상증자 청약률 96.8%…M&A 재원 마련 속도 - 디지털데일리",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE16MkE1Q3hyS2tYREtIX2I3R0c5NzVhQjJXdi1fWnEzZUxnaHZTdUlwSFhfclBqZ2NoN0JLV1ZkZFh2Q2Q5NjhBSXpuVDhQdUx0T1c1Ulh4ZEJnODZRNXJTTEtLMUQ?oc=5",
+  "title": "삼성바이오, 2조6650억원 유상증자 청약률 96.8%…펩타이드 인수자금 조달 막바지 - 쿠키메디",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TNnVneTZ6bHdpd2VPQlFIWWY0REdCX2RpSDV1YkJYckdfM2lRSnpvZFlTNXAzQUhGaEo4THBxNUdsSGR1UVdDVU9kd3Azb1Axb0M5UHlGWFNtZktwNnZiTkxkRQ?oc=5",
   "sources": [
    "IT조선",
    "디지털데일리",
+   "마이데일리",
    "매일산업뉴스",
-   "신아일보"
+   "신아일보",
+   "쿠키메디"
   ],
-  "outlet_count": 4,
+  "outlet_count": 6,
   "first_seen": "20261111",
   "last_seen": "20261111",
-  "pub": "202611111057"
+  "pub": "202611111131"
+ },
+ {
+  "title": "삼성바이오, 2.7조 유증 청약률 100% 육박…\"폴리펩타이드 인수 순항\" - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBCZUFzY0paZ1MxcEpKTXRVQ1BucklqdGpHNVpETEZpc2lTOU9wSWxTZmRQWGx4VEUyd1d5MWYtQURoZTNHOWZOc3lsODVFVU5SQUdsejBRMjVoVGtULVhpb2RsMm5CT2tHbGJjcTRpSnYzTE96YmVF0gF8QVVfeXFMTjFLTEhnb1dGNUVwVWJZb1BVeFRqSjVCWTZadjZWZ0F2Q3FOLThMWXczSXIzam11aWYxYXBDdmJRbzZGMVVGekpXSlY4WVd1Slp1SDJtNnhxSVRRZUdWdktjaDJ3YVdxUWF6ODN1cmVuSE80RXJfMjZzT0hNOA?oc=5",
+  "sources": [
+   "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611111128"
  },
  {
   "title": "[단독] ‘50%+1주’ 의무공개매수제, 與 내부서 수정 요구 - 헤럴드경제",
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85QndoZk1BZEY5WmN2eE55NHBDZzZSeHlBQ01kM096TVNoWHFuRXI4VkhSemROUFlNcHBxRC1EY3JhTVFMTC14Wll3TmJIMnc4Z2JsTjln?oc=5",
   "sources": [
-   "헤럴드경제"
+   "헤럴드경제",
+   "헤럴드경제 미주판"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261111",
   "last_seen": "20261111",
   "pub": "202611111050"
@@ -819,6 +833,17 @@
   "first_seen": "20261110",
   "last_seen": "20261111",
   "pub": "202611101844"
+ },
+ {
+  "title": "JTBC 인수전 본격화…복잡한 지분구조 ‘변수’ - 헤럴드경제 미주판",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwTVBVNlZncld3aVdNY2E2MC1XNi1uTDQxSy1ITUU4QndyM2VrM0Q1NmJpYmkyc0JLWDZUSl96Yl9wOHM1c3MxbWVBOWZtdnhKSXJjWVJublh4WnRadVFrNg?oc=5",
+  "sources": [
+   "헤럴드경제 미주판"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261111",
+  "last_seen": "20261111",
+  "pub": "202611101825"
  },
  {
   "title": "KG에 팔린 동부제철…'김준기 지분' 12년째 담보 묶인 까닭 - 한국경제",
