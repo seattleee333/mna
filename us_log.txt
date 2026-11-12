@@ -1,8 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GNZVCR1DAQSDY57Q</RequestId><HostId>DxBN9hfsdOoDOXBbDWKTADzID/5pmkwxGeLmmfnH9qZGNbtAh1
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>J15XZWQFBRSWC4BH</RequestId><HostId>Dr8Lt1KnvR7M76v/gUwl49rKwq50lbX8PxZkpCJXngCwQvmDIN
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GNZQ06PTFQDRHW9E</RequestId><HostId>sIsQPuzL2lvHMzs+IitjG7uclE+DAabxAfOun4vjQudhVcDGtk
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>J15YBQRD03A45XFJ</RequestId><HostId>tQXIJ7m7XpJlvWYtKozZdSDwUYF7GRBPpMcdljAZroGBGOx8bG
   2026-11-11 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GNZK52SX5M2Z7CKC</RequestId><HostId>xIHJcM2OIlk0JvuJTF6Heol3PwtCwXylIZMWC2x0JYhMomnPjW
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>J15V89621HQCV1E0</RequestId><HostId>l4KSzqnoxH03gG0XJ7hvqWcM9n8u1orGjeX7i8cuQhUWYtYrNw
   2026-11-12 8-K 0건
 새로 확인할 8-K 0건
 저장: 딜 2255건 (이번 신규 0건, LLM 0건)
