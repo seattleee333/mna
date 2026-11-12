@@ -38,6 +38,26 @@
   "summary_src": "title"
  },
  {
+  "rcept_no": "20261112000210",
+  "date": "20261112",
+  "corp_code": "00989619",
+  "corp_name": "알테오젠",
+  "stock_code": "196170",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+  "category": "합병",
+  "kind": "merger",
+  "direction": null,
+  "buyer": "알테오젠",
+  "seller": "주식회사 알테오젠바이오로직스(ALTEOGEN BIOLOGICS, INC.)",
+  "target": "주식회사 알테오젠바이오로직스(ALTEOGEN BIOLOGICS, INC.)",
+  "amount": null,
+  "note": "합병비율 1 : 0.1679581",
+  "summary": "알테오젠이 알테오젠바이오로직스를 흡수합병합니다.",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261112000162",
   "date": "20261112",
   "corp_code": "01250374",
@@ -46,8 +66,10 @@
   "market": "K",
   "report_nm": "[기재정정]합병등종료보고서(영업양수도)",
   "category": "합병",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "에스에스알이 영업양수도를 완료했습니다.",
   "summary_src": "title"
  },
