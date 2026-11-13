@@ -1,0 +1,623 @@
+{
+ "asof": "2026-10-27",
+ "month": "2026-10",
+ "count": 94,
+ "deals": [
+  {
+   "t": "매각",
+   "ti": "CenterPoint Energy → National Fuel Gas",
+   "pr": "26.2억 달러 · 현금 14.2억 달러(2026) + 매도자 어음 12억 달러(2027)",
+   "who": "대상은 Vectren Energy Delivery of Ohio(오하이오 도시가스 배급사)로 배관 약 5,900마일, 고객 약 33.5만 곳입니다. 매각자 CenterPoint는 인디애나, 미네소타, 오하이오, 텍사스에서 700만 명 이상의 전기·가스 고객을 둔 유틸리티입니다. 인수자 National Fuel Gas는 탐사·생산, 파이프라인·저장, 가스 집하, 유틸리티 네 사업을 가진 에너지 기업입니다.",
+   "why": "CenterPoint는 유틸리티 포트폴리오를 정리하고 10개년 자본계획에 따라 20억 달러 이상을 다른 전기·가스 사업에 재투자한다고 설명합니다. 텍사스, 인디애나, 미네소타 가스는 계속 핵심입니다. NFG 쪽 이유는 확인한 원문에 없습니다.",
+   "val": "2024년 레이트 베이스 대비 약 1.9배입니다. 규제 유틸리티는 허용 수익이 레이트 베이스에 비례해서 이 배수로 값을 매깁니다. EBITDA, P/E 배수는 원문에 없습니다. 대금의 약 46%는 매도자가 빌려주는 어음이라 매각 측이 자금 조달을 도와주는 구조입니다. 8-K는 10/1 종결과 12억 달러 어음 설정을 확인해 줍니다.",
+   "chips": [
+    "포트폴리오 재편",
+    "지역 확장"
+   ],
+   "src": [
+    {
+     "l": "CenterPoint 발표",
+     "u": "https://www.centerpointenergy.com/en-us/corporate/about-us/news/2108"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1042773/0001104659-26-112565.txt",
+    "https://www.sec.gov/Archives/edgar/data/70145/0001193125-26-409787.txt"
+   ],
+   "dt": "10/1"
+  },
+  {
+   "t": "인수",
+   "ti": "H2O America(TWC) → Quadvest",
+   "pr": "5.4억 달러 · 규제 시스템 4.836억 달러 + Wholesale 시스템 5,640만 달러",
+   "who": "인수 주체는 H2O America의 텍사스 자회사 TWC로, 샌안토니오·오스틴 회랑의 규제 상하수도 사업자입니다. Quadvest는 휴스턴 대도시권의 투자자 소유 상하수도 사업자로 활성 연결 47,000개 이상, 계약·개발 중 연결 89,000개 이상, 수처리장 50곳, 하수처리장 27곳을 갖고 있습니다.",
+   "why": "TWC의 그레이터 휴스턴 진출과 텍사스 노출 확대가 이유입니다. 텍사스 고객 비중이 2024년 약 17%에서 2029년 약 26%로 오르고, 텍사스에서 연결 수 기준 2위 투자자 소유 상하수도 사업자가 됩니다. 개발사·건설사와의 관계 강화도 기대합니다.",
+   "val": "레이트 베이스, EBITDA 배수는 원문에 없습니다. 활성 연결 1개당 약 $11,500(계산, 파이프라인 89,000건은 반영 안 됨). 자금은 사모 부채와 자본 투입을 섞었습니다. 2025년 7월 발표 건이 이번에 종결됐습니다.",
+   "chips": [
+    "지역 확장",
+    "성장 시장 노출"
+   ],
+   "src": [
+    {
+     "l": "보도(WWD)",
+     "u": "https://www.wwdmag.com/utility-management/press-release/55301932/h2o-america-acquires-texas-water-utility-with-540-million-transaction"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/766829/0001628280-26-064259.txt"
+   ],
+   "dt": "10/1"
+  },
+  {
+   "t": "인수",
+   "ti": "ESCO → Megger Group",
+   "pr": "약 23.5억 달러(공시 표기 $2.3B) · 현금 9억 달러 + ESCO 주식 14억 달러",
+   "who": "Megger는 휴대용 전력 설비 시험 장비와 현장 계측기를 만드는 영국 회사입니다. ESCO는 항공우주·방산, 유틸리티 솔루션, RF 시험 세 부문이며, 자회사 Doble이 변전소 시험, 상태 감시, 진단 서비스를 제공합니다.",
+   "why": "Doble(진단 서비스)과 Megger(시험 장비)의 제품이 서로 보완되고, 북미·영국·유럽·아시아 판로가 넓어집니다. 설비 수명 전체를 보여주는 서비스를 내세웁니다. 종결 후 3년 내 비용시너지는 6,000만 달러입니다.",
+   "val": "EBITDA 등 배수는 원문에 없습니다. 시너지÷가격은 약 2.6%(계산). 대가의 약 60%가 ESCO 주식이라 매각 측이 인수사 지분을 받는 구조입니다.",
+   "chips": [
+    "제품 보완",
+    "판로 확대",
+    "비용 절감"
+   ],
+   "src": [
+    {
+     "l": "보도(Plant Services)",
+     "u": "https://www.plantservices.com/industry-news/news/55371497/esco-technologies-acquires-megger-for-23-billion-merges-it-with-doble-engineering"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/866706/0001104659-26-113300.txt"
+   ],
+   "dt": "10/2"
+  },
+  {
+   "t": "합병",
+   "ti": "Skyworks + Qorvo",
+   "pr": "결합 기업가치 약 220억 달러 · Qorvo 주당 현금 $32.50 + Skyworks 0.960주",
+   "who": "Skyworks는 아날로그·혼합신호 반도체를 만들어 휴대폰, 자동차, 항공우주, 국방에 공급합니다. Qorvo는 RF·전력 반도체로 모바일, 자동차, 국방·항공, 인프라를 겨냥합니다. 합산 매출은 약 77억 달러, 조정 EBITDA는 약 21억 달러(2025년 6월 LTM)입니다.",
+   "why": "규모와 재무 체력 강화, 엔지니어 약 8,000명과 특허 12,000건 이상 결합, 모바일 약 51억 달러와 브로드마켓 약 26억 달러 사업 형성, 미국 내 제조 가동률 개선이 이유입니다. 비용시너지는 24~36개월 내 연 5억 달러 이상입니다. Qorvo 지분 약 8%를 가진 Starboard가 찬성 약정을 했습니다.",
+   "val": "프리미엄은 원문에 없습니다. 결합 가치÷결합 EBITDA는 약 10.5배(계산)인데 두 회사를 합친 값이라 Qorvo 단독 가격 배수는 아닙니다. 시너지÷결합 가치는 약 2.3%(계산). 합병 후 지분은 Skyworks 약 63%, Qorvo 약 37%이고 순차입은 EBITDA의 약 1.0배입니다. 발표 당시엔 2027년 초 완료 예상이었으나 8-K는 10/5 합병 완료를 알립니다.",
+   "chips": [
+    "비용 절감",
+    "규모",
+    "제품 포트폴리오"
+   ],
+   "src": [
+    {
+     "l": "Qorvo 발표",
+     "u": "https://www.qorvo.com/about/news-events/news-releases/2025/skyworks-and-qorvo-to-combine-to-create-22-billion-us-based-leader"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1604778/0000950103-26-015180.txt",
+    "https://www.sec.gov/Archives/edgar/data/4127/0001104659-26-113538.txt"
+   ],
+   "dt": "10/5"
+  },
+  {
+   "t": "인수",
+   "ti": "Matador Resources → Paloma Permian(추정)",
+   "pr": "두 건 합계 약 12.75억 달러 (8-K 표기 12.55억 달러)",
+   "who": "Matador는 퍼미안 분지 석유·가스 개발사입니다. 보도된 대상은 Paloma Permian(뉴멕시코 Eddy·Lea 카운티)과 Ridge Runner Resources II(뉴멕시코 Lea, 텍사스 Winkler·Ward 카운티)입니다. 10/1 종결 8-K의 계약일(7/22)이 Paloma 건과 같지만, 어느 건인지는 원문 확인이 필요합니다.",
+   "why": "퍼미안 분지 사업 기반과 자원 확대, 기존 인프라와 운영 시너지로 인한 비용 절감 가능성이 제출 서류에 언급됩니다. 구체적인 생산·재무 전망은 없습니다.",
+   "val": "건별 가격, 면적, 생산량, 유량당 가격은 원문에 없습니다. 계약 시 6,375만 달러(약 5%)을 에스크로에 예치했고 효력일은 2026년 6월 1일입니다.",
+   "chips": [
+    "자산 확장",
+    "지역 집중"
+   ],
+   "src": [
+    {
+     "l": "보도(Kalkine)",
+     "u": "https://kalkinemedia.com/us/news/announcements/matador-resources-nyse-mtdr-announces-1275-billion-acquisitions-to-expand-permian-basin-operations"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1520006/0001520006-26-000050.txt"
+   ],
+   "dt": "10/5"
+  },
+  {
+   "t": "합병",
+   "ti": "Paramount Skydance + Warner Bros. Discovery",
+   "pr": "EV 약 1,100억 달러 · 주당 $31 전액 현금",
+   "who": "Paramount는 TV·영화 스튜디오와 스트리밍(Paramount+, Pluto TV)을, WBD는 HBO Max, Discovery+, 영화 스튜디오, 케이블 채널과 콘텐츠 IP(해리 포터, DC, 왕좌의 게임 등)를 갖고 있습니다. 합산 영화 라이브러리는 15,000편 이상, 스트리밍 가입자는 합산 약 2억 명입니다.",
+   "why": "스트리밍 규모 확대(Paramount+와 HBO Max를 한 서비스로 통합 계획), 콘텐츠 IP 결합, 중복 부서 정리가 이유이고 시너지는 60억 달러 이상을 기대합니다. WBD가 Netflix와 맺었던 약 830억 달러 계약을 Paramount가 대체했고, Netflix에 줄 해지 수수료 28억 달러도 Paramount가 부담합니다.",
+   "val": "프리미엄은 원문에 없습니다. 시너지÷EV는 약 5.5%(계산). 9/30까지 종결이 안 되면 분기마다 주당 $0.25의 지연 수수료가 붙는 조건이었고, 8-K에 찍힌 주당 $31.0167은 $31에 6일치 수수료가 더해진 값으로 보입니다(계산상 일치, 추정). 합병 자금은 채권, 대출, 사모 증자(PIPE)로 조달했다고 8-K에 적혀 있습니다.",
+   "chips": [
+    "콘텐츠 IP",
+    "스트리밍 통합",
+    "비용 절감"
+   ],
+   "src": [
+    {
+     "l": "보도(StreamTV Insider)",
+     "u": "https://www.streamtvinsider.com/content/paramount-warner-bros-discovery-agree-110b-merger-deal"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/2041610/0001104659-26-113913.txt",
+    "https://www.sec.gov/Archives/edgar/data/1437107/0001193125-26-415055.txt"
+   ],
+   "dt": "10/6"
+  },
+  {
+   "t": "합병",
+   "ti": "Repligen + BioLife Solutions",
+   "pr": "EV 약 15억 달러 · 주당 $31 상당(현금 $11.25 + Repligen 0.1442주)",
+   "who": "Repligen은 바이오의약품 제조 공정 기술(여과, 크로마토그래피, 공정 분석, 단백질)을 만듭니다. BioLife는 세포·유전자치료용 세포 처리 도구와 보존 배지를 만들며 주력 CryoStor가 승인된 치료제 18개와 미국 상업 후원 세포치료 임상시험 대다수에 쓰입니다. 2026년 2분기 매출은 2,850만 달러으로 전년 대비 21% 증가했습니다.",
+   "why": "세포치료 시장 진출 확대와 고객 워크플로에 깊이 들어간 반복 구매 소모품이 이유입니다. BioLife 쪽은 Repligen의 글로벌 영업망, 특히 아시아태평양 접근을 기대합니다. 비용시너지는 1년차 2,000만 달러, 2년차 3,000만 달러 이상(상장 비용, G&A, 제조·공급망)이고 매출 시너지는 전망에 거의 넣지 않았습니다.",
+   "val": "프리미엄 24%(90일 VWAP). 대가는 주식 64%, 현금 36%입니다. 원문에 배수는 없고, 2분기 매출을 4배해 본 연환산 대비 EV는 약 13배(제 계산, 대략치)입니다. 조정 EPS는 1년차 최소 $0.05, 2년차 최소 $0.25 증가 예상입니다. 시너지÷EV는 약 2.0%(계산, 2년차 기준).",
+   "chips": [
+    "제품 확장",
+    "판로 확대",
+    "비용 절감"
+   ],
+   "src": [
+    {
+     "l": "Repligen 발표",
+     "u": "https://www.biospace.com/press-releases/repligen-to-acquire-biolife-solutions-expanding-its-cell-therapy-capabilities-with-market-leading-biopreservation-media"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/834365/0001193125-26-415012.txt",
+    "https://www.sec.gov/Archives/edgar/data/730272/0001193125-26-415015.txt"
+   ],
+   "dt": "10/6"
+  },
+  {
+   "t": "매각",
+   "ti": "Clarivate → Altaris",
+   "pr": "총 6억 달러 · 종결 시 현금 5억 달러 + 이행 완료 후 2,500만 달러 + 매도자 어음 7,500만 달러",
+   "who": "Clarivate는 학술·정부와 지식재산(IP) 정보 서비스가 중심입니다. 매각 대상은 Life Sciences & Healthcare 부문이고, 인수자 Altaris는 헬스케어 기업을 사서 키우는 데 집중하는 투자회사입니다.",
+   "why": "핵심인 Academia & Government, IP에 집중하려는 선택과 집중입니다. 매각 대금은 부채 상환에 쓰고, 부채 감축, 매출 구성 개선, 자본 집약도 하락, 조정 EBITDA 마진 확대를 기대합니다. 해당 사업은 3분기부터 중단영업으로 분류됩니다.",
+   "val": "대상 사업의 매출·EBITDA와 배수는 원문에 없습니다. 영업권 손상 약 2.25~2.5억 달러가 예상돼 장부가 아래로 파는 거래임을 알 수 있습니다. 8-K의 5억 달러은 종결 시 현금분입니다.",
+   "chips": [
+    "선택과 집중",
+    "부채 감축"
+   ],
+   "src": [
+    {
+     "l": "보도(Pulse 2.0)",
+     "u": "https://pulse2.com/clarivate-selling-life-sciences-healthcare-segment-to-altaris-for-600-million/"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1764046/0001764046-26-000117.txt",
+    "https://www.sec.gov/Archives/edgar/data/1764046/0001764046-26-000122.txt"
+   ],
+   "dt": "10/6"
+  },
+  {
+   "t": "인수",
+   "ti": "Copart → ACV Auctions",
+   "pr": "자기자본가치 약 19억 달러 · 주당 $10.50 현금",
+   "who": "Copart는 250여 개 거점을 가진 글로벌 온라인 차량 경매 업체로 회원 약 100만 명, 연 400만 대 이상을 판매합니다. ACV는 딜러 간 디지털 도매 경매와 차량 검사·데이터 기술(ACV Transportation, ACV Capital 등)을 가진 업체입니다.",
+   "why": "딜러 간 도매 경매에 즉시 진입하고, 폐차부터 도매까지 아우르는 디지털 재판매 플랫폼을 만드는 것이 이유입니다. 구매자·판매자 교차판매, 운송 서비스 확대, 양사 차량 상태 데이터 결합, ACV의 검사 기술과 AI 가치평가 도입을 기대합니다. ACV는 독립 자회사로 남고 기존 경영진이 운영합니다.",
+   "val": "프리미엄 45%(8/10 미공개 종가 대비), 41%(30일 VWAP). 매출·EBITDA 배수와 시너지 금액은 원문에 없습니다. EPS는 첫 회계연도 중립, 2028 회계연도부터 증가를 예상합니다. 구조는 공개매수 후 합병이고 보유 현금으로 조달해 자금 조건이 없습니다.",
+   "chips": [
+    "판로 교차판매",
+    "데이터·기술"
+   ],
+   "src": [
+    {
+     "l": "보도(Pulse 2.0)",
+     "u": "https://pulse2.com/copart-to-acquire-acv-for-1-9-billion-to-expand-vehicle-remarketing-platform/amp/"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/900075/0001193125-26-423478.txt",
+    "https://www.sec.gov/Archives/edgar/data/1637873/0001193125-26-425225.txt"
+   ],
+   "dt": "10/16"
+  },
+  {
+   "t": "인수",
+   "ti": "Brady → Honeywell PSS 사업",
+   "pr": "14억 달러 전액 현금",
+   "who": "Brady는 밀워키 기반으로 식별, 안전, 컴플라이언스 제품을 만듭니다. 대상은 Honeywell의 Productivity Solutions and Services(PSS)로, 보도 제목상 바코드 스캐너 등을 다루는 사업입니다. 확인한 기사는 일부가 구독자 전용이라 사업 설명은 더 확인하지 못했습니다.",
+   "why": "거래 이유와 시너지는 확인한 자료에 없습니다.",
+   "val": "2025년 EBITDA의 약 8배입니다. 대상 사업의 매출·EBITDA 금액은 확인하지 못했습니다. 4/20 계약, 이번 달 완료 공시입니다.",
+   "chips": [
+    "사업 확장"
+   ],
+   "src": [
+    {
+     "l": "보도(BizTimes)",
+     "u": "https://biztimes.com/brady-corp-to-buy-a-portion-of-honeywell-in-1-4-billion-deal/"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/746598/0000746598-26-000049.txt"
+   ],
+   "dt": "10/16"
+  },
+  {
+   "t": "인수",
+   "ti": "Prysmian → Atkore",
+   "pr": "EV 약 38억 달러 · 주당 $95 전액 현금",
+   "who": "Atkore는 미국 전기·인프라 업체로 강철·PVC·알루미늄 전선관, 케이블 트레이 같은 관리 시스템, 플라스틱 파이프를 만들어 데이터센터, 상업·산업 건설, 유틸리티에 공급합니다. FY2025 매출 28.5억 달러, EBITDA 3.86억 달러, 직원 약 5,400명입니다. Prysmian은 에너지·디지털 연결(케이블) 분야 선도 기업입니다(원문 CEO 발언 기준).",
+   "why": "북미 사업 확대, 케이블 인접 전기 인프라 제품 추가, 제품·서비스·영업망을 묶은 원스톱 공급, 전기화와 데이터센터 투자 수혜를 이유로 듭니다. 종결 후 3년 내 연 약 1.5억 달러 시너지가 목표입니다.",
+   "val": "프리미엄 23%(90일 VWAP). EV/EBITDA 9.8배(2025 실적)이고 시너지를 반영하면 7.1배입니다. 첫 회계연도 EPS는 시너지 제외 시 한 자릿수 후반, 시너지 달성 후 두 자릿수 증가를 예상합니다. 시너지÷EV는 약 3.9%(계산). 자금은 하이브리드 채권 등 부채와 자기주식 처분 등 지분을 섞어 조달합니다.",
+   "chips": [
+    "제품 확장",
+    "판로 통합",
+    "비용 절감"
+   ],
+   "src": [
+    {
+     "l": "Prysmian 발표",
+     "u": "https://www.prysmian.com/en/media/press-releases/prysmian-to-acquire-atkore-to-become-a-fully-fledged-electrical-solutions"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1666138/0001666138-26-000041.txt"
+   ],
+   "dt": "10/19"
+  },
+  {
+   "t": "합병",
+   "ti": "Dream Finders Homes + Beazer Homes",
+   "pr": "EV 약 22억 달러 · 주당 $33.50 현금",
+   "who": "합병 후 2025년 매출 기준 미국 6위 주택건설사로, 26개 시장과 활성 커뮤니티 약 520곳을 갖게 됩니다. Dream Finders는 토지를 직접 많이 쥐지 않는 land-light 전략의 건설사입니다.",
+   "why": "시장, 토지, 인력을 한 번에 확보해 상위 5대 건설사에 다가가려는 것이 이유입니다. 연 1억 달러 이상 비용시너지는 생산 효율, 구매, 간접비, 중복 상장 비용, 모기지·타이틀 부대사업 침투율, 보험에서 나옵니다. Beazer는 불확실한 시장에서 확실한 현금을 택했고, 앞서 3월 $29, 5월 $25.75 제안 등 몇 차례 제안이 오갔습니다.",
+   "val": "장부가치 대비 0.8배로, 순자산보다 싸게 팔렸습니다. 시너지÷EV는 약 4.5%(계산). 첫해 EPS 두 자릿수 증가를 예상하고, 이미 높은 레버리지를 18~24개월 내 회복한다고 밝혔습니다. 8-K는 10/20 합병 완료를 알립니다.",
+   "chips": [
+    "비용 절감",
+    "규모",
+    "금융 부대사업"
+   ],
+   "src": [
+    {
+     "l": "보도(HousingWire)",
+     "u": "https://housingwire.com/articles/dream-finders-beazer-100m-synergies"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/915840/0001104659-26-117198.txt",
+    "https://www.sec.gov/Archives/edgar/data/1825088/0001628280-26-066548.txt"
+   ],
+   "dt": "10/20"
+  },
+  {
+   "t": "인수",
+   "ti": "Group 1 Automotive → Hennessy Automobile Companies",
+   "pr": "약 13억 달러",
+   "who": "Group 1은 미국 자동차 딜러 그룹입니다. 대상은 애틀랜타 지역 Hennessy의 10개 점포(Lexus, Jaguar/Land Rover, Porsche)와 부동산이며 정비 베이 500개, 기술자 약 280명을 갖고 있습니다.",
+   "why": "성장 시장에 점포를 모으는 클러스터 전략입니다. 애틀랜타 점포가 3개에서 15개(최근 인수한 Stone Mountain Honda·Toyota 포함)로 늘어 매출 기준 미국 2위 시장이 됩니다. 연 매출 약 17억 달러이 추가되고 인수 즉시 EPS 증가를 예상합니다.",
+   "val": "EBITDA 배수는 원문에 없습니다. 연 매출 대비 가격은 약 0.76배(계산, 부동산이 포함된 가격). 자금은 브리지 약정을 받은 신규 부채입니다.",
+   "chips": [
+    "지역 클러스터",
+    "고정비 분산"
+   ],
+   "src": [
+    {
+     "l": "보도(Hoodline)",
+     "u": "https://hoodline.com/2026/07/group-1-snaps-up-hennessy-s-atlanta-car-empire-in-1-3b-deal/"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1031203/0001031203-26-000139.txt"
+   ],
+   "dt": "10/21"
+  },
+  {
+   "t": "인수",
+   "ti": "CRH → Arcosa",
+   "pr": "EV 약 85억 달러 · 주당 $150 전액 현금",
+   "who": "CRH는 건축자재 분야 선도 기업입니다. Arcosa는 댈러스에 본사를 둔 인프라 자재 업체로, 골재 등 건설자재(채석장·야적장 109곳, 2025년 골재 출하 약 3,500만 톤)와 에너지 송전용 구조물 제조(업계 상위 3위) 두 축으로 움직입니다.",
+   "why": "미국 골재 선두 입지 강화, 골재·시멘트질 자재·핵심 인프라를 묶는 전략, 인구가 빠르게 느는 대도시권 노출(미국 50대 도시권 중 13곳), 전력망 현대화·전기화·데이터센터 건설 수요가 이유입니다. 비용시너지는 3년차 기준 연 1.75억 달러(조달, 자체 공급, 판관비)입니다.",
+   "val": "프리미엄 25%(60일 거래량가중평균가 대비). 2026년 예상 EBITDA의 11.5배이고, 원문은 비용시너지 1.75억 달러와 함께 이 배수를 제시합니다. 합산 순부채는 EBITDA의 2.4배로 투자등급 유지를 약속했습니다. 시너지÷EV는 약 2.1%(계산). 발표 당시 완료 예상은 2027년 1분기였는데 10월에 완료 공시가 나왔습니다.",
+   "chips": [
+    "비용 절감",
+    "지역·제품 확장"
+   ],
+   "src": [
+    {
+     "l": "CRH 발표",
+     "u": "https://www.crh.com/?p=58184"
+    }
+   ],
+   "filings": [
+    "https://www.sec.gov/Archives/edgar/data/1739445/0001140361-26-040596.txt"
+   ],
+   "dt": "10/23"
+  }
+ ],
+ "val": [
+  {
+   "n": "Paramount + WBD",
+   "p": "EV 1,100억 달러",
+   "pm": "-",
+   "mu": "-",
+   "sy": "60억 달러+",
+   "r": "5.5%"
+  },
+  {
+   "n": "CRH → Arcosa",
+   "p": "EV 85억 달러",
+   "pm": "25% (60일 VWAP)",
+   "mu": "11.5배 (2026E EBITDA)",
+   "sy": "1.75억 달러",
+   "r": "2.1%"
+  },
+  {
+   "n": "Skyworks + Qorvo",
+   "p": "결합 220억 달러",
+   "pm": "-",
+   "mu": "약 10.5배 (결합, 계산)",
+   "sy": "5억 달러+",
+   "r": "2.3%"
+  },
+  {
+   "n": "Prysmian → Atkore",
+   "p": "EV 38억 달러",
+   "pm": "23% (90일 VWAP)",
+   "mu": "9.8배 (시너지 반영 7.1배)",
+   "sy": "1.5억 달러",
+   "r": "3.9%"
+  },
+  {
+   "n": "CenterPoint → NFG",
+   "p": "26.2억 달러",
+   "pm": "-",
+   "mu": "레이트 베이스 1.9배",
+   "sy": "-",
+   "r": "-"
+  },
+  {
+   "n": "ESCO → Megger",
+   "p": "23.5억 달러",
+   "pm": "-",
+   "mu": "-",
+   "sy": "6,000만 달러",
+   "r": "2.6%"
+  },
+  {
+   "n": "Dream Finders + Beazer",
+   "p": "EV 22억 달러",
+   "pm": "직전 제안 대비 +$1.50",
+   "mu": "장부가 0.8배",
+   "sy": "1억 달러+",
+   "r": "4.5%"
+  },
+  {
+   "n": "Copart → ACV",
+   "p": "지분 19억 달러",
+   "pm": "45% (미공개 종가)",
+   "mu": "-",
+   "sy": "비정량",
+   "r": "-"
+  },
+  {
+   "n": "Repligen + BioLife",
+   "p": "EV 15억 달러",
+   "pm": "24% (90일 VWAP)",
+   "mu": "연환산 매출 약 13배 (계산)",
+   "sy": "2,000만 달러→3,000만 달러+",
+   "r": "2.0%"
+  },
+  {
+   "n": "Brady → Honeywell PSS",
+   "p": "14억 달러",
+   "pm": "-",
+   "mu": "약 8배 (2025 EBITDA)",
+   "sy": "-",
+   "r": "-"
+  },
+  {
+   "n": "Group 1 → Hennessy",
+   "p": "13억 달러",
+   "pm": "-",
+   "mu": "연매출 약 0.76배 (계산)",
+   "sy": "-",
+   "r": "-"
+  },
+  {
+   "n": "Matador (두 건)",
+   "p": "12.75억 달러",
+   "pm": "-",
+   "mu": "-",
+   "sy": "언급만",
+   "r": "-"
+  },
+  {
+   "n": "Clarivate → Altaris",
+   "p": "6억 달러",
+   "pm": "-",
+   "mu": "장부가 이하 (손상 2.25~2.5억 달러)",
+   "sy": "-",
+   "r": "-"
+  },
+  {
+   "n": "H2O → Quadvest",
+   "p": "5.4억 달러",
+   "pm": "-",
+   "mu": "연결 1개당 약 $11,500 (계산)",
+   "sy": "-",
+   "r": "-"
+  }
+ ],
+ "others": [
+  {
+   "t": "합병",
+   "ti": "NSTS Bancorp → Brookfield",
+   "tx": "합병 후 Brookfield로 흡수. 은행지주 간 거래",
+   "am": "$73.7M",
+   "dt": "10/1",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1881592/0001437749-26-031662.txt"
+   ]
+  },
+  {
+   "t": "합병",
+   "ti": "Gentherm · Modine · SpinCo",
+   "tx": "분할(SpinCo)과 합병 거래 종결. 세무분담계약 등 부수계약 체결",
+   "am": "$156M",
+   "dt": "10/1",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/903129/0001193125-26-410776.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "CareTrust REIT (영국 자회사)",
+   "tx": "영국 요양원 보유 법인 인수. 완공된 23곳과 추가 1곳",
+   "am": "$764M",
+   "dt": "10/2",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1590717/0001628280-26-064352.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Chiron Real Estate → The Pinnacle North Bethesda",
+   "tx": "메릴랜드 노스베서스다 시니어 주거시설 인수",
+   "am": "$173.2M",
+   "dt": "10/5",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1533615/0001533615-26-000004.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "GEO Group ← 미국 정부",
+   "tx": "Adelanto 복합시설 매매계약(10/2 체결)",
+   "am": "$950M",
+   "dt": "10/5",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/923796/0001193125-26-413085.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Harrow ← Viatris",
+   "tx": "안구건조 치료제 Tyrvaya 비강 스프레이 자산 인수",
+   "am": "$30M",
+   "dt": "10/5",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1360214/0001628280-26-064749.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "Duos Technologies → Axe Compute",
+   "tx": "Duos Edge AI GPUaaS 특수목적회사 지분 100% 매각",
+   "am": "$87.8M",
+   "dt": "10/5",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1396536/0001079973-26-001318.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "INNOVATE Corp",
+   "tx": "DBMG Global 매각 완료(10/5)",
+   "am": "$20.7M",
+   "dt": "10/5",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1006837/0001006837-26-000118.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "Conduent → Modaxo USA Holdings",
+   "tx": "자회사 지분 매각(5/21 계약). 대상 사업은 원문 확인 필요",
+   "am": "$140M",
+   "dt": "10/6",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1677703/0001677703-26-000123.txt"
+   ]
+  },
+  {
+   "t": "합병",
+   "ti": "Simulations Plus (피인수 측)",
+   "tx": "합병 완료. 인수자는 원문 확인 필요",
+   "am": "$376.8M",
+   "dt": "10/6",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1023459/0001023459-26-000092.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "TruGolf Holdings → Polymath",
+   "tx": "8/17 계약한 Polymath 인수 종결",
+   "am": "$140M",
+   "dt": "10/9",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1857086/0001493152-26-046435.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Ranger Energy Services ← STEP Energy Services",
+   "tx": "STEP 측 자산 인수(8/31 계약)",
+   "am": "$27.5M",
+   "dt": "10/9",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1699039/0001628280-26-065491.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Alaunos Therapeutics → Velaris Therapeutics",
+   "tx": "10/13 합병계약 체결과 동시에 Velaris 인수",
+   "am": "$350M",
+   "dt": "10/13",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1107421/0001193125-26-419829.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Eton Pharmaceuticals ← Aquestive",
+   "tx": "LIBERVANT 미국 독점 판매권 라이선스 취득",
+   "am": "$10M",
+   "dt": "10/14",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1710340/0001437749-26-032600.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "Cambium Networks (영국 자회사)",
+   "tx": "방산 사업과 일부 고정 광대역 제품군을 Airspan에 매각",
+   "am": "$5.1M",
+   "dt": "10/19",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1738177/0001193125-26-425275.txt"
+   ]
+  },
+  {
+   "t": "인수",
+   "ti": "Bolt Biotherapeutics → Prana Therapies",
+   "tx": "10/23 합병계약으로 Prana 인수",
+   "am": "$120M",
+   "dt": "10/23",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1641281/0001193125-26-429647.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "1-800-Flowers",
+   "tx": "Personalization Mall, Things Remembered, Personalization Universe 사업 매각",
+   "am": "$45M",
+   "dt": "10/23",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1084869/0001084869-26-000041.txt"
+   ]
+  },
+  {
+   "t": "매각",
+   "ti": "Boston Omaha",
+   "tx": "GIG 사업 매각",
+   "am": "$84.3M",
+   "dt": "10/26",
+   "ln": [
+    "https://www.sec.gov/Archives/edgar/data/1494582/0001437749-26-033464.txt"
+   ]
+  }
+ ]
+}

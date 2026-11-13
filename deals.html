@@ -97,17 +97,22 @@ function showUsPane(u) {
   if (u === "all") loadUsAll();
 }
 
-let usDeepLoaded = false;
-function loadUs() {
-  if (usDeepLoaded) return;
+let usDeepLoaded = false, usDeepMonths = null;
+function loadUs(file) {
+  if (usDeepLoaded && !file) return;
   usDeepLoaded = true;
   const box = document.getElementById("usDeep");
   box.innerHTML = '<div class="empty">불러오는 중…</div>';
-  fetch("us_deals_deep.json?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
+  fetch((file || "us_deals_deep.json") + "?t=" + Date.now()).then(r => (r.ok ? r.json() : null)).catch(() => null).then(d => {
     if (!d || !d.deals) { box.innerHTML = '<div class="empty">분석 자료를 불러오지 못했습니다.</div>'; return; }
+    // 지난달 분석 보기: 최신 파일에 적힌 목록(archive)을 기억해 두고 월 선택으로 바꿔 본다
+    if (!usDeepMonths) usDeepMonths = [{ month: d.month, file: "us_deals_deep.json" }].concat(d.archive || []);
+    const cur = file || "us_deals_deep.json";
+    const monthSel = usDeepMonths.length > 1 ? '<div class="us-month-row"><label for="usDeepMonth">분석 월</label><select id="usDeepMonth">' +
+      usDeepMonths.map(m => '<option value="' + esc(m.file) + '"' + (m.file === cur ? " selected" : "") + '>' + esc(m.month.replace("-", "년 ")) + '월</option>').join("") + '</select></div>' : "";
     const tcls = { "인수": "a", "매각": "s", "합병": "m" };
     const linkA = (u, l) => '<a target="_blank" rel="noopener" href="' + esc(u) + '">' + esc(l) + '</a>';
-    let h = '<div class="notice-line">' + esc(d.month.replace("-", "년 ")) + '월 주요 딜 ' + d.deals.length + '건을 기업 발표자료와 보도를 읽고 정리했어요. 금액은 원문 표기 기준이고, "계산"이라고 적은 수치는 직접 계산한 대략치입니다.</div>';
+    let h = monthSel + '<div class="notice-line">' + esc(d.month.replace("-", "년 ")) + '월' + (d.range ? '(' + esc(d.range) + ')' : '') + ' 주요 딜 ' + d.deals.length + '건을 기업 발표자료와 보도를 읽고 정리했어요. 금액은 원문 표기 기준이고, "계산"이라고 적은 수치는 직접 계산한 대략치입니다.</div>';
     h += '<h2 class="dd-h">밸류에이션 한눈에</h2><div class="dd-tbl"><table><thead><tr><th>딜</th><th>가격</th><th>프리미엄</th><th>배수</th><th>시너지</th><th>시너지÷가격</th></tr></thead><tbody>' +
       d.val.map(v => '<tr><td class="nm">' + esc(v.n) + '</td><td>' + esc(v.p) + '</td><td>' + esc(v.pm) + '</td><td>' + esc(v.mu) + '</td><td>' + esc(v.sy) + '</td><td>' + esc(v.r) + '</td></tr>').join("") +
       '</tbody></table></div>';
@@ -128,10 +133,12 @@ function loadUs() {
         '<dl><dt>두 회사</dt><dd>' + esc(x.who) + '</dd><dt>이유·시너지</dt><dd>' + esc(x.why) + '</dd><dt>가격 해석</dt><dd>' + esc(x.val) + '</dd></dl>' +
         '<footer><span class="dd-chips">' + x.chips.map(c => '<span class="dd-chip">' + esc(c) + '</span>').join("") + '</span><span class="dd-src">출처 ' + srcs + ' · ' + fil + '</span></footer></article>';
     }
-    h += '<h2 class="dd-h">그 밖의 완료 딜 <em>공시 본문에서 확인되는 내용만 요약</em></h2><div class="dd-others">' +
+    h += '<h2 class="dd-h">그 밖의 딜 <em>공시 본문에서 확인되는 내용만 요약</em></h2><div class="dd-others">' +
       d.others.map(r => '<div class="dd-o"><span class="dd-tag ' + (tcls[r.t] || "a") + '">' + esc(r.t) + '</span><div><b>' + esc(r.ti) + '</b>' + (r.am ? ' <span class="dd-am">' + esc(r.am) + '</span>' : '') +
         '<p>' + esc(r.tx) + ' <span class="dd-ol">' + r.ln.map((u, i) => linkA(u, "공시" + (r.ln.length > 1 ? (i + 1) : ""))).join(" ") + '</span></p></div></div>').join("") + '</div>';
     box.innerHTML = h;
+    const ms = document.getElementById("usDeepMonth");
+    if (ms) ms.onchange = () => loadUs(ms.value);
   });
 }
 
