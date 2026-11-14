@@ -4,7 +4,12 @@ import json
 import hanja
 import opencc
 
-cvs = [opencc.OpenCC(c) for c in ("s2t", "jp2t")]
+cvs = []
+for c in ("s2t", "jp2t", "s2t.json", "jp2t.json"):
+    try:
+        cvs.append(opencc.OpenCC(c))
+    except Exception as e:
+        print("변환기 없음", c, type(e).__name__)
 out = {}
 for cp in list(range(0x4E00, 0xA000)) + list(range(0x3400, 0x4DC0)):
     ch = chr(cp)
