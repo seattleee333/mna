@@ -393,9 +393,10 @@ main { flex:1; min-width:0; max-width:780px; }
 .us-tabs button { border:0; background:transparent; padding:10px 14px; font-size:14.5px; font-weight:700; color:var(--sub);
   cursor:pointer; font-family:inherit; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .us-tabs button.on { color:var(--accent); border-bottom-color:var(--accent); }
-.us-month-row { display:flex; align-items:center; gap:10px; margin:0 0 12px; font-size:13.5px; color:var(--sub); }
+.us-month-row { display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; margin:0 0 12px; font-size:13.5px; color:var(--sub); }
 .us-month-row select { font:inherit; font-weight:700; padding:6px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--text); }
-.us-count { margin-left:auto; font-weight:700; color:var(--faint); }
+.us-count { margin-left:auto; font-weight:700; color:var(--faint); white-space:nowrap; }
+.us-month-row label { white-space:nowrap; }
 .dd-h { font-size:16px; font-weight:800; margin:26px 0 10px; display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; }
 .dd-h em { font-style:normal; font-size:12.5px; font-weight:600; color:var(--faint); }
 .dd-tbl { overflow-x:auto; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); }
