@@ -12,6 +12,8 @@ import datetime as dt
 import requests
 from bs4 import BeautifulSoup
 
+from translate_asia import jp_ko, cn_ko, co_ko
+
 OUT = "asia_deals.json"
 LOG = "asia_log.txt"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; mna-research/1.0)"}
@@ -37,7 +39,7 @@ JP_RULES = [  # (분류, 정규식) — 위에서부터 먼저 맞는 것
     ("자본제휴", r"資本(?:業務)?提携"),
 ]
 JP_EXCL = re.compile(r"自己株式|自社株|訂正|延長|結果|進捗|ストックオプション|新株予約権|投資口|ETF|REIT|インフラファンド|上場廃止|監理|整理|"
-                     r"株式報酬|インセンティブ|従業員|役員|優先株式|持株会社体制|追加譲受価額|事後交付|臨時報告|質問|上場維持|株主優待|説明資料|補足|説明会|Q&A")
+                     r"株式報酬|インセンティブ|従業員|役員|優先株式|持株会社体制|追加譲受価額|事後交付|臨時報告|質問|上場維持|株主優待|説明資料|補足|説明会|Q&A|公認会計士|監査法人|計上|業績|配当")
 # 그룹 안에서만 하는 재편(완전자회사 흡수합병 등)은 표시만 해 두고 화면에서 기본으로 숨긴다
 JP_INTERNAL = re.compile(r"完全子会社.*(?:吸収合併|吸収分割)|(?:連結)?子会社間|子会社同士|孫会社.*合併|簡易合併・略式合併")
 CN_INTERNAL = re.compile(r"全资子公司之间|吸收合并全资子公司|全资子公司.*吸收合并|子公司.*少数股东|孙公司|内部.*(?:整合|划转)")
@@ -190,6 +192,15 @@ def main():
     cn = fetch_cn()
     db["jp"] = merge([x for x in db.get("jp", []) if jp_cat(x["ti"])], jp, lambda x: x["u"])
     db["cn"] = merge([x for x in db.get("cn", []) if "n" in x], cn, lambda x: (x["code"], x["d"], x["c"]))
+    # 한국어 제목·회사명 (규칙 번역, 매번 새로 계산해 번역 규칙이 좋아지면 지난 공시에도 반영)
+    rough = {"jp": 0, "cn": 0}
+    for mkt, fn in (("jp", jp_ko), ("cn", cn_ko)):
+        for x in db[mkt]:
+            x["k"], r = fn(x["ti"])
+            x["ck"] = co_ko(x["co"], mkt)
+            x["r"] = 1 if r else 0
+            rough[mkt] += r
+    say("대략 번역", rough)
     db["updated"] = dt.datetime.now(KST).strftime("%Y-%m-%d %H:%M")
     json.dump(db, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     say("누적 일본", len(db["jp"]), "중국", len(db["cn"]))

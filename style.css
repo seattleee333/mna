@@ -440,3 +440,4 @@ main { flex:1; min-width:0; max-width:780px; }
   .dd-src { margin-left:0; }
 }
 .dd dd, .dd-o p, .dd-price { word-break:keep-all; }
+.asia-orig { color:var(--faint); font-style:normal; font-size:12px; font-weight:500; }
