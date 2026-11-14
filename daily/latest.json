@@ -1,96 +1,133 @@
 {
- "date": "20261113",
+ "date": "20261114",
  "base_dates": [
-  "20261112",
-  "20261111"
+  "20261113",
+  "20261112"
  ],
  "pick": {
-  "score": 63.0,
+  "score": 91.4,
   "buyers": [
-   "디앤디파마텍"
+   "상상인"
   ],
-  "target": "Z-Alpha Holdings, Inc.",
-  "amount": 10025248610,
+  "target": "상상인저축은행",
+  "amount": 110700000000,
   "cat": "타법인 주식 취득·처분",
-  "kind": "stake_in",
-  "date": "20261112",
+  "kind": "stake_out",
+  "date": "20261113",
   "market": "K",
-  "corp": "디앤디파마텍",
-  "stock": "347850",
-  "rcept": "20261112900320",
-  "summary": "디앤디파마텍이 Z-Alpha Holdings, Inc. 지분을 100억원에 인수합니다.",
+  "corp": "상상인",
+  "stock": "038540",
+  "rcept": "20261113901138",
+  "summary": "상상인이 보유 중이던 상상인저축은행 지분을 1,107억원에 매각합니다.",
   "rcepts": [
-   "20261112900320"
+   "20261113901138"
   ],
   "structured": true,
   "news": [
    {
-    "title": "디앤디파마텍, 알파 항암제에 100억 원∙∙∙현물출자 이어 현금 투입",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jUG9EZVhPRk11bU4xcUV6RjRLdDlmb3FUeElpTmZ4VE4xQS1vdkpwcFg0Z2pRX3Jqa2dRbmVKREZEN3hTRHFHcm40bl8tczBaRkpwdVN1QmdrR1RWemhZUVR3XzU1Sm9wa3c?oc=5",
-    "src": "한국M&A경제신문",
+    "title": "상상인저축은행 매각 또 미뤄지나…1년 넘게 지연 무슨일이 |",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQmdJU1FhTkh3a2N5VnhMc0dUR2V5TGEyZkw2WFY1d05Od2o0OE5OSzYyMFF4WXZnTFgtSzU5QjlFNEpsaTQ5bWVkck1OTWZXZWhzbXNrWVY2SjlhelZiNnhvck56QWJzR3AxR0RCb2hBTURX?oc=5",
+    "src": "KB Think",
+    "n": 2,
+    "pub": "202611130926"
+   },
+   {
+    "title": "저축은행 M&A 규제 풀렸지만 부담 여전… 상상인 매각 발목 잡는 ‘부실 청구서’",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTVBRQ3NuWGJFM29PTEhFb2M0TWN4UGdVdUxlNld2OUFpT0Nwb2dBc3NZWWk1WkdrUldUNWZOVzJCb2FHNFhqSmJJRmVuZ3pwVGljWnFRdFgyZjMxYlR1Q0J4Ui1QTXA5cUgzZXFsbkxSYnVhNFdOLVZ3YWJJb1dLRk5jVVU?oc=5",
+    "src": "글로벌이코노믹",
     "n": 1,
-    "pub": "202611121426"
+    "pub": "202611120500"
    }
   ]
  },
  "others": [
   {
-   "score": 61.2,
+   "score": 68,
    "buyers": [
-    "삼양식품"
+    "바이브컴퍼니"
    ],
-   "target": "Samyang Foods Bac Ninh LLC (가칭)",
-   "amount": 131131235979,
-   "cat": "타법인 주식 취득·처분",
-   "kind": "stake_in",
-   "date": "20261111",
-   "market": "Y",
-   "corp": "삼양식품",
-   "stock": "003230",
-   "rcept": "20261111800496",
-   "summary": "삼양식품이 Samyang Foods Bac Ninh LLC (가칭) 지분을 1,311억원에 인수합니다.",
+   "target": "",
+   "amount": null,
+   "cat": "경영권 변경 계약",
+   "kind": null,
+   "date": "20261112",
+   "market": "K",
+   "corp": "바이브컴퍼니",
+   "stock": "301300",
+   "rcept": "20261112900980",
+   "summary": "바이브컴퍼니가 경영권 변경을 위한 계약을 체결했습니다.",
    "rcepts": [
-    "20261111800496"
+    "20261112900980"
    ],
-   "structured": true,
-   "news": []
+   "structured": false,
+   "news": [
+    {
+     "title": "바이브컴퍼니, 에이아이블레이저에 경영권 매각…80억 규모 유상증자도 추진",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oWjdZMlFqcHJPVU5kMHpqQzk0d2xZSXEwMG53YWVPNGFJUGp4anJxOU1tVFBDcnJ2R19KRUZaTnpNUXZUSDY4dDl4Y3F0LVZOakdxZ0x3?oc=5",
+     "src": "지디넷코리아",
+     "n": 1,
+     "pub": "202611131651"
+    },
+    {
+     "title": "바이브컴퍼니, 대표는 81% 웃돈 받고 소액주주는 신주 47%에 희석되는 매각",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9QcHBtMlhKMU5COW1FMS1fOERXamVEd2hVWjkwenAtTEFZY2cweERfVGpUMjV6NWFQNGxtU3BibXZoaC1leE9IaTlVVEdhMEtLcmM3QTEta2R3Z2E2c3JRTGJyZm1ZM1puSEE?oc=5",
+     "src": "한국M&A경제신문",
+     "n": 1,
+     "pub": "202611131151"
+    },
+    {
+     "title": "[특징주] 바이브컴퍼니, 경영권 매각 소식에 29.95% 급등",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aRGhBcGdsM09VY1JYS2Zza2ZnSWRyeHhCSVNLMjR4OWU0M19qVmtKZkU0QXhQaEd3WHNxQThrWElSYnV6RURGM0lHdWJYN0tuVHJxclVTNExKdw?oc=5",
+     "src": "브릿지경제",
+     "n": 1,
+     "pub": "202611130957"
+    }
+   ]
   },
   {
-   "score": 59.9,
+   "score": 63.0,
    "buyers": [
-    "LF"
+    "디앤디파마텍"
    ],
-   "target": "코크렙안양",
-   "amount": 96669302000,
+   "target": "Z-Alpha Holdings, Inc.",
+   "amount": 10025248610,
    "cat": "타법인 주식 취득·처분",
-   "kind": "stake_out",
-   "date": "20261111",
-   "market": "Y",
-   "corp": "LF",
-   "stock": "093050",
-   "rcept": "20261111800716",
-   "summary": "LF가 보유 중이던 코크렙안양 지분을 967억원에 매각합니다.",
+   "kind": "stake_in",
+   "date": "20261112",
+   "market": "K",
+   "corp": "디앤디파마텍",
+   "stock": "347850",
+   "rcept": "20261112900320",
+   "summary": "디앤디파마텍이 Z-Alpha Holdings, Inc. 지분을 100억원에 인수합니다.",
    "rcepts": [
-    "20261111800716"
+    "20261112900320"
    ],
    "structured": true,
-   "news": []
+   "news": [
+    {
+     "title": "디앤디파마텍, 알파 항암제에 100억 원∙∙∙현물출자 이어 현금 투입",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jUG9EZVhPRk11bU4xcUV6RjRLdDlmb3FUeElpTmZ4VE4xQS1vdkpwcFg0Z2pRX3Jqa2dRbmVKREZEN3hTRHFHcm40bl8tczBaRkpwdVN1QmdrR1RWemhZUVR3XzU1Sm9wa3c?oc=5",
+     "src": "한국M&A경제신문",
+     "n": 1,
+     "pub": "202611121426"
+    }
+   ]
   }
  ],
  "sector": {
-  "id": "service",
-  "name": "전문서비스·교육·의료서비스",
-  "n": 89,
+  "id": "finance",
+  "name": "금융·투자",
+  "n": 200,
   "years": [
-   15,
-   16,
-   20,
-   17,
-   21
+   44,
+   37,
+   45,
+   34,
+   40
   ],
   "label": "유지",
-  "median": 120,
-  "news30": 53
+  "median": 228,
+  "news30": 107
  },
  "news_top": [
   {
@@ -113,18 +150,18 @@
   }
  ],
  "text": {
-  "headline": "디앤디파마텍, Z-Alpha Holdings, Inc. 지분 100억원 인수",
-  "short": "디앤디파마텍이 Z-Alpha Holdings, Inc. 지분을 100억원에 인수한다고 공시했어요.",
-  "explain": "한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.",
-  "context": "전문서비스·교육·의료서비스 업종은 최근 5년간 상장사 인수 공시가 89건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 120억원이에요.",
-  "disp": "공시일 11/12",
-  "amount_text": "100억원",
-  "linkedin": "[오늘의 M&A] 디앤디파마텍, Z-Alpha Holdings, Inc. 지분 100억원 인수\n\n· 공시일 11/12 · 타법인 주식 취득·처분\n· 금액: 100억원\n\n디앤디파마텍이 Z-Alpha Holdings, Inc. 지분을 100억원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\n전문서비스·교육·의료서비스 업종은 최근 5년간 상장사 인수 공시가 89건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 120억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전문서비스교육의료서비스 #ZAlpha",
+  "headline": "상상인, 상상인저축은행 지분 1,107억원 매각",
+  "short": "상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.",
+  "explain": "보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.",
+  "context": "금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.",
+  "disp": "공시일 11/13",
+  "amount_text": "1,107억원",
+  "linkedin": "[오늘의 M&A] 상상인, 상상인저축은행 지분 1,107억원 매각\n\n· 공시일 11/13 · 타법인 주식 취득·처분\n· 금액: 1,107억원\n\n상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.\n보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.\n\n금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자 #상상인저축은행",
   "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
-  "instagram": "📌 오늘의 M&A · 11월 13일\n디앤디파마텍, Z-Alpha Holdings, Inc. 지분 100억원 인수\n\n디앤디파마텍이 Z-Alpha Holdings, Inc. 지분을 100억원에 인수한다고 공시했어요.\n\n📊 전문서비스·교육·의료서비스 업종은 최근 5년간 상장사 인수 공시가 89건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 120억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전문서비스교육의료서비스 #ZAlpha",
+  "instagram": "📌 오늘의 M&A · 11월 14일\n상상인, 상상인저축은행 지분 1,107억원 매각\n\n상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.\n\n📊 금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자 #상상인저축은행",
   "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
-  "related": "- 디앤디파마텍, 알파 항암제에 100억 원∙∙∙현물출자 이어 현금 투입 (한국M&A경제신문)"
+  "related": "- 상상인저축은행 매각 또 미뤄지나…1년 넘게 지연 무슨일이 | (KB Think)\n- 저축은행 M&A 규제 풀렸지만 부담 여전… 상상인 매각 발목 잡는 ‘부실 청구서’ (글로벌이코노믹)"
  },
  "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
- "blog": "blog/20261113.html"
+ "blog": "blog/20261114.html"
 }
