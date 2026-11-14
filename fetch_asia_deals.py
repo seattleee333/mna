@@ -36,7 +36,11 @@ JP_RULES = [  # (분류, 정규식) — 위에서부터 먼저 맞는 것
     ("자회사 변경", r"子会社の異動|孫会社の異動|特定子会社"),
     ("자본제휴", r"資本(?:業務)?提携"),
 ]
-JP_EXCL = re.compile(r"自己株式|自社株|訂正|延長|結果|進捗|ストックオプション|新株予約権|投資口|ETF|REIT|インフラファンド|上場廃止|監理|整理")
+JP_EXCL = re.compile(r"自己株式|自社株|訂正|延長|結果|進捗|ストックオプション|新株予約権|投資口|ETF|REIT|インフラファンド|上場廃止|監理|整理|"
+                     r"株式報酬|インセンティブ|従業員|役員|優先株式|持株会社体制|追加譲受価額|事後交付|臨時報告|質問|上場維持|株主優待|説明資料|補足|説明会|Q&A")
+# 그룹 안에서만 하는 재편(완전자회사 흡수합병 등)은 표시만 해 두고 화면에서 기본으로 숨긴다
+JP_INTERNAL = re.compile(r"完全子会社.*(?:吸収合併|吸収分割)|(?:連結)?子会社間|子会社同士|孫会社.*合併|簡易合併・略式合併")
+CN_INTERNAL = re.compile(r"全资子公司之间|吸收合并全资子公司|全资子公司.*吸收合并|子公司.*少数股东|孙公司|内部.*(?:整合|划转)")
 
 
 def jp_cat(title):
@@ -86,7 +90,7 @@ def fetch_jp(days=31):
                 a = title_td.find("a")
                 link = "https://www.release.tdnet.info/inbs/" + a["href"] if a and a.get("href") else url
                 got.append({"d": ds, "tm": get("kjTime", 0), "code": get("kjCode", 1)[:4], "co": get("kjName", 2),
-                            "ti": title, "c": cat, "u": link, "x": (cell.get("kjPlace").get_text(" ", strip=True) if cell.get("kjPlace") else "")})
+                            "ti": title, "c": cat, "u": link, "g": 1 if JP_INTERNAL.search(title) else 0, "x": (cell.get("kjPlace").get_text(" ", strip=True) if cell.get("kjPlace") else "")})
             if n == 0:
                 break
             time.sleep(0.4)
@@ -104,7 +108,8 @@ CN_RULES = [
     ("매각", r"出售.*(?:股权|资产|子公司)|转让.*(?:股权|子公司)"),
     ("경영권 변경", r"控股股东.*(?:变更|拟变更)|实际控制人.*变更|控制权.*变更"),
 ]
-CN_EXCL = re.compile(r"更正|补充|进展|问询|回复|核查意见|法律意见|独立财务顾问|摘要|英文|延期|终止|取消|关联交易的公告$|董事会决议|监事会|募集|回购|激励|担保|理财|委托")
+CN_EXCL = re.compile(r"更正|补充|进展|问询|回复|核查|法律意见|独立财务顾问|财务顾问|摘要|英文|延期|终止|取消|董事会决议|监事会|募集|回购|激励|担保|理财|委托|"
+                     r"说明|督导|评估报告|审计报告|审阅报告|备考|提示性|免于|意见|承诺|自查|内幕|风险提示|停牌|复牌|会议|通知|章程|问答|报告书.*修订")
 
 
 def cn_cat(title):
@@ -150,13 +155,23 @@ def fetch_cn(days=31):
                     continue
                 t = a.get("announcementTime")
                 d = dt.datetime.fromtimestamp(t / 1000, KST).strftime("%Y%m%d") if t else ""
-                got.append({"d": d, "code": a.get("secCode") or "", "co": a.get("secName") or "", "ti": title, "c": cat,
+                got.append({"d": d, "code": a.get("secCode") or "", "co": a.get("secName") or "", "ti": title, "c": cat, "g": 1 if CN_INTERNAL.search(title) else 0,
                             "u": "http://static.cninfo.com.cn/" + (a.get("adjunctUrl") or ""), "id": aid})
             if not j.get("hasMore"):
                 break
             time.sleep(0.6)
-    say("CN 골라낸 공시", len(got))
-    return got
+    # 같은 회사·같은 날·같은 분류의 여러 문서는 대표 한 건으로 묶는다 (가장 짧은 제목 = 본 공시일 가능성이 큼)
+    grp = {}
+    for x in got:
+        k = (x["code"], x["d"], x["c"])
+        if k not in grp or len(x["ti"]) < len(grp[k]["ti"]):
+            n = grp[k]["n"] + 1 if k in grp else 1
+            grp[k] = dict(x, n=n)
+        else:
+            grp[k]["n"] += 1
+    out = list(grp.values())
+    say("CN 골라낸 공시", len(got), "→ 묶음", len(out))
+    return out
 
 
 def merge(old, new, key):
@@ -173,8 +188,8 @@ def main():
         db = {"jp": [], "cn": []}
     jp = fetch_jp()
     cn = fetch_cn()
-    db["jp"] = merge(db.get("jp", []), jp, lambda x: x["u"])
-    db["cn"] = merge(db.get("cn", []), cn, lambda x: str(x.get("id") or x["u"]))
+    db["jp"] = merge([x for x in db.get("jp", []) if jp_cat(x["ti"])], jp, lambda x: x["u"])
+    db["cn"] = merge([x for x in db.get("cn", []) if "n" in x], cn, lambda x: (x["code"], x["d"], x["c"]))
     db["updated"] = dt.datetime.now(KST).strftime("%Y-%m-%d %H:%M")
     json.dump(db, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     say("누적 일본", len(db["jp"]), "중국", len(db["cn"]))
