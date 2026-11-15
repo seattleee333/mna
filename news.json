@@ -1,5 +1,27 @@
 [
  {
+  "title": "‘오스코텍 최대주주’ 김성연 이사 “지분 매각 시 특혜 안 받겠다” - 이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSlFVNjFyZ1Y2cGJ2ZmpCQWRxZ0pyczJubmwtdWI3elNKNWZJaXVES1JNNnBTS0RwQWxnTkZQcENTVV9Vcl9PcVE5Rm9Qc1V3N0VVMUFOWVM1N0dDc2tHcVZuQ1lfa01VbFp3V0xuZkFrWldMMkhqS0xqbHlwM3BOcQ?oc=5",
+  "sources": [
+   "이데일리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261115",
+  "last_seen": "20261115",
+  "pub": "202611151117"
+ },
+ {
+  "title": "[전망] 삼성전자 ‘하만급 10조 빅딜’ 만지작…모딘 인수로 AI 냉각 ‘시간’ 산다 - 알파경제",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9YVVJfOWRiVXlHUnAtNGwxVWNNUDVPRUQzcHdXX0Z3eGJtUWNWb3EwSUktUjQ1NklyZzBQTXFNODZkSldIMnItVlFXOFpuMVByZnhFMlZ6TVVOajQzSHJuUWlVcDNVaEVkaXpTZXRn?oc=5",
+  "sources": [
+   "알파경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261115",
+  "last_seen": "20261115",
+  "pub": "202611151113"
+ },
+ {
   "title": "KT클라우드 조 단위 투자유치…IMM 지분 팔까 - 자본시장뉴스",
   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAyNEtUcDRtNENDaGxTdHY1aU9JMGExQl83REJhUFJkZ1RENjFJY0NHTFY3MDlKaUNtd3I4TG5VRVJxbkE1c0xYb3VEdFJJSk9Wbi1QaE9vYkZFVkQ1Z2h3X1Y2X0hnNUk?oc=5",
   "sources": [
@@ -161,10 +183,11 @@
    "Investing.com 한국어",
    "내외일보",
    "뉴시안",
+   "동방일보",
    "디지털애셋",
    "매일경제"
   ],
-  "outlet_count": 5,
+  "outlet_count": 6,
   "first_seen": "20261113",
   "last_seen": "20261115",
   "pub": "202611141955"
@@ -1003,10 +1026,11 @@
   "title": "李대통령 \"적대적 M&A 활성화로, 주식시장 비정상 구조 깨야\" - 한국경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XemtjNHVwUW5NQnRNNGxFMHp0NUE0UW1SWDNJcDBzbk9iOGxEeTExekZ3aWc0LVhVV19aNUVxRkt1UVZHQ0tpeHlTYTVCSGY2UXphSFpYUmJTZw?oc=5",
   "sources": [
+   "국제뉴스",
    "인더스트리뉴스",
    "한국경제"
   ],
-  "outlet_count": 2,
+  "outlet_count": 3,
   "first_seen": "20261113",
   "last_seen": "20261115",
   "pub": "202611131749"
@@ -1132,6 +1156,17 @@
   "pub": "202611131713"
  },
  {
+  "title": "스페이스X, 테슬라 흡수 합병 추진… 역사상 최대 규모 합병 예고 - Hypebeast.KR",
+  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMk1lLUlDZC1uS0FfOTBNMGdEWTcya3FMQ24zNk9xTmYzR3NzMnpPa01NekxQWi14N0U3X0l3OE15RUFvdWxwZ09xSExrc25ZUGN0RWJqcXlSRFI3aGFNeHFCdDBMTC03a2FLNEZSNWpRQUk2NHphQzdjeHgtOV9TY1lRNG44Qk9HSkh4TlF2UQ?oc=5",
+  "sources": [
+   "Hypebeast.KR"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261115",
+  "last_seen": "20261115",
+  "pub": "202611131709"
+ },
+ {
   "title": "[미래에셋 3.0 ①] 국경 넘어 판 키운다…글로벌 M&A에 담긴 승부수 - 뉴스투데이",
   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5YREdSZEdjdFE0d1NPZnFNc2tlcFFVejN3ZjNFUHJGcS1CajY1Ykh3dmVtVkQ2V0p4Szh6Ml9iRmg3RnRLSDB4RTFRYWtOdURRLW9PZ3BWN3NaYzE0R0E?oc=5",
   "sources": [
@@ -1224,7 +1259,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261113",
-  "last_seen": "20261113",
+  "last_seen": "20261115",
   "pub": "202611131649"
  },
  {
@@ -1232,9 +1267,10 @@
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81alBGaHpvRnFqMTg2YmRwSk5qOVdCNDhyUnJyOEM5LVROenRUdUNuaEduVnVWN29rZ005Z3EySm1idXZsMlJHVjZxMzEwanlTN1BpS3NB?oc=5",
   "sources": [
    "Investing.com 한국어",
+   "내외일보",
    "매일경제"
   ],
-  "outlet_count": 2,
+  "outlet_count": 3,
   "first_seen": "20261115",
   "last_seen": "20261115",
   "pub": "202611131644"
