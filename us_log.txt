@@ -1,8 +1,6 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>ZDB3QGP3MEYD2ABM</RequestId><HostId>7dlysmCuWznLxHqjSH+rOxTsr4EHkp8fsSIdgUyi5EfLHWyeso
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GSCM8BRTRJF11YKS</RequestId><HostId>EuQjbKy0IEIn9RFFZXF0JwM3v8m351DaOMhi1pyGtFebr2OPXA
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>ZDB6GCGCN27KHFZD</RequestId><HostId>bXqUNR3JrS3nuP6oS7bTlBokSQJ/oWtJlRiV6TdlhIVYhJjS/Y
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GSCTDKK05K8TN4S4</RequestId><HostId>7ONocnxihx4yfKzMW+YIvTykr5G0enaAFNHP5qTawmF6wUUBnu
   2026-11-11 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 13, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1                Ludlow Exchange, LLC (Security Futures Product Exchange)      2165203     20261112    edgar/data/2165203/9999999997-26-001744.txt                                                
-  2026-11-13 8-K 302건
-새로 확인할 8-K 302건
-저장: 딜 2276건 (이번 신규 4건, LLM 0건)
+새로 확인할 8-K 0건
+저장: 딜 2276건 (이번 신규 0건, LLM 0건)
