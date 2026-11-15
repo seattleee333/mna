@@ -1,0 +1,33 @@
+name: PCB 매입 상장사 찾기
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - fetch_pcb_buyers.py
+
+concurrency:
+  group: pcb-buyers
+  cancel-in-progress: true
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - name: 정기보고서 원재료 항목 확인
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u fetch_pcb_buyers.py
+      - name: 결과를 작업 결과물로만 보관(저장소에 올리지 않음)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pcb-buyers
+          path: pcb_buyers.json
+          retention-days: 7
