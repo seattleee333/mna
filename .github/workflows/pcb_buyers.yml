@@ -6,6 +6,9 @@ on:
     paths:
       - fetch_pcb_buyers.py
 
+permissions:
+  contents: write
+
 concurrency:
   group: pcb-buyers
   cancel-in-progress: true
@@ -31,3 +34,13 @@ jobs:
           name: pcb-buyers
           path: pcb_buyers.json
           retention-days: 7
+      - name: 임시 브랜치로 전달(내려받은 뒤 바로 지움, main 에는 올리지 않음)
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan tmp-pcb
+          git rm -rq --cached .
+          git add -f pcb_buyers.json
+          git commit -qm "tmp pcb buyers"
+          git push -f origin tmp-pcb
