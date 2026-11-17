@@ -1,151 +1,115 @@
 {
- "date": "20261116",
+ "date": "20261117",
  "base_dates": [
-  "20261113"
+  "20261116"
  ],
  "pick": {
-  "score": 98.4,
+  "score": 72.9,
   "buyers": [
-   "상상인"
+   "카카오게임즈"
   ],
-  "target": "상상인저축은행",
-  "amount": 110700000000,
+  "target": "미투온",
+  "amount": 98014149356,
   "cat": "타법인 주식 취득·처분",
-  "kind": "stake_out",
-  "date": "20261113",
+  "kind": "stake_in",
+  "date": "20261116",
   "market": "K",
-  "corp": "상상인",
-  "stock": "038540",
-  "rcept": "20261113901138",
-  "summary": "상상인이 보유 중이던 상상인저축은행 지분을 1,107억원에 매각합니다.",
+  "corp": "카카오게임즈",
+  "stock": "293490",
+  "rcept": "20261116901425",
+  "summary": "카카오게임즈가 미투온 지분을 980억원에 인수합니다.",
   "rcepts": [
-   "20261113901138"
+   "20261116901425"
   ],
   "structured": true,
   "news": [
    {
-    "title": "상상인저축은행 매각 안갯속…5번째 연기",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyQjA2bm83TC1nbXh1YkdBczhMOHNUUkR6bl90elR5WXdiZzlGcFRvN3ljM2pEcXRXOUUyYnlJVGFQOUFiVEtIM25ZM1NtdUpMZ2tBT2wxTVHSAVhBVV95cUxQMkIwNm5vN0wtZ214dWJHQXM4TDhzVFJEem5fdHpUeVl3Ymc5RnBUbzd5YzNqRHF0VzlFMmJ5SVRhUDlBYlRLSDNuWTNTbXVKTGdrQU9sMU1R?oc=5",
-    "src": "서울경제TV",
-    "n": 2,
-    "pub": "202611160000"
-   },
-   {
-    "title": "상상인저축은행 매각 또 미뤄지나…1년 넘게 지연 무슨일이 |",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQmdJU1FhTkh3a2N5VnhMc0dUR2V5TGEyZkw2WFY1d05Od2o0OE5OSzYyMFF4WXZnTFgtSzU5QjlFNEpsaTQ5bWVkck1OTWZXZWhzbXNrWVY2SjlhelZiNnhvck56QWJzR3AxR0RCb2hBTURX?oc=5",
-    "src": "KB Think",
-    "n": 2,
-    "pub": "202611130926"
-   },
-   {
-    "title": "상상인, 저축은행 지분 매각 시점 11월 30일로 변경…1천107억원 규모 상상인저축은행 매각 다시 늦춰져…",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mUllYdmNoR0JWaU5mY2VJY3FfNllYSEVVRllFa0xJbE5uSkdhcGdhYmZkel9ZVF9kVVVRMDhlNllHaTNRMm9oQjVOSQ?oc=5",
-    "src": "재경일보",
+    "title": "엔씨 캐주얼 게임 매출이 리니지 넘었다, 김태환 카카오게임즈도 '캐주얼 M&A'로 반등 시동",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OMmFPYkgwOEFqQU42LTVYcUVtMG5HbVRYZjdrcExrT0lUbUhxS0p2Yk5FS3llWmN5cktaaHFIakExOEh5Q1lqd0hjaGxfQUphVzU0RDI4ZndIdllDdGZjTlRUMF96VzRyNFVlRUNtblZpYjQ?oc=5",
+    "src": "비즈니스포스트",
     "n": 1,
-    "pub": "202611150504"
+    "pub": "202611131629"
    }
   ]
  },
  "others": [
   {
-   "score": 43,
+   "score": 67.5,
    "buyers": [
-    "에어부산"
+    "로킷헬스케어"
    ],
-   "target": "진에어 (JIN AIR CO., LTD.) (에어서울에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)",
-   "amount": null,
-   "cat": "합병",
-   "kind": "merger",
-   "date": "20261113",
-   "market": "Y",
-   "corp": "에어부산",
-   "stock": "298690",
-   "rcept": "20261113000342",
-   "summary": "에어부산이 진에어 (에어서울에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)를 흡수합병합니다.",
+   "target": "이노피아테크",
+   "amount": 7000000000,
+   "cat": "타법인 주식 취득·처분",
+   "kind": "stake_in",
+   "date": "20261116",
+   "market": "K",
+   "corp": "로킷헬스케어",
+   "stock": "376900",
+   "rcept": "20261116900607",
+   "summary": "로킷헬스케어가 이노피아테크 지분을 70억원에 인수합니다.",
    "rcepts": [
-    "20261113000342"
+    "20261116900607"
    ],
-   "structured": false,
+   "structured": true,
    "news": [
     {
-     "title": "국토부-공정위, '진에어·에어서울·에어부산' 합병 및 기업결합건 최종 승인",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Vb3lBUUEyUFBQY3FybUFGVU5ISXhNOVVXVUFCdkJ5N1dhSFduS1p0MXRmR0hNVWh4Z0V1cFVIT3VCZk5aeHRNclZGMU90QU13ZDRpS1RnZVdPRTF6bG5rblFkdw?oc=5",
-     "src": "조세금융신문",
-     "n": 1,
-     "pub": "202611121704"
-    },
-    {
-     "title": "진에어·에어서울·에어부산 법인 합병 최종 인가",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BMEdOMGc4Tm1KSnY4UWZpOUMzRTREbkhidE5WdHFoUmRGbXVNaE1NUjEwS2JQOFhQVjJ6OFlJbmJDSE0wNmhZMzJlQmpEaWJEQS1xeUs2UjJTUHhjU2E2eWZ5aXlYcGwtY0E?oc=5",
-     "src": "중기이코노미",
-     "n": 1,
-     "pub": "202611121621"
+     "title": "로킷헬스케어, 회생기업 이노피아테크 70억원에 인수 추진",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNU0cwRjFCX2pFR25DcXJ1OHNZZF9qZVdXNW1LVUZJOWRtdkZVNEszcWM4eGpHVnpKeGFfZGs1aDNrSExlTzg2d3I4UUpGcGN4WVlwdUk3LXFEQk1Rd1VWTEQ3MEdicnpJT2pXUEMyUTVMZG1Uc21TV0NsUnZvN0txbA?oc=5",
+     "src": "데이터투자",
+     "n": 3,
+     "pub": "202611162253"
     }
    ]
   },
   {
-   "score": 43,
+   "score": 51.5,
    "buyers": [
-    "진에어"
+    "HLB이노베이션"
    ],
-   "target": "에어부산 (에어서울에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)",
-   "amount": null,
-   "cat": "합병",
-   "kind": "merger",
-   "date": "20261113",
-   "market": "Y",
-   "corp": "진에어",
-   "stock": "272450",
-   "rcept": "20261113000316",
-   "summary": "진에어가 에어부산 (에어서울에 대한 사항은 '18. 기타 투자판단과 관련한 중요사항'을 참고하시기 바랍니다.)를 흡수합병합니다.",
+   "target": "VERISMO THERAPEUTICS, INC.",
+   "amount": 22216502518,
+   "cat": "타법인 주식 취득·처분",
+   "kind": "stake_in",
+   "date": "20261116",
+   "market": "K",
+   "corp": "HLB이노베이션",
+   "stock": "024850",
+   "rcept": "20261116900977",
+   "summary": "HLB이노베이션이 VERISMO THERAPEUTICS, INC. 지분을 222억원에 인수합니다.",
    "rcepts": [
-    "20261113000316"
+    "20261116900977"
    ],
-   "structured": false,
-   "news": [
-    {
-     "title": "국토부-공정위, '진에어·에어서울·에어부산' 합병 및 기업결합건 최종 승인",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Vb3lBUUEyUFBQY3FybUFGVU5ISXhNOVVXVUFCdkJ5N1dhSFduS1p0MXRmR0hNVWh4Z0V1cFVIT3VCZk5aeHRNclZGMU90QU13ZDRpS1RnZVdPRTF6bG5rblFkdw?oc=5",
-     "src": "조세금융신문",
-     "n": 1,
-     "pub": "202611121704"
-    },
-    {
-     "title": "진에어·에어서울·에어부산 법인 합병 최종 인가",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BMEdOMGc4Tm1KSnY4UWZpOUMzRTREbkhidE5WdHFoUmRGbXVNaE1NUjEwS2JQOFhQVjJ6OFlJbmJDSE0wNmhZMzJlQmpEaWJEQS1xeUs2UjJTUHhjU2E2eWZ5aXlYcGwtY0E?oc=5",
-     "src": "중기이코노미",
-     "n": 1,
-     "pub": "202611121621"
-    }
-   ]
+   "structured": true,
+   "news": []
   }
  ],
  "sector": {
-  "id": "finance",
-  "name": "금융·투자",
-  "n": 200,
+  "id": "it",
+  "name": "IT·소프트웨어·게임",
+  "n": 182,
   "years": [
-   44,
-   37,
-   45,
-   34,
-   40
+   55,
+   28,
+   28,
+   28,
+   43
   ],
   "label": "유지",
-  "median": 228,
-  "news30": 100
+  "median": 112,
+  "news30": 218
  },
  "news_top": [
+  {
+   "title": "LG화학, LG엔솔 지분 매각 후 3000억 자사주 매입에…팰리서 “턱없이 부족”",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fWUsyVzFOYjZEZk9jNUhiU1BjMXZleElwLWE5WFhuemZFNDhpZlNPUENyc1V6eDhCdG5XTHFueUlxMmFaOU9HNzhPbXhocVNaVnRmYm9nRE9OQU1IWW1nV0NFaHZzTG8?oc=5",
+   "src": "글로벌경제신문",
+   "n": 21
+  },
   {
    "title": "현대엘리베이터, 현대무벡스 지분 매각...주주환원 재원마련",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lS0s2SEx3QVhWWWZ4YUdsZnJzVy0tUVdOQ1JSUTJrNVFSb0dVR2JlRGR5dEl4NXBQQXNJUXo2a3NPbk1sNWFzR1NjTGZkMU5sakJGa09ha2VlOXJa?oc=5",
    "src": "S저널",
-   "n": 18
-  },
-  {
-   "title": "삼성화재, 캐노피우스 인수 후 “당분간 안정적으로 운영”",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWN1YtOGdaMW8zYUVrOWxlQV9wSWxMc3JkS0FzeWdrUmYzRWo1bW1ZYWRENWVPV05xMFhpSm5SaXlldkloeFh5TkxjeExydlZRU3V1YkJmRVYta0huS1Vz?oc=5",
-   "src": "글로벌에픽",
    "n": 18
   },
   {
@@ -156,18 +120,18 @@
   }
  ],
  "text": {
-  "headline": "상상인, 상상인저축은행 지분 1,107억원 매각",
-  "short": "상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.",
-  "explain": "보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.",
-  "context": "금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.",
-  "disp": "공시일 11/13",
-  "amount_text": "1,107억원",
-  "linkedin": "[오늘의 M&A] 상상인, 상상인저축은행 지분 1,107억원 매각\n\n· 공시일 11/13 · 타법인 주식 취득·처분\n· 금액: 1,107억원\n\n상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.\n보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.\n\n금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자 #상상인저축은행",
+  "headline": "카카오게임즈, 미투온 지분 980억원 인수",
+  "short": "카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.",
+  "explain": "한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.",
+  "context": "IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.",
+  "disp": "공시일 11/16",
+  "amount_text": "980억원",
+  "linkedin": "[오늘의 M&A] 카카오게임즈, 미투온 지분 980억원 인수\n\n· 공시일 11/16 · 타법인 주식 취득·처분\n· 금액: 980억원\n\n카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\nIT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #미투온",
   "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
-  "instagram": "📌 오늘의 M&A · 11월 16일\n상상인, 상상인저축은행 지분 1,107억원 매각\n\n상상인이 상상인저축은행 지분을 1,107억원에 판다고 공시했어요.\n\n📊 금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자 #상상인저축은행",
+  "instagram": "📌 오늘의 M&A · 11월 17일\n카카오게임즈, 미투온 지분 980억원 인수\n\n카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.\n\n📊 IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #미투온",
   "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
-  "related": "- 상상인저축은행 매각 안갯속…5번째 연기 (서울경제TV)\n- 상상인저축은행 매각 또 미뤄지나…1년 넘게 지연 무슨일이 | (KB Think)"
+  "related": "- 엔씨 캐주얼 게임 매출이 리니지 넘었다, 김태환 카카오게임즈도 '캐주얼 M&A'로 반등 시동 (비즈니스포스트)"
  },
  "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
- "blog": "blog/20261116.html"
+ "blog": "blog/20261117.html"
 }
