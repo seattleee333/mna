@@ -1,103 +1,90 @@
 {
- "date": "20261117",
+ "date": "20261118",
  "base_dates": [
-  "20261116"
+  "20261118",
+  "20261117"
  ],
  "pick": {
-  "score": 72.9,
+  "score": 53.9,
   "buyers": [
-   "카카오게임즈"
+   "SNT홀딩스",
+   "SNT모티브"
   ],
-  "target": "미투온",
-  "amount": 98014149356,
+  "target": "스맥",
+  "amount": 24822930000,
   "cat": "타법인 주식 취득·처분",
-  "kind": "stake_in",
-  "date": "20261116",
-  "market": "K",
-  "corp": "카카오게임즈",
-  "stock": "293490",
-  "rcept": "20261116901425",
-  "summary": "카카오게임즈가 미투온 지분을 980억원에 인수합니다.",
+  "kind": "stake_out",
+  "date": "20261117",
+  "market": "Y",
+  "corp": "SNT홀딩스",
+  "stock": "036530",
+  "rcept": "20261117800519",
+  "summary": "SNT홀딩스가 보유 중이던 스맥 지분을 248억원에 매각합니다.",
   "rcepts": [
-   "20261116901425"
+   "20261117800519",
+   "20261117800511"
   ],
   "structured": true,
-  "news": [
-   {
-    "title": "엔씨 캐주얼 게임 매출이 리니지 넘었다, 김태환 카카오게임즈도 '캐주얼 M&A'로 반등 시동",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OMmFPYkgwOEFqQU42LTVYcUVtMG5HbVRYZjdrcExrT0lUbUhxS0p2Yk5FS3llWmN5cktaaHFIakExOEh5Q1lqd0hjaGxfQUphVzU0RDI4ZndIdllDdGZjTlRUMF96VzRyNFVlRUNtblZpYjQ?oc=5",
-    "src": "비즈니스포스트",
-    "n": 1,
-    "pub": "202611131629"
-   }
-  ]
+  "news": []
  },
  "others": [
   {
-   "score": 67.5,
+   "score": 23,
    "buyers": [
-    "로킷헬스케어"
+    "셀레믹스"
    ],
-   "target": "이노피아테크",
-   "amount": 7000000000,
-   "cat": "타법인 주식 취득·처분",
-   "kind": "stake_in",
-   "date": "20261116",
+   "target": "",
+   "amount": null,
+   "cat": "최대주주 변경",
+   "kind": null,
+   "date": "20261117",
    "market": "K",
-   "corp": "로킷헬스케어",
-   "stock": "376900",
-   "rcept": "20261116900607",
-   "summary": "로킷헬스케어가 이노피아테크 지분을 70억원에 인수합니다.",
+   "corp": "셀레믹스",
+   "stock": "331920",
+   "rcept": "20261117900652",
+   "summary": "셀레믹스가 최대주주 변경을 수반하는 주식담보제공 계약을 체결했습니다.",
    "rcepts": [
-    "20261116900607"
+    "20261117900652"
    ],
-   "structured": true,
-   "news": [
-    {
-     "title": "로킷헬스케어, 회생기업 이노피아테크 70억원에 인수 추진",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNU0cwRjFCX2pFR25DcXJ1OHNZZF9qZVdXNW1LVUZJOWRtdkZVNEszcWM4eGpHVnpKeGFfZGs1aDNrSExlTzg2d3I4UUpGcGN4WVlwdUk3LXFEQk1Rd1VWTEQ3MEdicnpJT2pXUEMyUTVMZG1Uc21TV0NsUnZvN0txbA?oc=5",
-     "src": "데이터투자",
-     "n": 3,
-     "pub": "202611162253"
-    }
-   ]
+   "structured": false,
+   "news": []
   },
   {
-   "score": 51.5,
+   "score": 23,
    "buyers": [
-    "HLB이노베이션"
+    "크라우드웍스"
    ],
-   "target": "VERISMO THERAPEUTICS, INC.",
-   "amount": 22216502518,
-   "cat": "타법인 주식 취득·처분",
-   "kind": "stake_in",
-   "date": "20261116",
+   "target": "",
+   "amount": null,
+   "cat": "최대주주 변경",
+   "kind": null,
+   "date": "20261117",
    "market": "K",
-   "corp": "HLB이노베이션",
-   "stock": "024850",
-   "rcept": "20261116900977",
-   "summary": "HLB이노베이션이 VERISMO THERAPEUTICS, INC. 지분을 222억원에 인수합니다.",
+   "corp": "크라우드웍스",
+   "stock": "355390",
+   "rcept": "20261117900650",
+   "summary": "크라우드웍스의 최대주주가 변경됐습니다.",
    "rcepts": [
-    "20261116900977"
+    "20261117900650"
    ],
-   "structured": true,
+   "structured": false,
    "news": []
   }
  ],
  "sector": {
-  "id": "it",
-  "name": "IT·소프트웨어·게임",
-  "n": 182,
+  "id": "finance",
+  "name": "금융·투자",
+  "n": 200,
   "years": [
-   55,
-   28,
-   28,
-   28,
-   43
+   45,
+   37,
+   44,
+   36,
+   38
   ],
   "label": "유지",
-  "median": 112,
-  "news30": 218
+  "median": 228,
+  "news30": 104
  },
  "news_top": [
   {
@@ -107,31 +94,31 @@
    "n": 21
   },
   {
-   "title": "현대엘리베이터, 현대무벡스 지분 매각...주주환원 재원마련",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lS0s2SEx3QVhWWWZ4YUdsZnJzVy0tUVdOQ1JSUTJrNVFSb0dVR2JlRGR5dEl4NXBQQXNJUXo2a3NPbk1sNWFzR1NjTGZkMU5sakJGa09ha2VlOXJa?oc=5",
-   "src": "S저널",
-   "n": 18
+   "title": "李 \"욕 먹더라도 M&A 활성화\"…의무공개매수제 원안 강행하나",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1mbWNmMXVDZXBlSkxmVVFqaTNEMjYtY2EyV1doRkFFT0Vpd3hwRlVVWFZZVS1mNEQwNVhuVG01dXJKbllPcVZuNF95V3dJQ0RUQkE?oc=5",
+   "src": "BBS불교방송",
+   "n": 13
   },
   {
-   "title": "이 대통령 “적대적 M&A 활성화”…의무공개매수 비율은 “결단의 문제”",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91MHdlQUVWZ0xZNkdoN3lKNGEtN2ZfRVp3Ukc2ZXRNQlZGQm9felNSYkpUUGMyVnVjR015eGVKdFM3UVVVTnQ0SEtVTnJuRXFLSTRub3hYbC1TSWMwYzBwY2g3MkQ4bFpLV2xJ?oc=5",
-   "src": "BBS불교방송",
-   "n": 15
+   "title": "‘빨간 넥타이’ 맨 이 대통령…\"욕먹더라도 M&A 활성화\"",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtV1FiZGJUZGNwTmpOY19CZXdxaXQyejFTeVpjaVVTMmhlQm9sRW9vVS13SmNzdW1vOU9qaERLMjJsT3g4Z19BZkdzOGxVRjVyUnc?oc=5",
+   "src": "JTBC",
+   "n": 10
   }
  ],
  "text": {
-  "headline": "카카오게임즈, 미투온 지분 980억원 인수",
-  "short": "카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.",
-  "explain": "한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.",
-  "context": "IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.",
-  "disp": "공시일 11/16",
-  "amount_text": "980억원",
-  "linkedin": "[오늘의 M&A] 카카오게임즈, 미투온 지분 980억원 인수\n\n· 공시일 11/16 · 타법인 주식 취득·처분\n· 금액: 980억원\n\n카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\nIT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #미투온",
+  "headline": "SNT홀딩스·SNT모티브, 스맥 지분 248억원 매각",
+  "short": "SNT홀딩스·SNT모티브가 스맥 지분을 248억원에 판다고 공시했어요.",
+  "explain": "보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.",
+  "context": "금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.",
+  "disp": "공시일 11/17",
+  "amount_text": "248억원",
+  "linkedin": "[오늘의 M&A] SNT홀딩스·SNT모티브, 스맥 지분 248억원 매각\n\n· 공시일 11/17 · 타법인 주식 취득·처분\n· 금액: 248억원\n\nSNT홀딩스·SNT모티브가 스맥 지분을 248억원에 판다고 공시했어요.\n보유하던 다른 회사 지분을 파는 거래예요. 사업 정리나 자금 마련이 이유인 경우가 많은데, 정확한 이유는 공시 원문에서 확인해야 해요.\n\n금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자",
   "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
-  "instagram": "📌 오늘의 M&A · 11월 17일\n카카오게임즈, 미투온 지분 980억원 인수\n\n카카오게임즈가 미투온 지분을 980억원에 인수한다고 공시했어요.\n\n📊 IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #미투온",
+  "instagram": "📌 오늘의 M&A · 11월 18일\nSNT홀딩스·SNT모티브, 스맥 지분 248억원 매각\n\nSNT홀딩스·SNT모티브가 스맥 지분을 248억원에 판다고 공시했어요.\n\n📊 금융·투자 업종은 최근 5년간 상장사 인수 공시가 200건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 228억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #금융투자",
   "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
-  "related": "- 엔씨 캐주얼 게임 매출이 리니지 넘었다, 김태환 카카오게임즈도 '캐주얼 M&A'로 반등 시동 (비즈니스포스트)"
+  "related": ""
  },
  "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
- "blog": "blog/20261117.html"
+ "blog": "blog/20261118.html"
 }
