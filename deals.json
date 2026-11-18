@@ -1,5 +1,19 @@
 [
  {
+  "rcept_no": "20261118900095",
+  "date": "20261118",
+  "corp_code": "01124680",
+  "corp_name": "보라티알",
+  "stock_code": "250000",
+  "market": "K",
+  "report_nm": "투자판단관련주요경영사항              (해태에이치티비(해태HTB) 지분 인수 관련 우선협상대상자 선정)",
+  "category": "인수 MOU·의향",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "보라티알이 인수 추진(검토) 사실을 공시했습니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261118000079",
   "date": "20261118",
   "corp_code": "00684802",
@@ -8,8 +22,10 @@
   "market": "Y",
   "report_nm": "[첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
   "category": "주식교환·이전",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "에이플러스에셋이 주식교환·이전을 결정했습니다.",
   "summary_src": "title"
  },
