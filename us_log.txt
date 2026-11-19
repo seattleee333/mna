@@ -1,8 +1,10 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>HHDWZ57QCB5HCP5J</RequestId><HostId>CRSrILEVcl1tNcTb0bRCkt+xtMgyOONdNQPy7j9tKy+hcpwXTR
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>1TTQNQ82QZS3RNX2</RequestId><HostId>Sa9Bcu21tdL1GFtAnb/Y6TqaF3sCAWNbKvZf+dy1bUdCbD1HTf
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>YGH2JT2G26G4XZPR</RequestId><HostId>+7mSTShbZl4qeROG/BJrye+Q9nX8rSbaPM26KzFqhk//VtOBbe
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>1TTM5KK8T9W9D32H</RequestId><HostId>ap+/eokq3RPuDs/R4zdh3tbvLZOsNpSldN2vkt3ZMGujAwmgxd
   2026-11-11 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>0Q6MSXMCKXRS6CPM</RequestId><HostId>wYwlf+zZgofaX0IkGbcbR4dhSdNjYvKDBtKjaludRGdSMHNEJq
-  2026-11-18 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2299건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 18, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              COSIMO Digital Holdings Inc.                                  2154342     20261118    edgar/data/2154342/0002154342-26-000001.txt                                                
+  2026-11-18 8-K 196건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9BKSWE2KP4PCX9NH</RequestId><HostId>8MdpcOJMkZaUG9w3uNLtOXPt//Nhd3IpgzJzQe59v4ZPZhTewz
+  2026-11-19 8-K 0건
+새로 확인할 8-K 196건
+저장: 딜 2305건 (이번 신규 6건, LLM 0건)
