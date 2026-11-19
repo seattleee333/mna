@@ -184,9 +184,15 @@
   "title": "신한은행은 투자 회수, 한투는 보험업 진출…카디프생명 지분 매각 협의 - 대한데일리",
   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84MUxRNG1PblRpNWlBZ3ViaTFMQ1pPQi1ZeXR3eW5aaFNmQ0FwQnZGNXEyM2x0d1BuQ1FQYWxyTE1DYjBJQ3gwTDk0YlpVa2t3dEFSaEdPRTJqU2VNeURrVVJ2MldTS3lXelE?oc=5",
   "sources": [
-   "대한데일리"
+   "뉴스톱",
+   "대한데일리",
+   "매일경제",
+   "매일경제 마켓",
+   "아시아경제",
+   "알파경제",
+   "이투데이"
   ],
-  "outlet_count": 1,
+  "outlet_count": 7,
   "first_seen": "20261119",
   "last_seen": "20261119",
   "pub": "202611190905"
@@ -2175,6 +2181,17 @@
   "first_seen": "20261117",
   "last_seen": "20261119",
   "pub": "202611172107"
+ },
+ {
+  "title": "UL 솔루션스, 월들리 3억5000만 달러 인수·자사주 환매 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81X05kTk5FbWNHNDlRb1RYLWtybVlqdFpBUjhzMTdTTlZfVnl3eXhSUWZTaHdkbnAtTjA1emZhbldia2xSR003b0g3eGZBN3ptbXc?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261119",
+  "last_seen": "20261119",
+  "pub": "202611172106"
  },
  {
   "title": "에피소드컴퍼니, 160억 규모 유증 납입…\"신사업·M&A 성장 동력\" - 머니투데이 - 머니투데이",
