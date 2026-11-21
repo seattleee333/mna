@@ -1,8 +1,6 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>3HQ9VMHFW9CQ5K14</RequestId><HostId>LynXwMBi8mA6dFbcULVxxL8zkgX1e8QpgEEYOvTCEJcnfubJu3
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>H7WYV1T47S1N061H</RequestId><HostId>dFAJSykglxHm7sllRnACWVCzFs3jWDiPkvWMRzIl3a4LXu1Gz0
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>XZW4HPCJZ18XPBGD</RequestId><HostId>bAU50ZEYmEEMqr0m+supgQ1hrnT5ONlFtLsw2E7baDbr5SERAW
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>H7WT9EDHGWJT4XBW</RequestId><HostId>G6DbbSfsJXfg/CvPJI4Gp5xSbQc18PEF4qxncvfKPt202aRlIF
   2026-11-11 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 20, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A-W/A          SPARK FUND ONE LLC                                            2041773     20261120    edgar/data/2041773/0002041773-26-000005.txt                                                
-  2026-11-20 8-K 235건
-새로 확인할 8-K 235건
-저장: 딜 2330건 (이번 신규 8건, LLM 0건)
+새로 확인할 8-K 0건
+저장: 딜 2330건 (이번 신규 0건, LLM 0건)
