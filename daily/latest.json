@@ -1,148 +1,120 @@
 {
- "date": "20261120",
+ "date": "20261121",
  "base_dates": [
-  "20261119",
-  "20261118"
+  "20261120",
+  "20261119"
  ],
  "pick": {
-  "score": 100.2,
+  "score": 110,
   "buyers": [
-   "하이브"
+   "SK하이닉스"
   ],
-  "target": "KeyHolder, Inc.",
-  "amount": 105684488929,
+  "target": "BCPE Pangea Cayman2, Ltd.",
+  "amount": 1278893100000,
   "cat": "타법인 주식 취득·처분",
   "kind": "stake_in",
-  "date": "20261118",
+  "date": "20261120",
   "market": "Y",
-  "corp": "하이브",
-  "stock": "352820",
-  "rcept": "20261118800338",
-  "summary": "하이브가 KeyHolder, Inc. 지분을 1,057억원에 인수합니다.",
+  "corp": "SK하이닉스",
+  "stock": "000660",
+  "rcept": "20261120800721",
+  "summary": "SK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수합니다.",
   "rcepts": [
-   "20261118800338"
+   "20261120800721"
   ],
   "structured": true,
   "news": [
    {
-    "title": "하이브랩, 日 'J2B' 경영권 인수…AI 기술·네트워크 결합",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwWkdiOXllcjdCM1I1N0RhbndHWF95YlV2TFVHY3phMmRCdjdGZnVRVlUtVk9PNm9HWGN4SVRMVS1oRW9CU2lzTkhuUGt3cWRjakc0UnNFWUJGQXFSeFFyWE8ybWZLMUNZSFE?oc=5",
-    "src": "뉴스핌",
-    "n": 3,
-    "pub": "202611171545"
+    "title": "SK하이닉스, 일본 키옥시아 CB 주식전환 확정...지분 14.1% 보유",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpVE1DYWhxem5ERXZBVTdVa2VuRXByc0dNdWhOc2FwaUJvRlgxeFhIS1NxS3p4UWl2eU4wS2VieE56RXZUaWFJX0ppNzVpMS1XSElqR1ZkN3dlaS10aGs3d3B0cFJVc2c1Q1hvNQ?oc=5",
+    "src": "뉴시스",
+    "n": 5,
+    "pub": "202611202015"
    },
    {
-    "title": "하이브, 일본 키홀더 인수로 일본 사업 확장",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WRFhENlp4dmM1Und6RTBGRXAxNGNuZEZYMEhvUDhudHlIQUxLaFUyN3FIZGlJb0FaT0paRXlUMEV0WnNnNmNEVmdSZXp4djE5R2JvcV9ud3Fpb2ZPMWJJbUx2SG51SWVIVl90Rw?oc=5",
-    "src": "뉴스1",
-    "n": 2,
-    "pub": "202611191106"
+    "title": "SK하이닉스, 키옥시아 지분 14.1% 확보…간접 최대주주로",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzTzlFN2g3RG1oNGZFQ1dFQmtOWDd6bXZoSW1WSlp1cmx2a1gtMVFMa2h4N2pMYXdEUHpEeTJWc3lPQnhsRGl4dWFjNEJZY0lBTURGSnNpS2JoUEN4SzFXUTdrd2IzRWY0?oc=5",
+    "src": "www.ebn.co.kr",
+    "n": 1,
+    "pub": "202611201650"
    },
    {
-    "title": "하이브랩, 일본 AI 애드테크 기업 J2B 경영권 인수…현지 시장 공략",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObTIxdjlmMXdZbmRoNHUxNGJCeW04SFc0dnJybVVwcWlHWUhka0NLSDZfTV9zSXdpQzNRaTJwcDBicFVseW4yS3VDc2RMNFJzajEtejR1UjFabjRnamVMMVFfdzBxSWpHM3oycjBVWnNIQzRyN09oVWF3cFUtdDNJQw?oc=5",
-    "src": "BBS불교방송",
-    "n": 2,
-    "pub": "202611171712"
+    "title": "[기획 | 반도체 제국의 지배구조 ③] 최태원 회장은 SK하이닉스를 어떻게 지배하는가…0% 직접 지분의 지배력",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5UYXdwNXVTd1NUSkFwT08yTTk4cG1za2taUjY1aERmTFJ3X3hxekwxV2s4c1VFNUZOeVNlR1dkSURjRnlwWlhWanRWbnlqajY3a2lMNzlhNTRMSVRoeG1FUjdHQ203TWdXLTJQQw?oc=5",
+    "src": "https://www.climatepol.com/",
+    "n": 1,
+    "pub": "202611171840"
    }
   ]
  },
  "others": [
   {
-   "score": 85.2,
+   "score": 62.0,
    "buyers": [
-    "파마앤바이오 신기술조합"
+    "애드바이오텍"
    ],
-   "target": "화일약품",
-   "amount": 52928640000,
+   "target": "드림인사이트 ( DREAMINSIGHT Co,.Ltd).",
+   "amount": 8000000000,
    "cat": "타법인 주식 취득·처분",
-   "kind": "stake_out",
-   "date": "20261118",
+   "kind": "stake_in",
+   "date": "20261120",
    "market": "K",
-   "corp": "오성첨단소재",
-   "stock": "052420",
-   "rcept": "20261118000215",
-   "summary": "오성첨단소재가 보유 중이던 화일약품 지분을 529억원에 매각합니다 (처분 후 지분율 6.55%).",
+   "corp": "애드바이오텍",
+   "stock": "179530",
+   "rcept": "20261120000623",
+   "summary": "애드바이오텍이 드림인사이트. 지분을 80억원에 인수합니다 (인수 후 지분율 18.55%).",
    "rcepts": [
-    "20261118000215"
+    "20261120000623"
    ],
    "structured": true,
    "news": [
     {
-     "title": "금호에이치티, 화일약품 지분 잔금 수령일 12월 17일로 변경",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ad3BYN2ZFWVRhUnljTjRxeWJISFdwZXl4S3VFRzRtYWV4ZmVoZzJRRzV1R0diZkVWd0k3SmcxcWQ5N2FKQkk1OEhScGZGakM3aWFSM0MwbHJzX2VadC1DTkljdlJldw?oc=5",
-     "src": "비건뉴스",
+     "title": "애드바이오텍, 카자흐 '베스티' 韓법인 지분 51% 확보…중앙亞 영토 확장",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtcnFpbkg2eUdOUG9BSVQzYkhOeW5DMkI2ZHVnczVnd3E1SFdBOXZzWTVkLW5kQXp5WG51VGhmaVBNU2FWWGgzY1E0MUxDc2UxSTd0anhqNGNnd9IBX0FVX3lxTFBzVWllMjZoaWhPUi1WMDhuVzItdzJqbWJhVGU2NFlZeUdxTjg0S254SF90dE40MzZ6NzRzdUZzTHBqWENsT2pRQ3FqS2cwUkpUU0cxU2xZNjVxX2NBejdJ?oc=5",
+     "src": "뷰타임즈",
      "n": 1,
-     "pub": "202611192044"
-    },
-    {
-     "title": "화일약품, 경영권 매각 잔금 550억 지급 한 달 연기…매수 측 자금 여력 의문",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mcktnVVRaZkpXNG00Uy1DZkNEUlpGdXpibzlQOVptSDJMUms5UUlEX3ZrVDItalR0SXhuM2V5Tzh6T0VVa0lsSFBLZTZlZUstcmRoQjJDYTRvcmEyUVd4U1dMWjRSRUnSAWtBVV95cUxOWnZJVmpSWlBqNWNaczlXYnZvV1pSakMzb3ZLWXlmclY2bmpudUZMV1J1X0hmMjFTcGZ3MGxDVUtxaV9ERHpRbllMQlJ4cXhSX3ZjTFBjMzdBSnhVLVZnWlN5Z1p6M0hQSWoxNA?oc=5",
-     "src": "CEO저널",
-     "n": 1,
-     "pub": "202611190914"
+     "pub": "202611191457"
     }
    ]
   },
   {
-   "score": 83.4,
+   "score": 60.1,
    "buyers": [
-    "금호에이치티"
+    "현대엘리베이터"
    ],
-   "target": "화일약품",
-   "amount": 22071360000,
+   "target": "현대무벡스",
+   "amount": 102570000000,
    "cat": "타법인 주식 취득·처분",
    "kind": "stake_out",
-   "date": "20261118",
+   "date": "20261120",
    "market": "Y",
-   "corp": "금호에이치티",
-   "stock": "214330",
-   "rcept": "20261118800359",
-   "summary": "금호에이치티가 보유 중이던 화일약품 지분을 221억원에 매각합니다.",
+   "corp": "현대엘리베이터",
+   "stock": "017800",
+   "rcept": "20261120800877",
+   "summary": "현대엘리베이터가 보유 중이던 현대무벡스 지분을 1,026억원에 매각합니다.",
    "rcepts": [
-    "20261118800359"
+    "20261120800877"
    ],
    "structured": true,
-   "news": [
-    {
-     "title": "금호에이치티, 화일약품 지분 잔금 수령일 12월 17일로 변경",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ad3BYN2ZFWVRhUnljTjRxeWJISFdwZXl4S3VFRzRtYWV4ZmVoZzJRRzV1R0diZkVWd0k3SmcxcWQ5N2FKQkk1OEhScGZGakM3aWFSM0MwbHJzX2VadC1DTkljdlJldw?oc=5",
-     "src": "비건뉴스",
-     "n": 1,
-     "pub": "202611192044"
-    },
-    {
-     "title": "화일약품, 경영권 매각 잔금 550억 지급 한 달 연기…매수 측 자금 여력 의문",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mcktnVVRaZkpXNG00Uy1DZkNEUlpGdXpibzlQOVptSDJMUms5UUlEX3ZrVDItalR0SXhuM2V5Tzh6T0VVa0lsSFBLZTZlZUstcmRoQjJDYTRvcmEyUVd4U1dMWjRSRUnSAWtBVV95cUxOWnZJVmpSWlBqNWNaczlXYnZvV1pSakMzb3ZLWXlmclY2bmpudUZMV1J1X0hmMjFTcGZ3MGxDVUtxaV9ERHpRbllMQlJ4cXhSX3ZjTFBjMzdBSnhVLVZnWlN5Z1p6M0hQSWoxNA?oc=5",
-     "src": "CEO저널",
-     "n": 1,
-     "pub": "202611190914"
-    }
-   ]
+   "news": []
   }
  ],
  "sector": {
-  "id": "it",
-  "name": "IT·소프트웨어·게임",
-  "n": 182,
+  "id": "semi",
+  "name": "전자부품·반도체",
+  "n": 119,
   "years": [
-   55,
-   28,
-   28,
-   28,
-   43
+   31,
+   21,
+   26,
+   15,
+   26
   ],
   "label": "유지",
-  "median": 112,
-  "news30": 251
+  "median": 150,
+  "news30": 71
  },
  "news_top": [
-  {
-   "title": "LG화학, LG엔솔 지분 매각 후 3000억 자사주 매입에…팰리서 “턱없이 부족”",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fWUsyVzFOYjZEZk9jNUhiU1BjMXZleElwLWE5WFhuemZFNDhpZlNPUENyc1V6eDhCdG5XTHFueUlxMmFaOU9HNzhPbXhocVNaVnRmYm9nRE9OQU1IWW1nV0NFaHZzTG8?oc=5",
-   "src": "글로벌경제신문",
-   "n": 21
-  },
   {
    "title": "신한은행, 카디프생명 지분 17년 만에 정리…한투에 매각 추진",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBlaGQyMjVDbUduSEYxUFJoQnlYd2Q2WmdhYU43RWRyVWpfME1sTF9ibldhN1pZNHkwVjdxU3JMd05aUUt5cDZmVUpobHJ5TGdxWWxBUmlkVGthWk1mblpJ?oc=5",
@@ -154,21 +126,27 @@
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lZDQ0Qk95QnY2aGFRSmN1S3l0WHdPeXA0eElLNFNtWHV4NVhrV0xRSHpzU0tiTmpmY3VjQVVZQkNrNEdpTERaeC0zem5YYUFYWk9NeW5fdjVHdkM1YVEtSVh2RmdrNENjcWZDVTV6d9IBb0FVX3lxTE5lZDQ0Qk95QnY2aGFRSmN1S3l0WHdPeXA0eElLNFNtWHV4NVhrV0xRSHpzU0tiTmpmY3VjQVVZQkNrNEdpTERaeC0zem5YYUFYWk9NeW5fdjVHdkM1YVEtSVh2RmdrNENjcWZDVTV6dw?oc=5",
    "src": "PRESS9",
    "n": 15
+  },
+  {
+   "title": "李대통령 “욕먹더라도 M&A 활성화”…의무공개매수 놓고 격론",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GQXhxOXczS3gxYmhYc0I2NFRhbEExRDhXRWtSdXNVUEhpelozajNOQXlnbjNtZGNjYXhGMTNLdjZyOUZEUGhpNFZtdkxoYkYwaVI2dHVVaXhqRWItcjAwVHVUTQ?oc=5",
+   "src": "BBS불교방송",
+   "n": 13
   }
  ],
  "text": {
-  "headline": "하이브, KeyHolder, Inc. 지분 1,057억원 인수",
-  "short": "하이브가 KeyHolder, Inc. 지분을 1,057억원에 인수한다고 공시했어요.",
+  "headline": "SK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수",
+  "short": "SK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.",
   "explain": "한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.",
-  "context": "IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.",
-  "disp": "공시일 11/18",
-  "amount_text": "1,057억원",
-  "linkedin": "[오늘의 M&A] 하이브, KeyHolder, Inc. 지분 1,057억원 인수\n\n· 공시일 11/18 · 타법인 주식 취득·처분\n· 금액: 1,057억원\n\n하이브가 KeyHolder, Inc. 지분을 1,057억원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\nIT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #KeyHolder",
+  "context": "전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.",
+  "disp": "공시일 11/20",
+  "amount_text": "1.28조원",
+  "linkedin": "[오늘의 M&A] SK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수\n\n· 공시일 11/20 · 타법인 주식 취득·처분\n· 금액: 1.28조원\n\nSK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\n전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전자부품반도체 #BCPE",
   "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
-  "instagram": "📌 오늘의 M&A · 11월 20일\n하이브, KeyHolder, Inc. 지분 1,057억원 인수\n\n하이브가 KeyHolder, Inc. 지분을 1,057억원에 인수한다고 공시했어요.\n\n📊 IT·소프트웨어·게임 업종은 최근 5년간 상장사 인수 공시가 182건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 112억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #IT소프트웨어게임 #KeyHolder",
+  "instagram": "📌 오늘의 M&A · 11월 21일\nSK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수\n\nSK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.\n\n📊 전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전자부품반도체 #BCPE",
   "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
-  "related": "- 하이브랩, 日 'J2B' 경영권 인수…AI 기술·네트워크 결합 (뉴스핌)\n- 하이브, 일본 키홀더 인수로 일본 사업 확장 (뉴스1)"
+  "related": "- SK하이닉스, 일본 키옥시아 CB 주식전환 확정...지분 14.1% 보유 (뉴시스)\n- SK하이닉스, 키옥시아 지분 14.1% 확보…간접 최대주주로 (www.ebn.co.kr)"
  },
  "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
- "blog": "blog/20261120.html"
+ "blog": "blog/20261121.html"
 }
