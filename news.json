@@ -1,34 +1,29 @@
 [
  {
-  "title": "금융硏 \"AI·M&A 자금수요 대응에 SRT 활용 유효\" - KB Think",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1IQ0c1QU9icUZoUldZaWozN3A4X01pMlpCUGJ0SFlyc0pFWXh5eC03dVQtaWxCMHYzLW9uSXoxV0wtTjFmYWFDbVh5Y0VOVnd2R1k2WHN0NjNNRjVmY0g1a0VJVDV4cnVCaHVybXNtSHRidw?oc=5",
-  "sources": [
-   "KB Think"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261122",
-  "last_seen": "20261122",
-  "pub": "202611221200"
- },
- {
-  "title": "현대엘리베이터 현대무벡스 지분 1026억에 매각한다, 주주환원 재원 확충 - 비즈니스포스트",
-  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ONGZOaEsyeUlpa2w3XzZIYXJveWpIVWw1QnJsQWg0OGhLTEllTHVPdEwxLXM2djlQWHRnZEtETFBNXzhGWXQ1SVltZzByejhFTlBtbUlZckhLTGM2RW1nNjRDV3BwX01mdm0zRERFZFFzTVE?oc=5",
+  "title": "현대엘리베이터, 현대무벡스 지분 매각해 주주환원 나선다 - 서울경제TV",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5SQ3N6ZnVDbkVITU1YaUx1R3VRdTk1X3FoWnU4cDQzTWw1OUJJZmktWDVsV0J5N0xhZE5TbVRVTDV2UExDajRaNVExT0JiNDFnb0ZSMm5uZVRERlN1TUdONW1yb2U?oc=5",
   "sources": [
    "Chosunbiz",
    "SBS Biz",
    "S저널",
+   "www.dt.co.kr",
    "www.ebn.co.kr",
+   "국제뉴스",
    "글로벌이코노믹",
    "뉴스1",
+   "뉴스웨이",
    "뉴스저널리즘",
    "뉴스톱",
    "뉴스핌",
    "뉴시스",
+   "대한경제",
    "더팩트",
    "데일리안",
+   "동행미디어 시대",
    "라온신문",
    "매일경제 마켓",
    "매일일보",
+   "머니터링",
    "머니투데이",
    "미디어파인",
    "미래경제",
@@ -36,7 +31,9 @@
    "비건뉴스",
    "비즈니스포스트",
    "비즈니스플러스",
+   "서울STV뉴스",
    "서울경제",
+   "서울경제TV",
    "소비자가 만드는 신문",
    "스트레이트뉴스",
    "아시아경제",
@@ -49,17 +46,78 @@
    "이코노뉴스",
    "이투데이",
    "재경일보",
+   "중부매일",
    "직썰",
+   "충북일보",
    "파이낸셜뉴스",
+   "파이낸셜포스트",
    "퍼블릭타임스",
    "포쓰저널",
+   "한스경제",
    "헤럴드경제",
    "현대경제신문"
   ],
-  "outlet_count": 41,
+  "outlet_count": 53,
   "first_seen": "20261017",
   "last_seen": "20261122",
-  "pub": "202611221145"
+  "pub": "202611221630"
+ },
+ {
+  "title": "결혼정보 듀오 매출 483억…회사 매각도 중매와 닮았다 - 자본시장뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTMDRhcnFzUTFrQ3dWU1cyaHlrd0lEdDZaMG5fdWlDVGJaWXpaSkRGd3FScnZlalEyR3ZfVVEtb3VEUEdINnE0Yy1WejdKYjcyS1UtT3lMekdRMkR1OF9VZVhnaEtibFU?oc=5",
+  "sources": [
+   "자본시장뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611221600"
+ },
+ {
+  "title": "[해설] 현대엘리베이터, 왜 지금 자회사 지분 팔았나..주주환원 뒤에 숨은 현금 활용 셈법 - 한국정경신문",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NcFU1b1ZkVDNjUy1hNDIyQzVpTzVoTHN0SzJETUN4MDJrbmJ1MnZtNEFuaDdLMkZXQm5IdERmN2ZwMlBpeG9vUDdfSjRyR0dIcUE?oc=5",
+  "sources": [
+   "한국정경신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611221519"
+ },
+ {
+  "title": "MBK파트너스, ‘삼성S펜’ 기술 日 와콤 인수 추진 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15N0JldXJZM25peXI3a0xiakYza0lKZC1RUmJpWl9IdTZDTERFNW05ZkhGWUVvemM3MGJYVUtBOUNOV3lJMzdxZ1JPNGJiSEV4LUE?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261121",
+  "last_seen": "20261122",
+  "pub": "202611221509"
+ },
+ {
+  "title": "테슬라의 높은 밸류에이션은 오직 스페이스X에 의해서만 지지되는가? 경영진은 합병 가능성을 배제하지 않으며, 기대치 미달은 밸류에이션 폭락을 위협한다 - TradingKey",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVzh2enZscTltVTlkZ1kxVE42UUdPV3RsMXUwbmZMN2hFcFFLOUxFWVItcGFQMXB0UlpUVGJLQ3FGVHY3aUpiVGU1anhxS1JsYzBPNTlJSnJKWThUek5Tb01rLW9BUXl6d1I4ZFlmNVFPUkp4TnVkVXZPUWxnM05UZ2xiaUdkWmJDbUNmR3FjSWY3cGpSeEtmWUxzSUZpM2xEMlg4NkpfZjZqb3RaRG0weV9TQ1EzZXY5NExDUFlzU1Y5aFZYT3FNdDNsVk1rS0JBNnBsWWxB?oc=5",
+  "sources": [
+   "TradingKey"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611221202"
+ },
+ {
+  "title": "금융硏 \"AI·M&A 자금수요 대응에 SRT 활용 유효\" - KB Think",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1IQ0c1QU9icUZoUldZaWozN3A4X01pMlpCUGJ0SFlyc0pFWXh5eC03dVQtaWxCMHYzLW9uSXoxV0wtTjFmYWFDbVh5Y0VOVnd2R1k2WHN0NjNNRjVmY0g1a0VJVDV4cnVCaHVybXNtSHRidw?oc=5",
+  "sources": [
+   "KB Think",
+   "연합인포맥스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611221200"
  },
  {
   "title": "\"팔 생각없고, 韓정부승인 가능성도 낮은데\" 뜬금없는 '손정의 SK하이닉스 인수설' 미스터리 - 뉴시스",
@@ -71,6 +129,22 @@
   "first_seen": "20261122",
   "last_seen": "20261122",
   "pub": "202611221145"
+ },
+ {
+  "title": "현대엘리베이터, 무벡스 지분 1026억 매각…배당 확대 - 포쓰저널",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fbGo4dTBMNUFfWlk4eXRqU2ZSbk1VWjItdUk5cUhJV0pTR3BsQWlkTzVNcmJ6X0JRMnZZdnZobFFBdGM5RU5hNVBJNTgwN1dWNU92YTdna3lHWHZYa1pmbzFvYmk?oc=5",
+  "sources": [
+   "글로벌이코노믹",
+   "데일리바이트(DAILY BYTE)",
+   "라온신문",
+   "머니투데이",
+   "재경일보",
+   "포쓰저널"
+  ],
+  "outlet_count": 6,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611221126"
  },
  {
   "title": "솔라나재단, 코인게코 경영권 확보...사업 확장 본격화 - 디지털투데이",
@@ -129,6 +203,17 @@
   "pub": "202611220929"
  },
  {
+  "title": "'50%+1주' 놓고 \"법안 취지 무색\"…의무공개매수제 논란 가열 - 뉴시스",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAwTW1sanBsc3BKRk15Y1QzaDJyb18wQVVkakxkMkxHNFp5bjJ2cnhSSFZmWU1PRVlVVGZxY0prZDZWWmpTemRIU1Y3UXpxRFlXYmtVOUM4cTI5YnRvQlFZbtIBeEFVX3lxTE1oMkZydmM4TVVzVGdxYWtYZHdtelNscHNvcG9HNXl4dmN1ZzhWanVWR2lXWjFnSllaTVhUdUF1STl4VE9hcDdCRkF3dlBGUjZlZW1OWDlnOGVEMFp1c3hBVVRrNWNzYlM1aTVQMzFUODloMlNwVVUwNw?oc=5",
+  "sources": [
+   "뉴시스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611220900"
+ },
+ {
   "title": "[인력 줄이는 K게임] 회사 사고팔 때 직원부터 줄인다…게임사 M&A '감원 셈법' : 네이버 블로그 - Naver Blog",
   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEd4VHQyc2d4YXBrVVg0U1lSY2Y5d2Nfb2tKZ2xoOXZBdXJ6VDVlREd6bEhqSEVWMy1XZXFKS1BKYWszMmlKUTZ0NzVMcHItRDVVU0VSanZOU01kN3RtRzhyS2tCZVctNmR6M3hCVnR2V3lKZ3c5cVNSZEJrUUtwb0NHOFU0R3hIeXNfeHdwRQ?oc=5",
   "sources": [
@@ -138,7 +223,19 @@
   "outlet_count": 2,
   "first_seen": "20261120",
   "last_seen": "20261122",
-  "pub": "202611220826"
+  "pub": "202611220831"
+ },
+ {
+  "title": "\"3년 7개월 족쇄 풀린다\"…김범수 2심 무죄, 멈췄던 카카오 AI·M&A 시계 다시 돈다 - 서플 뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9nRkV3dlRjc19JQTAycUFpWlVMRDNySWhRdDV4YVQ1U1hSU08tOHQzM3pUaGRNeU5BLUdteVQtc1JJLURvbnJ2UUlhNXlnNEFPc1VsMWljVzRZanI2?oc=5",
+  "sources": [
+   "머니투데이",
+   "서플 뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611220810"
  },
  {
   "title": "트럼프 행정부, 배터리 스타트업 지분 51% 인수 요구했다 - 글로벌이코노믹",
@@ -150,17 +247,6 @@
   "first_seen": "20261122",
   "last_seen": "20261122",
   "pub": "202611220807"
- },
- {
-  "title": "\"3년 7개월 족쇄 풀린다\"…김범수 2심 무죄, 멈췄던 카카오 AI·M&A 시계 다시 돈다 - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vNE9zbWdQZUhQTElNWTlPdXVoV1ZqWTYybXpHREczRzRwRUU0V0xXQ3NCQnU5QmJ5dlgweXdUUGhQZ2Z0cHhFTGdtYlNtWlNMcEFVRmpMX3R1SHFiQVZSNDNXTzVrUW_SAWxBVV95cUxQOGxiY2dqUFBTYl9scW5qUjBCd0ZfNnNmVUY3RnhUNW8xWmR6SUhnZE5nRjBHTTdSUkpXUFNhUVM3dTFKNmNzQXRPM082M205SGxMa3ptTGN6WHpSeVlHbGxGamN5NnREMXE3ZzI?oc=5",
-  "sources": [
-   "머니투데이"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261122",
-  "last_seen": "20261122",
-  "pub": "202611220800"
  },
  {
   "title": "네슬레, 英 밀키트 '심플리쿡' 매각…비핵심 사업 정리 속도 | 더구루 - 뷰타임즈",
@@ -205,6 +291,21 @@
   "first_seen": "20261122",
   "last_seen": "20261122",
   "pub": "202611220603"
+ },
+ {
+  "title": "손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진 - AI타임스",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tX2UwbDVQMzVCS0p1T0RUTUppZFZhQ2w3ZjlxeDVMaWtrSHdUWUNNUnlCVjhXWk1zNml5ZE8xMkUxa3hkNmMtUnp2Vm53QXZETE1fMmM2RG1vY3JvT1lTbFNhdmh4QkVla2c?oc=5",
+  "sources": [
+   "AI타임스",
+   "경북도민일보",
+   "뉴스토마토",
+   "매일경제 마켓",
+   "산업저널"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20261121",
+  "last_seen": "20261122",
+  "pub": "202611220559"
  },
  {
   "title": "박현주 미래에셋 회장 \"곧 M&A 발표…반도체 고점론 틀릴 가능성\" - 연합뉴스TV",
@@ -342,17 +443,6 @@
   "pub": "202611211933"
  },
  {
-  "title": "손정의, SK하이닉스 인수 검토했었다…몸값만 1조달러 - 뉴스토마토",
-  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85cEZOcDNkSUxpaElEY29QYi1TZHkwNjlsZ2FZV1MzWkxIdWZyNHV2LVZHTjBweEFHQ3lQbE1BV1BwQXd3R25RQlFqSTQ4U1FtOFppUG9zbTgtSE9TWjEzSA?oc=5",
-  "sources": [
-   "뉴스토마토"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261121",
-  "last_seen": "20261122",
-  "pub": "202611211829"
- },
- {
   "title": "해외서 들려온 MBK파트너스 일본 와콤·소프트뱅크 손정의 SK하이닉스 M&A 추진설 보니 - 글로벌경제신문",
   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41X0xycUpuZ3AxVWROTTVYZ1pfaC1uV1I1UjlwbXlOb1k3amF3aDJZcGdJY3M4Uk9GQjdOQ2o0QlhIOHVHVlhGUUM3XzNmX0RGZ1k1YlNhd3dCazBkTmFTT2tqVkJUNmVPWk95MNIBcEFVX3lxTE5ZdG12SUoyTjFvWlRoMXc5d3B2cWI1Y0pPLU1kUEh1SGVROUl5cWJBOWY4ZmNXV2wzUnRMdjhySkxlZjN4RFVaWXFVU25KbGFCblZ1TmNrOTd2N0tpMW1xUlNHRkZWd3FvYVdzbmxGOEE?oc=5",
   "sources": [
@@ -375,14 +465,14 @@
   "pub": "202611211813"
  },
  {
-  "title": "‘갤럭시 S펜’ 핵심기술 보유한 日와콤, MBK가 1조원대 인수 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5VWjVpVjIxV0VBamVCRTh5SXdFLUlibVdwMXVqdEdVWmx3bXBmM0RhN1VaRmJPVW5ZUmYyS2NOazB5b1pjc3hZZ2p5MHV1NGVWQ1E?oc=5",
+  "title": "‘갤럭시 S펜’ 핵심기술 보유한 日와콤, MBK가 1조원대 인수 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kSG1yaWtldld5ZUdPVDJDYWRZZXlFOFp4VWNkTHFOeU5XUlJXMHJXSWVNeTU4UmxrZ3ppRTJnNHdkZ3hocVR0NUJRM09uV1IxVXc?oc=5",
   "sources": [
    "매일경제",
    "매일경제 마켓"
   ],
   "outlet_count": 2,
-  "first_seen": "20261121",
+  "first_seen": "20261122",
   "last_seen": "20261122",
   "pub": "202611211742"
  },
@@ -500,6 +590,17 @@
   "first_seen": "20261121",
   "last_seen": "20261122",
   "pub": "202611211407"
+ },
+ {
+  "title": "HSBC, 테슬라 목표주가 359달러로 대폭 상향…머스크의 스페이스X 합병 구상 주목 - 제민일보",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5LRXk5TGFZWlllQ3c5WUFERGw3Sm11N2tzcF9jQ3J3RDJ4WWk4LWYtX3hCYWgxMjcyak5DRWVWa2RPTDdudE5KdG5uWHN1SUZxSmRuWkkxeXY0SjBUUFJQRVRfZzM0UQ?oc=5",
+  "sources": [
+   "제민일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611211353"
  },
  {
   "title": "MBK, 日 와콤 1조원대 인수…삼성전자도 재출자 - 마켓인",
@@ -844,6 +945,17 @@
   "pub": "202611210610"
  },
  {
+  "title": "보스턴 사이언티픽, 페넘브라 인수용 30억달러·42억5000만유로 채권 발행 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5pQjVRRWZpR2dPenBYa0puSDZiWnNxb1JVekg0TWtsUG1mZkdnZWxWR3JrY2NSclozTEZYNzBhcXM3dDdzNHQ1eWNqLWRJOWZVYmc?oc=5",
+  "sources": [
+   "매일경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611210610"
+ },
+ {
   "title": "길리어드·릴리·화이자, M&A·기술도입으로 CAR-T 시장서 총력전 - 히트뉴스",
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9feXM4Tzh5TXA1bGxndkdaRmdlbW9LWVlmdHJWX0lPVUhGSVFCVjlabGpHZDJEbXFValhsRmZMR0tSVmg0M2xpN2RxNjFKYU5uemtVZzJpbmRHLWdFWlN4bXpjd18zM212VFdV?oc=5",
   "sources": [
@@ -1000,6 +1112,17 @@
   "first_seen": "20261121",
   "last_seen": "20261122",
   "pub": "202611202306"
+ },
+ {
+  "title": "합작법인, 지분율보다 헤어지는 조항을 먼저 씁니다 - 브런치",
+  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5lNklUMTBEb1ZDLTRVQmNldmxHVDVGeTB5bVlDeDhKenhHVHpSUFB5dzc5ZG9Uc0FfaS1PRWk4TGVoR0p1Q2otUm1JSTF5dw?oc=5",
+  "sources": [
+   "브런치"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261122",
+  "last_seen": "20261122",
+  "pub": "202611202300"
  },
  {
   "title": "Yesway Inc 주가, 기존 주주 지분 매각에 장전 거래서 하락 - Investing.com 한국어",
@@ -1176,6 +1299,18 @@
   "pub": "202611201830"
  },
  {
+  "title": "“의무공개매수법 이대로 통과되면 코스피 4200”…외국인 이탈 경고 - 쿠키뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KV3I3T2NEMDYyVHFQNVJzMnUwTkc0Z2VvbVpBaDZfVVA5VDN5NjhobFFVLW1xSnl2bVp2c2ZId2VZbVNQWm9WT1dpOGIzZUFsSW5EWmxmSUVXNFNyXzNiN0tkSQ?oc=5",
+  "sources": [
+   "ESG경제",
+   "쿠키뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261117",
+  "last_seen": "20261122",
+  "pub": "202611201812"
+ },
+ {
   "title": "LG유플러스, 카카오 보유 ‘볼트업’ 지분 510억원에 인수…완전자회사 편입 - 뉴스인사이드",
   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0R3NwTTN6MldfX0lETjdNXzUyT1Z3OGVVYTBUZjBaTHpkcEU2VUdYRkwyWkNnOHJQRVVIRUpKMThZdk1uWFV0SnJqb3RUbW9uQVRQeGNaUWtlbHJLQ2E2cVNycXcwajhac05pVllR?oc=5",
   "sources": [
@@ -1183,7 +1318,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261120",
-  "last_seen": "20261120",
+  "last_seen": "20261122",
   "pub": "202611201758"
  },
  {
@@ -1194,7 +1329,7 @@
   ],
   "outlet_count": 1,
   "first_seen": "20261120",
-  "last_seen": "20261121",
+  "last_seen": "20261122",
   "pub": "202611201745"
  },
  {
@@ -5900,17 +6035,6 @@
   "first_seen": "20261117",
   "last_seen": "20261119",
   "pub": "202611171543"
- },
- {
-  "title": "“의무공개매수법 이대로 통과 땐 코스피 4000선도 무너진다” - ESG경제",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQVDlPYnVKZ0M0QTRKZkZYNW1qclh3QkxwVk5STHJsb3FDTTY2UFphaURZczlCUHVMSnpjamVWTmhodVlLa1o3NF9mTk0waEtyTjVOSmVEMlJ4M0NfdURyVEpUU0duRGdwU0VYVA?oc=5",
-  "sources": [
-   "ESG경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261117",
-  "last_seen": "20261119",
-  "pub": "202611171538"
  },
  {
   "title": "SJKP(대륜), 청산 앞둔 미국 대형로펌 웨일 인수 검토 - 로리더",
