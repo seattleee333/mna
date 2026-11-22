@@ -1,5 +1,19 @@
 [
  {
+  "rcept_no": "20261120000633",
+  "date": "20261123",
+  "corp_code": "01228515",
+  "corp_name": "앱튼",
+  "stock_code": "270520",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "앱튼이 유상증자를 결정했습니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261120900976",
   "date": "20261120",
   "corp_code": "00587925",
