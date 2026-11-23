@@ -8,8 +8,10 @@
   "market": "Y",
   "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과보고)",
   "category": "합병",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "주성코퍼레이션이 합병 관련 공시를 냈습니다.",
   "summary_src": "title"
  },
@@ -22,8 +24,10 @@
   "market": "Y",
   "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
   "category": "합병",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "주성코퍼레이션이 합병 관련 공시를 냈습니다.",
   "summary_src": "title"
  },
