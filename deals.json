@@ -8,8 +8,10 @@
   "market": "K",
   "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
   "category": "유상증자",
-  "no_detail_api": true,
   "detail_done": true,
+  "fix_v": 6,
+  "detail_attempts": 0,
+  "no_detail_api": true,
   "summary": "앱튼이 유상증자를 결정했습니다.",
   "summary_src": "title"
  },
