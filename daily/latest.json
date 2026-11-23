@@ -1,8 +1,8 @@
 {
- "date": "20261122",
+ "date": "20261123",
  "base_dates": [
-  "20261120",
-  "20261119"
+  "20261123",
+  "20261120"
  ],
  "pick": {
   "score": 110,
@@ -25,6 +25,13 @@
   "structured": true,
   "news": [
    {
+    "title": "손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tX2UwbDVQMzVCS0p1T0RUTUppZFZhQ2w3ZjlxeDVMaWtrSHdUWUNNUnlCVjhXWk1zNml5ZE8xMkUxa3hkNmMtUnp2Vm53QXZETE1fMmM2RG1vY3JvT1lTbFNhdmh4QkVla2c?oc=5",
+    "src": "AI타임스",
+    "n": 8,
+    "pub": "202611220559"
+   },
+   {
     "title": "SK하이닉스, 일본 키옥시아 CB 주식전환 확정...지분 14.1% 보유",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpVE1DYWhxem5ERXZBVTdVa2VuRXByc0dNdWhOc2FwaUJvRlgxeFhIS1NxS3p4UWl2eU4wS2VieE56RXZUaWFJX0ppNzVpMS1XSElqR1ZkN3dlaS10aGs3d3B0cFJVc2c1Q1hvNQ?oc=5",
     "src": "KB Think",
@@ -32,24 +39,17 @@
     "pub": "202611202015"
    },
    {
-    "title": "“손정의, 1346조원에 SK하이닉스 인수 구상…월가에 자금 조달안 문의”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5KR01obVFPREJDaS1vd2R6dExOZnBoYTFSZk9JR3Vma2ZXSDRYOW5QSDZNLWQ2d1M2YUREeFlsYjdOd1ZRZmgxY0NOSnBPTlpYZmE1Nl9n?oc=5",
-    "src": "뉴스웍스",
+    "title": "손정의, SK하이닉스 1조弗 인수 왜 멈췄나",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9EaFVCWHRKV3Mwby1sWGVfTlV2Z1VCcWNSVUJQNktzWnB2NTVUb3UzNFJ5ckpLSEoyeWRKLUFKc1VXUFU0eGFoMEUyUm54NDJ0c3fSAVNBVV95cUxPRWRyT2dJZEM4S3gxM000a2ZhZ1UxaGh5aUl2TDl1eFN3ZXM1VEZYLVJTeGIwdWVxVE5LYlZXejRwQTNSV0l6ZHNQRkY0UXRIUjhTZw?oc=5",
+    "src": "매일경제 마켓",
     "n": 3,
-    "pub": "202611211423"
-   },
-   {
-    "title": "팔지도 않을 SK하이닉스, 소프트뱅크 손정의는 왜 인수하려 했나",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yQWhJa0dIeFRiQTZJSExHbFg2aG1BQ3F4b3JHRlZlZkVKNkdHalkwSnBSRzVoanRQT0ZnSTJTX3NLSklzQkdjSzZPT1ZDeXhQNEtjWGtqV1dkUQ?oc=5",
-    "src": "경북매일",
-    "n": 1,
-    "pub": "202611212300"
+    "pub": "202611221553"
    }
   ]
  },
  "others": [
   {
-   "score": 75.1,
+   "score": 100.1,
    "buyers": [
     "현대엘리베이터"
    ],
@@ -69,11 +69,25 @@
    "structured": true,
    "news": [
     {
-     "title": "현대엘리베이터, 계열사 지분 매각해 배당 확대 나선다 : 기업·산업",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5EZkpFZXhWeE9EVzRmS0t2UGJjQ0FwVE1CdERuZWZqMVJNQjVfVVF4VmF5TXBHbVYya3Vidm8xd1RXZDlWa2pZWWpwVQ?oc=5",
-     "src": "재경일보",
-     "n": 1,
-     "pub": "202611221003"
+     "title": "현대엘리베이터, 현대무벡스 지분 1026억 매각…주주환원 재원 확충",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50aUpHTDUyeU00bGFRODdfeGIwYUJwa2JEVWJqNnN6TUZPQkZHSzFuZXAzdTdBNnJuelRpS0NwSWtjUDJZNmgwZ1RzVFM0Y2ZaWTVzZHlLWVVFUjY4c242ZVV1ZC1VOTE5S0lqRkN0Y9IBckFVX3lxTE91UFFHLUhvVU5ncl9KRkdydTZoOEl2SVMwUHdDbFZqdmJ6Q2NFMjFRZHVITlUxQldZZGd1NkxxSHJ6X1ZYc3BORHFJMThyamMyTldQNC1raFUzMU5yeDhGV0xGLVpSUjcwWXBJOHB0Ti1Zdw?oc=5",
+     "src": "Chosunbiz",
+     "n": 59,
+     "pub": "202611230928"
+    },
+    {
+     "title": "현대엘리베이터, '1026억 규모' 현대무벡스 지분 매각…주주환원 재원 확보",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5VLXI4SEJINVBsUUpQTFlHMUZ2NHhETnBLQmhPaVR3Z0hQdDVJQ0dFaHhVMmpINGpKYW1wdWlBXzRGMnktX0VVRER6bmpEOUxMUW50UkcxenFLeUUzSjl6Tkg2ZmhSWVpFV0HSAW5BVV95cUxQMk9qQ21PQk9PbGh0eUR5dFFJUFNmdVN4a19QNFRmQ0xsYUZpVV9XbFpMUktyN1lCVnRNSGN2QlRKTnVXbHJEd0RzR000MGtUNk5pSC1JcDBvR0kwLXB0ME9scTFTQzI4U3Q2TzBVQQ?oc=5",
+     "src": "Chosunbiz",
+     "n": 40,
+     "pub": "202611230811"
+    },
+    {
+     "title": "현대엘리베이터, 자산효율화 일환으로 현대무벡스 지분매각",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sY2Q1b29STU0tQldTT2F0d1BvNFZJdGlqWVB3Sk83UWJxdnp2NE1aOW1aMl9WVzdack16Z3dNWVhVUjByZy1BbUIxcF9STmgwRTdSUUhxRVFSZHN2SnlQUnNLbWFHLXhk?oc=5",
+     "src": "Chosunbiz",
+     "n": 28,
+     "pub": "202611230926"
     }
    ]
   },
@@ -120,26 +134,26 @@
   ],
   "label": "유지",
   "median": 150,
-  "news30": 77
+  "news30": 82
  },
  "news_top": [
   {
-   "title": "현대엘리, 무벡스 지분 매각해 주주환원…1026억원 규모",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9GRVJWMThzemFheGZSb0pqcTZOSDNGc2NDLXpUVTMyeVZadGhhWnB0bHlfVWliLTlMOGtGUW5tOW9EdGRWcHg1M3ZEWDNma1dIWnZfWVExUGJENGxtSGxtYWx4c2w?oc=5",
-   "src": "S저널",
-   "n": 29
+   "title": "현대엘리베이터, 현대무벡스 지분 1026억 매각…주주환원 재원 확충",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50aUpHTDUyeU00bGFRODdfeGIwYUJwa2JEVWJqNnN6TUZPQkZHSzFuZXAzdTdBNnJuelRpS0NwSWtjUDJZNmgwZ1RzVFM0Y2ZaWTVzZHlLWVVFUjY4c242ZVV1ZC1VOTE5S0lqRkN0Y9IBckFVX3lxTE91UFFHLUhvVU5ncl9KRkdydTZoOEl2SVMwUHdDbFZqdmJ6Q2NFMjFRZHVITlUxQldZZGd1NkxxSHJ6X1ZYc3BORHFJMThyamMyTldQNC1raFUzMU5yeDhGV0xGLVpSUjcwWXBJOHB0Ti1Zdw?oc=5",
+   "src": "Chosunbiz",
+   "n": 59
   },
   {
-   "title": "박현주 미래에셋 회장 \"곧 M&A 발표…반도체 고점론 틀릴 가능성\"",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE52UzEycVM5aGc4NXg1VjBZa2tvemgzMkNSRVRqWjdnalhVSmtQN0xISTNxZml6M0pKYllCVldheTdxSHJGdEx0N1RmeUN0bzQ3WmRIYVpKbkp2Vk1nWHZzXzRGdEJFREU?oc=5",
-   "src": "IT조선",
-   "n": 16
+   "title": "현대엘리베이터, '1026억 규모' 현대무벡스 지분 매각…주주환원 재원 확보",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5VLXI4SEJINVBsUUpQTFlHMUZ2NHhETnBLQmhPaVR3Z0hQdDVJQ0dFaHhVMmpINGpKYW1wdWlBXzRGMnktX0VVRER6bmpEOUxMUW50UkcxenFLeUUzSjl6Tkg2ZmhSWVpFV0HSAW5BVV95cUxQMk9qQ21PQk9PbGh0eUR5dFFJUFNmdVN4a19QNFRmQ0xsYUZpVV9XbFpMUktyN1lCVnRNSGN2QlRKTnVXbHJEd0RzR000MGtUNk5pSC1JcDBvR0kwLXB0ME9scTFTQzI4U3Q2TzBVQQ?oc=5",
+   "src": "Chosunbiz",
+   "n": 40
   },
   {
-   "title": "신한은행, 카디프생명 지분 17년 만에 정리…한투에 매각 추진",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBlaGQyMjVDbUduSEYxUFJoQnlYd2Q2WmdhYU43RWRyVWpfME1sTF9ibldhN1pZNHkwVjdxU3JMd05aUUt5cDZmVUpobHJ5TGdxWWxBUmlkVGthWk1mblpJ?oc=5",
-   "src": "MTN 머니투데이방송",
-   "n": 16
+   "title": "현대엘리베이터, 자산효율화 일환으로 현대무벡스 지분매각",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sY2Q1b29STU0tQldTT2F0d1BvNFZJdGlqWVB3Sk83UWJxdnp2NE1aOW1aMl9WVzdack16Z3dNWVhVUjByZy1BbUIxcF9STmgwRTdSUUhxRVFSZHN2SnlQUnNLbWFHLXhk?oc=5",
+   "src": "Chosunbiz",
+   "n": 28
   }
  ],
  "text": {
@@ -151,10 +165,10 @@
   "amount_text": "1.28조원",
   "linkedin": "[오늘의 M&A] SK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수\n\n· 공시일 11/20 · 타법인 주식 취득·처분\n· 금액: 1.28조원\n\nSK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.\n한 회사가 다른 회사의 지분(주식)을 사들이는 거래예요. 경영권을 확보하려는 경우도, 사업 협력이나 투자가 목적인 경우도 있어서 지분율과 인수 목적은 공시 원문에서 확인해야 해요.\n\n전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.\n\n공시에 적힌 사실만 정리했어요. 인수 목적·지분율 등 자세한 내용은 공시 원문을 확인하세요.\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전자부품반도체 #BCPE",
   "linkedin_comment": "더 많은 오늘의 딜과 업종별 동향은 여기서 볼 수 있어요 👉 https://seattleee333.github.io/mna/deals.html",
-  "instagram": "📌 오늘의 M&A · 11월 22일\nSK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수\n\nSK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.\n\n📊 전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전자부품반도체 #BCPE",
+  "instagram": "📌 오늘의 M&A · 11월 23일\nSK하이닉스, BCPE Pangea Cayman2, Ltd. 지분 1.28조원 인수\n\nSK하이닉스가 BCPE Pangea Cayman2, Ltd. 지분을 1.28조원에 인수한다고 공시했어요.\n\n📊 전자부품·반도체 업종은 최근 5년간 상장사 인수 공시가 119건이었고, 최근 흐름은 이전과 비슷해요. 거래 금액 중앙값은 150억원이에요.\n\n공시 사실만 정리했어요. 자세한 내용은 공시 원문에서 확인하세요.\n더 많은 딜은 프로필 링크에서 🔗\n\n#M&A #인수합병 #기업인수 #오늘의딜 #전자부품반도체 #BCPE",
   "note": "공개된 공시를 정리한 참고 정보이며 투자 권유가 아닙니다. 보도 내용은 확정되지 않았을 수 있어요.",
-  "related": "- SK하이닉스, 일본 키옥시아 CB 주식전환 확정...지분 14.1% 보유 (KB Think)\n- “손정의, 1346조원에 SK하이닉스 인수 구상…월가에 자금 조달안 문의” (뉴스웍스)"
+  "related": "- 손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진 (AI타임스)\n- SK하이닉스, 일본 키옥시아 CB 주식전환 확정...지분 14.1% 보유 (KB Think)"
  },
  "score_note": "공시 규모·보도량·거래 유형·시장으로 계산한 주목도 점수",
- "blog": "blog/20261122.html"
+ "blog": "blog/20261123.html"
 }
