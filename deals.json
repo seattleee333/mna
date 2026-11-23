@@ -1,5 +1,33 @@
 [
  {
+  "rcept_no": "20261123800147",
+  "date": "20261123",
+  "corp_code": "00753643",
+  "corp_name": "주성코퍼레이션",
+  "stock_code": "109070",
+  "market": "Y",
+  "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과보고)",
+  "category": "합병",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "주성코퍼레이션이 합병 관련 공시를 냈습니다.",
+  "summary_src": "title"
+ },
+ {
+  "rcept_no": "20261123800146",
+  "date": "20261123",
+  "corp_code": "00753643",
+  "corp_name": "주성코퍼레이션",
+  "stock_code": "109070",
+  "market": "Y",
+  "report_nm": "기타경영사항(자율공시)              (소규모합병 승인 이사회 결의(주주총회 갈음) 결과 보고)",
+  "category": "합병",
+  "no_detail_api": true,
+  "detail_done": true,
+  "summary": "주성코퍼레이션이 합병 관련 공시를 냈습니다.",
+  "summary_src": "title"
+ },
+ {
   "rcept_no": "20261120000633",
   "date": "20261123",
   "corp_code": "01228515",
