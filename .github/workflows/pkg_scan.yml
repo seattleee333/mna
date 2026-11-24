@@ -1,0 +1,46 @@
+name: 화장품 용기·유리병 관련 상장사 전수 확인
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - fetch_pkg_scan.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pkg-scan
+  cancel-in-progress: true
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - name: 정기보고서 사업의 내용·원재료 확인
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u fetch_pkg_scan.py
+      - name: 결과를 작업 결과물로만 보관(저장소에 올리지 않음)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkg-scan
+          path: pkg_scan.json
+          retention-days: 7
+      - name: 임시 브랜치로 전달(내려받은 뒤 바로 지움, main 에는 올리지 않음)
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan tmp-pcb
+          git rm -rq --cached .
+          git add -f pkg_scan.json
+          git commit -qm "tmp pkg scan"
+          git push -f origin tmp-pcb
