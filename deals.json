@@ -1,5 +1,25 @@
 [
  {
+  "rcept_no": "20261124000227",
+  "date": "20261124",
+  "corp_code": "01492217",
+  "corp_name": "엑셀세라퓨틱스",
+  "stock_code": "373110",
+  "market": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "category": "유상증자",
+  "kind": "capital",
+  "direction": null,
+  "buyer": null,
+  "seller": null,
+  "target": null,
+  "amount": 3999997946,
+  "note": "증자방식: 제3자배정증자",
+  "summary": "엑셀세라퓨틱스가 제3자배정증자 방식으로 40억원을 조달합니다.",
+  "sum_v": 3,
+  "detail_done": true
+ },
+ {
   "rcept_no": "20261124000172",
   "date": "20261124",
   "corp_code": "01492217",
