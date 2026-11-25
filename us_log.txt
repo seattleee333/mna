@@ -1,10 +1,8 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WBK3N4Q1RJT1ZSS0</RequestId><HostId>95gViBy3ZjchvvaPaEddOnjY6PpPck4GV8K6DJIb5OKStHqHjE
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>5YT0N8CXB106NYT5</RequestId><HostId>OsmxMYAJ49AygKhdhSE/iMgegKy9Hau4r0ju1eFjfREjPnRTP7
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WBKBNKKDDEPH5344</RequestId><HostId>752uhyLn52Zl9LhSBMh1ge2iK1+SJ4zoOwCSLQnsP4e7HSMGKi
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>5YTAQB3DP0ADDBAP</RequestId><HostId>Ew69Xc+emnDAnlnq6fpnbrLda+3TsdwskG9fP31/4igX4YXPey
   2026-11-11 8-K 0건
-  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 24, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A-W            Nextchip Inc.                                                 2155037     20261124    edgar/data/2155037/0002155037-26-000004.txt                                                
-  2026-11-24 8-K 247건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>E0GC97ZKQJF2WB9Z</RequestId><HostId>+qlXoeXEO8Xg/ICk6vows+DaQoqnim+aae+SqbjPk8KVkw2ktX
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9RZ97VC119G9AW4B</RequestId><HostId>4Qorjhu8S309APcfOBZildyjx+LjVRbq7WpCuAltXp6SII4YDy
   2026-11-25 8-K 0건
-새로 확인할 8-K 247건
-저장: 딜 2357건 (이번 신규 15건, LLM 0건)
+새로 확인할 8-K 0건
+저장: 딜 2357건 (이번 신규 0건, LLM 0건)
