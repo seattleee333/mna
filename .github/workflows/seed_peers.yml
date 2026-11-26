@@ -1,0 +1,46 @@
+name: 종자 Peer 재무 원문 수집
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - fetch_seed_peers.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seed-peers
+  cancel-in-progress: true
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - name: DART·시세 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python -u fetch_seed_peers.py
+      - name: 결과를 작업 결과물로만 보관(저장소에 올리지 않음)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seed-peers
+          path: seed_peers.json
+          retention-days: 7
+      - name: 임시 브랜치로 전달(내려받은 뒤 바로 지움, main 에는 올리지 않음)
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan tmp-pcb
+          git rm -rq --cached .
+          git add -f seed_peers.json
+          git commit -qm "tmp seed peers"
+          git push -f origin tmp-pcb
