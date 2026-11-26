@@ -1,8 +1,10 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>5YT0N8CXB106NYT5</RequestId><HostId>OsmxMYAJ49AygKhdhSE/iMgegKy9Hau4r0ju1eFjfREjPnRTP7
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>YQH8FD3WRT3PFCPF</RequestId><HostId>VjMSvK/ZyMgBGZEQFGWgsRSjYMJip2eM4xuRrErsBRRNQs+tz8
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>5YTAQB3DP0ADDBAP</RequestId><HostId>Ew69Xc+emnDAnlnq6fpnbrLda+3TsdwskG9fP31/4igX4YXPey
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>S8YNQ85PDNJRZFHN</RequestId><HostId>3Usw65opYLPufrGPs1OWFBI41Jcu4vGeFqxpFNp4dGiUH89Sik
   2026-11-11 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9RZ97VC119G9AW4B</RequestId><HostId>4Qorjhu8S309APcfOBZildyjx+LjVRbq7WpCuAltXp6SII4YDy
-  2026-11-25 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2357건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 25, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A              TV Channels Network Inc.                                      1952670     20261125    edgar/data/1952670/0001952670-26-000026.txt                                                
+  2026-11-25 8-K 177건
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>1ZRC3FHJ3JHF4C2W</RequestId><HostId>d7KHYkrZz9JkGxOPct6RaMvbegE4uoQExB1BphEYQuEv6zKa81
+  2026-11-26 8-K 0건
+새로 확인할 8-K 177건
+저장: 딜 2367건 (이번 신규 10건, LLM 0건)
