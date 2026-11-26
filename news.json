@@ -1,14 +1,773 @@
 [
  {
-  "title": "홈플러스 \"삼일회계법인, 인수의향서 접수 확인\"…노조 \"M&A 적극 협력\"(종합) - 뉴스1",
-  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9nUVp1THR6eUprSEFiS2hFUUVpc2pfUFNMaVE0bzdUblUzMTc1UTNzU0Z0LTN4QWVORXZPNVFfb0d6SlJxV0I4V0FQQ1JYUld5cG1EeGxJRU9BM1FMMjEw?oc=5",
+  "title": "[단독] 지분 정리 필요한 5대 코인거래소…K국부펀드 등판론 '급부상' - 한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QNy1yY0RKclJxcWQ5VVl3SHd2WUJ1R05OQVhQbzhpNTQ5WE5wcDdTWFJoLXZQNncweGgyVUN0elQ5THlZN3N1MnE4cVpBY3VMYUF1NDRUZU9PQQ?oc=5",
+  "sources": [
+   "한국경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261820"
+ },
+ {
+  "title": "삼성전자 DX부문, M&A 조직 격상…미래 성장동력 확보 속도 - 월요신문",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9PdGVYQUMxWWhfLVR3NDFmWWhHZ2pxMTR1UjdMYl9EUThrc0dxOGdqelJzWVNJbWQtTE94UG5wVjEzOVJxMHEzdEtoSFFiTlBTYjV2eksydmxaa05YWVJRbXkwNEN3LU96elE?oc=5",
+  "sources": [
+   "뉴스웍스",
+   "매일경제 마켓",
+   "서울경제",
+   "세계일보",
+   "월요신문",
+   "한국경제"
+  ],
+  "outlet_count": 6,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261817"
+ },
+ {
+  "title": "\"메모리 개발 속도, M&A 힘 싣는다\"…삼성전자, 조직개편 단행(종합) - 뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsXzFMcHRrd1NJZzFKUF9tZktlTkFnY3Q5a3VHYlp1UndWbmk0cW92MlAtZUV0TEtnX09JeU04VV9WdEpicmcybFdmb0c5X3VZRlU3ZjRrUEE3cGNUWHJJVHJhNS0?oc=5",
   "sources": [
    "뉴스1"
   ],
   "outlet_count": 1,
   "first_seen": "20261126",
   "last_seen": "20261126",
-  "pub": "202611261353"
+  "pub": "202611261814"
+ },
+ {
+  "title": "호반그룹, 델타항공 등장에 한진칼 경영권 확보 난항…2015년 금호산업 인수 무산 - 굿모닝경제",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80VVROb3l4RW9tSjFhRlNBR0VSeDZ5cC1IcEJWUHhoSUVJdVJLLWRkZjZtbU02anJzRTNYSzlXQjRRXzB2aEJPN2gtV0twN3VQdE5QOVc5NllaaFVNcUtzV2NPMFdmSWZ1YVhFQQ?oc=5",
+  "sources": [
+   "굿모닝경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261814"
+ },
+ {
+  "title": "삼성전자, M&A 조직 격상…신사업 발굴 속도 낸다 - 뉴스저널리즘",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAwd1owQk4zNHBza2JBa2JLaXJ0bG1LTjBCVmpLZnkyNzVRY2FYbndCamZoWll4WUo4TlBMOWhnOFpLbDRTTFpURGdDM21QLXg5VWx6djF3dTgtTWNObUduczFoWG92eXIwamF3?oc=5",
+  "sources": [
+   "M이코노미뉴스",
+   "뉴스저널리즘",
+   "생생비즈플러스",
+   "연합뉴스TV",
+   "재경일보",
+   "한국인권신문"
+  ],
+  "outlet_count": 6,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261810"
+ },
+ {
+  "title": "삼성전자, DX부문 M&A·공조 조직 강화 - 지디넷코리아",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0NzNlYkhkcUZlcU5wZWRkdUlCdGZ5RmlpRTNfM0RTeWdGeE9uTEZRWVUzMWVMaS1zRXZURDZEWFJBc0lkbFJZbkxmRnlFZ2t5b0tWbXBn?oc=5",
+  "sources": [
+   "지디넷코리아"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261809"
+ },
+ {
+  "title": "롯데렌탈 팔고 계열사에 771억…롯데, 유동성 재배치 속도 - 아시아투데이",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ObTJTMG5vQk1pMWppLUlBVTNfbU9ibGRiUVVxS29QZV85VGstdUhaSU9LNGU5WFRKamdzUmlCVzI0cWk2V3JNNUtwUTJRcmQyQ3lWQ25MRkZpNXpHNzZWY2o4ZDJrX096R2N0OTln?oc=5",
+  "sources": [
+   "아시아투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261807"
+ },
+ {
+  "title": "LG전자 印법인, 지분 최대 2% 매각 추진 - 파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xdkNhQ2Rzb0ktT1JfYkJUaDIyaFlqQ3M2REdTVGhzMm55SWttTE5NY2VKRU5CLU1pTDV3LW01QklrZDFKVHFJTkFqMWR2aDc1Mi1nczBPWlAyUQ?oc=5",
+  "sources": [
+   "더트래커",
+   "파이낸셜뉴스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261805"
+ },
+ {
+  "title": "삼성전자, M&A 전담팀 신설…AI·로봇 등 미래사업 투자 강화 - 아주경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03Sm5TbDkxR1ROY1ViaDNKSnE0TkVvdVF6SDZjLWtBek52ZnJMOVA4dGJ5SHVTRldfRGUxVG4xZk9falBheUtlcFBPVm9PUkhwX3NyNm5uLTNCd9IBWEFVX3lxTFByXzkzTWo1YTVHUktzOE1DZGhZWk14X3pwenNJcUxUd3QwdDhaWmxySEtrR0plbGI5RzZLblBaVE82bF9vRHQzUUc3WmFQNDVSWVpnMHNvM0g?oc=5",
+  "sources": [
+   "아주경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261801"
+ },
+ {
+  "title": "삼성전자 DX, M&A 조직 키운다…미래 성장·수익성 '투트랙' - 뉴시안",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GQ0l2RWNXS1VfLWFvVk5vekFfU2syalNHemlnYlRVZVNWdmNQbTk0d3E5VkpSOXNVblotclpEWjFfbHAyNE1DbURVdUZERjluZ0hFU3pwbXlXWlNSdVByakNPbTk4WkJCbnM4MA?oc=5",
+  "sources": [
+   "뉴시안",
+   "전자신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261753"
+ },
+ {
+  "title": "JTBC 매각 본격화…CJ·OK금융·호반·태광 후보군 부상[마켓인] - 이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYm5CODZxYmFPM0E2aUlpdm9SRXJlS0xFU0dhSjRCRFg0NFRkOUpPUTBuaHVNV19YOTFoS3dvc3V2M0lwSjVpNWw1WDM4QW5YMGR4WTlfdTduQXZldjJYSGRJWFQ4ZHd4WjY1RXVIZUpkb2VydWRpQ1FDOWV2R29adg?oc=5",
+  "sources": [
+   "이데일리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261752"
+ },
+ {
+  "title": "에이피알, 닥터멜락신 인수 - 한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56bmlBMG1NOW05dXh3aUpJQ2lFYkF6RzU1MlFHMENuVGtrSThvWXdrQ2lwMVpJVS00WU51RElmVVhKTWtPMExvZWsxbTQ0MEZVaDdPcWFDMFFKdw?oc=5",
+  "sources": [
+   "뉴스핌",
+   "한국경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261751"
+ },
+ {
+  "title": "삼성전자, M&A 전담조직 신설· 메모리 R&D 일원화 … 미래 먹거리 투자 확대 포석 - 뉴데일리 경제",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13azk1eThrNUpOZzhnV3paUm5Xb2EyNzZUWlFsVmN1ck00R1dJdm1KMHdWNkRkUjF0SWJ1a2dPWGx2akhEVHpBWUJ1TGZIMGdnLTI4eldESnJzT0ltZWFYZ2NkcnRJT2k1MFNRMHc3d3BMUHNBNFJPRmRia9IBgAFBVV95cUxQcUktYUtnRjZGVkNvUEJaRURRZjdNYVRDd1UwRVplMFRtLUZheGJ2TlJvSTZEQUZObnpMa0tINVp5Z1RhbE1CRTl4NUdFM3M3S28zeExrcjJXcWtuZXltLXYybXpOaF9hbnNObTloRTUyZkljMTZMcVM0c0RhdHpEbQ?oc=5",
+  "sources": [
+   "뉴데일리 경제",
+   "뉴시스"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261745"
+ },
+ {
+  "title": "인수합병 전담팀에 힘준 삼성전자... 신사업 발굴 속도 내나 - 한국일보",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE15blJaeEJPanpNU0ozZElOWFBvd210QXRCZEh3WHgtTXFCaUsyNmRiREx5VDYxUU1xOEJCdDVsY3hQdlRab2owa3FVcjVuX1pZR0V2ZXlNamhMUTZYcU03cDFlRUoyTHhXcEZ1TUln?oc=5",
+  "sources": [
+   "한국일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261744"
+ },
+ {
+  "title": "삼성전자, M&A 전담조직 신설…조직개편으로 신사업 속도 - 스페셜타임스",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5SS0labS1EdE9zVDc2M0JMd3BCc3pnTUdOQVBvSzhraFZUaVlvVlNINFlkTWlQN3JVX1c1ZWZCTVBLeDRSWURaMGRwbjJ6ckVsV3hsQ0wtQ0hnWmdnbGo0bkRtSEdYQ1Z6bS1lS0lRSXIwRDg?oc=5",
+  "sources": [
+   "스페셜타임스",
+   "연합뉴스",
+   "한국경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261743"
+ },
+ {
+  "title": "삼성전자, 메모리 개발 체제 사업부장 직속으로 일원화…M&A 전담 조직 격상 - 굿모닝경제",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvVnZjOTZKZm9kTi1oSGJmVTFFSGJWdDlvZ1AxQUJRY1hLQ1NzWUtUOWdOd0FldDhrQVExbEZ6aXpRTnBpUWFyVl9ENWxkZzRyMmJsTUZ1SzRUb0RfdHRhWmZOUjJGT0R6NTNSag?oc=5",
+  "sources": [
+   "굿모닝경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261742"
+ },
+ {
+  "title": "금감원, 공개매수신고서 심사 강화 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fNmttc1l3MF80OGxtU1ZoaUJfczg2UDVaRmRwYjJyWXhIV0J1RHNTLVJMZ2lkekRFSDhSVW9IYWoxVG1yMXZCU0dtbEtuVlZDRHc?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261740"
+ },
+ {
+  "title": "'4조대어' SK팜테코, 소수지분 매각 본격화 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UVXVsRkZUekxOdFVFeXdMZlBtaGxyN3gwdHIwemZiR0JwRTZFTlg5TVB0VnZvTkZfRHZpZmV5WFFCT0Fmb1d5Z3dPOGE4ODlqM1E?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261739"
+ },
+ {
+  "title": "삼성전자, 메모리 개발 강화 및 M&A 조직 격상 - 데일리바이트(DAILY BYTE)",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbXVybU80bEtuQk9OTGRTQ1M2d0tyZmdLdmJ0aUZEaE5FSnpBZEo5aGQ5QVRLOXdMUEFpZ1VpZGdodklnT0d3NDhweHd3ZG1JRWoyN19zbUVDVk1WSEtSN1ZLWk9vcVJwVlcwREU0RUhYdnlIeWtRdmJESHlDejljcG8zVGJ2Ylp3Vm1IMmJsSkZlbzhXblE?oc=5",
+  "sources": [
+   "데일리바이트(DAILY BYTE)"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261031",
+  "last_seen": "20261126",
+  "pub": "202611261729"
+ },
+ {
+  "title": "삼성전자, 메모리 개발 힘 싣고 M&A 조직 키웠다 - 뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wNktyWklFaENqRzhvVzBfcnpnUE9Xd1h6eHMwT1dmTFNkaUhlUFdDd0c5MzlKUS1tVmtZelFqZ0Z6Q1dVMll3U09WWVR5RS1RVERHRUV1eVNsWUkx?oc=5",
+  "sources": [
+   "뉴스핌"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261729"
+ },
+ {
+  "title": "삼성전자 가전·공조사업 분리하고 인수합병 조직 격상, MX에 '홈 AI팀' 신설 - 비즈니스포스트",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wZkRjQXVwTzczVHJwUTZ0VXdXbTRmSm1oT2l3cEkxa3VHYTZiZDR4dVVsUVpQdTZLTE9BVV96bzdRcGVKVEJ5MmNWdDNiZ0JaX0pwS3Fid01xa1dGX1dUclF5N1JhVkVyWGxPNVN4RmZZaFk?oc=5",
+  "sources": [
+   "비즈니스포스트"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261727"
+ },
+ {
+  "title": "삼성전자 DX, M&A 조직 격상…DA사업부, 생활가전·공조 양대 축으로 - 뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JQVdUbGdLUXdsVFhtNXd3ZGpHY3Zld3JkdEl4aDlqSFl1LVBIZExLUS1laUwxcDg1cDEyZ203eXNZaEY5U2Q2ZGxDWFpLYzE1Q1FSeVRjN1lVR3hiWnNQeW9RTXg?oc=5",
+  "sources": [
+   "뉴스1",
+   "이슈밸리"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261726"
+ },
+ {
+  "title": "에이피알, 뷰티 브랜드 '닥터멜락신' 인수 - 매일경제",
+  "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1EYUpjdzUzQXBGcjk1T2kxUDBEbWlrRTIzblg1eW5vME9sTzBwa0NPRTFsQlNyT2dTbi1iVEoyX3N3d0JVM2c?oc=5",
+  "sources": [
+   "뉴데일리 경제",
+   "매일경제",
+   "아시아경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261724"
+ },
+ {
+  "title": "에이피알, 뷰티 브랜드 '닥터멜락신' 인수 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oa0x2OWM3WXNNQUxBQnhDTW1WY3VTMXlHR2VEZlhreEFvbW5sQlJQa1JnMXhFQjZGQ3ZaYkRUS093Vm9oTGZDTHZhV3RJY05xQVE?oc=5",
+  "sources": [
+   "더팩트",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261117",
+  "last_seen": "20261126",
+  "pub": "202611261724"
+ },
+ {
+  "title": "휴업 앞둔 홈플러스, 인수 후보는 부동산·유통 컨소시엄 - 브릿지경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fUU43YWhBdW9rSUhWeDVoakpHZnF0ZC05UjBZZGZocHJkdzRieTk1OFpOTFpJZ0VLRG9RTWtuVGZvZlpWYVkwc1FSbzVmWER4dnNjY0NHNDMyZw?oc=5",
+  "sources": [
+   "브릿지경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261721"
+ },
+ {
+  "title": "삼성전자, M&A 조직 격상…공조 전담팀 운영·홈 AI팀 신설 - 이투데이",
+  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ITFFRWURicmlUdmdHM3Y5LUxzRDdXQXFUbC1pblJBNS13TDA5MzJYMEVKRWk4MmVhWVBQYU0tcTZvQXZUYXd0SjRLOGI4ZXg5UVRCUg?oc=5",
+  "sources": [
+   "이투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261710"
+ },
+ {
+  "title": "삼성전자, 반도체 영업력 키우고 M&A 강화…미래 먹거리 속도 - 이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc09kYXJWSklQTWVoanB4cmdYUHo2MmVYZnBpa3lnUjBhS2NiOTItUHVrR2JfV1lnWFY1bEFzcFkzbnhxSDdMb3YwX21GNjNreTRYckJYc1JaVHBRVU96RlU4TklMWnB1VVdMdGJ4dGpBcjZ6b1FKQThvaEE0OGM2Vw?oc=5",
+  "sources": [
+   "이데일리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261708"
+ },
+ {
+  "title": "삼성전자, 미래 먹거리 확보 속도…M&A 조직 격상 - 매일일보",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4tdTBPbXZkaE5EOFQ4eVplZl9aaDRjUk44LWY5TUROdEF6WTBrUzF3R1ByTXpmM1RaRUI3c3ZwYlJyQl9vSlFhY1pha1VfT3Jqd1hxU29JMURZVjVCTHR6V0J0Q1Q?oc=5",
+  "sources": [
+   "매일일보",
+   "전파신문"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261706"
+ },
+ {
+  "title": "삼성전자, 공조·AI홈·M&A 조직 강화… HBM 개발·반도체 영업도 개편 - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVlkxR0phR3JHaGh5b1dTR0k3S3hYYURQY3B0LVpQVGZZbGxjWDA2enozMVlGWXZrcjdVSG9wWkNrel9pYlpmTXJXLU5lWGVFZm1DanltNHFhcFhLWmtfVUdRRDhFNmhpQk5lRzdUZ2sybk9YV1IwUzNleER4cUt6WFF30gGWAUFVX3lxTE9xemNkR25ZdzFhM1FTMXBYNlBodnJjYjJEUldhdkpLN1ZXZURTX3M5cUVPUXlhMVlqT2VpYVRPTTdlb3g5UTk1QmlfTDdNbElrWkFtWGpjX1RFUXhBRVFRUmdpT1ZsV21jbHB6dGloSlhPTlF4dlZyLVJyLUR4N1YzY3d3cGtSM2VIdmlpMjJIb3pZcUMtQQ?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261706"
+ },
+ {
+  "title": "유진그룹, YTN 인수 개입 의혹 전면 부인…\"허위 보도 법적 대응\" - 한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PQTVoclFMcUxDdEEtMUdsUHVmWnFuakVPMHhWaDRqSE1OZkdibmFRRlkxWmVJMDJiRVR5b3NHTFoySWlpTVQ5QVRMbklvVmx6X1JkZjlLbVIxUQ?oc=5",
+  "sources": [
+   "뷰타임즈",
+   "한국경제"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261705"
+ },
+ {
+  "title": "에이피알, 더마 ‘닥터멜락신’ 인수…미국 틱톡샵 흥행 발판 글로벌 확장 - 톱데일리",
+  "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5FRTI4RFlMWl9GUXdJbVBDbk41dTBISWxta1VlakJILVpMLWJMcnlxdTJsQ0x5N1R4SmlSalZRdlN6N19NQUNvMkVGQ1FQU2NJ?oc=5",
+  "sources": [
+   "톱데일리"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261704"
+ },
+ {
+  "title": "다올證, 매각 추진 속 저축銀 지분 222억 추가 취득…무슨 거래? - 이지경제",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNc0xySXZacGpZc093VzFaRzQxUHNiMldBNGhNUTI1ZlZJTDZiblY2U2lOLWxpdV9jNjJGVjBISEJuYXdGbVFSZmplZ0hWMnZPTEQxYmdEWGxnTDFsODhKYVNhbVUxNGI5UHNjbWxB?oc=5",
+  "sources": [
+   "이지경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261700"
+ },
+ {
+  "title": "삼성전자, M&A 조직 '팀'으로 격상…HVAC·홈AI 사업 재편 - www.ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NOW9PVW92VGhqdnIwdmNpQ0puQVE1N2wwdzZUOWRYa2F3MC04T1BfbWZMWEZOWjFUVVdKQk1xT2pxbjRKWjV6UnZpR25tTHJmd3ZlSXlFbHdVWVIyWWwzMXpqNTJ6YWZz?oc=5",
+  "sources": [
+   "www.ebn.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261652"
+ },
+ {
+  "title": "삼성전자 DX의 체질전환…M&A로 성장, 프리미엄폰으로 수익 - 아이뉴스24",
+  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE45Um1SR0ZWSHNaMjloWUZCVVpSQjNsSzlOSUZrQzROc2VvTnFQZTFtQTFhZ1FfRDNCdEN6V3V6UlFjc1UzWC1Tb2JlRQ?oc=5",
+  "sources": [
+   "아이뉴스24"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261651"
+ },
+ {
+  "title": "홈플러스, 67개 점포 다시 휴업…인수 희망자 등장에도 회생 불투명 - 애드뉴스인천",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UMHJsbG55THpHeHBtYl9xa0hQSUY1R2JKUl80Y243dGtlTkY3MVJRVEFodHNranYtQlJBVVIzUDF2TEZuWlk0bkpxejlLNlFmNmV5U0xHT0NLV2tGNjE5cmhmWVl0OUZCZTg0?oc=5",
+  "sources": [
+   "스페셜타임스",
+   "애드뉴스인천"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261650"
+ },
+ {
+  "title": "SK 중복상장 해소 vs LG 자회사 지분 매각···재무 여력에 엇갈린 선택 - 시사저널e",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BX19EZTVSQUJmZi1hbGJJTTViUnVKWTdmdFA2dVAwc0VwODVZWEpZQXlpNVFqQjdkb2J4cUVqUmxTcy1NSUR5Uk1aZ3poazl5LUxEb3hBWThTNGZsVjlvZEZXME5YV18xTm51enZYenRUYmMzNXfSAXZBVV95cUxOQV9fRGU1UkFCZmYtYWxiSU01YlJ1Slk3ZnRQNnVQMHNFcDg1WVhKWUF5aTVRakI3ZG9ieHFFalJsU3MtTUlEeVJNWmd6aGs5eS1MRG94QVk4UzRmbFY5b2RGVzBOWFdfMU5udXp2WHp0VGJjMzV3?oc=5",
+  "sources": [
+   "시사저널e"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261650"
+ },
+ {
+  "title": "[단독] 신세계, HLL중앙 인수전 발 뺐다…중앙일보 730억 투자에 무게 - 블로터",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uVGU1U2NwUUtZLVVGaC1UUk9qYjJ5b3hxM0U2c1FxeWkwb0V4VEl1b0NscERJS09YYUpTMUdBOHFNUC1nZ1RoZVZlbHR1ekYySEVOM19RNFlpSS15NFNPWVgxV2JGUkpv0gFsQVVfeXFMTlV3WGlGcklqZmNNTlUwWUtuaGpNX09zeFNTbmZqMVZ2QmwwUExWT2tId2JLXzJCTW9rMWlOR1ZfLWdrOUUxMEMzclFHYnJLNEtqTEpIX25kSnFKWXI1UUVVSXFBejcwOHI1T0JR?oc=5",
+  "sources": [
+   "블로터"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261649"
+ },
+ {
+  "title": "에이피알 \"브랜드501 주식 700억원어치 추가취득…지분율 87.3%\" - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1iM01PUk94UG9YSm9FaTUwT0ZxMk94dkl5cmpJWnJqQVpJT2VuRzJFRzNkNGVtZVhGeFhpYUc4YVl3dHJlQWpMUnp6Ry0tZXRhQ3c?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261104",
+  "last_seen": "20261126",
+  "pub": "202611261645"
+ },
+ {
+  "title": "홈플러스 내일 임시휴업...\"부동산 등 컨소시엄 인수의향\" - YTN",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95aldhRkctZzJjVDRRb0xDUFJCUkFMTlpwUmh5bElJNkZ0bjRnNDVaZmxMLVdIRHRkZm9BQWtUSW9nS3dodXhpa1E0aWNXZW9TLUwyQ3BzUHZ3SmtZdVQtNlZRWXdzamtsQjl1eGhpaw?oc=5",
+  "sources": [
+   "YTN"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261125",
+  "last_seen": "20261126",
+  "pub": "202611261644"
+ },
+ {
+  "title": "‘무자본 M&A하면서 허위 공시’ 조광ILI 전 대표, 1심서 징역 5년 - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUmFEMHVVNUxKbWhjQ2xoYmpVR0xmR2pFWEZJSDJBYTdvNWxxRkhfMzRFYVJjVVczeTdFanpHcFNJQ3Exd3ZmemZhWTd5TjNYTTFBVlZzNVE2UGhEaXFaMWZwWUxTbmh0S3hWUDNQSGVVYTVvTHlNN2JBb3B4WDNVb2h0Mi1CcllOa2fSAZ4BQVVfeXFMUFJMM2VBT25UNS1rMFdKQ1ZleF9oUzdmUDVoLVQxQXlueFlwd1F1bFNWbWNIeXRpSXJqSmgtZy05bmhQcnptNnk5MHhKNGFoc2xmNVIwbl9PVkVEbW5DSEdjd2E5TG5kT3VVZ2x3d1A5WEFjYzVFeTBldjNLMUxncnZWaGYyYkdKSnh2TkpnazYybmR2d25kX2Y5TDlwVkE?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261626"
+ },
+ {
+  "title": "홈플러스 회생 '마지막 카드' M&A...인수자 찾아도 '산 넘어 산' - 머니투데이 - 머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DaTVlcFhsZWdfQW5HNk1sMl9KZGVWdC0yZ3BLbVdld1poNWpBc1NpXzh5YVltTGx6dXVzOGZ4STFuaXVRTEhOM3NzSk1LUHE3Y0NBNEZtblBjMGVfSGJnbExYc2Q4TjV6d1JuVm9VbTdQdnh5NjUw0gF8QVVfeXFMTlFKdDVkdUpFWElZRHFSQlduYTVlVGQyTktZeVhDRGVydm1ac1oxUDA5akFoaTFkc1pGUktLUENHcEROQ1Z2dFkxLVgxb19FRVFMN0Y5MmZBc0x1ZGJmRTlkNXkwQWRKRWNWNUtRTm1CaWVzVmxFRnJ6VnoyTQ?oc=5",
+  "sources": [
+   "머니투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261014",
+  "last_seen": "20261126",
+  "pub": "202611261622"
+ },
+ {
+  "title": "현대그린푸드, 메디굿파트너스 지분 51% 인수 계약…1500억 투입 - 1코노미뉴스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ja2NMekFFZ2xkdE9RUkZvd2t4a1A4WmNjcHlfM1B3TUpiVW1QczdJRFJwMjRGTmFXZnJOVW5pSjVsVWoxRFZzRmZnLTZFSmIyOUxFdkVIVXJJYWc4Y1pOZEFneXpuRkxGZnJKUWFkUEk?oc=5",
+  "sources": [
+   "1코노미뉴스",
+   "파이낸셜투데이"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261616"
+ },
+ {
+  "title": "문 닫기 직전 날아든 인수의향서…홈플러스 매각 새 국면 By EBN - Investing.com 한국어",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vZ2ZfNURrWktON1BTQlcwODVFUFVQOFFDSlF3cW9qVVFTTVEwLVRQaE53VG44UTJ6OTF1MjJIbkNmNXg2d0JET0dCd2NmWXpWX2lrcWpNMGNreG9qdTU1bm1pSmRYb3MtTmJYOFZDV0s?oc=5",
+  "sources": [
+   "Investing.com 한국어"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261609"
+ },
+ {
+  "title": "민주노총 \"정부·여당, 홈플러스 매각 거래에 책임있게 개입해야\" - 뉴시스",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBONC05V3dqcUk3ZmI4NEtXMTV3QWFpS1Jha1JUMjFXRUNiQ0tzblZyQ2dWbmhqRGp5WHZ0V2U0TkdodFUzTVlqNkcwRUc2Sl8zbko4NUg2NndJQ0F0dm5PS9IBeEFVX3lxTE9LRzBwd2FNZUFnLUNVdlNaSzJ4MS1iYmw2cW1Gd1NMeVBZU2syQnBlTGFXVlVab1d5dndxbXoxNnZ0ZkJNNlpWMnAzWWtGcEt5akMzUy1Kcy01QkNmZ3ZDQ1JFR3NUUWxQM182aG00ZXE5NGNhekRJVg?oc=5",
+  "sources": [
+   "뉴시스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261607"
+ },
+ {
+  "title": "홈플러스, 영업중단 하루 앞 '전체 인수' 후보 등장 - 매일일보",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JLUV6eVpSVkE3RldOVnViZGd3WlplRTJiQ0NVU1dyb1dQaXVVQWIyRHFQZEVKZlFhTjBhVjZlaDVOTGFHalQ4RVM2bllZUHdHalZnSnVUVnQtVHFlcUxzOUR0UVA?oc=5",
+  "sources": [
+   "매일일보"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261602"
+ },
+ {
+  "title": "홈플러스 인수희망자 나왔다… 청주 3개점포 일시 영업 중단 - OhmyNews",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBueVlTUlJNZ1RBZFpURG55VTVIRmxOZmF3aXUwSGwyb0FLbkxhTnlTVEw4aVBEN3pOTjZxeHBkX21Sa2RvTmppSFRLal9QSzN3MEp6TVVMQ3BUS1p5R0U1TnFXeXIxUnJHV1U0ZDNMT1djLXV2TkpV?oc=5",
+  "sources": [
+   "OhmyNews"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261601"
+ },
+ {
+  "title": "'무자본 인수합병·배임 혐의' 조광 ILI 대표, 1심서 징역 5년 - 뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ESGwycmczNm5yUjgzZ0lQOVAtY2JuWEJDLVhpak85SWRrLTlldVdwX3FFSnVtUVZ3V21Gdl9aQjYzaGk0bDZ0TndTd09CTl9DcnYtTHdMeThmdzFK?oc=5",
+  "sources": [
+   "뉴스핌"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261559"
+ },
+ {
+  "title": "IMM컨소, 12년 보유 끝 현대LNG해운 매각 마무리 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBvS1V0SmJqWHFPZ2ZEY1FYeml2ZXBmZlZYY3NvUi1BNGJqcHhhRzlxWi1DYmNqWFFmRFhVYndxQUYxOHNwaWpCQ0x6YnBJSjRucUE?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓",
+   "한국경제"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261122",
+  "last_seen": "20261126",
+  "pub": "202611261553"
+ },
+ {
+  "title": "[단독] 현대차그룹 부품사 ‘라이쏠’ 매각한다 - 헤럴드경제",
+  "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE05OXVIMmU2bWFUR0hEb0s0bExac1pBbXVrTDFreEQ3YmdNaGlacDVMbTRfbUZZQ1llTVlKQk8zVkdIRDgzLUJpS3BTY3VicUVQMDJNd25kWQ?oc=5",
+  "sources": [
+   "헤럴드경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261550"
+ },
+ {
+  "title": "석 달 만에 또 닫는 홈플러스…인수희망자 윤곽에도 회생 '험로'(종합) - 연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUVk5xTi1oZzZDV3hwOTVSUjlDUWV4TlYycVAzOUc3SkhBLXpZTFFGbDAzclhJYWc1S19kX3NQanprVDR4cS1nX1RDTFU5NV9CaXo5aVNJNEFMb2ZZdklzMNIBYEFVX3lxTFBUVk5xTi1oZzZDV3hwOTVSUjlDUWV4TlYycVAzOUc3SkhBLXpZTFFGbDAzclhJYWc1S19kX3NQanprVDR4cS1nX1RDTFU5NV9CaXo5aVNJNEFMb2ZZdklzMA?oc=5",
+  "sources": [
+   "연합뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261546"
+ },
+ {
+  "title": "보험 재무건전성 개선 비용이 M&A 걸림돌… 한투, KDB 이어 카디프 '입질' - 글로벌이코노믹",
+  "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONWRQLVRfcHF2RUhDd3BxTTNpMVdaOWNocWlmMHZGUkMxb3NjRGJ2VHdHTUN4ZDZ4NGo0TFgtU0hJdnhtTC1RM29fZl9UZHdtanRhbmdRSjFXc19KSzVXSlBJNjl6Tko1czZGSV9zTEVIYm91VXRqM0JHRjBoTWd1V2kwRUY?oc=5",
+  "sources": [
+   "글로벌이코노믹"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261537"
+ },
+ {
+  "title": "한화플러스제5호스팩, 임시주총서 합병승인 결의의 건 가결 - 디지털투데이",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1QRUl2ejZ3bDFscHd6RktZbE9BenJMc3RHaFl3YnlsV19lM2lUSF9SN0dUb2tld1ptX2RsbWV5bTJGVlZXdmhmbnJJSnRkUnZPem9VRWhQU3N2SlQxSlMtNndiX0RfaGQ2cmg4WWk4Zm5neHNWMFY5M1hTdw?oc=5",
+  "sources": [
+   "디지털투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261117",
+  "last_seen": "20261126",
+  "pub": "202611261532"
+ },
+ {
+  "title": "기업회생 홈플러스 인수전에 부동산 디벨로퍼·유통 컨소시엄 참여 - 스페셜타임스",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82YW9ja0IzQjE5dVUzSEpnc0RCRlFFSWRNTnRPdlVfNGxnUlNuS3ctbmJVX01TcEdHR2hJNF9LY0htc0pOVW53T0lMWTJTU3ZYYWd0akJrQjdEXzBaRi1VZGRadU5Zd1cydkdPaVYtbGVDSTA?oc=5",
+  "sources": [
+   "스페셜타임스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261528"
+ },
+ {
+  "title": "머스크, 스페이스X·테슬라 ‘전액 주식교환’ 추진…합병 급물살 - 아시아투데이",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFByaFpxbDZPa1N1UHFYYTZRQVN0R1dyY2ZDUzAwdTEtbUcxYW53MWU4N2dONHdFdHVSVTEzRzJVU3gwaUdmUGRsQzB5VWxzOFNLREt4MXpjZGVqRDdLeGJlWjY4UTF0TmlKcjBJdXlB?oc=5",
+  "sources": [
+   "아시아투데이"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261527"
+ },
+ {
+  "title": "다올투자증권 매각설…기존 주주부터 증권업 진출 기업까지 후보군 주목 - 데일리한국",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZdkVKQ0ZmRTM5SnFoMUMwQ0VJMHRLVUF5YTNjSVNQOHJUS3kzNmNNa09CMTN1SUxxUV9KYTNoSHZFTlVqajU4eU5haHlPOFVoZUVUbUx4ajAzaTdqZ2Vzc1RnTWZwZzVyQWJwUkVDTdIBc0FVX3lxTE9ld3R0NWJBclBlUDNIUGdHYU9HQ0xEelo0NGF0N2x4eGJsQ1FSdWU0SjRCR1daQmwtWHNWc2x1R0xCRkExRXVkeTc2ZnZNcjhOa3c0RDJ6U2ZQaU5HTUdSVVBZUmZyc281ZjNoTlBMNGtfd1k?oc=5",
+  "sources": [
+   "데일리한국"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261524"
+ },
+ {
+  "title": "에너지머티리얼즈, 파산 신청 추진∙∙∙GS건설에 남은 구상권 - 한국M&A경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCajR6NFFkbFl0ZXROX3NVY2g3STdaR3prbjN6Z1ZHcFNzd0NjNmlNS204LWYzVnRyN05LWjFvMTUzdFp1U05aMU1lNTZjNjFlZ3IzVkJHb3Nab2xyWFJTNkg1SXQyYWFoUGc?oc=5",
+  "sources": [
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261516"
+ },
+ {
+  "title": "홈플러스 새 주인 찾나…인수의향서 접수, 정상화 기대감 - www.ebn.co.kr",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56WlpLazZqdi12bWZVbEZqc0c2NlhCWTU4U19ZMUNpNFdLdkF5cVVEODM1ZWFMTy1yQlJkX0d1UjdlMm9GUkU2elhqUS1SMW9mdnEzWTAwMmQ3NmZ6LWtnVS1RX2RweG9y?oc=5",
+  "sources": [
+   "www.ebn.co.kr"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261502"
+ },
+ {
+  "title": "다올투자증권, 경영권 매각설에 주가 26% 급등…12월 24일 재공시 - 스페셜경제",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WZFAwMmhxZHNTSzNOdjkyN3JOem9YWGw4SmgzckI4dGtUbzhmdUFfM3ByRWppdzQyWGgzby03Yy1WckpjNWl0VzZuM2w5RGJHY3FUYmFfeUV2VGxoX0lHSTFrOHRCN0NyT1E1eQ?oc=5",
+  "sources": [
+   "MTN 머니투데이방송",
+   "녹색경제신문",
+   "스페셜경제",
+   "아주경제"
+  ],
+  "outlet_count": 4,
+  "first_seen": "20261125",
+  "last_seen": "20261126",
+  "pub": "202611261501"
+ },
+ {
+  "title": "홈플러스, 27일부터 67개 전 점포·본사 임시 휴업…M&A 성패 따라 존폐 갈림길 - 더쎈뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YWGxWY3VLbXYwZ3RrZk1mNHQ0cGpQTGFrZHNvVFVRd09CTk9tczEwWUtPVzFzcDRuc295dUFiS2cwcTcyUHd4NVBCMktyS0ZyVkQ2MWE3Smk2dGF0OWVsTWl2V0V6VjA?oc=5",
+  "sources": [
+   "더쎈뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261448"
+ },
+ {
+  "title": "홈플러스, 자금난에 다시 휴업..인수합병 통한 정상화 ‘기로’ - 한국정경신문",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ZdTFJTkN2RHZZREtud0otdmV1cDlob1BvNXRyRUk0aTJYS2hYV29wZHhMeDl4V2lDdGc4NVcySmRBbFlKRjZjYW1BR19LY1hzQmc?oc=5",
+  "sources": [
+   "한국정경신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261448"
+ },
+ {
+  "title": "홈플러스 67개점 통째 인수 후보 나왔다… 부동산 디벨로퍼 컨소시엄 - Chosunbiz",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTnVpY3gzWFRPQVR6dXJRLUEwNE40ZjF0TWc5Tm5NTVBXU3lBSVNZN1BOSUJGS3RoQlM3REVQOExpSjFtNkJJekc2WTA4TndnTGt2bmhub1lrRldsOHp2Y183N1pIMnBFNHZiSzlsdnMyTjlxYy1uYUdtZ0ZvWHBzX3JzN1VPN3pBY3fSAZ4BQVVfeXFMTmtINUFjS0VkWFhjdk1iTV9SQU1EY0Z3WlplODU4WndyQWxmV3gwTzl5RDVKUURWMFdRamc0SUYzMlc3ZXB0dGp6eXV3aE41d3htQk1BVmdzZGswaEtnTldSU0pfV2NGdXMySEQ5ZHV0Z184RzBJWTJ6QnNTUl9PUUlWeGY0Vjl0QUpTeEV3N01NT3U4ZXlMY2s2M0p0aWc?oc=5",
+  "sources": [
+   "Chosunbiz"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261445"
+ },
+ {
+  "title": "홈플러스, 인수의향서 접수 재확인…노조, M&A 협력키로 - 뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tekhnek9BcTNOa2pxbmNWbHBBbXZESmFBb296VkF6SjNWQ2JYYmtwbWtiSHBHZGtuRHBEaE5Uby1Vb2dORTRjem5MNDVXVXcxRVdNaldXc0ZQZWt1?oc=5",
+  "sources": [
+   "뉴스1",
+   "뉴스핌",
+   "뉴시스"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261421"
+ },
+ {
+  "title": "홈플러스 양대 노조 \"M&A 적극 협력\"…마트노조, 민주당사 앞 농성 중단 - 더팩트",
+  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5zR195czNKbzZEOF9UZ2hybXZhNFBDSC1VU2o1YklYUDZmbktuZVpKakUxOWNlNy1VNkszamwtbG84T2prWHpFMVNfZDdHRW4wNHJmdNIBVEFVX3lxTE5zR195czNKbzZEOF9UZ2hybXZhNFBDSC1VU2o1YklYUDZmbktuZVpKakUxOWNlNy1VNkszamwtbG84T2prWHpFMVNfZDdHRW4wNHJmdA?oc=5",
+  "sources": [
+   "더팩트"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261413"
+ },
+ {
+  "title": "[현장칼럼] 삼성전자의 다음 M&A는 어디 | - 연합인포맥스",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByb21kQ2R2MHdQdTFsM1FNMzR5czJySFg3M3BtMElZSlBvSG9URFlnSmNyRHZRSjJZYkZzclpoS3Z3WmpuVE9GaU5TUFBxSzlYSjNDakt4WGZLOWJsbEJ2RTlNLWg5amxUQ1RjakpsWlRzc2xQ?oc=5",
+  "sources": [
+   "연합인포맥스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261409"
+ },
+ {
+  "title": "[현대모비스 램프 매각] 위로금 2.5억도 못 산 '정년'…주총 넘고 노조 벽에 - 블로터",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41WF96alVqd3lUSVFHTXJRMWNhS0JYako4Tk05QktxdEFudDl0UEFXU2dfVUFEbjBnVzlYeC1ZYUd2bVlaYUFDanFBM3RCd09jTGtQN1NFdWFNbmZFcFVYWWFEUnFvaE530gFsQVVfeXFMT1VUdUFhMVBsLW5IS1ZXTl9yellGZ0Jmb3h6MnZ1ZVFzM2FuSDRESG5VcFJJTDR3c2Q5blZhWlFlTUdENXVUWTVtcFZTeXo4TS01MjhybnZVOFZtT2tuemFiakhCUHNYUkwtQWtj?oc=5",
+  "sources": [
+   "블로터"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261400"
+ },
+ {
+  "title": "가상자산거래소 지분 제한에…\"글로벌 경쟁력 약화\" - 프라임경제",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE04MEFGQlFyWnlMZGhYYndpSWRLVnZ2WjdORUlYb0NiUTI4dEY0WjhfR2dzUjVEZ25qVnRldUZMRjc1cXh0V2lENWtYZWJFd0NZMnlPaDlNa2dCTXVndTdDWFlVNWM5RjFfVkY0SA?oc=5",
+  "sources": [
+   "프라임경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261359"
+ },
+ {
+  "title": "박현주, 中 M&A 앞두고 중화권 찾는다…글로벌 IB '속도' - 연합인포맥스",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04NFZ3U1J6OVk4bGh2X09DZG44SFNDNnNUaW00Y3Q4Qm8tYlpxOEJjVjRqOEptcnBjam9vZUU2UkhyTEI4LTJlMEZ5QnhHNTJlRlNqSThMNjIzb09TVzhlQ3BDdzJQV09UQXBqYTI1WXM?oc=5",
+  "sources": [
+   "연합인포맥스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261358"
  },
  {
   "title": "‘물건 살 돈도 없다’ 홈플러스, 영업 재개 석 달 만에 또 셧다운…M&A 완주 ‘안갯속’ - 비즈중앙",
@@ -55,6 +814,17 @@
   "pub": "202611261323"
  },
  {
+  "title": "개보위가 세운 기업결합 데이터 장벽∙∙∙M&A 시너지 창출 제동 - 한국M&A경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VQllHSF9kWDhhLWVTcktuVWpPM0F2ekUzUE1yUzZvQUdKa3VDMjUyeGp6YWNWR2p5ZXFHaEU4LS0ycEpBbG5VN3dQaUhmcDFXVzQwR0h6WnRPcTBHTVVLdWNIRVdST1I0NHc?oc=5",
+  "sources": [
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261310"
+ },
+ {
   "title": "[현장] 불법 무자본 M&A에 소액주주만 눈물... 사전 차단·피해 구제 강화해야 - 인베스트 | invest",
   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JY2lrenhvN2xxazZuTDg1YlRiT1hkd0FlRVpoUFFJRFFWREVJTmtuMGY2SERkSlNDN1BSZUgxZUpfRnFyZG5fZFc2Q2hwN0VKSEVoOFhsOGhRa2ZFbHFMQUtuc3FpZmVsazBaUlFYcHF3cWNyaFHSAXZBVV95cUxNSWNpa3p4bzdscWs2bkw4NWJUYk9YZHdBZUVaaFBRSURRVkRFSU5rbjBmNkhEZEpTQzdQUmVIMWVKX0ZxcmRuX2RXNkNocDdFSkhFaDhYbDhoUWtmRWxxTEFLbnNxaWZlbGswWlJRWHBxd3FjcmhR?oc=5",
   "sources": [
@@ -81,9 +851,10 @@
   "title": "홈플러스 “인수의향서 접수됐다”…노조, 진위 확인 요구 - 시사저널",
   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yb0pBS19CYThtbUJKdFdfdnljQ3J1ZENOdkdRMmFOeXhFS3ZnTFFnRmJ5aVVPWi1US3BNeW1US01oWWlidm5DaDdlcFpRYnRuM0Q0bzVTZnVReGJMWmxnS3RhNVc1RVNRWmkzVmtqb9IBc0FVX3lxTE1COGhXMkZHVm5sN0JkVjJRbzJMVVJFWHY2UjdRTXFQNkJfOVplb2NKMUltcTVpRzBzd1A5VnZpR3VaUEU5SFlMeHBXUTYzaFJCdFYtQUlwVk5vakQ4a2ZadEJ5alFvcVdCd3dSWVJYazVHazA?oc=5",
   "sources": [
+   "매일일보",
    "시사저널"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261126",
   "last_seen": "20261126",
   "pub": "202611261234"
@@ -112,6 +883,17 @@
   "first_seen": "20261125",
   "last_seen": "20261126",
   "pub": "202611261152"
+ },
+ {
+  "title": "홈플러스, 문 열었다 다시 닫는 이유∙∙∙상품 살 돈이 끊겼다 - 한국M&A경제신문",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tQk1NekFEeUlwYzhKOHZOTUp4UkxFNy16ZUEzMkRGb3h6eEdDX29HS24wVXBtVlBNeUtfM0lSckdiSk11Vm81X1lUZkRSTDBBcHlIZlprREtMaFRyNW5CSEtoNzhYRFBlaGc?oc=5",
+  "sources": [
+   "한국M&A경제신문"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611261130"
  },
  {
   "title": "[삐딱경제] 다시 멈추는 홈플러스...M&A 난항에 회생 '안갯속' - 논객닷컴",
@@ -360,6 +1142,17 @@
   "pub": "202611260943"
  },
  {
+  "title": "[M&A추적] '사모펀드 IMM의 무덤' 되어가는 한샘....제2의 홈플러스? - https://www.moneystorm.kr/",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzTWNUcWJtZGlFSjJlMzFLU1FsZURXUi12b2pHb1E5eHRpQkppWkhjOUxVSElXM0RiOXJybTRRRXh3LUZMd2FlZ2ozWjBkU20xN0ZNbDRGbmkzbDlfM0FZSWRiSjNKVnZuT3c?oc=5",
+  "sources": [
+   "https://www.moneystorm.kr/"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611260941"
+ },
+ {
   "title": "대신PE, 진우엔지니어링 500억 EB 인수…국민성장펀드 첫 투자 - 매일경제",
   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1KdTl2c3JUdzQ3UF9UZ1ZNMFBfOF9sb041TTJpNy11UzRlSm9Nb1Z1ZXpnclZrakpOSDBRTTBXRXFfaVA1c3prdFdmeDlkbkpWbmc?oc=5",
   "sources": [
@@ -442,12 +1235,24 @@
   "pub": "202611260905"
  },
  {
+  "title": "LG전자, 인도법인 3700억 추가 지분 매각…미래 투자·주주환원 실탄 확보 - 아주경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3V1ZUSFl0cHU2LWt2WTgyUTN4QWdxQ0dleEdLR3JYYmxvZW50UkJmb2g0N1lYOGI1R3NtVVJhdjB1dWdtQkk2ZmtGWjRyNVI1LXgyNkR5XzAzd9IBWEFVX3lxTE1KdTdKUmZUNTdaTmVBdTNjU0ZTMExxWnNOOTBUUldwb1JBVlI5UjNtLXBmcmdnWmdyYUdxRl9vNEdPejZtWkU5bmQ4OWVBVk11NExOcWFwbWY?oc=5",
+  "sources": [
+   "아주경제"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611260904"
+ },
+ {
   "title": "삼성생명, ’실적 한파’ 속 성장세...홍원학 ’내년 M&A·밸류업’ 기대감 By FinancialPost - Investing.com 한국어",
   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13T29NazRuZGVuUHBZQWtQUjhLZGgweHpBZmQzelBSSHladEtySnJPV1M0TVViNGZjS3VYQ25Mb09pWGk2S2JreFlNLVhVTlFFaEx4YklGOHJHalNhWUxHcTB5Zm5Sc25OYi10RnNhTDY?oc=5",
   "sources": [
-   "Investing.com 한국어"
+   "Investing.com 한국어",
+   "파이낸셜포스트"
   ],
-  "outlet_count": 1,
+  "outlet_count": 2,
   "first_seen": "20261124",
   "last_seen": "20261126",
   "pub": "202611260903"
@@ -462,6 +1267,18 @@
   "first_seen": "20260929",
   "last_seen": "20261126",
   "pub": "202611260832"
+ },
+ {
+  "title": "비바코, 퍼미안 폐수업체 인수 계약에도 지분 희석 우려 부각 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fM0VlSzNWSktTbE9saF91SkZYX1dXSHAxRVhXNkg5d0J4b0E0RGd2ZEVHaVRCNDlCQno2SXVOT2Z4bUdZd05uUEdMSk1YN1kxX0E?oc=5",
+  "sources": [
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 2,
+  "first_seen": "20261031",
+  "last_seen": "20261126",
+  "pub": "202611260830"
  },
  {
   "title": "사노피, 인스메드 410억달러에 인수 합의…듀피젠트 의존도 낮춘다 - 파이낸셜포스트",
@@ -685,17 +1502,6 @@
   "pub": "202611260654"
  },
  {
-  "title": "[단독]LG전자, 인도법인 지분 2% 매각한다 - 더트래커",
-  "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCd3ZtaFpTb0R6WUJ2VDFaem1uVUFoSTJiQzVET3pHb1cxV3Q1b0psbjd2LXA0UWFvZFhzR1psZTNmWnhwQU1FRUp0WmZXNktOTmRJaTItTDY?oc=5",
-  "sources": [
-   "더트래커"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261126",
-  "last_seen": "20261126",
-  "pub": "202611260652"
- },
- {
   "title": "Blackstone Infrastructure Strategies, 사모 지분 매각으로 4억500만 달러 조달 - Investing.com 한국어",
   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85ajdxRVFyZGk0MnpDMTRxVmR2djhBQUNvcERtVWNWaXNsclJGb2RtMEhobUYzNjFLX2RNVU5kOHJsVjJUZS0xTnUyLW9pQnZkSTVwWmFOSDVCSFZzRldvZkpTSUFmdWczMzlmWDA1TQ?oc=5",
   "sources": [
@@ -794,6 +1600,52 @@
   "first_seen": "20261126",
   "last_seen": "20261126",
   "pub": "202611260555"
+ },
+ {
+  "title": "다올투자증권 지분 매각 타진…저축은행 풋옵션 5년 시점과 겹쳤다 - 쿠키뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE85VjAxTS1tRndkZklXTmdxdDdwdjFGVVAzSldjS2NUem04TXpFYmVkZmlRSWpzMXZFVnl3RWUwVExkQ3gwVndGR3BGaVJvXzJqUFBlMTl2SS1PMzdUZGdja2JfMA?oc=5",
+  "sources": [
+   "쿠키뉴스"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611260512"
+ },
+ {
+  "title": "바이옴 홀딩스, 자회사 라이브체인 신주 발행에 따른 지분 희석 우려로 급락 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA1STR4X1EwaEJPZkhwQ0Rfa19GalBWcm9wNkRIZWNzdE5SS1lUdllMekVJZlQyTVQ5N3FNMThNd0c4ZzBtaWtwLVVqTjFkNDZJS2c?oc=5",
+  "sources": [
+   "데이터투자",
+   "매일경제",
+   "매일경제 마켓"
+  ],
+  "outlet_count": 3,
+  "first_seen": "20261125",
+  "last_seen": "20261126",
+  "pub": "202611260450"
+ },
+ {
+  "title": "체체그룹, 롱웨이포춘 인수 대가 전액 워런트 지급에 지분 희석 우려 확산 - 매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE94VFNJQWFETjFGdVU3ZDFSSllSazNIUV8wYU9WY29XSTRrX2tldExiSm0tS1VoOE4zbDF2ZXdIZ0RQWHN6Zjg5dEY0bzNIZjVUTEE?oc=5",
+  "sources": [
+   "매일경제 마켓"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611260430"
+ },
+ {
+  "title": "M&A 자문 수수료, 작은 거래일수록 요율이 커집니다 - 브런치",
+  "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBvTzR5OXlybENPYndHb0lvMTFhT1liYjNlM1NuMGRWZTVFcnRWZmVPdzBXemtDMngyb0thZDVoUVhyTjA3OWp5VUhnSUU?oc=5",
+  "sources": [
+   "브런치"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261115",
+  "last_seen": "20261126",
+  "pub": "202611260359"
  },
  {
   "title": "BP, 달러채 공개매수 60억 달러 매입 확정…12개 시리즈 수용 - 매일경제 마켓",
@@ -1111,17 +1963,6 @@
   "first_seen": "20261125",
   "last_seen": "20261126",
   "pub": "202611251754"
- },
- {
-  "title": "홈플러스, 모레부터 마트 임시휴업...\"인수의향서 낸 기업 있어\" - YTN",
-  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9xNlBGNFZUMGJrcjRTVnhyMC1Sc2F6VkJQR0NTaDBDMmFXQTJyMGI1WEZESlBFSWtmX2d5amN6eXNMR3NzRno2OVBNTU0yZFM3T21FTXNZSHhaS0ZRZkE?oc=5",
-  "sources": [
-   "YTN"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261125",
-  "last_seen": "20261126",
-  "pub": "202611251753"
  },
  {
   "title": "어펄마캐피탈, 세아FSI 1550억 매각…투자 4년 만에 3.8배 수익 - 한국신용신문",
@@ -1484,19 +2325,6 @@
   "first_seen": "20261126",
   "last_seen": "20261126",
   "pub": "202611251548"
- },
- {
-  "title": "다올투자증권, 경영권 매각설에 장중 28% 급등... - 녹색경제신문",
-  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwSnNCaGNBazYwQTNsd2xEZnl4eHQzZkNoZnhNaU1sYi1PcDVCQkxnLTViSmd3azl6a2x6QS1hak5PU3phdi1pb214NGRHNzNSR011MkE0d0ZwRXB6TWNZYVJxV29kVldL?oc=5",
-  "sources": [
-   "MTN 머니투데이방송",
-   "녹색경제신문",
-   "아주경제"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261125",
-  "last_seen": "20261126",
-  "pub": "202611251546"
  },
  {
   "title": "고려아연·영풍, 손실 규모·경영권 쟁점..원아시아 펀드 투자 놓고 공방 - 한국정경신문",
@@ -1915,17 +2743,6 @@
   "pub": "202611251217"
  },
  {
-  "title": "다올투자증권 지분 매각 타진…저축은행 풋옵션 5년 시점과 겹쳤다 - 쿠키뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE85VjAxTS1tRndkZklXTmdxdDdwdjFGVVAzSldjS2NUem04TXpFYmVkZmlRSWpzMXZFVnl3RWUwVExkQ3gwVndGR3BGaVJvXzJqUFBlMTl2SS1PMzdUZGdja2JfMA?oc=5",
-  "sources": [
-   "쿠키뉴스"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261126",
-  "last_seen": "20261126",
-  "pub": "202611251212"
- },
- {
   "title": "사노피, 인스메드 410억 달러 인수 계약∙∙∙듀피젠트 이후 대비 - 한국M&A경제신문",
   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvQldjeThaNXpzbG1vZk85YWxrSV9nVldDd0tuY0VxbEpuSmxaaUVqUXdCWUZSSENBNHFwdTUxSmVzc1VLWmZhRjFOWHY2T1J5a1hlZ2l3Smg5XzhMTnJKQjRFeS1Nd19ZTGc?oc=5",
   "sources": [
@@ -2002,6 +2819,21 @@
   "first_seen": "20260929",
   "last_seen": "20261125",
   "pub": "202611251142"
+ },
+ {
+  "title": "다올투자증권 매물로…이병철 회장 지분 29% 매각 타진 - Daum",
+  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE52b3lQTlRKbVVzdlRYRVNmdkJibEFMVzJ0TUliT0xEcVZsTjMwYTRIdTNkT25Mc2cwbnJpTzZhY1Nqd3hIbENUaWdwTQ?oc=5",
+  "sources": [
+   "Daum",
+   "뉴스저널리즘",
+   "매일경제 마켓",
+   "블로터",
+   "아주경제"
+  ],
+  "outlet_count": 5,
+  "first_seen": "20261125",
+  "last_seen": "20261126",
+  "pub": "202611251135"
  },
  {
   "title": "한국거래소, 다올투자증권 경영권 매각설 조회공시 요구 - MTN 머니투데이방송",
@@ -2402,6 +3234,17 @@
   "pub": "202611250918"
  },
  {
+  "title": "이병철 회장, 다올투자증권 경영권 지분 매각 추진 : 네이버 블로그 - Naver Blog",
+  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWmRvY0RCQ3JGR0pXaEdkakMyODNvakxSZDdNRlQ3YVBfS0FLcUoycEFqMU5UVzhYTXFEemtnSW1qNWRrX1p1SW1QOEVuSE1pZ1V2cXJLUUw1ZmVEWklRdG9QdVBNakdES1labTROOHRIOXh5UENhdGJUczNZcjRHUFZPQkZ4dDVPZHNpdW8ySQ?oc=5",
+  "sources": [
+   "Naver Blog"
+  ],
+  "outlet_count": 1,
+  "first_seen": "20261126",
+  "last_seen": "20261126",
+  "pub": "202611250916"
+ },
+ {
   "title": "경영권 대신 소수지분…PE 하우스, 그로쓰캐피탈 '확장' - 넘버스",
   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5lXzR1UkJZd3MxeUxSUVhHY25zQU5aUFFEdTVabUJoT3FMbXNLNnZPTEJ4QkFRNHdPMDhmWVhLbWNrelpXOFZoRElLb0kyQzdrRWJHSFpzU3B3S0VIS0ZmNkVsVmpzZWZNVVVr?oc=5",
   "sources": [
@@ -2733,19 +3576,6 @@
   "first_seen": "20261121",
   "last_seen": "20261126",
   "pub": "202611250637"
- },
- {
-  "title": "바이옴 홀딩스 자회사 라이브체인, 휴머니즈 자산 인수 종결…레무스에 신주 25% 발행 - 데이터투자",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1MVHZIRmwzUWZadk9ZRUNQTWtOUVh4VGxNaVZycE5SNlJ2OUNZTFJqNV9SczFxT3VQSXM0a1YxNlZuby03V2JfNjlLalFvVFZreTc3N3FCZUN1SWRxQnY2NWVqQldRMGM3ZVpfN3RvdjdRQQ?oc=5",
-  "sources": [
-   "데이터투자",
-   "매일경제",
-   "매일경제 마켓"
-  ],
-  "outlet_count": 3,
-  "first_seen": "20261125",
-  "last_seen": "20261126",
-  "pub": "202611250633"
  },
  {
   "title": "[美증시] 제약주 급등 랠리…사노피·인스메드 M&A 훈풍에 순환매까지 - 미디어펜",
@@ -3226,18 +4056,6 @@
   "first_seen": "20261125",
   "last_seen": "20261126",
   "pub": "202611241937"
- },
- {
-  "title": "다올투자證 새 주인 찾나…이병철 회장, 경영권 매각 추진설 - 아주경제",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtaHN1YWpSc0lEb3BUa1paOUpRS3JBd244U0RsdVRYd3c3RjdiSFNGNnZMQklnVDFIN0pTS1N0Y0N5aHEzZkdaNE9rUl9pWWxsMHd4akRyeVNCUdIBWEFVX3lxTFAwRVA0QnNMYWFkSXhyTkpwc1VhRVNlR2ZfVjlPQnd4WThPdklTQjItX2FFRjZVaktLR0ZhcnNIWnk0UGFzbUdBWXhURFhreHBxYzNTeGdfQnM?oc=5",
-  "sources": [
-   "매일경제 마켓",
-   "아주경제"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261125",
-  "last_seen": "20261125",
-  "pub": "202611241923"
  },
  {
   "title": "다올투자증권 경영권 매각 '시동'...이병철 회장 지분 매물로 - 머니투데이 - 머니투데이",
@@ -4938,17 +5756,6 @@
   "pub": "202611231932"
  },
  {
-  "title": "인스피언 \"라온시큐리티 주식 30억원어치 취득…지분율 100%\" - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00VlNra011LVNweUF6Zm5lT2tVS1ZSaE9oaXltSHpBX0RyUVVzRGxXOVMxUHRGdmo3c3RfNDlhU2xYd3hVR19wNm5QM1RiNGNLblE?oc=5",
-  "sources": [
-   "매일경제 마켓"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261104",
-  "last_seen": "20261125",
-  "pub": "202611231840"
- },
- {
   "title": "[유통가 생존해법 찾기] 비효율 걷어내고 본업 힘 싣고…유통·식품업계, 합병·분할로 돌파구 모색 - 아주경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJSUNfYmdfZGo0Z3BORDhDdjRtNEp6S1Vwa0hFRnZwWjhJUXhJdVgwUUx0dW9yZnU3ekhnVkdtcUZ3WW1NRk50UTZLdDhlVU91cDU2Yy1wQUJMd9IBWEFVX3lxTE5jSkJ6ODBpeG0wQ0FwWWxIUGZ0aXU4RWZNcmxPd2RTencwa1R5Q3UxVkk4YmdEZnVLRnFKTnpwQ3lOVGtBc0hIZm0wemVZclNfc1ZlZmtEMFk?oc=5",
   "sources": [
@@ -6192,17 +6999,6 @@
   "pub": "202611221759"
  },
  {
-  "title": "IMM 컨소시엄, 현대LNG해운 매각 완료 - 한국경제",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OVkJDWFAwOXAwOGhsS3BFU3RnM1k3bjhlQS1zLVlubVZEdi1lcG9rU0p2dk8zX19VWHdTU0swMTNiQ3R5WEpkYzJCYkwtYUtTVHd4dEtYdEVsZw?oc=5",
-  "sources": [
-   "한국경제"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261122",
-  "last_seen": "20261124",
-  "pub": "202611221758"
- },
- {
   "title": "'회계사·공무원 학원' 나무아카데미·한림법학원 매물로 - 한국경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mdFJZRm5tOENoRklaRVd6OG5OUm9jMlgxX3VWeXhVMk9BX2E2MTg5OU5oSUxYVHpidHNOX2REWGVQdFUxVXdlSlBNd0JTRzlqNkRnUUZjVTR0UQ?oc=5",
   "sources": [
@@ -7400,17 +8196,6 @@
   "first_seen": "20261120",
   "last_seen": "20261122",
   "pub": "202611201703"
- },
- {
-  "title": "IBKS제24호스팩, 임시주총서 합병승인 안건 가결 - 디지털투데이",
-  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5lenJoSFdhemlJWm1PN1dhZVhnU3c2aGRSWlMtbHg5djNXQjdMWk9Ra3F4ZjFWNXdRdkhjT2xTVFFVdkFDZ1ZsNy10UHBUWnVYTFVWdEVnVUVoMm1kSTEzOFF1OW84UWJaZmdRVGFhNDVCT04yOUgyZ29Rbw?oc=5",
-  "sources": [
-   "디지털투데이"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261117",
-  "last_seen": "20261122",
-  "pub": "202611201653"
  },
  {
   "title": "SK하이닉스, 키옥시아 지분 14.1% 확보…간접 최대주주로 - www.ebn.co.kr",
@@ -11842,17 +12627,6 @@
   "pub": "202611171604"
  },
  {
-  "title": "[단독] 'K-뷰티 대장주' 에이피알, 더마 브랜드 '닥터멜락신' 인수 검토 - 더팩트",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mWEFLenZvQTBfZlRGV0c5aHhfWjZLNWt4Um9aNUFNMThfLTVDbmFLMUV1SkxOVnZORUVLMFJpQmxOeTI1X2RyYTE4ck9hSVdQMTdzM3o2NU5GUdIBVEFVX3lxTE5IbUtPOC1ZYUgwc3MyTVRRVVJlZnV2Z3Y2VXg5aHE0MHR5ODRfQ05sQ1lhOVJvdm91WldkdzVtZDAtbUV3ZVEtdGk5VV9OQ0tSaWVxVA?oc=5",
-  "sources": [
-   "더팩트"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261117",
-  "last_seen": "20261119",
-  "pub": "202611171600"
- },
- {
   "title": "한진칼 '백기사' 산은, 한 달 뒤 떠나나…변수 떠오른 '신속 매각' 정관 - 한국경제",
   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtRW5kRTZJbU5rSGl2TTNrbldoY3VjMXBrZjQ1MVpMRXhpZDlwNnd3Nnk5bDM5MEtfM2Z5X2Vjd2FZWU1vTXE4LTlwLVRJbWZQNVdsNy1laGdSdw?oc=5",
   "sources": [
@@ -14578,17 +15352,6 @@
   "first_seen": "20261115",
   "last_seen": "20261116",
   "pub": "202611150504"
- },
- {
-  "title": "M&A 자문 수수료, 작은 거래일수록 요율이 커집니다 - 브런치",
-  "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBvTzR5OXlybENPYndHb0lvMTFhT1liYjNlM1NuMGRWZTVFcnRWZmVPdzBXemtDMngyb0thZDVoUVhyTjA3OWp5VUhnSUU?oc=5",
-  "sources": [
-   "브런치"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261115",
-  "last_seen": "20261116",
-  "pub": "202611150412"
  },
  {
   "title": "테슬라·스페이스X부터 마벨까지…트럼프 떠나기 전에 합병하라｜Global Money Club - 중앙일보",
@@ -24512,18 +25275,6 @@
   "first_seen": "20261106",
   "last_seen": "20261108",
   "pub": "202611060112"
- },
- {
-  "title": "포지나노, HZO 인수 완료 후 전액 주식 지급에 지분 희석 우려 부각 - 매일경제 마켓",
-  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9STnNNc1hsSGJiaDhCLVBfdjhOa1BxU0dpSXFCaWd3Yl95NGY2d3ducC1ISllodmtDS09YS3l3V1pTM3ZVVlM0REZUU2l6RXctRkE?oc=5",
-  "sources": [
-   "매일경제",
-   "매일경제 마켓"
-  ],
-  "outlet_count": 2,
-  "first_seen": "20261031",
-  "last_seen": "20261107",
-  "pub": "202611060040"
  },
  {
   "title": "비스트라, 코젠트릭스 인수 완료에도 재료 소멸 인식에 차익실현 매물 출회 - 매일경제 마켓",
@@ -36611,17 +37362,6 @@
   "pub": "202610291143"
  },
  {
-  "title": "미래에셋, 산코증권 인수 후 미·중 M&A 예고 - 데일리바이트(DAILY BYTE)",
-  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOGZQaFl5NXowT0VDa0JRUGdZaTFWVnJWaXJtY2lrWGJPY1ZRc2FXaVZDSHZCeVAzYjNnZzNLLVlZeUlaMjRsNFJpclRFWjNaRkN0cl9GaUw4NE5NZGxnc0N6bXBuN3dIbzZLVHhJMUFnQko2dFJjbmcxYW9neFI5OFV2NEQzTGpRcG1tbVVtMUFCcDlNeXc?oc=5",
-  "sources": [
-   "데일리바이트(DAILY BYTE)"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261031",
-  "last_seen": "20261031",
-  "pub": "202610291136"
- },
- {
   "title": "골프존카운티, 왜 더시에나로?…MBK파트너스가 밝힌 매각 경위 - 더팩트",
   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJdHo2RWJEU2FLTmJuakk1ZzItOEdNNHpmMVJLeWNsR2RlUUwxZklPbk9xNkNZY1VyS1dHYWMwMjJPVDFaLVpnMlR4VTE0U1dlZThFatIBVEFVX3lxTFBJdHo2RWJEU2FLTmJuakk1ZzItOEdNNHpmMVJLeWNsR2RlUUwxZklPbk9xNkNZY1VyS1dHYWMwMjJPVDFaLVpnMlR4VTE0U1dlZThFag?oc=5",
   "sources": [
@@ -47382,16 +48122,6 @@
   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qb08zQUY5bmZUbFlibFloVi0wZFplUDdqRGlYcmxwMlg2SjBxeHJQVm9xM0RMdy1aQ3JiX0c5TThWNEhQRUxuQWZPejgxV0R5M0cycjBmNUhCblRSTGxuTkltVzhPRVQ4YlRGbTlkV1A1NFHSAXNBVV95cUxPam9PM0FGOW5mVGxZYmxZaFYtMGRaZVA3akRpWHJscDJYNkowcXhyUFZvcTNETHctWkNyYl9HOU04VjRIUEVMbkFmT3o4MVdEeTNHMnIwZjVIQm5UUkxsbk5JbVc4T0VUOGJURm05ZFdQNTRR?oc=5",
   "sources": [
    "시사저널"
-  ],
-  "outlet_count": 1,
-  "first_seen": "20261014",
-  "last_seen": "20261015"
- },
- {
-  "title": "2000억으로 두 달 못 버틴 홈플러스...M&A가 '마지막 카드' - 머니투데이 - 머니투데이",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XaUd2TzBFeXZWU0lTSEFId05MMXozdHFNT291TkhRcVBvVFNrbUV5NjRPMGw0bnNGMExsMk4wTlg0V0Y4MzBQUFFnWDREbEFCQ2NCQjhHUHRub2JvU3A1QTViR1ljUGJPNVHSAW9BVV95cUxOR25MVzFYR0Rrd3E2bzE5TkcyY3dNM19pTUtFcDh3bW1LWHc2WWYxTzhlS0piMElkZ3VMdFViYU1jYjV0OHU4bUI5LW5qU3dLbXdmaTJHUE54STFFa24zcXM4ZTBYUlNuTlpaXzdpUnM?oc=5",
-  "sources": [
-   "머니투데이"
   ],
   "outlet_count": 1,
   "first_seen": "20261014",
