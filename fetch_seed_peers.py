@@ -58,39 +58,57 @@ for sc, nm in CODES.items():
         if j and j.get("status") == "000":
             out["stock"][f"{sc}_{y}_{rc}"] = j["list"]
         time.sleep(0.2)
-    # 2025 사업보고서 본문 - 사업의 내용
-    rep = [x for x in out["list"][sc] if x["report_nm"].startswith("사업보고서") and "2025.12" in x["report_nm"]]
-    if rep and sc in MAIN:
-        b = get("document.xml", rcept_no=rep[0]["rcept_no"])
-        try:
-            z = zipfile.ZipFile(io.BytesIO(b))
-            docs = []
-            for n in z.namelist():
-                raw = z.read(n)
-                for enc in ("utf-8", "euc-kr", "cp949"):
-                    try:
-                        t = raw.decode(enc); break
-                    except Exception:
-                        t = raw.decode("utf-8", "ignore")
-                docs.append((n, t))
-            docs.sort(key=lambda d: -len(d[1]))
-            xml = docs[0][1]
-            i = xml.find("사업의 내용")
-            j2 = xml.find("재무에 관한 사항", i + 10)
-            sec = xml[i:j2 if j2 > 0 else i + 400000]
-            tabs = []
-            for tm in re.finditer(r"<TABLE[^>]*>(.*?)</TABLE>", sec, re.S | re.I):
-                before = clean(sec[max(0, tm.start() - 600):tm.start()])[-300:]
-                rows = []
-                for rm in re.finditer(r"<TR[^>]*>(.*?)</TR>", tm.group(1), re.S | re.I):
-                    cells = [clean(c) for c in re.findall(r"<(?:TD|TE|TH|TU)[^>]*>(.*?)</(?:TD|TE|TH|TU)>", rm.group(1), re.S | re.I)]
-                    if any(cells):
-                        rows.append(cells)
-                tabs.append({"before": before, "rows": rows[:40]})
-            out["biz"][sc] = {"rcept_no": rep[0]["rcept_no"], "tables": tabs, "text": clean(sec)[:60000],
-                              "page_hint": [n for n, _ in docs]}
-        except Exception as e:
-            out["log"].append(f"{nm} 본문 오류 {e}")
+    # 보고서 본문: 목차(페이지), 사업의 내용 표, 주석 키워드
+    if sc in MAIN:
+        want = [x for x in out["list"][sc] if any(k in x["report_nm"] for k in ("사업보고서 (2025.12)", "반기보고서 (2025.06)", "반기보고서 (2026.06)"))]
+        for rp in want:
+            bb = get("document.xml", rcept_no=rp["rcept_no"])
+            try:
+                z = zipfile.ZipFile(io.BytesIO(bb))
+                docs = []
+                for n in z.namelist():
+                    raw = z.read(n)
+                    t = None
+                    for enc in ("utf-8", "euc-kr", "cp949"):
+                        try:
+                            t = raw.decode(enc); break
+                        except Exception:
+                            pass
+                    docs.append((n, t or raw.decode("utf-8", "ignore")))
+                docs.sort(key=lambda d: -len(d[1]))
+                xml = docs[0][1]
+                full = clean(xml)
+                rec = {"rcept_no": rp["rcept_no"], "toc": full[:9000], "kw": {}}
+                for kw in ("단기금융상품", "리스부채", "사용권자산", "차입금", "사채", "종자"):
+                    rec["kw"][kw] = [full[max(0, m.start() - 250):m.start() + 350] for m in list(re.finditer(kw, full))[:25]]
+                if "사업보고서" in rp["report_nm"]:
+                    titles = [(m.start(), clean(m.group(1))) for m in re.finditer(r"<TITLE[^>]*>(.*?)</TITLE>", xml, re.S | re.I)]
+                    sec = ""
+                    for i, (pos, t) in enumerate(titles):
+                        if "사업의 내용" in t:
+                            end = len(xml)
+                            for pos2, t2 in titles[i + 1:]:
+                                if re.match(r"^\s*III\s*\.|^\s*Ⅲ|재무에 관한", t2):
+                                    end = pos2; break
+                            sec = xml[pos:end]
+                    tabs = []
+                    for tm in re.finditer(r"<TABLE[^>]*>(.*?)</TABLE>", sec, re.S | re.I):
+                        before = clean(sec[max(0, tm.start() - 800):tm.start()])[-400:]
+                        rows = []
+                        for rm in re.finditer(r"<TR[^>]*>(.*?)</TR>", tm.group(1), re.S | re.I):
+                            cells = [clean(c) for c in re.findall(r"<(?:TD|TE|TH|TU)[^>]*>(.*?)</(?:TD|TE|TH|TU)>", rm.group(1), re.S | re.I)]
+                            if any(cells):
+                                rows.append(cells)
+                        tabs.append({"before": before, "rows": rows[:40]})
+                    rec["tables"] = tabs
+                    rec["biztext"] = clean(sec)[:80000]
+                out["biz"][f"{sc}_{rp['rcept_no']}"] = rec
+            except Exception as e:
+                out["log"].append(f"{nm} 본문 오류 {rp['rcept_no']} {e}")
+    if sc == "097870":
+        j = get("fnlttSinglAcntAll.json", corp_code=corp, bsns_year="2026", reprt_code="11011", fs_div="CFS")
+        if j and j.get("status") == "000":
+            out["fin"][f"{sc}_2026_11011"] = {"fs": "CFS", "rows": [{k: x.get(k) for k in ("rcept_no", "sj_div", "account_id", "account_nm", "thstrm_amount", "frmtrm_amount")} for x in j["list"]]}
 
 # 일별 종가
 ISIN = {"054050": "KR7054050009", "002100": "KR7002100007"}
