@@ -24,6 +24,8 @@ API_KEY = os.environ.get("DART_API_KEY", "")
 BASE = "https://opendart.fss.or.kr/api/"
 OUT = "peer_universe.json"
 BUDGET = int(os.environ.get("PEER_BUDGET", "9000"))
+# 실행 시간 한도(분): 넘으면 새 호출을 멈추고 지금까지 받은 것을 저장한다
+DEADLINE = time.time() + 60 * int(os.environ.get("PEER_MINUTES", "120"))
 WORKERS = 4
 UA = {"User-Agent": "Mozilla/5.0"}
 KST = dt.timezone(dt.timedelta(hours=9))
@@ -36,7 +38,7 @@ log = []
 
 def api(path, **p):
     with lock:
-        if calls[0] >= BUDGET:
+        if calls[0] >= BUDGET or time.time() > DEADLINE:
             raise RuntimeError("budget")
         calls[0] += 1
     p["crtfc_key"] = API_KEY
@@ -265,7 +267,7 @@ def build(item, prev):
              "b": [m(st["cash"]), m(st["stf"]), m(st["debt"]), m(st["lease"]), m(st["assets"]), m(st["liab"]), m(st["eq"]), m(st["nci"])],
              "di": st["debt_items"][:6], "ai": a["da_items"][:6],
              "s": [sh["iss"], sh["tre"], sh["out"]] if sh else None}
-    px = price(sc)
+    px = price(sc) if time.time() < DEADLINE else None
     if px:
         e["px"] = px
     return e
@@ -303,7 +305,7 @@ def main():
             e = build(t, old.get(t[0]))
         except RuntimeError:
             e = old.get(t[0])
-            if e is not None:
+            if e is not None and time.time() < DEADLINE:
                 p = price(t[0])
                 if p:
                     e = dict(e); e["px"] = p
