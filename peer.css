@@ -78,3 +78,4 @@
   .ff-num { text-align:left; }
 }
 .pv-t.peers th:nth-child(2), .pv-t.peers th:nth-child(3) { text-align:left; }
+.pv-t .ovin { display:block; width:92px; margin:3px 0 0 auto; padding:4px 6px; font-size:12px; }

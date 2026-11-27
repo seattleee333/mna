@@ -23,10 +23,11 @@ from fetch_peers import load_corp_map
 API_KEY = os.environ.get("DART_API_KEY", "")
 BASE = "https://opendart.fss.or.kr/api/"
 OUT = "peer_universe.json"
+VER = 2  # 추출 규칙을 바꾸면 올린다 → 예전 규칙으로 받은 회사는 다시 받는다
 BUDGET = int(os.environ.get("PEER_BUDGET", "9000"))
 # 실행 시간 한도(분): 넘으면 새 호출을 멈추고 지금까지 받은 것을 저장한다
 DEADLINE = time.time() + 60 * int(os.environ.get("PEER_MINUTES", "120"))
-WORKERS = 4
+WORKERS = 6
 UA = {"User-Agent": "Mozilla/5.0"}
 KST = dt.timezone(dt.timedelta(hours=9))
 TODAY = dt.datetime.now(KST).date()
@@ -157,6 +158,14 @@ def flows(rows):
     rev = pick(rows, REV_ID, {"매출액", "수익(매출액)", "영업수익", "매출", "매출및지분법손익"})
     op = pick(rows, OP_ID, {"영업이익", "영업이익(손실)", "영업손익"})
     ni = pick(rows, NI_OWN)
+    if ni is None:  # 표준 계정 ID가 없으면 계정명으로 지배주주 귀속 순이익을 찾는다(포괄이익 귀속분은 제외)
+        for r in rows:
+            nm = re.sub(r"\s+", "", r.get("account_nm") or "")
+            if r.get("sj_div") in ("IS", "CIS") and "지배" in nm and "비지배" not in nm and "포괄" not in nm and r.get("account_detail") in (None, "-", ""):
+                v = num(r.get("thstrm_add_amount"))
+                ni = v if v is not None else num(r.get("thstrm_amount"))
+                if ni is not None:
+                    break
     ni_all = pick(rows, NI_ALL, {"당기순이익", "당기순이익(손실)", "반기순이익", "분기순이익"})
     da, seen = 0.0, set()
     for r in rows:
@@ -165,6 +174,14 @@ def flows(rows):
             v = num(r.get("thstrm_amount"))
             if v is not None:
                 da += abs(v); seen.add(nm)
+    if not seen:  # 현금흐름표 본문에 없으면 손익계산서 본문(성격별 분류)에서 찾는다
+        for r in rows:
+            nm = re.sub(r"\s+", "", r.get("account_nm") or "")
+            if r.get("sj_div") in ("IS", "CIS") and DA_RE.search(nm) and not DA_NOT.search(nm) and nm not in seen and r.get("account_detail") in (None, "-", ""):
+                v = num(r.get("thstrm_add_amount"))
+                v = v if v is not None else num(r.get("thstrm_amount"))
+                if v is not None:
+                    da += abs(v); seen.add(nm)
     return {"rev": rev, "op": op, "ni": ni if ni is not None else ni_all, "ni_own": ni is not None, "da": da if seen else None, "da_items": sorted(seen)}
 
 
@@ -202,13 +219,21 @@ def stocks(rows):
             "eq": g(("ifrs-full_Equity",), ("자본총계",)), "nci": g(("ifrs-full_NoncontrollingInterests",), ("비지배지분",))}
 
 
-def shares(corp, year, code):
-    j = api("stockTotqySttus.json", corp_code=corp, bsns_year=year, reprt_code=code)
-    for r in j.get("list") or []:
-        if "보통" in (r.get("se") or ""):
-            iss, tre = num(r.get("istc_totqy")), num(r.get("tesstk_co")) or 0
-            if iss:
-                return {"iss": iss, "tre": tre, "out": iss - tre}
+def shares(corp, year, code, fy_year=None):
+    """주식의 총수: 최근 보고서에 없으면 반기 → 사업보고서 순으로 찾는다"""
+    tries = [(year, code)]
+    if code in ("11014", "11013"):
+        tries.append((year, "11012"))
+    if fy_year:
+        tries.append((fy_year, "11011"))
+    for y, c in tries:
+        j = api("stockTotqySttus.json", corp_code=corp, bsns_year=y, reprt_code=c)
+        for r in j.get("list") or []:
+            se = re.sub(r"\s+", "", r.get("se") or "")
+            if "보통" in se or se == "합계" and len(j.get("list") or []) <= 2:
+                iss, tre = num(r.get("istc_totqy")), num(r.get("tesstk_co")) or 0
+                if iss:
+                    return {"iss": iss, "tre": tre, "out": iss - tre, "src": f"{y}/{c}"}
     return None
 
 
@@ -238,7 +263,7 @@ def build(item, prev):
     fy, L, P, code = pl["fy"], pl.get("L"), pl.get("P"), pl.get("code")
     basis = [fy[2], L[2] if L else "", P[2] if P else ""]
     e = dict(prev) if prev else {}
-    if not prev or prev.get("basis") != basis:
+    if not prev or prev.get("basis") != basis or prev.get("v") != VER:
         fs_pref = (prev or {}).get("fs")
         fyr, fs = fin(corp, fy[0][:4], "11011", fs_pref)
         if not fyr:
@@ -260,13 +285,18 @@ def build(item, prev):
             if lr:
                 bsrows, period = lr, L[0]
         st = stocks(bsrows)
-        sh = shares(corp, period[:4], code if period != fy[0] else "11011")
-        e = {"c": sc, "n": nm, "m": mk, "ic": ic, "fs": fs, "per": period, "fy": fy[0], "basis": basis, "note": ttm_note,
+        sh = shares(corp, period[:4], code if period != fy[0] else "11011", fy[0][:4])
+        e = {"v": VER, "c": sc, "n": nm, "m": mk, "ic": ic, "fs": fs, "per": period, "fy": fy[0], "basis": basis, "note": ttm_note,
              "rcept": {"fy": fy[2], "l": L[2] if L else "", "p": P[2] if P else ""},
              "t": [m(ttm["rev"]), m(ttm["op"]), m(ttm["da"]), m(ttm["ni"])], "own": bool(ttm.get("ni_own")),
              "b": [m(st["cash"]), m(st["stf"]), m(st["debt"]), m(st["lease"]), m(st["assets"]), m(st["liab"]), m(st["eq"]), m(st["nci"])],
              "di": st["debt_items"][:6], "ai": a["da_items"][:6],
              "s": [sh["iss"], sh["tre"], sh["out"]] if sh else None}
+    elif not e.get("s"):  # 지난번에 주식수를 못 찾은 회사는 주식수만 다시 찾는다
+        per = e.get("per") or fy[0]
+        sh = shares(corp, per[:4], code if L and per == L[0] else "11011", fy[0][:4])
+        if sh:
+            e["s"] = [sh["iss"], sh["tre"], sh["out"]]
     px = price(sc) if time.time() < DEADLINE else None
     if px:
         e["px"] = px
@@ -296,7 +326,10 @@ def main():
         x = idx.get(sc, {})
         todo.append((sc, corp, x.get("n") or nm, x.get("m") or "", x.get("ic") or "", pl))
     # 새로 받아야 하는 회사부터
-    todo.sort(key=lambda t: (t[0] in old and old[t[0]].get("basis") == [t[5]["fy"][2], (t[5].get("L") or ("", "", ""))[2], (t[5].get("P") or ("", "", ""))[2]], t[0]))
+    def bkey(t):
+        return [t[5]["fy"][2], (t[5].get("L") or ("", "", ""))[2], (t[5].get("P") or ("", "", ""))[2]]
+    # 처음 받는 회사 → 예전 규칙으로 받은 회사 → 최신 회사 순
+    todo.sort(key=lambda t: (0 if t[0] not in old else 1 if old[t[0]].get("basis") != bkey(t) or old[t[0]].get("v") != VER else 2, t[0]))
     res = dict(old)
     done = [0]
 
@@ -325,7 +358,7 @@ def main():
     live = {t[0] for t in todo}
     rows = [v for k, v in res.items() if k in live and v.get("t")]
     rows.sort(key=lambda v: v["c"])
-    pending = sum(1 for t in todo if not res.get(t[0]) or res[t[0]].get("basis") != [t[5]["fy"][2], (t[5].get("L") or ("", "", ""))[2], (t[5].get("P") or ("", "", ""))[2]])
+    pending = sum(1 for t in todo if not res.get(t[0]) or res[t[0]].get("basis") != bkey(t) or res[t[0]].get("v") != VER)
     json.dump({"updated": TODAY.isoformat(), "unit": "백만원", "n": len(rows), "pending": pending,
                "c": rows}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print("완료", len(rows), "남은 회사", pending, "호출", calls[0])

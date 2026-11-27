@@ -21,7 +21,7 @@
       name: "", baseDate: new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10),
       years: [y - 2, y - 1, y], op: ["", "", ""], da: ["", "", ""], ni: ["", "", ""], w: [20, 30, 50],
       cash: "", stf: "", debt: "", effTax: "", normTax: 20,
-      peers: [], off: {}, lease: false, stat: "avg", disc: "30, 50",
+      peers: [], off: {}, ov: {}, lease: false, stat: "avg", disc: "30, 50",
       dcf: { rev: "", growth: "10, 8, 6, 5, 4", margin: "", da: "", capex: "", dso: 60, dio: 45, dpo: 45, tax: 20,
              rf: 3.0, beta: 1.0, mrp: 6.0, size: 3.0, spec: 2.0, g: 1.0, exit: "", wG: 50, disc: 30 }
     };
@@ -57,22 +57,29 @@
     if (!e) return null;
     var t = e.t || [], b = e.b || [], s = e.s, px = e.px;
     var r = { code: code, name: e.n, mkt: e.m, per: e.per, note: e.note, fs: e.fs === "CFS" ? "연결" : "별도", own: e.own, flags: [] };
+    var o = S.ov[code] || {};
     r.rev = t[0]; r.op = t[1]; r.da = t[2]; r.ni = t[3];
-    r.ebitda = r.op == null ? NaN : r.op + (r.da || 0);
-    if (r.da == null) r.flags.push("상각비 없음(영업이익만)");
+    r.daMiss = r.da == null; r.shMiss = !s;
+    if (isFinite(n(o.da))) { r.da = n(o.da) * 100; r.daOv = true; }
+    // 상각비를 못 찾은 회사는 영업이익만으로 EBITDA를 만들면 배수가 부풀려지므로, 원문 값을 넣기 전까지 EV/EBITDA에서 뺀다
+    r.ebitda = r.op == null || r.da == null ? NaN : r.op + r.da;
+    if (r.daMiss && !r.daOv) r.flags.push("상각비 미수집 → 원문 값 입력 전까지 EV/EBITDA 제외");
+    if (r.daOv) r.flags.push("상각비 직접 입력");
     r.cash = (b[0] || 0) + (b[1] || 0); r.debt = (b[2] || 0) + (S.lease ? (b[3] || 0) : 0); r.lease = b[3] || 0;
     r.shares = s ? s[2] : NaN; r.tre = s ? s[1] : 0;
+    if (isFinite(n(o.sh))) { r.shares = n(o.sh); r.shOv = true; }
     r.px = px ? px.avg : NaN; r.pxN = px ? px.n : 0; r.pxFrom = px ? px.from : ""; r.pxTo = px ? px.to : "";
     r.mcap = r.px * r.shares / 1e6;
     r.ev = r.mcap + r.debt - r.cash;
     r.evEbitda = r.ebitda > 0 ? r.ev / r.ebitda : NaN;
     r.perX = r.ni > 0 ? r.mcap / r.ni : NaN;
-    if (!(r.ebitda > 0)) r.flags.push("EBITDA 적자 → EV/EBITDA 제외");
+    if (isFinite(r.ebitda) && !(r.ebitda > 0)) r.flags.push("EBITDA 적자 → EV/EBITDA 제외");
     if (!(r.ni > 0)) r.flags.push("순손실 → PER 제외");
     if (r.evEbitda > 40) r.flags.push("EV/EBITDA 40배 초과(이상치 확인)");
     if (r.perX > 60) r.flags.push("PER 60배 초과(이상치 확인)");
     if (!e.own) r.flags.push("지배주주 순이익 미표시 → 당기순이익 사용");
-    if (!s) r.flags.push("주식수 없음");
+    if (r.shMiss && !r.shOv) r.flags.push("주식수 미수집 → 원문 값 입력 전까지 배수 계산 불가");
+    if (r.shOv) r.flags.push("주식수 직접 입력");
     return r;
   }
 
@@ -168,14 +175,14 @@
         '<td><b>' + esc(r.name) + '</b><span class="sm">' + esc(r.code) + ' · ' + esc(r.mkt || "") + ' · ' + r.fs + '</span>' + (r.flags.length ? '<span class="flag">' + r.flags.map(esc).join(" · ") + '</span>' : '') + '</td>' +
         '<td class="sm2" title="' + esc(r.note || "") + '">' + esc((r.per || "").replace(/^20/, "")) + ' TTM</td>' +
         '<td>' + (isFinite(r.px) ? Math.round(r.px).toLocaleString() + '원<span class="sm">' + r.pxN + '거래일</span>' : '-') + '</td>' +
-        '<td>' + (isFinite(r.shares) ? r.shares.toLocaleString() : '-') + '</td>' +
+        '<td>' + (r.shMiss ? '<input class="pv-in ovin" data-ov="' + r.code + '.sh" placeholder="주식수" value="' + esc((S.ov[r.code] || {}).sh || "") + '">' : r.shares.toLocaleString()) + '</td>' +
         '<td>' + eok(r.mcap / 100) + '</td><td>' + eok(r.debt / 100) + '</td><td>' + eok(r.cash / 100) + '</td><td>' + eok(r.ev / 100) + '</td>' +
-        '<td>' + eok(r.ebitda / 100) + '</td><td>' + eok(r.ni / 100) + '</td>' +
+        '<td>' + eok(r.ebitda / 100) + (r.daMiss ? '<input class="pv-in ovin" data-ov="' + r.code + '.da" placeholder="상각비(억)" value="' + esc((S.ov[r.code] || {}).da || "") + '">' : '') + '</td><td>' + eok(r.ni / 100) + '</td>' +
         '<td class="mx">' + mx(r.evEbitda) + '</td><td class="mx">' + mx(r.perX) + '</td>' +
         '<td><button class="x" data-del="' + r.code + '" title="삭제">✕</button></td></tr>';
     });
     h += '<tr class="calc"><td></td><td colspan="10">' + (S.stat === "med" ? "중앙값" : "단순평균") + ' (포함 체크된 회사, 적자 제외)</td><td class="mx">' + mx(P.evEbitda) + '<span class="sm">' + P.nEv + '곳</span></td><td class="mx">' + mx(P.per) + '<span class="sm">' + P.nPe + '곳</span></td><td></td></tr>';
-    h += '</tbody></table></div><p class="hint">금액 억원. 시가총액 = 최근 6개월(직전 거래일까지) 평균 종가 × 자기주식 제외 보통주 수. EV = 시가총액 + 차입금 − 현금·단기금융상품. TTM = 최근 사업보고서 + 최근 분기·반기 누적 − 전년 같은 기간 누적.</p></section>';
+    h += '</tbody></table></div><p class="hint">금액 억원. 시가총액 = 최근 6개월(직전 거래일까지) 평균 종가 × 자기주식 제외 보통주 수. EV = 시가총액 + 차입금 − 현금·단기금융상품. TTM = 최근 사업보고서 + 최근 분기·반기 누적 − 전년 같은 기간 누적. 상각비는 현금흐름표 본문에서 읽는데, 주석에만 적는 회사는 비어 있어요. 그때는 현금흐름표 주석(조정 항목)의 감가상각비·무형자산상각비·사용권자산상각비 TTM 합계를 억원으로 넣어 주세요.</p></section>';
     return h;
   }
 
@@ -221,6 +228,7 @@
     var ol = document.getElementById("optLease"); if (ol) ol.onchange = function () { S.lease = ol.checked; save(); renderPeer(); };
     var os = document.getElementById("optStat"); if (os) os.onchange = function () { S.stat = os.value; save(); renderPeer(); };
     pane.querySelectorAll("[data-on]").forEach(function (b) { b.onchange = function () { if (b.checked) delete S.off[b.dataset.on]; else S.off[b.dataset.on] = 1; save(); renderPeer(); }; });
+    pane.querySelectorAll("[data-ov]").forEach(function (el) { el.onchange = function () { var k = el.dataset.ov.split("."); S.ov[k[0]] = S.ov[k[0]] || {}; S.ov[k[0]][k[1]] = el.value.trim(); save(); renderPeer(); }; });
     pane.querySelectorAll("[data-del]").forEach(function (b) { b.onclick = function () { S.peers = S.peers.filter(function (c) { return c !== b.dataset.del; }); delete S.off[b.dataset.del]; save(); renderPeer(); }; });
     var x = document.getElementById("xls"); if (x) x.onclick = exportXlsx;
     var rs = document.getElementById("reset"); if (rs) rs.onclick = function () { S = defaults(); save(); renderPeer(); };
