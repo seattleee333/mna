@@ -1,10 +1,10 @@
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>NGBM296SVTYWKGH7</RequestId><HostId>TZtEhQ4Ib7pITSQpBncJ+jmin7d8aH6iDIKY1mjXG6B4zwYqct
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>N0HXMPZ5M5473FKW</RequestId><HostId>pBuumG8hHtR12Ip3HRNgpl+ZkD/ZA4IL2h2mvRDjv8/Cxzw2WS
   2026-10-12 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>NGBP3XP8AC35D3MB</RequestId><HostId>7B+tvqvbIuCCmmtS674iLYM90dY5EwN8GhPtPIfX3cxdyakf9a
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WZ36G1CNYMBSKZ6Z</RequestId><HostId>zwGZVx7w8KNqIxuagvSIsgGQe5nmKnGNFAkDNc7OpFsVi95ZW/
   2026-11-11 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>KSAVXX02XE6C09AK</RequestId><HostId>4vouHHCJqBdqYklTRu56ZoTUU2sz2koO9tLMzamKxw3Ws+XF5l
+  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WZ3FW1K7PQN466X3</RequestId><HostId>m4m4BykCtoi1pQd6Ka2djDpPNuM5IdGmGQ8u49HEuCxr+xqTG2
   2026-11-26 8-K 0건
-  인덱스 응답 403: <?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>7QATPA8EDQ42CAT6</RequestId><HostId>Or96KxKMVc2KqFkb6quT83kZH+taoKC1oQm2yfRItBVcl2/Gis
-  2026-11-27 8-K 0건
-새로 확인할 8-K 0건
-저장: 딜 2367건 (이번 신규 0건, LLM 0건)
+  인덱스 샘플: Description:           Daily Index of EDGAR Dissemination Feed by Form Type // Last Data Received:    Nov 27, 2026 // Comments:              webmaster@sec.gov // Anonymous FTP:         ftp://ftp.sec.gov/edgar/ //   //   //   //   // Form Type   Company Name                                                  CIK //       Date Filed  File Name // --------------------------------------------------------------------------------------------------------------------------------------------- // 1-A/A            EPILOG IMAGING SYSTEMS INC.                                   1783128     20261127    edgar/data/1783128/0001477932-26-007332.txt                                                
+  2026-11-27 8-K 87건
+새로 확인할 8-K 87건
+저장: 딜 2373건 (이번 신규 6건, LLM 0건)
